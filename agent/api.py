@@ -309,7 +309,7 @@ async def list_sessions():
 # ── Direct search (no SDK, for streaming) ──────────────────
 
 EMBED_MODEL = "Qwen/Qwen3-Embedding-4B"
-QA_MATCH_THRESHOLD = 0.80
+QA_MATCH_THRESHOLD = 0.95
 COSINE_THRESHOLD = 0.40
 RERANKER_THRESHOLD = 0.20
 
@@ -410,10 +410,15 @@ async def _direct_search(question: str) -> dict:
 
 def _build_rag_prompt(question: str, history: list[dict], chunks: list[dict]) -> str:
     """Build prompt with retrieved context for Claude."""
+    # Detail questions need more context for completeness
+    detail_keywords = ["what", "which", "list", "how many", "version", "port",
+                       "supported", "requirements", "limit", "maximum", "minimum"]
+    max_chars = 2500 if any(kw in question.lower() for kw in detail_keywords) else 1500
+
     context_parts = []
     for c in chunks:
         context_parts.append(
-            f"[Source: {c['source_file']}] {c['title']}\n{c['content'][:1000]}"
+            f"[Source: {c['source_file']}] {c['title']}\n{c['content'][:max_chars]}"
         )
     context = "\n\n---\n\n".join(context_parts)
 
@@ -502,7 +507,16 @@ async def _rerank_candidates(question: str, candidates) -> list[dict]:
             "reranker": float(rr["score"]),
         })
     scored.sort(key=lambda x: x["reranker"], reverse=True)
-    return scored
+
+    # Diversity filter: max 2 chunks from same source_file
+    diverse = []
+    source_count: dict[str, int] = {}
+    for s in scored:
+        sf = s["source_file"]
+        source_count[sf] = source_count.get(sf, 0) + 1
+        if source_count[sf] <= 2:
+            diverse.append(s)
+    return diverse
 
 
 def _make_source_title(src: str) -> str:
@@ -514,9 +528,28 @@ def _make_source_title(src: str) -> str:
 STREAM_SYSTEM_PROMPT = """\
 You are the Acronis Cyber Protect Cloud Assistant (v26.02).
 Answer the user's question based ONLY on the provided documentation context.
-Be concise. Use **bold** for key terms, numbered lists for steps, `code` for commands.
+Use **bold** for key terms, numbered lists for steps, `code` for commands.
 End with: **Source:** [`source_file`](doc_url) — or just `source_file` if no URL.
-If the context doesn't cover the topic, say so. Never invent information.\
+If the context doesn't cover the topic, say so. Never invent information.
+
+## Detail question handling
+When answering questions asking for specific numbers, versions, limits, or CLI syntax:
+- Extract and list EVERY specific value from the documentation.
+- If the doc says "supports versions X, Y, Z" — list ALL of X, Y, Z, don't summarize.
+- For CLI commands: provide the EXACT syntax with all required and optional flags.
+- For port/IP questions: list EVERY port number and address range.
+- If a table exists in the source with specific values, reproduce ALL rows.
+- NEVER round numbers or approximate values — use exact figures from the doc.
+
+## Source content utilization
+- Read ALL provided chunks fully — critical details are often at the end.
+- If you receive 3 chunks, use ALL 3 — don't ignore lower-scored ones.
+- When chunks overlap, merge the information from all chunks.
+
+## Hallucination prevention
+- Before stating any CLI flag, command path, or config location: verify it appears VERBATIM in the provided chunks. If not found verbatim, say "the specific syntax is not available in the retrieved documentation."
+- NEVER construct plausible-looking CLI commands by combining partial information.
+- Registry paths must be EXACT — don't guess HKLM vs HKCU or subkey names.\
 """
 
 
@@ -645,7 +678,7 @@ async def chat_stream(req: ChatRequest):
         yield {"event": "message", "data": json.dumps({"type": "sources", "sources": sources})}
 
         # ── Step 6: Generate answer ──
-        context_len = sum(len(c["content"][:1000]) for c in top3)
+        context_len = sum(len(c["content"][:2500]) for c in top3)
         yield _step_event("generating", "Generating answer...", "brain", elapsed(),
                           details={"model": "claude-sonnet", "context_tokens": context_len})
 
@@ -661,38 +694,38 @@ async def chat_stream(req: ChatRequest):
 
             full_answer = ""
             last_len = 0
-            async with ClaudeSDKClient(options=opts) as client:
-                await client.query(rag_prompt)
-                async for msg in client.receive_messages():
-                    if msg is None:
-                        continue
-                    if isinstance(msg, AssistantMessage):
-                        for block in msg.content:
-                            if isinstance(block, TextBlock):
-                                new_text = block.text
-                                if len(new_text) > last_len:
-                                    delta = new_text[last_len:]
-                                    last_len = len(new_text)
-                                    # Simulate streaming: emit in small word-chunks
-                                    words = delta.split(" ")
-                                    buf = ""
-                                    for w in words:
-                                        buf += w + " "
-                                        if len(buf) >= 12:
+            async with asyncio.timeout(60):
+                async with ClaudeSDKClient(options=opts) as client:
+                    await client.query(rag_prompt)
+                    async for msg in client.receive_messages():
+                        if msg is None:
+                            continue
+                        if isinstance(msg, AssistantMessage):
+                            for block in msg.content:
+                                if isinstance(block, TextBlock):
+                                    new_text = block.text
+                                    if len(new_text) > last_len:
+                                        delta = new_text[last_len:]
+                                        last_len = len(new_text)
+                                        words = delta.split(" ")
+                                        buf = ""
+                                        for w in words:
+                                            buf += w + " "
+                                            if len(buf) >= 12:
+                                                yield {"event": "message", "data": json.dumps({"type": "token", "text": buf})}
+                                                buf = ""
+                                                await asyncio.sleep(0.02)
+                                        if buf:
                                             yield {"event": "message", "data": json.dumps({"type": "token", "text": buf})}
-                                            buf = ""
-                                            await asyncio.sleep(0.02)
-                                    if buf:
-                                        yield {"event": "message", "data": json.dumps({"type": "token", "text": buf})}
-                                full_answer = new_text
-                    elif isinstance(msg, ResultMessage):
-                        if hasattr(msg, 'content'):
-                            for block in getattr(msg, 'content', []):
-                                if isinstance(block, TextBlock) and len(block.text) > last_len:
-                                    delta = block.text[last_len:]
-                                    yield {"event": "message", "data": json.dumps({"type": "token", "text": delta})}
-                                    full_answer = block.text
-                        break
+                                    full_answer = new_text
+                        elif isinstance(msg, ResultMessage):
+                            if hasattr(msg, 'content'):
+                                for block in getattr(msg, 'content', []):
+                                    if isinstance(block, TextBlock) and len(block.text) > last_len:
+                                        delta = block.text[last_len:]
+                                        yield {"event": "message", "data": json.dumps({"type": "token", "text": delta})}
+                                        full_answer = block.text
+                            break
 
             if not full_answer:
                 full_answer = "I couldn't generate a response. Please try again."
@@ -700,6 +733,12 @@ async def chat_stream(req: ChatRequest):
 
             await db_save_message(sid, "user", question)
             await db_save_message(sid, "assistant", full_answer, sources)
+
+        except TimeoutError:
+            err_msg = "Response generation timed out. Please try again."
+            yield {"event": "message", "data": json.dumps({"type": "token", "text": err_msg})}
+            await db_save_message(sid, "user", question)
+            await db_save_message(sid, "assistant", err_msg)
 
         except Exception as e:
             err_msg = f"Sorry, an error occurred: {str(e)}"

@@ -14,22 +14,22 @@
           "title": "Enabling the Acronis MDR Service",
           "source_file": "11-mdr/02-enabling-mdr-service.md",
           "chapter": "11",
-          "cosine": 0.5419223308563387,
+          "cosine": 0.5572422908914775,
           "reranker": 0.36500388
         },
         {
-          "title": "Activating the account",
+          "title": "Activating the account and password requirements",
           "source_file": "01-getting-started/01-activating-account.md",
           "chapter": "01",
-          "cosine": 0.581330785909989,
-          "reranker": 0.35108855
+          "cosine": 0.5077472035734178,
+          "reranker": 0.3501991
         },
         {
-          "title": "Installing and uninstalling protection agents in Linux via CLI",
-          "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
-          "chapter": "02",
-          "cosine": 0.44027503256947464,
-          "reranker": 0.021698097
+          "title": "Protecting Mobile Devices",
+          "source_file": "06-backup-and-recovery/34-protecting-mobile-devices.md",
+          "chapter": "06",
+          "cosine": 0.4820344017117314,
+          "reranker": 0.033844035
         }
       ]
     },
@@ -44,22 +44,22 @@
           "title": "Enabling the Acronis MDR Service",
           "source_file": "11-mdr/02-enabling-mdr-service.md",
           "chapter": "11",
-          "cosine": 0.5379410982132111,
-          "reranker": 0.13683891
+          "cosine": 0.5638825633455861,
+          "reranker": 0.13660839
+        },
+        {
+          "title": "Installing and uninstalling protection agents in Linux via CLI",
+          "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
+          "chapter": "02",
+          "cosine": 0.5206317019839118,
+          "reranker": 0.068288535
         },
         {
           "title": "SIEM data format and CEF examples",
           "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
           "chapter": "03",
-          "cosine": 0.4855115405030055,
-          "reranker": 0.02763772
-        },
-        {
-          "title": "About Acronis Disaster Recovery and software requirements",
-          "source_file": "07-disaster-recovery/01-dr-overview-requirements.md",
-          "chapter": "07",
-          "cosine": 0.5012661668319457,
-          "reranker": 0.026405517
+          "cosine": 0.5231848074903979,
+          "reranker": 0.027690258
         }
       ]
     },
@@ -74,22 +74,22 @@
           "title": "Supported web browsers",
           "source_file": "01-getting-started/06-supported-web-browsers.md",
           "chapter": "01",
-          "cosine": 0.6053239107131958,
-          "reranker": 0.47034127
+          "cosine": 0.6887229104688388,
+          "reranker": 0.4713449
         },
         {
           "title": "Supported operating systems and versions",
           "source_file": "01-getting-started/11-supported-operating-systems-and-versions.md",
           "chapter": "01",
-          "cosine": 0.4957868456840515,
-          "reranker": 0.43194354
+          "cosine": 0.6397719549860901,
+          "reranker": 0.43278244
         },
         {
-          "title": "Supported Antivirus and Antimalware Features per Platform",
-          "source_file": "08-antivirus-antimalware/02-supported-features-per-platform.md",
-          "chapter": "08",
-          "cosine": 0.5222090949603126,
-          "reranker": 0.19375686
+          "title": "Supported protection features by OS - Data protection, Disk health, CPOC alerts, Backup scanning",
+          "source_file": "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+          "chapter": "01",
+          "cosine": 0.5332740743866676,
+          "reranker": 0.08093671
         }
       ]
     },
@@ -104,22 +104,22 @@
           "title": "Installing protection agents by using the graphical user interface",
           "source_file": "02-installing-deploying-agents/10-installing-agents-gui.md",
           "chapter": "02",
-          "cosine": 0.7470566486614988,
+          "cosine": 0.7815297088238077,
           "reranker": 0.99921143
         },
         {
           "title": "Installing and uninstalling protection agents in Windows via CLI",
           "source_file": "02-installing-deploying-agents/12-installing-agents-windows-cli.md",
           "chapter": "02",
-          "cosine": 0.6603545152929726,
-          "reranker": 0.9961004
+          "cosine": 0.7029350544609201,
+          "reranker": 0.99608517
         },
         {
-          "title": "Preparation - Before you start",
-          "source_file": "02-installing-deploying-agents/01-preparation.md",
+          "title": "Deploying protection agents through Group Policy",
+          "source_file": "02-installing-deploying-agents/20-deploying-agents-group-policy.md",
           "chapter": "02",
-          "cosine": 0.6987919390921642,
-          "reranker": 0.98662347
+          "cosine": 0.6458349842576768,
+          "reranker": 0.98866826
         }
       ]
     },
@@ -134,22 +134,22 @@
           "title": "System requirements for agents",
           "source_file": "02-installing-deploying-agents/04-system-requirements.md",
           "chapter": "02",
-          "cosine": 0.6084348688644058,
+          "cosine": 0.6618040804442169,
           "reranker": 0.858244
         },
         {
           "title": "Installing and uninstalling protection agents in Linux via CLI",
           "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
           "chapter": "02",
-          "cosine": 0.5746196850907626,
-          "reranker": 0.64646024
+          "cosine": 0.6420669982353496,
+          "reranker": 0.6463486
         },
         {
           "title": "Supported operating systems and versions",
           "source_file": "01-getting-started/11-supported-operating-systems-and-versions.md",
           "chapter": "01",
-          "cosine": 0.5978001952171326,
-          "reranker": 0.3695426
+          "cosine": 0.7125734858171168,
+          "reranker": 0.36988392
         }
       ]
     },
@@ -164,22 +164,22 @@
           "title": "Installing and uninstalling protection agents in Windows via CLI",
           "source_file": "02-installing-deploying-agents/12-installing-agents-windows-cli.md",
           "chapter": "02",
-          "cosine": 0.5580710935017795,
-          "reranker": 0.581719
+          "cosine": 0.6863077621734863,
+          "reranker": 0.5818378
         },
         {
           "title": "Installing and uninstalling protection agents in Linux via CLI",
           "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
           "chapter": "02",
-          "cosine": 0.5899521639900357,
-          "reranker": 0.36772424
+          "cosine": 0.6701363718347154,
+          "reranker": 0.36795136
         },
         {
-          "title": "Unattended installation with MSI files",
-          "source_file": "02-installing-deploying-agents/16-windows-cli-msi-installation.md",
+          "title": "Deploying protection agents through Group Policy",
+          "source_file": "02-installing-deploying-agents/20-deploying-agents-group-policy.md",
           "chapter": "02",
-          "cosine": 0.5143219981885554,
-          "reranker": 0.019568676
+          "cosine": 0.5730489914300462,
+          "reranker": 0.114566505
         }
       ]
     },
@@ -194,22 +194,22 @@
           "title": "Deploying Agent for VMware (Virtual Appliance)",
           "source_file": "02-installing-deploying-agents/21-deploying-vmware-va.md",
           "chapter": "02",
-          "cosine": 0.6394238066501563,
+          "cosine": 0.689876856494898,
           "reranker": 0.93913656
+        },
+        {
+          "title": "Workloads - Types, adding, and removing",
+          "source_file": "05-managing-workloads/02-workloads-overview.md",
+          "chapter": "05",
+          "cosine": 0.5521636480894928,
+          "reranker": 0.32380763
         },
         {
           "title": "Deploying Agent for Virtuozzo Hybrid Infrastructure (Virtual Appliance)",
           "source_file": "02-installing-deploying-agents/23-deploying-virtuozzo-hi-va.md",
           "chapter": "02",
-          "cosine": 0.5793772512488741,
-          "reranker": 0.11104825
-        },
-        {
-          "title": "Deploying Agent for Nutanix AHV",
-          "source_file": "02-installing-deploying-agents/26-deploying-nutanix-ahv.md",
-          "chapter": "02",
-          "cosine": 0.60747487634121,
-          "reranker": 0.08021325
+          "cosine": 0.6447944641113464,
+          "reranker": 0.110855594
         }
       ]
     },
@@ -224,21 +224,21 @@
           "title": "Device discovery overview and methods",
           "source_file": "02-installing-deploying-agents/28-device-discovery-overview.md",
           "chapter": "02",
-          "cosine": 0.5918703432005848,
-          "reranker": 0.4107563
+          "cosine": 0.6926118158649045,
+          "reranker": 0.4114656
         },
         {
           "title": "Device discovery by using Device Sense",
           "source_file": "02-installing-deploying-agents/29-device-discovery-device-sense.md",
           "chapter": "02",
-          "cosine": 0.5593136382307541,
-          "reranker": 0.1999321
+          "cosine": 0.6763742759004775,
+          "reranker": 0.19977595
         },
         {
           "title": "MDR Overview and Service Levels",
           "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
           "chapter": "11",
-          "cosine": 0.5374279458097257,
+          "cosine": 0.5659566184308251,
           "reranker": 0.016529556
         }
       ]
@@ -247,29 +247,29 @@
       "id": 9,
       "query": "How do I create a protection plan?",
       "expected_chapter": "03",
-      "top1_correct": false,
+      "top1_correct": true,
       "top3_correct": true,
       "results": [
-        {
-          "title": "Backup overview and cheat sheet",
-          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
-          "chapter": "06",
-          "cosine": 0.4711931365017289,
-          "reranker": 0.9900636
-        },
         {
           "title": "Protection plans and modules",
           "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
           "chapter": "03",
-          "cosine": 0.5879870828386483,
-          "reranker": 0.96080494
+          "cosine": 0.6550256024278235,
+          "reranker": 0.96073127
         },
         {
           "title": "Actions with protection plans",
           "source_file": "03-working-with-plans/06-actions-with-protection-plans.md",
           "chapter": "03",
-          "cosine": 0.5735520036754644,
-          "reranker": 0.9563905
+          "cosine": 0.716552713020068,
+          "reranker": 0.9562273
+        },
+        {
+          "title": "Monitoring Plans, Alerts, and Response Actions",
+          "source_file": "12-rmm/10-monitoring-plans-alerts-and-response-actions.md",
+          "chapter": "12",
+          "cosine": 0.5666173348750696,
+          "reranker": 0.77848095
         }
       ]
     },
@@ -284,21 +284,21 @@
           "title": "Built-in plans",
           "source_file": "03-working-with-plans/02-built-in-plans.md",
           "chapter": "03",
-          "cosine": 0.5174681256692494,
-          "reranker": 0.9730365
+          "cosine": 0.5757871875318981,
+          "reranker": 0.97298527
         },
         {
           "title": "Default plans, Favorite plans, and Preselected plans",
           "source_file": "03-working-with-plans/03-default-and-favorite-plans.md",
           "chapter": "03",
-          "cosine": 0.5214352607727051,
+          "cosine": 0.5923776030540635,
           "reranker": 0.9628831
         },
         {
           "title": "Protection plans and modules",
           "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
           "chapter": "03",
-          "cosine": 0.5404013008477302,
+          "cosine": 0.5674095153808755,
           "reranker": 0.9519527
         }
       ]
@@ -314,22 +314,22 @@
           "title": "Cleanup plans",
           "source_file": "03-working-with-plans/10-cleanup-plans.md",
           "chapter": "03",
-          "cosine": 0.6399719095205013,
+          "cosine": 0.6057705102631322,
           "reranker": 0.75437254
         },
         {
-          "title": "Retention rules",
-          "source_file": "06-backup-and-recovery/11-retention-rules.md",
-          "chapter": "06",
-          "cosine": 0.5460425778044099,
-          "reranker": 0.11777492
+          "title": "Validation",
+          "source_file": "03-working-with-plans/09-validation.md",
+          "chapter": "03",
+          "cosine": 0.5673566380314067,
+          "reranker": 0.020606475
         },
         {
-          "title": "Built-in plans",
-          "source_file": "03-working-with-plans/02-built-in-plans.md",
-          "chapter": "03",
-          "cosine": 0.5634234791135014,
-          "reranker": 0.0107767265
+          "title": "Monitoring Plans, Alerts, and Response Actions",
+          "source_file": "12-rmm/10-monitoring-plans-alerts-and-response-actions.md",
+          "chapter": "12",
+          "cosine": 0.5480506746799243,
+          "reranker": 0.0045032725
         }
       ]
     },
@@ -344,21 +344,21 @@
           "title": "Creating SIEM forwarding plans",
           "source_file": "03-working-with-plans/14-siem-creating-plans.md",
           "chapter": "03",
-          "cosine": 0.6018937351576966,
+          "cosine": 0.6751472756354377,
           "reranker": 0.14547919
         },
         {
           "title": "SIEM forwarding plans overview",
           "source_file": "03-working-with-plans/13-siem-forwarding-overview.md",
           "chapter": "03",
-          "cosine": 0.6870148796154454,
-          "reranker": 0.1183851
+          "cosine": 0.6891348382057108,
+          "reranker": 0.1187934
         },
         {
           "title": "SIEM data format and CEF examples",
           "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
           "chapter": "03",
-          "cosine": 0.6518793702125596,
+          "cosine": 0.5957216201937684,
           "reranker": 0.022074386
         }
       ]
@@ -374,21 +374,21 @@
           "title": "Remote sessions widget, smart protection, and threat feed",
           "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
           "chapter": "04",
-          "cosine": 0.6209165002008091,
+          "cosine": 0.6237927303437851,
           "reranker": 0.75635755
         },
         {
           "title": "Enabling the Acronis MDR Service",
           "source_file": "11-mdr/02-enabling-mdr-service.md",
           "chapter": "11",
-          "cosine": 0.6254522241247762,
-          "reranker": 0.25851312
+          "cosine": 0.6312075037483884,
+          "reranker": 0.25664565
         },
         {
           "title": "SIEM data format and CEF examples",
           "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
           "chapter": "03",
-          "cosine": 0.5999444544331916,
+          "cosine": 0.6153123149461945,
           "reranker": 0.21617697
         }
       ]
@@ -404,21 +404,21 @@
           "title": "Monitoring - Overview and Activities dashboards",
           "source_file": "04-monitoring-dashboards/01-monitoring-overview.md",
           "chapter": "04",
-          "cosine": 0.7052060892809482,
+          "cosine": 0.6341228107140784,
           "reranker": 0.9520419
         },
         {
           "title": "Disaster recovery dashboard",
           "source_file": "07-disaster-recovery/19-disaster-recovery-dashboard.md",
           "chapter": "07",
-          "cosine": 0.6236706414517256,
-          "reranker": 0.71183175
+          "cosine": 0.4598480463027954,
+          "reranker": 0.71153116
         },
         {
           "title": "Reports",
           "source_file": "04-monitoring-dashboards/16-reports.md",
           "chapter": "04",
-          "cosine": 0.6232567878655493,
+          "cosine": 0.5654847621917725,
           "reranker": 0.6169935
         }
       ]
@@ -427,28 +427,28 @@
       "id": 15,
       "query": "How to generate reports in Acronis console?",
       "expected_chapter": "04",
-      "top1_correct": true,
+      "top1_correct": false,
       "top3_correct": true,
       "results": [
+        {
+          "title": "MDR Overview and Service Levels",
+          "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
+          "chapter": "11",
+          "cosine": 0.5435056362446851,
+          "reranker": 0.19482698
+        },
         {
           "title": "Remote sessions widget, smart protection, and threat feed",
           "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
           "chapter": "04",
-          "cosine": 0.5725258163370499,
-          "reranker": 0.12304913
-        },
-        {
-          "title": "Enabling the Acronis MDR Service",
-          "source_file": "11-mdr/02-enabling-mdr-service.md",
-          "chapter": "11",
-          "cosine": 0.5303112512270368,
-          "reranker": 0.09790669
+          "cosine": 0.5444078120942315,
+          "reranker": 0.12315455
         },
         {
           "title": "SIEM data format and CEF examples",
           "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
           "chapter": "03",
-          "cosine": 0.5716683183111765,
+          "cosine": 0.5430694546144885,
           "reranker": 0.04107589
         }
       ]
@@ -461,25 +461,25 @@
       "top3_correct": true,
       "results": [
         {
-          "title": "Alert types and categories - Backup alerts",
-          "source_file": "04-monitoring-dashboards/03-alert-types-backup.md",
+          "title": "Cyber Protection, Protection status, EDR, and Discovered devices widgets",
+          "source_file": "04-monitoring-dashboards/07-cyber-protection-and-status-widgets.md",
           "chapter": "04",
-          "cosine": 0.6027203561496958,
-          "reranker": 0.053601142
+          "cosine": 0.5467766304647103,
+          "reranker": 0.7890712
         },
         {
-          "title": "Disaster recovery dashboard",
-          "source_file": "07-disaster-recovery/19-disaster-recovery-dashboard.md",
-          "chapter": "07",
-          "cosine": 0.6310224125093944,
-          "reranker": 0.03371654
+          "title": "Cyber Protect Monitor",
+          "source_file": "04-monitoring-dashboards/15-cyber-protect-monitor.md",
+          "chapter": "04",
+          "cosine": 0.5554881824588241,
+          "reranker": 0.42829317
         },
         {
-          "title": "Backup options: Validation, CBT, cluster mode, compression, error handling",
-          "source_file": "06-backup-and-recovery/14-backup-options-validation-cbt-compression-errors.md",
-          "chapter": "06",
-          "cosine": 0.5875057227906164,
-          "reranker": 0.02931223
+          "title": "Reports",
+          "source_file": "04-monitoring-dashboards/16-reports.md",
+          "chapter": "04",
+          "cosine": 0.5507866947436371,
+          "reranker": 0.100878626
         }
       ]
     },
@@ -494,22 +494,22 @@
           "title": "Device groups",
           "source_file": "05-managing-workloads/03-device-groups.md",
           "chapter": "05",
-          "cosine": 0.6185099113875692,
-          "reranker": 0.85705173
+          "cosine": 0.6989111785014229,
+          "reranker": 0.85693204
+        },
+        {
+          "title": "Actions with protection plans",
+          "source_file": "03-working-with-plans/06-actions-with-protection-plans.md",
+          "chapter": "03",
+          "cosine": 0.5096527315014086,
+          "reranker": 0.4663899
         },
         {
           "title": "Editing groups, deleting groups, and managing plans for groups",
           "source_file": "05-managing-workloads/06-editing-deleting-groups-plans.md",
           "chapter": "05",
-          "cosine": 0.5533351467053698,
-          "reranker": 0.10557884
-        },
-        {
-          "title": "Search attributes for non-cloud-to-cloud workloads",
-          "source_file": "05-managing-workloads/05-search-attributes-non-cloud.md",
-          "chapter": "05",
-          "cosine": 0.5234489100964835,
-          "reranker": 0.05042407
+          "cosine": 0.6910356467345279,
+          "reranker": 0.10576342
         }
       ]
     },
@@ -524,21 +524,21 @@
           "title": "CyberFit Score for machines",
           "source_file": "05-managing-workloads/12-cyberfit-score.md",
           "chapter": "05",
-          "cosine": 0.6983137906602858,
+          "cosine": 0.712227182851613,
           "reranker": 0.99766773
         },
         {
           "title": "CyberFit Score and disk health monitoring",
           "source_file": "04-monitoring-dashboards/08-cyberfit-score-and-disk-health.md",
           "chapter": "04",
-          "cosine": 0.605879342906437,
-          "reranker": 0.9353465
+          "cosine": 0.5478476236740779,
+          "reranker": 0.9352283
         },
         {
           "title": "Reports",
           "source_file": "04-monitoring-dashboards/16-reports.md",
           "chapter": "04",
-          "cosine": 0.4865525058837248,
+          "cosine": 0.5195347380360814,
           "reranker": 0.84581506
         }
       ]
@@ -554,22 +554,22 @@
           "title": "Scripting plans and script quick run",
           "source_file": "05-managing-workloads/15-cyber-scripting-plans-quickrun.md",
           "chapter": "05",
-          "cosine": 0.6082841157913208,
+          "cosine": 0.6751763418211745,
           "reranker": 0.83004373
-        },
-        {
-          "title": "Understanding plans",
-          "source_file": "03-working-with-plans/01-understanding-plans.md",
-          "chapter": "03",
-          "cosine": 0.5544732213020325,
-          "reranker": 0.7866228
         },
         {
           "title": "Remote Desktop and Remote Assistance",
           "source_file": "12-rmm/08-remote-desktop-and-assistance.md",
           "chapter": "12",
-          "cosine": 0.5456810756230678,
-          "reranker": 0.7004852
+          "cosine": 0.5557813313137702,
+          "reranker": 0.7003827
+        },
+        {
+          "title": "Cyber Scripting overview, prerequisites, and user roles",
+          "source_file": "05-managing-workloads/13-cyber-scripting-overview.md",
+          "chapter": "05",
+          "cosine": 0.5912226194872128,
+          "reranker": 0.4356614
         }
       ]
     },
@@ -584,22 +584,22 @@
           "title": "Backup options: Log truncation, LVM, mount points, multi-volume, one-click recovery, performance",
           "source_file": "06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md",
           "chapter": "06",
-          "cosine": 0.5518021419107297,
-          "reranker": 0.93991333
+          "cosine": 0.554938885863954,
+          "reranker": 0.93980294
         },
         {
           "title": "Backup operations: storage, mounting volumes, validating, exporting, and deleting backups",
           "source_file": "06-backup-and-recovery/23-backup-operations-storage-mounting-validation-export.md",
           "chapter": "06",
-          "cosine": 0.4907856128322139,
-          "reranker": 0.8795612
+          "cosine": 0.514930219348087,
+          "reranker": 0.87925047
         },
         {
           "title": "Backup options: Validation, CBT, cluster mode, compression, error handling",
           "source_file": "06-backup-and-recovery/14-backup-options-validation-cbt-compression-errors.md",
           "chapter": "06",
-          "cosine": 0.585787517255919,
-          "reranker": 0.8609547
+          "cosine": 0.5848854633960967,
+          "reranker": 0.86048645
         }
       ]
     },
@@ -614,22 +614,22 @@
           "title": "Continuous data protection (CDP)",
           "source_file": "06-backup-and-recovery/09-continuous-data-protection-cdp.md",
           "chapter": "06",
-          "cosine": 0.6838237250990788,
-          "reranker": 0.99304235
+          "cosine": 0.7374240506281988,
+          "reranker": 0.99306935
         },
         {
           "title": "Backup overview and cheat sheet",
           "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
           "chapter": "06",
-          "cosine": 0.5427462782112535,
+          "cosine": 0.5805166036660381,
           "reranker": 0.71203196
         },
         {
           "title": "Supported protection features by OS - Default plans, Forensic backup, CDP, Autodiscovery",
           "source_file": "01-getting-started/10a-supported-features-protection-plans-and-backup.md",
           "chapter": "01",
-          "cosine": 0.5456355376731022,
-          "reranker": 0.05592617
+          "cosine": 0.6071656293123036,
+          "reranker": 0.055823144
         }
       ]
     },
@@ -644,21 +644,21 @@
           "title": "File Recovery and Verification",
           "source_file": "06-backup-and-recovery/27-file-recovery.md",
           "chapter": "06",
-          "cosine": 0.6327362060546875,
+          "cosine": 0.6378527335191948,
           "reranker": 0.99433607
         },
         {
           "title": "Bootable media recovery and file recovery",
           "source_file": "06-backup-and-recovery/21-bootable-media-recovery-file-recovery.md",
           "chapter": "06",
-          "cosine": 0.6159605841683689,
+          "cosine": 0.581380317375702,
           "reranker": 0.9493885
         },
         {
           "title": "Recovery Options",
           "source_file": "06-backup-and-recovery/29-recovery-options.md",
           "chapter": "06",
-          "cosine": 0.6506739466980739,
+          "cosine": 0.54975181224921,
           "reranker": 0.8700462
         }
       ]
@@ -674,21 +674,21 @@
           "title": "Email Archiving",
           "source_file": "06-backup-and-recovery/32-email-archiving.md",
           "chapter": "06",
-          "cosine": 0.6315912008285522,
-          "reranker": 0.941007
+          "cosine": 0.6562866754873604,
+          "reranker": 0.9411153
         },
         {
           "title": "Protecting Microsoft 365 Data",
           "source_file": "06-backup-and-recovery/35-microsoft-365-protection.md",
           "chapter": "06",
-          "cosine": 0.7550353036831413,
+          "cosine": 0.73403623509839,
           "reranker": 0.93721074
         },
         {
           "title": "Microsoft 365 Teams Protection, Direct Backup, and Local Agent",
           "source_file": "06-backup-and-recovery/36-microsoft-365-teams-direct-backup-agent.md",
           "chapter": "06",
-          "cosine": 0.7025795578956604,
+          "cosine": 0.7137919493789655,
           "reranker": 0.89143354
         }
       ]
@@ -704,22 +704,22 @@
           "title": "Creating Bootable Media to Recover Operating Systems",
           "source_file": "06-backup-and-recovery/40-bootable-media.md",
           "chapter": "06",
-          "cosine": 0.6706106666276458,
-          "reranker": 0.89947516
+          "cosine": 0.6815527271299038,
+          "reranker": 0.8992984
         },
         {
           "title": "Bootable media recovery and file recovery",
           "source_file": "06-backup-and-recovery/21-bootable-media-recovery-file-recovery.md",
           "chapter": "06",
-          "cosine": 0.5310940425936043,
-          "reranker": 0.64310515
+          "cosine": 0.5624156594276588,
+          "reranker": 0.64321727
         },
         {
-          "title": "Failback - agent-based, agentless, and manual",
-          "source_file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
-          "chapter": "07",
-          "cosine": 0.5108738706818032,
-          "reranker": 0.04418332
+          "title": "Recovery overview and cross-platform recovery",
+          "source_file": "06-backup-and-recovery/18-recovery-overview-cross-platform.md",
+          "chapter": "06",
+          "cosine": 0.47390161532457853,
+          "reranker": 0.035211135
         }
       ]
     },
@@ -734,22 +734,22 @@
           "title": "Which agent do I need?",
           "source_file": "02-installing-deploying-agents/03-which-agent-do-i-need.md",
           "chapter": "02",
-          "cosine": 0.5169771046001511,
-          "reranker": 0.39018536
+          "cosine": 0.5550663505356376,
+          "reranker": 0.39047584
         },
         {
           "title": "Protecting Oracle DB, SAP HANA, MySQL/MariaDB, and Proxmox",
           "source_file": "06-backup-and-recovery/38-oracle-saphana-mysql-mariadb-proxmox.md",
           "chapter": "06",
-          "cosine": 0.5524067015890389,
-          "reranker": 0.33469814
+          "cosine": 0.5555938912751133,
+          "reranker": 0.33426335
         },
         {
-          "title": "Backup overview and cheat sheet",
-          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
+          "title": "Backup operations: storage, mounting volumes, validating, exporting, and deleting backups",
+          "source_file": "06-backup-and-recovery/23-backup-operations-storage-mounting-validation-export.md",
           "chapter": "06",
-          "cosine": 0.48872190512214475,
-          "reranker": 0.026708463
+          "cosine": 0.5302933612553289,
+          "reranker": 0.021906367
         }
       ]
     },
@@ -764,22 +764,22 @@
           "title": "Protecting Google Workspace Data",
           "source_file": "06-backup-and-recovery/37-google-workspace-protection.md",
           "chapter": "06",
-          "cosine": 0.686797005950966,
+          "cosine": 0.7470509927050841,
           "reranker": 0.9914887
         },
         {
-          "title": "Protecting Microsoft Applications",
-          "source_file": "06-backup-and-recovery/33-protecting-microsoft-applications.md",
-          "chapter": "06",
-          "cosine": 0.6267473065925242,
-          "reranker": 0.049773447
+          "title": "Backup scanning plans and cloud application backups",
+          "source_file": "03-working-with-plans/12-backup-scanning-and-cloud-apps.md",
+          "chapter": "03",
+          "cosine": 0.6070420039371303,
+          "reranker": 0.7297124
         },
         {
-          "title": "Default backup options and backup options overview",
-          "source_file": "06-backup-and-recovery/13-backup-options-overview.md",
+          "title": "Protecting Microsoft 365 Data",
+          "source_file": "06-backup-and-recovery/35-microsoft-365-protection.md",
           "chapter": "06",
-          "cosine": 0.5307518876495265,
-          "reranker": 0.034880888
+          "cosine": 0.5858252078526179,
+          "reranker": 0.03963884
         }
       ]
     },
@@ -794,22 +794,22 @@
           "title": "Compliance Mode",
           "source_file": "14-additional-tools/01-compliance-mode.md",
           "chapter": "14",
-          "cosine": 0.656910816246917,
-          "reranker": 0.7929457
+          "cosine": 0.6795324469170085,
+          "reranker": 0.7932662
         },
         {
           "title": "Backup scanning plans and cloud application backups",
           "source_file": "03-working-with-plans/12-backup-scanning-and-cloud-apps.md",
           "chapter": "03",
-          "cosine": 0.5490763514683465,
-          "reranker": 0.5530527
+          "cosine": 0.603763585946246,
+          "reranker": 0.55362594
         },
         {
-          "title": "Backup schedule, schemes, and types",
-          "source_file": "06-backup-and-recovery/10-backup-schedule-schemes-types.md",
+          "title": "Backup overview and cheat sheet",
+          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
           "chapter": "06",
-          "cosine": 0.5597770022947206,
-          "reranker": 0.1482937
+          "cosine": 0.5777119225945622,
+          "reranker": 0.5388012
         }
       ]
     },
@@ -824,22 +824,22 @@
           "title": "Failover - production, test, and automated test failover",
           "source_file": "07-disaster-recovery/13-failover-production-test-automated.md",
           "chapter": "07",
-          "cosine": 0.6996059209225826,
+          "cosine": 0.7623215232204114,
           "reranker": 0.9876639
         },
         {
           "title": "Failback - agent-based, agentless, and manual",
           "source_file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
           "chapter": "07",
-          "cosine": 0.6806318962762401,
+          "cosine": 0.6744484097423112,
           "reranker": 0.9522199
         },
         {
-          "title": "Alert types and categories - Disaster recovery alerts",
-          "source_file": "04-monitoring-dashboards/04-alert-types-disaster-recovery.md",
-          "chapter": "04",
-          "cosine": 0.6575566530227708,
-          "reranker": 0.9326989
+          "title": "DR workflow, protection plan, and default infrastructure",
+          "source_file": "07-disaster-recovery/02-dr-workflow-protection-plan.md",
+          "chapter": "07",
+          "cosine": 0.6377128414429125,
+          "reranker": 0.8895288
         }
       ]
     },
@@ -854,22 +854,22 @@
           "title": "Multi-site IPsec VPN and Point-to-site VPN access",
           "source_file": "07-disaster-recovery/04-connectivity-ipsec-p2s.md",
           "chapter": "07",
-          "cosine": 0.7369334258476851,
+          "cosine": 0.720834894230073,
           "reranker": 0.9911527
         },
         {
           "title": "DR workflow, protection plan, and default infrastructure",
           "source_file": "07-disaster-recovery/02-dr-workflow-protection-plan.md",
           "chapter": "07",
-          "cosine": 0.5952984704677944,
+          "cosine": 0.6944891032272154,
           "reranker": 0.9853843
         },
         {
           "title": "Point-to-site VPN and network management",
           "source_file": "07-disaster-recovery/09-point-to-site-vpn-network-management.md",
           "chapter": "07",
-          "cosine": 0.646878819260635,
-          "reranker": 0.9740426
+          "cosine": 0.7101202473223607,
+          "reranker": 0.97409195
         }
       ]
     },
@@ -884,22 +884,22 @@
           "title": "Azure DR site management, connectivity, and networks",
           "source_file": "07-disaster-recovery/16-azure-dr-site-connectivity-networks.md",
           "chapter": "07",
-          "cosine": 0.7370028339030166,
-          "reranker": 0.9912548
+          "cosine": 0.6867110133171521,
+          "reranker": 0.99128854
         },
         {
           "title": "Disaster Recovery to Microsoft Azure - overview, requirements, and licensing",
           "source_file": "07-disaster-recovery/15-dr-to-azure-overview-requirements-licensing.md",
           "chapter": "07",
-          "cosine": 0.736054376598933,
+          "cosine": 0.7025386787309708,
           "reranker": 0.9911868
         },
         {
           "title": "Recovery servers and failover in Microsoft Azure",
           "source_file": "07-disaster-recovery/17-azure-recovery-servers-failover.md",
           "chapter": "07",
-          "cosine": 0.8187261927887101,
-          "reranker": 0.9456007
+          "cosine": 0.6590181575450093,
+          "reranker": 0.9457011
         }
       ]
     },
@@ -914,22 +914,22 @@
           "title": "Disaster recovery dashboard",
           "source_file": "07-disaster-recovery/19-disaster-recovery-dashboard.md",
           "chapter": "07",
-          "cosine": 0.7687593927609743,
+          "cosine": 0.7304671246091811,
           "reranker": 0.98302
         },
         {
           "title": "Awareness Dashboard and Site-to-Site Open VPN",
           "source_file": "14-additional-tools/05-awareness-dashboard-vpn.md",
           "chapter": "14",
-          "cosine": 0.6290474091824826,
-          "reranker": 0.4914178
+          "cosine": 0.5805031407179331,
+          "reranker": 0.49198985
         },
         {
           "title": "About Acronis Disaster Recovery and software requirements",
           "source_file": "07-disaster-recovery/01-dr-overview-requirements.md",
           "chapter": "07",
-          "cosine": 0.5583801172715552,
-          "reranker": 0.26246357
+          "cosine": 0.5645511746406595,
+          "reranker": 0.26265267
         }
       ]
     },
@@ -944,21 +944,21 @@
           "title": "Failback - agent-based, agentless, and manual",
           "source_file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
           "chapter": "07",
-          "cosine": 0.7668181290274386,
+          "cosine": 0.7673306146466053,
           "reranker": 0.9727791
         },
         {
           "title": "Failback to local site",
           "source_file": "07-disaster-recovery/07-failback.md",
           "chapter": "07",
-          "cosine": 0.6868495736465012,
-          "reranker": 0.77864933
+          "cosine": 0.7545521551904547,
+          "reranker": 0.7791538
         },
         {
           "title": "Failover - production, test, and automated test failover",
           "source_file": "07-disaster-recovery/13-failover-production-test-automated.md",
           "chapter": "07",
-          "cosine": 0.6356726695396726,
+          "cosine": 0.714422221682477,
           "reranker": 0.74558365
         }
       ]
@@ -974,21 +974,21 @@
           "title": "Antivirus and Antimalware Protection Settings - Active Protection, Advanced Antimalware, Network and Server-side",
           "source_file": "08-antivirus-antimalware/04-av-am-protection-settings-part1.md",
           "chapter": "08",
-          "cosine": 0.6799493241279927,
+          "cosine": 0.7080587855735223,
           "reranker": 0.99014014
         },
         {
           "title": "Antivirus and Antimalware Protection Settings - Exploit Prevention, Real-time, Scheduled Scan, Exclusions",
           "source_file": "08-antivirus-antimalware/05-av-am-protection-settings-part2.md",
           "chapter": "08",
-          "cosine": 0.6110076540107944,
-          "reranker": 0.9780936
+          "cosine": 0.6625894103332713,
+          "reranker": 0.97813547
         },
         {
           "title": "Antimalware Features and Scanning Types",
           "source_file": "08-antivirus-antimalware/03-antimalware-features-scanning-types.md",
           "chapter": "08",
-          "cosine": 0.6181251363270132,
+          "cosine": 0.6881983113584634,
           "reranker": 0.880797
         }
       ]
@@ -1004,22 +1004,22 @@
           "title": "URL Filtering - How It Works, Configuration, and Settings",
           "source_file": "08-antivirus-antimalware/07-url-filtering.md",
           "chapter": "08",
-          "cosine": 0.6891637464610114,
-          "reranker": 0.98378503
+          "cosine": 0.715057079350094,
+          "reranker": 0.9837225
         },
         {
-          "title": "Supported Operating Systems for Antivirus and Antimalware Protection",
-          "source_file": "08-antivirus-antimalware/01-supported-os-av-am.md",
-          "chapter": "08",
-          "cosine": 0.44052682285250655,
-          "reranker": 0.54386276
+          "title": "The Cyber Protect console",
+          "source_file": "05-managing-workloads/01-cyber-protect-console.md",
+          "chapter": "05",
+          "cosine": 0.4760259985923767,
+          "reranker": 0.05592617
         },
         {
-          "title": "Remote sessions widget, smart protection, and threat feed",
-          "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
-          "chapter": "04",
-          "cosine": 0.4200390905200082,
-          "reranker": 0.09252366
+          "title": "Custom Content Detectors",
+          "source_file": "13-data-loss-prevention/07-custom-content-detectors.md",
+          "chapter": "13",
+          "cosine": 0.5148781231118377,
+          "reranker": 0.026355354
         }
       ]
     },
@@ -1034,22 +1034,22 @@
           "title": "Quarantine Management",
           "source_file": "08-antivirus-antimalware/10-quarantine-management.md",
           "chapter": "08",
-          "cosine": 0.6527312592485925,
+          "cosine": 0.7449503471001755,
           "reranker": 0.9981541
+        },
+        {
+          "title": "Corporate Whitelist",
+          "source_file": "08-antivirus-antimalware/11-corporate-whitelist.md",
+          "chapter": "08",
+          "cosine": 0.5303309243720303,
+          "reranker": 0.818011
         },
         {
           "title": "Response Actions for Files, Registry, and Blocklist/Allowlist",
           "source_file": "10-edr-xdr/11-response-actions-files-registry-blocklist-allowlist.md",
           "chapter": "10",
-          "cosine": 0.5492749214172363,
-          "reranker": 0.69461346
-        },
-        {
-          "title": "Recovery Options",
-          "source_file": "06-backup-and-recovery/29-recovery-options.md",
-          "chapter": "06",
-          "cosine": 0.5155065348442484,
-          "reranker": 0.008219693
+          "cosine": 0.6105897294772037,
+          "reranker": 0.6950276
         }
       ]
     },
@@ -1064,22 +1064,22 @@
           "title": "Corporate Whitelist",
           "source_file": "08-antivirus-antimalware/11-corporate-whitelist.md",
           "chapter": "08",
-          "cosine": 0.6198499941647045,
+          "cosine": 0.6391080759095138,
           "reranker": 0.9822196
         },
         {
           "title": "Antivirus and Antimalware Protection Settings - Exploit Prevention, Real-time, Scheduled Scan, Exclusions",
           "source_file": "08-antivirus-antimalware/05-av-am-protection-settings-part2.md",
           "chapter": "08",
-          "cosine": 0.4755189716815982,
-          "reranker": 0.052618954
+          "cosine": 0.48090465196115695,
+          "reranker": 0.052521676
         },
         {
           "title": "Alert types - Antimalware, URL Filtering, Licensing, EDR, Device Control",
           "source_file": "04-monitoring-dashboards/05-alert-types-antimalware-url-licensing-edr.md",
           "chapter": "04",
-          "cosine": 0.5277867598660816,
-          "reranker": 0.00685048
+          "cosine": 0.48662902135858577,
+          "reranker": 0.0067975316
         }
       ]
     },
@@ -1094,22 +1094,22 @@
           "title": "GenAI Protection Settings",
           "source_file": "09-genai-workflows/01-genai-protection-settings.md",
           "chapter": "09",
-          "cosine": 0.7027255892753601,
-          "reranker": 0.94825053
+          "cosine": 0.7710151262906433,
+          "reranker": 0.94834626
         },
         {
           "title": "GenAI protection widgets",
           "source_file": "04-monitoring-dashboards/09-genai-protection-widgets.md",
           "chapter": "04",
-          "cosine": 0.7270363135912244,
-          "reranker": 0.6022955
+          "cosine": 0.6651133297485113,
+          "reranker": 0.60235405
         },
         {
           "title": "Protection plans and modules",
           "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
           "chapter": "03",
-          "cosine": 0.5461672166239109,
-          "reranker": 0.500242
+          "cosine": 0.645926198606132,
+          "reranker": 0.5000511
         }
       ]
     },
@@ -1124,22 +1124,22 @@
           "title": "Managing and Assigning Automation Workflows - Overview",
           "source_file": "09-genai-workflows/02-automation-workflows-overview.md",
           "chapter": "09",
-          "cosine": 0.5624099969863892,
-          "reranker": 0.8010035
+          "cosine": 0.6649620932385858,
+          "reranker": 0.80084777
         },
         {
           "title": "Automated Workflows, Monitoring Mode, and Testing EDR",
           "source_file": "10-edr-xdr/12-automated-workflows-monitoring-testing.md",
           "chapter": "10",
-          "cosine": 0.5226825475692749,
+          "cosine": 0.5970575097730787,
           "reranker": 0.8000679
         },
         {
           "title": "Workflow Components and Templates",
           "source_file": "09-genai-workflows/03-workflow-components-templates.md",
           "chapter": "09",
-          "cosine": 0.5540429353713989,
-          "reranker": 0.55546534
+          "cosine": 0.5532857344533921,
+          "reranker": 0.55549556
         }
       ]
     },
@@ -1154,22 +1154,22 @@
           "title": "Reviewing Incidents",
           "source_file": "10-edr-xdr/03-reviewing-incidents.md",
           "chapter": "10",
-          "cosine": 0.5819575288245116,
-          "reranker": 0.9798997
-        },
-        {
-          "title": "Investigating Incidents",
-          "source_file": "10-edr-xdr/07-investigating-incidents.md",
-          "chapter": "10",
-          "cosine": 0.632253013118932,
-          "reranker": 0.97788346
+          "cosine": 0.6340198953128166,
+          "reranker": 0.97997653
         },
         {
           "title": "EDR Overview and Features",
           "source_file": "10-edr-xdr/01-edr-overview-and-features.md",
           "chapter": "10",
-          "cosine": 0.6594966447053352,
+          "cosine": 0.6772501651570102,
           "reranker": 0.9621787
+        },
+        {
+          "title": "Extended Detection and Response (XDR) Overview and Enabling",
+          "source_file": "10-edr-xdr/13-xdr-overview-and-enabling.md",
+          "chapter": "10",
+          "cosine": 0.6637978558901912,
+          "reranker": 0.9583042
         }
       ]
     },
@@ -1184,22 +1184,22 @@
           "title": "Working with the XDR Graph, Investigating Nodes, and Response Actions",
           "source_file": "10-edr-xdr/14-xdr-graph-and-response-actions.md",
           "chapter": "10",
-          "cosine": 0.7150371031430053,
+          "cosine": 0.7649006247520501,
           "reranker": 0.9339146
         },
         {
           "title": "EDR Overview and Features",
           "source_file": "10-edr-xdr/01-edr-overview-and-features.md",
           "chapter": "10",
-          "cosine": 0.6595560508834142,
-          "reranker": 0.87514824
+          "cosine": 0.658972482115853,
+          "reranker": 0.8750414
         },
         {
           "title": "Incident Handling, Service Portal, and Data Residency",
           "source_file": "11-mdr/03-incident-handling-and-service-portal.md",
           "chapter": "11",
-          "cosine": 0.5928009218453603,
-          "reranker": 0.8705973
+          "cosine": 0.6583041352539049,
+          "reranker": 0.87048715
         }
       ]
     },
@@ -1214,22 +1214,22 @@
           "title": "Remediating Incidents",
           "source_file": "10-edr-xdr/09-remediating-incidents.md",
           "chapter": "10",
-          "cosine": 0.7308527987687125,
+          "cosine": 0.704330153047471,
           "reranker": 0.9911527
         },
         {
           "title": "Automated Workflows, Monitoring Mode, and Testing EDR",
           "source_file": "10-edr-xdr/12-automated-workflows-monitoring-testing.md",
           "chapter": "10",
-          "cosine": 0.6059866186388373,
-          "reranker": 0.9548163
+          "cosine": 0.6848234754590411,
+          "reranker": 0.9549004
         },
         {
-          "title": "EDR Overview and Features",
-          "source_file": "10-edr-xdr/01-edr-overview-and-features.md",
+          "title": "Events Search and Saved Queries",
+          "source_file": "10-edr-xdr/04-events-search-and-saved-queries.md",
           "chapter": "10",
-          "cosine": 0.6867233105466789,
-          "reranker": 0.59337366
+          "cosine": 0.6390853309086264,
+          "reranker": 0.6573185
         }
       ]
     },
@@ -1244,21 +1244,21 @@
           "title": "MDR Overview and Service Levels",
           "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
           "chapter": "11",
-          "cosine": 0.6507698713815365,
+          "cosine": 0.688592668427349,
           "reranker": 0.9940659
         },
         {
           "title": "Incident Handling, Service Portal, and Data Residency",
           "source_file": "11-mdr/03-incident-handling-and-service-portal.md",
           "chapter": "11",
-          "cosine": 0.5349471804594085,
+          "cosine": 0.6065642652939504,
           "reranker": 0.89805347
         },
         {
           "title": "Enabling the Acronis MDR Service",
           "source_file": "11-mdr/02-enabling-mdr-service.md",
           "chapter": "11",
-          "cosine": 0.5713874272011361,
+          "cosine": 0.6619160376837243,
           "reranker": 0.72496766
         }
       ]
@@ -1274,22 +1274,22 @@
           "title": "Enabling the Acronis MDR Service",
           "source_file": "11-mdr/02-enabling-mdr-service.md",
           "chapter": "11",
-          "cosine": 0.5802225374910231,
-          "reranker": 0.98327893
+          "cosine": 0.6758001849532249,
+          "reranker": 0.983343
+        },
+        {
+          "title": "EDR Software Requirements and Enabling",
+          "source_file": "10-edr-xdr/02-edr-software-requirements-and-enabling.md",
+          "chapter": "10",
+          "cosine": 0.6554450187352322,
+          "reranker": 0.56403846
         },
         {
           "title": "MDR Overview and Service Levels",
           "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
           "chapter": "11",
-          "cosine": 0.5955844166526557,
-          "reranker": 0.33491564
-        },
-        {
-          "title": "Investigating Incidents",
-          "source_file": "10-edr-xdr/07-investigating-incidents.md",
-          "chapter": "10",
-          "cosine": 0.5792080665578804,
-          "reranker": 0.078078166
+          "cosine": 0.6695320207159614,
+          "reranker": 0.33535084
         }
       ]
     },
@@ -1304,21 +1304,21 @@
           "title": "Software Management and Inventory",
           "source_file": "12-rmm/05-software-management-and-inventory.md",
           "chapter": "12",
-          "cosine": 0.5068012475967443,
-          "reranker": 0.85342485
+          "cosine": 0.6072956036471948,
+          "reranker": 0.85318035
         },
         {
           "title": "Patch installation, backup scanning, recently affected, and cloud application widgets",
           "source_file": "04-monitoring-dashboards/11-patch-backup-scanning-cloud-widgets.md",
           "chapter": "04",
-          "cosine": 0.5630013942718546,
-          "reranker": 0.45453268
+          "cosine": 0.5403305018145231,
+          "reranker": 0.45465374
         },
         {
           "title": "RMM Overview and Features",
           "source_file": "12-rmm/01-rmm-overview.md",
           "chapter": "12",
-          "cosine": 0.4964567868845753,
+          "cosine": 0.5184346878995115,
           "reranker": 0.3138402
         }
       ]
@@ -1334,22 +1334,22 @@
           "title": "Hardware Inventory",
           "source_file": "12-rmm/04-hardware-inventory.md",
           "chapter": "12",
-          "cosine": 0.6562408991147206,
-          "reranker": 0.7318259
+          "cosine": 0.7556763966986701,
+          "reranker": 0.7314424
         },
         {
           "title": "Supported protection features by OS - DLP, Management, Protection options, Monitor, Inventory",
           "source_file": "01-getting-started/10g-supported-features-dlp-management-inventory.md",
           "chapter": "01",
-          "cosine": 0.5149128590498229,
-          "reranker": 0.2812082
+          "cosine": 0.588570549147628,
+          "reranker": 0.28081354
         },
         {
           "title": "Software Management and Inventory",
           "source_file": "12-rmm/05-software-management-and-inventory.md",
           "chapter": "12",
-          "cosine": 0.5261437014427016,
-          "reranker": 0.073430054
+          "cosine": 0.6023355068864705,
+          "reranker": 0.07329728
         }
       ]
     },
@@ -1364,22 +1364,22 @@
           "title": "Remote Desktop and Remote Assistance",
           "source_file": "12-rmm/08-remote-desktop-and-assistance.md",
           "chapter": "12",
-          "cosine": 0.6185002511292773,
-          "reranker": 0.97433734
-        },
-        {
-          "title": "Remote sessions widget, smart protection, and threat feed",
-          "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
-          "chapter": "04",
-          "cosine": 0.5479130042713608,
-          "reranker": 0.59296125
+          "cosine": 0.669641276023313,
+          "reranker": 0.97423947
         },
         {
           "title": "RMM Overview and Features",
           "source_file": "12-rmm/01-rmm-overview.md",
           "chapter": "12",
-          "cosine": 0.5469906223109943,
-          "reranker": 0.47932088
+          "cosine": 0.5626022648035828,
+          "reranker": 0.4798236
+        },
+        {
+          "title": "The Activities tab",
+          "source_file": "04-monitoring-dashboards/14-activities-tab.md",
+          "chapter": "04",
+          "cosine": 0.5348931190562641,
+          "reranker": 0.05834584
         }
       ]
     },
@@ -1394,22 +1394,22 @@
           "title": "Monitoring Health and Performance of Workloads",
           "source_file": "12-rmm/09-monitoring-health-and-performance.md",
           "chapter": "12",
-          "cosine": 0.674062232617274,
+          "cosine": 0.6599414336576653,
           "reranker": 0.99698395
         },
         {
           "title": "Monitoring Plans, Alerts, and Response Actions",
           "source_file": "12-rmm/10-monitoring-plans-alerts-and-response-actions.md",
           "chapter": "12",
-          "cosine": 0.5608641432685721,
+          "cosine": 0.5871111362245408,
           "reranker": 0.8987666
         },
         {
-          "title": "Understanding plans",
-          "source_file": "03-working-with-plans/01-understanding-plans.md",
-          "chapter": "03",
-          "cosine": 0.539721667766571,
-          "reranker": 0.8824279
+          "title": "Wiping data, RMM integrations, CyberApp workloads, and linking workloads",
+          "source_file": "05-managing-workloads/11-wipe-rmm-cyberapp-linking.md",
+          "chapter": "05",
+          "cosine": 0.49447166722000024,
+          "reranker": 0.23353152
         }
       ]
     },
@@ -1424,22 +1424,22 @@
           "title": "Data Loss Prevention Overview and Data Flow Policy Creation",
           "source_file": "13-data-loss-prevention/01-dlp-overview-and-data-flow-policy.md",
           "chapter": "13",
-          "cosine": 0.6483244493104356,
+          "cosine": 0.6903157070749638,
           "reranker": 0.98421544
         },
         {
           "title": "Enabling DLP in Protection Plans and Advanced Settings",
           "source_file": "13-data-loss-prevention/04-enabling-dlp-protection-plans.md",
           "chapter": "13",
-          "cosine": 0.6265959739685059,
-          "reranker": 0.937783
+          "cosine": 0.6567642074997901,
+          "reranker": 0.937669
         },
         {
-          "title": "DLP Events, Dashboard Widgets, and Custom Sensitivity Categories",
-          "source_file": "13-data-loss-prevention/06-dlp-events-widgets-custom-categories.md",
+          "title": "Adjusting Permissions, Combining Rules, and Policy Review",
+          "source_file": "13-data-loss-prevention/02-permissions-combining-rules-review.md",
           "chapter": "13",
-          "cosine": 0.6142091751098633,
-          "reranker": 0.6591858
+          "cosine": 0.6410825802831598,
+          "reranker": 0.9164094
         }
       ]
     },
@@ -1454,22 +1454,22 @@
           "title": "Custom Content Detectors",
           "source_file": "13-data-loss-prevention/07-custom-content-detectors.md",
           "chapter": "13",
-          "cosine": 0.6710454225540161,
+          "cosine": 0.7446505053237313,
           "reranker": 0.80115914
         },
         {
           "title": "Sensitive Data Definitions",
           "source_file": "13-data-loss-prevention/05-sensitive-data-definitions.md",
           "chapter": "13",
-          "cosine": 0.5723497526437201,
-          "reranker": 0.04401865
+          "cosine": 0.6545276219157387,
+          "reranker": 0.04418332
         },
         {
-          "title": "DLP Events, Dashboard Widgets, and Custom Sensitivity Categories",
-          "source_file": "13-data-loss-prevention/06-dlp-events-widgets-custom-categories.md",
+          "title": "Data Loss Prevention Overview and Data Flow Policy Creation",
+          "source_file": "13-data-loss-prevention/01-dlp-overview-and-data-flow-policy.md",
           "chapter": "13",
-          "cosine": 0.5787582397460938,
-          "reranker": 0.0053225355
+          "cosine": 0.5643249903500067,
+          "reranker": 0.007725534
         }
       ]
     },
@@ -1484,22 +1484,22 @@
           "title": "Immutable Storage",
           "source_file": "14-additional-tools/02-immutable-storage.md",
           "chapter": "14",
-          "cosine": 0.7096977579953959,
-          "reranker": 0.8085212
+          "cosine": 0.7320055583717099,
+          "reranker": 0.8086723
         },
         {
-          "title": "Backup overview and cheat sheet",
-          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
-          "chapter": "06",
-          "cosine": 0.528075575828556,
-          "reranker": 0.13683891
+          "title": "Geo-Redundant Storage",
+          "source_file": "14-additional-tools/03-geo-redundant-storage.md",
+          "chapter": "14",
+          "cosine": 0.5537793535392901,
+          "reranker": 0.09518112
         },
         {
-          "title": "Selecting a backup destination",
-          "source_file": "06-backup-and-recovery/08-selecting-backup-destination.md",
+          "title": "Backup operations: storage, mounting volumes, validating, exporting, and deleting backups",
+          "source_file": "06-backup-and-recovery/23-backup-operations-storage-mounting-validation-export.md",
           "chapter": "06",
-          "cosine": 0.5768268956645204,
-          "reranker": 0.07303239
+          "cosine": 0.5827604705917978,
+          "reranker": 0.07723878
         }
       ]
     }
