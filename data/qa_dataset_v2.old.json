@@ -1,0 +1,602 @@
+[
+  {
+    "id": "qa_350_1",
+    "chunk_id": 350,
+    "chunk_title": "Activating the account",
+    "source_file": "01-getting-started/01-activating-account.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I activate my Acronis Cyber Protect account after receiving the invitation email?",
+    "type": "how_to",
+    "ideal_answer": "When you receive the invitation email, it will contain your login (username) and an **Activate account** button. Click the **Activate account** button, which will take you to an activation page where you must set a password that is at least nine characters long. If your administrator has enabled two-factor authentication, you will also be prompted to set that up during the activation process.",
+    "retrieved_sources": [
+      "01-getting-started/05-accessing-cyber-protection-service.md",
+      "11-mdr/02-enabling-mdr-service.md",
+      "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md"
+    ],
+    "correct_source_retrieved": false,
+    "cosine_score": 0.5987,
+    "reranker_score": 0.773,
+    "quality_score": 2,
+    "verified": false
+  },
+  {
+    "id": "qa_350_2",
+    "chunk_id": 350,
+    "chunk_title": "Activating the account",
+    "source_file": "01-getting-started/01-activating-account.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "What is the minimum password length required when activating an Acronis account?",
+    "type": "detail",
+    "ideal_answer": "When activating an Acronis account, the minimum password length required is **9 characters**. The activation email contains your login (username) and an \"Activate account\" button, which directs you to a page where you set your password. The password must be at least nine characters long, with additional password requirements detailed in the separate \"Password requirements\" documentation.",
+    "retrieved_sources": [
+      "01-getting-started/01-activating-account.md",
+      "03-working-with-plans/16-siem-data-format-cef-examples.md",
+      "11-mdr/02-enabling-mdr-service.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6525,
+    "reranker_score": 0.3726,
+    "quality_score": 4,
+    "verified": false
+  },
+  {
+    "id": "qa_351_1",
+    "chunk_id": 351,
+    "chunk_title": "Password requirements",
+    "source_file": "01-getting-started/02-password-requirements.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How can I create a strong password that meets Acronis Cyber Protect requirements?",
+    "type": "how_to",
+    "ideal_answer": "To create a strong password in Acronis Cyber Protect, add more characters to increase length, as longer passwords are stronger. While using different character types (digits, uppercase/lowercase letters, special characters) is not mandatory, mixing them produces stronger passwords that can be shorter. Avoid using your user name, login, email, or tenant name in the password, as these are always classified as weak. Also avoid common passwords, as they will be rejected. You cannot save a password classified as \"Weak,\" so aim for at least a \"Medium\" or \"Strong\" rating.",
+    "retrieved_sources": [
+      "01-getting-started/03-two-factor-authentication.md",
+      "14-additional-tools/01-compliance-mode.md",
+      "01-getting-started/02-password-requirements.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.4994,
+    "reranker_score": 0.172,
+    "quality_score": 3,
+    "verified": false
+  },
+  {
+    "id": "qa_351_2",
+    "chunk_id": 351,
+    "chunk_title": "Password requirements",
+    "source_file": "01-getting-started/02-password-requirements.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "What types of passwords are always classified as weak regardless of length?",
+    "type": "detail",
+    "ideal_answer": "Passwords that repeat the user name, the login, the user email, or the name of the tenant to which the user account belongs are always classified as weak. Additionally, most common passwords are also considered weak, regardless of their length.",
+    "retrieved_sources": [
+      "01-getting-started/02-password-requirements.md",
+      "05-managing-workloads/05-search-attributes-non-cloud.md",
+      "04-monitoring-dashboards/08-cyberfit-score-and-disk-health.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7085,
+    "reranker_score": 0.9797,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_352_1",
+    "chunk_id": 352,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "01-getting-started/03-two-factor-authentication.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I set up two-factor authentication for my Cyber Protect account?",
+    "type": "how_to",
+    "ideal_answer": "To set up 2FA for your Cyber Protect account, a prerequisite is that an administrator must first enable it for your organization. You then choose a second-factor device (mobile phone, tablet, laptop, or desktop) and install an authenticator app such as Microsoft Authenticator, Google Authenticator, or Twilio Authy. Next, you scan the QR code displayed in the Cyber Protect console using your authenticator app and enter the generated 6-digit code in the \"Set up two-factor authentication\" prompt. Once configured, you'll need to provide both your password (first factor) and the one-time code from the authenticator app (second factor) each time you log in.",
+    "retrieved_sources": [
+      "01-getting-started/03-two-factor-authentication.md",
+      "01-getting-started/01-activating-account.md",
+      "01-getting-started/05-accessing-cyber-protection-service.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7133,
+    "reranker_score": 0.9996,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_352_2",
+    "chunk_id": 352,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "01-getting-started/03-two-factor-authentication.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "What happens if the administrator enables 2FA while I am already logged in to the console?",
+    "type": "detail",
+    "ideal_answer": "If the administrator enables 2FA while you are already logged in to the Cyber Protect console, you will not be immediately affected—you will have to set up two-factor authentication when your current session expires. At that point, you will need to configure 2FA (install an authenticator app, scan the QR code, and enter the 6-digit code) before you can log in again.",
+    "retrieved_sources": [
+      "01-getting-started/03-two-factor-authentication.md",
+      "01-getting-started/01-activating-account.md",
+      "02-installing-deploying-agents/15-registration-of-workloads.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6607,
+    "reranker_score": 0.9497,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_353_1",
+    "chunk_id": 353,
+    "chunk_title": "Privacy settings",
+    "source_file": "01-getting-started/04-privacy-settings.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I enable or disable Google Analytics in Cyber Protect Cloud?",
+    "type": "how_to",
+    "ideal_answer": "To enable or disable Google Analytics in Cyber Protect Cloud, go to the Cyber Protect console, click **Manage account**, then click the account icon in the upper-right corner and select **My privacy settings**. In the **My privacy settings** window, find the **Google Analytics data collection** section and click **On** to enable or **Off** to disable it. You can change this setting at any time after your initial choice during the first launch. If you don't see the Google Analytics section, it means Google Analytics is not used in your country.",
+    "retrieved_sources": [
+      "01-getting-started/04-privacy-settings.md",
+      "05-managing-workloads/01-cyber-protect-console.md",
+      "09-genai-workflows/01-genai-protection-settings.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.8252,
+    "reranker_score": 0.9998,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_353_2",
+    "chunk_id": 353,
+    "chunk_title": "Privacy settings",
+    "source_file": "01-getting-started/04-privacy-settings.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "What determines whether a user is prompted for Google Analytics consent on initial launch?",
+    "type": "detail",
+    "ideal_answer": "Whether a user is prompted for Google Analytics consent on initial launch is determined by **the country in which they are using Cyber Protect Cloud** and **the Cyber Protect Cloud data center that provides services to them**. If Google Analytics is not used in the user's country, the Google Analytics section will not appear at all in the privacy settings.",
+    "retrieved_sources": [
+      "01-getting-started/04-privacy-settings.md",
+      "05-managing-workloads/04-search-attributes-cloud-to-cloud.md",
+      "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7105,
+    "reranker_score": 0.6553,
+    "quality_score": 4,
+    "verified": false
+  },
+  {
+    "id": "qa_354_1",
+    "chunk_id": 354,
+    "chunk_title": "Accessing the Cyber Protection service",
+    "source_file": "01-getting-started/05-accessing-cyber-protection-service.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I log in to the Cyber Protect console to access the Cyber Protection service?",
+    "type": "how_to",
+    "ideal_answer": "To log in to the Cyber Protect console, go to the Cyber Protection login page, type your login and click **Next**, then type your password and click **Next**. If you use more than one Cyber Protect Cloud service, you'll also need to click **Cyber Protection** to select it. You can switch between available services and Management Portal using the icon in the upper-right corner. Note that the session timeout is 24 hours for active sessions and 1 hour for idle sessions.",
+    "retrieved_sources": [
+      "01-getting-started/05-accessing-cyber-protection-service.md",
+      "05-managing-workloads/01-cyber-protect-console.md",
+      "02-installing-deploying-agents/15-registration-of-workloads.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.8367,
+    "reranker_score": 0.9996,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_354_2",
+    "chunk_id": 354,
+    "chunk_title": "Accessing the Cyber Protection service",
+    "source_file": "01-getting-started/05-accessing-cyber-protection-service.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "What are the session timeout periods for active and idle sessions in the Cyber Protect console?",
+    "type": "detail",
+    "ideal_answer": "The Cyber Protect console has a session timeout period of **24 hours for active sessions** and **1 hour for idle sessions**. These timeouts apply when logged into the console, whether accessed directly via the login page or through the Management Portal.",
+    "retrieved_sources": [
+      "01-getting-started/05-accessing-cyber-protection-service.md",
+      "05-managing-workloads/01-cyber-protect-console.md",
+      "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6763,
+    "reranker_score": 0.9977,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_355_1",
+    "chunk_id": 355,
+    "chunk_title": "Supported web browsers",
+    "source_file": "01-getting-started/06-supported-web-browsers.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I access the Cyber Protect console if my current browser isn't supported?",
+    "type": "how_to",
+    "ideal_answer": "To access the Cyber Protect console, you need to install one of the supported browsers: Google Chrome 109+, Mozilla Firefox 115+, Opera 95+ (Chromium 109), Microsoft Edge 109+, or Apple Safari 16+ (on macOS/iOS only). If you use an unsupported browser, the interface may display incorrectly or some functions may be unavailable. Note that mobile browsers are not supported at all, so you must use a desktop version of one of these browsers.",
+    "retrieved_sources": [
+      "01-getting-started/05-accessing-cyber-protection-service.md",
+      "01-getting-started/06-supported-web-browsers.md",
+      "05-managing-workloads/01-cyber-protect-console.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.763,
+    "reranker_score": 0.862,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_355_2",
+    "chunk_id": 355,
+    "chunk_title": "Supported web browsers",
+    "source_file": "01-getting-started/06-supported-web-browsers.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Are mobile browsers supported for accessing the Cyber Protect console?",
+    "type": "detail",
+    "ideal_answer": "No, mobile browsers are not supported for accessing the Cyber Protect console. The documentation explicitly states this as a note. The only exception is Apple Safari, which is supported when running on macOS and iOS operating systems (Safari 16 or later), but general mobile browsers are not supported. The console uses TLS 1.2 and is designed for specific desktop browser versions including Chrome 109+, Firefox 115+, Opera 95+, Edge 109+, and Safari 16+.",
+    "retrieved_sources": [
+      "01-getting-started/06-supported-web-browsers.md",
+      "06-backup-and-recovery/34-protecting-mobile-devices.md",
+      "01-getting-started/10g-supported-features-dlp-management-inventory.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7239,
+    "reranker_score": 0.9991,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_356_1",
+    "chunk_id": 356,
+    "chunk_title": "My Inbox overview",
+    "source_file": "01-getting-started/07-my-inbox-overview.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I use My Inbox to filter and manage notifications by importance or category?",
+    "type": "how_to",
+    "ideal_answer": "The My Inbox page lets you filter notifications using category, importance, and action filters. Each filter displays a counter next to it showing how many notifications fall under that specific filter, so you can quickly see the distribution of your messages. To manage notifications, click the notification counter on the My Inbox tab to reveal unread notifications, then use the category, importance, or action filters to narrow down what you need to address. The inbox receives various notification types including feature announcements, training availability, event invitations, certificate expiration reminders, promotions, maintenance notices, and surveys.",
+    "retrieved_sources": [
+      "01-getting-started/07-my-inbox-overview.md",
+      "01-getting-started/09-searching-my-inbox.md",
+      "01-getting-started/08-checking-notifications.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7522,
+    "reranker_score": 0.9778,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_356_2",
+    "chunk_id": 356,
+    "chunk_title": "My Inbox overview",
+    "source_file": "01-getting-started/07-my-inbox-overview.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Does the My Inbox notification counter update in real time or only on page refresh?",
+    "type": "detail",
+    "ideal_answer": "The documentation does not specify whether the My Inbox notification counter updates in real time or only on page refresh. It only states that the My Inbox tab features a notification counter displaying the number of unread notifications and that clicking on it reveals the unread notifications. No details about the refresh behavior or real-time update mechanism are provided in this documentation chunk.",
+    "retrieved_sources": [
+      "01-getting-started/07-my-inbox-overview.md",
+      "01-getting-started/08-checking-notifications.md",
+      "01-getting-started/09-searching-my-inbox.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7683,
+    "reranker_score": 0.5929,
+    "quality_score": 4,
+    "verified": false
+  },
+  {
+    "id": "qa_357_1",
+    "chunk_id": 357,
+    "chunk_title": "Checking your notifications",
+    "source_file": "01-getting-started/08-checking-notifications.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I check my notifications in the Cyber Protect Cloud console?",
+    "type": "how_to",
+    "ideal_answer": "To check your notifications in the Cyber Protect Cloud console, first sign in to the console. Then, in the navigation pane, select the **My Inbox** menu item. This will display your notification section where you can view your notifications.",
+    "retrieved_sources": [
+      "01-getting-started/08-checking-notifications.md",
+      "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
+      "05-managing-workloads/01-cyber-protect-console.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.8522,
+    "reranker_score": 0.9987,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_357_2",
+    "chunk_id": 357,
+    "chunk_title": "Checking your notifications",
+    "source_file": "01-getting-started/08-checking-notifications.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Do I need any specific role or permission level to access the My Inbox notification section?",
+    "type": "detail",
+    "ideal_answer": "Based on the provided documentation, there is no mention of any specific role or permission level required to access the My Inbox notification section. The documentation only states that you need to sign in to the Cyber Protect Cloud console and then select the **My Inbox** menu item in the navigation pane. This suggests that any authenticated user can access their own notifications, though the documentation simply does not address permission requirements explicitly.",
+    "retrieved_sources": [
+      "01-getting-started/07-my-inbox-overview.md",
+      "01-getting-started/08-checking-notifications.md",
+      "01-getting-started/09-searching-my-inbox.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7014,
+    "reranker_score": 0.4455,
+    "quality_score": 4,
+    "verified": false
+  },
+  {
+    "id": "qa_358_1",
+    "chunk_id": 358,
+    "chunk_title": "Searching My Inbox",
+    "source_file": "01-getting-started/09-searching-my-inbox.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I search for specific messages or filter only unread notifications in My Inbox?",
+    "type": "how_to",
+    "ideal_answer": "To filter only unread notifications, click the **My Inbox** menu item and switch the **Show only unread** toggle in the upper right corner. To search for specific messages, access **My Inbox** from the Cyber Protect Cloud dashboard, locate the **Search** bar at the top of the inbox view, enter relevant keywords or sender names, and press **Enter** to view matching results. The results will display all notifications that match your search criteria.",
+    "retrieved_sources": [
+      "01-getting-started/09-searching-my-inbox.md",
+      "01-getting-started/07-my-inbox-overview.md",
+      "06-backup-and-recovery/32-email-archiving.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.8557,
+    "reranker_score": 0.9985,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_358_2",
+    "chunk_id": 358,
+    "chunk_title": "Searching My Inbox",
+    "source_file": "01-getting-started/09-searching-my-inbox.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Can I search My Inbox by sender name in addition to keywords, and does the search support partial matches?",
+    "type": "detail",
+    "ideal_answer": "Yes, you can search My Inbox by both keywords and sender names. To do so, access My Inbox from the Cyber Protect Cloud dashboard, locate the Search bar at the top of the inbox view, and enter relevant keywords or sender names to filter messages. However, the documentation does not specify whether the search supports partial matches — it only states that results will show all notifications matching your search criteria, without detailing the matching behavior.",
+    "retrieved_sources": [
+      "01-getting-started/09-searching-my-inbox.md",
+      "01-getting-started/07-my-inbox-overview.md",
+      "05-managing-workloads/04-search-attributes-cloud-to-cloud.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7107,
+    "reranker_score": 0.892,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_359_1",
+    "chunk_id": 359,
+    "chunk_title": "Supported protection features by OS - Default plans, Forensic backup, CDP, Autodiscovery",
+    "source_file": "01-getting-started/10a-supported-features-protection-plans-and-backup.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I check which protection features are supported on my operating system before creating a protection plan?",
+    "type": "how_to",
+    "ideal_answer": "To check which protection features are supported on your operating system, refer to the \"Supported protection features by operating system\" documentation, which provides detailed feature-by-OS compatibility tables for Windows, Linux, and macOS. The key requirement is that a **protection agent must be installed** on the machine — features are **not available** for virtual machines backed up in agentless mode (e.g., via Agent for Hyper-V, Agent for VMware, Agent for Virtuozzo Hybrid Infrastructure, Agent for Scale Computing, or Agent for oVirt). For example, the **Default protection plans** (Remote Workers, Office Workers, Cyber Protect Essentials) and **Forensic backup** features (memory dump collection, running process snapshots, notarization) are currently supported **only on Windows**, with no Linux or macOS support. Additionally, for supported Windows versions specifically, you should consult the \"Supported operating systems and versions\" reference document, and note that some features may require **additional licensing** depending on your applied licensing model.",
+    "retrieved_sources": [
+      "01-getting-started/10a-supported-features-protection-plans-and-backup.md",
+      "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+      "08-antivirus-antimalware/01-supported-os-av-am.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6804,
+    "reranker_score": 0.6752,
+    "quality_score": 4,
+    "verified": false
+  },
+  {
+    "id": "qa_359_2",
+    "chunk_id": 359,
+    "chunk_title": "Supported protection features by OS - Default plans, Forensic backup, CDP, Autodiscovery",
+    "source_file": "01-getting-started/10a-supported-features-protection-plans-and-backup.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Are protection features available for virtual machines backed up in agentless mode, such as those using Agent for VMware or Hyper-V?",
+    "type": "detail",
+    "ideal_answer": "No, protection features are not available for virtual machines that are backed up in agentless mode. The documentation explicitly states this applies to machines backed up by Agent for Hyper-V, Agent for VMware, Agent for Virtuozzo Hybrid Infrastructure, Agent for Scale Computing, or Agent for oVirt. Protection features are only supported on machines that have a protection agent directly installed on them.",
+    "retrieved_sources": [
+      "01-getting-started/10a-supported-features-protection-plans-and-backup.md",
+      "02-installing-deploying-agents/02-agent-based-vs-agentless.md",
+      "05-managing-workloads/02-workloads-overview.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6601,
+    "reranker_score": 0.9997,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_360_1",
+    "chunk_id": 360,
+    "chunk_title": "Supported protection features by OS - Active Protection",
+    "source_file": "01-getting-started/10b-supported-features-active-protection.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I enable ransomware detection and automatic file recovery on my Linux servers using Active Protection?",
+    "type": "how_to",
+    "ideal_answer": "On Linux, **ransomware detection based on process behavior (AI-based)** and **automatic recovery of affected files from the local cache** are both supported features of Active Protection, so they should work on your Linux servers once Active Protection is enabled. However, note that several related features are **not available on Linux**, including process injection detection, self-defense for Acronis software/backup files, cryptomining detection, and server-side protection. Network folders on Linux are automatically treated as local folders, so they receive protection without additional configuration. For the full list of supported Linux OS versions, refer to the \"Supported operating systems for antivirus and antimalware protection\" section (p. 1062) of the documentation.",
+    "retrieved_sources": [
+      "08-antivirus-antimalware/04-av-am-protection-settings-part1.md",
+      "08-antivirus-antimalware/06-active-protection-cyber-backup-standard.md",
+      "01-getting-started/10b-supported-features-active-protection.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6863,
+    "reranker_score": 0.9258,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_360_2",
+    "chunk_id": 360,
+    "chunk_title": "Supported protection features by OS - Active Protection",
+    "source_file": "01-getting-started/10b-supported-features-active-protection.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Which Active Protection features are unavailable on macOS compared to Windows, and are there any partial support limitations?",
+    "type": "detail",
+    "ideal_answer": "Compared to Windows, macOS lacks support for **Process Injects detection**, **Self-defense for Acronis backup files**, **Cryptomining process detection based on process behavior**, **Server-side protection**, and **Zoom/Cisco Webex/Citrix Workspace/Microsoft Teams protection**. Additionally, macOS has a partial limitation for **Self-defense for Acronis software** — it only covers Active Protection and antimalware components, whereas Windows provides full self-defense coverage for all Acronis software. All other features like ransomware detection, automatic file recovery, trusted/blocked process management, external drives protection, and network folder protection are fully available on both platforms.",
+    "retrieved_sources": [
+      "01-getting-started/10c-supported-features-antivirus-antimalware.md",
+      "08-antivirus-antimalware/02-supported-features-per-platform.md",
+      "01-getting-started/10b-supported-features-active-protection.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6284,
+    "reranker_score": 0.9085,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_361_1",
+    "chunk_id": 361,
+    "chunk_title": "Supported protection features by OS - Antivirus and Antimalware",
+    "source_file": "01-getting-started/10c-supported-features-antivirus-antimalware.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I set up real-time antimalware protection with signature-based detection on a Linux machine?",
+    "type": "how_to",
+    "ideal_answer": "According to the documentation, **Advanced real-time antimalware protection with local signature-based detection is supported on Linux** (marked \"Yes\" in the feature matrix). However, the documentation chunk provided does not include specific setup steps or configuration instructions — it only confirms OS-level support. You would need to consult Acronis's detailed configuration guide for Linux to enable this feature. Note that while Linux supports real-time protection and signature-based detection, several related features like static analysis for PE files, scan of archive files, and process exclusions are **not available** on Linux, so your protection scope will be narrower than on Windows.",
+    "retrieved_sources": [
+      "08-antivirus-antimalware/04-av-am-protection-settings-part1.md",
+      "01-getting-started/10c-supported-features-antivirus-antimalware.md",
+      "08-antivirus-antimalware/05-av-am-protection-settings-part2.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6513,
+    "reranker_score": 0.9429,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_361_2",
+    "chunk_id": 361,
+    "chunk_title": "Supported protection features by OS - Antivirus and Antimalware",
+    "source_file": "01-getting-started/10c-supported-features-antivirus-antimalware.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "What antivirus scanning limitations exist on Linux, such as archive scanning and removable drive scanning support?",
+    "type": "detail",
+    "ideal_answer": "On Linux, archive file scanning and removable drive scanning are both **not supported** (marked \"No\" in the feature table). Additionally, Linux lacks the ability to scan only new and changed files, does not support network folder protection, and does not offer process exclusions. These are significant limitations compared to Windows and macOS, which support all of these scanning features. Linux does, however, support core capabilities like real-time antimalware protection, on-demand scanning, file/folder exclusions, and quarantine.",
+    "retrieved_sources": [
+      "01-getting-started/10c-supported-features-antivirus-antimalware.md",
+      "08-antivirus-antimalware/02-supported-features-per-platform.md",
+      "01-getting-started/10e-supported-features-data-protection-and-monitoring.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.707,
+    "reranker_score": 0.8565,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_362_1",
+    "chunk_id": 362,
+    "chunk_title": "Supported protection features by OS - EDR, Vulnerability assessment, Patch management",
+    "source_file": "01-getting-started/10d-supported-features-edr-vulnerability-patch.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I enable vulnerability assessment and patch management for third-party applications on my Windows endpoints?",
+    "type": "how_to",
+    "ideal_answer": "According to the documentation, vulnerability assessment for third-party applications is supported on Windows (and macOS, but not Linux). Patch management features—including patch auto-approval, auto-installation, patch testing, manual patch installation, and patch scheduling—are exclusively available on Windows, with no support on Linux or macOS. To enable these capabilities, you would configure them through your Acronis management console on Windows endpoints; for details on which specific third-party products are supported, refer to the \"Supported Microsoft and third-party products for vulnerability assessment\" section (p. 1278) of the documentation.",
+    "retrieved_sources": [
+      "12-rmm/01-rmm-overview.md",
+      "01-getting-started/10d-supported-features-edr-vulnerability-patch.md",
+      "12-rmm/06-vulnerability-assessment-and-patching.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6755,
+    "reranker_score": 0.9252,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_362_2",
+    "chunk_id": 362,
+    "chunk_title": "Supported protection features by OS - EDR, Vulnerability assessment, Patch management",
+    "source_file": "01-getting-started/10d-supported-features-edr-vulnerability-patch.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Does macOS support extended monitoring for EDR, and is Linux vulnerability assessment limited to OS-native applications only?",
+    "type": "detail",
+    "ideal_answer": "macOS does **not** support extended monitoring for EDR — the table explicitly shows \"No\" for macOS under Extended monitoring. Linux vulnerability assessment is indeed limited to OS-native applications only; the table shows \"No\" for 3rd-party application vulnerability assessment on Linux, and additionally notes that Linux vulnerability assessment depends on the availability of official security advisories for the specific distribution.",
+    "retrieved_sources": [
+      "01-getting-started/10d-supported-features-edr-vulnerability-patch.md",
+      "10-edr-xdr/02-edr-software-requirements-and-enabling.md",
+      "12-rmm/06-vulnerability-assessment-and-patching.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7803,
+    "reranker_score": 0.9969,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_363_1",
+    "chunk_id": 363,
+    "chunk_title": "Supported protection features by OS - Data protection, Disk health, CPOC alerts, Backup scanning",
+    "source_file": "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I configure the Data Protection Map to scan for and protect unprotected files on my Windows machines?",
+    "type": "how_to",
+    "ideal_answer": "The Data Protection Map is available **only on Windows** and includes three key capabilities: adjustable definition of important files, scanning machines to find unprotected files, and an unprotected locations overview. Once unprotected files are identified, you can use the **\"Protect all files\"** action directly from the Data Protection Map widget to start protecting them. For supported Windows versions, refer to the \"Supported operating systems and versions\" documentation. Note that these features are **not available on Linux or macOS**.",
+    "retrieved_sources": [
+      "04-monitoring-dashboards/10-data-protection-and-vulnerability-widgets.md",
+      "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+      "03-working-with-plans/05-protection-plans-and-modules.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6798,
+    "reranker_score": 0.7879,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_363_2",
+    "chunk_id": 363,
+    "chunk_title": "Supported protection features by OS - Data protection, Disk health, CPOC alerts, Backup scanning",
+    "source_file": "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Are Data Protection Map and AI-based disk health monitoring available on Linux or macOS, or are they Windows-only features?",
+    "type": "detail",
+    "ideal_answer": "Data Protection Map features (adjustable definition of important files, scanning for unprotected files, unprotected locations overview, and the \"Protect all files\" action) and AI-based disk health monitoring (HDD and SSD health control) are **Windows-only features**. Both feature sets show \"No\" for Linux and macOS across all sub-features. The documentation directs users to the \"Supported operating systems and versions\" page for the specific Windows versions that support these capabilities.",
+    "retrieved_sources": [
+      "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+      "01-getting-started/10g-supported-features-dlp-management-inventory.md",
+      "01-getting-started/10a-supported-features-protection-plans-and-backup.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.7677,
+    "reranker_score": 0.9936,
+    "quality_score": 5,
+    "verified": false
+  },
+  {
+    "id": "qa_364_1",
+    "chunk_id": 364,
+    "chunk_title": "Supported protection features by OS - Safe recovery, Remote desktop, CyberFit Score",
+    "source_file": "01-getting-started/10f-supported-features-recovery-remote-desktop-cyberfit.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "How do I perform a safe recovery with antimalware scanning enabled during the backup restoration process?",
+    "type": "how_to",
+    "ideal_answer": "Safe recovery with antimalware scanning is available **only on Windows** — it is not supported on Linux or macOS. During the recovery process, the **Antivirus and Antimalware protection** feature automatically scans the backup for malware as part of the restoration. This feature also supports **safe recovery for encrypted backups**, again only on Windows. To use it, you need a supported Windows version as listed in the \"Supported operating systems and versions\" documentation. Ensure that the Antivirus and Antimalware protection component is enabled in your protection plan so that scanning is active during recovery.",
+    "retrieved_sources": [
+      "08-antivirus-antimalware/12-antimalware-scan-of-backups.md",
+      "06-backup-and-recovery/29-recovery-options.md",
+      "03-working-with-plans/12-backup-scanning-and-cloud-apps.md"
+    ],
+    "correct_source_retrieved": false,
+    "cosine_score": 0.6878,
+    "reranker_score": 0.918,
+    "quality_score": 2,
+    "verified": false
+  },
+  {
+    "id": "qa_364_2",
+    "chunk_id": 364,
+    "chunk_title": "Supported protection features by OS - Safe recovery, Remote desktop, CyberFit Score",
+    "source_file": "01-getting-started/10f-supported-features-recovery-remote-desktop-cyberfit.md",
+    "section": "Getting Started with Cyber Protection",
+    "question": "Which remote desktop connection methods are supported on Linux, and is web client access limited to Windows only?",
+    "type": "detail",
+    "ideal_answer": "On Linux, the supported remote desktop connection methods are **NEAR**, **Quick Assist**, **Remote assistance**, **File transfer**, and **Screenshot transmission**. RDP, Apple Screen Sharing, and web client are **not** supported on Linux. Yes, **web client access is limited to Windows only** — it is not available on Linux or macOS.",
+    "retrieved_sources": [
+      "01-getting-started/10f-supported-features-recovery-remote-desktop-cyberfit.md",
+      "12-rmm/08-remote-desktop-and-assistance.md",
+      "01-getting-started/10g-supported-features-dlp-management-inventory.md"
+    ],
+    "correct_source_retrieved": true,
+    "cosine_score": 0.6323,
+    "reranker_score": 0.736,
+    "quality_score": 5,
+    "verified": false
+  }
+]

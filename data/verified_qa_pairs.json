@@ -1,0 +1,712 @@
+[
+  {
+    "qa_id": "qa_353_how_to",
+    "chunk_id": 353,
+    "source_file": "01-getting-started/04-privacy-settings.md",
+    "question": "How do I enable or disable Google Analytics in Cyber Protect Cloud?",
+    "answer": "In the Cyber Protect console, click 'Manage account', then click the account icon in the upper-right corner and select 'My privacy settings'. In the 'Google Analytics data collection' section, click 'On' to enable or 'Off' to disable Google Analytics. You can change this setting at any time after your initial choice.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_355_how_to",
+    "chunk_id": 355,
+    "source_file": "01-getting-started/06-supported-web-browsers.md",
+    "question": "Which web browsers can I use to access the Cyber Protect console?",
+    "answer": "The Cyber Protect console supports Google Chrome 109+, Mozilla Firefox 115+, Opera 95+ (Chromium 109), Microsoft Edge 109+, and Apple Safari 16+ (on macOS and iOS only). The console uses the TLS 1.2 protocol. Mobile browsers are not supported.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_356_how_to",
+    "chunk_id": 356,
+    "source_file": "01-getting-started/07-my-inbox-overview.md",
+    "question": "How do I check and manage my unread notifications in Acronis Cyber Protect Cloud?",
+    "answer": "Navigate to the My Inbox page, which serves as your central hub for communications. The My Inbox tab features a notification counter displaying the number of unread notifications. Click on this counter to reveal your unread notifications and track pending items. You can also use filters by category, importance, and action to organize notifications, with counters next to each filter showing how many notifications fall under each category.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_360_how_to",
+    "chunk_id": 360,
+    "source_file": "01-getting-started/10b-supported-features-active-protection.md",
+    "question": "Which Active Protection features are available on all three operating systems (Windows, Linux, and macOS)?",
+    "answer": "Three Active Protection features are supported across Windows, Linux, and macOS: automatic recovery of affected files from the local cache, processes/folders exclusions, and ransomware detection based on process behavior (AI-based).",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_363_detail",
+    "chunk_id": 363,
+    "source_file": "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+    "question": "Can I use AI-based disk health monitoring or CPOC smart protection plans on Linux or macOS?",
+    "answer": "No. AI-based HDD and SSD health control, as well as CPOC-based smart protection plan features (Threat feed and Remediation wizard), are supported only on Windows. Neither Linux nor macOS supports these features.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_364_detail",
+    "chunk_id": 364,
+    "source_file": "01-getting-started/10f-supported-features-recovery-remote-desktop-cyberfit.md",
+    "question": "Is Safe recovery with antimalware scanning supported on Linux or macOS during the recovery process?",
+    "answer": "No. Both antimalware scanning during recovery and safe recovery for encrypted backups are supported only on Windows. Linux and macOS do not support either Safe recovery feature.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_365_how_to",
+    "chunk_id": 365,
+    "source_file": "01-getting-started/10g-supported-features-dlp-management-inventory.md",
+    "question": "Which data loss prevention features are supported on macOS in Acronis Cyber Protect Cloud?",
+    "answer": "On macOS, Device Control is supported on Macs with Intel processors running macOS 10.15 and later or macOS 11.2.3 or later, but it is not supported on ARM-based Apple silicon processors such as Apple M1/M2. The full Data Loss Prevention (DLP) feature is not supported on macOS at all — it is only available on Windows.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_366_detail",
+    "chunk_id": 366,
+    "source_file": "01-getting-started/11-supported-operating-systems-and-versions.md",
+    "question": "What is the minimum supported Windows Server version for Acronis Cyber Protect Cloud?",
+    "answer": "The minimum supported Windows Server version is Windows Server 2008 R2 Service Pack 1. Any later versions are also supported unless stated otherwise for a specific feature set.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_368_detail",
+    "chunk_id": 368,
+    "source_file": "02-installing-deploying-agents/02-agent-based-vs-agentless.md",
+    "question": "Is agentless backup available for physical machines, and what are its resource advantages?",
+    "answer": "No, agentless backup is not available for physical machines — it is only supported by some virtualization platforms. Its resource advantage is that a single dedicated agent uses less CPU and RAM than installing individual agents on each virtual machine in the environment. It also backs up VMs at the hypervisor level, regardless of guest operating systems.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_371_detail",
+    "chunk_id": 371,
+    "source_file": "02-installing-deploying-agents/05-downloading-agents.md",
+    "question": "What special step is required when downloading the Cyber Protect agent for Macs with Apple silicon processors (M1, M2)?",
+    "answer": "When downloading for Macs with Apple silicon processors such as M1 and M2, you must click Cancel on the initial Save As dialog, then in the Add Mac panel that opens, click Download ARM installer to get the correct ARM-compatible installation file.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_372_detail",
+    "chunk_id": 372,
+    "source_file": "02-installing-deploying-agents/06-linux-packages-required.md",
+    "question": "When is the libelf-dev or elfutils-libelf-devel library required for Cyber Protection agent installation on Linux?",
+    "answer": "The `libelf-dev`, `libelf-devel`, or `elfutils-libelf-devel` libraries are required for building kernels starting with version 4.15 that are configured with `CONFIG_UNWINDER_ORC=y`. For some distributions, such as Fedora 28, these libraries need to be installed separately from the kernel headers.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_373_detail",
+    "chunk_id": 373,
+    "source_file": "02-installing-deploying-agents/07-proxy-server-settings.md",
+    "question": "Are man-in-the-middle proxy servers supported by Acronis protection agents, and what proxy type is required?",
+    "answer": "Man-in-the-middle proxies are not supported. The protection agents require an HTTP/HTTPS proxy server that works through an HTTP tunnel without scanning or interfering with the HTTP traffic. Additionally, proxy settings must be configured during or before agent installation, since the agent registers itself in the cloud during installation.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_378_detail",
+    "chunk_id": 378,
+    "source_file": "02-installing-deploying-agents/12-installing-agents-windows-cli.md",
+    "question": "What are the two methods for specifying installation parameters when using an MSI file for Acronis agent installation on Windows?",
+    "answer": "When using an MSI file extracted from the setup program, you can specify installation parameters in two ways: by using an MST file, or by specifying them directly on the command line. This differs from the EXE method, which does not require extracting installation packages, MSI, or MST files in advance.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_384_detail",
+    "chunk_id": 384,
+    "source_file": "02-installing-deploying-agents/18-updating-agents-manually.md",
+    "question": "Which agent versions can only be updated via the Cyber Protect console and cannot use manual installation files?",
+    "answer": "Agent for VMware (Virtual Appliance) version 12.5.23094 and later, and Agent for Virtuozzo Hybrid Infrastructure (Virtual Appliance) version 12.5.23094 and later must be updated only through the Cyber Protect console. For agent versions earlier than the console-supported thresholds, you must download and install the newest version manually by navigating to All devices > Add to find download links.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_386_detail",
+    "chunk_id": 386,
+    "source_file": "02-installing-deploying-agents/20-deploying-agents-group-policy.md",
+    "question": "What are the prerequisites for deploying Acronis agents through Group Policy, and what Active Directory version is required?",
+    "answer": "The prerequisites are: an Active Directory domain with a domain controller running Microsoft Windows Server 2003 or later, membership in the Domain Admins group, and the 'All agents for Windows' setup program downloaded from the Cyber Protect console (available via the account icon > Downloads, or from the Add devices pane). The shared folder containing installation packages must be accessible to domain users, for example by using the default sharing settings for Everyone.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_388_detail",
+    "chunk_id": 388,
+    "source_file": "02-installing-deploying-agents/22-deploying-scale-computing-va.md",
+    "question": "When should I increase the default resource allocation for the Scale Computing HC3 virtual appliance, and what are the recommended settings?",
+    "answer": "The default allocation is 2 vCPUs and 4 GiB of RAM, which is sufficient for most operations. However, you should increase resources to 4 vCPUs and 8 GiB of RAM in more demanding cases, such as when backup traffic exceeds 100 MB per second (in 10-Gigabit networks) or when simultaneously backing up multiple virtual machines with large hard drives of 500 GB or more. This helps improve backup performance and avoid failures related to insufficient RAM.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_396_how_to",
+    "chunk_id": 396,
+    "source_file": "02-installing-deploying-agents/30-remote-agent-installation.md",
+    "question": "How do I disable UAC and UAC remote restrictions to allow remote agent installation on a Windows machine that is not part of an Active Directory domain?",
+    "answer": "To disable UAC, you can either go to Control Panel > User Accounts > Change User Account Control Settings and move the slider to 'Never notify' (pre-Windows 8), or set the EnableLUA registry value to 0 at HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System and restart. To disable UAC remote restrictions, set LocalAccountTokenFilterPolicy to 1 (DWORD 32-bit) at the same registry path, creating it if it doesn't exist. For security, revert both settings after finishing the management operation.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_400_how_to",
+    "chunk_id": 400,
+    "source_file": "03-working-with-plans/01-understanding-plans.md",
+    "question": "How do I create and manage different types of plans in Acronis Cyber Protect Cloud?",
+    "answer": "Plans are created and managed from the Management tab in the Cyber Protect console. A plan is a set of configurations and rules applied to one or several workloads for goals like backup, malware protection, or performance monitoring. Each plan consists of modules that can be enabled or disabled, with each module containing settings for specific functionality. Available plan types include Protection, Remote management, Scripting, Monitoring, Software deployment, Cloud applications backup, Archiving, Backup scanning, and SIEM forwarding plans.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_402_how_to",
+    "chunk_id": 402,
+    "source_file": "03-working-with-plans/03-default-and-favorite-plans.md",
+    "question": "How do I set a protection plan as the default plan in Acronis Cyber Protect Cloud?",
+    "answer": "Go to the Protection plans screen, select the plan you want to set as default, and click Details. Then click the ellipsis icon and select 'Set as default'. Confirm by clicking 'Set' in the confirmation window. Note that only one default plan per tenant per plan type is allowed, and this feature is not available for users with the Read-only administrator role.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_403_detail",
+    "chunk_id": 403,
+    "source_file": "03-working-with-plans/04-plans-at-different-admin-levels.md",
+    "question": "What access does a customer-level administrator have to plans applied by a partner administrator?",
+    "answer": "A customer-level administrator has read-only access to partner plans applied to workloads of their customer or unit. They cannot delete, edit, or revoke these partner-applied plans. However, they have full access to their own customer plans (including plans in units) and full access to unit plans they own.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_404_how_to",
+    "chunk_id": 404,
+    "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
+    "question": "How do I create a protection plan in Acronis Cyber Protect Cloud to protect my workloads?",
+    "answer": "To protect your data, you must create a protection plan and then apply it to your workloads. A protection plan consists of different protection modules. You enable the modules you need (such as Backup, Antivirus and Antimalware, Patch management, etc.) and configure their settings to create a plan that meets your specific needs.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_405_detail",
+    "chunk_id": 405,
+    "source_file": "03-working-with-plans/06-actions-with-protection-plans.md",
+    "question": "What is the difference between disabling and revoking a protection plan in Acronis Cyber Protect Cloud?",
+    "answer": "A disabled plan remains applied to the workload but will not run; you can quickly restore protection by re-enabling it. A revoked plan is completely removed from the workload, and to restore protection you must find the plan by name and re-apply it manually.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_411_how_to",
+    "chunk_id": 411,
+    "source_file": "03-working-with-plans/12-backup-scanning-and-cloud-apps.md",
+    "question": "How do I create a backup scanning plan to scan my backups for malware in Acronis Cyber Protect Cloud?",
+    "answer": "Go to Management > Backup scanning in the Cyber Protect console, click Create plan in the Actions pane, optionally rename the plan, then click Specify under Backups to scan to select locations or individual archives. If the selected archives are encrypted, enable the Encryption toggle and enter the password. Click Create to finish. The cloud agent will automatically scan the selected archives once an hour.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_414_detail",
+    "chunk_id": 414,
+    "source_file": "03-working-with-plans/15-siem-forwarding-methods.md",
+    "question": "Can I use the Syslog forwarding method with a Windows writer device in Acronis SIEM forwarding?",
+    "answer": "No, the Syslog forwarding method is only applicable with a Linux writer device. If you need SIEM forwarding on a Windows device, you must use the Files forwarding method. To review forwarded Syslog data on Linux, you can execute 'cat /var/log/syslog' or 'cat /var/log/messages'.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_420_detail",
+    "chunk_id": 420,
+    "source_file": "04-monitoring-dashboards/04-alert-types-disaster-recovery.md",
+    "question": "What happens when the hard storage quota for Disaster Recovery is exceeded in Acronis Cyber Protect Cloud?",
+    "answer": "When the hard quota for Disaster Recovery storage is exceeded, it is not possible to create primary and recovery servers, or to add or extend disks. If the overage is exceeded, you cannot perform a failover or start a stopped server. However, running servers continue to run. You must contact your partner to increase the assigned quota.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_421_how_to",
+    "chunk_id": 421,
+    "source_file": "04-monitoring-dashboards/05-alert-types-antimalware-url-licensing-edr.md",
+    "question": "How do I resolve a 'Suspicious activity is detected' ransomware alert in Acronis Cyber Protect Cloud?",
+    "answer": "You should manually dismiss and deactivate the alert from the console. Depending on your Active Protection plan settings, the malicious process may be stopped, changes reverted, or no actions taken automatically. If the detected process is legitimate (a false positive), you should add it to the 'Trusted processes' list in the Active Protection plan.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_427_detail",
+    "chunk_id": 427,
+    "source_file": "04-monitoring-dashboards/11-patch-backup-scanning-cloud-widgets.md",
+    "question": "What columns are displayed in the Patch installation history widget?",
+    "answer": "The Patch installation history widget displays columns for machine name, update name, version, severity, stability, protection plan, size, approval status, release date, and installation status.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_428_detail",
+    "chunk_id": 428,
+    "source_file": "04-monitoring-dashboards/12-software-and-hardware-widgets.md",
+    "question": "What is the maximum number of filter values you can select in the Software inventory widget's filters?",
+    "answer": "In the Software inventory widget, you can select up to 20 values in the Machine name, Software name, and Vendor name filters. The same 20-value limit applies to the Device name filter in the Software overview widget.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_432_how_to",
+    "chunk_id": 432,
+    "source_file": "04-monitoring-dashboards/16-reports.md",
+    "question": "How can I download or share a report about operations in Acronis Cyber Protect Cloud?",
+    "answer": "You can download a report or send it via email in XLSX (Excel) or PDF format. You can use the default reports provided or create a custom report. The report can include any set of dashboard widgets showing summary information for the entire company.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_435_detail",
+    "chunk_id": 435,
+    "source_file": "05-managing-workloads/03-device-groups.md",
+    "question": "Can a workload belong to multiple device groups, and can it still have individual protection plans applied?",
+    "answer": "Yes, a workload can be a member of more than one device group. Additionally, a workload included in a device group can still be protected by individual plans. However, a group plan is applied to the group as a whole and cannot be revoked from an individual member of the group.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_438_how_to",
+    "chunk_id": 438,
+    "source_file": "05-managing-workloads/06-editing-deleting-groups-plans.md",
+    "question": "How do I edit a dynamic group in the Cyber Protect console by changing its search query?",
+    "answer": "Navigate to Devices, find and select the dynamic group you want to edit, then click the gear icon next to the group name and select Edit (or use the Actions pane). Modify the search attributes, values, or operators in the search query and click Search. Finally, click Save next to the search field to apply your changes.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_439_how_to",
+    "chunk_id": 439,
+    "source_file": "05-managing-workloads/07-device-control-overview.md",
+    "question": "How do I enable device control on my Windows workloads in Cyber Protect Cloud?",
+    "answer": "To enable device control on Windows machines, you need to enable the Device control module in the protection plan assigned to your workloads. The Agent for Data Loss Prevention will then be installed automatically on the protected workloads. The device control module is available in Cyber Protect Essentials, Standard, and Advanced editions licensed per workload.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_439_detail",
+    "chunk_id": 439,
+    "source_file": "05-managing-workloads/07-device-control-overview.md",
+    "question": "Does the Acronis Device Control module support Apple silicon (ARM-based) Macs?",
+    "answer": "No, the Agent for Data Loss Prevention for macOS supports only x64 processors. Apple silicon ARM-based processors are not supported. Supported macOS versions range from macOS 10.15 (Catalina) through macOS 15 (Sequoia), but only on x64 hardware.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_443_detail",
+    "chunk_id": 443,
+    "source_file": "05-managing-workloads/11-wipe-rmm-cyberapp-linking.md",
+    "question": "What are the requirements and limitations for using the remote wipe feature on a managed workload?",
+    "answer": "Remote wipe requires the Advanced Security pack and is only available for machines running Windows 10 and later. The target machine must be turned on and connected to the Internet to receive the wipe command; if it is offline, the Wipe data option will be inaccessible. Additionally, you can only wipe data from one machine at a time. By default, the doWipeProtected function is used, falling back to doWipe if unavailable.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_447_detail",
+    "chunk_id": 447,
+    "source_file": "05-managing-workloads/15-cyber-scripting-plans-quickrun.md",
+    "question": "What are the possible statuses for scripting plans and how are they visually represented?",
+    "answer": "Scripting plans use a clickable color-coded bar showing seven statuses: Running (Blue), Checking for compatibility (Dark gray), Disabled (Light gray), OK (Green), Critical alert (Red), Error (Orange), and Warning (Yellow). Clicking the bar shows which status a plan has and on how many workloads, and each individual status is also clickable for further details.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_452_detail",
+    "chunk_id": 452,
+    "source_file": "06-backup-and-recovery/05-dell-emc-file-systems-logical-volumes.md",
+    "question": "What happens to backups on a Dell EMC Data Domain storage when retention lock is enabled and retention rules in the protection plan try to delete them?",
+    "answer": "When retention lock is enabled, backups on the storage will not be deleted by the retention rules in the protection plan, and no error will be shown. The backups will only be deleted after the retention lock expires and the retention rules are applied again. Also note that Dell EMC Data Domain storages with enabled retention lock are not supported by Agent for Mac.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_453_how_to",
+    "chunk_id": 453,
+    "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
+    "question": "How do I create a new protection plan with the Backup module in Acronis Cyber Protect Cloud?",
+    "answer": "To create a protection plan with the Backup module: 1) Select the machines you want to back up, 2) Click 'Protect', 3) Click 'Create plan', enable the Backup module and unroll settings, 4) Optionally modify the plan name and backup parameters, 5) Optionally change backup options, and 6) Click 'Create'. You can configure settings like what to back up, where to back up, schedule, retention, encryption, and more.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_456_detail",
+    "chunk_id": 456,
+    "source_file": "06-backup-and-recovery/09-continuous-data-protection-cdp.md",
+    "question": "What are the limitations of CDP regarding file systems, folder types, and backup deletion?",
+    "answer": "CDP is supported only on NTFS file systems and only for local folders — network folders cannot be selected. It is not compatible with the Application backup option and cannot be enabled on machines that have Application backup enabled. Additionally, CDP prevents the deletion of backup archives; to manually delete a CDP-enabled backup, you must first revoke or delete the corresponding protection plan.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_457_detail",
+    "chunk_id": 457,
+    "source_file": "06-backup-and-recovery/10-backup-schedule-schemes-types.md",
+    "question": "Can I switch from the 'Always incremental (single-file)' backup scheme to another scheme in an existing protection plan?",
+    "answer": "No, you cannot switch between 'Always incremental (single-file)' and other backup schemes within an existing protection plan. This is because 'Always incremental (single-file)' uses a single-file format (.tibx), while other schemes use a multi-file format. If you need to change between these formats, you must create a new protection plan.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_460_how_to",
+    "chunk_id": 460,
+    "source_file": "06-backup-and-recovery/13-backup-options-overview.md",
+    "question": "How do I change the default backup options in Acronis Cyber Protect Cloud?",
+    "answer": "To change a default backup option value: 1) Sign in to the Cyber Protect console as the appropriate administrator or user. 2) Click Settings > System settings. 3) Expand the Default backup options section. 4) Select the option and make the necessary changes. 5) Click Save. The new value will be used by default in all protection plans created at that level after the change.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_464_how_to",
+    "chunk_id": 464,
+    "source_file": "06-backup-and-recovery/17-backup-options-prepost-commands-scheduling-sector-splitting-vss.md",
+    "question": "How do I set up a command to run automatically before my backup starts in Acronis Cyber Protect Cloud?",
+    "answer": "To set up a pre-backup command, enable the 'Execute a command before the backup' switch. Then type a command or browse to a batch file in the 'Command or batch file path on the machine with an agent' field. For PowerShell commands, pass them as an argument to powershell.exe (e.g., powershell.exe -C \"command\"). Optionally specify a working directory and arguments, and select options like 'Fail the backup if the command execution fails' or 'Do not back up until the command execution is complete', then click Done.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_465_how_to",
+    "chunk_id": 465,
+    "source_file": "06-backup-and-recovery/18-recovery-overview-cross-platform.md",
+    "question": "How can I recover a physical Mac machine using Acronis Cyber Protect?",
+    "answer": "Physical Mac machines can only be recovered using bootable media. Unlike Windows or Linux physical machines, Mac recovery is not supported through the Cyber Protect console. Additionally, due to System Integrity Protection (SIP) starting with macOS 10.11 El Capitan, recovery under bootable media is recommended if you need to overwrite protected system files.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_468_detail",
+    "chunk_id": 468,
+    "source_file": "06-backup-and-recovery/21-bootable-media-recovery-file-recovery.md",
+    "question": "Can I recover a disk-level backup from an Intel-based Mac to an Apple silicon Mac using bootable media?",
+    "answer": "No, you cannot recover disk-level backups of Intel-based Macs to Macs that use Apple silicon processors, and vice-versa. However, you can still recover files and folders between the two architectures. Additionally, when recovering APFS-formatted disks/volumes to a non-original Mac or bare metal, you must manually re-create the original disk configuration using Disk Utility before proceeding.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_473_detail",
+    "chunk_id": 473,
+    "source_file": "06-backup-and-recovery/26-recovery-virtual-machines.md",
+    "question": "Can I recover a macOS virtual machine to a Hyper-V host?",
+    "answer": "No, you cannot recover macOS virtual machines to Hyper-V hosts because Hyper-V does not support macOS. However, you can recover macOS virtual machines to a VMware host that is installed on Mac hardware.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_480_detail",
+    "chunk_id": 480,
+    "source_file": "06-backup-and-recovery/33-protecting-microsoft-applications.md",
+    "question": "What Exchange Server versions support mailbox backup, and what protocol does it use?",
+    "answer": "Mailbox backup is supported for Microsoft Exchange Server 2010 Service Pack 1 (SP1) and later. It uses the Exchange Web Services (EWS) protocol to back up individual mailboxes. The backed-up mailboxes or mailbox items can be recovered to a live Exchange Server or to Microsoft 365.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_486_detail",
+    "chunk_id": 486,
+    "source_file": "06-backup-and-recovery/39-web-hosting-instant-restore-vm-operations.md",
+    "question": "What happens to the Web hosting servers quota when it is exceeded or disabled for a server running cPanel?",
+    "answer": "If the Web hosting servers quota is disabled or exceeded, physical servers running supported control panels (like cPanel) fall back to the general 'Servers' quota, while virtual servers fall back to the 'Virtual machines' quota. This applies to servers running Plesk, cPanel, DirectAdmin, VirtualMin, or ISPManager.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_488_detail",
+    "chunk_id": 488,
+    "source_file": "07-disaster-recovery/01-dr-overview-requirements.md",
+    "question": "Can I have multiple DR site locations for the same customer tenant in Acronis Disaster Recovery?",
+    "answer": "No, only one DR site location is supported per customer tenant. If you want to change the location of your DR site, you must first remove the existing configuration and then create a new one with the new location. The DR site can be in Acronis Cyber Protect Cloud or Microsoft Azure, depending on enabled offering items.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_489_detail",
+    "chunk_id": 489,
+    "source_file": "07-disaster-recovery/02-dr-workflow-protection-plan.md",
+    "question": "Under what conditions does the Disaster Recovery service automatically delete a customer's cloud environment?",
+    "answer": "A customer tenant is considered inactive and its cloud environment is automatically deleted if there are no cloud servers currently and none existed in the last seven days, AND the 'VPN access to local site' option is either disabled or there is no established Site-to-site OpenVPN tunnel and no data reported from the VPN appliance for the last 7 days. For inactive tenants, the system deletes the VPN gateway and all cloud resources and unregisters the VPN appliance, rolling the tenant back to its state before connectivity was configured.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_490_detail",
+    "chunk_id": 490,
+    "source_file": "07-disaster-recovery/03-connectivity-cloud-only-s2s.md",
+    "question": "What are the key differences between Cloud-only mode and Site-to-site Open VPN in Acronis Disaster Recovery?",
+    "answer": "Cloud-only mode does not require a VPN appliance and treats local and cloud networks as independent, making it suitable for full site failover or independent servers that don't need local site communication. Site-to-site Open VPN requires a VPN appliance on the local site, extends your networks to the cloud while retaining IP addresses via a secure VPN tunnel, and is suitable for tightly dependent servers. Cloud-only servers are accessible via point-to-site VPN and public IPs, while Site-to-site also allows access through the local network.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_492_how_to",
+    "chunk_id": 492,
+    "source_file": "07-disaster-recovery/05-cloud-servers.md",
+    "question": "How do I reassign IP addresses for cloud servers after switching VPN connectivity types in Acronis Disaster Recovery?",
+    "answer": "First, reassign the cloud network IP by going to the Connectivity tab, clicking the cloud network's IP address, clicking Edit in the Network pop-up, typing the new network address and mask, and clicking Done. Then reassign each cloud server's IP by clicking the server's IP in the Connectivity tab, selecting Change IP address, entering a new IP or using the automatically generated one, and clicking Confirm. Disaster Recovery automatically suggests IP addresses from the reassigned cloud network for all servers.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_492_detail",
+    "chunk_id": 492,
+    "source_file": "07-disaster-recovery/05-cloud-servers.md",
+    "question": "When is IP address reassignment required for cloud networks and cloud servers in Acronis Disaster Recovery?",
+    "answer": "IP address reassignment is required in two cases: after switching from Site-to-site Open VPN to Multi-site IPsec VPN (or the opposite), and after applying a protection plan when Multi-site IPsec VPN connectivity is configured. After reassigning a cloud network's IP, you must also reassign all cloud servers belonging to that network.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_494_how_to",
+    "chunk_id": 494,
+    "source_file": "07-disaster-recovery/07-failback.md",
+    "question": "How do I perform a failback from the cloud to my local site with minimal downtime?",
+    "answer": "To minimize downtime during failback, use the agent-based failback via bootable media method. Start the data transfer phase, which transfers data while the cloud VM continues running. Wait until more than 90% of the data is transferred before starting the switchover phase. This approach leverages the continuous data transfer to reduce the actual downtime during the final switchover.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_497_how_to",
+    "chunk_id": 497,
+    "source_file": "07-disaster-recovery/10-ip-reassignment-dns-routing-logs.md",
+    "question": "How do I reassign IP addresses for cloud networks and servers after switching VPN connectivity types in Acronis Disaster Recovery?",
+    "answer": "First, go to the Connectivity tab and click the cloud network's IP address, then click Edit in the Network pop-up, type the new network address and mask, and click Done. After reassigning the cloud network IP, you must also reassign each cloud server: click the server's IP in the Connectivity tab, click Change IP address, enter a new IP or use the automatically generated one, and click Confirm. Disaster Recovery automatically suggests IP addresses from the new cloud network for all servers that were part of it.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_497_detail",
+    "chunk_id": 497,
+    "source_file": "07-disaster-recovery/10-ip-reassignment-dns-routing-logs.md",
+    "question": "Under what conditions is it necessary to reassign IP addresses of cloud networks and cloud servers in Acronis Disaster Recovery?",
+    "answer": "IP address reassignment is required in two cases: after switching from Site-to-site Open VPN to Multi-site IPsec VPN (or the opposite), and after applying a protection plan when Multi-site IPsec VPN connectivity is already configured. Additionally, after reassigning a cloud network's IP, all cloud servers belonging to that network must also have their IPs reassigned.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_499_how_to",
+    "chunk_id": 499,
+    "source_file": "07-disaster-recovery/12-cloud-server-details-backups-firewall-compute-points.md",
+    "question": "How do I view details about my cloud servers in Acronis Cyber Protect Cloud's disaster recovery section?",
+    "answer": "Go to Disaster Recovery > Servers, where you'll find two tabs: Recovery servers and Primary servers. Select a cloud server to view its details such as name, status, state, VM state, active location, RPO threshold, RPO compliance, actual RPO, and last recovery point. You can also click the gear icon to show all optional columns in the table.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_501_detail",
+    "chunk_id": 501,
+    "source_file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
+    "question": "What limitation applies when using runbooks to initiate a failback in Acronis Cyber Protect Cloud?",
+    "answer": "Runbook operations support failback in manual mode only. If you start a failback process by executing a runbook that includes a 'Failback server' step, you must manually recover the machine and then manually confirm or cancel the failback process from the Disaster Recovery > Servers tab. Automated failback methods are not supported through runbooks.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_515_detail",
+    "chunk_id": 515,
+    "source_file": "08-antivirus-antimalware/09-firewall-management.md",
+    "question": "Which operating systems are supported for firewall management in Cyber Protect, and are Windows Servers included?",
+    "answer": "Firewall management supports Windows 8, Windows 8.1, Windows 10, and Windows 11. Windows Server is explicitly not supported. The feature works through the built-in Microsoft Defender Firewall component and requires it to be installed on the workload.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_519_detail",
+    "chunk_id": 519,
+    "source_file": "09-genai-workflows/01-genai-protection-settings.md",
+    "question": "What are the operating system requirements and licensing options for GenAI Protection in Acronis Cyber Protect Cloud?",
+    "answer": "GenAI Protection supports only Windows 11 and Windows 10 (version 1809 or newer) 64-bit editions. For licensing, in solution-based licensing it is available with the Workstations offering item under the Ultimate Protection license. In service-based licensing, it is available with the Endpoints offering item under the GenAI Protection service.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_523_detail",
+    "chunk_id": 523,
+    "source_file": "09-genai-workflows/05-workflow-versions.md",
+    "question": "What are the possible states of a workflow version, and which state allows editing?",
+    "answer": "Workflow versions can be in three states: Draft, Active, or Disabled. Only versions in the Draft state can be edited. Active means the version is enabled for at least one tenant and can only be set to Disabled. Disabled means the version was previously enabled but is currently disabled for all tenants.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_525_detail",
+    "chunk_id": 525,
+    "source_file": "10-edr-xdr/02-edr-software-requirements-and-enabling.md",
+    "question": "What are the CPU requirements for running EDR, and what happens if Microsoft Defender Antivirus real-time protection is enabled alongside EDR?",
+    "answer": "EDR requires Intel CPUs released after 2011 or AMD CPUs released after 2012, specifically processors that include the SSE4.2 instruction set. If you enable Microsoft Defender Antivirus for real-time protection, the Acronis Real-time protection module is automatically disabled to prevent conflicts. In that case, virus/malware detections and quarantine are handled by Microsoft Defender Antivirus, and EDR incidents related to those detections are created from information provided by Microsoft Defender.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_529_how_to",
+    "chunk_id": 529,
+    "source_file": "10-edr-xdr/06-event-types-and-fields.md",
+    "question": "How do I write an XQL query to search for Windows process creation events on a specific host?",
+    "answer": "Use the WinProcCreate event type with a where clause filtering by host_name. For example: `WinProcCreate | where host_name == 'YourHostName'`. The host_name value must be surrounded by single or double quotes since it is a String data type.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_533_how_to",
+    "chunk_id": 533,
+    "source_file": "10-edr-xdr/10-response-actions-workload-and-process.md",
+    "question": "How do I restart a workload as a response action in EDR?",
+    "answer": "In the cyber kill chain, click the workload node, then click the Response Actions tab in the sidebar. Under the Remediate section, click 'Restart workload'. You can choose to set a timeout period or restart immediately. Optionally, select 'Fail if end-user is logged in' to prevent restart when a user is active, add a display message, and click Restart.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_534_how_to",
+    "chunk_id": 534,
+    "source_file": "10-edr-xdr/11-response-actions-files-registry-blocklist-allowlist.md",
+    "question": "How do I quarantine a suspicious file in the EDR cyber kill chain?",
+    "answer": "To quarantine a suspicious file, click the file node in the cyber kill chain, then go to the Response Actions tab in the displayed sidebar. In the Remediate section, click Quarantine, optionally add a comment, and click Quarantine to confirm. The file will then be quarantined.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_542_detail",
+    "chunk_id": 542,
+    "source_file": "12-rmm/02-m365-environment-management.md",
+    "question": "What licensing is required for Microsoft 365 security monitoring and management, and how are charges applied?",
+    "answer": "Under service-based licensing, this functionality is part of the paid RMM - Microsoft 365 seats offering. Under solution-based licensing, it is included in the Security and RMM and the Ultimate Protection license under Microsoft 365 seats. A charge is applied for each user allocated with an Exchange Online mailbox license.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_547_how_to",
+    "chunk_id": 547,
+    "source_file": "12-rmm/06-vulnerability-assessment-and-patching.md",
+    "question": "How do I set up vulnerability assessment scanning for my machines in Acronis Cyber Protect Cloud?",
+    "answer": "To set up vulnerability assessment scanning, create a protection plan with the Vulnerability assessment module enabled, configure the settings, and assign the plan to your target machines. The system will then send a scan command to agents, which scan for vulnerabilities and report results to the monitoring service. You can review results in the Monitoring > Overview > Vulnerabilities / Existing vulnerabilities widgets.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_549_how_to",
+    "chunk_id": 549,
+    "source_file": "12-rmm/08-remote-desktop-and-assistance.md",
+    "question": "How do I set up remote desktop and remote assistance for a managed workload in Acronis Cyber Protect Cloud?",
+    "answer": "To set up remote desktop and assistance, you need to install the Connect Client on the managing (host) workload and ensure the Connect Agent is installed on the managed workloads (included in Protection agent from version 15.0.31266). Then configure and apply a remote management plan to the workload. Note that only one remote management plan can be applied per workload. For macOS, you must also grant required system permissions to the Connect Agent.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_553_detail",
+    "chunk_id": 553,
+    "source_file": "13-data-loss-prevention/02-permissions-combining-rules-review.md",
+    "question": "What happens when a sender encounters an 'Exception' permission in a DLP data flow policy rule, and how long does the exception last?",
+    "answer": "When a data transfer matches an Exception rule, it is not allowed by default, but the sender can submit an exception to allow that specific transfer. Once the exception is submitted, all subsequent data transfers between that sender and recipient for the same sensitivity category will be allowed for five minutes.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_555_detail",
+    "chunk_id": 555,
+    "source_file": "13-data-loss-prevention/04-enabling-dlp-protection-plans.md",
+    "question": "When both Device Control and DLP are enabled together, which component controls access to USB removable storage devices?",
+    "answer": "When both are enabled, Device Control retains control over Removable, Encrypted removable, and Mapped drive device types if they are configured to Read-only or Denied access. For example, if Read-only access is configured for USB devices in Device Control, that setting applies to all USB devices (except allowlisted ones), regardless of DLP access settings. However, if Device Control has the default Enable access configured, then the DLP access setting will be applied instead.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_558_how_to",
+    "chunk_id": 558,
+    "source_file": "13-data-loss-prevention/07-custom-content-detectors.md",
+    "question": "How do I create a custom content detector for specific file types in Acronis Cyber Protect Cloud's DLP feature?",
+    "answer": "Log in to the Cyber Protect console as an administrator, navigate to Protection > Data Loss Prevention > Data classifiers, then click Content detectors. Click Add new and select File type from the dropdown. Enter a name and description, optionally select a sensitivity category, then use the plus icon to move supported file types to the Selected file types list. You can also select multiple types using checkmarks and the Add selected button. Click Save when done.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_562_detail",
+    "chunk_id": 562,
+    "source_file": "14-additional-tools/03-geo-redundant-storage.md",
+    "question": "What are the limitations of Geo-Redundant Storage in Acronis Cyber Protect Cloud?",
+    "answer": "Geo-redundant storage may not be available in all data centers and is supported only with cloud storage—not with third-party storages such as partner-hosted or public cloud storages. The replication location depends on your datacenter, and additional limitations apply when using it with Disaster Recovery. Also, it cannot be provisioned if a non-compatible storage (e.g., partner-hosted) is assigned to the tenant.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  },
+  {
+    "qa_id": "qa_563_how_to",
+    "chunk_id": 563,
+    "source_file": "14-additional-tools/04-archival-storage.md",
+    "question": "How do I set up archival storage in Acronis Cyber Protect Cloud for long-term data retention?",
+    "answer": "To use archival storage, you must first ensure the Archival storage quota is enabled in Management Portal. Then, create one or more buckets in the Cyber Protect console. To access, view, manage contents, or transfer data in those buckets, you need to use an S3-compatible client. Note that archival storage cannot be used as a backup destination in a protection plan or cloud-to-cloud backup plan.",
+    "eval_overall": 5,
+    "eval_hallucination": 5,
+    "verified": true
+  }
+]

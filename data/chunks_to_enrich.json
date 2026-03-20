@@ -1,0 +1,1328 @@
+[
+  {
+    "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
+    "failure_count": 2,
+    "affected_qa_ids": [
+      "qa_379_how_to",
+      "qa_379_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the correct --no-purge flag and invents incorrect details (wrong config paths, fabricated --id-preserve flag, manual backup approach). The ideal answer is a simple one-liner with --no-purge.",
+      "RAG answer admits it lacks the information and fails to provide the specific steps: using root password or 'acronis' as password, MOK management during restart, and enrolling the key. It vaguely mentions MOK but hedges heavily."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_379_how_to",
+        "ideal": "Run the uninstall command with the --no-purge flag: `/usr/lib/Acronis/BackupAndRecovery/uninstall/uninstall -a --no-purge`. This will remove the agent but preserve its ID, which is useful if you plan to reinstall the agent later."
+      },
+      {
+        "qa_id": "qa_379_detail",
+        "ideal": "If UEFI Secure Boot is enabled, you will be prompted to restart the system after installation. Use the root user password, or if that is not accepted, use the word \"acronis\" as the password. During the system restart, opt for MOK management, select 'Enroll MOK', and then enroll the key."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md",
+    "failure_count": 2,
+    "affected_qa_ids": [
+      "qa_463_how_to",
+      "qa_463_detail"
+    ],
+    "missing_information": [
+      "RAG system failed to retrieve the relevant content about mount points. It honestly acknowledged the gap but provided no answer to the question.",
+      "RAG failed to retrieve the relevant content and provided no actual answer. It honestly admitted lack of information but didn't answer the question at all."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_463_how_to",
+        "ideal": "To include mounted volumes in a file-level backup on Windows, enable the 'Mount points' option in your backup settings. This option works only when you select a parent folder that is higher in the folder hierarchy than the mount point. If you select the mount point folder directly or any folder within the mounted volume, the files will be backed up regardless of the Mount points option state."
+      },
+      {
+        "qa_id": "qa_463_detail",
+        "ideal": "On Linux and macOS, the 'Backup Mount Points' option is ignored entirely. Data in local mount points (such as local disks and USB drives) will always be backed up, while data in remote mount points (such as CIFS/NFS shares) will never be backed up. This differs from Windows, where the Mount points option can be explicitly enabled or disabled to control whether files on mounted volumes are included in file-level backups."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/32-email-archiving.md",
+    "failure_count": 2,
+    "affected_qa_ids": [
+      "qa_479_how_to",
+      "qa_479_detail"
+    ],
+    "missing_information": [
+      "RAG answer describes what email archiving does but fails to provide the actual setup steps asked in the question. The ideal answer has specific steps (enable quotas, navigate to Devices, add Microsoft 365 Business Email archiving, sign in as global admin, accept permissions, configure plan) which are entirely missing.",
+      "RAG answer mentions wrong limitations (Microsoft 365 only, cannot modify/delete, access restrictions) instead of the correct ones (150MB max size, no drafts, one plan per server). Completely misses quota removal behavior. The limitations cited may be true but are not the ones asked about."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_479_how_to",
+        "ideal": "To set up email archiving, first ensure the 'Microsoft 365 email archiving seats' and 'Archiving storage' quotas are enabled for your tenant in Management Portal. Then log in to the Cyber Protect console as administrator, go to Devices, click Add > Microsoft 365 Business – Email archiving, sign in as a global administrator on the Microsoft login page, review and accept the required permissions, and configure the archiving plan."
+      },
+      {
+        "qa_id": "qa_479_detail",
+        "ideal": "Email archiving has three key limitations: the maximum email size is 150 MB (due to a Microsoft limitation), draft emails are not included, and only one archiving plan can be applied to one mail server. If either the 'Microsoft 365 email archiving seats' or 'Archiving storage' quota is removed or misconfigured after initial configuration, email archiving will be paused for all plans of the tenant until the quota is restored."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/37-google-workspace-protection.md",
+    "failure_count": 2,
+    "affected_qa_ids": [
+      "qa_484_how_to",
+      "qa_484_detail"
+    ],
+    "missing_information": [
+      "Missing key details: dedicated Google Cloud project requirement, Devices > Add workflow, Super Admin with API access requirement, Google Workspace Business Standard license for Shared Drives. RAG answer acknowledges its limitations but provides only partial context.",
+      "RAG only mentions the 5000 items limit, missing 10 backups/hour, 10 simultaneous recoveries, and 6x/day schedule limits"
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_484_how_to",
+        "ideal": "To add a Google Workspace organization, you need a dedicated personal Google Cloud project. Log in to the Cyber Protect console as a company administrator, then click Devices > Add. You must be signed in to Google Workspace as a Super Admin with API access enabled (Security > API reference > Enable API access in the Google Admin console). The Super Admin needs at least a 'Google Workspace Business Standard' license to discover and back up Shared Drives."
+      },
+      {
+        "qa_id": "qa_484_detail",
+        "ideal": "You can manually run up to 10 backups per hour. You can simultaneously run up to 10 cloud-to-cloud recovery operations, which includes both Microsoft 365 and Google Workspace recoveries combined. The backup schedule supports up to 6 times a day (approximately every 4 hours). The system supports up to 5,000 items (mailboxes, Google Drives, and Shared drives) per company without performance degradation."
+      }
+    ]
+  },
+  {
+    "source_file": "12-rmm/05-software-management-and-inventory.md",
+    "failure_count": 2,
+    "affected_qa_ids": [
+      "qa_546_how_to",
+      "qa_546_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks specific steps and fails to provide either of the two methods (Software Inventory path or Devices path). Only vaguely mentions navigating to the device. Does correctly mention roles and OS support but misses the core actionable content.",
+      "RAG answer fails to provide the key facts: 12-hour scan interval and enabled by default. It acknowledges the topic but cannot answer the question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_546_how_to",
+        "ideal": "You have two options. From Software Inventory: go to Software management > Software inventory, set 'Group by' to 'Devices', find the device, and click 'Scan now'. From Devices: go to Devices, click the device, click 'Inventory', then in the Software tab click 'Scan now'."
+      },
+      {
+        "qa_id": "qa_546_detail",
+        "ideal": "When software inventory scanning is enabled, the system automatically collects software data every 12 hours. The feature is enabled by default for all devices that have the required license."
+      }
+    ]
+  },
+  {
+    "source_file": "01-getting-started/03-two-factor-authentication.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_352_detail"
+    ],
+    "missing_information": [
+      "RAG answer failed to retrieve relevant information and provided no substantive answer. It honestly admitted lack of context but answered none of the question's points."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_352_detail",
+        "ideal": "A one-time 2FA code is valid for 30 seconds; if you wait longer, you must use the next generated code. If you select the 'Trust this browser' check box, the code will not be required for subsequent logins using that browser on that machine. However, it is recommended to leave this check box clear, as selecting it will cause you to lose access to 2FA settings for your account."
+      }
+    ]
+  },
+  {
+    "source_file": "01-getting-started/10b-supported-features-active-protection.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_360_detail"
+    ],
+    "missing_information": [
+      "RAG answer concludes Linux does not have network folder protection, missing the critical caveat that Linux treats network folders as local folders and thus protects them automatically. The truncated text led to an incorrect conclusion."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_360_detail",
+        "ideal": "Network folder protection is officially listed as 'No' for Linux, but with an important caveat: network folders in Linux are treated as local folders, so Active Protection will automatically protect network folders in Linux OS as if they were local folders. On Windows and macOS, network folder protection is explicitly supported as a dedicated feature."
+      }
+    ]
+  },
+  {
+    "source_file": "01-getting-started/10c-supported-features-antivirus-antimalware.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_361_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide any of the specific Linux distributions. It speculates the feature may not be supported on Linux, which contradicts the ideal answer showing support on multiple distros."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_361_detail",
+        "ideal": "The Behavioral analysis engine is supported on the following Linux versions: CentOS 7.x, Debian 10.x and 11.x, CloudLinux 7.x and 8.x, and Ubuntu 16.04, 18.04, 20.04, and 22.04. Other Linux distributions are not listed as supported for this feature."
+      }
+    ]
+  },
+  {
+    "source_file": "01-getting-started/10d-supported-features-edr-vulnerability-patch.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_362_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to state the clear fact that patch management features are Windows-only. Instead it hedges and says context is insufficient, which is incorrect. The mention of macOS supporting 3rd-party vulnerability assessment is tangential and potentially misleading."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_362_detail",
+        "ideal": "No. All patch management features—including patch auto-approval, auto-installation, patch testing, manual patch installation, patch scheduling, fail-safe patching, and cancelation of machine reboot during backup—are only supported on Windows. Neither Linux nor macOS supports any of these patch management capabilities."
+      }
+    ]
+  },
+  {
+    "source_file": "01-getting-started/10g-supported-features-dlp-management-inventory.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_365_detail"
+    ],
+    "missing_information": [
+      "RAG incorrectly states Cyber Protect Monitor excludes macOS 10.x AND 11.x (ideal says only 10.x excluded). Missing software inventory macOS version range (10.13.x-13.x). Missing hardware inventory version details. Missing note about Linux non-availability."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_365_detail",
+        "ideal": "Software inventory and Hardware inventory on macOS are supported for versions 10.13.x through 13.x. Cyber Protect Monitor is supported on all macOS versions where Agent for Mac can be installed, except macOS 10.x. These features are not available on Linux."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/01-preparation.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_367_detail"
+    ],
+    "missing_information": [
+      "RAG answer incorrectly suggests offline installation is possible as alternative, contradicting ideal answer that installation will fail without Internet. Missing all firewall port information (443, 8443, 7770-7800). The offline package claim may be a hallucination or misinterpretation."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_367_detail",
+        "ideal": "All setup programs require an Internet connection to register the machine in the Cyber Protection service; if there is no Internet connection, the installation will fail. You must allow outbound connections through TCP ports 443 and 8443 (for console access, agent registration, certificate downloads, user authorization, and cloud storage file downloads) and ports 7770–7800 (for agent communication)."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/04-system-requirements.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_370_detail"
+    ],
+    "missing_information": [
+      "RAG system failed to retrieve relevant context about CET-enabled processor DLP limitations. Answer is honest about lacking information but provides no useful content."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_370_detail",
+        "ideal": "On CET-enabled processors, several DLP features are disabled to prevent conflicts. Specifically, DLP monitoring is unavailable for printers, redirected clipboard, IBM Notes, and some instant messaging clients (standalone ICQ and Viber). However, DLP still works for removable storage, redirected mapped drives, SMTP emails, Microsoft Outlook (MAPI), webmails, file sharing services, and the combined instant messaging category (IRC, Jabber, Skype, Viber)."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/09-fips-compliant-mode.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_375_detail"
+    ],
+    "missing_information": [
+      "RAG answer focuses on Agent for Windows (Legacy) and 32-bit limitations, completely missing the actual unsupported components: File Sync & Share, EDR, Disaster Recovery, DLP, mobile backup app, Physical data shipping, Web Restore console, and SMB share limitations."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_375_detail",
+        "ideal": "The following are not FIPS-compliant: File Sync & Share, Endpoint Detection and Response (EDR), Disaster recovery, Data loss prevention (DLP), Acronis Cyber Protect app (mobile device backup), Physical data shipping, and Web Restore console. Additionally, virtual appliances and bootable media in FIPS-compliant mode do not support SMB shares."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/11-uninstalling-agents.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_377_detail"
+    ],
+    "missing_information": [
+      "RAG answer misses the key points: workload duplication in console and old backups not being associated. Instead fabricates details about re-registration and fresh installation that aren't in the ideal answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_377_detail",
+        "ideal": "If you select that check box and later reinstall the agent, the workload might be duplicated in the Cyber Protect console and its old backups might not be associated with it. Therefore, if you plan to reinstall the agent, you should keep this check box cleared to preserve logs and configuration settings."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/16-windows-cli-msi-installation.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_382_detail"
+    ],
+    "missing_information": [
+      "RAG answer misses 'new' and 'custom' options, incorrectly describes domain\\username format instead of the actual parameter values. Acknowledges incomplete context but provides partially incorrect information."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_382_detail",
+        "ideal": "The `--agent-account` parameter accepts three values: `system` (or omit entirely) to run under the Local System account, `new` to automatically create a new 'Acronis Agent User' account, or `custom` to specify an existing account using the additional `--agent-account-login` and `--agent-account-password` parameters."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/19-updating-agents-automatically.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_385_detail"
+    ],
+    "missing_information": [
+      "RAG failed to retrieve relevant information and returned a 'not found' response instead of answering the question about update deferral during active operations"
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_385_detail",
+        "ideal": "Even within an enabled maintenance window, updates will not be installed while the agent is running certain operations. These include backup, recovery, backup replication, VM replication, testing a replica, running a VM from backup, disaster recovery failover/failback, running a script, patch installation, and ESXi configuration backup. The update will be deferred until these operations complete."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/21-deploying-vmware-va.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_387_how_to"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the specific steps and guesses at the process. Misses key details like the download path (All devices > Add > Broadcom ESXi > Virtual Appliance), the .zip archive unpacking, and shared datastore selection. The speculated steps are partially correct but not sourced from actual content."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_387_how_to",
+        "ideal": "To deploy the OVF template, go to All devices > Add > Broadcom (VMware) ESXi > Virtual Appliance (OVF) to download the .zip archive. Unpack it to get the .ovf and .vmdk files, ensure they're accessible from the vSphere Client machine, then log on to vCenter Server and deploy the OVF template. When configuring storage, select the shared datastore if available."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/23-deploying-virtuozzo-hi-va.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_389_detail"
+    ],
+    "missing_information": [
+      "RAG system failed to retrieve relevant information. Answer admits it cannot answer the question, providing no substantive content about load balancing, the 20% threshold, or redistribution conditions."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_389_detail",
+        "ideal": "Virtual machines are automatically and evenly distributed between agents. Automatic redistribution occurs when the load imbalance reaches 20 percent. However, redistribution will not happen if an agent gets corrupted or is manually deleted from the Virtuozzo Hybrid Infrastructure node. In that case, redistribution only starts after you remove the affected agent from the Cyber Protection web interface."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/24-deploying-ovirt-va.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_390_detail"
+    ],
+    "missing_information": [
+      "RAG answer lacks the specific unsupported operations list and the 20% threshold detail. It honestly admits missing info but covers very little of the ideal answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_390_detail",
+        "ideal": "The unsupported operations are: application-aware backup, running a virtual machine from a backup, replication of virtual machines, and changed block tracking. When multiple virtual appliances are deployed, automatic redistribution of backed-up VMs occurs when the load imbalance among appliances reaches 20 percent. However, redistribution only triggers when you remove the appliance from the Cyber Protect console—not when removed from the RHV/oVirt Administration Portal or if the appliance gets corrupted."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/27-deploying-agent-for-synology.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_393_detail"
+    ],
+    "missing_information": [
+      "Misses key facts: SMB requires DSM 6.2.3+, public cloud only supported by Agent 7.x not 6.x due to kernel limitations, encrypted folder limitations. RAG answer mentions quota requirement and x86_64 which aren't directly relevant to the question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_393_detail",
+        "ideal": "Using external network shares as backup source or destination via SMB protocol is only available for agents running on Synology DiskStation Manager 6.2.3 and later. Backup to public clouds such as Microsoft Azure, Amazon, or S3-compatible storages is supported only by Agent for Synology 7.x; version 6.x does not support public cloud destinations due to Linux kernel limitations of Synology DSM 6.x. Additionally, encrypted folders are not supported and backed-up encrypted shares are recovered as non-encrypted."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/29-device-discovery-device-sense.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_395_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the information and provides no actual answer. However, it doesn't hallucinate - it honestly states it cannot answer from available context."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_395_detail",
+        "ideal": "The retention period for discovered device information in the database is 3 months. Passive discovery settings are preconfigured at the data center level and follow an inheritance hierarchy: Cyber Protection data center → Company (customer tenant) → Unit. A company administrator can customize settings for all devices in a company or unit, and if no custom settings are applied, settings from the upper level in this order are used."
+      }
+    ]
+  },
+  {
+    "source_file": "02-installing-deploying-agents/33-service-quota-protection-settings.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_399_how_to"
+    ],
+    "missing_information": [
+      "RAG answer fails to describe the actual steps: select multiple workloads in Devices, click 'Assign quota', choose quota in Change quota window, click 'Change'. Instead suggests device groups as a workaround and admits it doesn't have the full steps."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_399_how_to",
+        "ideal": "In the Cyber Protect console, go to Devices, select more than one workload, and then click 'Assign quota'. In the Change quota window, select the desired service quota or 'No quota', and then click 'Change'."
+      }
+    ]
+  },
+  {
+    "source_file": "03-working-with-plans/06-actions-with-protection-plans.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_405_how_to"
+    ],
+    "missing_information": [
+      "Missing specific step-by-step instructions for both methods (Devices tab and Management > Protection plans). RAG answer is vague and general, lacking the concrete UI navigation steps described in the ideal answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_405_how_to",
+        "ideal": "You can apply a protection plan from two locations. From the Devices tab: select the workloads, click Protect, select the plan, and click Apply. From Management > Protection plans: select the plan, click Edit, click Manage devices, add the desired workloads, click Done, then Save."
+      }
+    ]
+  },
+  {
+    "source_file": "03-working-with-plans/07-compatibility-issues.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_406_detail"
+    ],
+    "missing_information": [
+      "RAG system failed to retrieve the relevant information about the 150 workload threshold. It correctly admits it doesn't have the answer rather than fabricating one, but provides no useful information."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_406_detail",
+        "ideal": "If a plan is applied to up to 150 individually selected workloads, you will be prompted to resolve conflicts before saving. However, if the plan is applied to more than 150 workloads or to device groups, the plan is saved first and then checked for compatibility afterward. Unresolved conflicts will result in the whole plan or some modules being disabled on incompatible workloads, with alerts shown."
+      }
+    ]
+  },
+  {
+    "source_file": "03-working-with-plans/08-off-host-data-protection.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_407_how_to"
+    ],
+    "missing_information": [
+      "RAG answer focuses on off-host data protection plans rather than the specific backup replication plan creation steps. Missing key details: Management > Backup replication path, Create plan button, selecting agent, Items to replicate, Destination, and encryption password note. Some info about off-host plans may be tangentially related but doesn't answer the specific question asked."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_407_how_to",
+        "ideal": "In the Cyber Protect console, click Management > Backup replication, then click Create plan. Select the agent that will perform the replication (it must have access to both source and replication locations). In Items to replicate, select the archives or backup locations, and in Destination, specify the replication location. Note that if you select multiple encrypted archives, they must all share the same encryption password; otherwise, create separate plans."
+      }
+    ]
+  },
+  {
+    "source_file": "03-working-with-plans/09-validation.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_408_detail"
+    ],
+    "missing_information": [
+      "RAG answer failed to retrieve the actual data and admits it cannot answer the question. No factual content provided."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_408_detail",
+        "ideal": "NFS folders and Secure Zone do not support any validation methods — checksum verification, VM heartbeat, and screenshot validation are all unavailable for these locations. Additionally, validation is not available for public cloud backups due to the prohibitive costs of reading an entire archive from a public cloud. Cloud storage, local folders, and network folders support all three validation methods."
+      }
+    ]
+  },
+  {
+    "source_file": "03-working-with-plans/11-conversion-to-virtual-machine.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_410_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the information and provides no actual answer. It honestly states it cannot answer but fails to provide any of the key points: NFS limitation, Secure Zone limitation, or disk-level only requirement."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_410_detail",
+        "ideal": "There are specific storage-related limitations for conversion to VM. Backups stored on NFS cannot be converted at all. Backups stored in Secure Zone can only be converted by the agent running on the same machine. Additionally, conversion is only available for disk-level backups, not file-level backups."
+      }
+    ]
+  },
+  {
+    "source_file": "03-working-with-plans/12-backup-scanning-and-cloud-apps.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_411_detail"
+    ],
+    "missing_information": [
+      "RAG failed to retrieve relevant information and returned no answer. It correctly acknowledged it didn't have the info rather than hallucinating, but provided no useful content."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_411_detail",
+        "ideal": "Manual cloud-to-cloud backup runs are limited to 10 runs per Microsoft 365 or Google Workspace organization per hour. After reaching this limit, the allowed runs reset to one per hour, with an additional run becoming available each subsequent hour (e.g., hour 2: 1 run, hour 3: 2 runs) until the total of 10 runs per hour is restored."
+      }
+    ]
+  },
+  {
+    "source_file": "04-monitoring-dashboards/02-alerts-dashboard.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_418_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide any of the requested information, citing incomplete context. No factual errors but completely unhelpful."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_418_detail",
+        "ideal": "The available columns are: Severity, Alert type, Message, Monitoring type, Workload, Date and time, Plan, Alert category, and Source. The Severity and Message columns are always available and cannot be removed. Severity shows importance levels (Critical, Error, Warning, Informational), and Monitoring type can be threshold-based or anomaly-based. You can add or remove other columns by clicking the gear icon in the upper-right corner."
+      }
+    ]
+  },
+  {
+    "source_file": "04-monitoring-dashboards/04-alert-types-disaster-recovery.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_420_how_to"
+    ],
+    "missing_information": [
+      "RAG answer focuses on storage quota issues instead of the correct fix: editing the recovery server to decrease CPU/RAM and retrying failover. The key steps from the ideal answer are completely missing."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_420_how_to",
+        "ideal": "To resolve a failover error, select the recovery server and click Edit. Then decrease the CPU/RAM of the recovery server. After making these changes, try to perform the failover again."
+      }
+    ]
+  },
+  {
+    "source_file": "04-monitoring-dashboards/05-alert-types-antimalware-url-licensing-edr.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_421_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the information and provides no answer. Honest but unhelpful - zero factual content delivered."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_421_detail",
+        "ideal": "The 'Active Protection service is not available' alert is caused by an incompatible or missing driver, and should be investigated by checking Windows event logs for crashes of the Acronis Active Protection service (acronis_protection_service.exe). In contrast, the 'Active Protection service is not running' alert indicates the service crashed or simply isn't running, and you should check the error message to determine the cause."
+      }
+    ]
+  },
+  {
+    "source_file": "04-monitoring-dashboards/06-alert-types-system-cloud-deployment-management.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_422_how_to"
+    ],
+    "missing_information": [
+      "RAG incorrectly states there is no 30-day alert (only 20-day), when in fact 20 days is a warning and 30 days triggers backup stoppage. Misses key fact that backups are stopped at 30 days. Generic troubleshooting steps are partially fabricated."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_422_how_to",
+        "ideal": "When a machine is offline for more than 30 days, backups of the workload are stopped. To resume backups, you need to restore the connection to the workload. Note that a warning alert is triggered at 20 days offline, indicating backups will stop if the connection is not restored before 30 days."
+      }
+    ]
+  },
+  {
+    "source_file": "04-monitoring-dashboards/07-cyber-protection-and-status-widgets.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_423_detail"
+    ],
+    "missing_information": [
+      "RAG answer discusses backup size display but completely misses the key point about binary vs decimal units (MiB/GiB/TiB labeled as MB/GB/TB). It provides tangential information about compressed sizes instead."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_423_detail",
+        "ideal": "The storage usage values displayed in the Acronis UI are actually in binary byte units — mebibytes (MiB), gibibytes (GiB), and tebibytes (TiB) — even though the labels show MB, GB, and TB respectively. This means the displayed values use base-2 calculations (1 GiB = 1,073,741,824 bytes) rather than the decimal units the labels suggest (1 GB = 1,000,000,000 bytes)."
+      }
+    ]
+  },
+  {
+    "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_429_how_to"
+    ],
+    "missing_information": [
+      "RAG answer incorrectly mentions 'Smart Protection section' instead of 'Monitoring > Threat feed'. Missing key steps: clicking Start to launch wizard, enabling specific actions (Vulnerability assessment, Patch management, Antimalware Protection), and selecting target machines. Admits truncation and defers to external docs rather than providing the actual procedure."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_429_how_to",
+        "ideal": "In the Cyber Protect console, go to Monitoring > Threat feed to review existing security alerts. Select an alert and review its details, then click Start to launch the wizard. Enable the actions you want performed (such as Vulnerability assessment, Patch management, or Antimalware Protection) and select the machines to which these actions should be applied."
+      }
+    ]
+  },
+  {
+    "source_file": "05-managing-workloads/04-search-attributes-cloud-to-cloud.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_436_how_to"
+    ],
+    "missing_information": [
+      "RAG answer fails to mention the key attribute 'licensedByMsft' and incorrectly states the documentation doesn't cover license search. It suggests irrelevant alternatives like RMM module."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_436_how_to",
+        "ideal": "Use the `licensedByMsft` search attribute with the query `licensedByMsft = true` to find Microsoft 365 users with a valid subscription. This attribute is available under Microsoft 365 > Users and identifies users who can use Microsoft 365 services like Exchange Online and OneDrive. You can also use `licensedByMsft = false` to find unlicensed users."
+      }
+    ]
+  },
+  {
+    "source_file": "05-managing-workloads/08-device-control-access-settings.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_440_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the key distinction: APFS-encrypted drives are treated as regular removable drives while only HFS+ encrypted drives are recognized as 'Encrypted removable'. It admits lack of information rather than hallucinating, but provides no useful answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_440_detail",
+        "ideal": "On macOS, only encrypted removable drives using the HFS+ file system are recognized as 'Encrypted removable' devices. Encrypted removable drives using the APFS file system are treated as regular removable drives instead. This means APFS-encrypted drives fall under the 'Removable' device type access rules rather than the 'Encrypted removable' rules."
+      }
+    ]
+  },
+  {
+    "source_file": "05-managing-workloads/09-device-control-allowlists.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_441_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide any of the specific device subclasses that are Windows-only. It acknowledges the context was truncated and couldn't answer the question, missing all key points from the ideal answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_441_detail",
+        "ideal": "The following device subclasses are supported only on Windows: USB scanners and still image devices, USB audio devices, USB cameras, Bluetooth HID (mouse, keyboard, etc.), and Clipboard copy/paste within application. Only USB HID and USB/FireWire network cards are supported on both Windows and macOS."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/02-supported-os-linux-macos.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_449_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to mention both key limitations: Btrfs not supported on Fedora/SUSE, and Oracle Linux 8.6+ Secure Boot requires manual kernel module signing. It admits lack of information rather than hallucinating, but misses all substantive content."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_449_detail",
+        "ideal": "Yes, there are specific limitations. Configurations with Btrfs are not supported on Fedora and SUSE Linux Enterprise Server. Additionally, installing the protection agent on Oracle Linux 8.6 and later with Secure Boot enabled requires manual signing of kernel modules."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/04-supported-virtualization-platforms.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_451_detail"
+    ],
+    "missing_information": [
+      "RAG failed to retrieve relevant information and provided no actual answer to the question. It honestly admitted lacking context but couldn't address any of the specific limitations."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_451_detail",
+        "ideal": "Agent for VMware can only back up fault tolerant machines if fault tolerance was enabled in vSphere 6.0 or later. For earlier versions, you must either disable and re-enable fault tolerance or install an agent in the guest OS. Additionally, Agent for VMware does not back up Raw Device Mapping (RDM) disks in physical compatibility mode or independent disks — it skips them and logs warnings. It also silently omits LUN volumes connected via in-guest iSCSI initiators."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/17-backup-options-prepost-commands-scheduling-sector-splitting-vss.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_464_detail"
+    ],
+    "missing_information": [
+      "RAG answer only covers 3 of 6 execution steps, missing pre/post data capture commands and data capture/write steps. Does not answer the Multi-volume snapshot question. Correctly acknowledges its limitations."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_464_detail",
+        "ideal": "The full execution order is: Pre-backup command → Pre-data capture command → Data capture → Post-data capture command → Write data to the backup set → Post-backup command. The agent also performs replication after executing the post-backup command. If the Multi-volume snapshot option is enabled, the pre/post data capture commands run only once since snapshots for all volumes are created simultaneously. If Multi-volume snapshot is disabled, the pre/post data capture commands run for every volume being backed up."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/18-recovery-overview-cross-platform.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_465_detail"
+    ],
+    "missing_information": [
+      "RAG failed to retrieve relevant information and returned a 'no information found' response instead of answering the question about iCloud footprint recovery behavior"
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_465_detail",
+        "ideal": "Starting with macOS Sierra 10.12, rarely used files moved to iCloud by the Store in Cloud feature leave small footprints on the file system, which are backed up instead of the original files. When you recover a footprint to the original location, it synchronizes with iCloud and the original file becomes available. However, when you recover a footprint to a different location, it cannot synchronize and the original file will be unavailable."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/22-universal-restore-recovery-options.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_469_detail"
+    ],
+    "missing_information": [
+      "RAG answer failed to retrieve the UEFI row and couldn't answer the question. It correctly identified BIOS info but admitted it lacked the UEFI-specific requirements."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_469_detail",
+        "ideal": "For a UEFI boot mode with an encrypted system volume, you need 1 GB in Windows\\Temp plus 400 MB on the EFI System Partition (ESP). Alternatively, you can use 200 MB on ESP combined with 200 MB on an unencrypted partition accessible during boot. Note that backed-up encrypted volumes are recovered as non-encrypted."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/24-cross-platform-recovery.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_471_detail"
+    ],
+    "missing_information": [
+      "Misses key details: SIP's com.apple.rootless extended attribute protecting system files, the need for bootable media to overwrite protected files, and iCloud Store in Cloud footprint recovery issues. RAG answer mentions bootable media requirement but in wrong context (physical machine recovery vs SIP-protected file overwriting)."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_471_detail",
+        "ideal": "On macOS 10.11 El Capitan and later, System Integrity Protection (SIP) flags certain system files with the `com.apple.rootless` extended attribute, including preinstalled applications and folders in /system, /bin, /sbin, /usr. These protected files cannot be overwritten during recovery under the operating system. To overwrite them, you must perform the recovery under bootable media. Additionally, on macOS Sierra 10.12+, files moved to iCloud by the Store in Cloud feature are backed up as small footprints; recovering these footprints to a different location prevents iCloud synchronization, making the original files unavailable."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/27-file-recovery.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_474_detail"
+    ],
+    "missing_information": [
+      "RAG answer misses all key limitations: 100MB size limit, no folder downloads in .zip, no search for disk-level backups in cloud storage, no symbolic links. Instead provides mostly irrelevant information about compliance mode and offline machines."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_474_detail",
+        "ideal": "When downloading files as a .zip file during recovery, downloading is not available if your selection contains folders or if the total size exceeds 100 MB. Additionally, search is not available for disk-level backups stored in cloud storage, and symbolic links are not supported for recovery paths."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/28-recovery-with-restart-universal-restore.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_475_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it cannot provide the UEFI requirements due to truncated context. It fails to answer the question but honestly states its limitation without fabricating information."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_475_detail",
+        "ideal": "For a UEFI machine with an encrypted system volume, you need 1 GB in the Windows\\Temp folder plus 400 MB on the EFI system partition (ESP), or alternatively 200 MB on ESP and 200 MB on an unencrypted partition accessible during boot. Additionally, recovery of a machine with an encrypted system volume requires at least one non-encrypted volume on the same machine."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/31-bottleneck-detection-public-cloud-backups.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_478_detail"
+    ],
+    "missing_information": [
+      "RAG answer failed to provide any actual answer - it acknowledged the question but could not retrieve the needed information from its context"
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_478_detail",
+        "ideal": "Bottleneck statistics are only available for tasks that run more than one minute long. The bottleneck values update dynamically every minute while the corresponding activity is running."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/34-protecting-mobile-devices.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_481_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks context and provides only vague guesses. Misses specific defaults: Wi-Fi only enabled, Save power mode enabled, Back up while charging disabled, battery optimization recommendation."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_481_detail",
+        "ideal": "By default, 'Use Wi-Fi only' is enabled, meaning backups only occur over Wi-Fi unless you turn this off to allow cellular. 'Save power mode' is enabled by default, backing up only when battery is not low. 'Back up while charging' is disabled by default. Additionally, battery optimization on the device may prevent proper operation, so you should disable it for the app."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/35-microsoft-365-protection.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_482_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it cannot find the information and provides no substantive content. No hallucination, but completely fails to answer the question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_482_detail",
+        "ideal": "The Microsoft 365 Business Backup solution supports up to 50,000 protected workloads per company, but the actual limit depends on workload type: 50,000 Exchange mailboxes, or 10,000 teams, or 10,000 SharePoint sites, or 5,000 OneDrive accounts. These are calculated using the formula: 10 mailboxes = 2 teams = 2 sites = 1 OneDrive account. By comparison, the Agent for Office 365 supports up to 5,000 mailboxes for cloud backups and 2,000 per plan for other workloads."
+      }
+    ]
+  },
+  {
+    "source_file": "06-backup-and-recovery/38-oracle-saphana-mysql-mariadb-proxmox.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_485_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide any of the key version compatibility details (same version or later, no 5.x to 8.x, minor version restrictions, Secure Zone limitation). It admits lacking the information rather than hallucinating, but is essentially a non-answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_485_detail",
+        "ideal": "Recovery is supported only to target instances of the same version or later, but with important restrictions: recovery from MySQL 5.x to MySQL 8.x is not supported, and recovery to a later MySQL 5.x version (including minor versions) is only supported via recovery of the whole instance as files. Additionally, recovery from backups stored on Secure Zone is not supported."
+      }
+    ]
+  },
+  {
+    "source_file": "07-disaster-recovery/04-connectivity-ipsec-p2s.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_491_detail"
+    ],
+    "missing_information": [
+      "Misses key facts: public IP auto-assignment, NAT/DHCP/DNS/default router functions. Adds tangential info about network overlap and IP reassignment."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_491_detail",
+        "ideal": "When using a Multi-site IPsec VPN connection, the VPN gateway is automatically assigned a public IP address. The gateway serves multiple functions: it connects local network Ethernet segments and cloud production network in L3 IPsec mode, acts as a default router and NAT for test and production network machines, works as a DHCP server providing network configuration to all machines, and functions as a caching DNS server."
+      }
+    ]
+  },
+  {
+    "source_file": "07-disaster-recovery/09-point-to-site-vpn-network-management.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_496_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the key facts: certificate-based authentication, user credential authentication, Company Administrator or Cyber Protection role requirements, and OpenVPN config regeneration note. It admits insufficient detail rather than answering."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_496_detail",
+        "ideal": "Point-to-site VPN uses certificates to authenticate the VPN client, and additionally requires user credentials for authentication. Users must authenticate with their Cyber Protect Cloud credentials and must have either a 'Company Administrator' or 'Cyber Protection' user role. Also, if the OpenVPN configuration is re-generated, the updated configuration must be provided to all users using the Point-to-site connection."
+      }
+    ]
+  },
+  {
+    "source_file": "07-disaster-recovery/12-cloud-server-details-backups-firewall-compute-points.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_499_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the information and only provides partial details about RPO threshold. Missing all five compliance statuses and the calculation formula."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_499_detail",
+        "ideal": "RPO compliance is calculated as Actual RPO divided by RPO threshold, where Actual RPO equals current time minus last recovery point time. There are five statuses: Compliant (ratio < 1x), Exceeded (ratio <= 2x), Severely exceeded (ratio <= 4x), Critically exceeded (ratio > 4x), and Pending (no backups) when the backup is still being created. The RPO threshold can be set within 15-60 minutes, 1-24 hours, or 1-14 days."
+      }
+    ]
+  },
+  {
+    "source_file": "07-disaster-recovery/13-failover-production-test-automated.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_500_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the information and provides no substantive answer. No hallucination, but completely fails to address the question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_500_detail",
+        "ideal": "If the DeviceInstallDisabled parameter is set to 1 at HKLM\\SYSTEM\\CurrentControlSet\\Services\\DeviceInstall\\Parameters, the disaster recovery service will set the value to 0 or remove the parameter completely during failover. This is required so Windows can install and configure necessary drivers and devices. You can manually restore the original setting after failover, but be aware that setting it back to 1 might impact subsequent disaster recovery operations including failback and re-validation steps."
+      }
+    ]
+  },
+  {
+    "source_file": "07-disaster-recovery/17-azure-recovery-servers-failover.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_504_detail"
+    ],
+    "missing_information": [
+      "RAG answer incorrectly suggests Power off deallocates the VM and stops compute charges. The ideal answer states Power off does NOT deallocate - VM stays in Stopped (Allocated) state and continues billing. RAG also incorrectly focuses on Acronis compute points vs Azure billing distinction rather than the key point about allocated vs deallocated state."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_504_detail",
+        "ideal": "The Power off operation stops the Azure VM but does not deallocate resources. The VM enters the Stopped (Allocated) state, which means it still reserves CPU and memory and continues to incur compute charges as if it were running. This state preserves the IP address and server placement of the VM. To stop billing, you would need to deallocate the VM rather than just powering it off."
+      }
+    ]
+  },
+  {
+    "source_file": "07-disaster-recovery/18-azure-failback-runbooks-resources.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_505_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the information and fails to list any of the 5 specific prerequisites. It mentions some tangential facts (shorter downtime, failover state) but misses all key points from the ideal answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_505_detail",
+        "ideal": "The prerequisites are: the agent must be online and not currently used for another failback operation, your Internet connection must be stable, a registered bootable media must be available, the target machine must be the original machine on your local site or have the same firmware, and there must be at least one full backup of the virtual machine in the cloud."
+      }
+    ]
+  },
+  {
+    "source_file": "08-antivirus-antimalware/01-supported-os-av-am.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_507_detail"
+    ],
+    "missing_information": [
+      "RAG answer failed to provide the specific Linux distributions (CentOS 7.x, Debian 10.x/11.x, CloudLinux 7.x/8.x, Ubuntu 16.04/18.04/20.04/22.04). It admitted insufficient context but incorrectly suggested behavioral analysis may have limited or no Linux support, when it actually does support several distros."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_507_detail",
+        "ideal": "The Behavioral analysis engine supports a limited subset of Linux distributions: CentOS 7.x, Debian 10.x and 11.x, CloudLinux 7.x and 8.x, and Ubuntu 16.04, 18.04, 20.04, and 22.04. Other supported Linux distros like Red Hat, Oracle Linux, and SUSE do not support the Behavioral analysis engine."
+      }
+    ]
+  },
+  {
+    "source_file": "08-antivirus-antimalware/06-active-protection-cyber-backup-standard.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_512_detail"
+    ],
+    "missing_information": [
+      "RAG answer lists wrong supported features (automatic recovery, exclusions) vs ideal (Action on detection, Network folder protection, Exclusions). Misses Network folder protection entirely. Mentions features like Process Injects detection that aren't in the ideal answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_512_detail",
+        "ideal": "Active Protection for Linux only supports three settings: Action on detection, Network folder protection, and Exclusions. Network folder protection on Linux is always on and not configurable. Self-protection and Agent Uninstallation Protection are not supported on Linux."
+      }
+    ]
+  },
+  {
+    "source_file": "08-antivirus-antimalware/08-microsoft-defender-security-essentials.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_514_how_to"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the specific scheduling options (Full/Quick scan, time/day selection, CPU limiting, etc.) that are available in the ideal answer. It acknowledges the topic but defers to external documentation instead of answering."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_514_how_to",
+        "ideal": "In the Microsoft Defender Antivirus module, you can configure a scheduled scan by selecting either Full or Quick scan mode. You can define the time and day of the week for the scan, set a daily quick scan time, choose to start the scan only when the machine is on but not in use, check for the latest virus definitions before scanning, and limit CPU usage during the scan to a specified percentage."
+      }
+    ]
+  },
+  {
+    "source_file": "08-antivirus-antimalware/10-quarantine-management.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_516_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the key details: file restored without modifications, overwrites existing files, and is added to allowlist. It acknowledges its limitations honestly but doesn't answer the question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_516_detail",
+        "ideal": "When a quarantined file is restored, it is returned to its original location without any modifications. If a file with the same name already exists in that location, it will be overwritten by the restored file. Additionally, the restored file is automatically added to the allowlist, meaning it will be skipped during further antimalware scans."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/05-xql-query-language-and-sample-queries.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_528_how_to"
+    ],
+    "missing_information": [
+      "RAG answer misses the key `ago()` function which is the primary method for date filtering in XQL. Instead it fabricates a string-based date comparison syntax ('2026-03-01') that may not be accurate. The ideal answer specifically mentions ago() with time units (d, h, m, s), none of which appear in the RAG answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_528_how_to",
+        "ideal": "Use the `ago` function in a XQL `where` clause to filter by date. The `ago` function accepts a numeric value followed by a time unit: days (d), hours (h), minutes (m), or seconds (s). For example, `eventType | where column < ago(3d)` filters for events older than 3 days, and `column < ago(30s)` filters for events older than 30 seconds."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/06-event-types-and-fields.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_529_detail"
+    ],
+    "missing_information": [
+      "RAG answer failed to provide any substantive information, admitting insufficient context. No factual errors or hallucinations, but completely missed the answer about integers (0/1) and literal keywords (true/false)."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_529_detail",
+        "ideal": "Boolean values in XQL queries can be represented in two ways: as integers (1 for true, 0 for false) or as literal keywords (true or false). For example, both `WinLogin | where is_admin == 1` and `WinLogin | where is_admin == true` are valid expressions."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/07-investigating-incidents.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_530_detail"
+    ],
+    "missing_information": [
+      "RAG answer failed to retrieve any relevant information and returned a 'I don't know' response despite the answer being available in the documentation."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_530_detail",
+        "ideal": "The Current investigation state can be one of four values: Investigating, Not started (which is the default), False positive, or Closed. The Positivity level indicates how likely an incident is a true malicious attack, with a range of 1 to 10."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/08-investigating-nodes-and-ioc.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_531_detail"
+    ],
+    "missing_information": [
+      "RAG failed to retrieve the relevant information and returned a 'not found' response instead of answering the question"
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_531_detail",
+        "ideal": "The 'n Workloads' link indicates that the specific malicious or suspicious object has been found on other workloads, but it does not mean the attack is actively happening on those workloads. It means there is an indicator of compromise on them — the attack may have already happened and created another incident, or the attacker may be preparing to target those workloads using their attack toolkit."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/09-remediating-incidents.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_532_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it cannot answer the question and provides no substantive information about the differences between False positive and True positive verdicts."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_532_detail",
+        "ideal": "When you select 'True positive', you can add both remediation and prevention actions, including stopping threats, quarantining them, and rolling back changes. When you select 'False positive', you can only define prevention actions (such as adding the incident to a protection plan allowlist) — remediation actions like stopping or quarantining threats are not available."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/10-response-actions-workload-and-process.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_533_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks sufficient context and provides no actual answer. No hallucination but completely fails to address the question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_533_detail",
+        "ideal": "When Schedule automatic restart is selected, the system repeatedly notifies the user about a pending restart at specific intervals: 24 hours, 8 hours, 4 hours, 1 hour, 30 minutes, 15 minutes, and 5 minutes before the automatic restart. The final 5-minute notification cannot be closed or dismissed by the user."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/11-response-actions-files-registry-blocklist-allowlist.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_534_detail"
+    ],
+    "missing_information": [
+      "RAG answer incorrectly states files and registry entries; ideal answer is Process, File, and Network nodes. Registry is wrong, Process and Network are missing."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_534_detail",
+        "ideal": "The blocklist and allowlist option is available for Process, File, and Network cyber kill chain nodes. When adding to a blocklist, you must also select the relevant protection plan(s) the action should apply to. You can later remove a node from the blocklist or allowlist by following the same steps and clicking Remove instead of Add."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/12-automated-workflows-monitoring-testing.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_535_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the specific trigger conditions, admitting the information was not in its context. It correctly identifies some related concepts but misses all key details from the ideal answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_535_detail",
+        "ideal": "When an EDR incident is created, the Isolate Workload workflow triggers when: Threat status is 'Not mitigated', Incident state is 'Not started', Severity is 'Critical', and Verdict is 'Malicious'. When an EDR incident is updated, the conditions differ: Threat status must be 'Not mitigated', Positivity Level must be greater than 9, and Incident type must be 'Process detected' or 'Malware detected'. The updated trigger notably uses Positivity Level > 9 instead of Severity and Verdict conditions."
+      }
+    ]
+  },
+  {
+    "source_file": "10-edr-xdr/14-xdr-graph-and-response-actions.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_537_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it cannot answer the question and provides no substantive information about compressed archive display behavior"
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_537_detail",
+        "ideal": "When a malicious file was extracted from a zip archive attachment or other type of compressed archive, a separate file node is created for the zip archive, and a line connects the malicious file node to the attachment node. This differs from direct email attachments, where the malicious file node connects directly to the email node."
+      }
+    ]
+  },
+  {
+    "source_file": "11-mdr/02-enabling-mdr-service.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_539_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the key facts: 4 escalation contacts max, 6 call attempts per contact, and email sent to all contacts after attempts. It admits lack of information rather than hallucinating, but provides almost none of the requested details."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_539_detail",
+        "ideal": "You can configure up to 4 escalation contacts in total. During an escalation, Acronis TRU follows the escalation path and calls each contact up to six times before moving to the next contact. After a call or if no contact is made, Acronis TRU sends an email to all contacts with an overview of the escalation and the incident."
+      }
+    ]
+  },
+  {
+    "source_file": "11-mdr/03-incident-handling-and-service-portal.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_540_how_to"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the actual steps and details about the Requests page, columns, filtering options, and Edit list view. It admits lacking the information instead of answering the question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_540_how_to",
+        "ideal": "Log in to the Acronis MDR service portal using the link provided by email, then click 'View MDR incidents' on the welcome screen. The Requests page displays all incidents with columns like Reference, Summary, Status, Created date, Updated date, and Priority. You can filter incidents by status, request type, customer, and more, and use 'Edit list view' to control which columns appear."
+      }
+    ]
+  },
+  {
+    "source_file": "12-rmm/01-rmm-overview.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_541_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the key fact (314 critical applications) and admits it cannot find the information in its context."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_541_detail",
+        "ideal": "Acronis RMM's vulnerability assessment for third-party Windows applications supports detecting and managing vulnerabilities across 314 critical applications. This capability is supported by an Acronis internally maintained database to enhance the security posture of Windows third-party applications."
+      }
+    ]
+  },
+  {
+    "source_file": "12-rmm/02-m365-environment-management.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_542_how_to"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the actual steps. It admits lack of context and defers to documentation, missing key details like the Connect Microsoft account button, Octiga app permissions, and automatic tenant retrieval."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_542_how_to",
+        "ideal": "In the Cyber Protect console, go to M365 management > Configuration and click 'Connect Microsoft account'. You'll be redirected to the Microsoft login page where you sign in with your CSP credentials and accept the permissions requested by Acronis for the Octiga Multi-Tenant Security enterprise application. After logging in, the system automatically retrieves all customer tenants associated with your CSP account, and you can map them to the relevant customers in the Customer mapping tab."
+      }
+    ]
+  },
+  {
+    "source_file": "12-rmm/03-m365-baselines-and-remediation.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_543_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the specific categories (Audit, Authentication and Authorization) and Conditional Access policies. It acknowledges the information exists but cannot retrieve it from truncated context."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_543_detail",
+        "ideal": "The supported baseline categories include Audit and Authentication and Authorization. Under Audit, there are Mailbox Audit Log and Unified Audit Log baselines. Under Authentication and Authorization, there are multiple Conditional Access policies including Block Legacy Authentication, Enforce MFA, Block Unknown or Unsupported Device Access, No Persistent Browser Sessions, Require Approved Client Apps, and Application of Enforced Restrictions for Unmanaged Devices, among others."
+      }
+    ]
+  },
+  {
+    "source_file": "12-rmm/04-hardware-inventory.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_545_how_to"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the actual steps (Settings > Management > Inventory scanning > toggle switch). It adds tangential info about supported platforms/devices not asked for, and admits the key steps are truncated. Missing the important detail about Customer vs Unit tenant permissions."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_545_how_to",
+        "ideal": "In the Cyber Protect console, go to Settings, click Management, then click Inventory scanning. Use the switch to enable or disable the Hardware inventory scanning module. Note that only Customer tenants can change this setting; Unit tenants can only view it."
+      }
+    ]
+  },
+  {
+    "source_file": "12-rmm/07-software-repositories-and-deployment.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_548_how_to"
+    ],
+    "missing_information": [
+      "Misses key steps: clicking 'Add', using 'Add to my packages' wizard, selecting Version/Language/Architecture, and the requirement to add to 'My packages' before deploying. Admits context is incomplete rather than providing the actual answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_548_how_to",
+        "ideal": "First, ensure you have 2FA enabled and a Company administrator or Cyber administrator role. Then go to Software management > Library, click 'Add' on the row of the desired software package, and in the 'Add to my packages' wizard, select the settings such as Version, Language, and Architecture type. You cannot deploy directly from the Library — packages must first be added to the 'My packages' repository."
+      }
+    ]
+  },
+  {
+    "source_file": "13-data-loss-prevention/01-dlp-overview-and-data-flow-policy.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_552_detail"
+    ],
+    "missing_information": [
+      "RAG answer incorrectly states Allow all 'silently permits without logging' and Justify all 'requires users to provide justification'. The ideal answer says Allow all treats transfers as safe and creates rules, while Justify all treats them as necessary but risky. The RAG answer admits lack of context but then guesses incorrectly."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_552_detail",
+        "ideal": "With 'Allow all', all transfers of sensitive data from user workloads are treated as necessary for the business process and safe, and a new rule is created for every detected data flow that doesn't match an existing rule. With 'Justify all', transfers are treated as necessary but risky. Both options are available when configuring observation mode for automatic data flow policy creation."
+      }
+    ]
+  },
+  {
+    "source_file": "13-data-loss-prevention/03-policy-renewal.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_554_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to provide the key information: that the company-wide enforced policy is NOT enforced over that user's data transfers during the renewal period, and that new individual rules may contradict or match existing group rules. It admits the context was truncated and couldn't answer."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_554_detail",
+        "ideal": "When using observation mode to renew a user-level policy, the data flow policy enforced for the entire company or unit is not enforced over that user's data transfers during the renewal period. This means new individual rules created during the renewal may contradict or match existing group rules in the enforced company/unit policy."
+      }
+    ]
+  },
+  {
+    "source_file": "13-data-loss-prevention/08-organization-map-known-issues.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_559_detail"
+    ],
+    "missing_information": [
+      "RAG answer fails to list the six specific attributes (Organization Unit, Security ID, display name, PC\\UserName, Device/Workload, Account) due to truncated context. It acknowledges the limitation honestly but provides almost none of the requested information."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_559_detail",
+        "ideal": "For every intercepted data transfer, the DLP Agent collects six attributes: Organization Unit (manually created group), Security ID (unique security identifier shown as SID), display name (derived from account names, not always available), PC\\UserName (endpoint user name, assignable to only one Organization Unit), Device/Workload (endpoint name), and Account (accounts used for communication via instant messaging and email that were intercepted by the agent)."
+      }
+    ]
+  },
+  {
+    "source_file": "14-additional-tools/02-immutable-storage.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_561_detail"
+    ],
+    "missing_information": [
+      "RAG conflates Compliance Mode for encryption with Compliance Mode for immutable storage. Incorrectly describes AES-256 encryption requirements instead of retention policy immutability. Misses key details about Governance Mode (deleted backups stay for retention period, can change retention, can switch to Compliance). Gets the irreversibility of Compliance Mode partially right but for wrong reasons."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_561_detail",
+        "ideal": "In Governance Mode, deleted backups remain in immutable storage for the specified retention period, and you can change the retention period or switch to Compliance Mode. Immutable storage can only be disabled by contacting Support. Compliance Mode adds regulatory compliance by preventing any changes to the retention policy, including changing the retention period or disabling it. Selecting Compliance Mode is irreversible — once enabled, you cannot switch back or modify the retention settings."
+      }
+    ]
+  },
+  {
+    "source_file": "14-additional-tools/03-geo-redundant-storage.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_562_how_to"
+    ],
+    "missing_information": [
+      "RAG answer provides prerequisites but misses the actual enablement steps (warning message method and Settings > System settings method). Admits truncation. Some info may be accurate but doesn't answer the how-to question."
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_562_how_to",
+        "ideal": "You can enable it two ways. On the main screen, click 'Enable Geo-redundant cloud storage' in the warning message, select the checkbox to acknowledge replication locations and fees, then click Enable. Alternatively, go to Settings > System settings, expand the default backup options, click 'Geo-redundant cloud storage', enable the switch, click Save, acknowledge the checkbox, and confirm by clicking Enable."
+      }
+    ]
+  },
+  {
+    "source_file": "14-additional-tools/04-archival-storage.md",
+    "failure_count": 1,
+    "affected_qa_ids": [
+      "qa_563_detail"
+    ],
+    "missing_information": [
+      "RAG answer admits it lacks the context to answer and provides almost none of the required details about object locking limitations (creation-time only, versioning requirement, retention policy needed, WORM capabilities)"
+    ],
+    "ideal_answers": [
+      {
+        "qa_id": "qa_563_detail",
+        "ideal": "Object locking can only be configured at the time a bucket is created and cannot be changed later. It is only available for versioned buckets — enabling object locking automatically enables versioning. To achieve true object immutability, you must also add a retention policy (retention mode and retention period) on top of the object locking capabilities. Object locking provides Write-Once Read-Many (WORM) capabilities, meaning data can be written and read but cannot be deleted or overwritten."
+      }
+    ]
+  }
+]

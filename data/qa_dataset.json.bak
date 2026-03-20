@@ -1,0 +1,510 @@
+[
+  {
+    "id": "chunk_02_persona_NEW_ADMIN",
+    "chunk_id": 2,
+    "chunk_title": "Activating the account",
+    "source_file": "01-activating-account.md",
+    "persona": "NEW_ADMIN",
+    "question": "How do I activate my Acronis account after receiving the email?",
+    "expected_answerable": true,
+    "agent_answer": "## Activating Your Acronis Account\n\nWhen an administrator creates an account for you, you'll receive an email containing:\n\n1. **Your login** (username) — also shown on the account activation page.\n2. An **\"Activate account\"** button.\n\n### Steps to activate:\n\n1. Open the email and click the **Activate account** button.\n2. Set a password for your account — it must be **at least 9 characters long**.\n3. Once activated, you can log in to the **Cyber Protect console**:\n   - Go to the Cyber Protection login page.\n   - Enter your login and click **Next**.\n   - Enter your password and click **Next**.\n   - If you use more than one Cyber Protect Cloud service, select **Cyber Protection**.\n\n### Recommended: Enable Two-Factor Authentication (2FA)\n\nAfter activation, consider setting up **2FA** for additional security. This requires a one-time code from an authenticator app on your mobile device, protecting your account even if your password is compromised.\n\n---\n\n📄 **Sources:** `01-activating-account.md`, `05-accessing-cyber-protection-service.md`, `03-two-factor-authentication.md`",
+    "retrieved_chunks": [
+      "01-activating-account.md",
+      "03-two-factor-authentication.md",
+      "05-accessing-cyber-protection-service.md"
+    ],
+    "top_cosine_score": 0.61,
+    "top_reranker_score": 0.56,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_02_persona_EXPERIENCED_SYSADMIN",
+    "chunk_id": 2,
+    "chunk_title": "Activating the account",
+    "source_file": "01-activating-account.md",
+    "persona": "EXPERIENCED_SYSADMIN",
+    "question": "What is the minimum password length required during account activation?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the documentation, the minimum password length required during account activation is **9 characters**.\n\nFrom the activation instructions:\n\n> \"Ensure that your password is at least nine characters long.\"\n\nAdditionally, passwords are checked for complexity and classified as Weak, Medium, or Strong. You cannot save a **weak** password even if it meets the length requirement. Passwords that repeat the user name, login, email, or tenant name are always considered weak.\n\n**Sources:** `01-activating-account.md`, `02-password-requirements.md`",
+    "retrieved_chunks": [
+      "01-activating-account.md",
+      "02-password-requirements.md",
+      "03-two-factor-authentication.md"
+    ],
+    "top_cosine_score": 0.62,
+    "top_reranker_score": 0.72,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_02_persona_END_USER",
+    "chunk_id": 2,
+    "chunk_title": "Activating the account",
+    "source_file": "01-activating-account.md",
+    "persona": "END_USER",
+    "question": "I got an email about my account but I don't know what my username is, where can I find it?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the documentation, when an administrator creates an account for you, the email message you received contains:\n\n- **Your login (username)** — it's included directly in the email.\n- An **Activate account** button.\n\nAdditionally, **your login is also shown on the account activation page** when you click the \"Activate account\" button in that email.\n\nSo check the activation email carefully — your username should be listed there. If you can't find the email, check your spam/junk folder or contact your administrator to resend it.\n\n**Source:** `01-activating-account.md` — *Getting Started with Cyber Protection*",
+    "retrieved_chunks": [
+      "01-activating-account.md",
+      "05-accessing-cyber-protection-service.md",
+      "03-two-factor-authentication.md"
+    ],
+    "top_cosine_score": 0.61,
+    "top_reranker_score": 0.53,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_02_persona_MANAGER",
+    "chunk_id": 2,
+    "chunk_title": "Activating the account",
+    "source_file": "01-activating-account.md",
+    "persona": "MANAGER",
+    "question": "What information is provided to users when their accounts are first created?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the documentation, when an administrator creates an account for a user, an email message is sent containing the following information:\n\n- **Your login** — The username used to log in. The login is also shown on the account activation page.\n- **Activate account button** — A button to click to set the password for the account. The password must be at least nine characters long.\n\nThe user is required to activate their account by clicking the button and setting a password that meets the complexity requirements (passwords are classified as Weak, Medium, or Strong, and weak passwords cannot be saved).\n\n**Sources:** `01-activating-account.md`, `02-password-requirements.md`",
+    "retrieved_chunks": [
+      "01-activating-account.md",
+      "02-password-requirements.md",
+      "04-privacy-settings.md"
+    ],
+    "top_cosine_score": 0.65,
+    "top_reranker_score": 0.51,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_02_persona_IRRELEVANT",
+    "chunk_id": 2,
+    "chunk_title": "Activating the account",
+    "source_file": "01-activating-account.md",
+    "persona": "IRRELEVANT",
+    "question": "How do I reset my password if I forgot it after activation?",
+    "expected_answerable": false,
+    "agent_answer": "Based on the retrieved documentation, I don't have specific instructions for the **\"Forgot Password\"** reset flow after account activation.\n\nHowever, here's what the documentation does cover that may help:\n\n1. **Login page**: You access the Cyber Protection service via the Cyber Protect console login page. Typically, most login pages include a **\"Forgot password?\"** link — look for this on the login screen when you type your login and click **Next**.\n\n2. **Account activation**: During initial activation, you set your password via the **\"Activate account\"** button in the email you received. The password must be **at least 9 characters long** (per the activation docs).\n\n3. **Two-factor authentication (2FA)**: If 2FA is enabled on your account, you'll also need access to your authenticator app after resetting your password.\n\n**Recommended steps:**\n- Go to the Cyber Protect console login page and look for a \"Forgot password\" or \"Reset password\" link.\n- If that option isn't available, contact your **service administrator** — they can reset your password or send a new activation link from the Management Portal.\n\n> **Sources:** `01-activating-account.md`, `05-accessing-cyber-protection-service.md`, `03-two-factor-authentication.md`",
+    "retrieved_chunks": [
+      "05-accessing-cyber-protection-service.md",
+      "03-two-factor-authentication.md",
+      "01-activating-account.md"
+    ],
+    "top_cosine_score": 0.66,
+    "top_reranker_score": 0.71,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_02_persona_ADVERSARIAL",
+    "chunk_id": 2,
+    "chunk_title": "Activating the account",
+    "source_file": "01-activating-account.md",
+    "persona": "ADVERSARIAL",
+    "question": "I heard the activation email contains the password directly so I don't need to set one, is that correct?",
+    "expected_answerable": true,
+    "agent_answer": "No, that is **not correct**. The activation email does **not** contain your password directly.\n\nAccording to the documentation, the activation email contains:\n\n1. **Your login** (username)\n2. An **\"Activate account\" button**\n\nWhen you click that button, you are taken to an account activation page where **you set your own password**. The password must be at least nine characters long.\n\nSo you **must** create a password yourself during the activation process — it is never sent to you via email.\n\n---\n\n📄 *Source: 01-activating-account.md — \"Getting Started with Cyber Protection\"*",
+    "retrieved_chunks": [
+      "01-activating-account.md",
+      "05-accessing-cyber-protection-service.md",
+      "03-two-factor-authentication.md"
+    ],
+    "top_cosine_score": 0.65,
+    "top_reranker_score": 0.52,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_03_persona_NEW_ADMIN",
+    "chunk_id": 3,
+    "chunk_title": "Password requirements",
+    "source_file": "02-password-requirements.md",
+    "persona": "NEW_ADMIN",
+    "question": "How do I set a password for a new user in Acronis Cyber Protect Cloud?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the retrieved documentation, I don't have specific step-by-step instructions for setting a password for a new user in Acronis Cyber Protect Cloud.\n\nHowever, the documentation does mention that new users go through an **account activation** process. From the \"Accessing the Cyber Protection service\" document:\n\n> \"After you activate your account, you can access the Cyber Protection service by logging in to the Cyber Protect console or via Management Portal.\"\n\nTypically in Acronis Cyber Protect Cloud, when a new user account is created by an administrator, the user receives an **activation email** with a link to set their password. The general flow is:\n\n1. An administrator creates the user account in the **Management Portal**.\n2. The new user receives an **activation email**.\n3. The user clicks the activation link and **sets their own password**.\n4. After activation, they can log in to the Cyber Protect console.\n\nAdditionally, if **two-factor authentication (2FA)** is enabled for the organization, the user will also need to set up a one-time code generator app on their device after setting their password.\n\n> *\"When 2FA is set up, you are required to enter your password (the first factor) and a one-time code (the second factor) to log in to the Cyber Protect console.\"*\n> — Source: `03-two-factor-authentication.md`\n\nFor detailed instructions on creating user accounts and managing passwords, I'd recommend checking the **Management Portal** section of the Acronis documentation, which was not included in the retrieved context.\n\n**Sources:** `05-accessing-cyber-protection-service.md`, `03-two-factor-authentication.md`",
+    "retrieved_chunks": [
+      "05-accessing-cyber-protection-service.md",
+      "03-two-factor-authentication.md",
+      "10a-supported-features-protection-plans-and-backup.md"
+    ],
+    "top_cosine_score": 0.61,
+    "top_reranker_score": 0.71,
+    "no_results": false,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_03_persona_EXPERIENCED_SYSADMIN",
+    "chunk_id": 3,
+    "chunk_title": "Password requirements",
+    "source_file": "02-password-requirements.md",
+    "persona": "EXPERIENCED_SYSADMIN",
+    "question": "What specific strings are checked against the password to classify it as weak — does it include the tenant name and user email?",
+    "expected_answerable": true,
+    "agent_answer": "Yes, based on the documentation, passwords that repeat **any** of the following are **always considered weak**, regardless of length:\n\n1. **User name**\n2. **Login**\n3. **User email** ✅\n4. **Tenant name** (the name of the tenant to which the user account belongs) ✅\n5. **Most common passwords** (commonly known/leaked passwords)\n\nSo to directly answer your question: **yes**, both the **tenant name** and **user email** are explicitly checked against the password, and matching any of them will classify the password as weak — even if it otherwise meets length requirements.\n\nAdditionally, weak passwords cannot be saved at all. Only medium or strong passwords are accepted.\n\n> **Source:** `02-password-requirements.md` — *Getting Started with Cyber Protection*",
+    "retrieved_chunks": [
+      "02-password-requirements.md",
+      "03-two-factor-authentication.md",
+      "10c-supported-features-antivirus-antimalware.md"
+    ],
+    "top_cosine_score": 0.75,
+    "top_reranker_score": 0.73,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_03_persona_END_USER",
+    "chunk_id": 3,
+    "chunk_title": "Password requirements",
+    "source_file": "02-password-requirements.md",
+    "persona": "END_USER",
+    "question": "I'm trying to create my account but it keeps saying my password is too weak even though it's really long, what's wrong?",
+    "expected_answerable": true,
+    "agent_answer": "## Password Weakness Despite Length\n\nHaving a long password doesn't guarantee it will be accepted. Acronis Cyber Protect Cloud checks password **complexity**, not just length. Your password is likely being rejected for one of these reasons:\n\n### Passwords always considered **weak** regardless of length:\n- **Repeats your user name or login**\n- **Repeats your email address**\n- **Repeats the name of your tenant** (the organization your account belongs to)\n- **Is a commonly used password** (e.g., \"Password123456!\", \"Qwerty12345678\", etc.)\n\n### What to do:\n1. Make sure your password is **at least 9 characters long**\n2. Ensure it does **not** contain your username, email, or tenant name\n3. Avoid common/dictionary passwords\n4. Aim for a password classified as **Medium** or **Strong** — you **cannot save a weak password** even if it meets the length requirement\n5. Mix uppercase, lowercase, numbers, and special characters in a non-predictable way\n\nOnce your password meets complexity requirements and is classified as at least \"Medium,\" you'll be able to proceed with account activation.\n\n---\n\n📄 *Sources: `02-password-requirements.md` (Password requirements), `01-activating-account.md` (Activating the account)*",
+    "retrieved_chunks": [
+      "02-password-requirements.md",
+      "01-activating-account.md",
+      "05-accessing-cyber-protection-service.md"
+    ],
+    "top_cosine_score": 0.74,
+    "top_reranker_score": 0.69,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_03_persona_MANAGER",
+    "chunk_id": 3,
+    "chunk_title": "Password requirements",
+    "source_file": "02-password-requirements.md",
+    "persona": "MANAGER",
+    "question": "What password strength levels does the platform enforce, and can users save a weak password if needed?",
+    "expected_answerable": true,
+    "agent_answer": "\n\nBased on the documentation, Acronis Cyber Protect Cloud classifies passwords into **three strength levels** during user registration:\n\n1. **Weak**\n2. **Medium**\n3. **Strong**\n\n**No, users cannot save a weak password**, even if it meets the minimum length requirement. Additionally, passwords are automatically considered **weak** if they:\n\n- Repeat the user name, login, or email\n- Repeat the name of the tenant the user account belongs to\n- Match most common passwords\n\n> **Note:** Password requirements are subject to change.\n\n**Source:** `02-password-requirements.md` — *Getting Started with Cyber Protection*",
+    "retrieved_chunks": [
+      "02-password-requirements.md",
+      "10a-supported-features-protection-plans-and-backup.md",
+      "10g-supported-features-dlp-management-inventory.md"
+    ],
+    "top_cosine_score": 0.72,
+    "top_reranker_score": 0.69,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_03_persona_IRRELEVANT",
+    "chunk_id": 3,
+    "chunk_title": "Password requirements",
+    "source_file": "02-password-requirements.md",
+    "persona": "IRRELEVANT",
+    "question": "Can I configure a custom password expiration policy for my tenant in Acronis Cyber Protect Cloud?",
+    "expected_answerable": false,
+    "agent_answer": "Based on the documentation I have available, I don't have specific information about configuring custom password expiration policies for tenants in Acronis Cyber Protect Cloud.\n\nThe retrieved documentation covers **two-factor authentication (2FA)**, **accessing the Cyber Protection service**, and **supported protection features by OS** — but none of these sections address password expiration or password policy configuration at the tenant level.\n\nI'd recommend:\n1. Checking the **Acronis Cyber Protect Cloud Administration Guide** under tenant/user management settings.\n2. Contacting **Acronis Support** directly for guidance on password policy customization.\n3. Reviewing the **Management Portal** settings, as tenant-level security policies (including password rules) are typically managed there.\n\n**Sources reviewed:** `03-two-factor-authentication.md`, `05-accessing-cyber-protection-service.md`, `10a-supported-features-protection-plans-and-backup.md`",
+    "retrieved_chunks": [
+      "03-two-factor-authentication.md",
+      "10a-supported-features-protection-plans-and-backup.md",
+      "05-accessing-cyber-protection-service.md"
+    ],
+    "top_cosine_score": 0.57,
+    "top_reranker_score": 0.58,
+    "no_results": false,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_03_persona_ADVERSARIAL",
+    "chunk_id": 3,
+    "chunk_title": "Password requirements",
+    "source_file": "02-password-requirements.md",
+    "persona": "ADVERSARIAL",
+    "question": "I heard that using special characters and uppercase letters is mandatory for Acronis passwords — how many special characters are required?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the retrieved documentation, I cannot confirm that specific special characters or uppercase letters are mandatory, nor can I tell you a required number of special characters. Here's what the documentation **does** say about Acronis password requirements:\n\n1. **Minimum length:** Passwords must be at least **9 characters** long.\n2. **Complexity classification:** Passwords are rated as **Weak**, **Medium**, or **Strong** — and **weak passwords cannot be saved**.\n3. **Automatically considered weak:**\n   - Passwords that repeat the user name, login, email, or tenant name.\n   - Most common passwords.\n4. The documentation explicitly notes: *\"Password requirements are subject to change.\"*\n\nThe documentation does **not** specify a mandatory number of special characters or uppercase letters. It uses a strength-based classification system rather than rigid character-type rules. To meet the threshold (above \"Weak\"), you likely need a mix of character types, but the exact formula isn't detailed in the available docs.\n\n**Recommendation:** Use a combination of uppercase, lowercase, numbers, and special characters to ensure your password is classified as Medium or Strong.\n\n**Sources:** `02-password-requirements.md`, `01-activating-account.md` (Getting Started with Cyber Protection)",
+    "retrieved_chunks": [
+      "02-password-requirements.md",
+      "03-two-factor-authentication.md",
+      "01-activating-account.md"
+    ],
+    "top_cosine_score": 0.59,
+    "top_reranker_score": 0.51,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_04_persona_NEW_ADMIN",
+    "chunk_id": 4,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "03-two-factor-authentication.md",
+    "persona": "NEW_ADMIN",
+    "question": "How do I set up two-factor authentication for my Acronis Cyber Protect account?",
+    "expected_answerable": true,
+    "agent_answer": "# Setting Up Two-Factor Authentication (2FA)\n\nTwo-factor authentication (2FA) provides additional protection from unauthorized access to your Acronis Cyber Protect account. Here's how it works:\n\n## How 2FA Works\n\nWhen 2FA is set up, you need **two things** to log in to the Cyber Protect console:\n\n1. **First factor:** Your password\n2. **Second factor:** A one-time code generated by a special authenticator application\n\nThis means that even if someone discovers your login and password, they will **not** be able to access your account without the one-time code from your device.\n\n## Requirements\n\n- You need to install an **authenticator application** on your mobile phone or another device that belongs to you (e.g., Google Authenticator, Microsoft Authenticator, etc.)\n\n## Logging In with 2FA Enabled\n\n1. Go to the Cyber Protection login page\n2. Type your **login**, then click **Next**\n3. Type your **password**, then click **Next**\n4. Enter the **one-time code** from your authenticator app\n\n> **Note:** The detailed step-by-step setup instructions (such as scanning the QR code and linking the authenticator app) may be configured by your administrator. If you need 2FA enabled or have trouble setting it up, contact your Acronis administrator.\n\n---\n\n**Sources:**\n- `03-two-factor-authentication.md` — *Getting Started with Cyber Protection*\n- `05-accessing-cyber-protection-service.md` — *Getting Started with Cyber Protection*",
+    "retrieved_chunks": [
+      "03-two-factor-authentication.md",
+      "01-activating-account.md",
+      "05-accessing-cyber-protection-service.md"
+    ],
+    "top_cosine_score": 0.78,
+    "top_reranker_score": 0.73,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_04_persona_EXPERIENCED_SYSADMIN",
+    "chunk_id": 4,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "03-two-factor-authentication.md",
+    "persona": "EXPERIENCED_SYSADMIN",
+    "question": "How long is a TOTP one-time code valid before it expires, and what happens if the authenticator app time is out of sync?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the retrieved documentation, I don't have specific information about the TOTP code validity duration or what happens when the authenticator app's time is out of sync in Acronis Cyber Protect Cloud.\n\nThe documentation only covers the general concept of two-factor authentication (2FA) — that it requires a password (first factor) and a one-time code from an authenticator app (second factor) to log in to the Cyber Protect console.\n\n**General TOTP knowledge** (not from Acronis docs): Standard TOTP codes are typically valid for 30 seconds, and most systems accept codes within a small time window (±1 interval) to account for minor clock drift. However, I cannot confirm whether Acronis follows this standard or has its own specific behavior.\n\nFor precise details, I'd recommend:\n1. Checking the full Acronis Cyber Protect Cloud admin guide on 2FA configuration\n2. Contacting Acronis support directly\n\n**Source:** `03-two-factor-authentication.md` (Getting Started with Cyber Protection)",
+    "retrieved_chunks": [
+      "03-two-factor-authentication.md",
+      "10a-supported-features-protection-plans-and-backup.md",
+      "10g-supported-features-dlp-management-inventory.md"
+    ],
+    "top_cosine_score": 0.54,
+    "top_reranker_score": 0.72,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_04_persona_END_USER",
+    "chunk_id": 4,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "03-two-factor-authentication.md",
+    "persona": "END_USER",
+    "question": "I lost my phone and now I can't log in to Cyber Protect anymore. I think there was some backup file I was supposed to save but I don't remember. What can I do?",
+    "expected_answerable": true,
+    "agent_answer": "",
+    "retrieved_chunks": [
+      "03-two-factor-authentication.md",
+      "05-accessing-cyber-protection-service.md",
+      "10a-supported-features-protection-plans-and-backup.md"
+    ],
+    "top_cosine_score": 0.64,
+    "top_reranker_score": 0.72,
+    "no_results": false,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_04_persona_MANAGER",
+    "chunk_id": 4,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "03-two-factor-authentication.md",
+    "persona": "MANAGER",
+    "question": "What options do employees have to regain access if they lose their second-factor device?",
+    "expected_answerable": true,
+    "agent_answer": "",
+    "retrieved_chunks": [
+      "03-two-factor-authentication.md",
+      "10a-supported-features-protection-plans-and-backup.md",
+      "10g-supported-features-dlp-management-inventory.md"
+    ],
+    "top_cosine_score": 0.64,
+    "top_reranker_score": 0.71,
+    "no_results": false,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_04_persona_IRRELEVANT",
+    "chunk_id": 4,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "03-two-factor-authentication.md",
+    "persona": "IRRELEVANT",
+    "question": "Can I use two-factor authentication to protect individual backup plans or recovery operations?",
+    "expected_answerable": false,
+    "agent_answer": "Based on the retrieved documentation, **no** — two-factor authentication (2FA) in Acronis Cyber Protect Cloud is designed to protect **account access**, not individual backup plans or recovery operations.\n\nSpecifically, 2FA works at the **login level**:\n\n- When 2FA is enabled, you must enter your **password** (first factor) and a **one-time code** (second factor) to **log in to the Cyber Protect console**.\n- The one-time code is generated by an authenticator app installed on your mobile device.\n- Its purpose is to prevent unauthorized access to your account even if your credentials are compromised.\n\nThere is no mention in the documentation of applying 2FA granularly to specific backup plans or recovery operations. It is an **account-wide security measure** that protects access to the console itself.\n\n**Source:** `03-two-factor-authentication.md` — *Getting Started with Cyber Protection*",
+    "retrieved_chunks": [
+      "03-two-factor-authentication.md",
+      "10a-supported-features-protection-plans-and-backup.md",
+      "01-activating-account.md"
+    ],
+    "top_cosine_score": 0.7,
+    "top_reranker_score": 0.69,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_04_persona_ADVERSARIAL",
+    "chunk_id": 4,
+    "chunk_title": "Two-factor authentication",
+    "source_file": "03-two-factor-authentication.md",
+    "persona": "ADVERSARIAL",
+    "question": "I heard that the 'Trust this browser' checkbox is recommended to be enabled for better security. Is that correct?",
+    "expected_answerable": true,
+    "agent_answer": "**No, that is not correct.** In fact, it's the opposite.\n\nBased on the Acronis Cyber Protect Cloud documentation on **Two-factor authentication (2FA)**, the \"Trust this browser\" checkbox is a **convenience feature**, not a security enhancement. When you check \"Trust this browser,\" it **skips the one-time code (second factor) prompt** on that specific browser for subsequent logins (typically for 30 days).\n\nThis effectively **reduces your security** because:\n\n- 2FA is designed so that even if someone discovers your login and password, they **cannot access your account** without the one-time code from your authenticator app.\n- By trusting a browser, you remove that second layer of protection on that device — meaning anyone with access to your credentials and that browser could log in **without the one-time code**.\n\n**Recommendation for better security:**\n- **Do NOT** check \"Trust this browser,\" especially on shared or less-secure devices.\n- Always require the one-time code from your authenticator application for every login.\n\nThe \"Trust this browser\" option should only be used on personal, well-secured devices where convenience is prioritized over maximum security.\n\n📄 *Source: 03-two-factor-authentication.md — Getting Started with Cyber Protection*",
+    "retrieved_chunks": [
+      "03-two-factor-authentication.md",
+      "10c-supported-features-antivirus-antimalware.md",
+      "10d-supported-features-edr-vulnerability-patch.md"
+    ],
+    "top_cosine_score": 0.51,
+    "top_reranker_score": 0.68,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_05_persona_NEW_ADMIN",
+    "chunk_id": 5,
+    "chunk_title": "Privacy settings",
+    "source_file": "04-privacy-settings.md",
+    "persona": "NEW_ADMIN",
+    "question": "How do I turn off Google Analytics in Cyber Protect Cloud?",
+    "expected_answerable": true,
+    "agent_answer": "## Turning Off Google Analytics in Cyber Protect Cloud\n\nBased on the documentation, Cyber Protect Cloud has **Privacy settings** that allow you to control the collection, use, and disclosure of your personal information, including Google Analytics.\n\nHere's what you need to know:\n\n- **On initial launch**, depending on your country and the data center serving you, you may be asked to confirm whether you agree to use Google Analytics.\n- You can indicate whether or not you give consent through the **Privacy settings** in the Cyber Protect Cloud console.\n\nTo manage this, navigate to the **Privacy settings** section within the Cyber Protect Cloud console, where you can withdraw or modify your consent for Google Analytics data collection.\n\n> **Note:** The available privacy options may vary depending on your region and the Cyber Protect Cloud data center providing services to you.\n\n---\n\n📄 *Source: `04-privacy-settings.md` — Getting Started with Cyber Protection*",
+    "retrieved_chunks": [
+      "04-privacy-settings.md",
+      "03-two-factor-authentication.md",
+      "10g-supported-features-dlp-management-inventory.md"
+    ],
+    "top_cosine_score": 0.72,
+    "top_reranker_score": 0.73,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_05_persona_EXPERIENCED_SYSADMIN",
+    "chunk_id": 5,
+    "chunk_title": "Privacy settings",
+    "source_file": "04-privacy-settings.md",
+    "persona": "EXPERIENCED_SYSADMIN",
+    "question": "If the Google Analytics section is not visible in My privacy settings, what does that indicate and is there any way to force-enable it?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the retrieved documentation:\n\nIf the **Google Analytics section is not visible** in your **My privacy settings**, this indicates that **your specific country or the Cyber Protect Cloud data center serving you does not require or support the Google Analytics consent option**. The visibility of this setting is determined by:\n\n- **The country** in which you are using Cyber Protect Cloud\n- **The data center** that provides services to you\n\nOnly in certain jurisdictions (likely those with specific privacy regulations like GDPR) are users presented with the Google Analytics consent prompt on initial launch.\n\n**There is no way to force-enable it.** The documentation does not mention any manual override, configuration option, or workaround to make the Google Analytics setting appear if it is not shown for your region/data center. This behavior is controlled server-side based on your geographical and data center context.\n\n---\n\n📄 **Source:** `04-privacy-settings.md` — *Getting Started with Cyber Protection > Privacy settings*",
+    "retrieved_chunks": [
+      "04-privacy-settings.md",
+      "10a-supported-features-protection-plans-and-backup.md",
+      "03-two-factor-authentication.md"
+    ],
+    "top_cosine_score": 0.67,
+    "top_reranker_score": 0.71,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_05_persona_END_USER",
+    "chunk_id": 5,
+    "chunk_title": "Privacy settings",
+    "source_file": "04-privacy-settings.md",
+    "persona": "END_USER",
+    "question": "There was some popup when I first logged in about tracking my data and I clicked something, can I change that later?",
+    "expected_answerable": true,
+    "agent_answer": "Yes, you can change that setting later! What you saw was the **Privacy settings** consent prompt.\n\nOn your initial launch of Cyber Protect Cloud, depending on your country and the data center serving you, you may be asked whether you agree to the use of **Google Analytics**. Google Analytics helps Acronis understand user behavior and improve the product.\n\nIf you clicked \"agree\" or \"disagree\" and want to change your choice, you can revisit your **Privacy settings** within the Cyber Protect Cloud console to update your consent for the collection, use, and disclosure of your personal information.\n\n> **Source:** `04-privacy-settings.md` — *Getting Started with Cyber Protection > Privacy settings*",
+    "retrieved_chunks": [
+      "04-privacy-settings.md",
+      "03-two-factor-authentication.md",
+      "10g-supported-features-dlp-management-inventory.md"
+    ],
+    "top_cosine_score": 0.59,
+    "top_reranker_score": 0.5,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_05_persona_MANAGER",
+    "chunk_id": 5,
+    "chunk_title": "Privacy settings",
+    "source_file": "04-privacy-settings.md",
+    "persona": "MANAGER",
+    "question": "Does Cyber Protect Cloud collect personally identifiable information through Google Analytics, or is the data anonymized?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the retrieved documentation, I can only partially answer your question. The documentation on **Privacy Settings** (source: `04-privacy-settings.md`) confirms that:\n\n- Cyber Protect Cloud **may use Google Analytics**, depending on your country and the data center serving you.\n- On initial launch, you **may be asked for consent** to use Google Analytics.\n- Google Analytics is used to **\"better understand user behavior\"** and improve the product.\n\nHowever, the retrieved excerpt is truncated and **does not explicitly state whether the data collected via Google Analytics is anonymized or contains personally identifiable information (PII).**\n\nWhat is clear is that Acronis provides a **consent-based opt-in mechanism** — you are asked to agree before Google Analytics is enabled, which aligns with privacy regulations requiring user consent for data collection.\n\nFor a definitive answer on whether IP anonymization or other PII protections are applied to the Google Analytics data, I'd recommend checking the full Acronis privacy policy or contacting Acronis support directly.\n\n**Source:** `04-privacy-settings.md` — *Getting Started with Cyber Protection > Privacy settings*",
+    "retrieved_chunks": [
+      "04-privacy-settings.md",
+      "10a-supported-features-protection-plans-and-backup.md",
+      "03-two-factor-authentication.md"
+    ],
+    "top_cosine_score": 0.71,
+    "top_reranker_score": 0.73,
+    "no_results": false,
+    "answer_cites_source": true
+  },
+  {
+    "id": "chunk_05_persona_IRRELEVANT",
+    "chunk_id": 5,
+    "chunk_title": "Privacy settings",
+    "source_file": "04-privacy-settings.md",
+    "persona": "IRRELEVANT",
+    "question": "How do I configure data loss prevention (DLP) policies in Cyber Protect Cloud?",
+    "expected_answerable": false,
+    "agent_answer": "I don't have specific documentation available on configuring Data Loss Prevention (DLP) policies in Acronis Cyber Protect Cloud.\n\nHowever, here's what I can share at a high level:\n\n**Acronis Advanced DLP (Device Control / Data Loss Prevention)** is typically available as an **add-on pack** within Cyber Protect Cloud. To configure it, you would generally:\n\n1. **Enable the Advanced DLP pack** on the tenant/customer level in the management console.\n2. **Create or edit a protection plan** and look for the **Device Control** or **Data Loss Prevention** module.\n3. **Define policies** that control:\n   - Which device types are allowed/blocked (USB drives, printers, clipboard, etc.)\n   - Content-aware rules (sensitive data patterns like credit card numbers, SSNs, etc.)\n   - Allowlists/blocklists for specific devices\n4. **Apply the protection plan** to the target workloads/machines.\n\n**For accurate, step-by-step instructions, I recommend:**\n- Checking the official **Acronis Cyber Protect Cloud Administrator Guide** at [https://www.acronis.com/support/documentation/](https://www.acronis.com/support/documentation/)\n- Contacting **Acronis Support** or your service provider for guidance specific to your console version\n- Reviewing the **Advanced DLP** section in the Acronis Knowledge Base at [https://kb.acronis.com](https://kb.acronis.com)\n\nI apologize that I couldn't provide more detailed documentation on this specific topic. Would you like help with another Acronis Cyber Protect Cloud feature?",
+    "retrieved_chunks": [],
+    "top_cosine_score": 0.0,
+    "top_reranker_score": 0.0,
+    "no_results": true,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_05_persona_ADVERSARIAL",
+    "chunk_id": 5,
+    "chunk_title": "Privacy settings",
+    "source_file": "04-privacy-settings.md",
+    "persona": "ADVERSARIAL",
+    "question": "I know that Google Analytics is mandatory in all regions for Cyber Protect Cloud and cannot be disabled — how do I opt out of data collection then?",
+    "expected_answerable": true,
+    "agent_answer": "I need to correct your assumption here: **I don't have any documentation confirming that Google Analytics is mandatory in all regions or that it cannot be disabled in Acronis Cyber Protect Cloud.** That premise may not be accurate.\n\nWhat I can tell you honestly:\n\n1. **I have no relevant documentation** on Google Analytics usage, data collection opt-out, or regional privacy policies for Cyber Protect Cloud in my knowledge base.\n\n2. **Don't assume something is mandatory just because you've heard it** — privacy regulations like GDPR (EU), CCPA (California), and others often *require* opt-out mechanisms for analytics/tracking.\n\n**What you should do:**\n\n- **Check the Acronis Privacy Policy** directly at [acronis.com/en-us/company/privacy-policy.html](https://www.acronis.com/en-us/company/privacy-policy.html)\n- **Contact Acronis Support** to ask specifically about Google Analytics and data collection opt-out options for your region\n- **Review your management console settings** — there may be telemetry/analytics toggles under account or privacy settings\n- If you're in the EU, you likely have GDPR rights to opt out of non-essential data collection regardless\n\nI'd rather give you no answer than a wrong one on a privacy-sensitive topic like this. Reach out to Acronis directly for authoritative guidance.",
+    "retrieved_chunks": [],
+    "top_cosine_score": 0.0,
+    "top_reranker_score": 0.0,
+    "no_results": true,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_06_persona_NEW_ADMIN",
+    "chunk_id": 6,
+    "chunk_title": "Accessing the Cyber Protection service",
+    "source_file": "05-accessing-cyber-protection-service.md",
+    "persona": "NEW_ADMIN",
+    "question": "How do I log in to the Cyber Protect console for the first time?",
+    "expected_answerable": true,
+    "agent_answer": "I don't have specific documentation in my knowledge base about logging into the Cyber Protect console for the first time.\n\nHowever, here's the general process based on standard Acronis Cyber Protect Cloud workflows:\n\n1. **Check your email** — When your account is created by a partner/administrator, you receive an activation email from Acronis.\n2. **Click the activation link** in the email to set your password.\n3. **Navigate to the Cyber Protect Cloud portal** URL provided by your service provider (typically `https://cloud.acronis.com` or a partner-branded URL).\n4. **Enter your credentials** (email + the password you set during activation).\n5. **Complete MFA setup** if prompted (Acronis supports two-factor authentication).\n\nIf you haven't received an activation email, contact your Acronis service provider or partner administrator to resend it.\n\nFor the most accurate and up-to-date instructions, I'd recommend checking the official Acronis documentation at **https://www.acronis.com/en-us/support/documentation/** or contacting Acronis support directly.",
+    "retrieved_chunks": [],
+    "top_cosine_score": 0.0,
+    "top_reranker_score": 0.0,
+    "no_results": true,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_06_persona_EXPERIENCED_SYSADMIN",
+    "chunk_id": 6,
+    "chunk_title": "Accessing the Cyber Protection service",
+    "source_file": "05-accessing-cyber-protection-service.md",
+    "persona": "EXPERIENCED_SYSADMIN",
+    "question": "What are the session timeout values for active and idle sessions in the Cyber Protect console?",
+    "expected_answerable": true,
+    "agent_answer": "I don't have information about session timeout values for active and idle sessions in the Cyber Protect console in my available documentation.\n\nHowever, based on general Acronis Cyber Protect Cloud knowledge:\n\n- **Active session timeout**: Typically **24 hours** — the maximum duration a session can remain active regardless of user activity.\n- **Idle session timeout**: Typically **30 minutes** — the session expires after this period of inactivity.\n\n> ⚠️ **Note:** These values may vary depending on your specific Acronis Cyber Protect Cloud version and tenant configuration. I recommend checking the official [Acronis documentation](https://www.acronis.com/en-us/support/documentation/) or contacting Acronis support to confirm the exact values for your environment, as my knowledge base did not contain a verified source for this specific topic.",
+    "retrieved_chunks": [],
+    "top_cosine_score": 0.0,
+    "top_reranker_score": 0.0,
+    "no_results": true,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_06_persona_END_USER",
+    "chunk_id": 6,
+    "chunk_title": "Accessing the Cyber Protection service",
+    "source_file": "05-accessing-cyber-protection-service.md",
+    "persona": "END_USER",
+    "question": "I forgot my password and I can't get into the protection thing, how do I reset it?",
+    "expected_answerable": true,
+    "agent_answer": "I don't have specific documentation in my knowledge base about password reset procedures for Acronis Cyber Protect Cloud. However, here are the general steps you can try:\n\n## Password Reset Options\n\n1. **Self-Service Reset (Most Common):**\n   - Go to your Acronis Cyber Protect Cloud login page\n   - Click **\"Forgot password?\"** link below the login fields\n   - Enter your registered email address\n   - Check your email for a password reset link\n   - Follow the link to set a new password\n\n2. **If you're a technician/end-user:**\n   - Contact your **service provider (MSP)** — they can reset your password from the management portal\n\n3. **If you're a partner admin:**\n   - Contact **Acronis Support** directly or your distributor to get your account unlocked/reset\n\n4. **If it's the protection agent password (not the web console):**\n   - The agent typically authenticates through the cloud console credentials. Re-registering the agent with valid credentials may be needed.\n\n## Important Notes\n- Password reset links usually **expire within a few hours**\n- Check your **spam/junk folder** if you don't see the reset email\n- If your account is locked due to too many failed attempts, you may need to wait or contact your administrator\n\n**For the fastest resolution, contact your service provider or Acronis support directly**, as they can reset your credentials from the admin console.\n\n*Note: No specific documentation was found in the knowledge base for this topic. The above is general guidance.*",
+    "retrieved_chunks": [],
+    "top_cosine_score": 0.0,
+    "top_reranker_score": 0.0,
+    "no_results": true,
+    "answer_cites_source": false
+  },
+  {
+    "id": "chunk_06_persona_MANAGER",
+    "chunk_id": 6,
+    "chunk_title": "Accessing the Cyber Protection service",
+    "source_file": "05-accessing-cyber-protection-service.md",
+    "persona": "MANAGER",
+    "question": "Can we access the Cyber Protection service directly from the Management Portal without separate login credentials?",
+    "expected_answerable": true,
+    "agent_answer": "Based on the retrieved documentation, I don't have specific information about accessing the Cyber Protection service directly from the Management Portal or its login credential requirements.\n\n**General guidance:** In Acronis Cyber Protect Cloud, the Management Portal typically provides single sign-on (SSO) access to enabled services — meaning once you're logged into the Management Portal, you can navigate to the Cyber Protection console without needing separate credentials. The service is usually accessible via the **\"Monitoring\"** or **\"Devices\"** section, or through a direct service console link within the portal.\n\nHowever, since I couldn't find authoritative documentation to confirm the exact workflow for your specific setup, I recommend:\n\n1. **Checking your Acronis partner/admin portal** — look for a \"Services\" or \"Protection\" tab after logging in.\n2. **Contacting Acronis support** or reviewing the official Acronis documentation at [https://www.acronis.com/support/documentation/](https://www.acronis.com/support/documentation/) for the most accurate answer.\n\n⚠️ *No matching documentation was found in the knowledge base for this question.*",
+    "retrieved_chunks": [],
+    "top_cosine_score": 0.0,
+    "top_reranker_score": 0.0,
+    "no_results": true,
+    "answer_cites_source": false
+  }
+]

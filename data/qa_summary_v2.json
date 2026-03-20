@@ -1,0 +1,22 @@
+{
+  "total_pairs": 430,
+  "chunks_processed": 215,
+  "chunks_failed": 0,
+  "avg_quality": 4.91,
+  "avg_cosine": 0.706,
+  "avg_reranker": 0.9303,
+  "top1_accuracy": "343/430 (79%)",
+  "top3_accuracy": "407/430 (94%)",
+  "quality_dist": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 36,
+    "5": 393
+  },
+  "difficulty_dist": {
+    "easy": 212,
+    "medium": 215,
+    "hard": 3
+  }
+}

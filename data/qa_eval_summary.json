@@ -1,0 +1,21 @@
+{
+  "total_evaluated": 428,
+  "avg_correctness": 3.35,
+  "avg_completeness": 2.83,
+  "avg_relevance": 4.42,
+  "avg_hallucination": 4.02,
+  "avg_overall": 3.31,
+  "retrieval_top1_accuracy": "337/428 (78%)",
+  "retrieval_top3_accuracy": "404/428 (94%)",
+  "avg_cosine": 0.7428,
+  "avg_reranker": 0.9346,
+  "overall_score_distribution": {
+    "3": 86,
+    "5": 118,
+    "1": 65,
+    "2": 56,
+    "4": 98,
+    "0": 5
+  },
+  "entries_with_issues": 380
+}

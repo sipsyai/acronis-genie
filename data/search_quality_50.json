@@ -1,0 +1,1507 @@
+{
+  "total_queries": 50,
+  "top1_accuracy": 45,
+  "top3_accuracy": 49,
+  "results": [
+    {
+      "id": 1,
+      "query": "How do I activate my Acronis account?",
+      "expected_chapter": "01",
+      "top1_correct": false,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Enabling the Acronis MDR Service",
+          "source_file": "11-mdr/02-enabling-mdr-service.md",
+          "chapter": "11",
+          "cosine": 0.5419223308563387,
+          "reranker": 0.36500388
+        },
+        {
+          "title": "Activating the account",
+          "source_file": "01-getting-started/01-activating-account.md",
+          "chapter": "01",
+          "cosine": 0.581330785909989,
+          "reranker": 0.35108855
+        },
+        {
+          "title": "Installing and uninstalling protection agents in Linux via CLI",
+          "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
+          "chapter": "02",
+          "cosine": 0.44027503256947464,
+          "reranker": 0.021698097
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "query": "What are the password requirements for Acronis console?",
+      "expected_chapter": "01",
+      "top1_correct": false,
+      "top3_correct": false,
+      "results": [
+        {
+          "title": "Enabling the Acronis MDR Service",
+          "source_file": "11-mdr/02-enabling-mdr-service.md",
+          "chapter": "11",
+          "cosine": 0.5379410982132111,
+          "reranker": 0.13683891
+        },
+        {
+          "title": "SIEM data format and CEF examples",
+          "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
+          "chapter": "03",
+          "cosine": 0.4855115405030055,
+          "reranker": 0.02763772
+        },
+        {
+          "title": "About Acronis Disaster Recovery and software requirements",
+          "source_file": "07-disaster-recovery/01-dr-overview-requirements.md",
+          "chapter": "07",
+          "cosine": 0.5012661668319457,
+          "reranker": 0.026405517
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "query": "Which web browsers are supported by Acronis?",
+      "expected_chapter": "01",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Supported web browsers",
+          "source_file": "01-getting-started/06-supported-web-browsers.md",
+          "chapter": "01",
+          "cosine": 0.6053239107131958,
+          "reranker": 0.47034127
+        },
+        {
+          "title": "Supported operating systems and versions",
+          "source_file": "01-getting-started/11-supported-operating-systems-and-versions.md",
+          "chapter": "01",
+          "cosine": 0.4957868456840515,
+          "reranker": 0.43194354
+        },
+        {
+          "title": "Supported Antivirus and Antimalware Features per Platform",
+          "source_file": "08-antivirus-antimalware/02-supported-features-per-platform.md",
+          "chapter": "08",
+          "cosine": 0.5222090949603126,
+          "reranker": 0.19375686
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "query": "How do I install the protection agent on Windows?",
+      "expected_chapter": "02",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Installing protection agents by using the graphical user interface",
+          "source_file": "02-installing-deploying-agents/10-installing-agents-gui.md",
+          "chapter": "02",
+          "cosine": 0.7470566486614988,
+          "reranker": 0.99921143
+        },
+        {
+          "title": "Installing and uninstalling protection agents in Windows via CLI",
+          "source_file": "02-installing-deploying-agents/12-installing-agents-windows-cli.md",
+          "chapter": "02",
+          "cosine": 0.6603545152929726,
+          "reranker": 0.9961004
+        },
+        {
+          "title": "Preparation - Before you start",
+          "source_file": "02-installing-deploying-agents/01-preparation.md",
+          "chapter": "02",
+          "cosine": 0.6987919390921642,
+          "reranker": 0.98662347
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "query": "What are the system requirements for Acronis agents?",
+      "expected_chapter": "02",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "System requirements for agents",
+          "source_file": "02-installing-deploying-agents/04-system-requirements.md",
+          "chapter": "02",
+          "cosine": 0.6084348688644058,
+          "reranker": 0.858244
+        },
+        {
+          "title": "Installing and uninstalling protection agents in Linux via CLI",
+          "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
+          "chapter": "02",
+          "cosine": 0.5746196850907626,
+          "reranker": 0.64646024
+        },
+        {
+          "title": "Supported operating systems and versions",
+          "source_file": "01-getting-started/11-supported-operating-systems-and-versions.md",
+          "chapter": "01",
+          "cosine": 0.5978001952171326,
+          "reranker": 0.3695426
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "query": "How to deploy agents via command line silently?",
+      "expected_chapter": "02",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Installing and uninstalling protection agents in Windows via CLI",
+          "source_file": "02-installing-deploying-agents/12-installing-agents-windows-cli.md",
+          "chapter": "02",
+          "cosine": 0.5580710935017795,
+          "reranker": 0.581719
+        },
+        {
+          "title": "Installing and uninstalling protection agents in Linux via CLI",
+          "source_file": "02-installing-deploying-agents/13-installing-agents-linux-cli.md",
+          "chapter": "02",
+          "cosine": 0.5899521639900357,
+          "reranker": 0.36772424
+        },
+        {
+          "title": "Unattended installation with MSI files",
+          "source_file": "02-installing-deploying-agents/16-windows-cli-msi-installation.md",
+          "chapter": "02",
+          "cosine": 0.5143219981885554,
+          "reranker": 0.019568676
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "query": "How to set up the virtual appliance for VMware?",
+      "expected_chapter": "02",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Deploying Agent for VMware (Virtual Appliance)",
+          "source_file": "02-installing-deploying-agents/21-deploying-vmware-va.md",
+          "chapter": "02",
+          "cosine": 0.6394238066501563,
+          "reranker": 0.93913656
+        },
+        {
+          "title": "Deploying Agent for Virtuozzo Hybrid Infrastructure (Virtual Appliance)",
+          "source_file": "02-installing-deploying-agents/23-deploying-virtuozzo-hi-va.md",
+          "chapter": "02",
+          "cosine": 0.5793772512488741,
+          "reranker": 0.11104825
+        },
+        {
+          "title": "Deploying Agent for Nutanix AHV",
+          "source_file": "02-installing-deploying-agents/26-deploying-nutanix-ahv.md",
+          "chapter": "02",
+          "cosine": 0.60747487634121,
+          "reranker": 0.08021325
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "query": "How does device discovery work in Acronis?",
+      "expected_chapter": "02",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Device discovery overview and methods",
+          "source_file": "02-installing-deploying-agents/28-device-discovery-overview.md",
+          "chapter": "02",
+          "cosine": 0.5918703432005848,
+          "reranker": 0.4107563
+        },
+        {
+          "title": "Device discovery by using Device Sense",
+          "source_file": "02-installing-deploying-agents/29-device-discovery-device-sense.md",
+          "chapter": "02",
+          "cosine": 0.5593136382307541,
+          "reranker": 0.1999321
+        },
+        {
+          "title": "MDR Overview and Service Levels",
+          "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
+          "chapter": "11",
+          "cosine": 0.5374279458097257,
+          "reranker": 0.016529556
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "query": "How do I create a protection plan?",
+      "expected_chapter": "03",
+      "top1_correct": false,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Backup overview and cheat sheet",
+          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
+          "chapter": "06",
+          "cosine": 0.4711931365017289,
+          "reranker": 0.9900636
+        },
+        {
+          "title": "Protection plans and modules",
+          "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
+          "chapter": "03",
+          "cosine": 0.5879870828386483,
+          "reranker": 0.96080494
+        },
+        {
+          "title": "Actions with protection plans",
+          "source_file": "03-working-with-plans/06-actions-with-protection-plans.md",
+          "chapter": "03",
+          "cosine": 0.5735520036754644,
+          "reranker": 0.9563905
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "query": "What types of protection plans are available?",
+      "expected_chapter": "03",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Built-in plans",
+          "source_file": "03-working-with-plans/02-built-in-plans.md",
+          "chapter": "03",
+          "cosine": 0.5174681256692494,
+          "reranker": 0.9730365
+        },
+        {
+          "title": "Default plans, Favorite plans, and Preselected plans",
+          "source_file": "03-working-with-plans/03-default-and-favorite-plans.md",
+          "chapter": "03",
+          "cosine": 0.5214352607727051,
+          "reranker": 0.9628831
+        },
+        {
+          "title": "Protection plans and modules",
+          "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
+          "chapter": "03",
+          "cosine": 0.5404013008477302,
+          "reranker": 0.9519527
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "query": "How to configure plan validation and cleanup?",
+      "expected_chapter": "03",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Cleanup plans",
+          "source_file": "03-working-with-plans/10-cleanup-plans.md",
+          "chapter": "03",
+          "cosine": 0.6399719095205013,
+          "reranker": 0.75437254
+        },
+        {
+          "title": "Retention rules",
+          "source_file": "06-backup-and-recovery/11-retention-rules.md",
+          "chapter": "06",
+          "cosine": 0.5460425778044099,
+          "reranker": 0.11777492
+        },
+        {
+          "title": "Built-in plans",
+          "source_file": "03-working-with-plans/02-built-in-plans.md",
+          "chapter": "03",
+          "cosine": 0.5634234791135014,
+          "reranker": 0.0107767265
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "query": "How do I set up SIEM integration?",
+      "expected_chapter": "03",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Creating SIEM forwarding plans",
+          "source_file": "03-working-with-plans/14-siem-creating-plans.md",
+          "chapter": "03",
+          "cosine": 0.6018937351576966,
+          "reranker": 0.14547919
+        },
+        {
+          "title": "SIEM forwarding plans overview",
+          "source_file": "03-working-with-plans/13-siem-forwarding-overview.md",
+          "chapter": "03",
+          "cosine": 0.6870148796154454,
+          "reranker": 0.1183851
+        },
+        {
+          "title": "SIEM data format and CEF examples",
+          "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
+          "chapter": "03",
+          "cosine": 0.6518793702125596,
+          "reranker": 0.022074386
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "query": "How do I configure alerts in Acronis?",
+      "expected_chapter": "04",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Remote sessions widget, smart protection, and threat feed",
+          "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
+          "chapter": "04",
+          "cosine": 0.6209165002008091,
+          "reranker": 0.75635755
+        },
+        {
+          "title": "Enabling the Acronis MDR Service",
+          "source_file": "11-mdr/02-enabling-mdr-service.md",
+          "chapter": "11",
+          "cosine": 0.6254522241247762,
+          "reranker": 0.25851312
+        },
+        {
+          "title": "SIEM data format and CEF examples",
+          "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
+          "chapter": "03",
+          "cosine": 0.5999444544331916,
+          "reranker": 0.21617697
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "query": "What dashboard widgets are available?",
+      "expected_chapter": "04",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Monitoring - Overview and Activities dashboards",
+          "source_file": "04-monitoring-dashboards/01-monitoring-overview.md",
+          "chapter": "04",
+          "cosine": 0.7052060892809482,
+          "reranker": 0.9520419
+        },
+        {
+          "title": "Disaster recovery dashboard",
+          "source_file": "07-disaster-recovery/19-disaster-recovery-dashboard.md",
+          "chapter": "07",
+          "cosine": 0.6236706414517256,
+          "reranker": 0.71183175
+        },
+        {
+          "title": "Reports",
+          "source_file": "04-monitoring-dashboards/16-reports.md",
+          "chapter": "04",
+          "cosine": 0.6232567878655493,
+          "reranker": 0.6169935
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "query": "How to generate reports in Acronis console?",
+      "expected_chapter": "04",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Remote sessions widget, smart protection, and threat feed",
+          "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
+          "chapter": "04",
+          "cosine": 0.5725258163370499,
+          "reranker": 0.12304913
+        },
+        {
+          "title": "Enabling the Acronis MDR Service",
+          "source_file": "11-mdr/02-enabling-mdr-service.md",
+          "chapter": "11",
+          "cosine": 0.5303112512270368,
+          "reranker": 0.09790669
+        },
+        {
+          "title": "SIEM data format and CEF examples",
+          "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
+          "chapter": "03",
+          "cosine": 0.5716683183111765,
+          "reranker": 0.04107589
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "query": "How to monitor backup status across all machines?",
+      "expected_chapter": "04",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Alert types and categories - Backup alerts",
+          "source_file": "04-monitoring-dashboards/03-alert-types-backup.md",
+          "chapter": "04",
+          "cosine": 0.6027203561496958,
+          "reranker": 0.053601142
+        },
+        {
+          "title": "Disaster recovery dashboard",
+          "source_file": "07-disaster-recovery/19-disaster-recovery-dashboard.md",
+          "chapter": "07",
+          "cosine": 0.6310224125093944,
+          "reranker": 0.03371654
+        },
+        {
+          "title": "Backup options: Validation, CBT, cluster mode, compression, error handling",
+          "source_file": "06-backup-and-recovery/14-backup-options-validation-cbt-compression-errors.md",
+          "chapter": "06",
+          "cosine": 0.5875057227906164,
+          "reranker": 0.02931223
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "query": "How do I manage device groups?",
+      "expected_chapter": "05",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Device groups",
+          "source_file": "05-managing-workloads/03-device-groups.md",
+          "chapter": "05",
+          "cosine": 0.6185099113875692,
+          "reranker": 0.85705173
+        },
+        {
+          "title": "Editing groups, deleting groups, and managing plans for groups",
+          "source_file": "05-managing-workloads/06-editing-deleting-groups-plans.md",
+          "chapter": "05",
+          "cosine": 0.5533351467053698,
+          "reranker": 0.10557884
+        },
+        {
+          "title": "Search attributes for non-cloud-to-cloud workloads",
+          "source_file": "05-managing-workloads/05-search-attributes-non-cloud.md",
+          "chapter": "05",
+          "cosine": 0.5234489100964835,
+          "reranker": 0.05042407
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "query": "What is CyberFit Score?",
+      "expected_chapter": "05",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "CyberFit Score for machines",
+          "source_file": "05-managing-workloads/12-cyberfit-score.md",
+          "chapter": "05",
+          "cosine": 0.6983137906602858,
+          "reranker": 0.99766773
+        },
+        {
+          "title": "CyberFit Score and disk health monitoring",
+          "source_file": "04-monitoring-dashboards/08-cyberfit-score-and-disk-health.md",
+          "chapter": "04",
+          "cosine": 0.605879342906437,
+          "reranker": 0.9353465
+        },
+        {
+          "title": "Reports",
+          "source_file": "04-monitoring-dashboards/16-reports.md",
+          "chapter": "04",
+          "cosine": 0.4865525058837248,
+          "reranker": 0.84581506
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "query": "How to run scripts remotely on workloads?",
+      "expected_chapter": "05",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Scripting plans and script quick run",
+          "source_file": "05-managing-workloads/15-cyber-scripting-plans-quickrun.md",
+          "chapter": "05",
+          "cosine": 0.6082841157913208,
+          "reranker": 0.83004373
+        },
+        {
+          "title": "Understanding plans",
+          "source_file": "03-working-with-plans/01-understanding-plans.md",
+          "chapter": "03",
+          "cosine": 0.5544732213020325,
+          "reranker": 0.7866228
+        },
+        {
+          "title": "Remote Desktop and Remote Assistance",
+          "source_file": "12-rmm/08-remote-desktop-and-assistance.md",
+          "chapter": "12",
+          "cosine": 0.5456810756230678,
+          "reranker": 0.7004852
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "query": "How do I back up a SQL Server database?",
+      "expected_chapter": "06",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Backup options: Log truncation, LVM, mount points, multi-volume, one-click recovery, performance",
+          "source_file": "06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md",
+          "chapter": "06",
+          "cosine": 0.5518021419107297,
+          "reranker": 0.93991333
+        },
+        {
+          "title": "Backup operations: storage, mounting volumes, validating, exporting, and deleting backups",
+          "source_file": "06-backup-and-recovery/23-backup-operations-storage-mounting-validation-export.md",
+          "chapter": "06",
+          "cosine": 0.4907856128322139,
+          "reranker": 0.8795612
+        },
+        {
+          "title": "Backup options: Validation, CBT, cluster mode, compression, error handling",
+          "source_file": "06-backup-and-recovery/14-backup-options-validation-cbt-compression-errors.md",
+          "chapter": "06",
+          "cosine": 0.585787517255919,
+          "reranker": 0.8609547
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "query": "How to configure continuous data protection?",
+      "expected_chapter": "06",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Continuous data protection (CDP)",
+          "source_file": "06-backup-and-recovery/09-continuous-data-protection-cdp.md",
+          "chapter": "06",
+          "cosine": 0.6838237250990788,
+          "reranker": 0.99304235
+        },
+        {
+          "title": "Backup overview and cheat sheet",
+          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
+          "chapter": "06",
+          "cosine": 0.5427462782112535,
+          "reranker": 0.71203196
+        },
+        {
+          "title": "Supported protection features by OS - Default plans, Forensic backup, CDP, Autodiscovery",
+          "source_file": "01-getting-started/10a-supported-features-protection-plans-and-backup.md",
+          "chapter": "01",
+          "cosine": 0.5456355376731022,
+          "reranker": 0.05592617
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "query": "How to recover files from a backup?",
+      "expected_chapter": "06",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "File Recovery and Verification",
+          "source_file": "06-backup-and-recovery/27-file-recovery.md",
+          "chapter": "06",
+          "cosine": 0.6327362060546875,
+          "reranker": 0.99433607
+        },
+        {
+          "title": "Bootable media recovery and file recovery",
+          "source_file": "06-backup-and-recovery/21-bootable-media-recovery-file-recovery.md",
+          "chapter": "06",
+          "cosine": 0.6159605841683689,
+          "reranker": 0.9493885
+        },
+        {
+          "title": "Recovery Options",
+          "source_file": "06-backup-and-recovery/29-recovery-options.md",
+          "chapter": "06",
+          "cosine": 0.6506739466980739,
+          "reranker": 0.8700462
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "query": "How do I back up Microsoft 365 mailboxes?",
+      "expected_chapter": "06",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Email Archiving",
+          "source_file": "06-backup-and-recovery/32-email-archiving.md",
+          "chapter": "06",
+          "cosine": 0.6315912008285522,
+          "reranker": 0.941007
+        },
+        {
+          "title": "Protecting Microsoft 365 Data",
+          "source_file": "06-backup-and-recovery/35-microsoft-365-protection.md",
+          "chapter": "06",
+          "cosine": 0.7550353036831413,
+          "reranker": 0.93721074
+        },
+        {
+          "title": "Microsoft 365 Teams Protection, Direct Backup, and Local Agent",
+          "source_file": "06-backup-and-recovery/36-microsoft-365-teams-direct-backup-agent.md",
+          "chapter": "06",
+          "cosine": 0.7025795578956604,
+          "reranker": 0.89143354
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "query": "How to create bootable rescue media?",
+      "expected_chapter": "06",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Creating Bootable Media to Recover Operating Systems",
+          "source_file": "06-backup-and-recovery/40-bootable-media.md",
+          "chapter": "06",
+          "cosine": 0.6706106666276458,
+          "reranker": 0.89947516
+        },
+        {
+          "title": "Bootable media recovery and file recovery",
+          "source_file": "06-backup-and-recovery/21-bootable-media-recovery-file-recovery.md",
+          "chapter": "06",
+          "cosine": 0.5310940425936043,
+          "reranker": 0.64310515
+        },
+        {
+          "title": "Failback - agent-based, agentless, and manual",
+          "source_file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
+          "chapter": "07",
+          "cosine": 0.5108738706818032,
+          "reranker": 0.04418332
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "query": "How to back up Oracle databases?",
+      "expected_chapter": "06",
+      "top1_correct": false,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Which agent do I need?",
+          "source_file": "02-installing-deploying-agents/03-which-agent-do-i-need.md",
+          "chapter": "02",
+          "cosine": 0.5169771046001511,
+          "reranker": 0.39018536
+        },
+        {
+          "title": "Protecting Oracle DB, SAP HANA, MySQL/MariaDB, and Proxmox",
+          "source_file": "06-backup-and-recovery/38-oracle-saphana-mysql-mariadb-proxmox.md",
+          "chapter": "06",
+          "cosine": 0.5524067015890389,
+          "reranker": 0.33469814
+        },
+        {
+          "title": "Backup overview and cheat sheet",
+          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
+          "chapter": "06",
+          "cosine": 0.48872190512214475,
+          "reranker": 0.026708463
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "query": "What backup options are available for Google Workspace?",
+      "expected_chapter": "06",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Protecting Google Workspace Data",
+          "source_file": "06-backup-and-recovery/37-google-workspace-protection.md",
+          "chapter": "06",
+          "cosine": 0.686797005950966,
+          "reranker": 0.9914887
+        },
+        {
+          "title": "Protecting Microsoft Applications",
+          "source_file": "06-backup-and-recovery/33-protecting-microsoft-applications.md",
+          "chapter": "06",
+          "cosine": 0.6267473065925242,
+          "reranker": 0.049773447
+        },
+        {
+          "title": "Default backup options and backup options overview",
+          "source_file": "06-backup-and-recovery/13-backup-options-overview.md",
+          "chapter": "06",
+          "cosine": 0.5307518876495265,
+          "reranker": 0.034880888
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "query": "How do I configure backup encryption?",
+      "expected_chapter": "06",
+      "top1_correct": false,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Compliance Mode",
+          "source_file": "14-additional-tools/01-compliance-mode.md",
+          "chapter": "14",
+          "cosine": 0.656910816246917,
+          "reranker": 0.7929457
+        },
+        {
+          "title": "Backup scanning plans and cloud application backups",
+          "source_file": "03-working-with-plans/12-backup-scanning-and-cloud-apps.md",
+          "chapter": "03",
+          "cosine": 0.5490763514683465,
+          "reranker": 0.5530527
+        },
+        {
+          "title": "Backup schedule, schemes, and types",
+          "source_file": "06-backup-and-recovery/10-backup-schedule-schemes-types.md",
+          "chapter": "06",
+          "cosine": 0.5597770022947206,
+          "reranker": 0.1482937
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "query": "How do I perform a failover in disaster recovery?",
+      "expected_chapter": "07",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Failover - production, test, and automated test failover",
+          "source_file": "07-disaster-recovery/13-failover-production-test-automated.md",
+          "chapter": "07",
+          "cosine": 0.6996059209225826,
+          "reranker": 0.9876639
+        },
+        {
+          "title": "Failback - agent-based, agentless, and manual",
+          "source_file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
+          "chapter": "07",
+          "cosine": 0.6806318962762401,
+          "reranker": 0.9522199
+        },
+        {
+          "title": "Alert types and categories - Disaster recovery alerts",
+          "source_file": "04-monitoring-dashboards/04-alert-types-disaster-recovery.md",
+          "chapter": "04",
+          "cosine": 0.6575566530227708,
+          "reranker": 0.9326989
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "query": "How to configure VPN for disaster recovery?",
+      "expected_chapter": "07",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Multi-site IPsec VPN and Point-to-site VPN access",
+          "source_file": "07-disaster-recovery/04-connectivity-ipsec-p2s.md",
+          "chapter": "07",
+          "cosine": 0.7369334258476851,
+          "reranker": 0.9911527
+        },
+        {
+          "title": "DR workflow, protection plan, and default infrastructure",
+          "source_file": "07-disaster-recovery/02-dr-workflow-protection-plan.md",
+          "chapter": "07",
+          "cosine": 0.5952984704677944,
+          "reranker": 0.9853843
+        },
+        {
+          "title": "Point-to-site VPN and network management",
+          "source_file": "07-disaster-recovery/09-point-to-site-vpn-network-management.md",
+          "chapter": "07",
+          "cosine": 0.646878819260635,
+          "reranker": 0.9740426
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "query": "How to set up disaster recovery to Azure?",
+      "expected_chapter": "07",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Azure DR site management, connectivity, and networks",
+          "source_file": "07-disaster-recovery/16-azure-dr-site-connectivity-networks.md",
+          "chapter": "07",
+          "cosine": 0.7370028339030166,
+          "reranker": 0.9912548
+        },
+        {
+          "title": "Disaster Recovery to Microsoft Azure - overview, requirements, and licensing",
+          "source_file": "07-disaster-recovery/15-dr-to-azure-overview-requirements-licensing.md",
+          "chapter": "07",
+          "cosine": 0.736054376598933,
+          "reranker": 0.9911868
+        },
+        {
+          "title": "Recovery servers and failover in Microsoft Azure",
+          "source_file": "07-disaster-recovery/17-azure-recovery-servers-failover.md",
+          "chapter": "07",
+          "cosine": 0.8187261927887101,
+          "reranker": 0.9456007
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "query": "What is the disaster recovery dashboard?",
+      "expected_chapter": "07",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Disaster recovery dashboard",
+          "source_file": "07-disaster-recovery/19-disaster-recovery-dashboard.md",
+          "chapter": "07",
+          "cosine": 0.7687593927609743,
+          "reranker": 0.98302
+        },
+        {
+          "title": "Awareness Dashboard and Site-to-Site Open VPN",
+          "source_file": "14-additional-tools/05-awareness-dashboard-vpn.md",
+          "chapter": "14",
+          "cosine": 0.6290474091824826,
+          "reranker": 0.4914178
+        },
+        {
+          "title": "About Acronis Disaster Recovery and software requirements",
+          "source_file": "07-disaster-recovery/01-dr-overview-requirements.md",
+          "chapter": "07",
+          "cosine": 0.5583801172715552,
+          "reranker": 0.26246357
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "query": "How does failback work after disaster recovery?",
+      "expected_chapter": "07",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Failback - agent-based, agentless, and manual",
+          "source_file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
+          "chapter": "07",
+          "cosine": 0.7668181290274386,
+          "reranker": 0.9727791
+        },
+        {
+          "title": "Failback to local site",
+          "source_file": "07-disaster-recovery/07-failback.md",
+          "chapter": "07",
+          "cosine": 0.6868495736465012,
+          "reranker": 0.77864933
+        },
+        {
+          "title": "Failover - production, test, and automated test failover",
+          "source_file": "07-disaster-recovery/13-failover-production-test-automated.md",
+          "chapter": "07",
+          "cosine": 0.6356726695396726,
+          "reranker": 0.74558365
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "query": "How do I configure antimalware protection?",
+      "expected_chapter": "08",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Antivirus and Antimalware Protection Settings - Active Protection, Advanced Antimalware, Network and Server-side",
+          "source_file": "08-antivirus-antimalware/04-av-am-protection-settings-part1.md",
+          "chapter": "08",
+          "cosine": 0.6799493241279927,
+          "reranker": 0.99014014
+        },
+        {
+          "title": "Antivirus and Antimalware Protection Settings - Exploit Prevention, Real-time, Scheduled Scan, Exclusions",
+          "source_file": "08-antivirus-antimalware/05-av-am-protection-settings-part2.md",
+          "chapter": "08",
+          "cosine": 0.6110076540107944,
+          "reranker": 0.9780936
+        },
+        {
+          "title": "Antimalware Features and Scanning Types",
+          "source_file": "08-antivirus-antimalware/03-antimalware-features-scanning-types.md",
+          "chapter": "08",
+          "cosine": 0.6181251363270132,
+          "reranker": 0.880797
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "query": "How to set up URL filtering?",
+      "expected_chapter": "08",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "URL Filtering - How It Works, Configuration, and Settings",
+          "source_file": "08-antivirus-antimalware/07-url-filtering.md",
+          "chapter": "08",
+          "cosine": 0.6891637464610114,
+          "reranker": 0.98378503
+        },
+        {
+          "title": "Supported Operating Systems for Antivirus and Antimalware Protection",
+          "source_file": "08-antivirus-antimalware/01-supported-os-av-am.md",
+          "chapter": "08",
+          "cosine": 0.44052682285250655,
+          "reranker": 0.54386276
+        },
+        {
+          "title": "Remote sessions widget, smart protection, and threat feed",
+          "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
+          "chapter": "04",
+          "cosine": 0.4200390905200082,
+          "reranker": 0.09252366
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "query": "How to manage quarantined files?",
+      "expected_chapter": "08",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Quarantine Management",
+          "source_file": "08-antivirus-antimalware/10-quarantine-management.md",
+          "chapter": "08",
+          "cosine": 0.6527312592485925,
+          "reranker": 0.9981541
+        },
+        {
+          "title": "Response Actions for Files, Registry, and Blocklist/Allowlist",
+          "source_file": "10-edr-xdr/11-response-actions-files-registry-blocklist-allowlist.md",
+          "chapter": "10",
+          "cosine": 0.5492749214172363,
+          "reranker": 0.69461346
+        },
+        {
+          "title": "Recovery Options",
+          "source_file": "06-backup-and-recovery/29-recovery-options.md",
+          "chapter": "06",
+          "cosine": 0.5155065348442484,
+          "reranker": 0.008219693
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "query": "How to whitelist trusted applications?",
+      "expected_chapter": "08",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Corporate Whitelist",
+          "source_file": "08-antivirus-antimalware/11-corporate-whitelist.md",
+          "chapter": "08",
+          "cosine": 0.6198499941647045,
+          "reranker": 0.9822196
+        },
+        {
+          "title": "Antivirus and Antimalware Protection Settings - Exploit Prevention, Real-time, Scheduled Scan, Exclusions",
+          "source_file": "08-antivirus-antimalware/05-av-am-protection-settings-part2.md",
+          "chapter": "08",
+          "cosine": 0.4755189716815982,
+          "reranker": 0.052618954
+        },
+        {
+          "title": "Alert types - Antimalware, URL Filtering, Licensing, EDR, Device Control",
+          "source_file": "04-monitoring-dashboards/05-alert-types-antimalware-url-licensing-edr.md",
+          "chapter": "04",
+          "cosine": 0.5277867598660816,
+          "reranker": 0.00685048
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "query": "What is GenAI Protection in Acronis?",
+      "expected_chapter": "09",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "GenAI Protection Settings",
+          "source_file": "09-genai-workflows/01-genai-protection-settings.md",
+          "chapter": "09",
+          "cosine": 0.7027255892753601,
+          "reranker": 0.94825053
+        },
+        {
+          "title": "GenAI protection widgets",
+          "source_file": "04-monitoring-dashboards/09-genai-protection-widgets.md",
+          "chapter": "04",
+          "cosine": 0.7270363135912244,
+          "reranker": 0.6022955
+        },
+        {
+          "title": "Protection plans and modules",
+          "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
+          "chapter": "03",
+          "cosine": 0.5461672166239109,
+          "reranker": 0.500242
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "query": "How do I set up automated workflows?",
+      "expected_chapter": "09",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Managing and Assigning Automation Workflows - Overview",
+          "source_file": "09-genai-workflows/02-automation-workflows-overview.md",
+          "chapter": "09",
+          "cosine": 0.5624099969863892,
+          "reranker": 0.8010035
+        },
+        {
+          "title": "Automated Workflows, Monitoring Mode, and Testing EDR",
+          "source_file": "10-edr-xdr/12-automated-workflows-monitoring-testing.md",
+          "chapter": "10",
+          "cosine": 0.5226825475692749,
+          "reranker": 0.8000679
+        },
+        {
+          "title": "Workflow Components and Templates",
+          "source_file": "09-genai-workflows/03-workflow-components-templates.md",
+          "chapter": "09",
+          "cosine": 0.5540429353713989,
+          "reranker": 0.55546534
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "query": "How does endpoint detection and response work?",
+      "expected_chapter": "10",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Reviewing Incidents",
+          "source_file": "10-edr-xdr/03-reviewing-incidents.md",
+          "chapter": "10",
+          "cosine": 0.5819575288245116,
+          "reranker": 0.9798997
+        },
+        {
+          "title": "Investigating Incidents",
+          "source_file": "10-edr-xdr/07-investigating-incidents.md",
+          "chapter": "10",
+          "cosine": 0.632253013118932,
+          "reranker": 0.97788346
+        },
+        {
+          "title": "EDR Overview and Features",
+          "source_file": "10-edr-xdr/01-edr-overview-and-features.md",
+          "chapter": "10",
+          "cosine": 0.6594966447053352,
+          "reranker": 0.9621787
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "query": "How to investigate security incidents in XDR?",
+      "expected_chapter": "10",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Working with the XDR Graph, Investigating Nodes, and Response Actions",
+          "source_file": "10-edr-xdr/14-xdr-graph-and-response-actions.md",
+          "chapter": "10",
+          "cosine": 0.7150371031430053,
+          "reranker": 0.9339146
+        },
+        {
+          "title": "EDR Overview and Features",
+          "source_file": "10-edr-xdr/01-edr-overview-and-features.md",
+          "chapter": "10",
+          "cosine": 0.6595560508834142,
+          "reranker": 0.87514824
+        },
+        {
+          "title": "Incident Handling, Service Portal, and Data Residency",
+          "source_file": "11-mdr/03-incident-handling-and-service-portal.md",
+          "chapter": "11",
+          "cosine": 0.5928009218453603,
+          "reranker": 0.8705973
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "query": "How to remediate threats with EDR?",
+      "expected_chapter": "10",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Remediating Incidents",
+          "source_file": "10-edr-xdr/09-remediating-incidents.md",
+          "chapter": "10",
+          "cosine": 0.7308527987687125,
+          "reranker": 0.9911527
+        },
+        {
+          "title": "Automated Workflows, Monitoring Mode, and Testing EDR",
+          "source_file": "10-edr-xdr/12-automated-workflows-monitoring-testing.md",
+          "chapter": "10",
+          "cosine": 0.6059866186388373,
+          "reranker": 0.9548163
+        },
+        {
+          "title": "EDR Overview and Features",
+          "source_file": "10-edr-xdr/01-edr-overview-and-features.md",
+          "chapter": "10",
+          "cosine": 0.6867233105466789,
+          "reranker": 0.59337366
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "query": "What MDR service levels are available?",
+      "expected_chapter": "11",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "MDR Overview and Service Levels",
+          "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
+          "chapter": "11",
+          "cosine": 0.6507698713815365,
+          "reranker": 0.9940659
+        },
+        {
+          "title": "Incident Handling, Service Portal, and Data Residency",
+          "source_file": "11-mdr/03-incident-handling-and-service-portal.md",
+          "chapter": "11",
+          "cosine": 0.5349471804594085,
+          "reranker": 0.89805347
+        },
+        {
+          "title": "Enabling the Acronis MDR Service",
+          "source_file": "11-mdr/02-enabling-mdr-service.md",
+          "chapter": "11",
+          "cosine": 0.5713874272011361,
+          "reranker": 0.72496766
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "query": "How to enable managed detection and response?",
+      "expected_chapter": "11",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Enabling the Acronis MDR Service",
+          "source_file": "11-mdr/02-enabling-mdr-service.md",
+          "chapter": "11",
+          "cosine": 0.5802225374910231,
+          "reranker": 0.98327893
+        },
+        {
+          "title": "MDR Overview and Service Levels",
+          "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
+          "chapter": "11",
+          "cosine": 0.5955844166526557,
+          "reranker": 0.33491564
+        },
+        {
+          "title": "Investigating Incidents",
+          "source_file": "10-edr-xdr/07-investigating-incidents.md",
+          "chapter": "10",
+          "cosine": 0.5792080665578804,
+          "reranker": 0.078078166
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "query": "How to manage patches and software updates?",
+      "expected_chapter": "12",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Software Management and Inventory",
+          "source_file": "12-rmm/05-software-management-and-inventory.md",
+          "chapter": "12",
+          "cosine": 0.5068012475967443,
+          "reranker": 0.85342485
+        },
+        {
+          "title": "Patch installation, backup scanning, recently affected, and cloud application widgets",
+          "source_file": "04-monitoring-dashboards/11-patch-backup-scanning-cloud-widgets.md",
+          "chapter": "04",
+          "cosine": 0.5630013942718546,
+          "reranker": 0.45453268
+        },
+        {
+          "title": "RMM Overview and Features",
+          "source_file": "12-rmm/01-rmm-overview.md",
+          "chapter": "12",
+          "cosine": 0.4964567868845753,
+          "reranker": 0.3138402
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "query": "How to do hardware inventory remotely?",
+      "expected_chapter": "12",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Hardware Inventory",
+          "source_file": "12-rmm/04-hardware-inventory.md",
+          "chapter": "12",
+          "cosine": 0.6562408991147206,
+          "reranker": 0.7318259
+        },
+        {
+          "title": "Supported protection features by OS - DLP, Management, Protection options, Monitor, Inventory",
+          "source_file": "01-getting-started/10g-supported-features-dlp-management-inventory.md",
+          "chapter": "01",
+          "cosine": 0.5149128590498229,
+          "reranker": 0.2812082
+        },
+        {
+          "title": "Software Management and Inventory",
+          "source_file": "12-rmm/05-software-management-and-inventory.md",
+          "chapter": "12",
+          "cosine": 0.5261437014427016,
+          "reranker": 0.073430054
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "query": "How to use remote desktop in Acronis?",
+      "expected_chapter": "12",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Remote Desktop and Remote Assistance",
+          "source_file": "12-rmm/08-remote-desktop-and-assistance.md",
+          "chapter": "12",
+          "cosine": 0.6185002511292773,
+          "reranker": 0.97433734
+        },
+        {
+          "title": "Remote sessions widget, smart protection, and threat feed",
+          "source_file": "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md",
+          "chapter": "04",
+          "cosine": 0.5479130042713608,
+          "reranker": 0.59296125
+        },
+        {
+          "title": "RMM Overview and Features",
+          "source_file": "12-rmm/01-rmm-overview.md",
+          "chapter": "12",
+          "cosine": 0.5469906223109943,
+          "reranker": 0.47932088
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "query": "How to monitor system performance of workloads?",
+      "expected_chapter": "12",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Monitoring Health and Performance of Workloads",
+          "source_file": "12-rmm/09-monitoring-health-and-performance.md",
+          "chapter": "12",
+          "cosine": 0.674062232617274,
+          "reranker": 0.99698395
+        },
+        {
+          "title": "Monitoring Plans, Alerts, and Response Actions",
+          "source_file": "12-rmm/10-monitoring-plans-alerts-and-response-actions.md",
+          "chapter": "12",
+          "cosine": 0.5608641432685721,
+          "reranker": 0.8987666
+        },
+        {
+          "title": "Understanding plans",
+          "source_file": "03-working-with-plans/01-understanding-plans.md",
+          "chapter": "03",
+          "cosine": 0.539721667766571,
+          "reranker": 0.8824279
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "query": "How to configure data loss prevention policies?",
+      "expected_chapter": "13",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Data Loss Prevention Overview and Data Flow Policy Creation",
+          "source_file": "13-data-loss-prevention/01-dlp-overview-and-data-flow-policy.md",
+          "chapter": "13",
+          "cosine": 0.6483244493104356,
+          "reranker": 0.98421544
+        },
+        {
+          "title": "Enabling DLP in Protection Plans and Advanced Settings",
+          "source_file": "13-data-loss-prevention/04-enabling-dlp-protection-plans.md",
+          "chapter": "13",
+          "cosine": 0.6265959739685059,
+          "reranker": 0.937783
+        },
+        {
+          "title": "DLP Events, Dashboard Widgets, and Custom Sensitivity Categories",
+          "source_file": "13-data-loss-prevention/06-dlp-events-widgets-custom-categories.md",
+          "chapter": "13",
+          "cosine": 0.6142091751098633,
+          "reranker": 0.6591858
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "query": "How to create custom sensitive data detectors?",
+      "expected_chapter": "13",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Custom Content Detectors",
+          "source_file": "13-data-loss-prevention/07-custom-content-detectors.md",
+          "chapter": "13",
+          "cosine": 0.6710454225540161,
+          "reranker": 0.80115914
+        },
+        {
+          "title": "Sensitive Data Definitions",
+          "source_file": "13-data-loss-prevention/05-sensitive-data-definitions.md",
+          "chapter": "13",
+          "cosine": 0.5723497526437201,
+          "reranker": 0.04401865
+        },
+        {
+          "title": "DLP Events, Dashboard Widgets, and Custom Sensitivity Categories",
+          "source_file": "13-data-loss-prevention/06-dlp-events-widgets-custom-categories.md",
+          "chapter": "13",
+          "cosine": 0.5787582397460938,
+          "reranker": 0.0053225355
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "query": "How to set up immutable backup storage?",
+      "expected_chapter": "14",
+      "top1_correct": true,
+      "top3_correct": true,
+      "results": [
+        {
+          "title": "Immutable Storage",
+          "source_file": "14-additional-tools/02-immutable-storage.md",
+          "chapter": "14",
+          "cosine": 0.7096977579953959,
+          "reranker": 0.8085212
+        },
+        {
+          "title": "Backup overview and cheat sheet",
+          "source_file": "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md",
+          "chapter": "06",
+          "cosine": 0.528075575828556,
+          "reranker": 0.13683891
+        },
+        {
+          "title": "Selecting a backup destination",
+          "source_file": "06-backup-and-recovery/08-selecting-backup-destination.md",
+          "chapter": "06",
+          "cosine": 0.5768268956645204,
+          "reranker": 0.07303239
+        }
+      ]
+    }
+  ]
+}
