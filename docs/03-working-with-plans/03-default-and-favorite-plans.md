@@ -5,6 +5,7 @@ subsection: "Understanding plans"
 page_range: "220-228"
 tags: ["default-plans", "favorite-plans", "preselected-plans", "plan-selection", "administration-levels"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#setting-favorite-plans.html"
 ---
 
 # Default plans

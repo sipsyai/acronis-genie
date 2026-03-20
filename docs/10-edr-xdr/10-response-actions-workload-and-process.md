@@ -5,6 +5,7 @@ subsection: "Response Actions"
 page_range: "1192-1201"
 tags: [edr, response-actions, restart, forensic-backup, remote-desktop, remote-command, recovery, disaster-recovery, stop-process, quarantine, rollback]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-define-response-actions-process.html"
 ---
 
 # Response Actions for Workloads and Processes

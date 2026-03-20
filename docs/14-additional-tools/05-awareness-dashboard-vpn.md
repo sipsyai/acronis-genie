@@ -5,6 +5,7 @@ subsection: "Awareness Dashboard and VPN"
 page_range: "1496-1504"
 tags: [awareness-dashboard, security-awareness-training, wizer, site-to-site-vpn, openvpn, disaster-recovery, failover, network-configuration]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#security-awareness-training-dashboard.html"
 ---
 
 # Awareness Dashboard

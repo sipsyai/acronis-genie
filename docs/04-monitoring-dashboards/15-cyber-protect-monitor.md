@@ -5,6 +5,7 @@ subsection: "Cyber Protect Monitor"
 page_range: "356-361"
 tags: [Cyber Protect Monitor, agent, Windows, Mac, proxy, chat, encryption, File Sync and Share]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitor.html"
 ---
 
 # Cyber Protect Monitor

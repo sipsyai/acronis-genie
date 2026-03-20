@@ -5,6 +5,7 @@ subsection: "Understanding plans"
 page_range: "228-230"
 tags: ["administration-levels", "partner", "customer", "unit", "access", "permissions", "plan-status"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#plans-different-administration-levels.html"
 ---
 
 # Plans at different administration levels

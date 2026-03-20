@@ -5,6 +5,7 @@ subsection: "Overview and Setup"
 page_range: "1215-1216"
 tags: [xdr, overview, enabling, integrations, microsoft-365, fortimail, advanced-security]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#xdr-extended-detection-response.html"
 ---
 
 # Extended Detection and Response (XDR)

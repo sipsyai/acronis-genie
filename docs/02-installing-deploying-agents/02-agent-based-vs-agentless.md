@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "39"
 tags: ["agent-based", "agentless", "backup", "virtual-machines", "virtual-appliance"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#agentbased-agentless-backup.html"
 ---
 
 # Agent-based and agentless backup

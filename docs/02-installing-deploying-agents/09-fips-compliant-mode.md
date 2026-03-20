@@ -5,6 +5,7 @@ subsection: null
 page_range: "56-61"
 tags: ["FIPS", "compliance", "security", "cryptography", "installation", "Windows", "Linux", "virtual-appliance"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#fips-compliant-mode.html"
 ---
 
 # FIPS-compliant mode

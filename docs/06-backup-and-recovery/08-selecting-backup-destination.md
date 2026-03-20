@@ -5,6 +5,7 @@ subsection: "Backup"
 page_range: "526-530"
 tags: ["backup-destination", "cloud-storage", "local-folder", "network-folder", "NFS", "Secure-Zone", "public-cloud", "script-defined", "SMB", "CIFS", "DFS"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#selecting-destination.html"
 ---
 
 # Selecting a backup destination

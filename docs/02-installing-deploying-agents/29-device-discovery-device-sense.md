@@ -5,6 +5,7 @@ subsection: "Device discovery by using Device Sense"
 page_range: "184-190"
 tags: ["Device Sense", "passive discovery", "active discovery", "network scan", "ports", "device information", "filters"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#device-discovery-device-sense.html"
 ---
 
 # Device discovery by using Device Sense

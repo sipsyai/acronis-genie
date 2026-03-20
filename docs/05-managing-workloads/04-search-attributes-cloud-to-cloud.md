@@ -5,6 +5,7 @@ subsection: "Search attributes for cloud-to-cloud workloads"
 page_range: "410-411"
 tags: [search, cloud-to-cloud, Microsoft 365, Google Workspace, dynamic groups, query]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#attributes-cloud-to-cloud-dynamic-groups.html"
 ---
 
 # Search attributes for cloud-to-cloud workloads

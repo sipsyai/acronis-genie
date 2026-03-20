@@ -5,6 +5,7 @@ subsection: "Compliance Mode"
 page_range: "1481-1483"
 tags: [compliance-mode, encryption, backup-encryption, aes-256, security, password, recovery, limitations]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compliance-mode.html"
 ---
 
 # Compliance Mode

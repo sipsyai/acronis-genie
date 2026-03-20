@@ -5,6 +5,7 @@ subsection: "Backup"
 page_range: "519-525"
 tags: ["backup-selection", "entire-machine", "disks", "volumes", "files", "folders", "system-state", "ESXi", "policy-rules", "direct-selection", "OneDrive", "APFS"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#selecting-data-to-back-up.html"
 ---
 
 # Selecting data to back up

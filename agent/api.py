@@ -10,8 +10,11 @@ import asyncio
 import asyncpg
 import httpx
 import json
+import logging
 import time
 import uuid
+
+logger = logging.getLogger("acronis.api")
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
@@ -180,6 +183,7 @@ class SourceInfo(BaseModel):
     title: str
     file: str
     score: float
+    doc_url: str | None = None
 
 
 class ChatResponse(BaseModel):
@@ -473,7 +477,7 @@ STREAM_SYSTEM_PROMPT = """\
 You are the Acronis Cyber Protect Cloud Assistant (v26.02).
 Answer the user's question based ONLY on the provided documentation context.
 Be concise. Use **bold** for key terms, numbered lists for steps, `code` for commands.
-End with: **Source:** `source_file`
+End with: **Source:** [`source_file`](doc_url) — or just `source_file` if no URL.
 If the context doesn't cover the topic, say so. Never invent information.\
 """
 
@@ -619,19 +623,24 @@ async def chat_stream(req: ChatRequest):
             last_len = 0
             async with ClaudeSDKClient(options=opts) as client:
                 await client.query(rag_prompt)
+                msg_count = 0
                 async for msg in client.receive_messages():
                     if msg is None:
                         continue
+                    msg_count += 1
+                    logger.warning(f"[STREAM-DEBUG] msg#{msg_count} type={type(msg).__name__}")
                     if isinstance(msg, AssistantMessage):
                         for block in msg.content:
                             if isinstance(block, TextBlock):
                                 new_text = block.text
+                                logger.warning(f"[STREAM-DEBUG] AssistantMessage text_len={len(new_text)} last_len={last_len}")
                                 if len(new_text) > last_len:
                                     delta = new_text[last_len:]
                                     last_len = len(new_text)
                                     yield {"event": "message", "data": json.dumps({"type": "token", "text": delta})}
                                 full_answer = new_text
                     elif isinstance(msg, ResultMessage):
+                        logger.warning(f"[STREAM-DEBUG] ResultMessage received")
                         if hasattr(msg, 'content'):
                             for block in getattr(msg, 'content', []):
                                 if isinstance(block, TextBlock) and len(block.text) > last_len:
@@ -639,6 +648,7 @@ async def chat_stream(req: ChatRequest):
                                     yield {"event": "message", "data": json.dumps({"type": "token", "text": delta})}
                                     full_answer = block.text
                         break
+                logger.warning(f"[STREAM-DEBUG] total messages: {msg_count}, answer_len={len(full_answer)}")
 
             if not full_answer:
                 full_answer = "I couldn't generate a response. Please try again."
@@ -786,6 +796,7 @@ def _read_doc(abs_path: str) -> dict:
     title = ""
     section = ""
     pages = ""
+    doc_url = ""
     body = raw
 
     # Strip YAML frontmatter
@@ -801,8 +812,10 @@ def _read_doc(abs_path: str) -> dict:
                     section = line.split(":", 1)[1].strip().strip('"').strip("'")
                 elif line.startswith("page_range:"):
                     pages = "p." + line.split(":", 1)[1].strip().strip('"').strip("'")
+                elif line.startswith("doc_url:"):
+                    doc_url = line.split(":", 1)[1].strip().strip('"').strip("'")
 
-    return {"title": title, "section": section, "pages": pages, "content": body}
+    return {"title": title, "section": section, "pages": pages, "content": body, "doc_url": doc_url}
 
 
 @app.get("/api/docs/{source_path:path}")
@@ -828,6 +841,7 @@ async def get_doc(source_path: str):
         "content": doc["content"],
         "section": doc["section"],
         "pages": doc["pages"],
+        "doc_url": doc.get("doc_url", ""),
     }
 
 

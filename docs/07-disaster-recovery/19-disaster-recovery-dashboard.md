@@ -5,6 +5,7 @@ subsection: "Disaster recovery dashboard"
 page_range: "1058-1061"
 tags: [DR dashboard, eligible devices, health check, automated test failover, recovery servers in failover, primary servers, cloud server alerts, compute points usage, monitoring]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disaster-recovery-dashboard.html"
 ---
 
 # Disaster recovery dashboard

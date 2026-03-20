@@ -5,6 +5,7 @@ subsection: "Alerts"
 page_range: "299-307"
 tags: ["alerts", "disaster-recovery", "failover", "failback", "VPN", "quota", "licensing", "troubleshooting"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html"
 ---
 
 # Disaster recovery alerts

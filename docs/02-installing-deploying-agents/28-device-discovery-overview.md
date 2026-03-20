@@ -5,6 +5,7 @@ subsection: "Device discovery"
 page_range: "176-181"
 tags: ["device discovery", "Active Directory", "manual discovery", "Device Sense", "network scan", "multiple devices"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#device-discovery.html"
 ---
 
 # Device discovery overview and methods

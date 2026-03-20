@@ -5,6 +5,7 @@ subsection: null
 page_range: "21"
 tags: ["account", "activation", "login", "getting-started", "password", "security", "requirements"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#activating-account.html"
 ---
 
 # Activating the account

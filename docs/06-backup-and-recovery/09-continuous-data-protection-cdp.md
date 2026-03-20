@@ -5,6 +5,7 @@ subsection: "Backup"
 page_range: "531-534"
 tags: ["CDP", "continuous-data-protection", "real-time-backup", "file-tracking", "application-tracking", "NTFS"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#continuous-data-protection.html"
 ---
 
 # Continuous data protection (CDP)

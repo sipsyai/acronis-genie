@@ -5,6 +5,7 @@ subsection: "Remote installation of agents"
 page_range: "182-197"
 tags: ["remote installation", "UAC", "agent components", "discovery", "GPO", "credentials", "onboarding", "exclusions"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#remote-installation-of-agents.html"
 ---
 
 # Remote installation of agents and UAC requirements

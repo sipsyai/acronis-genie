@@ -5,6 +5,7 @@ subsection: "Cyber Scripting"
 page_range: "475-483"
 tags: [scripting plans, script quick run, scheduling, start conditions, target workloads, automation]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting-script-quick-run.html"
 ---
 
 # Scripting plans

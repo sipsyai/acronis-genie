@@ -5,6 +5,7 @@ subsection: "Search attributes for non-cloud-to-cloud workloads"
 page_range: "411-424"
 tags: [search, workloads, attributes, dynamic groups, query, filtering]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#attributes-dynamic-groups.html"
 ---
 
 # Search attributes for non-cloud-to-cloud workloads

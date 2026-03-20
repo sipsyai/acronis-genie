@@ -5,6 +5,7 @@ subsection: "Investigating Nodes and IoC"
 page_range: "1172-1180"
 tags: [edr, investigating, nodes, cyber-kill-chain, ioc, threat-feed, indicators-of-compromise, activities]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-review-attacked-nodes.html"
 ---
 
 # Investigate Individual Nodes in the Cyber Kill Chain

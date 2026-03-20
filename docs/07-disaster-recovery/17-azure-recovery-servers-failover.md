@@ -5,6 +5,7 @@ subsection: "Disaster Recovery to Microsoft Azure"
 page_range: "1029-1040"
 tags: [Azure recovery servers, Azure failover, production failover, test failover, automated test failover, Azure VM, IP conflict, Linux failover, worker deployment]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-recovery-servers.html"
 ---
 
 # Recovery servers in Microsoft Azure

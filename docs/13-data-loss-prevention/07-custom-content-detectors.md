@@ -5,6 +5,7 @@ subsection: "Custom Content Detectors"
 page_range: "1474-1477"
 tags: [dlp, content-detectors, file-type, keywords, pattern, regex, complex-detector, data-classifiers]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-custom-content-detectors.html"
 ---
 
 # Custom Content Detectors

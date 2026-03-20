@@ -5,6 +5,7 @@ subsection: "Recovery options"
 page_range: "668-676"
 tags: [recovery-options, backup-validation, boot-mode, error-handling, file-exclusions, flashback, performance, pre-post-commands, SID, VM-power-management, safe-recovery, windows-event-log]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-options.html"
 ---
 
 # Recovery Options

@@ -5,6 +5,7 @@ subsection: "Failback"
 page_range: "999-1009"
 tags: [failback, agent-based, agentless, bootable media, hypervisor agent, manual failback, data transfer, switchover]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#how-failback-works.html"
 ---
 
 # Failback

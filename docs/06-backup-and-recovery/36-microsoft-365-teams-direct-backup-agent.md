@@ -5,6 +5,7 @@ subsection: "Protecting Microsoft 365 Teams and Direct Backup"
 page_range: "820-842"
 tags: [Microsoft-365, Teams, Direct-Backup, M365-Backup-Storage, Agent-for-Office-365, OneNote, team-channels, team-mailbox, team-site, meetings, local-agent, Entra-admin-center]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#microsoft-365-business-backup.html"
 ---
 
 # Protecting Microsoft 365 Teams

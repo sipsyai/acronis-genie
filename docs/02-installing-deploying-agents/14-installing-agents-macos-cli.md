@@ -5,6 +5,7 @@ subsection: "Installing and uninstalling protection agents by using the command-
 page_range: "94-105"
 tags: ["installation", "CLI", "command-line", "macOS", "unattended", "PPPC", "permissions", "kernel-extensions"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-and-uninstallation-in-macos.html"
 ---
 
 # Installing and uninstalling protection agents in macOS via CLI

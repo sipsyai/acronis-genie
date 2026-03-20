@@ -5,6 +5,7 @@ subsection: null
 page_range: "24-25"
 tags: ["access", "login", "console", "management-portal", "password-reset"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#accessing-cyber-protection-service.html"
 ---
 
 # Accessing the Cyber Protection service

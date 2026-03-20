@@ -5,6 +5,7 @@ subsection: "Reviewing Incidents"
 page_range: "1139-1144"
 tags: [edr, incidents, review, threat-status, severity, filtering, investigation, dashboard]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-review-incidents.html"
 ---
 
 # Reviewing Incidents

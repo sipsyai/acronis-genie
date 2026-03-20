@@ -5,6 +5,7 @@ subsection: "Recovery of physical machines"
 page_range: "628-639"
 tags: [recovery, physical-machine, virtual-machine, p2v, p2p, VMware, Azure, Hyper-V, Virtuozzo, Scale-Computing, oVirt, Nutanix, Proxmox]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-physical-machines.html"
 ---
 
 # Recovery of Physical Machines

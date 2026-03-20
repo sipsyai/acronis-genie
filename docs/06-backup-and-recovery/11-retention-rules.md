@@ -5,6 +5,7 @@ subsection: "Backup"
 page_range: "551-555"
 tags: ["retention", "backup-cleanup", "backup-age", "backup-count", "backup-size", "GFS", "monthly", "weekly", "daily", "hourly"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#retention-rules.html"
 ---
 
 # Retention rules

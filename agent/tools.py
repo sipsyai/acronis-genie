@@ -110,7 +110,7 @@ async def search_docs(args: dict) -> dict:
         # ── Tier 2: Chunk search + reranking ───────────────────
         rows = await conn.fetch(
             """
-            SELECT id, title, section, content, source_file,
+            SELECT id, title, section, content, source_file, doc_url,
                    1 - (embedding <=> $1::vector) AS similarity
             FROM chunks
             ORDER BY embedding <=> $1::vector
@@ -145,6 +145,7 @@ async def search_docs(args: dict) -> dict:
             "section": r["section"],
             "content": r["content"],
             "source_file": r["source_file"],
+            "doc_url": r.get("doc_url"),
             "cosine": float(r["similarity"]),
             "reranker": float(rscore),
         })
@@ -167,6 +168,7 @@ async def search_docs(args: dict) -> dict:
         parts.append(
             f"[Reranker: {r['reranker']:.4f} | Cosine: {r['cosine']:.2f}] {r['title']}\n"
             f"Source: {r['source_file']}\n"
+            f"Doc URL: {r.get('doc_url') or 'N/A'}\n"
             f"Section: {r['section'] or 'N/A'}\n"
             f"---\n{r['content']}\n"
         )

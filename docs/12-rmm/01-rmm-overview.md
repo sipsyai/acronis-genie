@@ -5,6 +5,7 @@ subsection: "Overview"
 page_range: "1236-1237"
 tags: [rmm, overview, features, software-inventory, patch-management, remote-desktop, monitoring, deploypilot, vulnerability-assessment]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html"
 ---
 
 # RMM

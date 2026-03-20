@@ -6,6 +6,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 tailwind.config = {
   darkMode: "class",
@@ -90,6 +91,31 @@ tailwind.config = {
 .doc-panel-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #e2e8f0; }
 .dark .doc-panel-header { border-color: #334155; }
 .doc-panel-body { flex: 1; overflow-y: auto; padding: 20px; }
+.doc-panel-body h1 { font-size: 1.4em; font-weight: 700; margin-bottom: 8px; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+.dark .doc-panel-body h1 { color: #f1f5f9; border-color: #334155; }
+.doc-panel-body h2 { font-size: 1.15em; font-weight: 700; margin-top: 16px; margin-bottom: 6px; color: #0f172a; }
+.doc-panel-body h3 { font-size: 1.05em; font-weight: 600; margin-top: 12px; margin-bottom: 4px; color: #1e293b; }
+.dark .doc-panel-body h2, .dark .doc-panel-body h3 { color: #f1f5f9; }
+.doc-panel-body p { margin-bottom: 8px; line-height: 1.7; color: #334155; }
+.dark .doc-panel-body p { color: #cbd5e1; }
+.doc-panel-body ul { list-style: disc; margin-left: 1.25rem; margin-bottom: 8px; }
+.doc-panel-body ol { list-style: decimal; margin-left: 1.25rem; margin-bottom: 8px; }
+.doc-panel-body li { margin-bottom: 4px; padding-left: 4px; line-height: 1.6; color: #334155; }
+.dark .doc-panel-body li { color: #cbd5e1; }
+.doc-panel-body code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: ui-monospace, monospace; font-size: 0.85em; }
+.dark .doc-panel-body code { background: #1e293b; color: #e2e8f0; }
+.doc-panel-body pre { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; overflow-x: auto; margin: 8px 0; }
+.dark .doc-panel-body pre { background: #0f172a; border-color: #334155; }
+.doc-panel-body pre code { background: none; padding: 0; }
+.doc-panel-body blockquote { border-left: 3px solid #00a5e0; padding-left: 12px; margin: 8px 0; color: #64748b; }
+.doc-panel-body strong { font-weight: 600; color: #1e293b; }
+.dark .doc-panel-body strong { color: #f1f5f9; }
+.doc-panel-body a { color: #00a5e0; text-decoration: underline; }
+.doc-panel-body table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 0.9em; }
+.doc-panel-body th, .doc-panel-body td { border: 1px solid #e2e8f0; padding: 6px 10px; text-align: left; }
+.dark .doc-panel-body th, .dark .doc-panel-body td { border-color: #334155; }
+.doc-panel-body th { background: #f1f5f9; font-weight: 600; }
+.dark .doc-panel-body th { background: #1e293b; }
 </style>
 </head>
 <body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
@@ -196,6 +222,34 @@ tailwind.config = {
     </div>
   </div>
 </main>
+
+<!-- Document Viewer Panel -->
+<div id="doc-overlay" class="doc-overlay hidden" onclick="closeDocPanel()">
+  <div id="doc-panel" class="doc-panel" onclick="event.stopPropagation()">
+    <div class="doc-panel-header">
+      <div>
+        <div id="doc-title" class="font-semibold text-sm text-slate-800 dark:text-white"></div>
+        <div id="doc-section" class="text-xs text-slate-500 mt-0.5 font-mono"></div>
+      </div>
+      <button onclick="closeDocPanel()" class="p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+        <span class="material-symbols-outlined text-slate-500">close</span>
+      </button>
+    </div>
+    <div id="doc-body" class="doc-panel-body">
+      <div id="doc-loading" class="hidden flex items-center justify-center py-12">
+        <div class="flex items-center gap-3 text-slate-500">
+          <div class="flex gap-1">
+            <div class="size-2 rounded-full bg-primary typing-dot"></div>
+            <div class="size-2 rounded-full bg-primary typing-dot"></div>
+            <div class="size-2 rounded-full bg-primary typing-dot"></div>
+          </div>
+          <span class="text-sm">Loading document...</span>
+        </div>
+      </div>
+      <div id="doc-content" class="md-content"></div>
+    </div>
+  </div>
+</div>
 </div>
 
 <script>
@@ -305,9 +359,11 @@ function addAgentMessage(text, sources) {
   if (sources && sources.length > 0) {
     sourceBadges = '<div class="pt-4 flex flex-wrap gap-2">' +
       sources.map(s => `
-        <div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold cursor-pointer hover:bg-accent-green/10 transition-colors" title="${escapeHtml(s.file)}">
-          <span class="material-symbols-outlined text-sm">description</span>
-          ${escapeHtml(s.title)}
+        <div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold">
+          <span class="material-symbols-outlined text-sm cursor-pointer hover:text-white" data-source-path="${escapeHtml(s.file)}" onclick="openDocPanel(this.parentElement)">description</span>
+          <span class="cursor-pointer hover:underline" data-source-path="${escapeHtml(s.file)}" onclick="openDocPanel(this.parentElement)">${escapeHtml(s.title)}</span>
+          ${s.score != null ? `<span class="text-[9px] opacity-60 font-mono">${s.score.toFixed(2)}</span>` : ''}
+          ${s.doc_url ? `<a href="${escapeHtml(s.doc_url)}" target="_blank" rel="noopener" class="material-symbols-outlined text-sm hover:text-[#00a5e0] ml-0.5" title="Open official Acronis docs" onclick="event.stopPropagation()">open_in_new</a>` : ''}
         </div>`).join('') +
       '</div>';
   }
@@ -331,10 +387,10 @@ function addAgentMessage(text, sources) {
   scrollToBottom();
 
   // Add to sidebar history
-  addToHistory(chatInput.dataset.lastQuestion || 'Chat');
+  addToHistory(chatInput.dataset.lastQuestion || 'Chat', sessionId);
 }
 
-function addToHistory(text) {
+function addToHistory(text, sid) {
   const hist = document.getElementById('sidebar-history');
   const truncated = text.length > 28 ? text.substring(0, 28) + '...' : text;
   // Avoid duplicates
@@ -343,8 +399,31 @@ function addToHistory(text) {
   a.href = '#';
   a.className = 'flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors';
   a.innerHTML = `<span class="material-symbols-outlined text-xl text-primary">chat_bubble</span><span class="text-sm font-medium truncate">${escapeHtml(truncated)}</span>`;
+  if (sid) {
+    a.dataset.sessionId = sid;
+    a.onclick = (e) => { e.preventDefault(); loadSession(sid); };
+  }
   hist.insertBefore(a, hist.firstChild);
   if (hist.children.length > 5) hist.removeChild(hist.lastChild);
+}
+
+async function loadSession(sid) {
+  try {
+    const resp = await fetch(`/api/chat/history/${sid}`);
+    const data = await resp.json();
+    chatMessages.innerHTML = '';
+    sessionId = sid;
+    showChatArea();
+    for (const msg of data.messages) {
+      if (msg.role === 'user') {
+        addUserMessage(msg.content);
+      } else {
+        addAgentMessage(msg.content, msg.sources || []);
+      }
+    }
+  } catch (err) {
+    console.error('Failed to load session:', err);
+  }
 }
 
 // ── RAG Steps helpers ──
@@ -363,10 +442,43 @@ function addRagStep(stepsContainer, stepData) {
   stepEl.dataset.step = stepData.step;
 
   const iconName = STEP_ICONS[stepData.icon] || 'circle';
+  const hasDetails = stepData.details && Object.keys(stepData.details).length > 0;
   stepEl.innerHTML = `
     <span class="step-icon material-symbols-outlined">${iconName}</span>
     <span class="step-message">${escapeHtml(stepData.message)}</span>
+    ${hasDetails ? '<span class="step-detail-toggle" title="Show details">&#x25B8;</span>' : ''}
     <span class="pulse-indicator"></span>`;
+
+  if (hasDetails) {
+    const detailsDiv = document.createElement('div');
+    detailsDiv.className = 'step-details';
+    let detailText = '';
+    const d = stepData.details;
+    if (stepData.step === 'embedding') {
+      detailText = `Query: ${d.query_length || '?'} chars`;
+    } else if (stepData.step === 'qa_match' || stepData.step === 'searching') {
+      detailText = `Candidates: ${d.candidates || '?'} · Score: ${d.top_score != null ? d.top_score.toFixed(3) : '—'} · Tier: ${d.tier || '—'}`;
+    } else if (stepData.step === 'reranking') {
+      detailText = `Reranking ${d.reranked || '?'} chunks`;
+    } else if (stepData.step === 'sources') {
+      const srcCount = Array.isArray(d.sources) ? d.sources.length : '?';
+      detailText = `${srcCount} sources · Best rerank: ${d.top_rerank_score != null ? d.top_rerank_score.toFixed(3) : '—'}`;
+    } else if (stepData.step === 'generating') {
+      detailText = `Context: ~${d.context_tokens?.toLocaleString() || '?'} tokens` + (d.model ? ` · Model: ${d.model}` : '');
+    } else {
+      detailText = Object.entries(d).map(([k,v]) => typeof v === 'object' ? `${k}: ${JSON.stringify(v).length}b` : `${k}: ${v}`).join(' · ');
+    }
+    detailsDiv.innerHTML = `<div class="step-details-inner">${escapeHtml(detailText)}</div>`;
+    stepEl.appendChild(detailsDiv);
+
+    const toggle = stepEl.querySelector('.step-detail-toggle');
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggle.classList.toggle('expanded');
+      detailsDiv.classList.toggle('expanded');
+    });
+  }
+
   stepsContainer.appendChild(stepEl);
 
   // If step has source list, show them below
@@ -504,9 +616,11 @@ async function sendMessage() {
             // Add source badges
             if (pendingSources && pendingSources.length > 0) {
               const badgesHtml = pendingSources.map(s =>
-                `<div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold" title="${escapeHtml(s.file)}">
-                  <span class="material-symbols-outlined text-sm">description</span>
-                  ${escapeHtml(s.title)}
+                `<div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold" data-source-path="${escapeHtml(s.file)}">
+                  <span class="material-symbols-outlined text-sm cursor-pointer hover:text-white" onclick="openDocPanel(this.parentElement)">description</span>
+                  <span class="cursor-pointer hover:underline" onclick="openDocPanel(this.parentElement)">${escapeHtml(s.title)}</span>
+                  ${s.score != null ? `<span class="text-[9px] opacity-60 font-mono">${s.score.toFixed(2)}</span>` : ''}
+                  ${s.doc_url ? `<a href="${escapeHtml(s.doc_url)}" target="_blank" rel="noopener" class="material-symbols-outlined text-sm hover:text-[#00a5e0] ml-0.5" title="Open official Acronis docs" onclick="event.stopPropagation()">open_in_new</a>` : ''}
                 </div>`
               ).join('');
               const badgeContainer = document.createElement('div');
@@ -521,7 +635,7 @@ async function sendMessage() {
             ts.textContent = now;
             agentBubble.parentElement.appendChild(ts);
           }
-          addToHistory(chatInput.dataset.lastQuestion || 'Chat');
+          addToHistory(chatInput.dataset.lastQuestion || 'Chat', sessionId);
         }
       }
     }
@@ -660,8 +774,73 @@ function markdownToHtml(md) {
   return `<div class="md-content">${html}</div>`;
 }
 
+// ── Document viewer panel ──
+
+function openDocPanel(el) {
+  const path = el.dataset.sourcePath;
+  // Extract title from the text nodes, excluding icon and score spans
+  const titleParts = [];
+  el.childNodes.forEach(n => {
+    if (n.nodeType === 3) titleParts.push(n.textContent.trim());
+  });
+  const title = titleParts.filter(Boolean).join(' ') || path.split('/').pop();
+  document.getElementById('doc-title').textContent = title;
+  document.getElementById('doc-section').textContent = path;
+  document.getElementById('doc-content').innerHTML = '';
+  document.getElementById('doc-loading').classList.remove('hidden');
+  const overlay = document.getElementById('doc-overlay');
+  overlay.classList.remove('hidden');
+  requestAnimationFrame(() => overlay.classList.add('open'));
+
+  fetch(`/api/docs/${path}`)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => {
+      document.getElementById('doc-loading').classList.add('hidden');
+      // Show "View on Acronis.com" link if doc_url available
+      const headerDiv = document.querySelector('#doc-panel .doc-panel-header > div');
+      const existingLink = headerDiv.querySelector('.acronis-doc-link');
+      if (existingLink) existingLink.remove();
+      if (d.doc_url) {
+        const link = document.createElement('a');
+        link.href = d.doc_url;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.className = 'acronis-doc-link flex items-center gap-1 text-[11px] text-primary hover:underline mt-1';
+        link.innerHTML = '<span class="material-symbols-outlined" style="font-size:14px">open_in_new</span> View on Acronis.com';
+        headerDiv.appendChild(link);
+      }
+      // Use marked.js for full markdown rendering in doc panel
+      const html = typeof marked !== 'undefined' ? marked.parse(d.content) : markdownToHtml(d.content);
+      document.getElementById('doc-content').innerHTML = html;
+    })
+    .catch(() => {
+      document.getElementById('doc-loading').classList.add('hidden');
+      document.getElementById('doc-content').innerHTML = '<p class="text-slate-500 text-sm">Could not load document.</p>';
+    });
+}
+
+function closeDocPanel() {
+  const overlay = document.getElementById('doc-overlay');
+  overlay.classList.remove('open');
+  setTimeout(() => overlay.classList.add('hidden'), 300);
+}
+
+// Close panel on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeDocPanel();
+});
+
 // Show welcome state on load
 chatArea.style.display = 'none';
 chatInput.focus();
+
+// Load recent sessions into sidebar
+fetch('/api/chat/sessions').then(r => r.json()).then(data => {
+  if (data.sessions) {
+    for (const s of data.sessions) {
+      addToHistory(s.title, s.id);
+    }
+  }
+}).catch(() => {});
 </script>
 </body></html>

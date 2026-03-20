@@ -5,6 +5,7 @@ subsection: "Microsoft 365 Baselines"
 page_range: "1243-1255"
 tags: [rmm, microsoft-365, baselines, security-posture, remediation, auto-remediation, tenant-baselines, templates, conditional-access, email-security, intune]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-baseline-remediation.html"
 ---
 
 # Working with Baselines

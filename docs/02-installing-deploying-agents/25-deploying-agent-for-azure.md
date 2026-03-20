@@ -5,6 +5,7 @@ subsection: "Deploying Agent for Azure"
 page_range: "157-162"
 tags: ["Azure", "Microsoft Azure", "virtual appliance", "cloud", "agentless", "backup", "deployment", "subscription"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-azure.html"
 ---
 
 # Deploying Agent for Azure

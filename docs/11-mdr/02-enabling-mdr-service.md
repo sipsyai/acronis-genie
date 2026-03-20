@@ -5,6 +5,7 @@ subsection: "Enabling MDR"
 page_range: "1225-1229"
 tags: [mdr, enabling, configuration, escalation-contacts, licensing, critical-endpoints, partner-administrator]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html"
 ---
 
 # Enabling the Acronis MDR Service

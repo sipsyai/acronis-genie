@@ -5,6 +5,7 @@ subsection: "Off-host data protection plans"
 page_range: "245-247"
 tags: ["validation", "checksum", "VM-heartbeat", "screenshot-validation", "backup-verification"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#validation.html"
 ---
 
 # Validation

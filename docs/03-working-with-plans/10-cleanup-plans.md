@@ -5,6 +5,7 @@ subsection: "Cleanup"
 page_range: "251-252"
 tags: [cleanup, retention, backup management, off-host data processing]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cleanup.html"
 ---
 
 # Cleanup plans

@@ -5,6 +5,7 @@ subsection: "Installing and uninstalling agents via MSI and MST"
 page_range: "76-82"
 tags: ["installation", "MSI", "MST", "Windows", "CLI", "unattended", "msiexec", "parameters", "components"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-uninstallation-msi-file.html"
 ---
 
 # Unattended installation with MSI files

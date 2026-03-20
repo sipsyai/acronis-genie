@@ -5,6 +5,7 @@ subsection: "Bottleneck detection and public cloud backups"
 page_range: "685-699"
 tags: [bottleneck-detection, performance, activity-details, public-cloud, Microsoft-Azure, Amazon-S3, S3-compatible, IONOS-Cloud, Impossible-Cloud, backup-location, immutability]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-workloads-public-clouds.html"
 ---
 
 # Understanding the Detection of Bottlenecks

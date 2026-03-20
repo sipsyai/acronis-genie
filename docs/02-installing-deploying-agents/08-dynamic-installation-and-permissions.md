@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "54-55"
 tags: ["dynamic-installation", "components", "antimalware", "URL-filtering", "DLP", "macOS", "permissions", "Connect-Agent"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dynamic-installation-uninstallation-components.html"
 ---
 
 # Dynamic installation of components

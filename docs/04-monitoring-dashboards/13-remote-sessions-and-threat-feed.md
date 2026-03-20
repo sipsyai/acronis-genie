@@ -5,6 +5,7 @@ subsection: "Remote sessions and threat feed"
 page_range: "348-354"
 tags: [remote sessions, smart protection, threat feed, CPOC, data protection map, security alerts, widgets]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#remote-sessions.html"
 ---
 
 # Remote sessions widget

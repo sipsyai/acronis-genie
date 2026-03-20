@@ -5,6 +5,7 @@ subsection: "Disaster Recovery to Microsoft Azure"
 page_range: "1021-1029"
 tags: [Azure DR site, protection plan, connectivity, Azure VNet, Azure Firewall, NSG, Azure Bastion, ExpressRoute, VPN, network management, recovery network, test network]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-connectivity-and-networks.html"
 ---
 
 # Creating a disaster recovery protection plan with Microsoft Azure

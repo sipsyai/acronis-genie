@@ -5,6 +5,7 @@ subsection: "Recovery of virtual machines"
 page_range: "640-653"
 tags: [recovery, virtual-machine, v2p, v2v, containers, VMware, Azure, Hyper-V, Virtuozzo, oVirt, Nutanix, Proxmox, Scale-Computing, bootable-media]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-virtual-machines.html"
 ---
 
 # Recovery of Virtual Machines

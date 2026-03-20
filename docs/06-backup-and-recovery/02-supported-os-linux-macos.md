@@ -5,6 +5,7 @@ subsection: "Supported operating systems and environments for backup and recover
 page_range: "488-491"
 tags: ["backup", "recovery", "supported-os", "Linux", "macOS", "kernel", "RHEL", "Ubuntu", "Debian", "CentOS", "Rocky", "AlmaLinux"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-linux-products.html"
 ---
 
 # Agent for Linux

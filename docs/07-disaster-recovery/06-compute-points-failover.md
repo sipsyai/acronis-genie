@@ -5,6 +5,7 @@ subsection: "Failover"
 page_range: "990-998"
 tags: [compute points, failover, test failover, automated test failover, production failover, recovery server]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compute-points.html"
 ---
 
 # Compute points

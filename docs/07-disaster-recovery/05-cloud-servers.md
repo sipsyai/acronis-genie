@@ -5,6 +5,7 @@ subsection: "Cloud servers"
 page_range: "970-989"
 tags: [cloud servers, recovery server, primary server, firewall rules, compute points, backups, IP addresses]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-cloud-servers.html"
 ---
 
 # IP address reassignment

@@ -5,6 +5,7 @@ subsection: "Backup options"
 page_range: "563-570"
 tags: ["backup-options", "default-options", "alerts", "Azure-restore-points", "backup-consolidation", "backup-file-name", "backup-format", "version-11", "version-12", "TIBX", "TIB"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-options-alerts.html"
 ---
 
 # Default backup options

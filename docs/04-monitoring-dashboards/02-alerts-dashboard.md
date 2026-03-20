@@ -5,6 +5,7 @@ subsection: "Monitoring"
 page_range: "290-294"
 tags: ["alerts", "dashboard", "filtering", "sorting", "service-desk", "ticket", "customization"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#alerts-dashboard.html"
 ---
 
 # The Alerts dashboard

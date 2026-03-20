@@ -5,6 +5,7 @@ subsection: "Supported protection features by operating system"
 page_range: "26-27"
 tags: ["os-support", "Windows", "Linux", "macOS", "compatibility", "requirements"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-operating-systems-and-environments.html"
 ---
 
 # Supported operating systems and versions

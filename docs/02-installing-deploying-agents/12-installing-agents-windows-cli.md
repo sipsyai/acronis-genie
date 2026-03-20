@@ -5,6 +5,7 @@ subsection: "Installing and uninstalling protection agents by using the command-
 page_range: "71-75"
 tags: ["installation", "CLI", "command-line", "Windows", "unattended", "EXE", "MSI", "parameters"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-or-uninstallation-in-windows.html"
 ---
 
 # Installing and uninstalling protection agents in Windows via CLI

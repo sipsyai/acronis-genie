@@ -5,6 +5,7 @@ subsection: "Bootable media"
 page_range: "906-929"
 tags: [bootable-media, Linux-based, WinPE, WinRE, Bootable-Media-Builder, ISO, kernel-parameters, scripts, autostart-json, registration, network-settings, VLAN, NIC-teaming, Startup-Recovery-Manager, remote-operations]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#bootable-media-bm.html"
 ---
 
 # Creating Bootable Media to Recover Operating Systems

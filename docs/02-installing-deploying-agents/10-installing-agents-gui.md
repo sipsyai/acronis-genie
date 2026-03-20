@@ -5,6 +5,7 @@ subsection: null
 page_range: "61-68"
 tags: ["installation", "GUI", "Windows", "Linux", "macOS", "agent", "logon-account", "gMSA"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#installing-agents-gui.html"
 ---
 
 # Installing protection agents by using the graphical user interface

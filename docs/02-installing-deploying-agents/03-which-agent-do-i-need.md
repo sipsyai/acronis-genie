@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "39-43"
 tags: ["agent", "selection", "physical-machines", "virtual-machines", "databases", "cloud", "mobile"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#which-agent-do-i-need.html"
 ---
 
 # Which agent do I need?

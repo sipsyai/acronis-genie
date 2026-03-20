@@ -5,6 +5,7 @@ subsection: "Installing and uninstalling protection agents by using the command-
 page_range: "88-94"
 tags: ["installation", "CLI", "command-line", "Linux", "unattended", "parameters", "uninstall"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-or-uninstallation-in-linux.html"
 ---
 
 # Installing and uninstalling protection agents in Linux via CLI

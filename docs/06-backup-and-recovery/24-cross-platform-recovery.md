@@ -5,6 +5,7 @@ subsection: "Cross-platform recovery"
 page_range: "620-627"
 tags: [cross-platform, recovery, migration, physical-to-virtual, virtual-to-physical, compatibility-matrix, bootable-media]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#machine-migration.html"
 ---
 
 # Cross-Platform Recovery

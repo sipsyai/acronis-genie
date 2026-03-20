@@ -5,6 +5,7 @@ subsection: "Reports"
 page_range: "361-367"
 tags: [reports, dashboard, widgets, PDF, Excel, CSV, scheduling, export]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#reports.html"
 ---
 
 # Reports

@@ -5,6 +5,7 @@ subsection: "GenAI Protection settings"
 page_range: "1112-1114"
 tags: [genai, generative-ai, usage-monitoring, scope-of-protection, data-loss-prevention, prompt-injection, ai-security, shadow-ai, browser-protection]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#generative-ai-protection-settings.html"
 ---
 
 # Configuring Your GenAI Protection

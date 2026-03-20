@@ -5,6 +5,7 @@ subsection: null
 page_range: "368-373"
 tags: ["console", "overview", "administration-levels", "partner", "customer", "unit", "All-customers"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#service-console.html"
 ---
 
 # The Cyber Protect console

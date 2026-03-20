@@ -5,6 +5,7 @@ subsection: "Protection plans and modules"
 page_range: "238-241"
 tags: ["compatibility", "conflicts", "troubleshooting", "plans", "hosting-control-panel"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compatibility-issues-plans.html"
 ---
 
 # Compatibility issues with plans

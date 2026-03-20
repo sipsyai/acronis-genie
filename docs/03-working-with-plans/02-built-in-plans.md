@@ -5,6 +5,7 @@ subsection: "Understanding plans"
 page_range: "211-219"
 tags: ["built-in", "plans", "protection", "monitoring", "remote-management", "essential", "extended", "complete"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#built-in-plans.html"
 ---
 
 # Built-in plans

@@ -5,6 +5,7 @@ subsection: "Working with the Device control module"
 page_range: "441-446"
 tags: [device control, allowlist, USB devices, device subclasses, exclusions, USB database]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-exclude-device-types.html"
 ---
 
 # Device types allowlist

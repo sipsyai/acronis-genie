@@ -5,6 +5,7 @@ subsection: "Workflow versions"
 page_range: "1129-1131"
 tags: [workflow-versions, version-management, draft, active, disabled, default-version, cloning-version, deleting-version]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workflows-version-history.html"
 ---
 
 # Workflow Versions

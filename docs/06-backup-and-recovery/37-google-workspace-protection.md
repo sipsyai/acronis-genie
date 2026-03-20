@@ -5,6 +5,7 @@ subsection: "Protecting Google Workspace data"
 page_range: "843-866"
 tags: [Google-Workspace, Gmail, Google-Drive, Shared-Drives, cloud-backup, notarization, blockchain, search-indexes, full-text-search, Google-Cloud-project, service-account]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-google-workspace-data.html"
 ---
 
 # Protecting Google Workspace Data

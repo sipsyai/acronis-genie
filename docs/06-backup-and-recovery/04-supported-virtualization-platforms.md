@@ -5,6 +5,7 @@ subsection: "Supported operating systems and environments for backup and recover
 page_range: "495-503"
 tags: ["virtualization", "VMware", "Hyper-V", "Scale-Computing", "Proxmox", "Citrix", "KVM", "oVirt", "public-clouds", "Azure", "Amazon-EC2", "agentless", "agent-based"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-virtualization-platforms.html"
 ---
 
 # Supported virtualization platforms

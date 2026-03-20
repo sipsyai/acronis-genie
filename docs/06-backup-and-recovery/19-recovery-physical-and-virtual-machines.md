@@ -5,6 +5,7 @@ subsection: "Recovery"
 page_range: "628-637"
 tags: ["recovery", "physical-machine", "virtual-machine", "P2V", "P2P", "VMware", "Hyper-V", "Azure", "Scale-Computing", "oVirt", "Nutanix", "Virtuozzo", "disk-mapping", "VM-settings", "safe-recovery"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-physical-machine-as-virtual-machine.html"
 ---
 
 # Recovery of physical machines

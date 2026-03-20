@@ -5,6 +5,7 @@ subsection: "Enabling DLP in Protection Plans"
 page_range: "1462-1465"
 tags: [dlp, protection-plan, device-control, observation-mode, enforcement-mode, advanced-settings, ocr, allowlist, security-level]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#enabling-disabling-protection-plan.html"
 ---
 
 # Enabling Data Loss Prevention in Protection Plans

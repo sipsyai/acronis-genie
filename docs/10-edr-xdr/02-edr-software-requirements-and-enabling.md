@@ -5,6 +5,7 @@ subsection: "Setup and Configuration"
 page_range: "1135-1138"
 tags: [edr, software-requirements, enabling, protection-plan, configuration, supported-os]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-software-requirements.html"
 ---
 
 # Software Requirements for Endpoint Detection and Response

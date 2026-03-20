@@ -5,6 +5,7 @@ subsection: null
 page_range: "23-24"
 tags: ["privacy", "google-analytics", "cookies", "settings", "onboarding"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#google-analytics.html"
 ---
 
 # Privacy settings

@@ -5,6 +5,7 @@ subsection: "Recovering files"
 page_range: "655-662"
 tags: [file-recovery, web-restore, notary-service, asign, bootable-media, system-state, esxi-recovery, extracting-files]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#safe-recovery.html"
 ---
 
 # Recovering Files

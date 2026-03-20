@@ -5,6 +5,7 @@ subsection: "Deploying virtual appliances"
 page_range: "131-135"
 tags: ["VMware", "virtual appliance", "OVF", "vSphere", "ESXi", "vCenter", "deployment", "DRS", "HotAdd"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-for-vmware-virtual-appliance-from-ovf-template.html"
 ---
 
 # Deploying Agent for VMware (Virtual Appliance)

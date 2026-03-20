@@ -5,6 +5,7 @@ subsection: "Organization Map"
 page_range: "1477-1480"
 tags: [dlp, organization-map, user-groups, accounts, incident-investigation, known-issues, limitations]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-organization-map.html"
 ---
 
 # Organization Map and Known Issues

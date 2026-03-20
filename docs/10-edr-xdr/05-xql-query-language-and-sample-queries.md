@@ -5,6 +5,7 @@ subsection: "XQL Query Language"
 page_range: "1151-1154"
 tags: [edr, xql, query-language, syntax, sample-queries, filtering, aggregation]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-search-query-language.html"
 ---
 
 # Acronis XDR Query Language (XQL)

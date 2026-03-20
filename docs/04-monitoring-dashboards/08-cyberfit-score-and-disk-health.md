@@ -5,6 +5,7 @@ subsection: "CyberFit Score and disk health"
 page_range: "330-334"
 tags: [CyberFit Score, disk health, SMART, HDD, SSD, prediction, monitoring, widgets]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disk-health-monitoring.html"
 ---
 
 # CyberFit Score by machine

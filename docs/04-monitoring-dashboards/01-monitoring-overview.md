@@ -5,6 +5,7 @@ subsection: "Monitoring"
 page_range: "288-290"
 tags: ["monitoring", "dashboard", "overview", "activities", "widgets", "customization"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-alerts.html"
 ---
 
 # Monitoring

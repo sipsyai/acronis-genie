@@ -5,6 +5,7 @@ subsection: "Managing your workflows"
 page_range: "1125-1128"
 tags: [workflow-management, enabling, assigning, execution-history, cloning, updating, deleting, tenant-assignment, role-permissions]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#managing-workloads.html"
 ---
 
 # Managing Your Workflows

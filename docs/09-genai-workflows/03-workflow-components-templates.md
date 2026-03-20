@@ -5,6 +5,7 @@ subsection: "Workflow triggers, actions, and templates"
 page_range: "1122-1124"
 tags: [workflow-triggers, workflow-actions, workflow-templates, EDR, alerts, devices, tenants, users, notifications, automation]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workflows-components.html"
 ---
 
 # Workflow Components and Templates

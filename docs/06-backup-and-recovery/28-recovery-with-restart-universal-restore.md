@@ -5,6 +5,7 @@ subsection: "Recovery with restart and Universal Restore"
 page_range: "663-668"
 tags: [recovery-with-restart, recovery-environment, WinRE, universal-restore, drivers, bootable-media, BIOS, UEFI, Linux, Windows]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-with-restart.html"
 ---
 
 # Recovery with Restart

@@ -5,6 +5,7 @@ subsection: "Deploying protection agents through Group Policy"
 page_range: "129-131"
 tags: ["Group Policy", "GPO", "Active Directory", "deployment", "MST", "MSI", "Windows", "domain"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agents-through-group-policy.html"
 ---
 
 # Deploying protection agents through Group Policy

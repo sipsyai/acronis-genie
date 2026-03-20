@@ -5,6 +5,7 @@ subsection: "Failover"
 page_range: "991-998"
 tags: [failover, production failover, test failover, automated test failover, finalization, recovery server, DHCP, DNS, failover process]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-disabling-automated-test-failover.html"
 ---
 
 # Failover

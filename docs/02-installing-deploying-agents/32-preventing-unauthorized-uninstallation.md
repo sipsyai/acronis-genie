@@ -5,6 +5,7 @@ subsection: "Preventing unauthorized uninstallation or modification of agents"
 page_range: "200-201"
 tags: ["uninstallation protection", "self-protection", "agent modification", "security", "anti-tamper", "protection plan"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#preventing-unauthorized-uninstallation-agents.html"
 ---
 
 # Preventing unauthorized uninstallation or modification of agents

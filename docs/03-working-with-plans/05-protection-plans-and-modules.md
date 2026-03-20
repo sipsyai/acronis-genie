@@ -5,6 +5,7 @@ subsection: null
 page_range: "231-232"
 tags: ["protection-plans", "modules", "backup", "antivirus", "EDR", "URL-filtering", "vulnerability", "patch-management", "DLP", "GenAI"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protection-plans-and-modules.html"
 ---
 
 # Protection plans and modules

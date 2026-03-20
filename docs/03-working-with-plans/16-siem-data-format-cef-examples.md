@@ -5,6 +5,7 @@ subsection: "SIEM forwarding plans"
 page_range: "273-279"
 tags: [SIEM, CEF, data format, alert examples, event examples, activity examples, audit log examples]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-formats.html"
 ---
 
 # SIEM data format and examples

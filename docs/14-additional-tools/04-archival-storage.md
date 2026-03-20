@@ -5,6 +5,7 @@ subsection: "Archival Storage"
 page_range: "1489-1496"
 tags: [archival-storage, s3-compatible, object-storage, versioning, object-locking, worm, retention-policy, lifecycle-policy, buckets, access-keys]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#archival-storage.html"
 ---
 
 # Archival Storage

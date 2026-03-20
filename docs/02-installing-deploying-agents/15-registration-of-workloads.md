@@ -5,6 +5,7 @@ subsection: null
 page_range: "105-107"
 tags: ["registration", "workload", "tenant", "token", "credentials", "console"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#registration-workloads.html"
 ---
 
 # Registration of workloads

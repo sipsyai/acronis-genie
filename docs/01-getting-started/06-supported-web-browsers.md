@@ -5,6 +5,7 @@ subsection: null
 page_range: "25"
 tags: ["browsers", "compatibility", "TLS", "requirements"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-web-browsers.html"
 ---
 
 # Supported web browsers

@@ -5,6 +5,7 @@ subsection: "Deploying Agent for Synology"
 page_range: "167-175"
 tags: ["Synology", "NAS", "agent", "SPK", "DiskStation Manager", "backup", "installation", "update"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-synology.html"
 ---
 
 # Deploying Agent for Synology

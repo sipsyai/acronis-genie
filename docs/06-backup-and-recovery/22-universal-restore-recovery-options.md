@@ -5,6 +5,7 @@ subsection: "Recovery"
 page_range: "663-676"
 tags: ["recovery-with-restart", "WinRE", "Universal-Restore", "recovery-options", "boot-mode", "BIOS", "UEFI", "flashback", "SID-changing", "VM-power-management", "safe-recovery", "malware-scan", "file-exclusions", "file-level-security", "mount-points", "performance"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#universal-restore-in-windows.html"
 ---
 
 # Recovery with restart

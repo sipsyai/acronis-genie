@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "46"
 tags: ["download", "installer", "agent", "setup"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#downloading-agents.html"
 ---
 
 # Downloading protection agents

@@ -1,0 +1,1115 @@
+{
+  "04-monitoring-dashboards/04-alert-types-disaster-recovery.md": {
+    "page": "about-cyber-disaster-recovery-cloud.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html",
+    "match_score": 0.7333,
+    "toc_title": "About Acronis Disaster Recovery",
+    "doc_title": "Alert types and categories - Disaster recovery alerts"
+  },
+  "07-disaster-recovery/05-cloud-servers.md": {
+    "page": "configuring-cloud-servers.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-cloud-servers.html",
+    "match_score": 1.0,
+    "toc_title": "Cloud servers",
+    "doc_title": "Cloud servers: recovery servers and primary servers"
+  },
+  "07-disaster-recovery/06-compute-points-failover.md": {
+    "page": "compute-points.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compute-points.html",
+    "match_score": 0.7568,
+    "toc_title": "Compute points",
+    "doc_title": "Compute points, failover, and test failover"
+  },
+  "02-installing-deploying-agents/07-proxy-server-settings.md": {
+    "page": "proxy-server-settings.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#proxy-server-settings.html",
+    "match_score": 1.0,
+    "toc_title": "Configuring proxy server settings",
+    "doc_title": "Configuring proxy server settings"
+  },
+  "07-disaster-recovery/17-azure-recovery-servers-failover.md": {
+    "page": "dr-to-azure-recovery-servers.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-recovery-servers.html",
+    "match_score": 0.8434,
+    "toc_title": "Recovery servers in Microsoft Azure",
+    "doc_title": "Recovery servers and failover in Microsoft Azure"
+  },
+  "07-disaster-recovery/13-failover-production-test-automated.md": {
+    "page": "dr-to-azure-disabling-automated-test-failover.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-disabling-automated-test-failover.html",
+    "match_score": 0.6744,
+    "toc_title": "Disabling automated test failover",
+    "doc_title": "Failover - production, test, and automated test failover"
+  },
+  "07-disaster-recovery/19-disaster-recovery-dashboard.md": {
+    "page": "disaster-recovery-dashboard.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disaster-recovery-dashboard.html",
+    "match_score": 1.0,
+    "toc_title": "Disaster recovery dashboard",
+    "doc_title": "Disaster recovery dashboard"
+  },
+  "06-backup-and-recovery/27-file-recovery.md": {
+    "page": "safe-recovery.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#safe-recovery.html",
+    "match_score": 0.8462,
+    "toc_title": "Safe recovery",
+    "doc_title": "File Recovery and Verification"
+  },
+  "02-installing-deploying-agents/05-downloading-agents.md": {
+    "page": "downloading-agents.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#downloading-agents.html",
+    "match_score": 1.0,
+    "toc_title": "Downloading protection agents",
+    "doc_title": "Downloading protection agents"
+  },
+  "07-disaster-recovery/16-azure-dr-site-connectivity-networks.md": {
+    "page": "dr-to-azure-connectivity-and-networks.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-connectivity-and-networks.html",
+    "match_score": 0.75,
+    "toc_title": "Connectivity and networks in Microsoft Azure",
+    "doc_title": "Azure DR site management, connectivity, and networks"
+  },
+  "07-disaster-recovery/15-dr-to-azure-overview-requirements-licensing.md": {
+    "page": "dr-to-azure-software-requirements.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-software-requirements.html",
+    "match_score": 0.7105,
+    "toc_title": "Software requirements for Disaster Recovery to Microsoft Azure",
+    "doc_title": "Disaster Recovery to Microsoft Azure - overview, requirements, and licensing"
+  },
+  "07-disaster-recovery/09-point-to-site-vpn-network-management.md": {
+    "page": "dr-to-azure-network-management.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-network-management.html",
+    "match_score": 0.7273,
+    "toc_title": "Network management in Microsoft Azure",
+    "doc_title": "Point-to-site VPN and network management"
+  },
+  "05-managing-workloads/01-cyber-protect-console.md": {
+    "page": "service-console.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#service-console.html",
+    "match_score": 1.0,
+    "toc_title": "The Cyber Protect console",
+    "doc_title": "The Cyber Protect console"
+  },
+  "07-disaster-recovery/07-failback.md": {
+    "page": "how-failback-works.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#how-failback-works.html",
+    "match_score": 1.0,
+    "toc_title": "Failback",
+    "doc_title": "Failback to local site"
+  },
+  "09-genai-workflows/04-managing-workflows.md": {
+    "page": "managing-workloads.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#managing-workloads.html",
+    "match_score": 0.8889,
+    "toc_title": "Managing workloads in the Cyber Protect console",
+    "doc_title": "Managing Workflows - Enabling, Assigning, Execution History, Cloning, Updating, Deleting"
+  },
+  "09-genai-workflows/01-genai-protection-settings.md": {
+    "page": "generative-ai-protection-settings.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#generative-ai-protection-settings.html",
+    "match_score": 1.0,
+    "toc_title": "GenAI Protection settings",
+    "doc_title": "GenAI Protection Settings"
+  },
+  "03-working-with-plans/11-conversion-to-virtual-machine.md": {
+    "page": "conversion-to-virtual-machine.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#conversion-to-virtual-machine.html",
+    "match_score": 1.0,
+    "toc_title": "Conversion to a virtual machine",
+    "doc_title": "Conversion to a virtual machine"
+  },
+  "08-antivirus-antimalware/09-firewall-management.md": {
+    "page": "firewall-management.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#firewall-management.html",
+    "match_score": 1.0,
+    "toc_title": "Firewall management",
+    "doc_title": "Firewall Management"
+  },
+  "02-installing-deploying-agents/04-system-requirements.md": {
+    "page": "system-requirements-agents.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#system-requirements-agents.html",
+    "match_score": 1.0,
+    "toc_title": "System requirements for agents",
+    "doc_title": "System requirements for agents"
+  },
+  "14-additional-tools/04-archival-storage.md": {
+    "page": "archival-storage.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#archival-storage.html",
+    "match_score": 1.0,
+    "toc_title": "Archival storage",
+    "doc_title": "Archival Storage"
+  },
+  "01-getting-started/05-accessing-cyber-protection-service.md": {
+    "page": "accessing-cyber-protection-service.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#accessing-cyber-protection-service.html",
+    "match_score": 1.0,
+    "toc_title": "Accessing the Cyber Protection service",
+    "doc_title": "Accessing the Cyber Protection service"
+  },
+  "11-mdr/02-enabling-mdr-service.md": {
+    "page": "a-mdr-enabling.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html",
+    "match_score": 1.0,
+    "toc_title": "Enabling the Acronis MDR Service",
+    "doc_title": "Enabling the Acronis MDR Service"
+  },
+  "12-rmm/01-rmm-overview.md": {
+    "page": "a-mdr-overview.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html",
+    "match_score": 0.7692,
+    "toc_title": "Acronis Managed Detection and Response (MDR)",
+    "doc_title": "RMM Overview and Features"
+  },
+  "03-working-with-plans/06-actions-with-protection-plans.md": {
+    "page": "actions-with-protection-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#actions-with-protection-plans.html",
+    "match_score": 1.0,
+    "toc_title": "Actions with protection plans",
+    "doc_title": "Actions with protection plans"
+  },
+  "01-getting-started/01-activating-account.md": {
+    "page": "activating-account.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#activating-account.html",
+    "match_score": 1.0,
+    "toc_title": "Activating the account",
+    "doc_title": "Activating the account and password requirements"
+  },
+  "02-installing-deploying-agents/29-device-discovery-device-sense.md": {
+    "page": "device-discovery-device-sense.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#device-discovery-device-sense.html",
+    "match_score": 1.0,
+    "toc_title": "Device discovery by using Device Sense ™",
+    "doc_title": "Device discovery by using Device Sense"
+  },
+  "08-antivirus-antimalware/06-active-protection-cyber-backup-standard.md": {
+    "page": "active-protection.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#active-protection.html",
+    "match_score": 1.0,
+    "toc_title": "Active Protection in the Cyber Backup Standard edition",
+    "doc_title": "Active Protection in the Cyber Backup Standard Edition"
+  },
+  "04-monitoring-dashboards/14-activities-tab.md": {
+    "page": "activities-tab.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#activities-tab.html",
+    "match_score": 1.0,
+    "toc_title": "The Activities tab",
+    "doc_title": "The Activities tab"
+  },
+  "06-backup-and-recovery/37-google-workspace-protection.md": {
+    "page": "protecting-google-workspace-data.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-google-workspace-data.html",
+    "match_score": 1.0,
+    "toc_title": "Protecting Google Workspace data",
+    "doc_title": "Protecting Google Workspace Data"
+  },
+  "01-getting-started/04-privacy-settings.md": {
+    "page": "google-analytics.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#google-analytics.html",
+    "match_score": 1.0,
+    "toc_title": "Privacy settings",
+    "doc_title": "Privacy settings"
+  },
+  "13-data-loss-prevention/03-policy-renewal.md": {
+    "page": "advanced-dlp-policy-renewal.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-policy-renewal.html",
+    "match_score": 1.0,
+    "toc_title": "Data flow policy renewal",
+    "doc_title": "Data Flow Policy Renewal"
+  },
+  "13-data-loss-prevention/07-custom-content-detectors.md": {
+    "page": "advanced-dlp-custom-content-detectors.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-custom-content-detectors.html",
+    "match_score": 1.0,
+    "toc_title": "Custom content detectors",
+    "doc_title": "Custom Content Detectors"
+  },
+  "13-data-loss-prevention/08-organization-map-known-issues.md": {
+    "page": "advanced-dlp-organization-map.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-organization-map.html",
+    "match_score": 0.7111,
+    "toc_title": "Organization map",
+    "doc_title": "Organization Map and Known Issues"
+  },
+  "13-data-loss-prevention/02-permissions-combining-rules-review.md": {
+    "page": "advanced-dlp-permissions.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-permissions.html",
+    "match_score": 0.6792,
+    "toc_title": "Adjusting the permissions in data flow policy rules",
+    "doc_title": "Adjusting Permissions, Combining Rules, and Policy Review"
+  },
+  "13-data-loss-prevention/04-enabling-dlp-protection-plans.md": {
+    "page": "enabling-disabling-protection-plan.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#enabling-disabling-protection-plan.html",
+    "match_score": 0.8571,
+    "toc_title": "Enabling or disabling a protection plan",
+    "doc_title": "Enabling DLP in Protection Plans and Advanced Settings"
+  },
+  "13-data-loss-prevention/05-sensitive-data-definitions.md": {
+    "page": "advanced-dlp-sensitive-data-definitions.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-sensitive-data-definitions.html",
+    "match_score": 1.0,
+    "toc_title": "Sensitive data definitions",
+    "doc_title": "Sensitive Data Definitions"
+  },
+  "08-antivirus-antimalware/12-antimalware-scan-of-backups.md": {
+    "page": "antimalware-scan-of-backups.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#antimalware-scan-of-backups.html",
+    "match_score": 1.0,
+    "toc_title": "Antimalware scan of backups",
+    "doc_title": "Antimalware Scan of Backups"
+  },
+  "02-installing-deploying-agents/02-agent-based-vs-agentless.md": {
+    "page": "agentbased-agentless-backup.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#agentbased-agentless-backup.html",
+    "match_score": 1.0,
+    "toc_title": "Agent-based and agentless backup",
+    "doc_title": "Agent-based and agentless backup"
+  },
+  "04-monitoring-dashboards/03-alert-types-backup.md": {
+    "page": "alert-types-categories.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#alert-types-categories.html",
+    "match_score": 0.7761,
+    "toc_title": "Alert types and categories",
+    "doc_title": "Alert types and categories - Backup alerts"
+  },
+  "04-monitoring-dashboards/02-alerts-dashboard.md": {
+    "page": "alerts-dashboard.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#alerts-dashboard.html",
+    "match_score": 1.0,
+    "toc_title": "The Alerts dashboard",
+    "doc_title": "The Alerts dashboard"
+  },
+  "08-antivirus-antimalware/01-supported-os-av-am.md": {
+    "page": "supported-platforms-antivirus-antimalware-protection.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-platforms-antivirus-antimalware-protection.html",
+    "match_score": 1.0,
+    "toc_title": "Supported operating systems for antivirus and antimalware protection",
+    "doc_title": "Supported Operating Systems for Antivirus and Antimalware Protection"
+  },
+  "08-antivirus-antimalware/10-quarantine-management.md": {
+    "page": "advanced-management.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-management.html",
+    "match_score": 0.75,
+    "toc_title": "RMM",
+    "doc_title": "Quarantine Management"
+  },
+  "08-antivirus-antimalware/04-av-am-protection-settings-part1.md": {
+    "page": "antivirus-and-antimalware-protection-settings.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#antivirus-and-antimalware-protection-settings.html",
+    "match_score": 0.6579,
+    "toc_title": "Antivirus and antimalware protection settings",
+    "doc_title": "Antivirus and Antimalware Protection Settings - Active Protection, Advanced Antimalware, Network and Server-side"
+  },
+  "05-managing-workloads/04-search-attributes-cloud-to-cloud.md": {
+    "page": "attributes-cloud-to-cloud-dynamic-groups.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#attributes-cloud-to-cloud-dynamic-groups.html",
+    "match_score": 1.0,
+    "toc_title": "Search attributes for cloud-to-cloud workloads",
+    "doc_title": "Search attributes for cloud-to-cloud workloads"
+  },
+  "05-managing-workloads/05-search-attributes-non-cloud.md": {
+    "page": "attributes-dynamic-groups.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#attributes-dynamic-groups.html",
+    "match_score": 1.0,
+    "toc_title": "Search attributes for non-cloud-to-cloud workloads",
+    "doc_title": "Search attributes for non-cloud-to-cloud workloads"
+  },
+  "06-backup-and-recovery/34-protecting-mobile-devices.md": {
+    "page": "protecting-mobile-devices.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mobile-devices.html",
+    "match_score": 1.0,
+    "toc_title": "Protecting mobile devices",
+    "doc_title": "Protecting Mobile Devices"
+  },
+  "02-installing-deploying-agents/21-deploying-vmware-va.md": {
+    "page": "deploying-agent-for-vmware-virtual-appliance-from-ovf-template.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-for-vmware-virtual-appliance-from-ovf-template.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying Agent for VMware (Virtual Appliance)",
+    "doc_title": "Deploying Agent for VMware (Virtual Appliance)"
+  },
+  "06-backup-and-recovery/30-backup-storage-operations.md": {
+    "page": "backup-storage-tab.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-storage-tab.html",
+    "match_score": 0.7442,
+    "toc_title": "Backup storage",
+    "doc_title": "Backup Storage, Mounting Volumes, Validating, Exporting, and Deleting Backups"
+  },
+  "06-backup-and-recovery/06-backup-overview-and-cheat-sheet.md": {
+    "page": "backup-cheat-sheet.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-cheat-sheet.html",
+    "match_score": 0.7347,
+    "toc_title": "Backup cheat sheet",
+    "doc_title": "Backup overview and cheat sheet"
+  },
+  "06-backup-and-recovery/13-backup-options-overview.md": {
+    "page": "backup-options-alerts.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-options-alerts.html",
+    "match_score": 0.7727,
+    "toc_title": "Alerts",
+    "doc_title": "Default backup options and backup options overview"
+  },
+  "03-working-with-plans/12-backup-scanning-and-cloud-apps.md": {
+    "page": "backup-scanning-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-scanning-plans.html",
+    "match_score": 0.7451,
+    "toc_title": "Backup scanning plans",
+    "doc_title": "Backup scanning plans and cloud application backups"
+  },
+  "06-backup-and-recovery/10-backup-schedule-schemes-types.md": {
+    "page": "schedule.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#schedule.html",
+    "match_score": 0.6818,
+    "toc_title": "Backup schedule",
+    "doc_title": "Backup schedule, schemes, and types"
+  },
+  "03-working-with-plans/09-validation.md": {
+    "page": "validation.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#validation.html",
+    "match_score": 1.0,
+    "toc_title": "Validation",
+    "doc_title": "Validation"
+  },
+  "02-installing-deploying-agents/01-preparation.md": {
+    "page": "preparation.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#preparation.html",
+    "match_score": 1.0,
+    "toc_title": "Preparation",
+    "doc_title": "Preparation - Before you start"
+  },
+  "06-backup-and-recovery/40-bootable-media.md": {
+    "page": "bootable-media-bm.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#bootable-media-bm.html",
+    "match_score": 1.0,
+    "toc_title": "Creating bootable media to recover operating systems",
+    "doc_title": "Creating Bootable Media to Recover Operating Systems"
+  },
+  "04-monitoring-dashboards/15-cyber-protect-monitor.md": {
+    "page": "monitor.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitor.html",
+    "match_score": 1.0,
+    "toc_title": "Cyber Protect Monitor",
+    "doc_title": "Cyber Protect Monitor"
+  },
+  "12-rmm/04-hardware-inventory.md": {
+    "page": "monitoring-hardware-inventory.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-hardware-inventory.html",
+    "match_score": 0.8182,
+    "toc_title": "Hardware inventory widgets",
+    "doc_title": "Hardware Inventory"
+  },
+  "03-working-with-plans/02-built-in-plans.md": {
+    "page": "built-in-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#built-in-plans.html",
+    "match_score": 1.0,
+    "toc_title": "Built-in plans",
+    "doc_title": "Built-in plans"
+  },
+  "02-installing-deploying-agents/15-registration-of-workloads.md": {
+    "page": "registration-workloads.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#registration-workloads.html",
+    "match_score": 1.0,
+    "toc_title": "Registration of workloads",
+    "doc_title": "Registration of workloads"
+  },
+  "03-working-with-plans/10-cleanup-plans.md": {
+    "page": "cleanup.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cleanup.html",
+    "match_score": 0.7,
+    "toc_title": "Cleanup",
+    "doc_title": "Cleanup plans"
+  },
+  "03-working-with-plans/07-compatibility-issues.md": {
+    "page": "compatibility-issues-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compatibility-issues-plans.html",
+    "match_score": 1.0,
+    "toc_title": "Compatibility issues with plans",
+    "doc_title": "Compatibility issues with plans"
+  },
+  "14-additional-tools/01-compliance-mode.md": {
+    "page": "compliance-mode.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compliance-mode.html",
+    "match_score": 1.0,
+    "toc_title": "Compliance mode",
+    "doc_title": "Compliance Mode"
+  },
+  "02-installing-deploying-agents/17-msi-parameters-and-components.md": {
+    "page": "components-unattended-installation-exe.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#components-unattended-installation-exe.html",
+    "match_score": 0.7677,
+    "toc_title": "Components for unattended installation (EXE)",
+    "doc_title": "MSI parameters and components for unattended installation"
+  },
+  "12-rmm/10-monitoring-plans-alerts-and-response-actions.md": {
+    "page": "monitoring-plan-actions.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-plan-actions.html",
+    "match_score": 0.6866,
+    "toc_title": "Additional actions with monitoring plans",
+    "doc_title": "Monitoring Plans, Alerts, and Response Actions"
+  },
+  "06-backup-and-recovery/32-email-archiving.md": {
+    "page": "email-archiving.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#email-archiving.html",
+    "match_score": 1.0,
+    "toc_title": "Email archiving",
+    "doc_title": "Email Archiving"
+  },
+  "02-installing-deploying-agents/23-deploying-virtuozzo-hi-va.md": {
+    "page": "deploying-agent-virtuozzo-hybrid-infrastructure-qcow2.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-virtuozzo-hybrid-infrastructure-qcow2.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying Agent for Virtuozzo Hybrid Infrastructure (Virtual Appliance)",
+    "doc_title": "Deploying Agent for Virtuozzo Hybrid Infrastructure (Virtual Appliance)"
+  },
+  "06-backup-and-recovery/11-retention-rules.md": {
+    "page": "retention-rules.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#retention-rules.html",
+    "match_score": 1.0,
+    "toc_title": "Retention rules",
+    "doc_title": "Retention rules"
+  },
+  "08-antivirus-antimalware/07-url-filtering.md": {
+    "page": "url-filtering.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#url-filtering.html",
+    "match_score": 1.0,
+    "toc_title": "URL filtering",
+    "doc_title": "URL Filtering - How It Works, Configuration, and Settings"
+  },
+  "02-installing-deploying-agents/31-remote-desktop-and-troubleshooting.md": {
+    "page": "connecting-to-discovered-devices.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#connecting-to-discovered-devices.html",
+    "match_score": 0.8039,
+    "toc_title": "Connecting to discovered devices remotely",
+    "doc_title": "Connecting to discovered devices remotely and troubleshooting"
+  },
+  "06-backup-and-recovery/09-continuous-data-protection-cdp.md": {
+    "page": "continuous-data-protection.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#continuous-data-protection.html",
+    "match_score": 1.0,
+    "toc_title": "Continuous data protection (CDP)",
+    "doc_title": "Continuous data protection (CDP)"
+  },
+  "08-antivirus-antimalware/11-corporate-whitelist.md": {
+    "page": "corporate-allowlist.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#corporate-allowlist.html",
+    "match_score": 1.0,
+    "toc_title": "Corporate whitelist",
+    "doc_title": "Corporate Whitelist"
+  },
+  "03-working-with-plans/14-siem-creating-plans.md": {
+    "page": "siem-rename.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-rename.html",
+    "match_score": 0.8852,
+    "toc_title": "Renaming a SIEM forwarding plan",
+    "doc_title": "Creating SIEM forwarding plans"
+  },
+  "06-backup-and-recovery/08-selecting-backup-destination.md": {
+    "page": "selecting-destination.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#selecting-destination.html",
+    "match_score": 0.902,
+    "toc_title": "Selecting a destination",
+    "doc_title": "Selecting a backup destination"
+  },
+  "04-monitoring-dashboards/07-cyber-protection-and-status-widgets.md": {
+    "page": "cyber-protection-getting-started.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-protection-getting-started.html",
+    "match_score": 0.7164,
+    "toc_title": "Getting started with Cyber Protection",
+    "doc_title": "Cyber Protection, Protection status, EDR, and Discovered devices widgets"
+  },
+  "05-managing-workloads/14-cyber-scripting-scripts.md": {
+    "page": "cyber-scripting-scripts.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting-scripts.html",
+    "match_score": 1.0,
+    "toc_title": "Scripts",
+    "doc_title": "Scripts and script repository"
+  },
+  "05-managing-workloads/15-cyber-scripting-plans-quickrun.md": {
+    "page": "cyber-scripting-script-quick-run.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting-script-quick-run.html",
+    "match_score": 0.8387,
+    "toc_title": "Script quick run",
+    "doc_title": "Scripting plans and script quick run"
+  },
+  "08-antivirus-antimalware/02-supported-features-per-platform.md": {
+    "page": "cyber-scripting-supported-platforms.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting-supported-platforms.html",
+    "match_score": 0.72,
+    "toc_title": "Supported platforms",
+    "doc_title": "Supported Antivirus and Antimalware Features per Platform"
+  },
+  "05-managing-workloads/12-cyberfit-score.md": {
+    "page": "cyberfit-score-for-machines.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyberfit-score-for-machines.html",
+    "match_score": 1.0,
+    "toc_title": "#CyberFit Score for machines",
+    "doc_title": "CyberFit Score for machines"
+  },
+  "03-working-with-plans/08-off-host-data-protection.md": {
+    "page": "off-host-data-processing.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#off-host-data-processing.html",
+    "match_score": 1.0,
+    "toc_title": "Off-host data protection plans",
+    "doc_title": "Off-host data protection plans"
+  },
+  "04-monitoring-dashboards/09-genai-protection-widgets.md": {
+    "page": "generative-ai-protection-widgets.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#generative-ai-protection-widgets.html",
+    "match_score": 1.0,
+    "toc_title": "GenAI protection widgets",
+    "doc_title": "GenAI protection widgets"
+  },
+  "05-managing-workloads/10-device-control-alerts.md": {
+    "page": "dc-alerts.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-alerts.html",
+    "match_score": 1.0,
+    "toc_title": "Device control alerts",
+    "doc_title": "Device control alerts and OS notifications"
+  },
+  "05-managing-workloads/09-device-control-allowlists.md": {
+    "page": "dc-exclude-device-types.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-exclude-device-types.html",
+    "match_score": 0.766,
+    "toc_title": "Device types allowlist",
+    "doc_title": "Device types allowlist and USB devices allowlist"
+  },
+  "05-managing-workloads/08-device-control-access-settings.md": {
+    "page": "dc-ht-settings.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-ht-settings.html",
+    "match_score": 0.7333,
+    "toc_title": "View or change access settings",
+    "doc_title": "Device control access settings"
+  },
+  "06-backup-and-recovery/07-selecting-data-to-back-up.md": {
+    "page": "selecting-data-to-back-up.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#selecting-data-to-back-up.html",
+    "match_score": 1.0,
+    "toc_title": "Selecting data to back up",
+    "doc_title": "Selecting data to back up"
+  },
+  "05-managing-workloads/03-device-groups.md": {
+    "page": "device-groups.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#device-groups.html",
+    "match_score": 1.0,
+    "toc_title": "Device groups",
+    "doc_title": "Device groups"
+  },
+  "06-backup-and-recovery/33-protecting-microsoft-applications.md": {
+    "page": "protecting-microsoft-applications.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-microsoft-applications.html",
+    "match_score": 1.0,
+    "toc_title": "Protecting Microsoft applications",
+    "doc_title": "Protecting Microsoft Applications"
+  },
+  "02-installing-deploying-agents/25-deploying-agent-for-azure.md": {
+    "page": "deploying-agent-azure.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-azure.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying Agent for Azure",
+    "doc_title": "Deploying Agent for Azure"
+  },
+  "02-installing-deploying-agents/22-deploying-scale-computing-va.md": {
+    "page": "deploying-agent-for-scale-computing-hc3-virtual-appliance.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-for-scale-computing-hc3-virtual-appliance.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying Agent for Scale Computing HC3 (Virtual Appliance)",
+    "doc_title": "Deploying Agent for Scale Computing HC3 (Virtual Appliance)"
+  },
+  "02-installing-deploying-agents/26-deploying-nutanix-ahv.md": {
+    "page": "deploying-agent-nutanix-ahv-virtual-appliance.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-nutanix-ahv-virtual-appliance.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying Agent for Nutanix AHV",
+    "doc_title": "Deploying Agent for Nutanix AHV"
+  },
+  "02-installing-deploying-agents/24-deploying-ovirt-va.md": {
+    "page": "deploying-agent-ovirt-virtual-appliance.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-ovirt-virtual-appliance.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying Agent for oVirt (Virtual Appliance)",
+    "doc_title": "Deploying Agent for oVirt (Virtual Appliance)"
+  },
+  "02-installing-deploying-agents/27-deploying-agent-for-synology.md": {
+    "page": "deploying-agent-synology.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-synology.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying Agent for Synology",
+    "doc_title": "Deploying Agent for Synology"
+  },
+  "02-installing-deploying-agents/20-deploying-agents-group-policy.md": {
+    "page": "deploying-agents-through-group-policy.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agents-through-group-policy.html",
+    "match_score": 1.0,
+    "toc_title": "Deploying protection agents through Group Policy",
+    "doc_title": "Deploying protection agents through Group Policy"
+  },
+  "01-getting-started/06-supported-web-browsers.md": {
+    "page": "supported-web-browsers.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-web-browsers.html",
+    "match_score": 1.0,
+    "toc_title": "Supported web browsers",
+    "doc_title": "Supported web browsers"
+  },
+  "02-installing-deploying-agents/28-device-discovery-overview.md": {
+    "page": "device-discovery.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#device-discovery.html",
+    "match_score": 0.7805,
+    "toc_title": "Device discovery",
+    "doc_title": "Device discovery overview and methods"
+  },
+  "14-additional-tools/03-geo-redundant-storage.md": {
+    "page": "geo-redundant-storage.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#geo-redundant-storage.html",
+    "match_score": 1.0,
+    "toc_title": "Geo-redundant storage",
+    "doc_title": "Geo-Redundant Storage"
+  },
+  "14-additional-tools/02-immutable-storage.md": {
+    "page": "immutable-storage.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#immutable-storage.html",
+    "match_score": 1.0,
+    "toc_title": "Immutable storage",
+    "doc_title": "Immutable Storage"
+  },
+  "04-monitoring-dashboards/08-cyberfit-score-and-disk-health.md": {
+    "page": "disk-health-monitoring.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disk-health-monitoring.html",
+    "match_score": 0.6984,
+    "toc_title": "Disk health monitoring",
+    "doc_title": "CyberFit Score and disk health monitoring"
+  },
+  "02-installing-deploying-agents/08-dynamic-installation-and-permissions.md": {
+    "page": "dynamic-installation-uninstallation-components.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dynamic-installation-uninstallation-components.html",
+    "match_score": 0.7556,
+    "toc_title": "Dynamic installation of components",
+    "doc_title": "Dynamic installation of components and macOS permissions"
+  },
+  "10-edr-xdr/09-remediating-incidents.md": {
+    "page": "edr-remediate-incidents.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-remediate-incidents.html",
+    "match_score": 1.0,
+    "toc_title": "Remediating incidents",
+    "doc_title": "Remediating Incidents"
+  },
+  "10-edr-xdr/14-xdr-graph-and-response-actions.md": {
+    "page": "xdr-apply-response-actions.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#xdr-apply-response-actions.html",
+    "match_score": 0.8214,
+    "toc_title": "Applying response actions",
+    "doc_title": "Working with the XDR Graph, Investigating Nodes, and Response Actions"
+  },
+  "10-edr-xdr/10-response-actions-workload-and-process.md": {
+    "page": "edr-define-response-actions-process.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-define-response-actions-process.html",
+    "match_score": 0.6824,
+    "toc_title": "Define response actions for a suspicious process",
+    "doc_title": "Response Actions for Workloads and Processes"
+  },
+  "10-edr-xdr/07-investigating-incidents.md": {
+    "page": "edr-investigate-incident.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-investigate-incident.html",
+    "match_score": 1.0,
+    "toc_title": "Investigating incidents",
+    "doc_title": "Investigating Incidents"
+  },
+  "10-edr-xdr/08-investigating-nodes-and-ioc.md": {
+    "page": "edr-review-attacked-nodes.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-review-attacked-nodes.html",
+    "match_score": 0.6796,
+    "toc_title": "Investigate individual nodes in the cyber kill chain",
+    "doc_title": "Investigating Individual Nodes and IoC Threat Feeds"
+  },
+  "10-edr-xdr/03-reviewing-incidents.md": {
+    "page": "edr-review-incidents.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-review-incidents.html",
+    "match_score": 1.0,
+    "toc_title": "Reviewing incidents",
+    "doc_title": "Reviewing Incidents"
+  },
+  "10-edr-xdr/05-xql-query-language-and-sample-queries.md": {
+    "page": "edr-search-query-language.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-search-query-language.html",
+    "match_score": 0.7595,
+    "toc_title": "Acronis XDR Query Language (XQL)",
+    "doc_title": "Acronis XDR Query Language (XQL) and Sample Queries"
+  },
+  "10-edr-xdr/02-edr-software-requirements-and-enabling.md": {
+    "page": "edr-software-requirements.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-software-requirements.html",
+    "match_score": 0.7937,
+    "toc_title": "Software requirements for Endpoint Detection and Response",
+    "doc_title": "EDR Software Requirements and Enabling"
+  },
+  "10-edr-xdr/13-xdr-overview-and-enabling.md": {
+    "page": "xdr-extended-detection-response.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#xdr-extended-detection-response.html",
+    "match_score": 0.7609,
+    "toc_title": "Extended Detection and Response (XDR)",
+    "doc_title": "Extended Detection and Response (XDR) Overview and Enabling"
+  },
+  "06-backup-and-recovery/29-recovery-options.md": {
+    "page": "recovery-options.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-options.html",
+    "match_score": 1.0,
+    "toc_title": "Recovery options",
+    "doc_title": "Recovery Options"
+  },
+  "03-working-with-plans/03-default-and-favorite-plans.md": {
+    "page": "setting-favorite-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#setting-favorite-plans.html",
+    "match_score": 0.75,
+    "toc_title": "Setting plans as favorite",
+    "doc_title": "Default plans, Favorite plans, and Preselected plans"
+  },
+  "02-installing-deploying-agents/09-fips-compliant-mode.md": {
+    "page": "fips-compliant-mode.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#fips-compliant-mode.html",
+    "match_score": 1.0,
+    "toc_title": "FIPS-compliant mode",
+    "doc_title": "FIPS-compliant mode"
+  },
+  "02-installing-deploying-agents/13-installing-agents-linux-cli.md": {
+    "page": "unattended-installation-or-uninstallation-in-linux.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-or-uninstallation-in-linux.html",
+    "match_score": 0.931,
+    "toc_title": "Installing and uninstalling protection agents in Linux",
+    "doc_title": "Installing and uninstalling protection agents in Linux via CLI"
+  },
+  "02-installing-deploying-agents/10-installing-agents-gui.md": {
+    "page": "installing-agents-gui.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#installing-agents-gui.html",
+    "match_score": 1.0,
+    "toc_title": "Installing protection agents by using the graphical user interface",
+    "doc_title": "Installing protection agents by using the graphical user interface"
+  },
+  "02-installing-deploying-agents/12-installing-agents-windows-cli.md": {
+    "page": "unattended-installation-or-uninstallation-in-windows.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-or-uninstallation-in-windows.html",
+    "match_score": 0.9333,
+    "toc_title": "Installing and uninstalling protection agents in Windows",
+    "doc_title": "Installing and uninstalling protection agents in Windows via CLI"
+  },
+  "02-installing-deploying-agents/14-installing-agents-macos-cli.md": {
+    "page": "unattended-installation-and-uninstallation-in-macos.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-and-uninstallation-in-macos.html",
+    "match_score": 0.931,
+    "toc_title": "Installing and uninstalling protection agents in macOS",
+    "doc_title": "Installing and uninstalling protection agents in macOS via CLI"
+  },
+  "02-installing-deploying-agents/06-linux-packages-required.md": {
+    "page": "linux-packages.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#linux-packages.html",
+    "match_score": 1.0,
+    "toc_title": "Linux packages required for installation of agents in Linux",
+    "doc_title": "Linux packages required for installation of agents in Linux"
+  },
+  "12-rmm/03-m365-baselines-and-remediation.md": {
+    "page": "m365-baseline-remediation.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-baseline-remediation.html",
+    "match_score": 0.9091,
+    "toc_title": "Remediating tenant baselines manually",
+    "doc_title": "Microsoft 365 Baselines, Templates, and Remediation"
+  },
+  "12-rmm/02-m365-environment-management.md": {
+    "page": "m365-overview.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-overview.html",
+    "match_score": 1.0,
+    "toc_title": "Managing and monitoring the Microsoft 365 environment",
+    "doc_title": "Managing and Monitoring the Microsoft 365 Environment"
+  },
+  "06-backup-and-recovery/35-microsoft-365-protection.md": {
+    "page": "protecting-microsoft-365-data.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-microsoft-365-data.html",
+    "match_score": 1.0,
+    "toc_title": "Protecting Microsoft 365 data",
+    "doc_title": "Protecting Microsoft 365 Data"
+  },
+  "06-backup-and-recovery/24-cross-platform-recovery.md": {
+    "page": "machine-migration.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#machine-migration.html",
+    "match_score": 1.0,
+    "toc_title": "Cross-platform recovery",
+    "doc_title": "Cross-Platform Recovery"
+  },
+  "02-installing-deploying-agents/18-updating-agents-manually.md": {
+    "page": "updating-agents-manually.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#updating-agents-manually.html",
+    "match_score": 1.0,
+    "toc_title": "Updating protection agents manually",
+    "doc_title": "Updating protection agents manually"
+  },
+  "04-monitoring-dashboards/12-software-and-hardware-widgets.md": {
+    "page": "monitoring-software-inventory.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-software-inventory.html",
+    "match_score": 0.8,
+    "toc_title": "Software inventory widgets",
+    "doc_title": "Software and hardware inventory widgets"
+  },
+  "06-backup-and-recovery/36-microsoft-365-teams-direct-backup-agent.md": {
+    "page": "microsoft-365-business-backup.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#microsoft-365-business-backup.html",
+    "match_score": 0.7059,
+    "toc_title": "Microsoft 365 Business – Backup",
+    "doc_title": "Microsoft 365 Teams Protection, Direct Backup, and Local Agent"
+  },
+  "08-antivirus-antimalware/08-microsoft-defender-security-essentials.md": {
+    "page": "microsoft-defender-antivirus.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#microsoft-defender-antivirus.html",
+    "match_score": 0.9185,
+    "toc_title": "Microsoft Defender Antivirus and Microsoft Security Essentials",
+    "doc_title": "Microsoft Defender Antivirus and Microsoft Security Essentials Management"
+  },
+  "04-monitoring-dashboards/01-monitoring-overview.md": {
+    "page": "monitoring-alerts.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-alerts.html",
+    "match_score": 0.7222,
+    "toc_title": "Monitoring alerts",
+    "doc_title": "Monitoring - Overview and Activities dashboards"
+  },
+  "12-rmm/09-monitoring-health-and-performance.md": {
+    "page": "monitoring-workloads.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-workloads.html",
+    "match_score": 0.9583,
+    "toc_title": "Monitoring the health and performance of workloads",
+    "doc_title": "Monitoring Health and Performance of Workloads"
+  },
+  "02-installing-deploying-agents/30-remote-agent-installation.md": {
+    "page": "remote-installation-of-agents.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#remote-installation-of-agents.html",
+    "match_score": 0.7342,
+    "toc_title": "Remote installation of agents",
+    "doc_title": "Remote installation of agents and UAC requirements"
+  },
+  "03-working-with-plans/04-plans-at-different-admin-levels.md": {
+    "page": "plans-different-administration-levels.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#plans-different-administration-levels.html",
+    "match_score": 1.0,
+    "toc_title": "Plans at different administration levels",
+    "doc_title": "Plans at different administration levels"
+  },
+  "06-backup-and-recovery/03-supported-agents-and-applications.md": {
+    "page": "supported-locations-replication.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-locations-replication.html",
+    "match_score": 0.7188,
+    "toc_title": "Supported locations for off-host data processing",
+    "doc_title": "Supported agents and application versions"
+  },
+  "02-installing-deploying-agents/32-preventing-unauthorized-uninstallation.md": {
+    "page": "preventing-unauthorized-uninstallation-agents.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#preventing-unauthorized-uninstallation-agents.html",
+    "match_score": 1.0,
+    "toc_title": "Preventing unauthorized uninstallation or modification of agents",
+    "doc_title": "Preventing unauthorized uninstallation or modification of agents"
+  },
+  "06-backup-and-recovery/20-recovery-virtual-machines-containers.md": {
+    "page": "protecting-proxmox-virtual-machines-containers.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-proxmox-virtual-machines-containers.html",
+    "match_score": 0.8261,
+    "toc_title": "Protecting Proxmox virtual machines and containers",
+    "doc_title": "Recovering virtual machines and containers"
+  },
+  "06-backup-and-recovery/31-bottleneck-detection-public-cloud-backups.md": {
+    "page": "protecting-workloads-public-clouds.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-workloads-public-clouds.html",
+    "match_score": 0.7475,
+    "toc_title": "Backing up workloads to public clouds",
+    "doc_title": "Bottleneck Detection and Backing Up Workloads to Public Clouds"
+  },
+  "03-working-with-plans/05-protection-plans-and-modules.md": {
+    "page": "protection-plans-and-modules.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protection-plans-and-modules.html",
+    "match_score": 1.0,
+    "toc_title": "Protection plans and modules",
+    "doc_title": "Protection plans and modules"
+  },
+  "06-backup-and-recovery/19-recovery-physical-and-virtual-machines.md": {
+    "page": "recovering-physical-machine-as-virtual-machine.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-physical-machine-as-virtual-machine.html",
+    "match_score": 0.9293,
+    "toc_title": "Recovering a physical machine as a virtual machine",
+    "doc_title": "Recovering physical machines and virtual machines"
+  },
+  "06-backup-and-recovery/25-recovery-physical-machines.md": {
+    "page": "recovery-physical-machines.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-physical-machines.html",
+    "match_score": 1.0,
+    "toc_title": "Recovery of physical machines",
+    "doc_title": "Recovery of Physical Machines"
+  },
+  "06-backup-and-recovery/26-recovery-virtual-machines.md": {
+    "page": "recovery-virtual-machines.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-virtual-machines.html",
+    "match_score": 1.0,
+    "toc_title": "Recovery of virtual machines",
+    "doc_title": "Recovery of Virtual Machines"
+  },
+  "12-rmm/08-remote-desktop-and-assistance.md": {
+    "page": "supported-remote-desktop-and-assistance-features.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-remote-desktop-and-assistance-features.html",
+    "match_score": 0.7532,
+    "toc_title": "Supported remote desktop and assistance features",
+    "doc_title": "Remote Desktop and Remote Assistance"
+  },
+  "04-monitoring-dashboards/13-remote-sessions-and-threat-feed.md": {
+    "page": "remote-sessions.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#remote-sessions.html",
+    "match_score": 0.717,
+    "toc_title": "Remote sessions widget",
+    "doc_title": "Remote sessions widget, smart protection, and threat feed"
+  },
+  "04-monitoring-dashboards/16-reports.md": {
+    "page": "reports.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#reports.html",
+    "match_score": 1.0,
+    "toc_title": "Reports",
+    "doc_title": "Reports"
+  },
+  "14-additional-tools/05-awareness-dashboard-vpn.md": {
+    "page": "security-awareness-training-dashboard.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#security-awareness-training-dashboard.html",
+    "match_score": 0.9048,
+    "toc_title": "Awareness Dashboard",
+    "doc_title": "Awareness Dashboard and Site-to-Site Open VPN"
+  },
+  "03-working-with-plans/16-siem-data-format-cef-examples.md": {
+    "page": "siem-formats.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-formats.html",
+    "match_score": 0.9355,
+    "toc_title": "SIEM data format and examples",
+    "doc_title": "SIEM data format and CEF examples"
+  },
+  "03-working-with-plans/13-siem-forwarding-overview.md": {
+    "page": "siem-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-plans.html",
+    "match_score": 0.8235,
+    "toc_title": "SIEM forwarding plans",
+    "doc_title": "SIEM forwarding plans overview"
+  },
+  "03-working-with-plans/15-siem-forwarding-methods.md": {
+    "page": "siem-methods.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-methods.html",
+    "match_score": 1.0,
+    "toc_title": "SIEM forwarding methods",
+    "doc_title": "SIEM forwarding methods"
+  },
+  "01-getting-started/10b-supported-features-active-protection.md": {
+    "page": "supported-cyber-protect-features-by-operating-system.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html",
+    "match_score": 0.7767,
+    "toc_title": "Supported protection features by operating system",
+    "doc_title": "Supported protection features by OS - Active Protection"
+  },
+  "06-backup-and-recovery/02-supported-os-linux-macos.md": {
+    "page": "supported-linux-products.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-linux-products.html",
+    "match_score": 0.75,
+    "toc_title": "Supported Linux products for vulnerability assessment",
+    "doc_title": "Supported operating systems - Linux and macOS"
+  },
+  "01-getting-started/11-supported-operating-systems-and-versions.md": {
+    "page": "supported-operating-systems-and-environments.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-operating-systems-and-environments.html",
+    "match_score": 0.881,
+    "toc_title": "Supported operating systems and environments for backup and recovery",
+    "doc_title": "Supported operating systems and versions"
+  },
+  "06-backup-and-recovery/04-supported-virtualization-platforms.md": {
+    "page": "supported-virtualization-platforms.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-virtualization-platforms.html",
+    "match_score": 1.0,
+    "toc_title": "Supported virtualization platforms",
+    "doc_title": "Supported virtualization platforms"
+  },
+  "01-getting-started/03-two-factor-authentication.md": {
+    "page": "two-factor-authentication.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#two-factor-authentication.html",
+    "match_score": 1.0,
+    "toc_title": "Two-factor authentication",
+    "doc_title": "Two-factor authentication"
+  },
+  "02-installing-deploying-agents/16-windows-cli-msi-installation.md": {
+    "page": "unattended-installation-uninstallation-msi-file.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-uninstallation-msi-file.html",
+    "match_score": 0.7629,
+    "toc_title": "Unattended installation and uninstallation with an MSI file",
+    "doc_title": "Unattended installation with MSI files"
+  },
+  "03-working-with-plans/01-understanding-plans.md": {
+    "page": "understanding-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#understanding-plans.html",
+    "match_score": 1.0,
+    "toc_title": "Understanding plans",
+    "doc_title": "Understanding plans"
+  },
+  "02-installing-deploying-agents/11-uninstalling-agents.md": {
+    "page": "uninstalling-agents.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#uninstalling-agents.html",
+    "match_score": 1.0,
+    "toc_title": "Uninstalling agents",
+    "doc_title": "Uninstalling agents"
+  },
+  "06-backup-and-recovery/22-universal-restore-recovery-options.md": {
+    "page": "universal-restore-in-windows.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#universal-restore-in-windows.html",
+    "match_score": 0.6774,
+    "toc_title": "Universal Restore in Windows",
+    "doc_title": "Recovery with restart, Universal Restore, and recovery options"
+  },
+  "02-installing-deploying-agents/19-updating-agents-automatically.md": {
+    "page": "updating-agents-automatically.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#updating-agents-automatically.html",
+    "match_score": 1.0,
+    "toc_title": "Updating protection agents automatically",
+    "doc_title": "Updating protection agents automatically"
+  },
+  "12-rmm/06-vulnerability-assessment-and-patching.md": {
+    "page": "va-and-pm-at-partner-level.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#va-and-pm-at-partner-level.html",
+    "match_score": 0.8411,
+    "toc_title": "Vulnerability assessment and patch management at partner level",
+    "doc_title": "Vulnerability Assessment and Patch Management"
+  },
+  "02-installing-deploying-agents/03-which-agent-do-i-need.md": {
+    "page": "which-agent-do-i-need.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#which-agent-do-i-need.html",
+    "match_score": 1.0,
+    "toc_title": "Which agent do I need?",
+    "doc_title": "Which agent do I need?"
+  },
+  "09-genai-workflows/05-workflow-versions.md": {
+    "page": "workflows-version-history.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workflows-version-history.html",
+    "match_score": 1.0,
+    "toc_title": "Workflow versions",
+    "doc_title": "Workflow Versions - Creating, Viewing, Setting Default, Cloning, and Deleting"
+  },
+  "09-genai-workflows/03-workflow-components-templates.md": {
+    "page": "workflows-components.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workflows-components.html",
+    "match_score": 1.0,
+    "toc_title": "Workflow components and templates",
+    "doc_title": "Workflow Components and Templates"
+  },
+  "09-genai-workflows/02-automation-workflows-overview.md": {
+    "page": "workflows.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workflows.html",
+    "match_score": 0.8958,
+    "toc_title": "Managing and assigning automation workflows",
+    "doc_title": "Managing and Assigning Automation Workflows - Overview"
+  },
+  "05-managing-workloads/02-workloads-overview.md": {
+    "page": "workloads.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workloads.html",
+    "match_score": 0.6667,
+    "toc_title": "Workloads",
+    "doc_title": "Workloads - Types, adding, and removing"
+  },
+  "06-backup-and-recovery/28-recovery-with-restart-universal-restore.md": {
+    "page": "recovery-with-restart.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-with-restart.html",
+    "match_score": 0.7,
+    "toc_title": "Recovery with restart",
+    "doc_title": "Recovery with Restart and Universal Restore"
+  }
+}

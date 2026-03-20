@@ -5,6 +5,7 @@ subsection: "Supported operating systems and environments for backup and recover
 page_range: "487-495"
 tags: ["agents", "VMware", "Hyper-V", "Virtuozzo", "Scale-Computing", "oVirt", "Synology", "Azure", "Nutanix", "SQL-Server", "Exchange", "Oracle", "MySQL", "MariaDB", "SAP-HANA", "SharePoint"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-locations-replication.html"
 ---
 
 # Supported agents and application versions

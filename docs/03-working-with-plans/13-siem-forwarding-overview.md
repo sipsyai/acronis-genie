@@ -5,6 +5,7 @@ subsection: "SIEM forwarding plans"
 page_range: "262-266"
 tags: [SIEM, security, log forwarding, compliance, SOC, installation]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-plans.html"
 ---
 
 # SIEM forwarding plans

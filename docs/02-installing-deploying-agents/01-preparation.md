@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "36-38"
 tags: ["installation", "preparation", "ports", "firewall", "network", "requirements", "prerequisites"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#preparation.html"
 ---
 
 # Before you start - Preparation

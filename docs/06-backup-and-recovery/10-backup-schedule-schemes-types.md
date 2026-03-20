@@ -5,6 +5,7 @@ subsection: "Backup"
 page_range: "535-550"
 tags: ["backup-schedule", "backup-scheme", "incremental", "differential", "full-backup", "always-incremental", "GFS", "custom-scheme", "schedule-by-time", "schedule-by-event", "start-conditions", "single-file", "tibx"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#schedule.html"
 ---
 
 # Backup schedule, schemes, and types

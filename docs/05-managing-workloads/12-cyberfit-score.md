@@ -5,6 +5,7 @@ subsection: "CyberFit Score for machines"
 page_range: "456-462"
 tags: [CyberFit Score, security assessment, scoring, antimalware, backup, firewall, VPN, encryption, NTLM]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyberfit-score-for-machines.html"
 ---
 
 # CyberFit Score for machines

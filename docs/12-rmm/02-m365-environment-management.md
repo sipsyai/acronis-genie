@@ -5,6 +5,7 @@ subsection: "Microsoft 365 Management"
 page_range: "1237-1242"
 tags: [rmm, microsoft-365, m365, security-posture, connections, customer-mapping, risk-dashboard, baselines]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-overview.html"
 ---
 
 # Managing and Monitoring the Microsoft 365 Environment

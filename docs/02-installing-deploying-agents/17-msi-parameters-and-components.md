@@ -5,6 +5,7 @@ subsection: "Parameters and components for MSI unattended installation"
 page_range: "83-87"
 tags: ["MSI", "parameters", "components", "msiexec", "ADDLOCAL", "registration", "proxy", "uninstallation", "Windows"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#components-unattended-installation-exe.html"
 ---
 
 # MSI parameters and components for unattended installation

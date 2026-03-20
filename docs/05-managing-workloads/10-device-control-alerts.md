@@ -5,6 +5,7 @@ subsection: "Working with the Device control module"
 page_range: "440-451"
 tags: [device control, alerts, notifications, action field, event log, USB]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-alerts.html"
 ---
 
 # OS notification and service alerts

@@ -5,6 +5,7 @@ subsection: "Policy Rules Management"
 page_range: "1457-1459"
 tags: [dlp, data-flow-policy, permissions, combining-rules, policy-review, policy-management, enforcement]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-permissions.html"
 ---
 
 # Adjusting Permissions, Combining Rules, and Policy Review

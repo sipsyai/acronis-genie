@@ -5,6 +5,7 @@ subsection: "Backup"
 page_range: "514-518"
 tags: ["backup", "protection-plan", "cheat-sheet", "backup-schemes", "retention", "schedule", "cloud-storage", "local-folder", "network-folder"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-cheat-sheet.html"
 ---
 
 # Backup overview and cheat sheet

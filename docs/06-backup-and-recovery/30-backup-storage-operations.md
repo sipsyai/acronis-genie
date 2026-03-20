@@ -5,6 +5,7 @@ subsection: "Operations with backups"
 page_range: "677-684"
 tags: [backup-storage, mounting-volumes, validating-backups, exporting-backups, deleting-backups, backup-archives, web-restore]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-storage-tab.html"
 ---
 
 # Operations with Backups

@@ -5,6 +5,7 @@ subsection: null
 page_range: "241-244"
 tags: ["off-host", "replication", "backup-replication", "offload", "data-processing"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#off-host-data-processing.html"
 ---
 
 # Off-host data protection plans

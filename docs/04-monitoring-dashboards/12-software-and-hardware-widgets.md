@@ -5,6 +5,7 @@ subsection: "Software and hardware inventory widgets"
 page_range: "344-347"
 tags: [software inventory, hardware inventory, software overview, installation, uninstallation, widgets]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-software-inventory.html"
 ---
 
 # Software widgets

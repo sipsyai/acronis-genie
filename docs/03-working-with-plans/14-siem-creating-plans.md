@@ -5,6 +5,7 @@ subsection: "SIEM forwarding plans"
 page_range: "267-271"
 tags: [SIEM, forwarding plan, multiple customers, individual customer, create, rename, edit, delete]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-rename.html"
 ---
 
 # Creating a SIEM forwarding plan for multiple customers

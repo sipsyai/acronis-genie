@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "43-46"
 tags: ["system-requirements", "disk-space", "RAM", "MTU", "CET", "DLP", "device-control"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#system-requirements-agents.html"
 ---
 
 # System requirements for agents

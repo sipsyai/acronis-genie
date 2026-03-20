@@ -5,6 +5,7 @@ subsection: "Disaster Recovery to Microsoft Azure"
 page_range: "1016-1021"
 tags: [Microsoft Azure, DR to Azure, software requirements, supported OS, virtualization platforms, limitations, licensing, Cold DR, Warm DR, Azure subscription]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-software-requirements.html"
 ---
 
 # Disaster Recovery to Microsoft Azure

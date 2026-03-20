@@ -5,6 +5,7 @@ subsection: "Backup scanning and cloud applications"
 page_range: "260-261"
 tags: [backup scanning, malware, ransomware, cloud applications, Microsoft 365, Google Workspace, collaboration apps]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-scanning-plans.html"
 ---
 
 # Backup scanning plans

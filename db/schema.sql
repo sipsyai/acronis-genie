@@ -12,6 +12,7 @@ CREATE TABLE chunks (
     source_file TEXT,
     word_count INTEGER,
     embedding vector(2560),
+    doc_url TEXT,
     created_at TIMESTAMP DEFAULT NOW()
 );
 CREATE INDEX ON chunks USING hnsw (embedding vector_cosine_ops);
@@ -52,6 +53,7 @@ CREATE TABLE IF NOT EXISTS qa_pairs (
     correct_source_in_top3 BOOLEAN,
     verified BOOLEAN DEFAULT FALSE,
     embedding vector(2560),
+    doc_url TEXT,
     created_at TIMESTAMP DEFAULT NOW()
 );
 CREATE INDEX IF NOT EXISTS idx_qa_pairs_embedding ON qa_pairs USING ivfflat (embedding vector_cosine_ops) WITH (lists = 20);

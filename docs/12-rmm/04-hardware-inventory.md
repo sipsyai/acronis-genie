@@ -5,6 +5,7 @@ subsection: "Hardware Inventory"
 page_range: "1267-1272"
 tags: [rmm, hardware-inventory, scanning, devices, processors, memory, storage, motherboard, network]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-hardware-inventory.html"
 ---
 
 # Managing Your Hardware Inventory

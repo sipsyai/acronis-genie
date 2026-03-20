@@ -5,6 +5,7 @@ subsection: "Activating the account"
 page_range: "21-23"
 tags: ["authentication", "2FA", "security", "login", "TOTP"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#two-factor-authentication.html"
 ---
 
 # Two-factor authentication

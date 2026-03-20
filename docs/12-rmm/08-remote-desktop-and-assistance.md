@@ -5,6 +5,7 @@ subsection: "Remote Desktop and Assistance"
 page_range: "1340-1359"
 tags: [rmm, remote-desktop, remote-assistance, near, rdp, apple-screen-sharing, connect-client, connect-agent, quick-assist, protocols, management-plans]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-remote-desktop-and-assistance-features.html"
 ---
 
 # Connecting to Workloads for Remote Desktop or Remote Assistance

@@ -5,6 +5,7 @@ subsection: "Deploying virtual appliances"
 page_range: "151-157"
 tags: ["oVirt", "Red Hat Virtualization", "virtual appliance", "OVA", "deployment", "required roles", "required ports"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-ovirt-virtual-appliance.html"
 ---
 
 # Deploying Agent for oVirt (Virtual Appliance)

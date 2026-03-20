@@ -5,6 +5,7 @@ subsection: "Recovery"
 page_range: "640-652"
 tags: ["VM-recovery", "V2V", "V2P", "VMware", "Hyper-V", "Azure", "Virtuozzo", "Scale-Computing", "oVirt", "Nutanix", "Proxmox", "container-recovery", "agentless-recovery"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-proxmox-virtual-machines-containers.html"
 ---
 
 # Recovery of virtual machines

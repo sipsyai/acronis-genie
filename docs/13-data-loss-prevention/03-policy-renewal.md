@@ -5,6 +5,7 @@ subsection: "Policy Renewal"
 page_range: "1459-1461"
 tags: [dlp, data-flow-policy, policy-renewal, observation-mode, adaptive-enforcement, company-policy, user-policy]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-policy-renewal.html"
 ---
 
 # Data Flow Policy Renewal

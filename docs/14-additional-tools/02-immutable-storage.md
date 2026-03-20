@@ -5,6 +5,7 @@ subsection: "Immutable Storage"
 page_range: "1483-1487"
 tags: [immutable-storage, governance-mode, compliance-mode, backup-protection, ransomware, data-integrity, retention, cloud-storage]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#immutable-storage.html"
 ---
 
 # Immutable Storage

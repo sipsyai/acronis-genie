@@ -5,6 +5,7 @@ subsection: "Working with the Device control module"
 page_range: "432-440"
 tags: [device control, access settings, device types, notifications, alerts, peripheral devices]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-ht-settings.html"
 ---
 
 # Access settings

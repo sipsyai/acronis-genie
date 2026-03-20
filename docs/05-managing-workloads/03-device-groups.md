@@ -5,6 +5,7 @@ subsection: "Device groups"
 page_range: "401-407"
 tags: ["device-groups", "static-groups", "dynamic-groups", "cloud-to-cloud", "search-operators", "Azure-AD"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#device-groups.html"
 ---
 
 # Device groups

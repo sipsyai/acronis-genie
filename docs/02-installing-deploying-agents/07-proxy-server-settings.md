@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "50-53"
 tags: ["proxy", "network", "configuration", "Windows", "macOS", "Linux", "registry", "aakore"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#proxy-server-settings.html"
 ---
 
 # Configuring proxy server settings

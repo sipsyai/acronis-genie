@@ -5,6 +5,7 @@ subsection: "Protecting Microsoft applications"
 page_range: "746-776"
 tags: [Microsoft-SQL, Microsoft-Exchange, SharePoint, Active-Directory, domain-controller, application-aware-backup, database-backup, mailbox-backup, AAG, DAG, granular-recovery]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-microsoft-applications.html"
 ---
 
 # Protecting Microsoft Applications

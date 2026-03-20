@@ -5,6 +5,7 @@ subsection: "Conversion to virtual machine"
 page_range: "252-259"
 tags: [conversion, virtual machine, VMware, Hyper-V, Proxmox, Scale Computing, Virtuozzo, off-host data processing]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#conversion-to-virtual-machine.html"
 ---
 
 # Conversion to a virtual machine

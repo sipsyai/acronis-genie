@@ -5,6 +5,7 @@ subsection: "Email archiving"
 page_range: "719-745"
 tags: [email-archiving, Microsoft-365, archiving-plan, retention-rules, legal-hold, search-queries, PST-import, compliance, eDiscovery, immutable-storage]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#email-archiving.html"
 ---
 
 # Email Archiving

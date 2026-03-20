@@ -5,6 +5,7 @@ subsection: "Remediating Incidents"
 page_range: "1180-1191"
 tags: [edr, remediation, response-actions, network-isolation, patch, kill-chain, allowlist, blocklist, rollback, quarantine]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-remediate-incidents.html"
 ---
 
 # Remediating Incidents

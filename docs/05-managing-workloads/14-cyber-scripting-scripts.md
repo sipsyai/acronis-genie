@@ -5,6 +5,7 @@ subsection: "Cyber Scripting"
 page_range: "466-475"
 tags: [scripts, script repository, creating scripts, AI scripts, cloning, editing, versioning, script status]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting-scripts.html"
 ---
 
 # Scripts

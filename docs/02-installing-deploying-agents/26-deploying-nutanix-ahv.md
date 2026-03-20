@@ -5,6 +5,7 @@ subsection: "Deploying Agent for Nutanix AHV"
 page_range: "162-167"
 tags: ["Nutanix", "AHV", "virtual appliance", "QCOW2", "Prism Element", "deployment", "backup"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-nutanix-ahv-virtual-appliance.html"
 ---
 
 # Deploying Agent for Nutanix AHV

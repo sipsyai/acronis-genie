@@ -5,6 +5,7 @@ subsection: "Activities tab"
 page_range: "355-356"
 tags: [activities, monitoring, filtering, remote desktop, remote actions]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#activities-tab.html"
 ---
 
 # The Activities tab

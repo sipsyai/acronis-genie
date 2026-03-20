@@ -5,6 +5,7 @@ subsection: "Protection plans and modules"
 page_range: "233-238"
 tags: ["protection-plans", "apply", "edit", "export", "import", "revoke", "enable", "disable", "delete", "clone"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#actions-with-protection-plans.html"
 ---
 
 # Actions with protection plans

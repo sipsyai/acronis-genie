@@ -5,6 +5,7 @@ subsection: "Before you start"
 page_range: "47-50"
 tags: ["linux", "packages", "kernel", "gcc", "installation", "prerequisites", "RHEL", "CentOS", "Ubuntu", "Debian", "SUSE"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#linux-packages.html"
 ---
 
 # Linux packages required for installation of agents in Linux

@@ -5,6 +5,7 @@ subsection: "Monitoring Plans and Alerts"
 page_range: "1433-1452"
 tags: [rmm, monitoring-plans, alerts, response-actions, automatic-response, manual-response, email-notifications, alert-variables, machine-learning, viewing-data]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-plan-actions.html"
 ---
 
 # Monitoring Plans

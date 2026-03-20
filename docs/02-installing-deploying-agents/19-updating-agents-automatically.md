@@ -5,6 +5,7 @@ subsection: "Updating protection agents automatically"
 page_range: "125-129"
 tags: ["update", "automatic", "agents", "maintenance window", "update channel", "BitLocker", "auto-update"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#updating-agents-automatically.html"
 ---
 
 # Updating protection agents automatically

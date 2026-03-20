@@ -36,6 +36,7 @@ def parse_chunk(path: Path, chapter_dir_name: str) -> dict:
         "source_file": source_file,
         "content": content,
         "word_count": len(content.split()),
+        "doc_url": meta.get("doc_url"),
     }
 
 
@@ -126,8 +127,8 @@ async def main():
                 emb_str = "[" + ",".join(str(float(x)) for x in emb) + "]"
                 await conn.execute(
                     """
-                    INSERT INTO chunks (title, section, subsection, content, page_range, tags, source_file, word_count, embedding)
-                    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9::vector)
+                    INSERT INTO chunks (title, section, subsection, content, page_range, tags, source_file, word_count, embedding, doc_url)
+                    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9::vector, $10)
                     """,
                     chunk["title"],
                     chunk["section"],
@@ -138,6 +139,7 @@ async def main():
                     chunk["source_file"],
                     chunk["word_count"],
                     emb_str,
+                    chunk["doc_url"],
                 )
                 print(f"  Loaded: {chunk['source_file']} ({chunk['word_count']} words)")
 

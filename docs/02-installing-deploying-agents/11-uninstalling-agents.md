@@ -5,6 +5,7 @@ subsection: null
 page_range: "69-70"
 tags: ["uninstall", "remove", "agent", "Windows", "Linux", "macOS", "VMware"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#uninstalling-agents.html"
 ---
 
 # Uninstalling agents

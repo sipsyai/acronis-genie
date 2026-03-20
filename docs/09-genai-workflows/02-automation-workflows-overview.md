@@ -5,6 +5,7 @@ subsection: "Overview, creating, and viewing workflows"
 page_range: "1115-1121"
 tags: [automation, workflows, MSP, triggers, conditions, actions, templates, alert-management, workflow-creation]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workflows.html"
 ---
 
 # Managing and Assigning Automation Workflows

@@ -5,6 +5,7 @@ subsection: "Supported protection features by operating system"
 page_range: "28-29"
 tags: ["features", "os-support", "active-protection", "ransomware", "cryptomining", "compatibility"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html"
 ---
 
 # Active Protection - Supported features by OS

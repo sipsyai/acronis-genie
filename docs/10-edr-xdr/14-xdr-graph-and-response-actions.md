@@ -5,6 +5,7 @@ subsection: "XDR Graph"
 page_range: "1217-1223"
 tags: [xdr, graph, nodes, response-actions, integration-errors, icons, investigation, microsoft-365, fortimail, entra-id]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#xdr-apply-response-actions.html"
 ---
 
 # Working with the XDR Graph

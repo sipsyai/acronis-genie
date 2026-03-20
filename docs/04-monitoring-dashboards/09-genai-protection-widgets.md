@@ -5,6 +5,7 @@ subsection: "GenAI protection widgets"
 page_range: "335-337"
 tags: [GenAI, generative AI, DLP, data loss prevention, AI usage, widgets, sensitive data]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#generative-ai-protection-widgets.html"
 ---
 
 # GenAI protection widgets

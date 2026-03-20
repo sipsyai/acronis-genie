@@ -5,6 +5,7 @@ subsection: "Updating protection agents manually"
 page_range: "124-125"
 tags: ["update", "agents", "manual", "Cyber Protect console", "definitions", "Updater role", "cache"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#updating-agents-manually.html"
 ---
 
 # Updating protection agents manually

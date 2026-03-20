@@ -5,6 +5,7 @@ subsection: "Protecting mobile devices"
 page_range: "777-779"
 tags: [mobile-devices, iOS, Android, mobile-backup, Acronis-Cyber-Protect-app, cloud-storage]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mobile-devices.html"
 ---
 
 # Protecting Mobile Devices

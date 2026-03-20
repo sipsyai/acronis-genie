@@ -5,6 +5,7 @@ subsection: "Point-to-site VPN remote access"
 page_range: "962-970"
 tags: [point-to-site, VPN, OpenVPN, remote access, network management, public IP, test IP, IP reconfiguration, Active Directory]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-network-management.html"
 ---
 
 # Point-to-site remote VPN access

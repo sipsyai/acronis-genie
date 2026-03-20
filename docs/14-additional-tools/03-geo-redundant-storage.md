@@ -5,6 +5,7 @@ subsection: "Geo-Redundant Storage"
 page_range: "1487-1489"
 tags: [geo-redundant-storage, replication, disaster-recovery, cloud-storage, data-durability, backup-storage]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#geo-redundant-storage.html"
 ---
 
 # Geo-Redundant Storage

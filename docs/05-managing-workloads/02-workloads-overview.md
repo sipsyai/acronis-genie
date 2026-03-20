@@ -5,6 +5,7 @@ subsection: "Workloads"
 page_range: "379-388"
 tags: ["workloads", "adding", "removing", "physical-machines", "virtual-machines", "cloud-workloads", "mobile", "applications"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workloads.html"
 ---
 
 # Workloads

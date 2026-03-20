@@ -5,6 +5,7 @@ subsection: "Alerts"
 page_range: "295-298"
 tags: ["alerts", "backup", "alert-types", "troubleshooting", "CDP", "validation", "encryption"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#alert-types-categories.html"
 ---
 
 # Alert types and categories

@@ -5,6 +5,7 @@ subsection: "Deploying virtual appliances"
 page_range: "140-150"
 tags: ["Virtuozzo", "Hybrid Infrastructure", "virtual appliance", "QCOW2", "OpenStack", "deployment", "user accounts"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-virtuozzo-hybrid-infrastructure-qcow2.html"
 ---
 
 # Deploying Agent for Virtuozzo Hybrid Infrastructure (Virtual Appliance)

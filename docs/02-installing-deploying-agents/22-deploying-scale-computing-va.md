@@ -5,6 +5,7 @@ subsection: "Deploying virtual appliances"
 page_range: "135-139"
 tags: ["Scale Computing", "HC3", "virtual appliance", "QCOW2", "deployment", "HyperCore", "required roles"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-for-scale-computing-hc3-virtual-appliance.html"
 ---
 
 # Deploying Agent for Scale Computing HC3 (Virtual Appliance)

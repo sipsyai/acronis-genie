@@ -5,6 +5,7 @@ subsection: "Device discovery"
 page_range: "197-199"
 tags: ["remote desktop", "RDP", "Apple Screen Sharing", "VNC", "troubleshooting", "device discovery", "Connect Client"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#connecting-to-discovered-devices.html"
 ---
 
 # Connecting to discovered devices remotely and troubleshooting

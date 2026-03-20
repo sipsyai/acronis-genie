@@ -5,6 +5,7 @@ subsection: "Monitoring"
 page_range: "325-327"
 tags: ["widgets", "cyber-protection", "protection-status", "EDR", "discovered-devices", "incidents", "threat-status"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-protection-getting-started.html"
 ---
 
 # Cyber Protection widget

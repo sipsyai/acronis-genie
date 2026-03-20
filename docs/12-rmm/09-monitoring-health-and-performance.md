@@ -5,6 +5,7 @@ subsection: "Monitoring"
 page_range: "1397-1416"
 tags: [rmm, monitoring, anomaly-based, threshold-based, machine-learning, monitors, cpu, memory, disk, network, security, alerts, monitoring-plans]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-workloads.html"
 ---
 
 # Monitoring the Health and Performance of Workloads

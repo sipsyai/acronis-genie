@@ -5,6 +5,7 @@ subsection: "Protecting Microsoft 365 data"
 page_range: "780-842"
 tags: [Microsoft-365, Exchange-Online, OneDrive, SharePoint-Online, Teams, cloud-backup, mailbox-backup, PST-recovery, antimalware-scan, cloud-agent, backup-plan]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-microsoft-365-data.html"
 ---
 
 # Protecting Microsoft 365 Data

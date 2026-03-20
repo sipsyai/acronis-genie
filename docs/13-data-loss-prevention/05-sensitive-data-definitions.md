@@ -5,6 +5,7 @@ subsection: "Sensitive Data Definitions"
 page_range: "1465-1471"
 tags: [dlp, sensitive-data, phi, pii, pci-dss, confidential, content-detection, logical-expressions, keywords]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-sensitive-data-definitions.html"
 ---
 
 # Sensitive Data Definitions
