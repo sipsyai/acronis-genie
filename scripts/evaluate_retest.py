@@ -32,11 +32,23 @@ def claude_eval(question, ideal, rag_answer):
     return None
 
 def get_rag_answer(question):
-    try:
-        import httpx as hx
-        r = hx.post("http://localhost:8080/api/chat", json={"message": question}, timeout=120)
-        return r.json().get("answer", "")
-    except: return ""
+    import httpx as hx
+    for attempt in range(2):
+        try:
+            r = hx.post("http://localhost:8080/api/chat", json={"message": question}, timeout=120)
+            answer = r.json().get("answer", "")
+            if answer and len(answer) >= 50 and "couldn't generate" not in answer.lower():
+                return answer
+            if attempt == 0:
+                print(f"  [retry] empty/short answer (len={len(answer)}), retrying in 5s...")
+                time.sleep(5)
+        except Exception as e:
+            if attempt == 0:
+                print(f"  [retry] request failed: {e}, retrying in 5s...")
+                time.sleep(5)
+            else:
+                return ""
+    return answer if answer else ""
 
 async def main():
     qa_data = json.loads(QA_FILE.read_text())

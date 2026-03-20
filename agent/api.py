@@ -14,7 +14,7 @@ import time
 import uuid
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel
 from pathlib import Path
 from sse_starlette.sse import EventSourceResponse
@@ -478,11 +478,13 @@ If the context doesn't cover the topic, say so. Never invent information.\
 """
 
 
-def _step_event(step: str, message: str, icon: str, elapsed_ms: int, data: dict = None):
+def _step_event(step: str, message: str, icon: str, elapsed_ms: int, data: dict = None, details: dict = None):
     """Build a step SSE event dict."""
     payload = {"type": "step", "step": step, "message": message, "icon": icon, "elapsed_ms": elapsed_ms}
     if data:
         payload["data"] = data
+    if details:
+        payload["details"] = details
     return {"event": "message", "data": json.dumps(payload)}
 
 
@@ -505,7 +507,8 @@ async def chat_stream(req: ChatRequest):
             return int((time.monotonic() - t0) * 1000)
 
         # ── Step 1: Embedding ──
-        yield _step_event("embedding", "Searching knowledge base...", "search", elapsed())
+        yield _step_event("embedding", "Searching knowledge base...", "search", elapsed(),
+                          details={"query_length": len(question)})
 
         try:
             embedding = await _embed_query(question)
@@ -523,7 +526,9 @@ async def chat_stream(req: ChatRequest):
 
             if qa_row and float(qa_row["similarity"]) >= QA_MATCH_THRESHOLD:
                 sim = float(qa_row["similarity"])
-                yield _step_event("qa_match", f"Found verified answer (score: {sim:.2f})", "verified", elapsed(), {"score": sim})
+                yield _step_event("qa_match", f"Found verified answer (score: {sim:.2f})", "verified", elapsed(),
+                                  {"score": sim},
+                                  details={"candidates": 1, "top_score": round(sim, 4), "tier": "qa_match"})
 
                 src = qa_row["source_file"] or ""
                 title = _make_source_title(src)
@@ -549,7 +554,10 @@ async def chat_stream(req: ChatRequest):
             rows = await _search_chunks(conn, emb_str)
 
         candidates = [r for r in rows if float(r["similarity"]) >= COSINE_THRESHOLD]
-        yield _step_event("searching", f"Found {len(candidates)} candidate chunks", "docs", elapsed(), {"count": len(candidates)})
+        top_cosine = round(float(candidates[0]["similarity"]), 4) if candidates else 0.0
+        yield _step_event("searching", f"Found {len(candidates)} candidate chunks", "docs", elapsed(),
+                          {"count": len(candidates)},
+                          details={"candidates": len(candidates), "top_score": top_cosine, "tier": "chunk_search"})
 
         if not candidates:
             decline = "I don't have documentation about that topic. Please check the Acronis Knowledge Base at https://kb.acronis.com or contact Acronis Support."
@@ -560,7 +568,8 @@ async def chat_stream(req: ChatRequest):
             return
 
         # ── Step 4: Reranking ──
-        yield _step_event("reranking", f"Reranking {len(candidates)} results...", "filter", elapsed())
+        yield _step_event("reranking", f"Reranking {len(candidates)} results...", "filter", elapsed(),
+                          details={"reranked": len(candidates)})
 
         scored = await _rerank_candidates(question, candidates)
         top3 = [s for s in scored if s["reranker"] >= RERANKER_THRESHOLD][:3]
@@ -575,7 +584,15 @@ async def chat_stream(req: ChatRequest):
 
         # ── Step 5: Sources selected ──
         source_names = [s["source_file"].split("/")[-1] for s in top3]
-        yield _step_event("sources", f"Top {len(top3)} sources selected", "check", elapsed(), {"sources": source_names})
+        source_details = [
+            {"file": s["source_file"], "title": _make_source_title(s["source_file"]),
+             "score": round(s["cosine"], 4), "rerank_score": round(s["reranker"], 4)}
+            for s in top3
+        ]
+        top_rerank = round(top3[0]["reranker"], 4) if top3 else 0.0
+        yield _step_event("sources", f"Top {len(top3)} sources selected", "check", elapsed(),
+                          {"sources": source_names},
+                          details={"sources": source_details, "top_rerank_score": top_rerank})
 
         sources = []
         for s in top3:
@@ -584,7 +601,9 @@ async def chat_stream(req: ChatRequest):
         yield {"event": "message", "data": json.dumps({"type": "sources", "sources": sources})}
 
         # ── Step 6: Generate answer ──
-        yield _step_event("generating", "Generating answer...", "brain", elapsed())
+        context_len = sum(len(c["content"][:1000]) for c in top3)
+        yield _step_event("generating", "Generating answer...", "brain", elapsed(),
+                          details={"model": "claude-sonnet", "context_tokens": context_len})
 
         history = await db_get_history(sid)
         rag_prompt = _build_rag_prompt(question, history, top3)
@@ -660,23 +679,53 @@ async def chat(req: ChatRequest):
             mcp_servers={"acronis_kb": get_server()},
             allowed_tools=get_tool_names(),
             permission_mode="acceptEdits",
-            max_turns=5,
+            max_turns=6,
         )
 
-        parts = []
-        async with ClaudeSDKClient(options=opts) as client:
-            await client.query(prompt)
-            async for msg in client.receive_response():
-                if msg is None:
-                    continue
-                if isinstance(msg, AssistantMessage):
-                    for block in msg.content:
-                        if isinstance(block, TextBlock):
-                            parts.append(block.text)
-                elif isinstance(msg, ResultMessage):
-                    break
+        async def _sdk_generate(attempt_prompt):
+            p = []
+            try:
+                async with ClaudeSDKClient(options=opts) as client:
+                    await client.query(attempt_prompt)
+                    async for msg in client.receive_response():
+                        if msg is None:
+                            continue
+                        if isinstance(msg, AssistantMessage):
+                            for block in msg.content:
+                                if isinstance(block, TextBlock):
+                                    p.append(block.text)
+                        elif isinstance(msg, ResultMessage):
+                            break
+            except Exception as e:
+                if "Unknown message type" not in str(e):
+                    raise
+            return "\n".join(p)
 
-        answer = "\n".join(parts) if parts else "I couldn't generate a response. Please try again."
+        # Attempt 1
+        answer = ""
+        try:
+            answer = await asyncio.wait_for(_sdk_generate(prompt), timeout=60)
+        except asyncio.TimeoutError:
+            answer = ""
+        except Exception as e:
+            if "Unknown message type" not in str(e):
+                raise
+
+        # Retry once if answer is empty or too short
+        if not answer or len(answer) < 50:
+            await asyncio.sleep(3)
+            try:
+                answer = await asyncio.wait_for(_sdk_generate(prompt), timeout=60)
+            except asyncio.TimeoutError:
+                answer = ""
+            except Exception as e:
+                if "Unknown message type" not in str(e):
+                    pass
+
+        # Fallback
+        if not answer or len(answer) < 50:
+            answer = "I apologize, I couldn't generate a response. Please rephrase or try again."
+
         sources = _extract_sources(answer)
 
         # Save to DB
@@ -719,6 +768,67 @@ def _extract_sources(text: str) -> list[SourceInfo]:
                         title = src.split("/")[-1].replace(".md", "").replace("-", " ").title()
                         sources.append(SourceInfo(title=title, file=src, score=0.0))
     return sources
+
+
+# ── Document viewer endpoint ──────────────────────────────
+
+DOCS_BASE_DIR = Path(__file__).resolve().parent.parent / "docs"
+
+import functools
+
+
+@functools.lru_cache(maxsize=256)
+def _read_doc(abs_path: str) -> dict:
+    """Read and parse a markdown doc file with YAML frontmatter."""
+    p = Path(abs_path)
+    raw = p.read_text(encoding="utf-8")
+
+    title = ""
+    section = ""
+    pages = ""
+    body = raw
+
+    # Strip YAML frontmatter
+    if raw.startswith("---"):
+        parts = raw.split("---", 2)
+        if len(parts) >= 3:
+            frontmatter = parts[1]
+            body = parts[2].strip()
+            for line in frontmatter.strip().splitlines():
+                if line.startswith("title:"):
+                    title = line.split(":", 1)[1].strip().strip('"').strip("'")
+                elif line.startswith("section:"):
+                    section = line.split(":", 1)[1].strip().strip('"').strip("'")
+                elif line.startswith("page_range:"):
+                    pages = "p." + line.split(":", 1)[1].strip().strip('"').strip("'")
+
+    return {"title": title, "section": section, "pages": pages, "content": body}
+
+
+@app.get("/api/docs/{source_path:path}")
+async def get_doc(source_path: str):
+    # Path traversal protection
+    if ".." in source_path or source_path.startswith("/"):
+        return JSONResponse(status_code=400, content={"error": "Invalid path"})
+
+    file_path = DOCS_BASE_DIR / source_path
+    resolved = file_path.resolve()
+
+    # Ensure resolved path is within DOCS_BASE_DIR
+    if not str(resolved).startswith(str(DOCS_BASE_DIR.resolve())):
+        return JSONResponse(status_code=400, content={"error": "Invalid path"})
+
+    if not resolved.is_file():
+        return JSONResponse(status_code=404, content={"error": "Document not found"})
+
+    doc = _read_doc(str(resolved))
+    return {
+        "path": source_path,
+        "title": doc["title"],
+        "content": doc["content"],
+        "section": doc["section"],
+        "pages": doc["pages"],
+    }
 
 
 if __name__ == "__main__":
