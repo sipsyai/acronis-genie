@@ -32,7 +32,7 @@ from agent.server import get_server, get_tool_names
 
 DB_DSN = "postgresql://acronis:acronis@localhost:5432/acronis_agent"
 EMBED_URL = "http://192.168.1.8:8011/v1/embeddings"
-RERANK_URL = "http://192.168.1.8:8012/rerank"
+## Reranker removed — RRF fusion (dense + FTS) handles ranking
 
 SYSTEM_PROMPT = """\
 You are the Acronis Cyber Protect Cloud Assistant, a professional support agent for Acronis Cyber Protect Cloud (version 26.02).
@@ -310,14 +310,17 @@ async def list_sessions():
 
 EMBED_MODEL = "Qwen/Qwen3-Embedding-4B"
 QA_MATCH_THRESHOLD = 0.95
-COSINE_THRESHOLD = 0.40
-RERANKER_THRESHOLD = 0.20
+COSINE_THRESHOLD = 0.30    # 0.40 → 0.30: let more candidates through for reranker
+RERANKER_THRESHOLD = 0.15  # 0.20 → 0.15: include borderline chunks
+
+QUERY_INSTRUCTION = "Instruct: Given a web search query, retrieve relevant passages that answer the query about Acronis Cyber Protect Cloud\nQuery: "
 
 
 async def _direct_search(question: str) -> dict:
     """Search Q&A pairs + chunks directly. Returns {type, answer?, sources, chunks}."""
+    prefixed = QUERY_INSTRUCTION + question
     async with httpx.AsyncClient(timeout=30.0) as client:
-        resp = await client.post(EMBED_URL, json={"input": question, "model": EMBED_MODEL})
+        resp = await client.post(EMBED_URL, json={"input": prefixed, "model": EMBED_MODEL})
         resp.raise_for_status()
         embedding = resp.json()["data"][0]["embedding"]
 
@@ -343,28 +346,10 @@ async def _direct_search(question: str) -> dict:
                 "sources": [{"title": title, "file": src, "score": float(qa_row["similarity"]), "doc_url": qa_row.get("doc_url")}],
             }
 
-        # Tier 2: Chunk search (local + web merged)
-        chunk_rows = await conn.fetch(
-            """SELECT title, section, content, source_file, doc_url,
-                      'local_doc' AS source_type,
-                      1 - (embedding <=> $1::vector) AS similarity
-               FROM chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
-            emb_str,
-        )
-        web_rows = await conn.fetch(
-            """SELECT page_title AS title, section_heading AS section,
-                      content, page_slug AS source_file, page_url AS doc_url,
-                      'web_doc' AS source_type,
-                      1 - (embedding <=> $1::vector) AS similarity
-               FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
-            emb_str,
-        )
-        rows = sorted(
-            list(chunk_rows) + list(web_rows),
-            key=lambda r: float(r["similarity"]), reverse=True,
-        )[:10]
+        # Tier 2: Hybrid search (dense + FTS with RRF)
+        rows = await _search_chunks(conn, emb_str, question)
 
-    candidates = [r for r in rows if float(r["similarity"]) >= COSINE_THRESHOLD]
+    candidates = [r for r in rows if float(r.get("similarity", 0)) >= COSINE_THRESHOLD or r.get("rrf_score", 0) > 0]
     if not candidates:
         return {"type": "no_results", "sources": [], "chunks": []}
 
@@ -393,9 +378,11 @@ async def _direct_search(question: str) -> dict:
             "reranker": float(rr["score"]),
         })
     scored.sort(key=lambda x: x["reranker"], reverse=True)
-    top3 = [s for s in scored if s["reranker"] >= RERANKER_THRESHOLD][:3]
+    top3 = scored[:3]  # reranker only ranks, cosine already filtered
 
-    if not top3:
+    # Quality gate: if best reranker score is very low, sources are irrelevant
+    RERANKER_MIN_QUALITY = 0.08
+    if not top3 or top3[0]["reranker"] < RERANKER_MIN_QUALITY:
         return {"type": "no_results", "sources": [], "chunks": []}
 
     sources = []
@@ -440,9 +427,10 @@ def _build_rag_prompt(question: str, history: list[dict], chunks: list[dict]) ->
 # ── RAG pipeline helpers (shared by _direct_search and streaming) ──
 
 async def _embed_query(question: str) -> list[float]:
-    """Get embedding from remote GPU server."""
+    """Get embedding from remote GPU server with instruction prefix for asymmetric retrieval."""
+    prefixed = QUERY_INSTRUCTION + question
     async with httpx.AsyncClient(timeout=30.0) as client:
-        resp = await client.post(EMBED_URL, json={"input": question, "model": EMBED_MODEL})
+        resp = await client.post(EMBED_URL, json={"input": prefixed, "model": EMBED_MODEL})
         resp.raise_for_status()
         return resp.json()["data"][0]["embedding"]
 
@@ -458,28 +446,98 @@ async def _search_qa_match(conn, emb_str: str):
     )
 
 
-async def _search_chunks(conn, emb_str: str):
-    """Fetch top candidates from chunks + web_chunks, merged by similarity."""
+RRF_K = 60  # standard RRF constant
+
+
+async def _search_dense(conn, emb_str: str, limit: int = 20):
+    """Dense retrieval via pgvector cosine similarity."""
     chunk_rows = await conn.fetch(
-        """SELECT title, section, content, source_file, doc_url,
+        """SELECT id, title, section, content, source_file, doc_url,
                   'local_doc' AS source_type,
                   1 - (embedding <=> $1::vector) AS similarity
-           FROM chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
-        emb_str,
+           FROM chunks ORDER BY embedding <=> $1::vector LIMIT $2""",
+        emb_str, limit,
     )
     web_rows = await conn.fetch(
-        """SELECT page_title AS title, section_heading AS section,
+        """SELECT id, page_title AS title, section_heading AS section,
                   content, page_slug AS source_file, page_url AS doc_url,
                   'web_doc' AS source_type,
                   1 - (embedding <=> $1::vector) AS similarity
-           FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
-        emb_str,
+           FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT $2""",
+        emb_str, limit,
     )
-    merged = sorted(
-        list(chunk_rows) + list(web_rows),
-        key=lambda r: float(r["similarity"]), reverse=True,
-    )[:10]
-    return merged
+    return list(chunk_rows) + list(web_rows)
+
+
+async def _search_fts(conn, question: str, limit: int = 20):
+    """Sparse retrieval via PostgreSQL full-text search (OR mode)."""
+    words = question.lower().split()
+    # Filter stopwords and short words
+    words = [w for w in words if len(w) > 2 and w not in (
+        "the", "and", "for", "how", "what", "does", "can", "are", "with", "from", "this", "that",
+    )]
+    if not words:
+        return []
+    or_query = " | ".join(words)
+
+    chunk_rows = await conn.fetch(
+        """SELECT id, title, section, content, source_file, doc_url,
+                  'local_doc' AS source_type,
+                  ts_rank_cd(fts, to_tsquery('english', $1)) AS fts_rank
+           FROM chunks WHERE fts @@ to_tsquery('english', $1)
+           ORDER BY fts_rank DESC LIMIT $2""",
+        or_query, limit,
+    )
+    web_rows = await conn.fetch(
+        """SELECT id, page_title AS title, section_heading AS section,
+                  content, page_slug AS source_file, page_url AS doc_url,
+                  'web_doc' AS source_type,
+                  ts_rank_cd(fts, to_tsquery('english', $1)) AS fts_rank
+           FROM web_chunks WHERE fts @@ to_tsquery('english', $1)
+           ORDER BY fts_rank DESC LIMIT $2""",
+        or_query, limit,
+    )
+    return list(chunk_rows) + list(web_rows)
+
+
+async def _search_chunks(conn, emb_str: str, question: str = ""):
+    """Hybrid search: dense (pgvector) + sparse (FTS) with RRF fusion."""
+    # Stage 1: Parallel retrieval
+    dense_results = await _search_dense(conn, emb_str, limit=20)
+    fts_results = await _search_fts(conn, question, limit=20) if question else []
+
+    # Stage 2: RRF Fusion
+    # Sort dense by similarity desc
+    dense_sorted = sorted(dense_results, key=lambda r: float(r["similarity"]), reverse=True)
+    # FTS already sorted by fts_rank desc
+
+    scores = {}  # (source_type, id) → cumulative RRF score
+    chunk_data = {}
+
+    for rank, row in enumerate(dense_sorted):
+        key = (row["source_type"], row["id"])
+        scores[key] = scores.get(key, 0) + 1.0 / (RRF_K + rank)
+        chunk_data[key] = dict(row)
+
+    for rank, row in enumerate(fts_results):
+        key = (row["source_type"], row["id"])
+        scores[key] = scores.get(key, 0) + 1.0 / (RRF_K + rank)
+        if key not in chunk_data:
+            chunk_data[key] = dict(row)
+
+    # Sort by RRF score, return top 20
+    ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:20]
+
+    results = []
+    for key, rrf_score in ranked:
+        row = chunk_data[key]
+        row["rrf_score"] = rrf_score
+        # Ensure similarity field exists (FTS-only results won't have it)
+        if "similarity" not in row:
+            row["similarity"] = 0.0
+        results.append(row)
+
+    return results
 
 
 async def _rerank_candidates(question: str, candidates) -> list[dict]:
@@ -627,10 +685,11 @@ async def chat_stream(req: ChatRequest):
                 return
 
             # ── Step 3: Chunk search ──
-            rows = await _search_chunks(conn, emb_str)
+            rows = await _search_chunks(conn, emb_str, question)
 
-        candidates = [r for r in rows if float(r["similarity"]) >= COSINE_THRESHOLD]
-        top_cosine = round(float(candidates[0]["similarity"]), 4) if candidates else 0.0
+        # Hybrid filter: pass if cosine >= threshold OR high RRF (found by both dense+FTS)
+        candidates = [r for r in rows if float(r.get("similarity", 0)) >= COSINE_THRESHOLD or r.get("rrf_score", 0) > 1.0 / (RRF_K + 20)]
+        top_cosine = round(float(candidates[0].get("similarity", 0)), 4) if candidates else 0.0
         yield _step_event("searching", f"Found {len(candidates)} candidate chunks", "docs", elapsed(),
                           {"count": len(candidates)},
                           details={"candidates": len(candidates), "top_score": top_cosine, "tier": "chunk_search"})
@@ -648,9 +707,11 @@ async def chat_stream(req: ChatRequest):
                           details={"reranked": len(candidates)})
 
         scored = await _rerank_candidates(question, candidates)
-        top3 = [s for s in scored if s["reranker"] >= RERANKER_THRESHOLD][:3]
+        top3 = scored[:3]  # reranker only ranks, cosine already filtered
 
-        if not top3:
+        # Quality gate: if best reranker score is very low, sources are irrelevant
+        RERANKER_MIN_QUALITY = 0.08
+        if not top3 or top3[0]["reranker"] < RERANKER_MIN_QUALITY:
             decline = "I don't have documentation about that topic. Please check the Acronis Knowledge Base at https://kb.acronis.com or contact Acronis Support."
             yield {"event": "message", "data": json.dumps({"type": "token", "text": decline})}
             await db_save_message(sid, "user", question)

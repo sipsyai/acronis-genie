@@ -16,9 +16,12 @@ BATCH_SIZE = 16
 QA_FILE = Path(__file__).parent.parent / "data" / "qa_dataset_v2.json"
 MIN_QUALITY = 4
 
+QUERY_INSTRUCTION = "Instruct: Given a web search query, retrieve relevant passages that answer the query about Acronis Cyber Protect Cloud\nQuery: "
+
 
 async def embed_batch(client: httpx.AsyncClient, texts: list[str]) -> list[list[float]]:
-    resp = await client.post(EMBED_URL, json={"input": texts, "model": EMBED_MODEL})
+    prefixed = [QUERY_INSTRUCTION + t for t in texts]
+    resp = await client.post(EMBED_URL, json={"input": prefixed, "model": EMBED_MODEL})
     resp.raise_for_status()
     data = resp.json()["data"]
     data.sort(key=lambda x: x["index"])

@@ -16,18 +16,21 @@ DB_DSN = "postgresql://acronis:acronis@localhost:5432/acronis_agent"
 EMBED_URL = "http://192.168.1.8:8011/v1/embeddings"
 EMBED_MODEL = "Qwen/Qwen3-Embedding-4B"
 RERANK_URL = "http://192.168.1.8:8012/rerank"
-COSINE_THRESHOLD = 0.40
-RERANKER_THRESHOLD = 0.20
+COSINE_THRESHOLD = 0.30    # 0.40 → 0.30: let more candidates through for reranker
+RERANKER_THRESHOLD = 0.15  # 0.20 → 0.15: include borderline chunks
 QA_MATCH_THRESHOLD = 0.80  # Calibrated for Qwen3-Embedding-4B
-RETRIEVE_K = 10
+RETRIEVE_K = 20
+
+QUERY_INSTRUCTION = "Instruct: Given a web search query, retrieve relevant passages that answer the query about Acronis Cyber Protect Cloud\nQuery: "
 
 
 async def _embed_query(text: str) -> list[float]:
-    """Get embedding from remote GPU server."""
+    """Get embedding from remote GPU server with instruction prefix for asymmetric retrieval."""
+    prefixed = QUERY_INSTRUCTION + text
     async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(
             EMBED_URL,
-            json={"input": text, "model": EMBED_MODEL},
+            json={"input": prefixed, "model": EMBED_MODEL},
         )
         resp.raise_for_status()
         return resp.json()["data"][0]["embedding"]
@@ -107,48 +110,88 @@ async def search_docs(args: dict) -> dict:
                 }]
             }
 
-        # ── Tier 2: Chunk search + reranking (local + web merged) ──
+        # ── Tier 2: Hybrid search (dense + FTS with RRF) ──
+        # Dense retrieval
         chunk_rows = await conn.fetch(
-            """
-            SELECT id, title, section, content, source_file, doc_url,
+            """SELECT id, title, section, content, source_file, doc_url,
                    'local_doc' AS source_type,
                    1 - (embedding <=> $1::vector) AS similarity
-            FROM chunks
-            ORDER BY embedding <=> $1::vector
-            LIMIT $2
-            """,
-            emb_str,
-            RETRIEVE_K,
+            FROM chunks ORDER BY embedding <=> $1::vector LIMIT $2""",
+            emb_str, RETRIEVE_K,
         )
         web_rows = await conn.fetch(
-            """
-            SELECT id, page_title AS title, section_heading AS section,
+            """SELECT id, page_title AS title, section_heading AS section,
                    content, page_slug AS source_file, page_url AS doc_url,
                    'web_doc' AS source_type,
                    1 - (embedding <=> $1::vector) AS similarity
-            FROM web_chunks
-            ORDER BY embedding <=> $1::vector
-            LIMIT $2
-            """,
-            emb_str,
-            RETRIEVE_K,
+            FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT $2""",
+            emb_str, RETRIEVE_K,
         )
-        rows = sorted(
-            list(chunk_rows) + list(web_rows),
-            key=lambda r: float(r["similarity"]), reverse=True,
-        )[:RETRIEVE_K]
+        dense_results = list(chunk_rows) + list(web_rows)
+        dense_sorted = sorted(dense_results, key=lambda r: float(r["similarity"]), reverse=True)
+
+        # FTS retrieval (OR mode)
+        words = query_text.lower().split()
+        words = [w for w in words if len(w) > 2 and w not in (
+            "the", "and", "for", "how", "what", "does", "can", "are", "with", "from", "this", "that",
+        )]
+        fts_results = []
+        if words:
+            or_query = " | ".join(words)
+            fts_chunks = await conn.fetch(
+                """SELECT id, title, section, content, source_file, doc_url,
+                       'local_doc' AS source_type,
+                       ts_rank_cd(fts, to_tsquery('english', $1)) AS fts_rank
+                FROM chunks WHERE fts @@ to_tsquery('english', $1)
+                ORDER BY fts_rank DESC LIMIT $2""",
+                or_query, RETRIEVE_K,
+            )
+            fts_web = await conn.fetch(
+                """SELECT id, page_title AS title, section_heading AS section,
+                       content, page_slug AS source_file, page_url AS doc_url,
+                       'web_doc' AS source_type,
+                       ts_rank_cd(fts, to_tsquery('english', $1)) AS fts_rank
+                FROM web_chunks WHERE fts @@ to_tsquery('english', $1)
+                ORDER BY fts_rank DESC LIMIT $2""",
+                or_query, RETRIEVE_K,
+            )
+            fts_results = list(fts_chunks) + list(fts_web)
+
+        # RRF Fusion
+        RRF_K = 60
+        scores = {}
+        chunk_data = {}
+
+        for rank, row in enumerate(dense_sorted):
+            key = (row["source_type"], row["id"])
+            scores[key] = scores.get(key, 0) + 1.0 / (RRF_K + rank)
+            chunk_data[key] = dict(row)
+
+        for rank, row in enumerate(fts_results):
+            key = (row["source_type"], row["id"])
+            scores[key] = scores.get(key, 0) + 1.0 / (RRF_K + rank)
+            if key not in chunk_data:
+                chunk_data[key] = dict(row)
+                chunk_data[key]["similarity"] = 0.0  # FTS-only result
+
+        ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:RETRIEVE_K]
+        rows = []
+        for key, rrf in ranked:
+            d = chunk_data[key]
+            d["rrf_score"] = rrf
+            rows.append(d)
     finally:
         await conn.close()
 
-    # Pre-filter by cosine threshold
-    candidates = [r for r in rows if r["similarity"] >= COSINE_THRESHOLD]
+    # Pre-filter: cosine >= threshold OR found via both dense+FTS (high RRF)
+    candidates = [r for r in rows if float(r.get("similarity", 0)) >= COSINE_THRESHOLD or r.get("rrf_score", 0) > 1.0 / (60 + RETRIEVE_K)]
 
     if not candidates:
         return {
             "content": [{
                 "type": "text",
                 "text": f"No relevant documentation found for: '{query_text}' "
-                f"(all {len(rows)} results below cosine threshold {COSINE_THRESHOLD})",
+                f"(no candidates passed hybrid search filters)",
             }]
         }
 
@@ -170,14 +213,14 @@ async def search_docs(args: dict) -> dict:
         })
 
     scored.sort(key=lambda x: x["reranker"], reverse=True)
-    results = [s for s in scored if s["reranker"] >= RERANKER_THRESHOLD][:top_k]
+    results = scored[:top_k]  # reranker only ranks, cosine already filtered
 
     if not results:
         return {
             "content": [{
                 "type": "text",
                 "text": f"No relevant documentation found for: '{query_text}' "
-                f"(best reranker score: {scored[0]['reranker']:.4f}, threshold: {RERANKER_THRESHOLD})",
+                f"(no candidates passed cosine threshold {COSINE_THRESHOLD})",
             }]
         }
 

@@ -28,12 +28,16 @@ except Exception as e:
         raise
 ```
 
+## Language Policy
+
+**All code, comments, prompts, documentation, commit messages, and technical writing in this project MUST be in English.** No Turkish in any project files — the entire codebase is English-only.
+
 ## Code Review Graph
 
-Bu projede `code-review-graph` plugin'i aktif. Aşağıdaki durumlarda kullan:
+The `code-review-graph` plugin is active. Use it for:
 
-- **Refactor/büyük değişiklik öncesi:** `get_impact_radius` ile etki analizi yap — değişeceğin fonksiyonu kimin çağırdığını, nereleri etkileyeceğini gör.
-- **Commit sonrası:** `review-delta` ile blast-radius analizi çalıştır — kırılma riski olan yerleri tespit et.
-- **PR review:** `review-pr` ile yapısal bağlam içinde review yap.
+- **Before refactors/large changes:** `get_impact_radius` to analyze blast radius — see who calls the function you're changing.
+- **After commits:** `review-delta` to detect breaking risk.
+- **PR review:** `review-pr` for structural context.
 
-**Kullanma:** Basit dosya arama, explore, grep işleri için — bunlar zaten Glob/Grep/Read ile daha hızlı.
+**Don't use for:** Simple file search, explore, grep — Glob/Grep/Read are faster for those.
