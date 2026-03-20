@@ -5,6 +5,7 @@ subsection: "Backup options"
 page_range: "595-605"
 tags: ["log-truncation", "SQL-Server", "LVM-snapshotting", "mount-points", "multi-volume-snapshot", "one-click-recovery", "Startup-Recovery-Manager", "performance", "backup-window", "CPU-priority", "output-speed", "physical-data-shipping"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#one-click-recovery.html"
 ---
 
 # Log truncation

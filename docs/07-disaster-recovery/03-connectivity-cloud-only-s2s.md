@@ -5,6 +5,7 @@ subsection: "Connectivity and networks"
 page_range: "939-949"
 tags: [connectivity, cloud-only, site-to-site, OpenVPN, VPN appliance, VPN gateway, networking]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#setting-up-connectivity.html"
 ---
 
 # Connectivity and networks

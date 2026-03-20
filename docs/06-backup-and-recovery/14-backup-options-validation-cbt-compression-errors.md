@@ -5,6 +5,7 @@ subsection: "Backup options"
 page_range: "575-578"
 tags: ["backup-validation", "CBT", "changed-block-tracking", "cluster-backup", "SQL-Server", "Exchange-Server", "AAG", "DAG", "compression", "error-handling", "bad-sectors", "silent-mode"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-options.html"
 ---
 
 # Backup validation

@@ -5,6 +5,7 @@ subsection: "Device groups management"
 page_range: "424-426"
 tags: [device groups, dynamic groups, plans, apply plan, revoke plan, delete group, edit group]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#editing-groups-deleting-groups-and-managing-plans-for-groups.html"
 ---
 
 # Editing a dynamic group

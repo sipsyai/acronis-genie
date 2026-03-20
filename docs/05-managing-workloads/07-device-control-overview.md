@@ -5,6 +5,7 @@ subsection: "Working with the Device control module"
 page_range: "427-431"
 tags: [device control, data loss prevention, DLP, peripheral devices, security, macOS, Windows]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-alerts.html"
 ---
 
 # Working with the Device control module

@@ -5,6 +5,7 @@ subsection: "DLP Events and Monitoring"
 page_range: "1471-1474"
 tags: [dlp, events, dashboard, widgets, monitoring, custom-sensitivity, data-classifiers, audit-log]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-custom-sensitivity.html"
 ---
 
 # DLP Events, Dashboard Widgets, and Custom Sensitivity Categories

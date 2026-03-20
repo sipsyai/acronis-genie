@@ -5,6 +5,7 @@ subsection: "Working with Disaster Recovery to Cyber Protect Cloud"
 page_range: "935-938"
 tags: [disaster recovery, workflow, protection plan, recovery server, cloud network, default settings]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disaster-recovery.html"
 ---
 
 # Automatic deletion of unused customer environments on the cloud site

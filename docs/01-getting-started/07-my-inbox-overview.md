@@ -5,6 +5,7 @@ subsection: "My Inbox"
 page_range: "25-26"
 tags: ["inbox", "notifications", "communication", "dashboard", "search", "filter", "alerts"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#my-inbox-overview.html"
 ---
 
 # My Inbox

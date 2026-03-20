@@ -5,6 +5,7 @@ subsection: "Orchestration (runbooks)"
 page_range: "1010-1015"
 tags: [runbooks, orchestration, automation, failover automation, execution, DR site removal]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#orchestration-runbooks.html"
 ---
 
 # Failback from Cyber Protect Cloud to an Azure virtual machine

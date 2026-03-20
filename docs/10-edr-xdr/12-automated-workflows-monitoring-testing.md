@@ -5,6 +5,7 @@ subsection: "Automation and Testing"
 page_range: "1205-1214"
 tags: [edr, automated-workflows, playbooks, monitoring-mode, testing, configuration]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring.html"
 ---
 
 # Working with Automated Workflows

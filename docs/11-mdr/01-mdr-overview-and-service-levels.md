@@ -5,6 +5,7 @@ subsection: "Overview and Service Levels"
 page_range: "1224-1225"
 tags: [mdr, managed-detection-response, service-levels, standard, advanced, acronis-tru, features]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html"
 ---
 
 # Acronis Managed Detection and Response (MDR)

@@ -5,6 +5,7 @@ subsection: "Supported operating systems and environments for backup and recover
 page_range: "506-513"
 tags: ["Dell-EMC", "Data-Domain", "file-systems", "NTFS", "ext4", "ReFS", "XFS", "APFS", "exFAT", "logical-volumes", "LDM", "LVM", "encryption", "BitLocker", "4K-sector", "retention-lock"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-file-systems.html"
 ---
 
 # Dell EMC compatibility, supported file systems, and logical volumes

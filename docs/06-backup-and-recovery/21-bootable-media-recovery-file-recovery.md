@@ -5,6 +5,7 @@ subsection: "Recovery"
 page_range: "653-657"
 tags: ["bootable-media", "file-recovery", "disk-recovery", "LVM", "APFS", "cloud-storage", "registration-code", "Web-Restore-console", "download-files", "overwrite-options"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#creating-bootable-media.html"
 ---
 
 # Recovering disks by using bootable media

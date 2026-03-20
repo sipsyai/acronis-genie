@@ -5,6 +5,7 @@ subsection: "Supported protection features by operating system"
 page_range: "32"
 tags: ["features", "os-support", "data-protection-map", "disk-health", "CPOC", "backup-scanning", "compatibility"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html"
 ---
 
 # Data protection, Disk health, CPOC alerts, and Backup scanning - Supported features by OS

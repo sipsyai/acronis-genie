@@ -5,6 +5,7 @@ subsection: "Software Management"
 page_range: "1273-1277"
 tags: [rmm, software-management, software-inventory, scanning, applications, deploypilot, vulnerability-assessment, patch-management]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#software-inventory.html"
 ---
 
 # Managing Software

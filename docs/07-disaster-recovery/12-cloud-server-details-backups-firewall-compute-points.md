@@ -5,6 +5,7 @@ subsection: "Cloud servers"
 page_range: "984-990"
 tags: [cloud server details, RPO compliance, backups, firewall rules, compute points, server flavors, billing]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compute-points.html"
 ---
 
 # Viewing details about cloud servers

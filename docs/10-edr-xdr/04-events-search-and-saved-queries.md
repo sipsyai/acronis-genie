@@ -5,6 +5,7 @@ subsection: "Events Search"
 page_range: "1145-1152"
 tags: [edr, events-search, ioc, indicators-of-compromise, xql, saved-queries, query-results]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-search-events.html"
 ---
 
 # Search for Indicators of Compromise (IoC) and Suspicious Activities

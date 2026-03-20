@@ -5,6 +5,7 @@ subsection: "Response Actions - Files and Prevention"
 page_range: "1202-1205"
 tags: [edr, response-actions, delete, quarantine, registry, blocklist, allowlist, prevention]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-define-response-actions.html"
 ---
 
 # Response Actions for Suspicious Files

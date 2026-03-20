@@ -58,6 +58,32 @@ CREATE TABLE IF NOT EXISTS qa_pairs (
 );
 CREATE INDEX IF NOT EXISTS idx_qa_pairs_embedding ON qa_pairs USING ivfflat (embedding vector_cosine_ops) WITH (lists = 20);
 
+-- Scraped web doc chunks with embeddings
+CREATE TABLE IF NOT EXISTS web_chunks (
+    id SERIAL PRIMARY KEY,
+    page_slug TEXT NOT NULL,           -- "about-cyber-disaster-recovery-cloud.html"
+    page_title TEXT NOT NULL,          -- TOC title
+    page_url TEXT NOT NULL,            -- full Acronis URL
+    section_heading TEXT,              -- H2/H3 heading for this chunk
+    chunk_index INTEGER DEFAULT 0,     -- order within page
+    content TEXT NOT NULL,
+    word_count INTEGER,
+    category TEXT,                     -- derived from slug prefix
+    embedding vector(2560),
+    created_at TIMESTAMP DEFAULT NOW()
+);
+-- Note: No vector index needed for <10k rows (exact scan is fast enough)
+CREATE INDEX IF NOT EXISTS idx_web_chunks_slug ON web_chunks (page_slug);
+
+-- Resume tracking for scraper
+CREATE TABLE IF NOT EXISTS web_scrape_progress (
+    page_slug TEXT PRIMARY KEY,
+    page_url TEXT NOT NULL,
+    status TEXT DEFAULT 'pending',     -- pending | scraped | failed
+    error_message TEXT,
+    scraped_at TIMESTAMP
+);
+
 -- Q&A evaluation results
 CREATE TABLE IF NOT EXISTS qa_evaluations (
     id SERIAL PRIMARY KEY,

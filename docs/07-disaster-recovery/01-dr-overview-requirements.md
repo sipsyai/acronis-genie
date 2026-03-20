@@ -5,6 +5,7 @@ subsection: "Disaster Recovery to Cyber Protect Cloud"
 page_range: "930-934"
 tags: [disaster recovery, DRaaS, requirements, supported OS, virtualization, limitations, trial]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html"
 ---
 
 # About Acronis Disaster Recovery

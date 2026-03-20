@@ -1111,5 +1111,429 @@
     "match_score": 0.7,
     "toc_title": "Recovery with restart",
     "doc_title": "Recovery with Restart and Universal Restore"
+  },
+  "01-getting-started/10a-supported-features-protection-plans-and-backup.md": {
+    "page": "default-plans.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#default-plans.html",
+    "match_score": 0.8232,
+    "toc_title": "Default plans",
+    "doc_title": "Supported protection features by OS - Default plans, Forensic backup, CDP, Autodiscovery",
+    "match_method": "substring"
+  },
+  "01-getting-started/10c-supported-features-antivirus-antimalware.md": {
+    "page": "supported-cyber-protect-features-by-operating-system.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html",
+    "match_score": 0.7207,
+    "toc_title": "Supported protection features by operating system",
+    "doc_title": "Supported protection features by OS - Antivirus and Antimalware",
+    "match_method": "fuzzy"
+  },
+  "01-getting-started/10d-supported-features-edr-vulnerability-patch.md": {
+    "page": "vulnerability-assessment.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#vulnerability-assessment.html",
+    "match_score": 0.8439,
+    "toc_title": "Vulnerability assessment",
+    "doc_title": "Supported protection features by OS - EDR, Vulnerability assessment, Patch management",
+    "match_method": "substring"
+  },
+  "01-getting-started/10e-supported-features-data-protection-and-monitoring.md": {
+    "page": "supported-cyber-protect-features-by-operating-system.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html",
+    "match_score": 0.5532,
+    "toc_title": "Supported protection features by operating system",
+    "doc_title": "Supported protection features by OS - Data protection, Disk health, CPOC alerts, Backup scanning",
+    "match_method": "fuzzy"
+  },
+  "01-getting-started/10f-supported-features-recovery-remote-desktop-cyberfit.md": {
+    "page": "safe-recovery.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#safe-recovery.html",
+    "match_score": 0.8244,
+    "toc_title": "Safe recovery",
+    "doc_title": "Supported protection features by OS - Safe recovery, Remote desktop, CyberFit Score",
+    "match_method": "substring"
+  },
+  "02-installing-deploying-agents/33-service-quota-protection-settings.md": {
+    "page": "protection-settings.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protection-settings.html",
+    "match_score": 0.8509,
+    "toc_title": "Protection settings",
+    "doc_title": "Service quota, protection settings, and system information",
+    "match_method": "substring"
+  },
+  "03-working-with-plans/17-siem-data-format-json-examples.md": {
+    "page": "siem-integration.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-integration.html",
+    "match_score": 0.7,
+    "toc_title": "SIEM integration",
+    "doc_title": "SIEM JSON format examples and syslog configuration",
+    "match_method": "manual_fix"
+  },
+  "04-monitoring-dashboards/05-alert-types-antimalware-url-licensing-edr.md": {
+    "page": "url-filtering.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#url-filtering.html",
+    "match_score": 0.8291,
+    "toc_title": "URL filtering",
+    "doc_title": "Alert types - Antimalware, URL Filtering, Licensing, EDR, Device Control",
+    "match_method": "substring"
+  },
+  "04-monitoring-dashboards/06-alert-types-system-cloud-deployment-management.md": {
+    "page": "monitoring.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring.html",
+    "match_score": 0.8183,
+    "toc_title": "Monitoring",
+    "doc_title": "Alert types - System, Public Clouds, Software deployment, Management, Search, Monitoring",
+    "match_method": "substring"
+  },
+  "04-monitoring-dashboards/10-data-protection-and-vulnerability-widgets.md": {
+    "page": "vulnerability-assessment-widgets.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#vulnerability-assessment-widgets.html",
+    "match_score": 0.864,
+    "toc_title": "Vulnerability assessment widgets",
+    "doc_title": "Data protection map, discovered devices, and vulnerability assessment widgets",
+    "match_method": "substring"
+  },
+  "04-monitoring-dashboards/11-patch-backup-scanning-cloud-widgets.md": {
+    "page": "recently-affected.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recently-affected.html",
+    "match_score": 0.8311,
+    "toc_title": "Recently affected",
+    "doc_title": "Patch installation, backup scanning, recently affected, and cloud application widgets",
+    "match_method": "substring"
+  },
+  "05-managing-workloads/07-device-control-overview.md": {
+    "page": "dc-alerts.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dc-alerts.html",
+    "match_score": 0.7059,
+    "toc_title": "Device control alerts",
+    "doc_title": "Device control module overview",
+    "match_method": "fuzzy"
+  },
+  "05-managing-workloads/11-wipe-rmm-cyberapp-linking.md": {
+    "page": "cyberapp-workloads.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyberapp-workloads.html",
+    "match_score": 0.8391,
+    "toc_title": "CyberApp workloads",
+    "doc_title": "Wiping data, RMM integrations, CyberApp workloads, and linking workloads",
+    "match_method": "substring"
+  },
+  "05-managing-workloads/13-cyber-scripting-overview.md": {
+    "page": "cyber-scripting.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting.html",
+    "match_score": 0.8425,
+    "toc_title": "Cyber Scripting",
+    "doc_title": "Cyber Scripting overview, prerequisites, and user roles",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/01-overview-and-supported-os-windows.md": {
+    "page": "supported-operating-systems-and-environments.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-operating-systems-and-environments.html",
+    "match_score": 0.6429,
+    "toc_title": "Supported operating systems and environments for backup and recovery",
+    "doc_title": "Backup and recovery overview - Supported Windows operating systems",
+    "match_method": "keyword"
+  },
+  "06-backup-and-recovery/05-dell-emc-file-systems-logical-volumes.md": {
+    "page": "supported-file-systems.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-file-systems.html",
+    "match_score": 0.8508,
+    "toc_title": "Supported file systems",
+    "doc_title": "Dell EMC compatibility, supported file systems, and logical volumes",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/12-replication-encryption-notarization.md": {
+    "page": "notarization.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarization.html",
+    "match_score": 0.8462,
+    "toc_title": "Notarization",
+    "doc_title": "Replication, encryption, and notarization",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/14-backup-options-validation-cbt-compression-errors.md": {
+    "page": "backup-options.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-options.html",
+    "match_score": 0.8304,
+    "toc_title": "Backup options",
+    "doc_title": "Backup options: Validation, CBT, cluster mode, compression, error handling",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/15-backup-options-fast-incremental-file-filters-snapshot-forensic.md": {
+    "page": "backup-options.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-options.html",
+    "match_score": 0.8292,
+    "toc_title": "Backup options",
+    "doc_title": "Backup options: Fast incremental, file filters, snapshots, and forensic data",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md": {
+    "page": "one-click-recovery.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#one-click-recovery.html",
+    "match_score": 0.829,
+    "toc_title": "One-click recovery",
+    "doc_title": "Backup options: Log truncation, LVM, mount points, multi-volume, one-click recovery, performance",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/17-backup-options-prepost-commands-scheduling-sector-splitting-vss.md": {
+    "page": "pre-post-commands.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#pre-post-commands.html",
+    "match_score": 0.83,
+    "toc_title": "Pre/Post commands",
+    "doc_title": "Backup options: Pre/Post commands, scheduling, sector-by-sector, splitting, VSS, and more",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/18-recovery-overview-cross-platform.md": {
+    "page": "machine-migration.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#machine-migration.html",
+    "match_score": 0.875,
+    "toc_title": "Cross-platform recovery",
+    "doc_title": "Recovery overview and cross-platform recovery",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/21-bootable-media-recovery-file-recovery.md": {
+    "page": "creating-bootable-media.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#creating-bootable-media.html",
+    "match_score": 0.7,
+    "toc_title": "Creating bootable media",
+    "doc_title": "Bootable media recovery and file recovery",
+    "match_method": "manual_fix"
+  },
+  "06-backup-and-recovery/23-backup-operations-storage-mounting-validation-export.md": {
+    "page": "deleting-backups.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deleting-backups.html",
+    "match_score": 0.8286,
+    "toc_title": "Deleting backups",
+    "doc_title": "Backup operations: storage, mounting volumes, validating, exporting, and deleting backups",
+    "match_method": "substring"
+  },
+  "06-backup-and-recovery/38-oracle-saphana-mysql-mariadb-proxmox.md": {
+    "page": "protecting-mysql-mariadb-data.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mysql-mariadb-data.html",
+    "match_score": 0.5747,
+    "toc_title": "Protecting MySQL and MariaDB data",
+    "doc_title": "Protecting Oracle DB, SAP HANA, MySQL/MariaDB, and Proxmox",
+    "match_method": "fuzzy"
+  },
+  "07-disaster-recovery/01-dr-overview-requirements.md": {
+    "page": "about-cyber-disaster-recovery-cloud.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html",
+    "match_score": 0.8816,
+    "toc_title": "About Acronis Disaster Recovery",
+    "doc_title": "About Acronis Disaster Recovery and software requirements",
+    "match_method": "substring"
+  },
+  "07-disaster-recovery/02-dr-workflow-protection-plan.md": {
+    "page": "disaster-recovery.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disaster-recovery.html",
+    "match_score": 0.7,
+    "toc_title": "Disaster Recovery",
+    "doc_title": "DR workflow, protection plan, and default infrastructure",
+    "match_method": "manual_fix"
+  },
+  "07-disaster-recovery/03-connectivity-cloud-only-s2s.md": {
+    "page": "setting-up-connectivity.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#setting-up-connectivity.html",
+    "match_score": 0.8586,
+    "toc_title": "Connectivity and networks",
+    "doc_title": "Connectivity and networks: Cloud-only mode and Site-to-site Open VPN",
+    "match_method": "substring"
+  },
+  "07-disaster-recovery/04-connectivity-ipsec-p2s.md": {
+    "page": "multi-site-ipsec-vpn-concept.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#multi-site-ipsec-vpn-concept.html",
+    "match_score": 0.7,
+    "toc_title": "Multi-site IPsec VPN",
+    "doc_title": "Multi-site IPsec VPN and Point-to-site VPN access",
+    "match_method": "manual_fix"
+  },
+  "07-disaster-recovery/08-runbooks-removing-dr.md": {
+    "page": "orchestration-runbooks.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#orchestration-runbooks.html",
+    "match_score": 0.8702,
+    "toc_title": "Orchestration (runbooks)",
+    "doc_title": "Orchestration (runbooks) and removing the DR site",
+    "match_method": "substring"
+  },
+  "07-disaster-recovery/11-cloud-servers-recovery-primary.md": {
+    "page": "configuring-cloud-servers.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-cloud-servers.html",
+    "match_score": 0.8382,
+    "toc_title": "Cloud servers",
+    "doc_title": "Cloud servers - recovery servers and primary servers",
+    "match_method": "substring"
+  },
+  "07-disaster-recovery/12-cloud-server-details-backups-firewall-compute-points.md": {
+    "page": "compute-points.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compute-points.html",
+    "match_score": 0.8339,
+    "toc_title": "Compute points",
+    "doc_title": "Cloud server details, backups, firewall rules, and compute points",
+    "match_method": "substring"
+  },
+  "07-disaster-recovery/14-failback-agent-agentless-manual.md": {
+    "page": "agent-based-failback.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#agent-based-failback.html",
+    "match_score": 0.7,
+    "toc_title": "Agent-based failback via bootable media",
+    "doc_title": "Failback - agent-based, agentless, and manual",
+    "match_method": "manual_fix"
+  },
+  "08-antivirus-antimalware/03-antimalware-features-scanning-types.md": {
+    "page": "antivirus-and-antimalware-protection.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#antivirus-and-antimalware-protection.html",
+    "match_score": 0.7,
+    "toc_title": "Antivirus and antimalware protection",
+    "doc_title": "Antimalware Features and Scanning Types",
+    "match_method": "manual_fix"
+  },
+  "08-antivirus-antimalware/05-av-am-protection-settings-part2.md": {
+    "page": "antivirus-and-antimalware-protection-settings.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#antivirus-and-antimalware-protection-settings.html",
+    "match_score": 0.8675,
+    "toc_title": "Antivirus and antimalware protection settings",
+    "doc_title": "Antivirus and Antimalware Protection Settings - Exploit Prevention, Real-time, Scheduled Scan, Exclusions",
+    "match_method": "substring"
+  },
+  "10-edr-xdr/01-edr-overview-and-features.md": {
+    "page": "edr-features.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-features.html",
+    "match_score": 0.6486,
+    "toc_title": "EDR features",
+    "doc_title": "EDR Overview and Features",
+    "match_method": "fuzzy"
+  },
+  "10-edr-xdr/04-events-search-and-saved-queries.md": {
+    "page": "edr-search-events.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-search-events.html",
+    "match_score": 0.7,
+    "toc_title": "Search events",
+    "doc_title": "Events Search and Saved Queries",
+    "match_method": "manual_fix"
+  },
+  "10-edr-xdr/11-response-actions-files-registry-blocklist-allowlist.md": {
+    "page": "edr-define-response-actions.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-define-response-actions.html",
+    "match_score": 0.7,
+    "toc_title": "Define response actions for a suspicious process",
+    "doc_title": "Response Actions for Files, Registry, and Blocklist/Allowlist",
+    "match_method": "manual_fix"
+  },
+  "10-edr-xdr/12-automated-workflows-monitoring-testing.md": {
+    "page": "monitoring.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring.html",
+    "match_score": 0.8294,
+    "toc_title": "Monitoring",
+    "doc_title": "Automated Workflows, Monitoring Mode, and Testing EDR",
+    "match_method": "substring"
+  },
+  "11-mdr/01-mdr-overview-and-service-levels.md": {
+    "page": "a-mdr-overview.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html",
+    "match_score": 0.7,
+    "toc_title": "Acronis Managed Detection and Response (MDR)",
+    "doc_title": "MDR Overview and Service Levels",
+    "match_method": "manual_fix"
+  },
+  "12-rmm/05-software-management-and-inventory.md": {
+    "page": "software-inventory.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#software-inventory.html",
+    "match_score": 0.7,
+    "toc_title": "Software inventory",
+    "doc_title": "Software Management and Inventory",
+    "match_method": "manual_fix"
+  },
+  "13-data-loss-prevention/01-dlp-overview-and-data-flow-policy.md": {
+    "page": "genai-data-loss-prevention.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#genai-data-loss-prevention.html",
+    "match_score": 0.8508,
+    "toc_title": "Data loss prevention",
+    "doc_title": "Data Loss Prevention Overview and Data Flow Policy Creation",
+    "match_method": "substring"
+  },
+  "13-data-loss-prevention/06-dlp-events-widgets-custom-categories.md": {
+    "page": "advanced-dlp-custom-sensitivity.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-custom-sensitivity.html",
+    "match_score": 0.8702,
+    "toc_title": "Custom sensitivity categories",
+    "doc_title": "DLP Events, Dashboard Widgets, and Custom Sensitivity Categories",
+    "match_method": "substring"
+  },
+  "01-getting-started/07-my-inbox-overview.md": {
+    "page": "my-inbox-overview.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#my-inbox-overview.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "My Inbox - overview, checking notifications, and searching",
+    "match_method": "url_validated"
+  },
+  "01-getting-started/10g-supported-features-dlp-management-inventory.md": {
+    "page": "supported-protection-features-by-os-dlp-management-protection-options-monitor-inventory.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-protection-features-by-os-dlp-management-protection-options-monitor-inventory.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Supported protection features by OS - DLP, Management, Protection options, Monitor, Inventory",
+    "match_method": "url_validated"
+  },
+  "05-managing-workloads/06-editing-deleting-groups-plans.md": {
+    "page": "editing-groups-deleting-groups-and-managing-plans-for-groups.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#editing-groups-deleting-groups-and-managing-plans-for-groups.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Editing groups, deleting groups, and managing plans for groups",
+    "match_method": "url_validated"
+  },
+  "06-backup-and-recovery/39-web-hosting-instant-restore-vm-operations.md": {
+    "page": "web-hosting-servers-and-special-vm-operations-instant-restore.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#web-hosting-servers-and-special-vm-operations-instant-restore.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Web Hosting Servers and Special VM Operations (Instant Restore)",
+    "match_method": "url_validated"
+  },
+  "07-disaster-recovery/10-ip-reassignment-dns-routing-logs.md": {
+    "page": "ip-reassignment.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#ip-reassignment.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "IP reassignment, custom DNS, local routing, and logs",
+    "match_method": "url_validated"
+  },
+  "07-disaster-recovery/18-azure-failback-runbooks-resources.md": {
+    "page": "azure-failback-runbooks-resources-soft-deletion.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#azure-failback-runbooks-resources-soft-deletion.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Azure failback, runbooks, resources, soft deletion, and workers",
+    "match_method": "url_validated"
+  },
+  "10-edr-xdr/06-event-types-and-fields.md": {
+    "page": "event-types.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#event-types.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Event Types, Sample Data Types, and Event Fields",
+    "match_method": "url_validated"
+  },
+  "11-mdr/03-incident-handling-and-service-portal.md": {
+    "page": "incident-handling-service-portal.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#incident-handling-service-portal.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Incident Handling, Service Portal, and Data Residency",
+    "match_method": "url_validated"
+  },
+  "12-rmm/03b-m365-users-onboarding-offboarding.md": {
+    "page": "microsoft-365-user-management.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#microsoft-365-user-management.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Microsoft 365 User Management - Onboarding and Offboarding",
+    "match_method": "url_validated"
+  },
+  "12-rmm/07-software-repositories-and-deployment.md": {
+    "page": "software-repositories-packages.html",
+    "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#software-repositories-packages.html",
+    "match_score": 0.5,
+    "toc_title": "(URL validated)",
+    "doc_title": "Software Repositories, Packages, and Deployment (DeployPilot)",
+    "match_method": "url_validated"
   }
 }

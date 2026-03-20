@@ -206,12 +206,17 @@ async def root():
 @app.get("/api/health")
 async def health():
     chunks_count = 0
+    web_chunks_count = 0
     sessions_count = 0
     messages_count = 0
     try:
         pool = await get_pool()
         async with pool.acquire() as conn:
             chunks_count = await conn.fetchval("SELECT count(*) FROM chunks")
+            try:
+                web_chunks_count = await conn.fetchval("SELECT count(*) FROM web_chunks")
+            except Exception:
+                pass
             sessions_count = await conn.fetchval("SELECT count(*) FROM chat_sessions")
             messages_count = await conn.fetchval("SELECT count(*) FROM chat_messages")
     except Exception:
@@ -234,6 +239,7 @@ async def health():
     return {
         "status": "ok",
         "chunks_count": chunks_count,
+        "web_chunks_count": web_chunks_count,
         "chat_sessions": sessions_count,
         "chat_messages": messages_count,
         "gpu_embedding": gpu_embed,
@@ -337,13 +343,26 @@ async def _direct_search(question: str) -> dict:
                 "sources": [{"title": title, "file": src, "score": float(qa_row["similarity"]), "doc_url": qa_row.get("doc_url")}],
             }
 
-        # Tier 2: Chunk search
-        rows = await conn.fetch(
+        # Tier 2: Chunk search (local + web merged)
+        chunk_rows = await conn.fetch(
             """SELECT title, section, content, source_file, doc_url,
+                      'local_doc' AS source_type,
                       1 - (embedding <=> $1::vector) AS similarity
                FROM chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
             emb_str,
         )
+        web_rows = await conn.fetch(
+            """SELECT page_title AS title, section_heading AS section,
+                      content, page_slug AS source_file, page_url AS doc_url,
+                      'web_doc' AS source_type,
+                      1 - (embedding <=> $1::vector) AS similarity
+               FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
+            emb_str,
+        )
+        rows = sorted(
+            list(chunk_rows) + list(web_rows),
+            key=lambda r: float(r["similarity"]), reverse=True,
+        )[:10]
 
     candidates = [r for r in rows if float(r["similarity"]) >= COSINE_THRESHOLD]
     if not candidates:
@@ -369,6 +388,7 @@ async def _direct_search(question: str) -> dict:
             "content": r["content"],
             "source_file": r["source_file"],
             "doc_url": r.get("doc_url"),
+            "source_type": r.get("source_type", "local_doc"),
             "cosine": float(r["similarity"]),
             "reranker": float(rr["score"]),
         })
@@ -382,7 +402,8 @@ async def _direct_search(question: str) -> dict:
     for s in top3:
         sf = s["source_file"]
         title = sf.split("/")[-1].replace(".md", "").replace("-", " ").title() if "/" in sf else sf
-        sources.append({"title": title, "file": sf, "score": s["reranker"], "doc_url": s.get("doc_url")})
+        sources.append({"title": title, "file": sf, "score": s["reranker"],
+                        "doc_url": s.get("doc_url"), "source_type": s.get("source_type", "local_doc")})
 
     return {"type": "chunks", "sources": sources, "chunks": top3}
 
@@ -433,13 +454,27 @@ async def _search_qa_match(conn, emb_str: str):
 
 
 async def _search_chunks(conn, emb_str: str):
-    """Fetch top-10 chunk candidates by cosine similarity."""
-    return await conn.fetch(
+    """Fetch top candidates from chunks + web_chunks, merged by similarity."""
+    chunk_rows = await conn.fetch(
         """SELECT title, section, content, source_file, doc_url,
+                  'local_doc' AS source_type,
                   1 - (embedding <=> $1::vector) AS similarity
            FROM chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
         emb_str,
     )
+    web_rows = await conn.fetch(
+        """SELECT page_title AS title, section_heading AS section,
+                  content, page_slug AS source_file, page_url AS doc_url,
+                  'web_doc' AS source_type,
+                  1 - (embedding <=> $1::vector) AS similarity
+           FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
+        emb_str,
+    )
+    merged = sorted(
+        list(chunk_rows) + list(web_rows),
+        key=lambda r: float(r["similarity"]), reverse=True,
+    )[:10]
+    return merged
 
 
 async def _rerank_candidates(question: str, candidates) -> list[dict]:
@@ -461,6 +496,8 @@ async def _rerank_candidates(question: str, candidates) -> list[dict]:
             "section": r["section"],
             "content": r["content"],
             "source_file": r["source_file"],
+            "doc_url": r.get("doc_url"),
+            "source_type": r.get("source_type", "local_doc"),
             "cosine": float(r["similarity"]),
             "reranker": float(rr["score"]),
         })
@@ -538,7 +575,7 @@ async def chat_stream(req: ChatRequest):
                 src = qa_row["source_file"] or ""
                 title = _make_source_title(src)
                 qa_doc_url = qa_row.get("doc_url")
-                sources = [{"title": title, "file": src, "score": sim, "doc_url": qa_doc_url}]
+                sources = [{"title": title, "file": src, "score": sim, "doc_url": qa_doc_url, "source_type": "qa_match"}]
 
                 yield _step_event("generating", "Streaming answer...", "brain", elapsed())
                 yield {"event": "message", "data": json.dumps({"type": "sources", "sources": sources})}
@@ -603,7 +640,8 @@ async def chat_stream(req: ChatRequest):
         sources = []
         for s in top3:
             sf = s["source_file"]
-            sources.append({"title": _make_source_title(sf), "file": sf, "score": s["reranker"], "doc_url": s.get("doc_url")})
+            sources.append({"title": _make_source_title(sf), "file": sf, "score": s["reranker"],
+                            "doc_url": s.get("doc_url"), "source_type": s.get("source_type", "local_doc")})
         yield {"event": "message", "data": json.dumps({"type": "sources", "sources": sources})}
 
         # ── Step 6: Generate answer ──
@@ -848,6 +886,33 @@ async def get_doc(source_path: str):
         "section": doc["section"],
         "pages": doc["pages"],
         "doc_url": doc.get("doc_url", ""),
+    }
+
+
+@app.get("/api/web-docs/{slug}")
+async def get_web_doc(slug: str):
+    """Return all chunks for a web doc page, merged into one document."""
+    pool = await get_pool()
+    async with pool.acquire() as conn:
+        rows = await conn.fetch(
+            """SELECT page_title, page_url, section_heading, content, chunk_index
+               FROM web_chunks WHERE page_slug = $1
+               ORDER BY chunk_index""",
+            slug,
+        )
+    if not rows:
+        return JSONResponse(status_code=404, content={"error": "Web document not found"})
+
+    title = rows[0]["page_title"]
+    page_url = rows[0]["page_url"]
+    merged_content = "\n\n".join(r["content"] for r in rows)
+
+    return {
+        "slug": slug,
+        "title": title,
+        "content": merged_content,
+        "page_url": page_url,
+        "chunk_count": len(rows),
     }
 
 

@@ -5,6 +5,7 @@ subsection: "Incident Handling and Reporting"
 page_range: "1230-1235"
 tags: [mdr, incident-detection, notifications, response-actions, threat-hunting, reporting, service-portal, data-residency]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#incident-handling-service-portal.html"
 ---
 
 # Incident Detection and Handling

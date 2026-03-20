@@ -5,6 +5,7 @@ subsection: "Cloud servers"
 page_range: "976-984"
 tags: [cloud servers, recovery server, primary server, create server, server configuration, DHCP, MAC address, RPO threshold, firewall rules, server operations]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-cloud-servers.html"
 ---
 
 # Cloud servers

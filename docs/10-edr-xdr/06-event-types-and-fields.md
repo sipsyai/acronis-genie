@@ -5,6 +5,7 @@ subsection: "Event Types and Fields"
 page_range: "1154-1164"
 tags: [edr, event-types, event-fields, data-types, winproccreate, winnetaccess, winregaccess, winscriptexec, winfileaccess, winlogin, winlogout, winagentdetection]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#event-types.html"
 ---
 
 # Event Types and Fields

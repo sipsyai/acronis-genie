@@ -5,6 +5,7 @@ subsection: "Overview"
 page_range: "1132-1135"
 tags: [edr, overview, features, advanced-security, xdr, cyber-protection]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-features.html"
 ---
 
 # Endpoint Detection and Response (EDR)

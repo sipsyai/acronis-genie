@@ -5,6 +5,7 @@ subsection: "Supported protection features by operating system"
 page_range: "34-35"
 tags: ["features", "os-support", "DLP", "data-loss-prevention", "device-control", "management", "remote-wipe", "inventory", "compatibility"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-protection-features-by-os-dlp-management-protection-options-monitor-inventory.html"
 ---
 
 # DLP, Management, Protection options, Monitor, and Inventory - Supported features by OS

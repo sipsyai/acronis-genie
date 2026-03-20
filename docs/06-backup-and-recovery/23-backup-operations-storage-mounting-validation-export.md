@@ -5,6 +5,7 @@ subsection: "Operations with backups"
 page_range: "677-682"
 tags: ["backup-storage", "mount-volume", "validate-backup", "export-backup", "delete-backup", "orphaned-backups", "backup-archive", "File-Explorer", "read-write-mount"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deleting-backups.html"
 ---
 
 # Backup storage

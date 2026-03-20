@@ -5,6 +5,7 @@ subsection: "Supported protection features by operating system"
 page_range: "33"
 tags: ["features", "os-support", "safe-recovery", "remote-desktop", "CyberFit", "NEAR", "RDP", "compatibility"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#safe-recovery.html"
 ---
 
 # Safe recovery, Remote desktop, and CyberFit Score - Supported features by OS

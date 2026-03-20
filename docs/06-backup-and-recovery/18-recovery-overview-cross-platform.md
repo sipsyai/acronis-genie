@@ -5,6 +5,7 @@ subsection: "Recovery"
 page_range: "618-627"
 tags: ["recovery", "cross-platform", "P2V", "V2P", "V2V", "machine-migration", "recovery-cheat-sheet", "bootable-media", "macOS", "SIP"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#machine-migration.html"
 ---
 
 # Recovery overview

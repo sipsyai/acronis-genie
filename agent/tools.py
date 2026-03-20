@@ -107,10 +107,11 @@ async def search_docs(args: dict) -> dict:
                 }]
             }
 
-        # ── Tier 2: Chunk search + reranking ───────────────────
-        rows = await conn.fetch(
+        # ── Tier 2: Chunk search + reranking (local + web merged) ──
+        chunk_rows = await conn.fetch(
             """
             SELECT id, title, section, content, source_file, doc_url,
+                   'local_doc' AS source_type,
                    1 - (embedding <=> $1::vector) AS similarity
             FROM chunks
             ORDER BY embedding <=> $1::vector
@@ -119,6 +120,23 @@ async def search_docs(args: dict) -> dict:
             emb_str,
             RETRIEVE_K,
         )
+        web_rows = await conn.fetch(
+            """
+            SELECT id, page_title AS title, section_heading AS section,
+                   content, page_slug AS source_file, page_url AS doc_url,
+                   'web_doc' AS source_type,
+                   1 - (embedding <=> $1::vector) AS similarity
+            FROM web_chunks
+            ORDER BY embedding <=> $1::vector
+            LIMIT $2
+            """,
+            emb_str,
+            RETRIEVE_K,
+        )
+        rows = sorted(
+            list(chunk_rows) + list(web_rows),
+            key=lambda r: float(r["similarity"]), reverse=True,
+        )[:RETRIEVE_K]
     finally:
         await conn.close()
 
@@ -146,6 +164,7 @@ async def search_docs(args: dict) -> dict:
             "content": r["content"],
             "source_file": r["source_file"],
             "doc_url": r.get("doc_url"),
+            "source_type": r.get("source_type", "local_doc"),
             "cosine": float(r["similarity"]),
             "reranker": float(rscore),
         })

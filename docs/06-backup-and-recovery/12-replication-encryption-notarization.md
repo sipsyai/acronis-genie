@@ -5,6 +5,7 @@ subsection: "Backup"
 page_range: "556-562"
 tags: ["replication", "encryption", "AES-256", "notarization", "blockchain", "backup-security", "physical-data-shipping", "off-site", "password"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarization.html"
 ---
 
 # Replication

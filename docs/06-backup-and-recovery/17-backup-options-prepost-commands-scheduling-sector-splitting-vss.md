@@ -5,6 +5,7 @@ subsection: "Backup options"
 page_range: "606-618"
 tags: ["pre-post-commands", "pre-data-capture", "post-data-capture", "scheduling", "sector-by-sector", "splitting", "task-failure", "task-start-conditions", "VSS", "weekly-backup", "Windows-event-log"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#pre-post-commands.html"
 ---
 
 # Pre/Post commands

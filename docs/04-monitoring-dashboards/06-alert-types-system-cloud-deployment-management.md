@@ -5,6 +5,7 @@ subsection: "Alerts"
 page_range: "316-324"
 tags: ["alerts", "system", "public-clouds", "Azure", "S3", "software-deployment", "management", "monitoring", "disk-health"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring.html"
 ---
 
 # System alerts

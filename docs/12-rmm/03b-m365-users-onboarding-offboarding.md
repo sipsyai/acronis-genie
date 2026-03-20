@@ -5,6 +5,7 @@ subsection: "Microsoft 365 User Management"
 page_range: "1256-1267"
 tags: [rmm, microsoft-365, user-management, onboarding, offboarding, user-risks, templates, baselines]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#microsoft-365-user-management.html"
 ---
 
 # Microsoft 365 User Management

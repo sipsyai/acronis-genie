@@ -5,6 +5,7 @@ subsection: "Connectivity and networks"
 page_range: "950-969"
 tags: [IPsec VPN, multi-site, point-to-site, VPN gateway, connectivity, OpenVPN, Active Directory, network management]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#multi-site-ipsec-vpn-concept.html"
 ---
 
 # Multi-site IPsec VPN connection

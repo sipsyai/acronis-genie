@@ -5,6 +5,7 @@ subsection: "Supported protection features by operating system"
 page_range: "26-28"
 tags: ["features", "os-support", "protection-plans", "forensic-backup", "CDP", "autodiscovery", "compatibility"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#default-plans.html"
 ---
 
 # Supported protection features by operating system

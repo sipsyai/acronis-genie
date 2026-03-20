@@ -5,6 +5,7 @@ subsection: "Software Deployment"
 page_range: "1313-1339"
 tags: [rmm, deploypilot, software-deployment, software-packages, library, repositories, install, uninstall, deployment-plans]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#software-repositories-packages.html"
 ---
 
 # Working with Software Repositories and Software Packages

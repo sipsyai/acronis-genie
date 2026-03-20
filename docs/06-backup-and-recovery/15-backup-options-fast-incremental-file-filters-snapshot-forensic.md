@@ -5,6 +5,7 @@ subsection: "Backup options"
 page_range: "579-590"
 tags: ["fast-incremental", "file-filters", "inclusion", "exclusion", "wildcards", "file-level-snapshot", "forensic-data", "memory-dump", "digital-evidence", "notarization", "tibxread"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-options.html"
 ---
 
 # Fast incremental/differential backup

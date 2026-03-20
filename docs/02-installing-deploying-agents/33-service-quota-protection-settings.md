@@ -5,6 +5,7 @@ subsection: "Service quota, protection settings, Cyber Protection services, and 
 page_range: "202-207"
 tags: ["service quota", "protection settings", "Updater role", "performance data", "definitions update", "cache storage", "services", "system information"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protection-settings.html"
 ---
 
 # Service quota, protection settings, and system information

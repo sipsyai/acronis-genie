@@ -5,6 +5,7 @@ subsection: "SIEM forwarding plans"
 page_range: "279-287"
 tags: [SIEM, JSON, data format, alert examples, event examples, activity examples, audit log, syslog, rsyslog, Red Hat, Debian]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-integration.html"
 ---
 
 # JSON file format examples

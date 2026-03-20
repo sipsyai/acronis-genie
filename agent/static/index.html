@@ -273,10 +273,11 @@ const STEP_ICONS = {
 
 // Check health on load
 fetch('/api/health').then(r=>r.json()).then(d=>{
-  document.getElementById('doc-count').textContent = d.chunks_count + ' docs indexed';
+  const totalDocs = d.chunks_count + (d.web_chunks_count || 0);
+  document.getElementById('doc-count').textContent = totalDocs + ' docs indexed';
   const dot = document.getElementById('health-dot');
   dot.className = 'size-2 rounded-full ' + (d.gpu_embedding && d.gpu_reranker ? 'bg-green-400' : 'bg-yellow-400');
-  dot.title = `Chunks: ${d.chunks_count} | GPU Embed: ${d.gpu_embedding} | GPU Rerank: ${d.gpu_reranker}`;
+  dot.title = `Local: ${d.chunks_count} | Web: ${d.web_chunks_count || 0} | GPU Embed: ${d.gpu_embedding} | GPU Rerank: ${d.gpu_reranker}`;
 }).catch(()=>{
   document.getElementById('doc-count').textContent = 'offline';
   document.getElementById('health-dot').className = 'size-2 rounded-full bg-red-400';
@@ -351,6 +352,28 @@ function removeTypingIndicator() {
   if (el) el.remove();
 }
 
+// Source type style/icon maps
+const SOURCE_STYLES = {
+  'qa_match':  'border-green-400/30 bg-green-500/5 text-green-400',
+  'local_doc': 'border-blue-400/30 bg-blue-500/5 text-blue-400',
+  'web_doc':   'border-purple-400/30 bg-purple-500/5 text-purple-400',
+};
+const SOURCE_ICONS = {
+  'qa_match': 'verified', 'local_doc': 'description', 'web_doc': 'language',
+};
+
+function renderSourceBadge(s) {
+  const st = s.source_type || 'local_doc';
+  const style = SOURCE_STYLES[st] || SOURCE_STYLES['local_doc'];
+  const icon = SOURCE_ICONS[st] || 'description';
+  return `<div class="flex items-center gap-1.5 px-3 py-1 border ${style} rounded-full text-[11px] font-semibold" data-source-path="${escapeHtml(s.file)}" data-source-type="${st}">
+    <span class="material-symbols-outlined text-sm cursor-pointer hover:opacity-70" onclick="openDocPanel(this.parentElement)">${icon}</span>
+    <span class="cursor-pointer hover:underline" onclick="openDocPanel(this.parentElement)">${escapeHtml(s.title)}</span>
+    ${s.score != null ? `<span class="text-[9px] opacity-60 font-mono">${s.score.toFixed(2)}</span>` : ''}
+    ${s.doc_url ? `<a href="${escapeHtml(s.doc_url)}" target="_blank" rel="noopener" class="material-symbols-outlined text-sm hover:text-[#00a5e0] ml-0.5" title="Open official Acronis docs" onclick="event.stopPropagation()">open_in_new</a>` : ''}
+  </div>`;
+}
+
 function addAgentMessage(text, sources) {
   const now = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
   const htmlContent = markdownToHtml(text);
@@ -358,13 +381,7 @@ function addAgentMessage(text, sources) {
   let sourceBadges = '';
   if (sources && sources.length > 0) {
     sourceBadges = '<div class="pt-4 flex flex-wrap gap-2">' +
-      sources.map(s => `
-        <div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold">
-          <span class="material-symbols-outlined text-sm cursor-pointer hover:text-white" data-source-path="${escapeHtml(s.file)}" onclick="openDocPanel(this.parentElement)">description</span>
-          <span class="cursor-pointer hover:underline" data-source-path="${escapeHtml(s.file)}" onclick="openDocPanel(this.parentElement)">${escapeHtml(s.title)}</span>
-          ${s.score != null ? `<span class="text-[9px] opacity-60 font-mono">${s.score.toFixed(2)}</span>` : ''}
-          ${s.doc_url ? `<a href="${escapeHtml(s.doc_url)}" target="_blank" rel="noopener" class="material-symbols-outlined text-sm hover:text-[#00a5e0] ml-0.5" title="Open official Acronis docs" onclick="event.stopPropagation()">open_in_new</a>` : ''}
-        </div>`).join('') +
+      sources.map(s => renderSourceBadge(s)).join('') +
       '</div>';
   }
 
@@ -615,14 +632,7 @@ async function sendMessage() {
             }
             // Add source badges
             if (pendingSources && pendingSources.length > 0) {
-              const badgesHtml = pendingSources.map(s =>
-                `<div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold" data-source-path="${escapeHtml(s.file)}">
-                  <span class="material-symbols-outlined text-sm cursor-pointer hover:text-white" onclick="openDocPanel(this.parentElement)">description</span>
-                  <span class="cursor-pointer hover:underline" onclick="openDocPanel(this.parentElement)">${escapeHtml(s.title)}</span>
-                  ${s.score != null ? `<span class="text-[9px] opacity-60 font-mono">${s.score.toFixed(2)}</span>` : ''}
-                  ${s.doc_url ? `<a href="${escapeHtml(s.doc_url)}" target="_blank" rel="noopener" class="material-symbols-outlined text-sm hover:text-[#00a5e0] ml-0.5" title="Open official Acronis docs" onclick="event.stopPropagation()">open_in_new</a>` : ''}
-                </div>`
-              ).join('');
+              const badgesHtml = pendingSources.map(s => renderSourceBadge(s)).join('');
               const badgeContainer = document.createElement('div');
               badgeContainer.className = 'pt-4 flex flex-wrap gap-2';
               badgeContainer.innerHTML = badgesHtml;
@@ -778,6 +788,7 @@ function markdownToHtml(md) {
 
 function openDocPanel(el) {
   const path = el.dataset.sourcePath;
+  const sourceType = el.dataset.sourceType || 'local_doc';
   // Extract title from the text nodes, excluding icon and score spans
   const titleParts = [];
   el.childNodes.forEach(n => {
@@ -792,17 +803,21 @@ function openDocPanel(el) {
   overlay.classList.remove('hidden');
   requestAnimationFrame(() => overlay.classList.add('open'));
 
-  fetch(`/api/docs/${path}`)
+  // Choose API endpoint based on source type
+  const apiUrl = sourceType === 'web_doc' ? `/api/web-docs/${path}` : `/api/docs/${path}`;
+
+  fetch(apiUrl)
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(d => {
       document.getElementById('doc-loading').classList.add('hidden');
-      // Show "View on Acronis.com" link if doc_url available
+      // Show "View on Acronis.com" link if doc_url/page_url available
       const headerDiv = document.querySelector('#doc-panel .doc-panel-header > div');
       const existingLink = headerDiv.querySelector('.acronis-doc-link');
       if (existingLink) existingLink.remove();
-      if (d.doc_url) {
+      const docUrl = d.doc_url || d.page_url;
+      if (docUrl) {
         const link = document.createElement('a');
-        link.href = d.doc_url;
+        link.href = docUrl;
         link.target = '_blank';
         link.rel = 'noopener';
         link.className = 'acronis-doc-link flex items-center gap-1 text-[11px] text-primary hover:underline mt-1';

@@ -5,6 +5,7 @@ subsection: "Cyber Scripting"
 page_range: "463-466"
 tags: [cyber scripting, automation, scripts, PowerShell, Bash, user roles, permissions, prerequisites]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting.html"
 ---
 
 # Cyber Scripting

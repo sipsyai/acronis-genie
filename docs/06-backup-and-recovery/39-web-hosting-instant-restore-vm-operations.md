@@ -5,6 +5,7 @@ subsection: "Web hosting servers and special VM operations"
 page_range: "876-905"
 tags: [web-hosting, Plesk, cPanel, DirectAdmin, Instant-Restore, Run-as-VM, finalization, VM-replication, VMware-vSphere, failover, failback, LAN-free-backup, SAN, locally-attached-storage, virtual-machine-binding, Hyper-V-cluster, Azure-backup, EC2-backup, simultaneous-backups]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#web-hosting-servers-and-special-vm-operations-instant-restore.html"
 ---
 
 # Protecting Web Hosting Servers

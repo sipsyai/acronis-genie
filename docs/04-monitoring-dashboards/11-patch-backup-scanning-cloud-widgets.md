@@ -5,6 +5,7 @@ subsection: "Patch, backup scanning, and cloud widgets"
 page_range: "340-344"
 tags: [patch management, patch installation, backup scanning, recently affected, cloud applications, Microsoft 365, Google Workspace, widgets]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recently-affected.html"
 ---
 
 # Patch installation widgets

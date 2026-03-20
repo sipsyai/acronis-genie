@@ -5,6 +5,7 @@ subsection: "Workload management operations"
 page_range: "451-456"
 tags: [remote wipe, RMM, CyberApp, aggregated workloads, linking users, last logged-in user]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyberapp-workloads.html"
 ---
 
 # Wiping data from a managed workload

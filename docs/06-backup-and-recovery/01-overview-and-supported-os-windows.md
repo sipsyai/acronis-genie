@@ -5,6 +5,7 @@ subsection: "Supported operating systems and environments for backup and recover
 page_range: "484-486"
 tags: ["backup", "recovery", "supported-os", "Windows", "Agent-for-Windows", "Legacy", "DLP", "device-control"]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-operating-systems-and-environments.html"
 ---
 
 # Managing the backup and recovery of workloads and files

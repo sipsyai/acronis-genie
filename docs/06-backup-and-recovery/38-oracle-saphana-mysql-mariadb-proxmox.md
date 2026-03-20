@@ -5,6 +5,7 @@ subsection: "Protecting databases and Proxmox workloads"
 page_range: "867-876"
 tags: [Oracle-Database, SAP-HANA, MySQL, MariaDB, Proxmox, application-aware-backup, database-recovery, table-recovery, container-backup, Agent-for-Proxmox, stored-routines]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mysql-mariadb-data.html"
 ---
 
 # Protecting Oracle Database

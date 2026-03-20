@@ -5,6 +5,7 @@ subsection: "Creating Data Flow Policy and Policy Rules"
 page_range: "1453-1456"
 tags: [dlp, data-loss-prevention, data-flow-policy, policy-rules, observation-mode, enforcement-mode, sensitive-data]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#genai-data-loss-prevention.html"
 ---
 
 # Data Loss Prevention Overview and Data Flow Policy Creation

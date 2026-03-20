@@ -5,6 +5,7 @@ subsection: "Network management"
 page_range: "970-975"
 tags: [IP reassignment, DNS, custom DNS, local routing, MAC addresses, VPN gateway, logs, network packets, troubleshooting]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#ip-reassignment.html"
 ---
 
 # Reassigning IP addresses

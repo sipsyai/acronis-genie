@@ -5,6 +5,7 @@ subsection: "Disaster Recovery to Microsoft Azure"
 page_range: "1041-1057"
 tags: [Azure failback, agent-based failback, agentless failback, manual failback, Azure runbooks, Azure resources, soft deletion, workers, temporary agents]
 acronis_version: "26.02"
+doc_url: "https://www.acronis.com/en/support/documentation/CyberProtectionService/#azure-failback-runbooks-resources-soft-deletion.html"
 ---
 
 # Failback in Microsoft Azure
