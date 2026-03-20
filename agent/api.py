@@ -321,7 +321,7 @@ async def _direct_search(question: str) -> dict:
     async with pool.acquire() as conn:
         # Tier 1: Q&A match
         qa_row = await conn.fetchrow(
-            """SELECT question, ideal_answer, source_file, section,
+            """SELECT question, ideal_answer, source_file, section, doc_url,
                       1 - (embedding <=> $1::vector) AS similarity
                FROM qa_pairs WHERE embedding IS NOT NULL
                ORDER BY embedding <=> $1::vector LIMIT 1""",
@@ -334,12 +334,12 @@ async def _direct_search(question: str) -> dict:
                 "type": "qa_match",
                 "answer": qa_row["ideal_answer"],
                 "similarity": float(qa_row["similarity"]),
-                "sources": [{"title": title, "file": src, "score": float(qa_row["similarity"])}],
+                "sources": [{"title": title, "file": src, "score": float(qa_row["similarity"]), "doc_url": qa_row.get("doc_url")}],
             }
 
         # Tier 2: Chunk search
         rows = await conn.fetch(
-            """SELECT title, section, content, source_file,
+            """SELECT title, section, content, source_file, doc_url,
                       1 - (embedding <=> $1::vector) AS similarity
                FROM chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
             emb_str,
@@ -368,6 +368,7 @@ async def _direct_search(question: str) -> dict:
             "section": r["section"],
             "content": r["content"],
             "source_file": r["source_file"],
+            "doc_url": r.get("doc_url"),
             "cosine": float(r["similarity"]),
             "reranker": float(rr["score"]),
         })
@@ -381,7 +382,7 @@ async def _direct_search(question: str) -> dict:
     for s in top3:
         sf = s["source_file"]
         title = sf.split("/")[-1].replace(".md", "").replace("-", " ").title() if "/" in sf else sf
-        sources.append({"title": title, "file": sf, "score": s["reranker"]})
+        sources.append({"title": title, "file": sf, "score": s["reranker"], "doc_url": s.get("doc_url")})
 
     return {"type": "chunks", "sources": sources, "chunks": top3}
 
@@ -423,7 +424,7 @@ async def _embed_query(question: str) -> list[float]:
 async def _search_qa_match(conn, emb_str: str):
     """Check Q&A pairs for a high-confidence match. Returns row or None."""
     return await conn.fetchrow(
-        """SELECT question, ideal_answer, source_file, section,
+        """SELECT question, ideal_answer, source_file, section, doc_url,
                   1 - (embedding <=> $1::vector) AS similarity
            FROM qa_pairs WHERE embedding IS NOT NULL
            ORDER BY embedding <=> $1::vector LIMIT 1""",
@@ -434,7 +435,7 @@ async def _search_qa_match(conn, emb_str: str):
 async def _search_chunks(conn, emb_str: str):
     """Fetch top-10 chunk candidates by cosine similarity."""
     return await conn.fetch(
-        """SELECT title, section, content, source_file,
+        """SELECT title, section, content, source_file, doc_url,
                   1 - (embedding <=> $1::vector) AS similarity
            FROM chunks ORDER BY embedding <=> $1::vector LIMIT 10""",
         emb_str,
@@ -536,7 +537,8 @@ async def chat_stream(req: ChatRequest):
 
                 src = qa_row["source_file"] or ""
                 title = _make_source_title(src)
-                sources = [{"title": title, "file": src, "score": sim}]
+                qa_doc_url = qa_row.get("doc_url")
+                sources = [{"title": title, "file": src, "score": sim, "doc_url": qa_doc_url}]
 
                 yield _step_event("generating", "Streaming answer...", "brain", elapsed())
                 yield {"event": "message", "data": json.dumps({"type": "sources", "sources": sources})}
@@ -601,7 +603,7 @@ async def chat_stream(req: ChatRequest):
         sources = []
         for s in top3:
             sf = s["source_file"]
-            sources.append({"title": _make_source_title(sf), "file": sf, "score": s["reranker"]})
+            sources.append({"title": _make_source_title(sf), "file": sf, "score": s["reranker"], "doc_url": s.get("doc_url")})
         yield {"event": "message", "data": json.dumps({"type": "sources", "sources": sources})}
 
         # ── Step 6: Generate answer ──
@@ -623,24 +625,29 @@ async def chat_stream(req: ChatRequest):
             last_len = 0
             async with ClaudeSDKClient(options=opts) as client:
                 await client.query(rag_prompt)
-                msg_count = 0
                 async for msg in client.receive_messages():
                     if msg is None:
                         continue
-                    msg_count += 1
-                    logger.warning(f"[STREAM-DEBUG] msg#{msg_count} type={type(msg).__name__}")
                     if isinstance(msg, AssistantMessage):
                         for block in msg.content:
                             if isinstance(block, TextBlock):
                                 new_text = block.text
-                                logger.warning(f"[STREAM-DEBUG] AssistantMessage text_len={len(new_text)} last_len={last_len}")
                                 if len(new_text) > last_len:
                                     delta = new_text[last_len:]
                                     last_len = len(new_text)
-                                    yield {"event": "message", "data": json.dumps({"type": "token", "text": delta})}
+                                    # Simulate streaming: emit in small word-chunks
+                                    words = delta.split(" ")
+                                    buf = ""
+                                    for w in words:
+                                        buf += w + " "
+                                        if len(buf) >= 12:
+                                            yield {"event": "message", "data": json.dumps({"type": "token", "text": buf})}
+                                            buf = ""
+                                            await asyncio.sleep(0.02)
+                                    if buf:
+                                        yield {"event": "message", "data": json.dumps({"type": "token", "text": buf})}
                                 full_answer = new_text
                     elif isinstance(msg, ResultMessage):
-                        logger.warning(f"[STREAM-DEBUG] ResultMessage received")
                         if hasattr(msg, 'content'):
                             for block in getattr(msg, 'content', []):
                                 if isinstance(block, TextBlock) and len(block.text) > last_len:
@@ -648,7 +655,6 @@ async def chat_stream(req: ChatRequest):
                                     yield {"event": "message", "data": json.dumps({"type": "token", "text": delta})}
                                     full_answer = block.text
                         break
-                logger.warning(f"[STREAM-DEBUG] total messages: {msg_count}, answer_len={len(full_answer)}")
 
             if not full_answer:
                 full_answer = "I couldn't generate a response. Please try again."
