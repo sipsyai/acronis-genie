@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Acronis Cyber Protect Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#00a5e0",
+        "accent-green": "#4DB848",
+        "background-light": "#f8fafc",
+        "sidebar-light": "#f1f5f9",
+        "background-dark": "#0f1e23",
+      },
+      fontFamily: { "display": ["Inter", "sans-serif"] },
+    },
+  },
+}
+</script>
+<style>
+.dot-grid { background-image: radial-gradient(#e2e8f0 1px, transparent 1px); background-size: 24px 24px; }
+.typing-dot { animation: bounce 1.4s infinite ease-in-out both; }
+.typing-dot:nth-child(1) { animation-delay: -0.32s; }
+.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+@keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+.msg-enter { animation: fadeSlideUp 0.3s ease-out; }
+@keyframes fadeSlideUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+/* Markdown rendering */
+.md-content strong { font-weight: 600; color: #1e293b; }
+.dark .md-content strong { color: #f1f5f9; }
+.md-content code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: ui-monospace, monospace; font-size: 0.85em; color: #0f172a; }
+.dark .md-content code { background: #1e293b; color: #e2e8f0; }
+.md-content pre { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; overflow-x: auto; margin: 8px 0; }
+.dark .md-content pre { background: #0f172a; border-color: #334155; }
+.md-content pre code { background: none; padding: 0; font-size: 0.82em; line-height: 1.6; color: inherit; }
+.md-content ol { list-style: decimal; margin-left: 1.25rem; margin-top: 6px; margin-bottom: 6px; }
+.md-content ul { list-style: disc; margin-left: 1.25rem; margin-top: 6px; margin-bottom: 6px; }
+.md-content li { margin-bottom: 4px; padding-left: 4px; }
+.md-content h2 { font-size: 1.15em; font-weight: 700; margin-top: 12px; margin-bottom: 4px; color: #0f172a; }
+.md-content h3 { font-size: 1.05em; font-weight: 600; margin-top: 10px; margin-bottom: 4px; color: #1e293b; }
+.dark .md-content h2, .dark .md-content h3 { color: #f1f5f9; }
+.md-content p { margin-bottom: 6px; }
+.md-content a { color: #00a5e0; text-decoration: underline; text-underline-offset: 2px; }
+.md-content a:hover { color: #0284c7; }
+.md-content blockquote { border-left: 3px solid #00a5e0; padding-left: 12px; margin: 8px 0; color: #64748b; font-style: italic; }
+.md-content .source-cite { font-size: 0.85em; color: #64748b; margin-top: 10px; padding-top: 8px; border-top: 1px solid #e2e8f0; }
+.dark .md-content .source-cite { border-color: #334155; color: #94a3b8; }
+
+/* RAG pipeline steps */
+.rag-steps { border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 12px; }
+.dark .rag-steps { border-color: #334155; }
+.rag-step { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 0.8rem; color: #64748b; transition: all 0.2s ease; }
+.dark .rag-step { color: #94a3b8; }
+.rag-step .step-icon { font-size: 16px; width: 20px; text-align: center; }
+.rag-step .step-check { color: #4DB848; font-size: 14px; margin-left: auto; }
+.rag-step.active .step-message { color: #0f172a; font-weight: 500; }
+.dark .rag-step.active .step-message { color: #f1f5f9; }
+.rag-step .step-sources { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; padding-left: 28px; }
+.rag-step .step-sources span { font-size: 0.7rem; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 9999px; padding: 1px 8px; color: #475569; }
+.dark .rag-step .step-sources span { background: #1e293b; border-color: #334155; color: #94a3b8; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+.rag-step.active .pulse-indicator { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #00a5e0; margin-left: auto; animation: pulse-dot 1.2s ease-in-out infinite; }
+.rag-steps-summary { font-size: 0.78rem; color: #64748b; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 4px 0; }
+.dark .rag-steps-summary { color: #94a3b8; }
+.rag-steps-summary:hover { color: #00a5e0; }
+.rag-steps-collapsed .rag-step { display: none; }
+.rag-steps-collapsed .rag-steps-summary { display: flex; }
+</style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="flex h-screen overflow-hidden">
+
+<!-- Sidebar -->
+<aside id="sidebar" class="w-72 bg-sidebar-light dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flex flex-col">
+  <div class="p-6 flex items-center gap-3">
+    <div class="bg-primary p-1.5 rounded-lg text-white">
+      <span class="material-symbols-outlined text-2xl leading-none">shield</span>
+    </div>
+    <h1 class="text-xl font-bold tracking-tight text-slate-800 dark:text-white">Acronis</h1>
+  </div>
+  <div class="px-4 mb-6">
+    <button onclick="newChat()" class="w-full flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-primary text-primary font-semibold rounded-xl hover:bg-primary hover:text-white transition-all duration-200">
+      <span class="material-symbols-outlined text-xl">add</span>
+      <span>New Chat</span>
+    </button>
+  </div>
+  <nav class="flex-1 overflow-y-auto px-3 space-y-1">
+    <div class="px-3 mb-2">
+      <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Recent Conversations</span>
+    </div>
+    <div id="sidebar-history" class="space-y-1"></div>
+  </nav>
+  <div class="p-4 border-t border-slate-200 dark:border-slate-800">
+    <div class="flex items-center gap-3 px-2">
+      <div class="size-8 rounded-full bg-slate-300 dark:bg-slate-700 flex items-center justify-center text-xs font-bold">U</div>
+      <div class="flex flex-col">
+        <span class="text-xs font-semibold">User</span>
+        <span class="text-[10px] text-slate-500">Acronis Console</span>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Main Content -->
+<main class="flex-1 flex flex-col relative overflow-hidden bg-background-light dark:bg-background-dark dot-grid">
+  <!-- Header -->
+  <header class="h-16 bg-white dark:bg-slate-900 border-b border-primary shadow-sm flex items-center justify-between px-8 z-10">
+    <div class="flex items-center gap-3">
+      <h2 class="font-semibold text-slate-800 dark:text-white">Cyber Protect Assistant</h2>
+      <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-[10px] font-bold rounded uppercase tracking-wide">Beta</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <button onclick="toggleDarkMode()" class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+        <span id="theme-icon" class="material-symbols-outlined">dark_mode</span>
+      </button>
+      <div id="health-dot" class="size-2 rounded-full bg-green-400" title="System OK"></div>
+    </div>
+  </header>
+
+  <!-- Chat Area -->
+  <div id="chat-area" class="flex-1 overflow-y-auto p-8 space-y-8 scroll-smooth">
+    <div id="chat-messages" class="max-w-4xl mx-auto flex flex-col gap-8"></div>
+  </div>
+
+  <!-- Welcome State -->
+  <div id="welcome-state" class="flex-1 flex flex-col items-center justify-center gap-8 p-8">
+    <div class="flex flex-col items-center gap-4">
+      <div class="bg-primary/10 p-6 rounded-2xl">
+        <span class="material-symbols-outlined text-6xl text-primary">shield</span>
+      </div>
+      <h2 class="text-2xl font-bold text-slate-700 dark:text-white">How can I help you today?</h2>
+      <p class="text-sm text-slate-500">Ask me anything about Acronis Cyber Protect Cloud</p>
+    </div>
+    <div class="grid grid-cols-2 gap-4 max-w-2xl w-full">
+      <button onclick="sendSuggestion(this)" class="suggestion-card text-left p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary hover:shadow-md transition-all group">
+        <span class="material-symbols-outlined text-primary mb-2">lock</span>
+        <p class="text-sm font-medium text-slate-700 dark:text-slate-200">How do I set up two-factor authentication?</p>
+      </button>
+      <button onclick="sendSuggestion(this)" class="suggestion-card text-left p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary hover:shadow-md transition-all group">
+        <span class="material-symbols-outlined text-primary mb-2">download</span>
+        <p class="text-sm font-medium text-slate-700 dark:text-slate-200">How do I install backup agent on Windows?</p>
+      </button>
+      <button onclick="sendSuggestion(this)" class="suggestion-card text-left p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary hover:shadow-md transition-all group">
+        <span class="material-symbols-outlined text-primary mb-2">playlist_add_check</span>
+        <p class="text-sm font-medium text-slate-700 dark:text-slate-200">How do I create a protection plan?</p>
+      </button>
+      <button onclick="sendSuggestion(this)" class="suggestion-card text-left p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary hover:shadow-md transition-all group">
+        <span class="material-symbols-outlined text-primary mb-2">cloud_sync</span>
+        <p class="text-sm font-medium text-slate-700 dark:text-slate-200">How to configure disaster recovery?</p>
+      </button>
+    </div>
+  </div>
+
+  <!-- Input Area -->
+  <div class="p-6 pb-4">
+    <div class="max-w-4xl mx-auto relative">
+      <input id="chat-input" onkeydown="if(event.key==='Enter')sendMessage()"
+        class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl py-4 pl-6 pr-16 shadow-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-slate-400 text-slate-700 dark:text-slate-200"
+        placeholder="Ask about backup, recovery, security, agents..." type="text"/>
+      <button id="send-btn" onclick="sendMessage()"
+        class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white size-11 rounded-full flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all disabled:opacity-50 disabled:hover:scale-100">
+        <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+      </button>
+    </div>
+    <div class="mt-4 flex justify-center">
+      <p id="footer-text" class="text-[11px] text-slate-400 font-medium flex items-center gap-2">
+        <span>Powered by Claude + Acronis Documentation</span>
+        <span class="size-1 rounded-full bg-slate-300"></span>
+        <span id="doc-count">loading...</span>
+      </p>
+    </div>
+  </div>
+</main>
+</div>
+
+<script>
+const chatMessages = document.getElementById('chat-messages');
+const chatArea = document.getElementById('chat-area');
+const welcomeState = document.getElementById('welcome-state');
+const chatInput = document.getElementById('chat-input');
+const sendBtn = document.getElementById('send-btn');
+let isWaiting = false;
+let sessionId = null;
+
+// Step icon map
+const STEP_ICONS = {
+  search: 'search',
+  docs: 'description',
+  verified: 'verified',
+  filter: 'filter_alt',
+  check: 'check_circle',
+  brain: 'psychology',
+};
+
+// Check health on load
+fetch('/api/health').then(r=>r.json()).then(d=>{
+  document.getElementById('doc-count').textContent = d.chunks_count + ' docs indexed';
+  const dot = document.getElementById('health-dot');
+  dot.className = 'size-2 rounded-full ' + (d.gpu_embedding && d.gpu_reranker ? 'bg-green-400' : 'bg-yellow-400');
+  dot.title = `Chunks: ${d.chunks_count} | GPU Embed: ${d.gpu_embedding} | GPU Rerank: ${d.gpu_reranker}`;
+}).catch(()=>{
+  document.getElementById('doc-count').textContent = 'offline';
+  document.getElementById('health-dot').className = 'size-2 rounded-full bg-red-400';
+});
+
+function toggleDarkMode() {
+  document.documentElement.classList.toggle('dark');
+  const icon = document.getElementById('theme-icon');
+  icon.textContent = document.documentElement.classList.contains('dark') ? 'light_mode' : 'dark_mode';
+}
+
+function newChat() {
+  if (sessionId) {
+    fetch('/api/chat/new', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({session_id: sessionId})}).catch(()=>{});
+  }
+  sessionId = null;
+  chatMessages.innerHTML = '';
+  welcomeState.style.display = 'flex';
+  chatArea.style.display = 'none';
+  chatInput.focus();
+}
+
+function showChatArea() {
+  welcomeState.style.display = 'none';
+  chatArea.style.display = 'block';
+}
+
+function sendSuggestion(btn) {
+  const text = btn.querySelector('p').textContent;
+  chatInput.value = text;
+  sendMessage();
+}
+
+function addUserMessage(text) {
+  showChatArea();
+  const now = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+  const div = document.createElement('div');
+  div.className = 'flex flex-col items-end gap-2 msg-enter';
+  div.innerHTML = `
+    <div class="bg-primary text-white px-6 py-3 rounded-3xl shadow-md max-w-[80%]">
+      <p class="text-sm leading-relaxed">${escapeHtml(text)}</p>
+    </div>
+    <span class="text-[11px] text-slate-400 px-2 uppercase font-medium">${now}</span>`;
+  chatMessages.appendChild(div);
+  scrollToBottom();
+}
+
+function addTypingIndicator() {
+  const div = document.createElement('div');
+  div.id = 'typing-indicator';
+  div.className = 'flex items-start gap-4 msg-enter';
+  div.innerHTML = `
+    <div class="size-10 rounded-full bg-primary flex items-center justify-center text-white shrink-0 shadow-sm">
+      <span class="material-symbols-outlined text-xl">shield</span>
+    </div>
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-5 py-4 rounded-xl shadow-sm">
+      <div class="flex items-center gap-2">
+        <span class="text-sm text-slate-500">AI is thinking</span>
+        <div class="flex gap-1">
+          <div class="size-2 rounded-full bg-primary typing-dot"></div>
+          <div class="size-2 rounded-full bg-primary typing-dot"></div>
+          <div class="size-2 rounded-full bg-primary typing-dot"></div>
+        </div>
+      </div>
+    </div>`;
+  chatMessages.appendChild(div);
+  scrollToBottom();
+}
+
+function removeTypingIndicator() {
+  const el = document.getElementById('typing-indicator');
+  if (el) el.remove();
+}
+
+function addAgentMessage(text, sources) {
+  const now = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+  const htmlContent = markdownToHtml(text);
+
+  let sourceBadges = '';
+  if (sources && sources.length > 0) {
+    sourceBadges = '<div class="pt-4 flex flex-wrap gap-2">' +
+      sources.map(s => `
+        <div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold cursor-pointer hover:bg-accent-green/10 transition-colors" title="${escapeHtml(s.file)}">
+          <span class="material-symbols-outlined text-sm">description</span>
+          ${escapeHtml(s.title)}
+        </div>`).join('') +
+      '</div>';
+  }
+
+  const div = document.createElement('div');
+  div.className = 'flex flex-col items-start gap-2 msg-enter';
+  div.innerHTML = `
+    <div class="flex gap-4 w-full">
+      <div class="size-10 rounded-full bg-primary flex items-center justify-center text-white shrink-0 shadow-sm border border-primary/20">
+        <span class="material-symbols-outlined text-xl">shield</span>
+      </div>
+      <div class="bg-white dark:bg-slate-900 border-l-4 border-l-primary border border-slate-200 dark:border-slate-800 p-5 rounded-xl shadow-sm max-w-[85%]">
+        <div class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+          ${htmlContent}
+          ${sourceBadges}
+        </div>
+      </div>
+    </div>
+    <span class="text-[11px] text-slate-400 ml-14 uppercase font-medium">${now}</span>`;
+  chatMessages.appendChild(div);
+  scrollToBottom();
+
+  // Add to sidebar history
+  addToHistory(chatInput.dataset.lastQuestion || 'Chat');
+}
+
+function addToHistory(text) {
+  const hist = document.getElementById('sidebar-history');
+  const truncated = text.length > 28 ? text.substring(0, 28) + '...' : text;
+  // Avoid duplicates
+  if (hist.children.length > 0 && hist.children[0].textContent.includes(truncated)) return;
+  const a = document.createElement('a');
+  a.href = '#';
+  a.className = 'flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors';
+  a.innerHTML = `<span class="material-symbols-outlined text-xl text-primary">chat_bubble</span><span class="text-sm font-medium truncate">${escapeHtml(truncated)}</span>`;
+  hist.insertBefore(a, hist.firstChild);
+  if (hist.children.length > 5) hist.removeChild(hist.lastChild);
+}
+
+// ── RAG Steps helpers ──
+
+function addRagStep(stepsContainer, stepData) {
+  // Mark previous active step as completed
+  const prevActive = stepsContainer.querySelector('.rag-step.active');
+  if (prevActive) {
+    prevActive.classList.remove('active');
+    const pulse = prevActive.querySelector('.pulse-indicator');
+    if (pulse) pulse.outerHTML = '<span class="step-check material-symbols-outlined">check</span>';
+  }
+
+  const stepEl = document.createElement('div');
+  stepEl.className = 'rag-step active';
+  stepEl.dataset.step = stepData.step;
+
+  const iconName = STEP_ICONS[stepData.icon] || 'circle';
+  stepEl.innerHTML = `
+    <span class="step-icon material-symbols-outlined">${iconName}</span>
+    <span class="step-message">${escapeHtml(stepData.message)}</span>
+    <span class="pulse-indicator"></span>`;
+  stepsContainer.appendChild(stepEl);
+
+  // If step has source list, show them below
+  if (stepData.data && stepData.data.sources && stepData.data.sources.length > 0) {
+    const srcDiv = document.createElement('div');
+    srcDiv.className = 'step-sources';
+    stepData.data.sources.forEach(s => {
+      const pill = document.createElement('span');
+      pill.textContent = s;
+      srcDiv.appendChild(pill);
+    });
+    // Insert after the step line, inside the steps container
+    stepsContainer.appendChild(srcDiv);
+  }
+
+  scrollToBottom();
+}
+
+function collapseRagSteps(stepsContainer, elapsedMs, sourceCount) {
+  // Mark last active step as completed
+  const lastActive = stepsContainer.querySelector('.rag-step.active');
+  if (lastActive) {
+    lastActive.classList.remove('active');
+    const pulse = lastActive.querySelector('.pulse-indicator');
+    if (pulse) pulse.outerHTML = '<span class="step-check material-symbols-outlined">check</span>';
+  }
+
+  const seconds = (elapsedMs / 1000).toFixed(1);
+  const summary = document.createElement('div');
+  summary.className = 'rag-steps-summary';
+  summary.innerHTML = `
+    <span class="material-symbols-outlined" style="font-size:14px;color:#4DB848;">check_circle</span>
+    <span>Retrieved from ${sourceCount} source${sourceCount !== 1 ? 's' : ''} in ${seconds}s</span>
+    <span class="material-symbols-outlined" style="font-size:14px;">expand_more</span>`;
+  summary.onclick = () => {
+    stepsContainer.classList.toggle('rag-steps-collapsed');
+    const arrow = summary.querySelector('.material-symbols-outlined:last-child');
+    arrow.textContent = stepsContainer.classList.contains('rag-steps-collapsed') ? 'expand_more' : 'expand_less';
+  };
+  stepsContainer.appendChild(summary);
+
+  // Collapse after short delay
+  setTimeout(() => {
+    stepsContainer.classList.add('rag-steps-collapsed');
+  }, 800);
+}
+
+// ── Streaming send ──
+
+async function sendMessage() {
+  const text = chatInput.value.trim();
+  if (!text || isWaiting) return;
+
+  isWaiting = true;
+  sendBtn.disabled = true;
+  chatInput.dataset.lastQuestion = text;
+  chatInput.value = '';
+
+  addUserMessage(text);
+  addTypingIndicator();
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 120000);
+
+  try {
+    const resp = await fetch('/api/chat/stream', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({message: text, session_id: sessionId}),
+      signal: controller.signal,
+    });
+    clearTimeout(timeout);
+
+    const reader = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let agentBubble = null;
+    let stepsContainer = null;
+    let fullText = '';
+    let pendingSources = null;
+    let stepCount = 0;
+    let buffer = '';
+
+    while (true) {
+      const {done, value} = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, {stream: true});
+      const lines = buffer.split('\n');
+      buffer = lines.pop(); // keep incomplete line in buffer
+
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        let data;
+        try { data = JSON.parse(line.slice(6)); } catch { continue; }
+
+        if (data.type === 'session') {
+          if (data.session_id) sessionId = data.session_id;
+
+        } else if (data.type === 'step') {
+          removeTypingIndicator();
+          if (!agentBubble) {
+            agentBubble = createStreamingBubble();
+            stepsContainer = agentBubble.querySelector('.rag-steps');
+          }
+          addRagStep(stepsContainer, data);
+          stepCount++;
+
+        } else if (data.type === 'status') {
+          updateTypingText(data.text);
+
+        } else if (data.type === 'sources') {
+          pendingSources = data.sources;
+
+        } else if (data.type === 'token') {
+          removeTypingIndicator();
+          if (!agentBubble) {
+            agentBubble = createStreamingBubble();
+            stepsContainer = agentBubble.querySelector('.rag-steps');
+          }
+          fullText += data.text;
+          agentBubble.querySelector('.stream-content').innerHTML = markdownToHtml(fullText);
+          scrollToBottom();
+
+        } else if (data.type === 'done') {
+          removeTypingIndicator();
+          if (!agentBubble && !fullText) {
+            addAgentMessage('No response received.', []);
+          } else if (agentBubble) {
+            // Collapse RAG steps
+            if (stepsContainer && stepCount > 0) {
+              const srcCount = pendingSources ? pendingSources.length : 0;
+              const elMs = data.elapsed_ms || 0;
+              collapseRagSteps(stepsContainer, elMs, srcCount);
+            }
+            // Add source badges
+            if (pendingSources && pendingSources.length > 0) {
+              const badgesHtml = pendingSources.map(s =>
+                `<div class="flex items-center gap-1.5 px-3 py-1 border border-accent-green/30 bg-accent-green/5 text-accent-green rounded-full text-[11px] font-semibold" title="${escapeHtml(s.file)}">
+                  <span class="material-symbols-outlined text-sm">description</span>
+                  ${escapeHtml(s.title)}
+                </div>`
+              ).join('');
+              const badgeContainer = document.createElement('div');
+              badgeContainer.className = 'pt-4 flex flex-wrap gap-2';
+              badgeContainer.innerHTML = badgesHtml;
+              agentBubble.querySelector('.stream-content').appendChild(badgeContainer);
+            }
+            // Add timestamp
+            const now = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+            const ts = document.createElement('span');
+            ts.className = 'text-[11px] text-slate-400 ml-14 uppercase font-medium';
+            ts.textContent = now;
+            agentBubble.parentElement.appendChild(ts);
+          }
+          addToHistory(chatInput.dataset.lastQuestion || 'Chat');
+        }
+      }
+    }
+  } catch (err) {
+    clearTimeout(timeout);
+    removeTypingIndicator();
+    const errMsg = err.name === 'AbortError'
+      ? 'Request timed out. Please try again.'
+      : 'Sorry, something went wrong. Please try again.';
+    addAgentMessage(errMsg, []);
+  } finally {
+    isWaiting = false;
+    sendBtn.disabled = false;
+    chatInput.focus();
+  }
+}
+
+function createStreamingBubble() {
+  showChatArea();
+  const wrapper = document.createElement('div');
+  wrapper.className = 'flex flex-col items-start gap-2 msg-enter';
+  wrapper.innerHTML = `
+    <div class="flex gap-4 w-full">
+      <div class="size-10 rounded-full bg-primary flex items-center justify-center text-white shrink-0 shadow-sm border border-primary/20">
+        <span class="material-symbols-outlined text-xl">shield</span>
+      </div>
+      <div class="bg-white dark:bg-slate-900 border-l-4 border-l-primary border border-slate-200 dark:border-slate-800 p-5 rounded-xl shadow-sm max-w-[85%]">
+        <div class="rag-steps"></div>
+        <div class="stream-content text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></div>
+      </div>
+    </div>`;
+  chatMessages.appendChild(wrapper);
+  scrollToBottom();
+  return wrapper.querySelector('.flex.gap-4');
+}
+
+function updateTypingText(text) {
+  const el = document.getElementById('typing-indicator');
+  if (el) {
+    const label = el.querySelector('.text-sm');
+    if (label) label.textContent = text;
+  }
+}
+
+function scrollToBottom() {
+  requestAnimationFrame(() => {
+    chatArea.scrollTop = chatArea.scrollHeight;
+  });
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function markdownToHtml(md) {
+  // Preserve code blocks first (replace with placeholders)
+  const codeBlocks = [];
+  let text = md.replace(/```(\w*)\n?([\s\S]*?)```/g, (_, lang, code) => {
+    codeBlocks.push(`<pre><code>${escapeHtml(code.trim())}</code></pre>`);
+    return `\x00CB${codeBlocks.length - 1}\x00`;
+  });
+
+  // Preserve inline code
+  const inlineCodes = [];
+  text = text.replace(/`([^`]+)`/g, (_, code) => {
+    inlineCodes.push(`<code>${escapeHtml(code)}</code>`);
+    return `\x00IC${inlineCodes.length - 1}\x00`;
+  });
+
+  // Now escape the rest
+  text = escapeHtml(text);
+
+  // Restore inline codes and code blocks (they were already escaped inside)
+  text = text.replace(/\x00IC(\d+)\x00/g, (_, i) => inlineCodes[parseInt(i)]);
+  text = text.replace(/\x00CB(\d+)\x00/g, (_, i) => codeBlocks[parseInt(i)]);
+
+  // Bold **...**
+  text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+  // Headings (## and ###)
+  text = text.replace(/^#{3}\s+(.+)$/gm, '<h3>$1</h3>');
+  text = text.replace(/^#{2}\s+(.+)$/gm, '<h2>$1</h2>');
+
+  // Blockquotes > ...
+  text = text.replace(/^&gt;\s+(.+)$/gm, '<blockquote>$1</blockquote>');
+
+  // Links [text](url)
+  text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+
+  // Source citation line — style differently
+  text = text.replace(/^(\*\*Source:\*\*\s*.+)$/gm, '<div class="source-cite">$1</div>');
+
+  // Split into lines for list processing
+  const lines = text.split('\n');
+  const result = [];
+  let inOl = false, inUl = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const olMatch = line.match(/^(\d+)\.\s+(.+)$/);
+    const ulMatch = line.match(/^[-*]\s+(.+)$/);
+
+    if (olMatch) {
+      if (!inOl) { result.push('<ol>'); inOl = true; }
+      if (inUl) { result.push('</ul>'); inUl = false; }
+      result.push(`<li>${olMatch[2]}</li>`);
+    } else if (ulMatch) {
+      if (!inUl) { result.push('<ul>'); inUl = true; }
+      if (inOl) { result.push('</ol>'); inOl = false; }
+      result.push(`<li>${ulMatch[1]}</li>`);
+    } else {
+      if (inOl) { result.push('</ol>'); inOl = false; }
+      if (inUl) { result.push('</ul>'); inUl = false; }
+      // Blank line = paragraph break
+      if (line.trim() === '') {
+        result.push('</p><p>');
+      } else if (line.startsWith('<h') || line.startsWith('<pre') || line.startsWith('<blockquote') || line.startsWith('<div class="source')) {
+        result.push(line);
+      } else {
+        result.push(line + '<br>');
+      }
+    }
+  }
+  if (inOl) result.push('</ol>');
+  if (inUl) result.push('</ul>');
+
+  let html = '<p>' + result.join('\n') + '</p>';
+  // Clean up empty paragraphs
+  html = html.replace(/<p>\s*<\/p>/g, '');
+  html = html.replace(/<p>\s*<(h[23]|pre|ol|ul|blockquote|div)/g, '<$1');
+  html = html.replace(/<\/(h[23]|pre|ol|ul|blockquote|div)>\s*<\/p>/g, '</$1>');
+  html = html.replace(/<br>\s*<\/p>/g, '</p>');
+
+  return `<div class="md-content">${html}</div>`;
+}
+
+// Show welcome state on load
+chatArea.style.display = 'none';
+chatInput.focus();
+</script>
+</body></html>

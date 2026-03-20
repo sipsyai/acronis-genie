@@ -1,2 +1,8 @@
 *.pdf
 .DS_Store
+venv/
+__pycache__/
+*.pyc
+node_modules/
+.env
+.code-review-graph/
