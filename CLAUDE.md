@@ -27,3 +27,13 @@ except Exception as e:
     if "Unknown message type" not in str(e):
         raise
 ```
+
+## Code Review Graph
+
+Bu projede `code-review-graph` plugin'i aktif. Aşağıdaki durumlarda kullan:
+
+- **Refactor/büyük değişiklik öncesi:** `get_impact_radius` ile etki analizi yap — değişeceğin fonksiyonu kimin çağırdığını, nereleri etkileyeceğini gör.
+- **Commit sonrası:** `review-delta` ile blast-radius analizi çalıştır — kırılma riski olan yerleri tespit et.
+- **PR review:** `review-pr` ile yapısal bağlam içinde review yap.
+
+**Kullanma:** Basit dosya arama, explore, grep işleri için — bunlar zaten Glob/Grep/Read ile daha hızlı.
