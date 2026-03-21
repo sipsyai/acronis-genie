@@ -15,7 +15,20 @@ CREATE TABLE chunks (
     doc_url TEXT,
     created_at TIMESTAMP DEFAULT NOW()
 );
-CREATE INDEX ON chunks USING hnsw (embedding vector_cosine_ops);
+-- Note: pgvector HNSW/IVFFlat indexes max 2000 dims; Qwen3 uses 2560. Exact scan is used.
+
+-- FTS support for chunks
+ALTER TABLE chunks ADD COLUMN IF NOT EXISTS fts tsvector;
+CREATE INDEX IF NOT EXISTS idx_chunks_fts ON chunks USING gin (fts);
+CREATE OR REPLACE FUNCTION chunks_fts_update() RETURNS trigger AS $$
+BEGIN
+    NEW.fts := to_tsvector('english', COALESCE(NEW.content, ''));
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+DROP TRIGGER IF EXISTS chunks_fts_trigger ON chunks;
+CREATE TRIGGER chunks_fts_trigger BEFORE INSERT OR UPDATE ON chunks
+FOR EACH ROW EXECUTE FUNCTION chunks_fts_update();
 
 -- Chat sessions
 CREATE TABLE IF NOT EXISTS chat_sessions (
@@ -69,16 +82,30 @@ CREATE TABLE IF NOT EXISTS web_chunks (
     content TEXT NOT NULL,
     word_count INTEGER,
     category TEXT,                     -- derived from slug prefix
+    source_domain TEXT DEFAULT 'cyber_protection',  -- cyber_protection | cyber_cloud | developer | integrations | kb | youtube | blog
     embedding vector(2560),
     created_at TIMESTAMP DEFAULT NOW()
 );
--- Note: No vector index needed for <10k rows (exact scan is fast enough)
 CREATE INDEX IF NOT EXISTS idx_web_chunks_slug ON web_chunks (page_slug);
+
+-- FTS support for web_chunks
+ALTER TABLE web_chunks ADD COLUMN IF NOT EXISTS fts tsvector;
+CREATE INDEX IF NOT EXISTS idx_web_chunks_fts ON web_chunks USING gin (fts);
+CREATE OR REPLACE FUNCTION web_chunks_fts_update() RETURNS trigger AS $$
+BEGIN
+    NEW.fts := to_tsvector('english', COALESCE(NEW.content, ''));
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+DROP TRIGGER IF EXISTS web_chunks_fts_trigger ON web_chunks;
+CREATE TRIGGER web_chunks_fts_trigger BEFORE INSERT OR UPDATE ON web_chunks
+FOR EACH ROW EXECUTE FUNCTION web_chunks_fts_update();
 
 -- Resume tracking for scraper
 CREATE TABLE IF NOT EXISTS web_scrape_progress (
     page_slug TEXT PRIMARY KEY,
     page_url TEXT NOT NULL,
+    source_domain TEXT DEFAULT 'cyber_protection',  -- which doc set
     status TEXT DEFAULT 'pending',     -- pending | scraped | failed
     error_message TEXT,
     scraped_at TIMESTAMP

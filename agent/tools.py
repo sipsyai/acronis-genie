@@ -15,9 +15,7 @@ from claude_code_sdk import tool
 DB_DSN = "postgresql://acronis:acronis@localhost:5432/acronis_agent"
 EMBED_URL = "http://192.168.1.8:8011/v1/embeddings"
 EMBED_MODEL = "Qwen/Qwen3-Embedding-4B"
-RERANK_URL = "http://192.168.1.8:8012/rerank"
-COSINE_THRESHOLD = 0.30    # 0.40 → 0.30: let more candidates through for reranker
-RERANKER_THRESHOLD = 0.15  # 0.20 → 0.15: include borderline chunks
+COSINE_THRESHOLD = 0.30
 QA_MATCH_THRESHOLD = 0.80  # Calibrated for Qwen3-Embedding-4B
 RETRIEVE_K = 20
 
@@ -35,20 +33,6 @@ async def _embed_query(text: str) -> list[float]:
         resp.raise_for_status()
         return resp.json()["data"][0]["embedding"]
 
-
-async def _rerank(query: str, texts: list[str]) -> list[float]:
-    """Rerank texts against query via remote GPU server."""
-    async with httpx.AsyncClient(timeout=60.0) as client:
-        resp = await client.post(
-            RERANK_URL,
-            json={"query": query, "texts": texts},
-        )
-        resp.raise_for_status()
-        results = resp.json()
-        scores = [0.0] * len(texts)
-        for r in results:
-            scores[r["index"]] = r["score"]
-        return scores
 
 
 async def _search_qa_pairs(conn, emb_str: str) -> dict | None:
@@ -122,7 +106,7 @@ async def search_docs(args: dict) -> dict:
         web_rows = await conn.fetch(
             """SELECT id, page_title AS title, section_heading AS section,
                    content, page_slug AS source_file, page_url AS doc_url,
-                   'web_doc' AS source_type,
+                   source_domain, 'web_doc' AS source_type,
                    1 - (embedding <=> $1::vector) AS similarity
             FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT $2""",
             emb_str, RETRIEVE_K,
@@ -149,7 +133,7 @@ async def search_docs(args: dict) -> dict:
             fts_web = await conn.fetch(
                 """SELECT id, page_title AS title, section_heading AS section,
                        content, page_slug AS source_file, page_url AS doc_url,
-                       'web_doc' AS source_type,
+                       source_domain, 'web_doc' AS source_type,
                        ts_rank_cd(fts, to_tsquery('english', $1)) AS fts_rank
                 FROM web_chunks WHERE fts @@ to_tsquery('english', $1)
                 ORDER BY fts_rank DESC LIMIT $2""",
@@ -195,32 +179,26 @@ async def search_docs(args: dict) -> dict:
             }]
         }
 
-    # Rerank via GPU server
-    texts = [r["content"] for r in candidates]
-    rerank_scores = await _rerank(query_text, texts)
-
-    scored = []
-    for r, rscore in zip(candidates, rerank_scores):
-        scored.append({
-            "title": r["title"],
-            "section": r["section"],
+    # Take top results (RRF-ranked, no reranker)
+    results = []
+    for r in candidates[:top_k]:
+        results.append({
+            "title": r.get("title", ""),
+            "section": r.get("section"),
             "content": r["content"],
-            "source_file": r["source_file"],
+            "source_file": r.get("source_file", ""),
             "doc_url": r.get("doc_url"),
             "source_type": r.get("source_type", "local_doc"),
-            "cosine": float(r["similarity"]),
-            "reranker": float(rscore),
+            "cosine": float(r.get("similarity", 0)),
+            "rrf_score": float(r.get("rrf_score", 0)),
         })
-
-    scored.sort(key=lambda x: x["reranker"], reverse=True)
-    results = scored[:top_k]  # reranker only ranks, cosine already filtered
 
     if not results:
         return {
             "content": [{
                 "type": "text",
                 "text": f"No relevant documentation found for: '{query_text}' "
-                f"(no candidates passed cosine threshold {COSINE_THRESHOLD})",
+                f"(no candidates passed hybrid search filters)",
             }]
         }
 
@@ -228,7 +206,7 @@ async def search_docs(args: dict) -> dict:
     parts = ["[CHUNK SEARCH]"]
     for r in results:
         parts.append(
-            f"[Reranker: {r['reranker']:.4f} | Cosine: {r['cosine']:.2f}] {r['title']}\n"
+            f"[RRF: {r['rrf_score']:.4f} | Cosine: {r['cosine']:.2f}] {r['title']}\n"
             f"Source: {r['source_file']}\n"
             f"Doc URL: {r.get('doc_url') or 'N/A'}\n"
             f"Section: {r['section'] or 'N/A'}\n"

@@ -207,16 +207,24 @@ async def root():
 async def health():
     chunks_count = 0
     web_chunks_count = 0
+    qa_pairs_count = 0
     sessions_count = 0
     messages_count = 0
+    web_chunks_by_source = {}
     try:
         pool = await get_pool()
         async with pool.acquire() as conn:
             chunks_count = await conn.fetchval("SELECT count(*) FROM chunks")
             try:
                 web_chunks_count = await conn.fetchval("SELECT count(*) FROM web_chunks")
+                rows = await conn.fetch(
+                    "SELECT COALESCE(source_domain, 'cyber_protection') as sd, count(*) as cnt "
+                    "FROM web_chunks GROUP BY sd ORDER BY cnt DESC"
+                )
+                web_chunks_by_source = {r["sd"]: r["cnt"] for r in rows}
             except Exception:
                 pass
+            qa_pairs_count = await conn.fetchval("SELECT count(*) FROM qa_pairs")
             sessions_count = await conn.fetchval("SELECT count(*) FROM chat_sessions")
             messages_count = await conn.fetchval("SELECT count(*) FROM chat_messages")
     except Exception:
@@ -240,6 +248,8 @@ async def health():
         "status": "ok",
         "chunks_count": chunks_count,
         "web_chunks_count": web_chunks_count,
+        "web_chunks_by_source": web_chunks_by_source,
+        "qa_pairs_count": qa_pairs_count,
         "chat_sessions": sessions_count,
         "chat_messages": messages_count,
         "gpu_embedding": gpu_embed,
@@ -309,9 +319,8 @@ async def list_sessions():
 # ── Direct search (no SDK, for streaming) ──────────────────
 
 EMBED_MODEL = "Qwen/Qwen3-Embedding-4B"
-QA_MATCH_THRESHOLD = 0.95
-COSINE_THRESHOLD = 0.30    # 0.40 → 0.30: let more candidates through for reranker
-RERANKER_THRESHOLD = 0.15  # 0.20 → 0.15: include borderline chunks
+QA_MATCH_THRESHOLD = 0.80  # Aligned with tools.py — calibrated for Qwen3-Embedding-4B
+COSINE_THRESHOLD = 0.30
 
 QUERY_INSTRUCTION = "Instruct: Given a web search query, retrieve relevant passages that answer the query about Acronis Cyber Protect Cloud\nQuery: "
 
@@ -349,47 +358,29 @@ async def _direct_search(question: str) -> dict:
         # Tier 2: Hybrid search (dense + FTS with RRF)
         rows = await _search_chunks(conn, emb_str, question)
 
+    # RRF-ranked candidates — take top 3 directly (no reranker)
     candidates = [r for r in rows if float(r.get("similarity", 0)) >= COSINE_THRESHOLD or r.get("rrf_score", 0) > 0]
     if not candidates:
         return {"type": "no_results", "sources": [], "chunks": []}
 
-    # Rerank
-    texts = [r["content"][:2000] for r in candidates]
-    try:
-        async with httpx.AsyncClient(timeout=60.0) as client:
-            resp = await client.post(RERANK_URL, json={"query": question, "texts": texts})
-            resp.raise_for_status()
-            rr_results = resp.json()
-    except Exception:
-        # Fallback: use cosine order if reranker fails
-        rr_results = [{"index": i, "score": float(r["similarity"])} for i, r in enumerate(candidates)]
-
-    scored = []
-    for rr in rr_results:
-        r = candidates[rr["index"]]
-        scored.append({
-            "title": r["title"],
-            "section": r["section"],
+    top3 = []
+    for r in candidates[:3]:
+        top3.append({
+            "title": r.get("title", ""),
+            "section": r.get("section"),
             "content": r["content"],
-            "source_file": r["source_file"],
+            "source_file": r.get("source_file", ""),
             "doc_url": r.get("doc_url"),
             "source_type": r.get("source_type", "local_doc"),
-            "cosine": float(r["similarity"]),
-            "reranker": float(rr["score"]),
+            "cosine": float(r.get("similarity", 0)),
+            "rrf_score": float(r.get("rrf_score", 0)),
         })
-    scored.sort(key=lambda x: x["reranker"], reverse=True)
-    top3 = scored[:3]  # reranker only ranks, cosine already filtered
-
-    # Quality gate: if best reranker score is very low, sources are irrelevant
-    RERANKER_MIN_QUALITY = 0.08
-    if not top3 or top3[0]["reranker"] < RERANKER_MIN_QUALITY:
-        return {"type": "no_results", "sources": [], "chunks": []}
 
     sources = []
     for s in top3:
         sf = s["source_file"]
         title = sf.split("/")[-1].replace(".md", "").replace("-", " ").title() if "/" in sf else sf
-        sources.append({"title": title, "file": sf, "score": s["reranker"],
+        sources.append({"title": title, "file": sf, "score": s.get("rrf_score", s.get("cosine", 0)),
                         "doc_url": s.get("doc_url"), "source_type": s.get("source_type", "local_doc")})
 
     return {"type": "chunks", "sources": sources, "chunks": top3}
@@ -461,7 +452,7 @@ async def _search_dense(conn, emb_str: str, limit: int = 20):
     web_rows = await conn.fetch(
         """SELECT id, page_title AS title, section_heading AS section,
                   content, page_slug AS source_file, page_url AS doc_url,
-                  'web_doc' AS source_type,
+                  source_domain, 'web_doc' AS source_type,
                   1 - (embedding <=> $1::vector) AS similarity
            FROM web_chunks ORDER BY embedding <=> $1::vector LIMIT $2""",
         emb_str, limit,
@@ -491,7 +482,7 @@ async def _search_fts(conn, question: str, limit: int = 20):
     web_rows = await conn.fetch(
         """SELECT id, page_title AS title, section_heading AS section,
                   content, page_slug AS source_file, page_url AS doc_url,
-                  'web_doc' AS source_type,
+                  source_domain, 'web_doc' AS source_type,
                   ts_rank_cd(fts, to_tsquery('english', $1)) AS fts_rank
            FROM web_chunks WHERE fts @@ to_tsquery('english', $1)
            ORDER BY fts_rank DESC LIMIT $2""",
@@ -540,41 +531,7 @@ async def _search_chunks(conn, emb_str: str, question: str = ""):
     return results
 
 
-async def _rerank_candidates(question: str, candidates) -> list[dict]:
-    """Rerank candidates via GPU server. Returns scored list sorted by reranker desc."""
-    texts = [r["content"][:2000] for r in candidates]
-    try:
-        async with httpx.AsyncClient(timeout=60.0) as client:
-            resp = await client.post(RERANK_URL, json={"query": question, "texts": texts})
-            resp.raise_for_status()
-            rr_results = resp.json()
-    except Exception:
-        rr_results = [{"index": i, "score": float(r["similarity"])} for i, r in enumerate(candidates)]
-
-    scored = []
-    for rr in rr_results:
-        r = candidates[rr["index"]]
-        scored.append({
-            "title": r["title"],
-            "section": r["section"],
-            "content": r["content"],
-            "source_file": r["source_file"],
-            "doc_url": r.get("doc_url"),
-            "source_type": r.get("source_type", "local_doc"),
-            "cosine": float(r["similarity"]),
-            "reranker": float(rr["score"]),
-        })
-    scored.sort(key=lambda x: x["reranker"], reverse=True)
-
-    # Diversity filter: max 2 chunks from same source_file
-    diverse = []
-    source_count: dict[str, int] = {}
-    for s in scored:
-        sf = s["source_file"]
-        source_count[sf] = source_count.get(sf, 0) + 1
-        if source_count[sf] <= 2:
-            diverse.append(s)
-    return diverse
+## _rerank_candidates removed — RRF fusion handles ranking
 
 
 def _make_source_title(src: str) -> str:
@@ -702,39 +659,34 @@ async def chat_stream(req: ChatRequest):
             yield {"event": "message", "data": json.dumps({"type": "done", "elapsed_ms": elapsed()})}
             return
 
-        # ── Step 4: Reranking ──
-        yield _step_event("reranking", f"Reranking {len(candidates)} results...", "filter", elapsed(),
-                          details={"reranked": len(candidates)})
+        # ── Step 4: Select top 3 sources (RRF-ranked, no reranker) ──
+        top3 = []
+        for r in candidates[:3]:
+            top3.append({
+                "title": r.get("title", ""),
+                "section": r.get("section"),
+                "content": r["content"],
+                "source_file": r.get("source_file", ""),
+                "doc_url": r.get("doc_url"),
+                "source_type": r.get("source_type", "local_doc"),
+                "cosine": float(r.get("similarity", 0)),
+                "rrf_score": float(r.get("rrf_score", 0)),
+            })
 
-        scored = await _rerank_candidates(question, candidates)
-        top3 = scored[:3]  # reranker only ranks, cosine already filtered
-
-        # Quality gate: if best reranker score is very low, sources are irrelevant
-        RERANKER_MIN_QUALITY = 0.08
-        if not top3 or top3[0]["reranker"] < RERANKER_MIN_QUALITY:
-            decline = "I don't have documentation about that topic. Please check the Acronis Knowledge Base at https://kb.acronis.com or contact Acronis Support."
-            yield {"event": "message", "data": json.dumps({"type": "token", "text": decline})}
-            await db_save_message(sid, "user", question)
-            await db_save_message(sid, "assistant", decline)
-            yield {"event": "message", "data": json.dumps({"type": "done", "elapsed_ms": elapsed()})}
-            return
-
-        # ── Step 5: Sources selected ──
         source_names = [s["source_file"].split("/")[-1] for s in top3]
         source_details = [
             {"file": s["source_file"], "title": _make_source_title(s["source_file"]),
-             "score": round(s["cosine"], 4), "rerank_score": round(s["reranker"], 4)}
+             "score": round(s["cosine"], 4), "rrf_score": round(s["rrf_score"], 4)}
             for s in top3
         ]
-        top_rerank = round(top3[0]["reranker"], 4) if top3 else 0.0
         yield _step_event("sources", f"Top {len(top3)} sources selected", "check", elapsed(),
                           {"sources": source_names},
-                          details={"sources": source_details, "top_rerank_score": top_rerank})
+                          details={"sources": source_details})
 
         sources = []
         for s in top3:
             sf = s["source_file"]
-            sources.append({"title": _make_source_title(sf), "file": sf, "score": s["reranker"],
+            sources.append({"title": _make_source_title(sf), "file": sf, "score": s.get("rrf_score", s.get("cosine", 0)),
                             "doc_url": s.get("doc_url"), "source_type": s.get("source_type", "local_doc")})
         yield {"event": "message", "data": json.dumps({"type": "sources", "sources": sources})}
 
