@@ -1,0 +1,132 @@
+{
+  "total_doc_links": 55,
+  "covered": 43,
+  "gaps": 12,
+  "missing_pages": [
+    {
+      "slug": "aa-managing-inventory.html",
+      "referenced_by": [
+        {
+          "video_id": "djaWsDhksp0",
+          "video_title": "Stock Inventory Management | Acronis Advanced Automation | Acronis Cyber Protect Cloud Demo Series",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberCloud/index.html#aa-managing-inventory.html"
+        }
+      ]
+    },
+    {
+      "slug": "aa-projects.html",
+      "referenced_by": [
+        {
+          "video_id": "QibEzbNM3ZY",
+          "video_title": "Project Management | Acronis PSA | Acronis Cyber Protect Cloud Demo Series",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberCloud/index.html#aa-projects.html"
+        }
+      ]
+    },
+    {
+      "slug": "account-local-cloud-consoles.html",
+      "referenced_by": [
+        {
+          "video_id": "QEW7u8UShVo",
+          "video_title": "Acronis Cyber Protect Product Demo: Creating Acronis Account",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberProtect_16/#account-local-cloud-consoles.html"
+        }
+      ]
+    },
+    {
+      "slug": "alert-types.html",
+      "referenced_by": [
+        {
+          "video_id": "acU8tQkdMh0",
+          "video_title": "Acronis Cyber Protect Cloud Product Demo: Advanced Security + EDR - Manage Security Alerts",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/CyberProtectionService/#alert-types.html"
+        }
+      ]
+    },
+    {
+      "slug": "backup-validation-36386.html",
+      "referenced_by": [
+        {
+          "video_id": "aGd70PHpjBI",
+          "video_title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Backup Validation",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/CyberProtectionService/#backup-validation-36386.html"
+        }
+      ]
+    },
+    {
+      "slug": "editions-and-licensing.html",
+      "referenced_by": [
+        {
+          "video_id": "fKwnJEIG-HY",
+          "video_title": "Acronis Cyber Protect Product Demo: Starting a Trial",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberProtect_16/#editions-and-licensing.html"
+        }
+      ]
+    },
+    {
+      "slug": "management-server-for-on-premises-deployment-only.html",
+      "referenced_by": [
+        {
+          "video_id": "hVZPOeekmwc",
+          "video_title": "Acronis Cyber Protect Product Demo: Management Servers – On-Premises Management Server Deployment",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberProtect_16/#management-server-for-on-premises-deployment-only.html"
+        }
+      ]
+    },
+    {
+      "slug": "managing-licenses.html",
+      "referenced_by": [
+        {
+          "video_id": "P8k2d8e2dxY",
+          "video_title": "Acronis Cyber Protect Product Demo: License Registration and Renewal",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberProtect_16/#managing-licenses.html"
+        },
+        {
+          "video_id": "YD0FD9gAXuM",
+          "video_title": "Acronis Cyber Protect Product Demo: License Management and Activation",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberProtect_16/#managing-licenses.html"
+        }
+      ]
+    },
+    {
+      "slug": "monitoring-and-reporting.html",
+      "referenced_by": [
+        {
+          "video_id": "RImmjO-PEaQ",
+          "video_title": "Acronis Cyber Protect Product Demo: Dashboards, Activities and Reporting Overview",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberProtect_16/#monitoring-and-reporting.html"
+        }
+      ]
+    },
+    {
+      "slug": "moving-tenant-to-another-tenant.html",
+      "referenced_by": [
+        {
+          "video_id": "18DPRlhO6tI",
+          "video_title": "Acronis Cyber Protect Cloud: Tip 6 - How to Move a Tenant",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberCloud/#moving-tenant-to-another-tenant.html"
+        }
+      ]
+    },
+    {
+      "slug": "notarized-files-intro.html",
+      "referenced_by": [
+        {
+          "video_id": "iGiDbp86Fnw",
+          "video_title": "Acronis Cyber Protect Cloud Product Demo: Advanced File Sync & Share: Notarizing Files",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/FilesCloudUser/#notarized-files-intro.html"
+        }
+      ]
+    },
+    {
+      "slug": "working-with-the-centralized-dashboard.html",
+      "referenced_by": [
+        {
+          "video_id": "RImmjO-PEaQ",
+          "video_title": "Acronis Cyber Protect Product Demo: Dashboards, Activities and Reporting Overview",
+          "full_url": "https://www.acronis.com/en-us/support/documentation/AcronisCyberProtect_16/#working-with-the-centralized-dashboard.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "page": "index.html",
+    "title": "Management Portal",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#index.html"
+  },
+  {
+    "page": "introduction.html",
+    "title": "Introduction",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#introduction.html"
+  },
+  {
+    "page": "accessing-management-portal.html",
+    "title": "Accessing Management Portal",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#accessing-management-portal.html"
+  },
+  {
+    "page": "navigation-in-management-portal.html",
+    "title": "Navigation in Management Portal",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#navigation-in-management-portal.html"
+  },
+  {
+    "page": "licensing.html",
+    "title": "Licensing, Offering Items, and Services",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#licensing.html"
+  },
+  {
+    "page": "activating-administrator-account.html",
+    "title": "Activating the administrator account",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#activating-administrator-account.html"
+  },
+  {
+    "page": "limiting-access-to-web-interface.html",
+    "title": "Limiting access to the web interface",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#limiting-access-to-web-interface.html"
+  },
+  {
+    "page": "company-profile-wizard.html",
+    "title": "Configuring contacts in the Company profile wizard",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#company-profile-wizard.html"
+  },
+  {
+    "page": "user-accounts-and-tenants.html",
+    "title": "User accounts and tenants",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#user-accounts-and-tenants.html"
+  },
+  {
+    "page": "2fa.html",
+    "title": "Two-factor authentication",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#2fa.html"
+  },
+  {
+    "page": "configuring-upsell-scenarios-for-your-customers.html",
+    "title": "Configuring upsell scenarios for your customers",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#configuring-upsell-scenarios-for-your-customers.html"
+  },
+  {
+    "page": "configuring-branding.html",
+    "title": "Configuring branding and white labeling",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#configuring-branding.html"
+  },
+  {
+    "page": "company-profile.html",
+    "title": "Editing your Company profile",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#company-profile.html"
+  },
+  {
+    "page": "configuring-custom-urls.html",
+    "title": "Configuring custom web interface URLs",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#configuring-custom-urls.html"
+  },
+  {
+    "page": "agents-auto-update.html",
+    "title": "Configuring the updates of the Cyber Protection agent",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#agents-auto-update.html"
+  },
+  {
+    "page": "managing-locations-and-storage.html",
+    "title": "Managing locations and storage",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#managing-locations-and-storage.html"
+  },
+  {
+    "page": "usage-and-ops-monitoring.html",
+    "title": "Monitoring",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#usage-and-ops-monitoring.html"
+  },
+  {
+    "page": "reporting.html",
+    "title": "Reports",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#reporting.html"
+  },
+  {
+    "page": "estimate-costs-with-calculator.html",
+    "title": "Estimating Cyber Protect Cloud costs with the calculator",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#estimate-costs-with-calculator.html"
+  },
+  {
+    "page": "copilot.html",
+    "title": "Copilot",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#copilot.html"
+  },
+  {
+    "page": "psa-introduction.html",
+    "title": "PSA",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#psa-introduction.html"
+  },
+  {
+    "page": "integrations-partners.html",
+    "title": "Integrations",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#integrations-partners.html"
+  },
+  {
+    "page": "integration-vmware-cloud-director.html",
+    "title": "Integrating Cyber Protect Cloud with VMware Cloud Director",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#integration-vmware-cloud-director.html"
+  },
+  {
+    "page": "using-partner-portal.html",
+    "title": "Using the partner portal",
+    "url": "https://www.acronis.com/en/support/documentation/AcronisCyberCloud/#using-partner-portal.html"
+  }
+]

@@ -1,0 +1,746 @@
+{
+  "timestamp": "2026-03-22T11:13:38.200188",
+  "api_url": "http://localhost:8080/api/chat/stream",
+  "test_type": "msp_partner",
+  "status": "in_progress",
+  "progress": "13/50",
+  "duration_seconds": 40.3,
+  "summary": {
+    "total": 13,
+    "passed": 13,
+    "failed": 0,
+    "rejected": 0,
+    "avg_ms": 3096
+  },
+  "category_breakdown": {
+    "partner-onboarding": {
+      "total": 10,
+      "passed": 10
+    },
+    "billing": {
+      "total": 3,
+      "passed": 3
+    }
+  },
+  "results": [
+    {
+      "id": "M01",
+      "question": "How do I sign up as an Acronis MSP partner?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 607,
+      "elapsed_ms": 598,
+      "answer_preview": "To join the Acronis Partner Program for Service Providers, visit acronis.com/partners/service-providers. The program has no entry fee or minimum requirement to join. You start at the **Registered** ti...",
+      "full_answer": "To join the Acronis Partner Program for Service Providers, visit acronis.com/partners/service-providers. The program has no entry fee or minimum requirement to join. You start at the **Registered** tier with immediate access to flexible pricing, promotions, training, and world-class solutions. As you grow, you can advance through **Authorized**, **Gold**, and **Platinum** tiers, each offering increased benefits like dedicated account managers, NFR licenses, performance rebates, and MDF (Marketing Development Funds). \n\n**Source:** `web_scrape:acronis.com/partners/service-providers`",
+      "sources": [
+        {
+          "title": "Service Providers",
+          "file": "web_scrape:acronis.com/partners/service-providers",
+          "score": 1.0,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=587"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "607ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=587"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M02",
+      "question": "What are the different Acronis partner tiers and how do I qualify?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 752,
+      "elapsed_ms": 741,
+      "answer_preview": "Acronis offers four partner tiers:  1. **Registered** — Entry level. Immediate access to pricing, promotions, training, and solutions. 2. **Authorized** — Adds marketing automation tools, a dedicated ...",
+      "full_answer": "Acronis offers four partner tiers:\n\n1. **Registered** — Entry level. Immediate access to pricing, promotions, training, and solutions.\n2. **Authorized** — Adds marketing automation tools, a dedicated partner account manager, and NFR (Not For Resale) license.\n3. **Gold** — Adds increased margins through performance rebates, access to the MDF (Marketing Development Funds) Program, and #TeamUp sports benefits.\n4. **Platinum** — Top tier with white-glove service, robust discounts, enhanced support, and a dedicated team.\n\nPartners must meet minimum certification requirements through the Acronis Academy. Annual partnership reviews assess activity and qualification for tier advancement. \n\n**Source:** `web_scrape:acronis.com/partners/service-providers`",
+      "sources": [
+        {
+          "title": "Service Providers",
+          "file": "web_scrape:acronis.com/partners/service-providers",
+          "score": 1.0,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=754"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "752ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=754"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M03",
+      "question": "How do I create a new customer tenant under my partner account?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 986,
+      "elapsed_ms": 975,
+      "answer_preview": "To create a customer tenant in Acronis Cyber Protect Cloud:  1. Navigate to the **Management Portal** and click **New** > **Customer**. 2. Enter the tenant **name** (must be unique within your hierarc...",
+      "full_answer": "To create a customer tenant in Acronis Cyber Protect Cloud:\n\n1. Navigate to the **Management Portal** and click **New** > **Customer**.\n2. Enter the tenant **name** (must be unique within your hierarchy).\n3. Choose the **operation mode**: Trial (30-day evaluation) or Production (permanent, billing active).\n4. Set the **management mode**: 'Managed by service provider' (default, full access) or 'Managed by customer' (limited access).\n5. Optionally enable **Enhanced Security** (enforces encrypted-only backups — irreversible).\n6. Configure **Two-Factor Authentication** (mandatory for partner tenants, optional for customers).\n7. Set up an **administrator account** with email address (serves as login).\n8. Select which **services and licenses** to enable (all or customize).\n\nThe tenant is created immediately and the administrator receives an activation email.\n\n**Via API:** POST `/api/2/tenants` with `kind: 'customer'`, `parent_id: '<your_partner_tenant_id>'`. The tenant is created in trial billing mode by default. \n\n**Source:** `web_scrape:AcronisCyberCloud/tenant-create.html + developer.acronis.com`",
+      "sources": [
+        {
+          "title": "Tenant Create.Html + Developer.Acronis.Com",
+          "file": "web_scrape:AcronisCyberCloud/tenant-create.html + developer.acronis.com",
+          "score": 1.0,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1110"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "986ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=1110"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M04",
+      "question": "Can I set up a trial account for a prospective client?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 570,
+      "elapsed_ms": 560,
+      "answer_preview": "Yes. When creating a customer tenant, select **Trial** as the operation mode. Trial tenants have:  - **30-day** full product evaluation period - Access to all enabled services and features - No billin...",
+      "full_answer": "Yes. When creating a customer tenant, select **Trial** as the operation mode. Trial tenants have:\n\n- **30-day** full product evaluation period\n- Access to all enabled services and features\n- No billing during the trial period\n\n**Important:** After 30 days, the trial automatically converts to **Production** mode (billing starts). To prevent this, you must **delete the customer tenant** before the trial expires. Switching from Trial to Production is **permanent and cannot be reversed**. \n\n**Source:** `web_scrape:AcronisCyberCloud/tenant-create.html`",
+      "sources": [
+        {
+          "title": "Tenant Create.Html",
+          "file": "web_scrape:AcronisCyberCloud/tenant-create.html",
+          "score": 0.9999985694882696,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=553"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "570ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=553"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M05",
+      "question": "How do I configure white-labeling for my MSP brand in the Acronis console?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 1334,
+      "elapsed_ms": 1330,
+      "answer_preview": "To configure white-labeling in Acronis Cyber Protect Cloud:  1. Go to **Settings** > **Branding** in the Management Portal. 2. Customize the following:    - **Service Name** — used in emails, welcome ...",
+      "full_answer": "To configure white-labeling in Acronis Cyber Protect Cloud:\n\n1. Go to **Settings** > **Branding** in the Management Portal.\n2. Customize the following:\n   - **Service Name** — used in emails, welcome screens, and browser tabs\n   - **Web Console Logo** — displayed across Management Portal and services\n   - **Favicon** — shown in browser tabs (requires custom URL)\n   - **Color Scheme** — customizable UI colors with preview\n3. For **agent branding** (requires agent version 15.0.28816+):\n   - Custom installer filename\n   - Custom logo in Setup wizard\n   - Custom agent name during installation\n   - Custom tray monitor window name\n4. Set custom URLs for: home page, support contact, phone number, knowledge base, admin guides.\n5. Configure custom **legal documents**: EULA URL, platform terms, privacy statements.\n6. Optionally set a custom **\"Buy now\" page URL** for upselling.\n7. Configure custom **SMTP email server** with SSL/TLS.\n\nEnabling the **White-labeling** toggle clears all branding items (except Service name, EULA, admin guides, and email settings) and applies your custom branding to all child partners and customers across Windows, macOS, and Linux agents. \n\n**Source:** `web_scrape:AcronisCyberCloud/configuring-branding.html`",
+      "sources": [
+        {
+          "title": "Configuring Branding.Html",
+          "file": "web_scrape:AcronisCyberCloud/configuring-branding.html",
+          "score": 0.9999988377095419,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1245"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "1334ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=1245"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M06",
+      "question": "What is the partner portal and how do I access it?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 903,
+      "elapsed_ms": 899,
+      "answer_preview": "The Acronis **Management Portal** (also called Partner Portal) is the central web console for MSP partners to manage their entire Acronis Cyber Protect Cloud business. Access it by logging in at your ...",
+      "full_answer": "The Acronis **Management Portal** (also called Partner Portal) is the central web console for MSP partners to manage their entire Acronis Cyber Protect Cloud business. Access it by logging in at your data center URL (e.g., `https://cloud.acronis.com`). From the portal you can:\n\n- Create and manage customer and partner tenants\n- Configure protection plans and quotas\n- Monitor backup status across all clients\n- Access sales and marketing materials\n- View usage reports and billing information\n- Configure branding and white-labeling\n- Manage user roles and permissions\n\nThe portal also provides access to the **Acronis Academy** for training and certification, and the **Partner Portal** section with campaigns, pricing guides, demos, and co-marketing materials. \n\n**Source:** `web_scrape:acronis.com/partners/service-providers + AcronisCyberCloud docs`",
+      "sources": [
+        {
+          "title": "Service Providers + Acroniscybercloud Docs",
+          "file": "web_scrape:acronis.com/partners/service-providers + AcronisCyberCloud docs",
+          "score": 0.9999988675118185,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=855"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "903ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=855"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M07",
+      "question": "How do I migrate an existing client from another backup vendor to Acronis?",
+      "category": "partner-onboarding",
+      "source_type": "local_doc",
+      "wall_ms": 12268,
+      "elapsed_ms": 12262,
+      "answer_preview": "The provided documentation context does **not** cover migration from another backup vendor to Acronis Cyber Protect Cloud. The retrieved chunks address:  1. **Backup storage** operations (archive nami...",
+      "full_answer": "The provided documentation context does **not** cover migration from another backup vendor to Acronis Cyber Protect Cloud. The retrieved chunks address:\n\n1. **Backup storage** operations (archive naming, orphaned backups, access control)\n2. **Web hosting server** protection and **Instant Restore** (Run as VM)\n3. **Bottleneck detection** during backup/recovery activities\n\nNone of these sections describe a vendor migration workflow, import of third-party backup formats, or a transition guide.\n\nFor migration guidance, you would likely need to consult:\n- Acronis migration-specific documentation or knowledge base articles\n- Your Acronis service provider or partner portal\n- Acronis Support directly\n\nI cannot provide migration steps without the relevant documentation — doing so would risk giving inaccurate information.\n\n**Source:** `06-backup-and-recovery/30-backup-storage-operations.md`, `06-backup-and-recovery/39-web-hosting-instant-restore-vm-operations.md`, `06-backup-and-recovery/31-bottleneck-detection-public-cloud-backups.md` ",
+      "sources": [
+        {
+          "title": "30 Backup Storage Operations",
+          "file": "06-backup-and-recovery/30-backup-storage-operations.md",
+          "score": 0.02790262172284644,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-storage-tab.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "39 Web Hosting Instant Restore Vm Operations",
+          "file": "06-backup-and-recovery/39-web-hosting-instant-restore-vm-operations.md",
+          "score": 0.02565359477124183,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#web-hosting-servers-and-special-vm-operations-instant-restore.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "31 Bottleneck Detection Public Cloud Backups",
+          "file": "06-backup-and-recovery/31-bottleneck-detection-public-cloud-backups.md",
+          "score": 0.024610822831727205,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-workloads-public-clouds.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1042"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "12268ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=3"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=1042"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M08",
+      "question": "Can I delegate admin access to my technicians for specific tenants?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 976,
+      "elapsed_ms": 971,
+      "answer_preview": "Yes. Acronis supports granular role-based access control:  1. **Management modes** control access levels:    - **Full access** (default for partner tenants): Parent administrators can manage quotas, u...",
+      "full_answer": "Yes. Acronis supports granular role-based access control:\n\n1. **Management modes** control access levels:\n   - **Full access** (default for partner tenants): Parent administrators can manage quotas, users, properties, access customers, and view usage reports.\n   - **Limited access**: Parent administrators can only modify properties/quotas and view reports — cannot manage tenants, users, services, or backups.\n\n2. For **customer tenants**:\n   - **Managed by service provider** (default): Full access including backups and resources.\n   - **Managed by customer**: Parent can only modify properties; no access to internal resources.\n\n3. You can create user accounts with specific roles per tenant. Roles include billing, technical, and business contacts. Users can hold multiple roles.\n\n4. Only child tenant administrators can change management modes via **Settings > Security > Support access** switch. \n\n**Source:** `web_scrape:AcronisCyberCloud/tenant-create.html`",
+      "sources": [
+        {
+          "title": "Tenant Create.Html",
+          "file": "web_scrape:AcronisCyberCloud/tenant-create.html",
+          "score": 0.9999985098839854,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=967"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "976ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=967"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M09",
+      "question": "How do I set up multi-factor authentication for my partner account?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 742,
+      "elapsed_ms": 738,
+      "answer_preview": "Two-Factor Authentication (2FA) in Acronis Cyber Protect Cloud:  - **Mandatory and enabled by default** for all Partner tenants in production mode. - **Optional** for Customer tenants (disabled by def...",
+      "full_answer": "Two-Factor Authentication (2FA) in Acronis Cyber Protect Cloud:\n\n- **Mandatory and enabled by default** for all Partner tenants in production mode.\n- **Optional** for Customer tenants (disabled by default).\n- Users must configure a TOTP (Time-based One-Time Password) authentication application (such as Google Authenticator).\n\nTo enable 2FA for a customer tenant:\n1. Go to tenant **Settings** > **Security**.\n2. Toggle **Two-Factor Authentication** to enabled.\n3. All users in that tenant will be required to set up 2FA on their next login.\n\n**Via API:** `PUT /api/2/tenants/{tenant_id}/mfa/status` with body `{\"enabled\": true}`. When enabled, all user accounts in the tenant will be required to set up two-factor authentication. \n\n**Source:** `web_scrape:AcronisCyberCloud/tenant-create.html + developer.acronis.com`",
+      "sources": [
+        {
+          "title": "Tenant Create.Html + Developer.Acronis.Com",
+          "file": "web_scrape:AcronisCyberCloud/tenant-create.html + developer.acronis.com",
+          "score": 0.9999988079071773,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=818"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "742ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=818"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M10",
+      "question": "What training and certification programs does Acronis offer for MSP partners?",
+      "category": "partner-onboarding",
+      "source_type": "qa_match",
+      "wall_ms": 518,
+      "elapsed_ms": 515,
+      "answer_preview": "Acronis provides training through the **Acronis Academy**, which offers:  - **Training sessions** and hands-on labs - **Certification programs** (essential for maintaining compliance with the Acronis ...",
+      "full_answer": "Acronis provides training through the **Acronis Academy**, which offers:\n\n- **Training sessions** and hands-on labs\n- **Certification programs** (essential for maintaining compliance with the Acronis Partner Program)\n- **Webinars** and virtual conferences\n- **Free security training modules** for MSP partners\n\nCertifications are required for tier qualification and advancement. Partners must meet minimum certification requirements, which are reviewed annually. The training covers Acronis Cyber Protect Cloud deployment, management, and sales/marketing best practices. \n\n**Source:** `web_scrape:acronis.com/partners/service-providers`",
+      "sources": [
+        {
+          "title": "Service Providers",
+          "file": "web_scrape:acronis.com/partners/service-providers",
+          "score": 0.9999988377092577,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=636"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "518ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=636"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M11",
+      "question": "How does the pay-as-you-go billing model work for MSP partners?",
+      "category": "billing",
+      "source_type": "qa_match",
+      "wall_ms": 749,
+      "elapsed_ms": 747,
+      "answer_preview": "Acronis Cyber Protect Cloud uses a **consumption-based (pay-as-you-go)** billing model:  - You are billed based on actual usage across your customer tenants. - Billing is calculated per billing cycle ...",
+      "full_answer": "Acronis Cyber Protect Cloud uses a **consumption-based (pay-as-you-go)** billing model:\n\n- You are billed based on actual usage across your customer tenants.\n- Billing is calculated per billing cycle based on workload counts and storage consumption.\n- When a customer tenant switches from **Trial** to **Production** mode, billing inclusion starts in the nearest billing cycle.\n- You can set **storage quotas** per tenant to control costs.\n- Usage reports are available in the Management Portal for per-client cost tracking.\n\nThis model allows MSPs to start small with no minimum commitment and scale up as they add clients, paying only for what is consumed. \n\n**Source:** `web_scrape:AcronisCyberCloud/tenant-create.html + acronis.com/products/cloud`",
+      "sources": [
+        {
+          "title": "Cloud",
+          "file": "web_scrape:AcronisCyberCloud/tenant-create.html + acronis.com/products/cloud",
+          "score": 0.9999992251395735,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=751"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "749ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=751"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M12",
+      "question": "Can I set my own pricing for clients and control my margins?",
+      "category": "billing",
+      "source_type": "qa_match",
+      "wall_ms": 826,
+      "elapsed_ms": 823,
+      "answer_preview": "Yes. Acronis partner program is designed for MSPs to set their own pricing:  - You purchase Acronis services at partner pricing (which varies by tier — Registered, Authorized, Gold, Platinum). - **Gol...",
+      "full_answer": "Yes. Acronis partner program is designed for MSPs to set their own pricing:\n\n- You purchase Acronis services at partner pricing (which varies by tier — Registered, Authorized, Gold, Platinum).\n- **Gold** and **Platinum** tiers offer increased margins through **performance rebates**.\n- You set your own retail prices for end customers — Acronis does not dictate client pricing.\n- You can configure a custom **\"Buy now\" page URL** in branding settings to direct clients to your pricing page.\n- **Marketing Development Funds (MDF)** are available at Gold+ tiers for joint marketing initiatives.\n\nYour margin is the difference between your partner cost and the price you charge clients. Higher tiers provide deeper discounts, increasing your margins. \n\n**Source:** `web_scrape:acronis.com/partners/service-providers + AcronisCyberCloud/configuring-branding.html`",
+      "sources": [
+        {
+          "title": "Configuring Branding.Html",
+          "file": "web_scrape:acronis.com/partners/service-providers + AcronisCyberCloud/configuring-branding.html",
+          "score": 0.9999989271167298,
+          "doc_url": null,
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=859"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "826ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=1"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=859"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    },
+    {
+      "id": "M13",
+      "question": "How do I view and download my monthly usage reports for billing?",
+      "category": "billing",
+      "source_type": "local_doc",
+      "wall_ms": 19013,
+      "elapsed_ms": 19005,
+      "answer_preview": "# Viewing and Downloading Monthly Usage Reports for Billing  Based on the documentation, there are two approaches for accessing usage reports:  ---  ## Dashboard Reports (UI)  You can access reports t...",
+      "full_answer": "# Viewing and Downloading Monthly Usage Reports for Billing\n\nBased on the documentation, there are two approaches for accessing usage reports:\n\n---\n\n## Dashboard Reports (UI)\n\nYou can access reports through the **Reports** section in the monitoring dashboard:\n\n1. Use **default reports** or create a **custom report** with any set of dashboard widgets\n2. **Download** a report or **send it via email** in either **XLSX (Excel)** or **PDF** format\n3. For historical widgets, you can change the **time range** in the report settings\n\n> **Note:** The availability of this feature depends on the **service quotas** enabled for your account.\n\n---\n\n## Usage Reports via API\n\nFor billing-specific usage reports, the platform provides the `/reports` endpoint with several **report kinds**:\n\n| Report Kind | Description |\n|---|---|\n| **`usage_daily`** | Service usage metrics for **each day** of the specified period |\n| **`usage_summary`** | Service usage metrics for the **end of the period**, plus the difference between start and end |\n| **`usage_current`** | Current service usage metrics for the **previous day**, calculated within each child tenant's billing period |\n| **`usage_breakdown`** | Service usage metrics and their **changes for each day** of the specified period |\n\n### Available Report Formats\n\n| Format | Description |\n|---|---|\n| `csv` | Table-formatted CSV |\n| `html` | HTML format |\n| `json_v1` | API v1 compatible JSON |\n| `csv_v2_0` | CSV v2 format |\n| `json_v2_0` | API v2 compatible JSON |\n\n### Report Levels (scope of included tenants)\n\n| Level | Includes |\n|---|---|\n| `direct_partners` | Direct customers and partners |\n| `all_partners` | All partners |\n| `all_customers` | All customers and partners |\n| `accounts` | All customers and partners (including user account details) |\n\n### Scheduling\n\nReports can be scheduled as **`once`** (generated on a specific date) or **`monthly`** (generated at the end of each month).\n\n### Important Notes\n- **Storage units** in reports use **binary gigabytes (GB)** = 1024³ bytes (gibibytes/GiB)\n- Report period **must not be in the future**\n- If a tenant was renamed, the report will contain the **latest name** within the provided period\n\n---\n\n**Source:** `04-monitoring-dashboards/16-reports.md`, `outbound__apis__api-library__account__usage-reporting__reports__index.html` ",
+      "sources": [
+        {
+          "title": "16 Reports",
+          "file": "04-monitoring-dashboards/16-reports.md",
+          "score": 0.03,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#reports.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "outbound__apis__api-library__account__usage-reporting__reports__index.html",
+          "file": "outbound__apis__api-library__account__usage-reporting__reports__index.html",
+          "score": 0.028373015873015873,
+          "doc_url": "",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "19 Disaster Recovery Dashboard",
+          "file": "07-disaster-recovery/19-disaster-recovery-dashboard.md",
+          "score": 0.02681010928961749,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disaster-recovery-dashboard.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2337"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "19013ms"
+        },
+        "not_rejected": {
+          "pass": true,
+          "detail": "answer accepted"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=3"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=2337"
+        }
+      },
+      "all_pass": true,
+      "was_rejected": false,
+      "error": null
+    }
+  ]
+}

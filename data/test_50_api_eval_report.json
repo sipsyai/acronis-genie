@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-03-22T11:13:44.615167",
+  "api_url": "http://localhost:8080/api/chat/stream",
+  "status": "in_progress",
+  "progress": "3/50",
+  "duration_seconds": 46.0,
+  "summary": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "avg_ms": 15333
+  },
+  "category_breakdown": {
+    "authentication": {
+      "total": 3,
+      "passed": 3
+    }
+  },
+  "results": [
+    {
+      "id": "Q01",
+      "question": "How do I authenticate with the Acronis Cyber Protect Cloud API using OAuth 2.0?",
+      "category": "authentication",
+      "source_type": "local_doc",
+      "wall_ms": 12249,
+      "elapsed_ms": 12242,
+      "answer_preview": "The provided documentation context does not cover **OAuth 2.0 authentication** or **API authentication** for Acronis Cyber Protect Cloud. The retrieved chunks relate to:  1. **Service quota and protec...",
+      "full_answer": "The provided documentation context does not cover **OAuth 2.0 authentication** or **API authentication** for Acronis Cyber Protect Cloud. The retrieved chunks relate to:\n\n1. **Service quota and protection settings** — how workload quotas are assigned\n2. **Cyber Protect console** — UI navigation and workload management\n3. **Disaster Recovery overview** — DRaaS features and requirements\n\nNone of these contain information about API endpoints, OAuth 2.0 client credentials, token requests, or authentication flows.\n\nTo find this information, you would typically need documentation from sections covering:\n- **Acronis Cyber Platform API** or **Developer Guide**\n- **API authentication and authorization**\n- **Client ID / Client Secret creation** in the Management Portal\n\nI cannot provide specific OAuth 2.0 steps, token URLs, or API call syntax because doing so would risk fabricating details not present in the source material.\n\n**Source:** No matching documentation available in the retrieved context. ",
+      "sources": [
+        {
+          "title": "33 Service Quota Protection Settings",
+          "file": "02-installing-deploying-agents/33-service-quota-protection-settings.md",
+          "score": 0.026494565217391304,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protection-settings.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "01 Cyber Protect Console",
+          "file": "05-managing-workloads/01-cyber-protect-console.md",
+          "score": 0.026419626007891578,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#service-console.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "01 Dr Overview Requirements",
+          "file": "07-disaster-recovery/01-dr-overview-requirements.md",
+          "score": 0.02625745950554135,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1004"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "12249ms"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=3"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=1004"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "Q02",
+      "question": "How do I generate an API key for accessing the Acronis management API?",
+      "category": "authentication",
+      "source_type": "web_doc",
+      "wall_ms": 17022,
+      "elapsed_ms": 17016,
+      "answer_preview": "The provided documentation context does **not** cover the specific steps for generating an API key for accessing the Acronis management API. The chunks I have describe the **API library overview** and...",
+      "full_answer": "The provided documentation context does **not** cover the specific steps for generating an API key for accessing the Acronis management API. The chunks I have describe the **API library overview** and the **Cyber Protect console** at a high level, but do not include the authentication or API key generation procedures.\n\nBased on what **is** available, the relevant APIs are documented under:\n\n- **Account Management API** — has both a Guide and Reference document\n- **Integration Management API** — has a Guide for activating/deactivating integrations\n\nAPI key generation and authentication details would typically be found in the **Account Management API Guide** or a dedicated authentication/authorization section on the Acronis Developer Portal.\n\n**What I'd recommend:**\n1. Visit the **Acronis Developer Portal** at `https://developer.acronis.com`\n2. Look for the **Account Management API Guide**, which is most likely to contain API client creation and API key/token generation steps\n3. Acronis APIs typically use **OAuth 2.0 client credentials** — you would create an **API client** in the Management Portal, receive a **Client ID** and **Client Secret**, and then exchange those for a **Bearer token**\n\n> ⚠️ However, I cannot confirm the exact steps or CLI/UI paths because that specific content was **not included** in the retrieved documentation.\n\n**Source:** `outbound__apis__index.html`, `outbound__apis__api-library__index.html` ",
+      "sources": [
+        {
+          "title": "outbound__apis__index.html",
+          "file": "outbound__apis__index.html",
+          "score": 0.028068137824235385,
+          "doc_url": "",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "outbound__apis__api-library__index.html",
+          "file": "outbound__apis__api-library__index.html",
+          "score": 0.027651515151515153,
+          "doc_url": "",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "01 Cyber Protect Console",
+          "file": "05-managing-workloads/01-cyber-protect-console.md",
+          "score": 0.02719970792259949,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#service-console.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1441"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "17022ms"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=3"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=1441"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "Q03",
+      "question": "What is the JWT token structure used by the Acronis API and how do I decode it?",
+      "category": "authentication",
+      "source_type": "web_doc",
+      "wall_ms": 16729,
+      "elapsed_ms": 16718,
+      "answer_preview": "## JWT Token Structure in Acronis API  The provided documentation **does not cover the internal JWT token structure** or how to decode it. Here's what the documentation *does* include:  ### What's Doc...",
+      "full_answer": "## JWT Token Structure in Acronis API\n\nThe provided documentation **does not cover the internal JWT token structure** or how to decode it. Here's what the documentation *does* include:\n\n### What's Documented: Obtaining an Access Token\n\nThe authentication flow uses the **`/idp/token`** endpoint with **OAuth 2.0 client credentials** grant:\n\n1. **Register an API client** in your tenant via the Acronis Cyber Protect Cloud Partner Guide\n2. **Base64-encode** your `client_id:client_secret` pair\n3. **POST** to `{datacenter_url}/api/2/idp/token` with:\n   - Header: `Authorization: Basic <encoded_credentials>`\n   - Header: `Content-Type: application/x-www-form-urlencoded`\n   - Body: `grant_type=client_credentials`\n\n```python\nfrom base64 import b64encode\n\nencoded_client_creds = b64encode(f'{client_id}:{client_secret}'.encode('ascii'))\nbasic_auth = {\n    'Authorization': 'Basic ' + encoded_client_creds.decode('ascii')\n}\n\nresponse = requests.post(\n    f'{base_url}/idp/token',\n    headers={'Content-Type': 'application/x-www-form-urlencoded', **basic_auth},\n    data={'grant_type': 'client_credentials'},\n)\n```\n\nA **200** status code confirms successful token issuance.\n\n### What's NOT in the Retrieved Documentation\n\n- The specific **JWT claims/fields** (e.g., `sub`, `iss`, `exp`, `scope`, etc.)\n- The **token format** (whether it's a standard JWT with header.payload.signature)\n- How to **decode or inspect** the token payload\n- Token **expiration time** or refresh mechanism\n\nThe specific JWT structure and decoding instructions are not available in the retrieved documentation. You may find this information in the full [Acronis Developer API documentation](https://developer.acronis.com/doc/outbound/apis/authentication/authentication.html).\n\n**Source:** `outbound__apis__authentication__authentication.html` ",
+      "sources": [
+        {
+          "title": "outbound__apis__authentication__authentication.html",
+          "file": "outbound__apis__authentication__authentication.html",
+          "score": 0.02844163539403516,
+          "doc_url": "",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "en-us-getting-started-with-acronis-developer-network.html",
+          "file": "en-us-getting-started-with-acronis-developer-network.html",
+          "score": 0.025693893735130847,
+          "doc_url": "",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "01 Dr Overview Requirements",
+          "file": "07-disaster-recovery/01-dr-overview-requirements.md",
+          "score": 0.024868705591597158,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1815"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "16729ms"
+        },
+        "has_sources": {
+          "pass": true,
+          "detail": "sources=3"
+        },
+        "answer_substantive": {
+          "pass": true,
+          "detail": "len=1815"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    }
+  ]
+}

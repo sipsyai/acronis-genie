@@ -1,0 +1,142 @@
+{
+  "timestamp": "2026-03-20T21:59:52.070326",
+  "mode": "quick",
+  "total": 50,
+  "avg_scores": {
+    "correctness": 5.0,
+    "completeness": 4.98,
+    "relevance": 5.0,
+    "hallucination": 5.0,
+    "source_quality": 4.96,
+    "overall": 5.0
+  },
+  "score_distribution": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 50
+  },
+  "low_scoring_count": 0,
+  "low_scoring_pct": 0.0,
+  "worst_sections": [
+    {
+      "section": "Acronis Managed Detection and Response (MDR)",
+      "count": 1,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Additional Cyber Protection Tools",
+      "count": 1,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Configuring your GenAI Protection",
+      "count": 1,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Configuring your antivirus and antimalware protection",
+      "count": 3,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Data Loss Prevention",
+      "count": 1,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Endpoint Detection and Response (EDR)",
+      "count": 3,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Extended Detection and Response (XDR)",
+      "count": 1,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Getting Started with Cyber Protection",
+      "count": 4,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Implementing disaster recovery",
+      "count": 4,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Installing and deploying Cyber Protection agents",
+      "count": 7,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Managing and assigning automation workflows",
+      "count": 1,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Managing the backup and recovery of workloads and files",
+      "count": 9,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Managing workloads in the Cyber Protect console",
+      "count": 3,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "RMM",
+      "count": 3,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Understanding your current level of protection",
+      "count": 4,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    },
+    {
+      "section": "Working with plans",
+      "count": 4,
+      "avg": 5.0,
+      "low_count": 0,
+      "low_pct": 0.0
+    }
+  ],
+  "source_types": {
+    "qa_match": 50
+  },
+  "avg_wall_ms": 489,
+  "crash_count": 0
+}

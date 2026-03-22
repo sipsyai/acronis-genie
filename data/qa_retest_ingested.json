@@ -1,0 +1,632 @@
+{
+  "updated": [
+    {
+      "qa_id": "qa_351_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_351_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_352_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_358_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_358_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_360_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_361_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_362_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_365_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_367_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_370_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_375_how_to",
+      "old_overall": 2,
+      "new_overall": 4
+    },
+    {
+      "qa_id": "qa_375_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_377_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_379_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_379_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_382_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_382_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_385_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_387_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_389_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_390_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_393_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_395_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_399_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_405_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_406_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_406_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_407_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_408_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_410_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_411_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_418_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_420_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_421_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_422_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_423_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_423_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_427_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_429_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_432_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_433_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_436_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_437_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_437_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_440_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_441_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_447_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_449_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_450_detail",
+      "old_overall": 0,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_451_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_453_detail",
+      "old_overall": 2,
+      "new_overall": 3
+    },
+    {
+      "qa_id": "qa_454_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_455_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_460_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_463_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_463_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_464_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_465_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_469_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_469_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_470_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_471_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_474_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_475_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_478_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_479_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_479_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_481_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_482_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_484_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_484_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_485_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_491_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_493_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_496_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_499_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_500_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_504_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_505_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_506_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_507_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_507_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_509_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_509_detail",
+      "old_overall": 0,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_510_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_512_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_514_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_516_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_521_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_527_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_528_how_to",
+      "old_overall": 2,
+      "new_overall": 4
+    },
+    {
+      "qa_id": "qa_528_detail",
+      "old_overall": 0,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_529_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_530_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_531_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_532_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_532_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_533_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_534_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_535_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_537_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_539_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_540_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_541_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_542_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_543_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_544_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_545_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_546_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_546_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_548_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_548_detail",
+      "old_overall": 0,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_549_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_550_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_552_how_to",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_552_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_554_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_557_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_558_detail",
+      "old_overall": 0,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_559_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_561_detail",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_562_how_to",
+      "old_overall": 2,
+      "new_overall": 5
+    },
+    {
+      "qa_id": "qa_563_detail",
+      "old_overall": 1,
+      "new_overall": 5
+    }
+  ],
+  "inserted": [],
+  "skipped": [],
+  "summary": {
+    "total_retest": 126,
+    "updated_in_dataset": 124,
+    "inserted_to_db": 0,
+    "skipped": 4
+  }
+}

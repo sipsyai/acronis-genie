@@ -1,0 +1,435 @@
+{
+  "total_mappings": 55,
+  "mappings": {
+    "conversion-to-virtual-machine.html": [
+      {
+        "video_id": "Dw7zI00JF2s",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Converting a Backup to a Virtual Machine",
+        "url": "https://www.youtube.com/watch?v=Dw7zI00JF2s"
+      }
+    ],
+    "cleanup.html": [
+      {
+        "video_id": "xNSisOVzy-o",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Cleanup Plans",
+        "url": "https://www.youtube.com/watch?v=xNSisOVzy-o"
+      }
+    ],
+    "cyber-scripting-repository.html": [
+      {
+        "video_id": "nffj-4F_wzo",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Script Repository",
+        "url": "https://www.youtube.com/watch?v=nffj-4F_wzo"
+      }
+    ],
+    "backup-validation-36386.html": [
+      {
+        "video_id": "aGd70PHpjBI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Backup Validation",
+        "url": "https://www.youtube.com/watch?v=aGd70PHpjBI"
+      }
+    ],
+    "validating-backups.html": [
+      {
+        "video_id": "aGd70PHpjBI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Backup Validation",
+        "url": "https://www.youtube.com/watch?v=aGd70PHpjBI"
+      }
+    ],
+    "validation-methods.html": [
+      {
+        "video_id": "aGd70PHpjBI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Backup Validation",
+        "url": "https://www.youtube.com/watch?v=aGd70PHpjBI"
+      }
+    ],
+    "backup-scanning-plans.html": [
+      {
+        "video_id": "gzbbyqzZJFI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: How to Create a Backup Scanning Plan",
+        "url": "https://www.youtube.com/watch?v=gzbbyqzZJFI"
+      }
+    ],
+    "cyber-scripting-scripting-plans.html": [
+      {
+        "video_id": "eiFo-9XzYAU",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Scripting Plans",
+        "url": "https://www.youtube.com/watch?v=eiFo-9XzYAU"
+      },
+      {
+        "video_id": "HKoRTlQMEUw",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Workstation / Server / VM - Quick Scripting Plan",
+        "url": "https://www.youtube.com/watch?v=HKoRTlQMEUw"
+      }
+    ],
+    "remote-desktop-access.html": [
+      {
+        "video_id": "PeANKWQqNUI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Remote Desktop Plans and Settings",
+        "url": "https://www.youtube.com/watch?v=PeANKWQqNUI"
+      }
+    ],
+    "remote-management-plans.html": [
+      {
+        "video_id": "PeANKWQqNUI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Remote Desktop Plans and Settings",
+        "url": "https://www.youtube.com/watch?v=PeANKWQqNUI"
+      },
+      {
+        "video_id": "PRn1b0df3gc",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Remote Management Plans",
+        "url": "https://www.youtube.com/watch?v=PRn1b0df3gc"
+      },
+      {
+        "video_id": "-OUNsY1JRrw",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring Patch Management Settings",
+        "url": "https://www.youtube.com/watch?v=-OUNsY1JRrw"
+      }
+    ],
+    "software-inventory.html": [
+      {
+        "video_id": "3f_sB2DuwHk",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Software Inventory",
+        "url": "https://www.youtube.com/watch?v=3f_sB2DuwHk"
+      }
+    ],
+    "patch-management-settings.html": [
+      {
+        "video_id": "-OUNsY1JRrw",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring Patch Management Settings",
+        "url": "https://www.youtube.com/watch?v=-OUNsY1JRrw"
+      }
+    ],
+    "creating-backup-replication-plan.html": [
+      {
+        "video_id": "6EZ6Mt0DECQ",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Backup Replication",
+        "url": "https://www.youtube.com/watch?v=6EZ6Mt0DECQ"
+      }
+    ],
+    "monitoring-plans.html": [
+      {
+        "video_id": "6pvidIKj6Og",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Management & Monitoring: Monitoring Plans",
+        "url": "https://www.youtube.com/watch?v=6pvidIKj6Og"
+      }
+    ],
+    "advanced-dlp-rule-structure.html": [
+      {
+        "video_id": "w7IukSvEVu4",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Using The Data Loss Prevention Audit Log Page",
+        "url": "https://www.youtube.com/watch?v=w7IukSvEVu4"
+      }
+    ],
+    "advanced-dlp-custom-sensitivity.html": [
+      {
+        "video_id": "iCu_FjqKdzI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Data Loss Prevention - Data Classifiers",
+        "url": "https://www.youtube.com/watch?v=iCu_FjqKdzI"
+      }
+    ],
+    "service-console.html": [
+      {
+        "video_id": "QJrZLRitrHI",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Workstation / Server / VM - Device Recovery",
+        "url": "https://www.youtube.com/watch?v=QJrZLRitrHI"
+      }
+    ],
+    "alert-types.html": [
+      {
+        "video_id": "acU8tQkdMh0",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Security + EDR - Manage Security Alerts",
+        "url": "https://www.youtube.com/watch?v=acU8tQkdMh0"
+      }
+    ],
+    "quarantine.html": [
+      {
+        "video_id": "WHtaomZQzMw",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Security + EDR - EDR Incident Quarantine",
+        "url": "https://www.youtube.com/watch?v=WHtaomZQzMw"
+      }
+    ],
+    "edr-remediate-incidents.html": [
+      {
+        "video_id": "Vtdbe02mgLY",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Security + EDR - EDR Incident Remediation",
+        "url": "https://www.youtube.com/watch?v=Vtdbe02mgLY"
+      }
+    ],
+    "edr-review-incidents.html": [
+      {
+        "video_id": "VMSm6QGwXAo",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Security + EDR - EDR Incidents Overview",
+        "url": "https://www.youtube.com/watch?v=VMSm6QGwXAo"
+      }
+    ],
+    "edr-investigate-incident.html": [
+      {
+        "video_id": "7sxCifJemWo",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Security + EDR - EDR Incident Investigation",
+        "url": "https://www.youtube.com/watch?v=7sxCifJemWo"
+      }
+    ],
+    "protecting-microsoft-365-collaboration-app-seats.html": [
+      {
+        "video_id": "aXuF9OCweCE",
+        "title": "Product Demo: How to Enable Advanced Email Security in the Customer Tenant",
+        "url": "https://www.youtube.com/watch?v=aXuF9OCweCE"
+      }
+    ],
+    "notarized-files-intro.html": [
+      {
+        "video_id": "iGiDbp86Fnw",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced File Sync & Share: Notarizing Files",
+        "url": "https://www.youtube.com/watch?v=iGiDbp86Fnw"
+      }
+    ],
+    "setting-up-recovery-servers.html": [
+      {
+        "video_id": "o41otf9O6H4",
+        "title": "Acronis Cyber Protect Cloud Advanced Disaster Recovery - How to Edit a Recovery Server Configuration",
+        "url": "https://www.youtube.com/watch?v=o41otf9O6H4"
+      }
+    ],
+    "orchestration-runbooks.html": [
+      {
+        "video_id": "DsFhdK1wJwA",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Disaster Recovery - How to Create a Runbook",
+        "url": "https://www.youtube.com/watch?v=DsFhdK1wJwA"
+      }
+    ],
+    "creating-primary-server.html": [
+      {
+        "video_id": "K5JkHsXJ_vo",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Advanced Disaster Recovery How to Create a Primary Server",
+        "url": "https://www.youtube.com/watch?v=K5JkHsXJ_vo"
+      }
+    ],
+    "adding-microsoft-office-365-organization.html": [
+      {
+        "video_id": "WuyfdUqD_z8",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Adding a Microsoft 365 Organization to a Customer Tenant",
+        "url": "https://www.youtube.com/watch?v=WuyfdUqD_z8"
+      }
+    ],
+    "account-local-cloud-consoles.html": [
+      {
+        "video_id": "QEW7u8UShVo",
+        "title": "Acronis Cyber Protect Product Demo: Creating Acronis Account",
+        "url": "https://www.youtube.com/watch?v=QEW7u8UShVo"
+      }
+    ],
+    "editions-and-licensing.html": [
+      {
+        "video_id": "fKwnJEIG-HY",
+        "title": "Acronis Cyber Protect Product Demo: Starting a Trial",
+        "url": "https://www.youtube.com/watch?v=fKwnJEIG-HY"
+      }
+    ],
+    "managing-licenses.html": [
+      {
+        "video_id": "P8k2d8e2dxY",
+        "title": "Acronis Cyber Protect Product Demo: License Registration and Renewal",
+        "url": "https://www.youtube.com/watch?v=P8k2d8e2dxY"
+      },
+      {
+        "video_id": "YD0FD9gAXuM",
+        "title": "Acronis Cyber Protect Product Demo: License Management and Activation",
+        "url": "https://www.youtube.com/watch?v=YD0FD9gAXuM"
+      }
+    ],
+    "management-server-for-on-premises-deployment-only.html": [
+      {
+        "video_id": "hVZPOeekmwc",
+        "title": "Acronis Cyber Protect Product Demo: Management Servers – On-Premises Management Server Deployment",
+        "url": "https://www.youtube.com/watch?v=hVZPOeekmwc"
+      }
+    ],
+    "overview-dashboard.html": [
+      {
+        "video_id": "RImmjO-PEaQ",
+        "title": "Acronis Cyber Protect Product Demo: Dashboards, Activities and Reporting Overview",
+        "url": "https://www.youtube.com/watch?v=RImmjO-PEaQ"
+      }
+    ],
+    "working-with-the-centralized-dashboard.html": [
+      {
+        "video_id": "RImmjO-PEaQ",
+        "title": "Acronis Cyber Protect Product Demo: Dashboards, Activities and Reporting Overview",
+        "url": "https://www.youtube.com/watch?v=RImmjO-PEaQ"
+      }
+    ],
+    "monitoring-and-reporting.html": [
+      {
+        "video_id": "RImmjO-PEaQ",
+        "title": "Acronis Cyber Protect Product Demo: Dashboards, Activities and Reporting Overview",
+        "url": "https://www.youtube.com/watch?v=RImmjO-PEaQ"
+      }
+    ],
+    "managing-workloads.html": [
+      {
+        "video_id": "e_zLhNt25rs",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Management Console -  How to Add a New Customer Account",
+        "url": "https://www.youtube.com/watch?v=e_zLhNt25rs"
+      },
+      {
+        "video_id": "_Z29hKjRTms",
+        "title": "Management Console -  How to create a user in the customer tenant – User Roles and Permissions",
+        "url": "https://www.youtube.com/watch?v=_Z29hKjRTms"
+      },
+      {
+        "video_id": "rFSgevqlYiY",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Enable/Disable Offering Items and Quotas",
+        "url": "https://www.youtube.com/watch?v=rFSgevqlYiY"
+      },
+      {
+        "video_id": "haaDcbuUo84",
+        "title": "Acronis Cyber Protect Cloud Product Demo: How to Add Storage Location To the Backup Plans",
+        "url": "https://www.youtube.com/watch?v=haaDcbuUo84"
+      }
+    ],
+    "installing-software.html": [
+      {
+        "video_id": "RQw--7bHLjM",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Management Console – Your First Steps in the Trial",
+        "url": "https://www.youtube.com/watch?v=RQw--7bHLjM"
+      }
+    ],
+    "protecting-amazon-s3.html": [
+      {
+        "video_id": "j8gk17f4yxg",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Direct Backup to AWS S3 Public Cloud Storage",
+        "url": "https://www.youtube.com/watch?v=j8gk17f4yxg"
+      }
+    ],
+    "monitoring.html": [
+      {
+        "video_id": "adOoq9pk2SA",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Pulling and Managing Reports",
+        "url": "https://www.youtube.com/watch?v=adOoq9pk2SA"
+      }
+    ],
+    "reports.html": [
+      {
+        "video_id": "adOoq9pk2SA",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Pulling and Managing Reports",
+        "url": "https://www.youtube.com/watch?v=adOoq9pk2SA"
+      }
+    ],
+    "protecting-microsoft-azure.html": [
+      {
+        "video_id": "gO8m9wW1i74",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Direct Backup to Microsoft Azure Public Cloud Storage",
+        "url": "https://www.youtube.com/watch?v=gO8m9wW1i74"
+      }
+    ],
+    "backup-storage-tab.html": [
+      {
+        "video_id": "WXkYQLijJog",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Managing Backup Storage",
+        "url": "https://www.youtube.com/watch?v=WXkYQLijJog"
+      },
+      {
+        "video_id": "JZx0XqRDu-g",
+        "title": "Acronis Cyber Protect Cloud Product Demo: Add Backup Location Local",
+        "url": "https://www.youtube.com/watch?v=JZx0XqRDu-g"
+      }
+    ],
+    "m365-overview.html": [
+      {
+        "video_id": "JafIr3g1Ht0",
+        "title": "How MSPs Can Standardize Microsoft 365 Security at Scale| Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=JafIr3g1Ht0"
+      },
+      {
+        "video_id": "zE_nFm_uTh0",
+        "title": "Microsoft 365 Security Posture Management | Acronis RMM | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=zE_nFm_uTh0"
+      }
+    ],
+    "workflows.html": [
+      {
+        "video_id": "w5d33lwGXJA",
+        "title": "Acronis Workflow Automation Demo | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=w5d33lwGXJA"
+      }
+    ],
+    "adding-software-packages-manually.html": [
+      {
+        "video_id": "XiyDJGrYYTk",
+        "title": "Copilot for Software Deployment Setup | Acronis RMM | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=XiyDJGrYYTk"
+      }
+    ],
+    "managing-list-of-patches.html": [
+      {
+        "video_id": "Qlck8nJSuKw",
+        "title": "AI-Based Patch Stability Scoring | Acronis RMM | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=Qlck8nJSuKw"
+      }
+    ],
+    "cyber-scripting.html": [
+      {
+        "video_id": "ZaB6-LlIrn8",
+        "title": "AI-Assisted Scripting | Acronis RMM | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=ZaB6-LlIrn8"
+      }
+    ],
+    "aa-projects.html": [
+      {
+        "video_id": "QibEzbNM3ZY",
+        "title": "Project Management | Acronis PSA | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=QibEzbNM3ZY"
+      }
+    ],
+    "device-discovery-device-sense.html": [
+      {
+        "video_id": "gqsywvyw_xU",
+        "title": "Device Sense™ | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=gqsywvyw_xU"
+      }
+    ],
+    "aa-managing-inventory.html": [
+      {
+        "video_id": "djaWsDhksp0",
+        "title": "Stock Inventory Management | Acronis Advanced Automation | Acronis Cyber Protect Cloud Demo Series",
+        "url": "https://www.youtube.com/watch?v=djaWsDhksp0"
+      }
+    ],
+    "bootable-media-bm.html": [
+      {
+        "video_id": "9091zsUDkh4",
+        "title": "Acronis Cyber Protect Cloud: Bootable Media and Universal Restore",
+        "url": "https://www.youtube.com/watch?v=9091zsUDkh4"
+      }
+    ],
+    "using-universal-restore.html": [
+      {
+        "video_id": "9091zsUDkh4",
+        "title": "Acronis Cyber Protect Cloud: Bootable Media and Universal Restore",
+        "url": "https://www.youtube.com/watch?v=9091zsUDkh4"
+      }
+    ],
+    "remote-operations-with-bootable-media.html": [
+      {
+        "video_id": "7_1LVodv9uc",
+        "title": "Acronis Cyber Protect Cloud: Remote Operations with Bootable Media",
+        "url": "https://www.youtube.com/watch?v=7_1LVodv9uc"
+      }
+    ],
+    "one-click-recovery.html": [
+      {
+        "video_id": "-qNA8GdYqW4",
+        "title": "Acronis Cyber Protect Cloud: One-Click Restore",
+        "url": "https://www.youtube.com/watch?v=-qNA8GdYqW4"
+      }
+    ],
+    "moving-tenant-to-another-tenant.html": [
+      {
+        "video_id": "18DPRlhO6tI",
+        "title": "Acronis Cyber Protect Cloud: Tip 6 - How to Move a Tenant",
+        "url": "https://www.youtube.com/watch?v=18DPRlhO6tI"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3007 @@
+[
+  {
+    "url": "https://developer.acronis.com/doc/",
+    "title": "Integration Guide",
+    "slug": "doc"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/basic-requirements.html",
+    "title": "Basic requirements",
+    "slug": "callback-handler__basic-requirements"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/custom-callbacks.html",
+    "title": "Custom callbacks",
+    "slug": "callback-handler__custom-callbacks"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/index.html",
+    "title": "Enabling the CyberApp",
+    "slug": "callback-handler__enablement__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/changing-credentials.html",
+    "title": "Changing CyberApp credentials",
+    "slug": "callback-handler__enablement__mapping__changing-credentials"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/disabling-customer.html",
+    "title": "Disabling a mapped customer",
+    "slug": "callback-handler__enablement__mapping__disabling-customer"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/disabling-partner.html",
+    "title": "Disabling a mapped partner",
+    "slug": "callback-handler__enablement__mapping__disabling-partner"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/enable-customer/index.html",
+    "title": "Mapped customer enablement",
+    "slug": "callback-handler__enablement__mapping__enable-customer__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/enable-customer/reading-customer-mapping.html",
+    "title": "Reading the customer mapping from your service",
+    "slug": "callback-handler__enablement__mapping__enable-customer__reading-customer-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/enable-customer/reading-customers.html",
+    "title": "Reading partner customers from your service",
+    "slug": "callback-handler__enablement__mapping__enable-customer__reading-customers"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/enable-customer/writing-customer-mapping.html",
+    "title": "Writing the customer mapping to your service",
+    "slug": "callback-handler__enablement__mapping__enable-customer__writing-customer-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/enable-partner/index.html",
+    "title": "Mapped partner enablement",
+    "slug": "callback-handler__enablement__mapping__enable-partner__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/enable-partner/mapping.html",
+    "title": "Mapping the partner ID to the Acronis tenant ID",
+    "slug": "callback-handler__enablement__mapping__enable-partner__mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/enable-partner/reading.html",
+    "title": "Reading the partner ID from your service",
+    "slug": "callback-handler__enablement__mapping__enable-partner__reading"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mapping/index.html",
+    "title": "Mapped enablement",
+    "slug": "callback-handler__enablement__mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/disable-customer.html",
+    "title": "Disabling mirrored customers",
+    "slug": "callback-handler__enablement__mirroring__disable-customer"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/disable-partner.html",
+    "title": "Disabling a mirrored partner",
+    "slug": "callback-handler__enablement__mirroring__disable-partner"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/enable-customer/enable-customer.html",
+    "title": "Enabling customers using mirroring",
+    "slug": "callback-handler__enablement__mirroring__enable-customer__enable-customer"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/enable-customer/get-cust-state.html",
+    "title": "Getting customer enablement status",
+    "slug": "callback-handler__enablement__mirroring__enable-customer__get-cust-state"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/enable-customer/index.html",
+    "title": "Mirrored customer enablement",
+    "slug": "callback-handler__enablement__mirroring__enable-customer__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/enable-partner/enable-partner.html",
+    "title": "Enabling a partner using mirroring",
+    "slug": "callback-handler__enablement__mirroring__enable-partner__enable-partner"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/enable-partner/get-partner-state.html",
+    "title": "Getting partner enablement state",
+    "slug": "callback-handler__enablement__mirroring__enable-partner__get-partner-state"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/enable-partner/index.html",
+    "title": "Mirrored partner enablement",
+    "slug": "callback-handler__enablement__mirroring__enable-partner__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/enablement/mirroring/index.html",
+    "title": "Mirrored enablement",
+    "slug": "callback-handler__enablement__mirroring__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/error-handling.html",
+    "title": "Callback error handling",
+    "slug": "callback-handler__error-handling"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/formats/index.html",
+    "title": "Callback formats",
+    "slug": "callback-handler__formats__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/formats/requests.html",
+    "title": "Callback request format",
+    "slug": "callback-handler__formats__requests"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/formats/responses.html",
+    "title": "Callback response format",
+    "slug": "callback-handler__formats__responses"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/github.html",
+    "title": "Sample code in GitHub",
+    "slug": "callback-handler__github"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/index.html",
+    "title": "The callback handler",
+    "slug": "callback-handler__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/request-verification.html",
+    "title": "Verifying callback requests",
+    "slug": "callback-handler__request-verification"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/callback-handler/verification.html",
+    "title": "Callback handler verification",
+    "slug": "callback-handler__verification"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/comingsoon.html",
+    "title": "Release notes",
+    "slug": "comingsoon"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/access-scopes.html",
+    "title": "CyberApp data access scopes",
+    "slug": "connector__access-scopes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/authentication/index.html",
+    "title": "API Authentication",
+    "slug": "connector__authentication__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/authentication/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__authentication__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/data-mapping.html",
+    "title": "Data mapping",
+    "slug": "connector__data-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/github.html",
+    "title": "Sample code in GitHub",
+    "slug": "connector__github"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/index.html",
+    "title": "The connector",
+    "slug": "connector__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-alerts/dismissing-alerts/index.html",
+    "title": "Dismissing alerts",
+    "slug": "connector__managing-alerts__dismissing-alerts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-alerts/dismissing-alerts/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__managing-alerts__dismissing-alerts__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-alerts/fetching-alerts/index.html",
+    "title": "Fetching alerts",
+    "slug": "connector__managing-alerts__fetching-alerts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-alerts/fetching-alerts/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__managing-alerts__fetching-alerts__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-alerts/index.html",
+    "title": "Managing alerts",
+    "slug": "connector__managing-alerts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-alerts/reporting-alerts/index.html",
+    "title": "Reporting alerts",
+    "slug": "connector__managing-alerts__reporting-alerts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-alerts/reporting-alerts/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__managing-alerts__reporting-alerts__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/deleting-workloads/index.html",
+    "title": "Deleting a workload",
+    "slug": "connector__managing-workloads__deleting-workloads__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/deleting-workloads/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__managing-workloads__deleting-workloads__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/fetching-workloads/index.html",
+    "title": "Fetching workloads",
+    "slug": "connector__managing-workloads__fetching-workloads__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/fetching-workloads/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__managing-workloads__fetching-workloads__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/index.html",
+    "title": "Managing workloads",
+    "slug": "connector__managing-workloads__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/reporting-workloads/index.html",
+    "title": "Reporting workloads",
+    "slug": "connector__managing-workloads__reporting-workloads__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/reporting-workloads/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__managing-workloads__reporting-workloads__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/updating-workloads/index.html",
+    "title": "Updating a workload",
+    "slug": "connector__managing-workloads__updating-workloads__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/connector/managing-workloads/updating-workloads/step-by-step.html",
+    "title": "Step-by-step procedure",
+    "slug": "connector__managing-workloads__updating-workloads__step-by-step"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/copyright.html",
+    "title": "Copyright statement",
+    "slug": "copyright"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/activities/filtering.html",
+    "title": "Filtering the activities report",
+    "slug": "cyberapps__activities__filtering"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/activities/index.html",
+    "title": "ACTIVITIES",
+    "slug": "cyberapps__activities__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/comingsoon.html",
+    "title": "Release notes",
+    "slug": "cyberapps__comingsoon"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/cyberapps/create-cyberapp.html",
+    "title": "Creating a CyberApp",
+    "slug": "cyberapps__cyberapps__create-cyberapp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/cyberapps/cyberapp-list/cyberapp-list-views.html",
+    "title": "CyberApp list views",
+    "slug": "cyberapps__cyberapps__cyberapp-list__cyberapp-list-views"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/cyberapps/cyberapp-list/index.html",
+    "title": "Opening the CyberApp list",
+    "slug": "cyberapps__cyberapps__cyberapp-list__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/cyberapps/delete-cyberapp.html",
+    "title": "Deleting a CyberApp",
+    "slug": "cyberapps__cyberapps__delete-cyberapp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/cyberapps/index.html",
+    "title": "Managing CyberApps",
+    "slug": "cyberapps__cyberapps__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/cyberapps/open-cyberapp.html",
+    "title": "Opening a CyberApp",
+    "slug": "cyberapps__cyberapps__open-cyberapp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deploy-test/actions-panel.html",
+    "title": "Opening the details panel",
+    "slug": "cyberapps__deployment__deploy-test__actions-panel"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deploy-test/deploying-to-test.html",
+    "title": "Deploying to test",
+    "slug": "cyberapps__deployment__deploy-test__deploying-to-test"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deploy-test/details.html",
+    "title": "Opening the details pop-up",
+    "slug": "cyberapps__deployment__deploy-test__details"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deploy-test/index.html",
+    "title": "Test environment deployments",
+    "slug": "cyberapps__deployment__deploy-test__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deployment-list/actions-panel.html",
+    "title": "Opening a list entry side-panel",
+    "slug": "cyberapps__deployment__deployment-list__actions-panel"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deployment-list/deployment-request-states.html",
+    "title": "Deployment request states",
+    "slug": "cyberapps__deployment__deployment-list__deployment-request-states"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deployment-list/filtering.html",
+    "title": "Filtering the deployment list",
+    "slug": "cyberapps__deployment__deployment-list__filtering"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/deployment-list/index.html",
+    "title": "Opening the deployment list",
+    "slug": "cyberapps__deployment__deployment-list__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/index.html",
+    "title": "DEPLOYMENT",
+    "slug": "cyberapps__deployment__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/actions-panel.html",
+    "title": "Opening the actions and details panel",
+    "slug": "cyberapps__deployment__prod__actions-panel"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/deleting-a-deployment-request.html",
+    "title": "Deleting a production deployment request",
+    "slug": "cyberapps__deployment__prod__deleting-a-deployment-request"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/deploying-to-production.html",
+    "title": "Requesting production deployment",
+    "slug": "cyberapps__deployment__prod__deploying-to-production"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/deployment-approval/approval-process.html",
+    "title": "Production deployment request approval process",
+    "slug": "cyberapps__deployment__prod__deployment-approval__approval-process"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/deployment-approval/index.html",
+    "title": "Sending for approval",
+    "slug": "cyberapps__deployment__prod__deployment-approval__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/details.html",
+    "title": "Opening the details pop-up",
+    "slug": "cyberapps__deployment__prod__details"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/editing-a-deployment-request.html",
+    "title": "Editing a draft production deployment request",
+    "slug": "cyberapps__deployment__prod__editing-a-deployment-request"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/deployment/prod/index.html",
+    "title": "Production deployments",
+    "slug": "cyberapps__deployment__prod__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/descriptions/index.html",
+    "title": "DESCRIPTIONS (CyberApp marketing)",
+    "slug": "cyberapps__descriptions__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/access-vendor-portal.html",
+    "title": "Accessing Vendor Portal",
+    "slug": "cyberapps__getting-started__access-vendor-portal"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/creating-first-cyberapp.html",
+    "title": "Creating your first CyberApp",
+    "slug": "cyberapps__getting-started__creating-first-cyberapp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/demos/build-sayhi.html",
+    "title": "Building the demo CyberApp",
+    "slug": "cyberapps__getting-started__demos__build-sayhi"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/demos/import-sayhi.html",
+    "title": "Importing the demo CyberApp",
+    "slug": "cyberapps__getting-started__demos__import-sayhi"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/demos/index.html",
+    "title": "Demo CyberApp",
+    "slug": "cyberapps__getting-started__demos__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/education.html",
+    "title": "Learning about CyberApps",
+    "slug": "cyberapps__getting-started__education"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/index.html",
+    "title": "Getting started",
+    "slug": "cyberapps__getting-started__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/managing-team.html",
+    "title": "Managing a CyberApp team",
+    "slug": "cyberapps__getting-started__managing-team"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/getting-started/security-tool-example.html",
+    "title": "Security Tool CyberApp Example",
+    "slug": "cyberapps__getting-started__security-tool-example"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/index.html",
+    "title": "Inbound integrations (CyberApps)",
+    "slug": "cyberapps__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/about-standard.html",
+    "title": "CyberApp Standard",
+    "slug": "cyberapps__intro__about-standard"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/index.html",
+    "title": "Introduction to CyberApps",
+    "slug": "cyberapps__intro__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/lifecycle.html",
+    "title": "CyberApp lifecycle",
+    "slug": "cyberapps__intro__lifecycle"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/overview/enablement.html",
+    "title": "CyberApp enablement",
+    "slug": "cyberapps__intro__overview__enablement"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/overview/index.html",
+    "title": "CyberApp components",
+    "slug": "cyberapps__intro__overview__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/overview/menu.html",
+    "title": "Acronis menu items",
+    "slug": "cyberapps__intro__overview__menu"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/overview/reports.html",
+    "title": "Widgets and reports",
+    "slug": "cyberapps__intro__overview__reports"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/overview/workloads.html",
+    "title": "Alerts, workloads, and workload actions",
+    "slug": "cyberapps__intro__overview__workloads"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/types/email-security.html",
+    "title": "Email security",
+    "slug": "cyberapps__intro__types__email-security"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/types/endpoint-security.html",
+    "title": "Endpoint security",
+    "slug": "cyberapps__intro__types__endpoint-security"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/types/index.html",
+    "title": "CyberApp examples",
+    "slug": "cyberapps__intro__types__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/types/mdr.html",
+    "title": "Managed Detection and Response (MDR)",
+    "slug": "cyberapps__intro__types__mdr"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/types/password-management.html",
+    "title": "Password management",
+    "slug": "cyberapps__intro__types__password-management"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/intro/types/remote-desktop.html",
+    "title": "Remote desktop",
+    "slug": "cyberapps__intro__types__remote-desktop"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/overview/index.html",
+    "title": "OVERVIEW",
+    "slug": "cyberapps__overview__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/reference/cti.html",
+    "title": "Cross-domain Type Identifier (CTI)",
+    "slug": "cyberapps__reference__cti"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/reference/index.html",
+    "title": "Technical reference",
+    "slug": "cyberapps__reference__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/reference/versioning.html",
+    "title": "Versioning",
+    "slug": "cyberapps__reference__versioning"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/disable-connection.html",
+    "title": "Disabling the API connection",
+    "slug": "cyberapps__settings__disable-connection"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/enable-connection.html",
+    "title": "Enabling the API connection",
+    "slug": "cyberapps__settings__enable-connection"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/generate-api.html",
+    "title": "Generating a new API key",
+    "slug": "cyberapps__settings__generate-api"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/index.html",
+    "title": "SETTINGS",
+    "slug": "cyberapps__settings__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/delete.html",
+    "title": "Deleting the SSO service account",
+    "slug": "cyberapps__settings__oidc__delete"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/generate.html",
+    "title": "Generating SSO service account credentials",
+    "slug": "cyberapps__settings__oidc__generate"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/index.html",
+    "title": "CyberApp SSO service account",
+    "slug": "cyberapps__settings__oidc__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/regenerate.html",
+    "title": "Regenerating your SSO service account credentials",
+    "slug": "cyberapps__settings__oidc__regenerate"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/sso/before-you-start.html",
+    "title": "Before you start",
+    "slug": "cyberapps__settings__oidc__sso__before-you-start"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/sso/code-exchange.html",
+    "title": "Exchanging code",
+    "slug": "cyberapps__settings__oidc__sso__code-exchange"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/sso/index.html",
+    "title": "CyberApp OIDC SSO authentication",
+    "slug": "cyberapps__settings__oidc__sso__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/oidc/sso/user-info-check.html",
+    "title": "Checking user information",
+    "slug": "cyberapps__settings__oidc__sso__user-info-check"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/open-settings.html",
+    "title": "Opening CyberApp settings",
+    "slug": "cyberapps__settings__open-settings"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/settings/rename-cyberapp.html",
+    "title": "Renaming a CyberApp",
+    "slug": "cyberapps__settings__rename-cyberapp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/access-scopes.html",
+    "title": "CyberApp access scopes",
+    "slug": "cyberapps__versions__access-scopes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/create-callback.html",
+    "title": "Adding a callback",
+    "slug": "cyberapps__versions__callbacks__create-callback"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/delete-callback.html",
+    "title": "Deleting a callback",
+    "slug": "cyberapps__versions__callbacks__delete-callback"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/edit-callback.html",
+    "title": "Editing a callback",
+    "slug": "cyberapps__versions__callbacks__edit-callback"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/index.html",
+    "title": "Callbacks",
+    "slug": "cyberapps__versions__callbacks__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/open-callback-list.html",
+    "title": "Opening the callback list",
+    "slug": "cyberapps__versions__callbacks__open-callback-list"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/working-with-payloads/callback-request.html",
+    "title": "Adding the request payload",
+    "slug": "cyberapps__versions__callbacks__working-with-payloads__callback-request"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/working-with-payloads/callback-responses.html",
+    "title": "Adding a response payload",
+    "slug": "cyberapps__versions__callbacks__working-with-payloads__callback-responses"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/working-with-payloads/create-payload-json.html",
+    "title": "Composing JSON schema for a payload",
+    "slug": "cyberapps__versions__callbacks__working-with-payloads__create-payload-json"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/working-with-payloads/index.html",
+    "title": "Working with callback payloads",
+    "slug": "cyberapps__versions__callbacks__working-with-payloads__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/callbacks/working-with-payloads/techref.html",
+    "title": "Payload JSON schema technical reference",
+    "slug": "cyberapps__versions__callbacks__working-with-payloads__techref"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/custom-integration-settings/create-settings-tab.html",
+    "title": "Creating a custom settings tab",
+    "slug": "cyberapps__versions__custom-integration-settings__create-settings-tab"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/custom-integration-settings/delete-settings-tab.html",
+    "title": "Deleting a custom settings tab",
+    "slug": "cyberapps__versions__custom-integration-settings__delete-settings-tab"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/custom-integration-settings/edit-settings-tab.html",
+    "title": "Editing a custom settings tab",
+    "slug": "cyberapps__versions__custom-integration-settings__edit-settings-tab"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/custom-integration-settings/index.html",
+    "title": "Custom integration settings",
+    "slug": "cyberapps__versions__custom-integration-settings__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/custom-integration-settings/open-list.html",
+    "title": "Opening the custom settings tab list",
+    "slug": "cyberapps__versions__custom-integration-settings__open-list"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/customer-enablement/create-cust-enable-form.html",
+    "title": "Creating the customer enablement form",
+    "slug": "cyberapps__versions__customer-enablement__create-cust-enable-form"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/customer-enablement/create-example-connection-setup-form.html",
+    "title": "Building the example",
+    "slug": "cyberapps__versions__customer-enablement__create-example-connection-setup-form"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/customer-enablement/index.html",
+    "title": "Customer enablement form",
+    "slug": "cyberapps__versions__customer-enablement__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/enablement-form/create-connection-setup-form.html",
+    "title": "Creating the CyberApp enablement form",
+    "slug": "cyberapps__versions__enablement-form__create-connection-setup-form"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/enablement-form/create-example-connection-setup-form.html",
+    "title": "Building the example",
+    "slug": "cyberapps__versions__enablement-form__create-example-connection-setup-form"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/enablement-form/index.html",
+    "title": "CyberApp enablement form",
+    "slug": "cyberapps__versions__enablement-form__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/alerts/creating-alert-cat.html",
+    "title": "Creating an alert category",
+    "slug": "cyberapps__versions__extensions__alerts__creating-alert-cat"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/alerts/creating-alert.html",
+    "title": "Adding an alert type",
+    "slug": "cyberapps__versions__extensions__alerts__creating-alert"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/alerts/delete-alert.html",
+    "title": "Deleting an alert type",
+    "slug": "cyberapps__versions__extensions__alerts__delete-alert"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/alerts/edit-alert.html",
+    "title": "Editing an alert type",
+    "slug": "cyberapps__versions__extensions__alerts__edit-alert"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/alerts/index.html",
+    "title": "Alerts",
+    "slug": "cyberapps__versions__extensions__alerts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/alerts/open-list.html",
+    "title": "Opening the alert type list",
+    "slug": "cyberapps__versions__extensions__alerts__open-list"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/index.html",
+    "title": "Extension points",
+    "slug": "cyberapps__versions__extensions__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/create-main-menu.html",
+    "title": "Adding a menu item",
+    "slug": "cyberapps__versions__extensions__mainmenu__create-main-menu"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/delete-mainmenu.html",
+    "title": "Deleting a menu item",
+    "slug": "cyberapps__versions__extensions__mainmenu__delete-mainmenu"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/edit-mainmenu.html",
+    "title": "Editing a menu item",
+    "slug": "cyberapps__versions__extensions__mainmenu__edit-mainmenu"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/index.html",
+    "title": "Main menu",
+    "slug": "cyberapps__versions__extensions__mainmenu__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/localization/example.html",
+    "title": "Localization example",
+    "slug": "cyberapps__versions__extensions__mainmenu__localization__example"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/localization/index.html",
+    "title": "Localizing the menu items",
+    "slug": "cyberapps__versions__extensions__mainmenu__localization__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/localization/removing-a-localization.html",
+    "title": "Removing a localization",
+    "slug": "cyberapps__versions__extensions__mainmenu__localization__removing-a-localization"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/mainmenu/open-list.html",
+    "title": "Opening the menu item list",
+    "slug": "cyberapps__versions__extensions__mainmenu__open-list"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/widgets-and-reports/index.html",
+    "title": "Widgets and reports",
+    "slug": "cyberapps__versions__extensions__widgets-and-reports__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/widgets-and-reports/reports/create-report.html",
+    "title": "Creating a CyberApp report",
+    "slug": "cyberapps__versions__extensions__widgets-and-reports__reports__create-report"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/widgets-and-reports/reports/index.html",
+    "title": "Reports",
+    "slug": "cyberapps__versions__extensions__widgets-and-reports__reports__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/widgets-and-reports/widgets/create-alerts-widget.html",
+    "title": "Creating an alerts widget",
+    "slug": "cyberapps__versions__extensions__widgets-and-reports__widgets__create-alerts-widget"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/widgets-and-reports/widgets/create-device-status-widget.html",
+    "title": "Creating a device status widget",
+    "slug": "cyberapps__versions__extensions__widgets-and-reports__widgets__create-device-status-widget"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/widgets-and-reports/widgets/index.html",
+    "title": "Widgets",
+    "slug": "cyberapps__versions__extensions__widgets-and-reports__widgets__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/actions/create-action.html",
+    "title": "Creating an action",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__actions__create-action"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/actions/delete-action.html",
+    "title": "Deleting an action",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__actions__delete-action"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/actions/edit-action.html",
+    "title": "Editing an action",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__actions__edit-action"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/actions/index.html",
+    "title": "Actions",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__actions__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/actions/open-list.html",
+    "title": "Opening the action list",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__actions__open-list"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/index.html",
+    "title": "Workloads and actions",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/workload-types/create-workload-type.html",
+    "title": "Creating a workload type",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__workload-types__create-workload-type"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/workload-types/delete-workload-type.html",
+    "title": "Deleting a workload type",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__workload-types__delete-workload-type"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/workload-types/edit-workload-type.html",
+    "title": "Editing a workload type",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__workload-types__edit-workload-type"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/workload-types/index.html",
+    "title": "Workload types",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__workload-types__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/workload-types/mapping-to-acronis.html",
+    "title": "Mapping to Acronis workloads",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__workload-types__mapping-to-acronis"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/extensions/workloads-and-actions/workload-types/open-list.html",
+    "title": "Opening the workload type list",
+    "slug": "cyberapps__versions__extensions__workloads-and-actions__workload-types__open-list"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/general-settings.html",
+    "title": "General settings",
+    "slug": "cyberapps__versions__general-settings"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/index.html",
+    "title": "VERSIONS (CyberApp functionality)",
+    "slug": "cyberapps__versions__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/copy-paste.html",
+    "title": "Copying and pasting elements",
+    "slug": "cyberapps__versions__ui-builder__build-form__copy-paste"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/element-distribution.html",
+    "title": "Element distribution",
+    "slug": "cyberapps__versions__ui-builder__build-form__element-distribution"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/index.html",
+    "title": "Building a form",
+    "slug": "cyberapps__versions__ui-builder__build-form__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/action-controls/button.html",
+    "title": "Icon setting for buttons",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__action-controls__button"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/action-controls/image.html",
+    "title": "Image element with option to make clickable to open a link",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__action-controls__image"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/action-controls/index.html",
+    "title": "ACTION CONTROLS",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__action-controls__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/action-controls/link/index.html",
+    "title": "link objects",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__action-controls__link__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/charts/index.html",
+    "title": "CHARTS",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__charts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/charts/line-chart.html",
+    "title": "Line chart form element",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__charts__line-chart"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/charts/pie-chart.html",
+    "title": "Pie chart form element",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__charts__pie-chart"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/content-elements/alert.html",
+    "title": "Alert form element",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__content-elements__alert"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/content-elements/icon/index.html",
+    "title": "New icon UI element",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__content-elements__icon__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/content-elements/index.html",
+    "title": "CONTENT ELEMENTS",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__content-elements__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/content-elements/markdown.html",
+    "title": "Support for font color and size selection in UI builder element markdown",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__content-elements__markdown"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/content-elements/text/index.html",
+    "title": "text objects",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__content-elements__text__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/index.html",
+    "title": "UI elements",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/input-controls/index.html",
+    "title": "INPUT CONTROLS",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__input-controls__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/input-controls/radio/index.html",
+    "title": "Radio button UI builder element",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__input-controls__radio__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/layout-management/group/alignment.html",
+    "title": "group alignment",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__layout-management__group__alignment"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/layout-management/index.html",
+    "title": "LAYOUT MANAGEMENT",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__layout-management__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/layout-management/tabs-container.html",
+    "title": "New tab UI element",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__layout-management__tabs-container"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/table/buttons.html",
+    "title": "Display table action buttons as ellipsis dropdown menu column for each table row",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__table__buttons"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/table/columns.html",
+    "title": "Table column width settings",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__table__columns"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/selecting-elements/table/index.html",
+    "title": "TABLE",
+    "slug": "cyberapps__versions__ui-builder__build-form__selecting-elements__table__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/spacing.html",
+    "title": "Adjusting element spacing",
+    "slug": "cyberapps__versions__ui-builder__build-form__spacing"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/validation.html",
+    "title": "Defining validation logic",
+    "slug": "cyberapps__versions__ui-builder__build-form__validation"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/visibility/build-visibility.html",
+    "title": "Building element visibility logic",
+    "slug": "cyberapps__versions__ui-builder__build-form__visibility__build-visibility"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/visibility/form-condition-types.html",
+    "title": "Setting form-level condition types",
+    "slug": "cyberapps__versions__ui-builder__build-form__visibility__form-condition-types"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/visibility/form-examples.html",
+    "title": "Form-level condition type examples",
+    "slug": "cyberapps__versions__ui-builder__build-form__visibility__form-examples"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/visibility/index.html",
+    "title": "Element visibility and enablement",
+    "slug": "cyberapps__versions__ui-builder__build-form__visibility__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/visibility/model-condition-types.html",
+    "title": "Setting model condition types",
+    "slug": "cyberapps__versions__ui-builder__build-form__visibility__model-condition-types"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/visibility/model-examples.html",
+    "title": "Model condition type examples",
+    "slug": "cyberapps__versions__ui-builder__build-form__visibility__model-examples"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/build-form/visibility/offering-items-condition.html",
+    "title": "Setting offering items condition types",
+    "slug": "cyberapps__versions__ui-builder__build-form__visibility__offering-items-condition"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/data-init-callback.html",
+    "title": "Specifying a data initializer callback",
+    "slug": "cyberapps__versions__ui-builder__forms__data-init-callback"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/depend-forms/child-forms.html",
+    "title": "Child forms",
+    "slug": "cyberapps__versions__ui-builder__forms__depend-forms__child-forms"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/depend-forms/create-dependent-form.html",
+    "title": "To create a dependent form",
+    "slug": "cyberapps__versions__ui-builder__forms__depend-forms__create-dependent-form"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/depend-forms/delete-dependent-form.html",
+    "title": "To delete a dependent form",
+    "slug": "cyberapps__versions__ui-builder__forms__depend-forms__delete-dependent-form"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/depend-forms/index.html",
+    "title": "Dependent forms",
+    "slug": "cyberapps__versions__ui-builder__forms__depend-forms__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/footer-button.html",
+    "title": "Setting up a footer button",
+    "slug": "cyberapps__versions__ui-builder__forms__footer-button"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/form-data-mapping.html",
+    "title": "Mapping data between forms",
+    "slug": "cyberapps__versions__ui-builder__forms__form-data-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/form-groups.html",
+    "title": "Form groups",
+    "slug": "cyberapps__versions__ui-builder__forms__form-groups"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/form-model.html",
+    "title": "The form model",
+    "slug": "cyberapps__versions__ui-builder__forms__form-model"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/index.html",
+    "title": "Working with forms",
+    "slug": "cyberapps__versions__ui-builder__forms__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/input-params/adding-input-param.html",
+    "title": "Adding input parameters",
+    "slug": "cyberapps__versions__ui-builder__forms__input-params__adding-input-param"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/input-params/index.html",
+    "title": "Input parameters",
+    "slug": "cyberapps__versions__ui-builder__forms__input-params__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/input-params/input-param-defaults.html",
+    "title": "Using Acronis variables in default value strings",
+    "slug": "cyberapps__versions__ui-builder__forms__input-params__input-param-defaults"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/refresh-callback.html",
+    "title": "Specifying a refresh callback",
+    "slug": "cyberapps__versions__ui-builder__forms__refresh-callback"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/forms/root-form.html",
+    "title": "Root forms",
+    "slug": "cyberapps__versions__ui-builder__forms__root-form"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/index.html",
+    "title": "UI builder",
+    "slug": "cyberapps__versions__ui-builder__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/auto-map.html",
+    "title": "Auto-mapping a callback payload",
+    "slug": "cyberapps__versions__ui-builder__mapping__auto-map"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/delete-mappings.html",
+    "title": "Deleting mappings",
+    "slug": "cyberapps__versions__ui-builder__mapping__delete-mappings"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/index.html",
+    "title": "Callback mapping",
+    "slug": "cyberapps__versions__ui-builder__mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/index.html",
+    "title": "Complex mapping scenarios",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/scenario1.html",
+    "title": "Scenario 1: Both left and right properties are single values",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__scenario1"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/scenario2.html",
+    "title": "Scenario 2: Both left and right properties are arrays",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__scenario2"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/scenario3.html",
+    "title": "Scenario 3: Both left and right properties are arrays",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__scenario3"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/scenario4.html",
+    "title": "Scenario 4: Both left and right properties are array properties",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__scenario4"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/scenario41.html",
+    "title": "Scenario 4.1: Left property is a primitive or an object at root level, and right property is an array property",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__scenario41"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/scenario5.html",
+    "title": "Scenario 5: Left property is an array and right properties is a single value",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__scenario5"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/complex-mapping/scenario6.html",
+    "title": "Scenario 6: Left property is an array property and right properties is a single value",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__complex-mapping__scenario6"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/manual-map/manual-map.html",
+    "title": "Manually mapping a callback payload",
+    "slug": "cyberapps__versions__ui-builder__mapping__manual-map__manual-map"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/mapping-types.html",
+    "title": "Callback mapping types",
+    "slug": "cyberapps__versions__ui-builder__mapping__mapping-types"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/request-mapping-examples.html",
+    "title": "Request mapping examples",
+    "slug": "cyberapps__versions__ui-builder__mapping__request-mapping-examples"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/ui-builder/mapping/response-mapping-examples.html",
+    "title": "Response mapping example",
+    "slug": "cyberapps__versions__ui-builder__mapping__response-mapping-examples"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/explicit-explicit.html",
+    "title": "Setting explicit partner and customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__explicit-explicit"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/explicit-mirror.html",
+    "title": "Setting explicit partner and mirrored customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__explicit-mirror"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/index.html",
+    "title": "CyberApp enablement combinations",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/mapping-explicit.html",
+    "title": "Setting mapped partner and explicit customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__mapping-explicit"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/mapping-mirror.html",
+    "title": "Setting mapped partner and mirrored customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__mapping-mirror"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/mapping.html",
+    "title": "Setting mapped partner and customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/mirror-explicit.html",
+    "title": "Setting mirrored partner and explicit customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__mirror-explicit"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/mirror-mapping.html",
+    "title": "Setting mirrored partner and mapped customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__mirror-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/enablement/mirror-mirror.html",
+    "title": "Setting mirrored partner and customer enablement",
+    "slug": "cyberapps__versions__working-with-versions__creating__enablement__mirror-mirror"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/creating/index.html",
+    "title": "Creating a new Version",
+    "slug": "cyberapps__versions__working-with-versions__creating__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/deleting-versions.html",
+    "title": "Deleting a Version",
+    "slug": "cyberapps__versions__working-with-versions__deleting-versions"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/duplicating-a-version.html",
+    "title": "Duplicating a Version",
+    "slug": "cyberapps__versions__working-with-versions__duplicating-a-version"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/editing-a-version.html",
+    "title": "Opening a Version",
+    "slug": "cyberapps__versions__working-with-versions__editing-a-version"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/index.html",
+    "title": "Working with Versions",
+    "slug": "cyberapps__versions__working-with-versions__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/packages/exporting-version.html",
+    "title": "Exporting a Version",
+    "slug": "cyberapps__versions__working-with-versions__packages__exporting-version"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/packages/importing-version.html",
+    "title": "Importing a Version package",
+    "slug": "cyberapps__versions__working-with-versions__packages__importing-version"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/packages/index.html",
+    "title": "Exporting and importing Versions",
+    "slug": "cyberapps__versions__working-with-versions__packages__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/version-approval/approval-process.html",
+    "title": "Version approval process",
+    "slug": "cyberapps__versions__working-with-versions__version-approval__approval-process"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/version-approval/index.html",
+    "title": "Sending for approval",
+    "slug": "cyberapps__versions__working-with-versions__version-approval__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/version-list/action-panel.html",
+    "title": "Actions and details panel",
+    "slug": "cyberapps__versions__working-with-versions__version-list__action-panel"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/cyberapps/versions/working-with-versions/version-list/index.html",
+    "title": "Opening the Version list",
+    "slug": "cyberapps__versions__working-with-versions__version-list__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/glossary.html",
+    "title": "Glossary",
+    "slug": "glossary"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/index.html",
+    "title": "Previous",
+    "slug": "index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/integrations/index.html",
+    "title": "Integration types",
+    "slug": "integrations__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/introduction/access-model.html",
+    "title": "Access model",
+    "slug": "introduction__access-model"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/introduction/architecture.html",
+    "title": "Architecture",
+    "slug": "introduction__architecture"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/introduction/index.html",
+    "title": "Introduction to Acronis Cyber Platform",
+    "slug": "introduction__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/introduction/licensing.html",
+    "title": "Licensing model",
+    "slug": "introduction__licensing"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/introduction/tenancy-model.html",
+    "title": "Tenancy model",
+    "slug": "introduction__tenancy-model"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/catalogs/app-cat.html",
+    "title": "The Application Catalog",
+    "slug": "marketing__catalogs__app-cat"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/catalogs/catalog-card/index.html",
+    "title": "Catalog card",
+    "slug": "marketing__catalogs__catalog-card__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/catalogs/catalog-card/tags.html",
+    "title": "Deployment tags",
+    "slug": "marketing__catalogs__catalog-card__tags"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/catalogs/catalog-details.html",
+    "title": "Catalog detail page",
+    "slug": "marketing__catalogs__catalog-details"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/catalogs/index.html",
+    "title": "Acronis catalogs",
+    "slug": "marketing__catalogs__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/catalogs/int-cat.html",
+    "title": "Integration catalogs",
+    "slug": "marketing__catalogs__int-cat"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/index.html",
+    "title": "Integration catalogs",
+    "slug": "marketing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/monitoring-usage/dashboard.html",
+    "title": "Dashboard",
+    "slug": "marketing__monitoring-usage__dashboard"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/monitoring-usage/index.html",
+    "title": "Monitoring usage",
+    "slug": "marketing__monitoring-usage__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/catalog-only.html",
+    "title": "Deploying a CyberApp to catalog only",
+    "slug": "marketing__vp-descriptions__catalog-only"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/creating-description.html",
+    "title": "Creating a Description",
+    "slug": "marketing__vp-descriptions__creating-description"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/deleting-a-description.html",
+    "title": "Deleting a Description",
+    "slug": "marketing__vp-descriptions__deleting-a-description"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-approval/approval-process.html",
+    "title": "Description approval process",
+    "slug": "marketing__vp-descriptions__description-approval__approval-process"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-approval/index.html",
+    "title": "Sending for approval",
+    "slug": "marketing__vp-descriptions__description-approval__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/about-cyberapp.html",
+    "title": "About CyberApp",
+    "slug": "marketing__vp-descriptions__description-content-groups__about-cyberapp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/additional-information.html",
+    "title": "Additional information",
+    "slug": "marketing__vp-descriptions__description-content-groups__additional-information"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/company-contact.html",
+    "title": "Company contact",
+    "slug": "marketing__vp-descriptions__description-content-groups__company-contact"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/features.html",
+    "title": "Features",
+    "slug": "marketing__vp-descriptions__description-content-groups__features"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/general-settings.html",
+    "title": "General settings",
+    "slug": "marketing__vp-descriptions__description-content-groups__general-settings"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/images-and-videos.html",
+    "title": "Images & videos",
+    "slug": "marketing__vp-descriptions__description-content-groups__images-and-videos"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/index.html",
+    "title": "Managing Description content",
+    "slug": "marketing__vp-descriptions__description-content-groups__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-content-groups/support-contact.html",
+    "title": "Support contact",
+    "slug": "marketing__vp-descriptions__description-content-groups__support-contact"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-list/action-panel.html",
+    "title": "Actions and details panel",
+    "slug": "marketing__vp-descriptions__description-list__action-panel"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/description-list/index.html",
+    "title": "Opening the Description list",
+    "slug": "marketing__vp-descriptions__description-list__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/duplicating-a-description.html",
+    "title": "Duplicating a Description",
+    "slug": "marketing__vp-descriptions__duplicating-a-description"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/index.html",
+    "title": "Marketing a CyberApp",
+    "slug": "marketing__vp-descriptions__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/localization.html",
+    "title": "Localizing a Description",
+    "slug": "marketing__vp-descriptions__localization"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/opening-description.html",
+    "title": "Opening a Description",
+    "slug": "marketing__vp-descriptions__opening-description"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/packages/export-description.html",
+    "title": "Exporting a Description",
+    "slug": "marketing__vp-descriptions__packages__export-description"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/packages/import-description.html",
+    "title": "Importing a Description package",
+    "slug": "marketing__vp-descriptions__packages__import-description"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/packages/index.html",
+    "title": "Exporting and importing Descriptions",
+    "slug": "marketing__vp-descriptions__packages__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/marketing/vp-descriptions/preview-description.html",
+    "title": "Previewing a Description",
+    "slug": "marketing__vp-descriptions__preview-description"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/activation.html",
+    "title": "Activating an outbound integration",
+    "slug": "outbound__activation"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/advanced/index.html",
+    "title": "Advanced operations",
+    "slug": "outbound__apis__api-library__account__advanced__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/advanced/mfa/index.html",
+    "title": "Managing two-factor authentication",
+    "slug": "outbound__apis__api-library__account__advanced__mfa__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/advanced/ott/index.html",
+    "title": "How to log in to service consoles on behalf of another user",
+    "slug": "outbound__apis__api-library__account__advanced__ott__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/billing/billing-settings.html",
+    "title": "Billing settings",
+    "slug": "outbound__apis__api-library__account__billing__billing-settings"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/billing/fetching-pricing-info.html",
+    "title": "Fetching the pricing information for a tenant",
+    "slug": "outbound__apis__api-library__account__billing__fetching-pricing-info"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/billing/index.html",
+    "title": "Managing billing settings",
+    "slug": "outbound__apis__api-library__account__billing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/billing/setting-tier-licensing.html",
+    "title": "Setting the partner tenant tier level and the licensing mode",
+    "slug": "outbound__apis__api-library__account__billing__setting-tier-licensing"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/billing/switching-tenant-tiers.html",
+    "title": "Switching a partner tenant tier level",
+    "slug": "outbound__apis__api-library__account__billing__switching-tenant-tiers"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/branding/configuring-buy-url.html",
+    "title": "Configuring the “Buy URL” option",
+    "slug": "outbound__apis__api-library__account__branding__configuring-buy-url"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/branding/disabling-branding.html",
+    "title": "Disabling branding for a tenant",
+    "slug": "outbound__apis__api-library__account__branding__disabling-branding"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/branding/enabling-branding.html",
+    "title": "Enabling branding for a tenant",
+    "slug": "outbound__apis__api-library__account__branding__enabling-branding"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/branding/fetching-branding.html",
+    "title": "Fetching the branding options of a tenant",
+    "slug": "outbound__apis__api-library__account__branding__fetching-branding"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/branding/index.html",
+    "title": "Managing branding options",
+    "slug": "outbound__apis__api-library__account__branding__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/branding/updating-branding.html",
+    "title": "Updating branding options for a tenant",
+    "slug": "outbound__apis__api-library__account__branding__updating-branding"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/branding/updating-logo.html",
+    "title": "Updating the brand logo",
+    "slug": "outbound__apis__api-library__account__branding__updating-logo"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/error-codes.html",
+    "title": "API error codes",
+    "slug": "outbound__apis__api-library__account__error-codes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/index.html",
+    "title": "Account Management",
+    "slug": "outbound__apis__api-library__account__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/language-codes.html",
+    "title": "Supported language codes",
+    "slug": "outbound__apis__api-library__account__language-codes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/creating-location.html",
+    "title": "Creating a location",
+    "slug": "outbound__apis__api-library__account__locations__creating-location"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/deleting-infra.html",
+    "title": "Deleting a storage",
+    "slug": "outbound__apis__api-library__account__locations__deleting-infra"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/deleting-location.html",
+    "title": "Deleting a location",
+    "slug": "outbound__apis__api-library__account__locations__deleting-location"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/fetching-infras.html",
+    "title": "Fetching storages",
+    "slug": "outbound__apis__api-library__account__locations__fetching-infras"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/fetching-locations.html",
+    "title": "Fetching locations",
+    "slug": "outbound__apis__api-library__account__locations__fetching-locations"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/index.html",
+    "title": "Managing locations and storages",
+    "slug": "outbound__apis__api-library__account__locations__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/loc-obj-structure.html",
+    "title": "Location object structure",
+    "slug": "outbound__apis__api-library__account__locations__loc-obj-structure"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/moving-infra.html",
+    "title": "Moving a storage",
+    "slug": "outbound__apis__api-library__account__locations__moving-infra"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/registering-infra.html",
+    "title": "Registering a storage",
+    "slug": "outbound__apis__api-library__account__locations__registering-infra"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/store-obj-structure.html",
+    "title": "Storage object structure",
+    "slug": "outbound__apis__api-library__account__locations__store-obj-structure"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/updating-infra.html",
+    "title": "Updating a storage",
+    "slug": "outbound__apis__api-library__account__locations__updating-infra"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/locations/updating-location.html",
+    "title": "Updating a location",
+    "slug": "outbound__apis__api-library__account__locations__updating-location"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/offering-items/changing-quotas.html",
+    "title": "Changing quotas",
+    "slug": "outbound__apis__api-library__account__offering-items__changing-quotas"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/offering-items/enabling-disabling-ois.html",
+    "title": "Enabling/disabling an offering item",
+    "slug": "outbound__apis__api-library__account__offering-items__enabling-disabling-ois"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/offering-items/fetching-available-ois.html",
+    "title": "Fetching available offering items",
+    "slug": "outbound__apis__api-library__account__offering-items__fetching-available-ois"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/offering-items/index.html",
+    "title": "Managing offering items and quotas",
+    "slug": "outbound__apis__api-library__account__offering-items__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/offering-items/obj-structures.html",
+    "title": "JSON object structure",
+    "slug": "outbound__apis__api-library__account__offering-items__obj-structures"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/offering-items/switching-edition.html",
+    "title": "Switching the edition of a service",
+    "slug": "outbound__apis__api-library__account__offering-items__switching-edition"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/searching/index.html",
+    "title": "Searching for tenants and user accounts",
+    "slug": "outbound__apis__api-library__account__searching__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/searching/searching-for-tenant.html",
+    "title": "Searching for a tenant by its name",
+    "slug": "outbound__apis__api-library__account__searching__searching-for-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/searching/searching-for-user.html",
+    "title": "Searching for a user account by its login",
+    "slug": "outbound__apis__api-library__account__searching__searching-for-user"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/services/disabling-service.html",
+    "title": "Disabling a service for a sub-tenant",
+    "slug": "outbound__apis__api-library__account__services__disabling-service"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/services/enabling-service.html",
+    "title": "Enabling a service for a sub-tenant",
+    "slug": "outbound__apis__api-library__account__services__enabling-service"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/services/fetching-all-services.html",
+    "title": "Fetching information about all platform services",
+    "slug": "outbound__apis__api-library__account__services__fetching-all-services"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/services/fetching-service.html",
+    "title": "Fetching information about an individual service",
+    "slug": "outbound__apis__api-library__account__services__fetching-service"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/services/fetching-services.html",
+    "title": "Fetching information about services enabled for a tenant",
+    "slug": "outbound__apis__api-library__account__services__fetching-services"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/services/index.html",
+    "title": "Managing services",
+    "slug": "outbound__apis__api-library__account__services__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/services/obj-structure.html",
+    "title": "JSON object structure",
+    "slug": "outbound__apis__api-library__account__services__obj-structure"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/creating-tenant.html",
+    "title": "Creating a tenant",
+    "slug": "outbound__apis__api-library__account__tenants__creating-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/deleting-tenant.html",
+    "title": "Deleting a tenant",
+    "slug": "outbound__apis__api-library__account__tenants__deleting-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/disabling-tenant.html",
+    "title": "Disabling a tenant",
+    "slug": "outbound__apis__api-library__account__tenants__disabling-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/fetching-child-tenants.html",
+    "title": "Fetching information about child tenants",
+    "slug": "outbound__apis__api-library__account__tenants__fetching-child-tenants"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/fetching-tenant-prod-date.html",
+    "title": "Fetching the production start date of a tenant",
+    "slug": "outbound__apis__api-library__account__tenants__fetching-tenant-prod-date"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/fetching-tenant.html",
+    "title": "Fetching information about an individual tenant",
+    "slug": "outbound__apis__api-library__account__tenants__fetching-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/fetching-tenants.html",
+    "title": "Fetching information about tenants",
+    "slug": "outbound__apis__api-library__account__tenants__fetching-tenants"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/index.html",
+    "title": "Managing tenants",
+    "slug": "outbound__apis__api-library__account__tenants__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/limiting-tenant-access.html",
+    "title": "Limiting higher-level administrator access to a tenant",
+    "slug": "outbound__apis__api-library__account__tenants__limiting-tenant-access"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/modifying-tenant.html",
+    "title": "Modifying tenant properties",
+    "slug": "outbound__apis__api-library__account__tenants__modifying-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/moving-tenant.html",
+    "title": "Moving a tenant to another tenant",
+    "slug": "outbound__apis__api-library__account__tenants__moving-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/obj-structures.html",
+    "title": "JSON object structures",
+    "slug": "outbound__apis__api-library__account__tenants__obj-structures"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tenants/switching-tenant-modes.html",
+    "title": "Switching a customer tenant to production mode",
+    "slug": "outbound__apis__api-library__account__tenants__switching-tenant-modes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/changing-quotas.html",
+    "title": "Changing quotas",
+    "slug": "outbound__apis__api-library__account__tutorials__changing-quotas"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/changing-storage-quotas.html",
+    "title": "Changing storage quotas of partner sub-tenants",
+    "slug": "outbound__apis__api-library__account__tutorials__changing-storage-quotas"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/creating-billing-report.html",
+    "title": "Creating a billing report",
+    "slug": "outbound__apis__api-library__account__tutorials__creating-billing-report"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/index.html",
+    "title": "Tutorials",
+    "slug": "outbound__apis__api-library__account__tutorials__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/provisioning-customer-tenant.html",
+    "title": "Provisioning a customer tenant",
+    "slug": "outbound__apis__api-library__account__tutorials__provisioning-customer-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/provisioning-partner-tenant.html",
+    "title": "Provisioning a partner tenant",
+    "slug": "outbound__apis__api-library__account__tutorials__provisioning-partner-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/suspension-reactivation-termination.html",
+    "title": "Suspending / Reactivating / Terminating",
+    "slug": "outbound__apis__api-library__account__tutorials__suspension-reactivation-termination"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/switching-to-production.html",
+    "title": "Switching a tenant to production",
+    "slug": "outbound__apis__api-library__account__tutorials__switching-to-production"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/tutorials/tutorial.html",
+    "title": "Enabling the backup service for a user in a customer tenant",
+    "slug": "outbound__apis__api-library__account__tutorials__tutorial"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/upsell/enabling-editions-upsell.html",
+    "title": "Enabling upsell of service editions for a sub-tenant",
+    "slug": "outbound__apis__api-library__account__upsell__enabling-editions-upsell"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/upsell/enabling-quota-upsell.html",
+    "title": "Enabling quota upsell for a user account",
+    "slug": "outbound__apis__api-library__account__upsell__enabling-quota-upsell"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/upsell/index.html",
+    "title": "Managing upsell",
+    "slug": "outbound__apis__api-library__account__upsell__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/usage-reporting/index.html",
+    "title": "Usage and reporting",
+    "slug": "outbound__apis__api-library__account__usage-reporting__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/usage-reporting/obj-structure.html",
+    "title": "Tenant service usage JSON object structure",
+    "slug": "outbound__apis__api-library__account__usage-reporting__obj-structure"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/usage-reporting/reports/index.html",
+    "title": "Managing reports",
+    "slug": "outbound__apis__api-library__account__usage-reporting__reports__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/usage-reporting/tenants-usage.html",
+    "title": "Fetching tenants usage batch",
+    "slug": "outbound__apis__api-library__account__usage-reporting__tenants-usage"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/activation/index.html",
+    "title": "Activating a user account",
+    "slug": "outbound__apis__api-library__account__users__activation__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/changing-contact-info.html",
+    "title": "Changing a user account contact info",
+    "slug": "outbound__apis__api-library__account__users__changing-contact-info"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/changing-email.html",
+    "title": "Changing a user account email",
+    "slug": "outbound__apis__api-library__account__users__changing-email"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/changing-password.html",
+    "title": "Changing a user account password",
+    "slug": "outbound__apis__api-library__account__users__changing-password"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/creating-user.html",
+    "title": "Creating a user account",
+    "slug": "outbound__apis__api-library__account__users__creating-user"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/deleting-user.html",
+    "title": "Deleting a user account",
+    "slug": "outbound__apis__api-library__account__users__deleting-user"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/disabling-user.html",
+    "title": "Disabling/enabling a user account",
+    "slug": "outbound__apis__api-library__account__users__disabling-user"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/fetching-user-info.html",
+    "title": "Fetching user account information",
+    "slug": "outbound__apis__api-library__account__users__fetching-user-info"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/index.html",
+    "title": "Managing user accounts",
+    "slug": "outbound__apis__api-library__account__users__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/obj-structures.html",
+    "title": "JSON object structure",
+    "slug": "outbound__apis__api-library__account__users__obj-structures"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/account/users/roles/index.html",
+    "title": "Managing user account roles",
+    "slug": "outbound__apis__api-library__account__users__roles__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/agents/index.html",
+    "title": "Agent Management",
+    "slug": "outbound__apis__api-library__agents__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/agents/managing-agents/fetch-agent-status.html",
+    "title": "Fetching the online status of an agent",
+    "slug": "outbound__apis__api-library__agents__managing-agents__fetch-agent-status"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/agents/managing-agents/fetch-agent.html",
+    "title": "Fetching a specific agent",
+    "slug": "outbound__apis__api-library__agents__managing-agents__fetch-agent"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/agents/managing-agents/fetch-agents.html",
+    "title": "Fetching all registered agents",
+    "slug": "outbound__apis__api-library__agents__managing-agents__fetch-agents"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/agents/managing-agents/fetch-os.html",
+    "title": "Fetching the OS family of the host",
+    "slug": "outbound__apis__api-library__agents__managing-agents__fetch-os"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/agents/managing-agents/index.html",
+    "title": "Fetching agent information",
+    "slug": "outbound__apis__api-library__agents__managing-agents__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/appmgr/index.html",
+    "title": "Application Management API",
+    "slug": "outbound__apis__api-library__appmgr__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/appmgr/service-user-login.html",
+    "title": "Log in using service user account",
+    "slug": "outbound__apis__api-library__appmgr__service-user-login"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/before-you-start.html",
+    "title": "Before you start",
+    "slug": "outbound__apis__api-library__dr__before-you-start"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/fetch-atf-screenshot.html",
+    "title": "Fetch automated test failover screenshot",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__fetch-atf-screenshot"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/fetch-cloud-server-console-link.html",
+    "title": "Fetch a console link for the cloud server",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__fetch-cloud-server-console-link"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/fetch-cloud-server-info.html",
+    "title": "Fetch information about the cloud server",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__fetch-cloud-server-info"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/fetch-cloud-server-linked-workload.html",
+    "title": "Fetch a workload ID linked to the recovery server",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__fetch-cloud-server-linked-workload"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/fetch-cloud-servers-list.html",
+    "title": "Fetch a list of cloud servers",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__fetch-cloud-servers-list"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/fetch-dr-connectivity-status.html",
+    "title": "Fetch disaster recovery site status",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__fetch-dr-connectivity-status"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/fetch-recovery-points.html",
+    "title": "Fetch a list of the recovery server’s recovery points",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__fetch-recovery-points"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/index.html",
+    "title": "Managing cloud servers",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/start-production-failover.html",
+    "title": "Start production failover for a specific recovery server",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__start-production-failover"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/start-test-failover.html",
+    "title": "Start test failover for a specific recovery server",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__start-test-failover"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/cloud-servers/stop-failover.html",
+    "title": "Stop failover for a specific recovery server",
+    "slug": "outbound__apis__api-library__dr__cloud-servers__stop-failover"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/error-codes.html",
+    "title": "API error codes",
+    "slug": "outbound__apis__api-library__dr__error-codes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/dr/index.html",
+    "title": "Disaster Recovery API",
+    "slug": "outbound__apis__api-library__dr__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/events/fetching-topics-events.html",
+    "title": "Fetching event topics and types",
+    "slug": "outbound__apis__api-library__events__fetching-topics-events"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/events/index.html",
+    "title": "Event Manager API",
+    "slug": "outbound__apis__api-library__events__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/events/listening-for-events.html",
+    "title": "Listening for the events",
+    "slug": "outbound__apis__api-library__events__listening-for-events"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/events/subscribing-to-events.html",
+    "title": "Subscribing to the events",
+    "slug": "outbound__apis__api-library__events__subscribing-to-events"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/events/topics-events.html",
+    "title": "Topics and events",
+    "slug": "outbound__apis__api-library__events__topics-events"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/index.html",
+    "title": "API library",
+    "slug": "outbound__apis__api-library__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/integration-management/activate.html",
+    "title": "Activating an integration",
+    "slug": "outbound__apis__api-library__integration-management__activate"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/integration-management/deactivate.html",
+    "title": "Deactivating an integration",
+    "slug": "outbound__apis__api-library__integration-management__deactivate"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/integration-management/endpoint.html",
+    "title": "API endpoint",
+    "slug": "outbound__apis__api-library__integration-management__endpoint"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/integration-management/index.html",
+    "title": "Integration Management",
+    "slug": "outbound__apis__api-library__integration-management__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/mdr/batch-updating-investigation-states.html",
+    "title": "Updating a batch of investigation states",
+    "slug": "outbound__apis__api-library__mdr__batch-updating-investigation-states"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/mdr/fetching-incident-details.html",
+    "title": "Fetching incident details and response actions",
+    "slug": "outbound__apis__api-library__mdr__fetching-incident-details"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/mdr/fetching-incidents.html",
+    "title": "Fetching incidents",
+    "slug": "outbound__apis__api-library__mdr__fetching-incidents"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/mdr/index.html",
+    "title": "Endpoint Detection and Response API",
+    "slug": "outbound__apis__api-library__mdr__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/mdr/performing-monitoring-actions.html",
+    "title": "Performing and monitoring response actions",
+    "slug": "outbound__apis__api-library__mdr__performing-monitoring-actions"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/mdr/updating-investigation-state.html",
+    "title": "Updating incident investigation state",
+    "slug": "outbound__apis__api-library__mdr__updating-investigation-state"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/index.html",
+    "title": "Acronis PSA API",
+    "slug": "outbound__apis__api-library__psa__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-customers-clients/create-customer-user.html",
+    "title": "Create a user account for the customer",
+    "slug": "outbound__apis__api-library__psa__managing-customers-clients__create-customer-user"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-customers-clients/fetch-customer-clients.html",
+    "title": "Fetch customer’s clients",
+    "slug": "outbound__apis__api-library__psa__managing-customers-clients__fetch-customer-clients"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-customers-clients/fetch-customer-details.html",
+    "title": "Fetch customer details",
+    "slug": "outbound__apis__api-library__psa__managing-customers-clients__fetch-customer-details"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-customers-clients/fetch-customers.html",
+    "title": "Fetch a list of customers",
+    "slug": "outbound__apis__api-library__psa__managing-customers-clients__fetch-customers"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-customers-clients/fetch-taxes.html",
+    "title": "Fetch taxes",
+    "slug": "outbound__apis__api-library__psa__managing-customers-clients__fetch-taxes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-customers-clients/index.html",
+    "title": "Managing customers and clients",
+    "slug": "outbound__apis__api-library__psa__managing-customers-clients__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-customers-clients/set-customer-billing-info.html",
+    "title": "Set billing information for a customer",
+    "slug": "outbound__apis__api-library__psa__managing-customers-clients__set-customer-billing-info"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/create-invoice.html",
+    "title": "Create an invoice for a customer",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__create-invoice"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/create-ledger.html",
+    "title": "Create a ledger",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__create-ledger"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/create-product.html",
+    "title": "Create a product",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__create-product"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/create-sales-item.html",
+    "title": "Create a sales item",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__create-sales-item"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/download-invoice.html",
+    "title": "Download a PDF invoice",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__download-invoice"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/export-invoices.html",
+    "title": "Export invoices",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__export-invoices"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/fetch-billable-sales-items.html",
+    "title": "Fetch billable sales items",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__fetch-billable-sales-items"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/fetch-billing-entities.html",
+    "title": "Fetch information about billing entities",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__fetch-billing-entities"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/fetch-invoices.html",
+    "title": "Fetch a list of invoices",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__fetch-invoices"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/fetch-products.html",
+    "title": "Fetch a list of products",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__fetch-products"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/fetch-sales-items.html",
+    "title": "Fetch a list of sales items",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__fetch-sales-items"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-sales-billing/index.html",
+    "title": "Managing sales and billing",
+    "slug": "outbound__apis__api-library__psa__managing-sales-billing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/create-service-desk-ticket.html",
+    "title": "Create a service desk ticket",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__create-service-desk-ticket"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/fetch-service-desk-configuration.html",
+    "title": "Fetch service desk configuration",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__fetch-service-desk-configuration"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/fetch-ticket-activity-products.html",
+    "title": "Fetch products for activity-based ticket billing",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__fetch-ticket-activity-products"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/fetch-ticket-priorities.html",
+    "title": "Fetch ticket priorities",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__fetch-ticket-priorities"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/fetch-ticket-sla-breach-date.html",
+    "title": "Fetch SLA breach date",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__fetch-ticket-sla-breach-date"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/fetch-ticket-slas.html",
+    "title": "Fetch a list of Service Level Agreements (SLA)",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__fetch-ticket-slas"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/fetch-ticket-statuses.html",
+    "title": "Fetch ticket statuses",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__fetch-ticket-statuses"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/fetch-ticket-support-groups.html",
+    "title": "Fetch customer support groups",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__fetch-ticket-support-groups"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/psa/managing-service-desk/index.html",
+    "title": "Managing service desk",
+    "slug": "outbound__apis__api-library__psa__managing-service-desk__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/error-codes.html",
+    "title": "API error codes",
+    "slug": "outbound__apis__api-library__resource-policy__error-codes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/index.html",
+    "title": "Resource and Policy Management",
+    "slug": "outbound__apis__api-library__resource-policy__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/applying-plan-to-resources.html",
+    "title": "Applying a protection plan to resources",
+    "slug": "outbound__apis__api-library__resource-policy__policies__applying-plan-to-resources"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/creating-protection-plan.html",
+    "title": "Creating a protection plan",
+    "slug": "outbound__apis__api-library__resource-policy__policies__creating-protection-plan"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/deleting-plan.html",
+    "title": "Deleting a protection plan",
+    "slug": "outbound__apis__api-library__resource-policy__policies__deleting-plan"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/deleting-plans-tenant.html",
+    "title": "Deleting all protection plans for a tenant",
+    "slug": "outbound__apis__api-library__resource-policy__policies__deleting-plans-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/fetching-applicable-plans-for-resource.html",
+    "title": "Fetching a list of plans applicable for a resource",
+    "slug": "outbound__apis__api-library__resource-policy__policies__fetching-applicable-plans-for-resource"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/fetching-plans-policies.html",
+    "title": "Fetching a list of policies and protection plans",
+    "slug": "outbound__apis__api-library__resource-policy__policies__fetching-plans-policies"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/fetching-policy-statuses-of-resources.html",
+    "title": "Fetching policy execution statuses of resources",
+    "slug": "outbound__apis__api-library__resource-policy__policies__fetching-policy-statuses-of-resources"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/index.html",
+    "title": "Managing protection plans and policies",
+    "slug": "outbound__apis__api-library__resource-policy__policies__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/making-plan-favorite.html",
+    "title": "Making a protection plan a favorite",
+    "slug": "outbound__apis__api-library__resource-policy__policies__making-plan-favorite"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/policy-settings/index.html",
+    "title": "Protection policy settings",
+    "slug": "outbound__apis__api-library__resource-policy__policies__policy-settings__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/revoking-plan-from-resources.html",
+    "title": "Revoking protection plans from resources",
+    "slug": "outbound__apis__api-library__resource-policy__policies__revoking-plan-from-resources"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/starting-policy.html",
+    "title": "Start execution of a policy",
+    "slug": "outbound__apis__api-library__resource-policy__policies__starting-policy"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/tracking-policy-progress.html",
+    "title": "Tracking the execution progress of a policy",
+    "slug": "outbound__apis__api-library__resource-policy__policies__tracking-policy-progress"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/policies/updating-policy-or-plan.html",
+    "title": "Updating a policy or protection plan",
+    "slug": "outbound__apis__api-library__resource-policy__policies__updating-policy-or-plan"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/resources/fetching-protection-status-of-resources.html",
+    "title": "Fetching the protection status of resources",
+    "slug": "outbound__apis__api-library__resource-policy__resources__fetching-protection-status-of-resources"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/resources/fetching-resource-info.html",
+    "title": "Fetching detailed information about the resource",
+    "slug": "outbound__apis__api-library__resource-policy__resources__fetching-resource-info"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/resources/fetching-resources-by-type.html",
+    "title": "Fetching a list of resources by type",
+    "slug": "outbound__apis__api-library__resource-policy__resources__fetching-resources-by-type"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/resources/fetching-resources-using-search.html",
+    "title": "Fetching resources using search",
+    "slug": "outbound__apis__api-library__resource-policy__resources__fetching-resources-using-search"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/resources/fetching-resources-with-plan.html",
+    "title": "Fetching resources with the protection plan",
+    "slug": "outbound__apis__api-library__resource-policy__resources__fetching-resources-with-plan"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/resources/fetching-resources.html",
+    "title": "Fetching a list of all resources",
+    "slug": "outbound__apis__api-library__resource-policy__resources__fetching-resources"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/resource-policy/resources/index.html",
+    "title": "Managing resources",
+    "slug": "outbound__apis__api-library__resource-policy__resources__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/activities/fetching-activities.html",
+    "title": "Fetching a list of all activities",
+    "slug": "outbound__apis__api-library__tasks__activities__fetching-activities"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/activities/index.html",
+    "title": "Managing activities",
+    "slug": "outbound__apis__api-library__tasks__activities__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/index.html",
+    "title": "Task Management",
+    "slug": "outbound__apis__api-library__tasks__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/tasks/fetching-office365-tasks.html",
+    "title": "Fetching a list of tasks related to Office 365 backup and recovery",
+    "slug": "outbound__apis__api-library__tasks__tasks__fetching-office365-tasks"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/tasks/fetching-tasks-completedAt.html",
+    "title": "Fetching a list of tasks completed after a specified date",
+    "slug": "outbound__apis__api-library__tasks__tasks__fetching-tasks-completedAt"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/tasks/fetching-tasks-startedAt.html",
+    "title": "Fetching a list of tasks started after the specified date",
+    "slug": "outbound__apis__api-library__tasks__tasks__fetching-tasks-startedAt"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/tasks/fetching-tasks-state.html",
+    "title": "Fetching a list of tasks that are in progress",
+    "slug": "outbound__apis__api-library__tasks__tasks__fetching-tasks-state"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/tasks/fetching-tasks.html",
+    "title": "Fetching a list of all tasks",
+    "slug": "outbound__apis__api-library__tasks__tasks__fetching-tasks"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/api-library/tasks/tasks/index.html",
+    "title": "Managing tasks",
+    "slug": "outbound__apis__api-library__tasks__tasks__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/authentication/authentication.html",
+    "title": "Authenticating to the Acronis platform",
+    "slug": "outbound__apis__authentication__authentication"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/authentication/index.html",
+    "title": "Authentication",
+    "slug": "outbound__apis__authentication__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/getting-started/index.html",
+    "title": "Getting started",
+    "slug": "outbound__apis__getting-started__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/getting-started/set-up-python.html",
+    "title": "Setting up the Python environment",
+    "slug": "outbound__apis__getting-started__set-up-python"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/getting-started/start-python.html",
+    "title": "Starting the Python shell and configuring its session",
+    "slug": "outbound__apis__getting-started__start-python"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/index.html",
+    "title": "Acronis platform APIs",
+    "slug": "outbound__apis__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/inspect-response-codes.html",
+    "title": "Inspecting API response codes",
+    "slug": "outbound__apis__inspect-response-codes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/pagination.html",
+    "title": "Pagination",
+    "slug": "outbound__apis__pagination"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/reqresp.html",
+    "title": "Requests and responses",
+    "slug": "outbound__apis__reqresp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/apis/status-http-codes.html",
+    "title": "HTTP status response codes",
+    "slug": "outbound__apis__status-http-codes"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/deactivation.html",
+    "title": "Deactivating an outbound integration",
+    "slug": "outbound__deactivation"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/deploy-proxy.html",
+    "title": "Deploying the CyberApp",
+    "slug": "outbound__deploy-proxy"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/index.html",
+    "title": "Outbound integrations",
+    "slug": "outbound__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/index.html",
+    "title": "Outbound integration scenarios",
+    "slug": "outbound__scenarios__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/disabling.html",
+    "title": "Disabling the integration",
+    "slug": "outbound__scenarios__ipaas__disabling"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/enabling.html",
+    "title": "Enabling the integration",
+    "slug": "outbound__scenarios__ipaas__enabling"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/index.html",
+    "title": "Integration Platform as a Service (iPaaS) and Workflow Automation",
+    "slug": "outbound__scenarios__ipaas__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/creating-contract.html",
+    "title": "Creating a contract",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__creating-contract"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/creating-contractparts.html",
+    "title": "Creating contract parts",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__creating-contractparts"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/creating-ledger.html",
+    "title": "Creating a ledger",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__creating-ledger"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/creating-product.html",
+    "title": "Creating a product",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__creating-product"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/creating-tax.html",
+    "title": "Creating a tax",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__creating-tax"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/enabling-offerings.html",
+    "title": "Enabling an offering item",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__enabling-offerings"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/getting-offerings.html",
+    "title": "Getting a list of available offering items",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__getting-offerings"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/getting-usage.html",
+    "title": "Getting usage report",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__getting-usage"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/products-and-offerings/index.html",
+    "title": "Product and offering item actions",
+    "slug": "outbound__scenarios__ipaas__products-and-offerings__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tenant-mapping/creating-tenant.html",
+    "title": "Creating or updating a customer tenant",
+    "slug": "outbound__scenarios__ipaas__tenant-mapping__creating-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tenant-mapping/creating-user.html",
+    "title": "Creating or updating a user",
+    "slug": "outbound__scenarios__ipaas__tenant-mapping__creating-user"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tenant-mapping/finding-tenant.html",
+    "title": "Finding a customer tenant",
+    "slug": "outbound__scenarios__ipaas__tenant-mapping__finding-tenant"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tenant-mapping/finding-user.html",
+    "title": "Finding a user",
+    "slug": "outbound__scenarios__ipaas__tenant-mapping__finding-user"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tenant-mapping/index.html",
+    "title": "Tenant actions",
+    "slug": "outbound__scenarios__ipaas__tenant-mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tenant-mapping/respond-newcust.html",
+    "title": "Responding to new customer created",
+    "slug": "outbound__scenarios__ipaas__tenant-mapping__respond-newcust"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tenant-mapping/switching2production.html",
+    "title": "Switching customer tenant to production",
+    "slug": "outbound__scenarios__ipaas__tenant-mapping__switching2production"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tickets-and-alerts/creating-ticket.html",
+    "title": "Creating a ticket",
+    "slug": "outbound__scenarios__ipaas__tickets-and-alerts__creating-ticket"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tickets-and-alerts/dismiss-alert.html",
+    "title": "Dismissing an alert",
+    "slug": "outbound__scenarios__ipaas__tickets-and-alerts__dismiss-alert"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tickets-and-alerts/finding-ticket.html",
+    "title": "Finding a ticket",
+    "slug": "outbound__scenarios__ipaas__tickets-and-alerts__finding-ticket"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tickets-and-alerts/index.html",
+    "title": "Ticket and alert actions",
+    "slug": "outbound__scenarios__ipaas__tickets-and-alerts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tickets-and-alerts/respond-newalert.html",
+    "title": "Responding to a new alert",
+    "slug": "outbound__scenarios__ipaas__tickets-and-alerts__respond-newalert"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ipaas/tickets-and-alerts/updating-ticket.html",
+    "title": "Updating a ticket",
+    "slug": "outbound__scenarios__ipaas__tickets-and-alerts__updating-ticket"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/index.html",
+    "title": "Professional services automation (PSA)",
+    "slug": "outbound__scenarios__psa__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/managing-integration/configure.html",
+    "title": "Configuring",
+    "slug": "outbound__scenarios__psa__managing-integration__configure"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/managing-integration/enable.html",
+    "title": "Enabling",
+    "slug": "outbound__scenarios__psa__managing-integration__enable"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/managing-integration/index.html",
+    "title": "Managing the integration",
+    "slug": "outbound__scenarios__psa__managing-integration__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/managing-integration/troubleshoot.html",
+    "title": "Troubleshooting the connection",
+    "slug": "outbound__scenarios__psa__managing-integration__troubleshoot"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/managing-integration/view.html",
+    "title": "Viewing statistics",
+    "slug": "outbound__scenarios__psa__managing-integration__view"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/product-mapping/index.html",
+    "title": "Mapping products",
+    "slug": "outbound__scenarios__psa__product-mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/product-mapping/map-skus.html",
+    "title": "Mapping Acronis offering items to PSA SKUs",
+    "slug": "outbound__scenarios__psa__product-mapping__map-skus"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/product-mapping/offer-item.html",
+    "title": "Provisioning/configuring offering items",
+    "slug": "outbound__scenarios__psa__product-mapping__offer-item"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/product-mapping/usage-sync.html",
+    "title": "Synchronizing usage",
+    "slug": "outbound__scenarios__psa__product-mapping__usage-sync"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/provisioning/auto-deprovisioning.html",
+    "title": "Automatic de-provisioning",
+    "slug": "outbound__scenarios__psa__provisioning__auto-deprovisioning"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/provisioning/auto-provisioning.html",
+    "title": "Automatic provisioning",
+    "slug": "outbound__scenarios__psa__provisioning__auto-provisioning"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/provisioning/customer-options.html",
+    "title": "Provisioning",
+    "slug": "outbound__scenarios__psa__provisioning__customer-options"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/provisioning/index.html",
+    "title": "Customer provisioning",
+    "slug": "outbound__scenarios__psa__provisioning__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/tenant-mapping/customer.html",
+    "title": "Customer mapping",
+    "slug": "outbound__scenarios__psa__tenant-mapping__customer"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/tenant-mapping/index.html",
+    "title": "Tenant mapping",
+    "slug": "outbound__scenarios__psa__tenant-mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/tenant-mapping/multiple.html",
+    "title": "Multiple partner mapping",
+    "slug": "outbound__scenarios__psa__tenant-mapping__multiple"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/ticket-alert-sync/index.html",
+    "title": "Synchronizing tickets and alerts",
+    "slug": "outbound__scenarios__psa__ticket-alert-sync__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/ticket-alert-sync/ticket-creation.html",
+    "title": "Creating tickets",
+    "slug": "outbound__scenarios__psa__ticket-alert-sync__ticket-creation"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/ticket-alert-sync/ticket-mapping.html",
+    "title": "Mapping tickets",
+    "slug": "outbound__scenarios__psa__ticket-alert-sync__ticket-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/psa/ticket-alert-sync/ticket-options.html",
+    "title": "Ticket options",
+    "slug": "outbound__scenarios__psa__ticket-alert-sync__ticket-options"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/deploying/deployment-domain.html",
+    "title": "Deploying to domain controllers",
+    "slug": "outbound__scenarios__rmm__deploying__deployment-domain"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/deploying/index.html",
+    "title": "Deploying Acronis",
+    "slug": "outbound__scenarios__rmm__deploying__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/deploying/install-agent.html",
+    "title": "Installing the Acronis agent",
+    "slug": "outbound__scenarios__rmm__deploying__install-agent"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/deploying/install-dbapp.html",
+    "title": "Installing the agent for DB application backup",
+    "slug": "outbound__scenarios__rmm__deploying__install-dbapp"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/index.html",
+    "title": "Remote monitoring and management (RMM)",
+    "slug": "outbound__scenarios__rmm__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/managing/configure.html",
+    "title": "Configuring",
+    "slug": "outbound__scenarios__rmm__managing__configure"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/managing/disable.html",
+    "title": "Disabling",
+    "slug": "outbound__scenarios__rmm__managing__disable"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/managing/enable.html",
+    "title": "Enabling",
+    "slug": "outbound__scenarios__rmm__managing__enable"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/managing/index.html",
+    "title": "Managing the integration",
+    "slug": "outbound__scenarios__rmm__managing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/managing/troubleshoot.html",
+    "title": "Troubleshooting the connection",
+    "slug": "outbound__scenarios__rmm__managing__troubleshoot"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/managing/view.html",
+    "title": "Viewing statistics",
+    "slug": "outbound__scenarios__rmm__managing__view"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/mapping/creating.html",
+    "title": "Creating new customers",
+    "slug": "outbound__scenarios__rmm__mapping__creating"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/mapping/customer-mapping.html",
+    "title": "Customer mapping",
+    "slug": "outbound__scenarios__rmm__mapping__customer-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/mapping/index.html",
+    "title": "Tenant mapping",
+    "slug": "outbound__scenarios__rmm__mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/mapping/multi-mapping.html",
+    "title": "Multiple partner mapping",
+    "slug": "outbound__scenarios__rmm__mapping__multi-mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/monitoring.html",
+    "title": "Monitoring",
+    "slug": "outbound__scenarios__rmm__monitoring"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/syncing/creating.html",
+    "title": "Creating tickets",
+    "slug": "outbound__scenarios__rmm__syncing__creating"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/syncing/index.html",
+    "title": "Synchronizing tickets and alerts",
+    "slug": "outbound__scenarios__rmm__syncing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/syncing/mapping-tickets.html",
+    "title": "Mapping tickets",
+    "slug": "outbound__scenarios__rmm__syncing__mapping-tickets"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/syncing/ticket-options.html",
+    "title": "Ticket options",
+    "slug": "outbound__scenarios__rmm__syncing__ticket-options"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/tasks/automating.html",
+    "title": "Automating tasks",
+    "slug": "outbound__scenarios__rmm__tasks__automating"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/tasks/index.html",
+    "title": "Tasks",
+    "slug": "outbound__scenarios__rmm__tasks__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/rmm/tasks/protection-plans.html",
+    "title": "Creating or re-using protection plans",
+    "slug": "outbound__scenarios__rmm__tasks__protection-plans"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/siem/agents.html",
+    "title": "Acronis agent information",
+    "slug": "outbound__scenarios__siem__agents"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/siem/alerts.html",
+    "title": "Alerts",
+    "slug": "outbound__scenarios__siem__alerts"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/siem/configuring.html",
+    "title": "Configuring",
+    "slug": "outbound__scenarios__siem__configuring"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/siem/enabling.html",
+    "title": "Enabling the integration",
+    "slug": "outbound__scenarios__siem__enabling"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/siem/index.html",
+    "title": "Security Information And Event Management (SIEM)",
+    "slug": "outbound__scenarios__siem__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/siem/protection.html",
+    "title": "Protection status",
+    "slug": "outbound__scenarios__siem__protection"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/siem/selecting.html",
+    "title": "Selecting customers",
+    "slug": "outbound__scenarios__siem__selecting"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/index.html",
+    "title": "Ticketing",
+    "slug": "outbound__scenarios__ticketing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/managing/configuring.html",
+    "title": "Configuring",
+    "slug": "outbound__scenarios__ticketing__managing__configuring"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/managing/enabling.html",
+    "title": "Enabling",
+    "slug": "outbound__scenarios__ticketing__managing__enabling"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/managing/index.html",
+    "title": "Managing the integration",
+    "slug": "outbound__scenarios__ticketing__managing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/managing/troubleshooting.html",
+    "title": "Troubleshooting the connection",
+    "slug": "outbound__scenarios__ticketing__managing__troubleshooting"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/managing/viewing.html",
+    "title": "Viewing statistics",
+    "slug": "outbound__scenarios__ticketing__managing__viewing"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/mapping/customers.html",
+    "title": "Mapping customers",
+    "slug": "outbound__scenarios__ticketing__mapping__customers"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/mapping/index.html",
+    "title": "Mapping tenants",
+    "slug": "outbound__scenarios__ticketing__mapping__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/mapping/multiple-partners.html",
+    "title": "Mapping multiple partners",
+    "slug": "outbound__scenarios__ticketing__mapping__multiple-partners"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/syncronizing/creating.html",
+    "title": "Creating tickets",
+    "slug": "outbound__scenarios__ticketing__syncronizing__creating"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/syncronizing/index.html",
+    "title": "Synchronizing tickets and alerts",
+    "slug": "outbound__scenarios__ticketing__syncronizing__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/syncronizing/mapping.html",
+    "title": "Mapping tickets",
+    "slug": "outbound__scenarios__ticketing__syncronizing__mapping"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scenarios/ticketing/syncronizing/options.html",
+    "title": "Ticket options",
+    "slug": "outbound__scenarios__ticketing__syncronizing__options"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scripts/index.html",
+    "title": "Scripts",
+    "slug": "outbound__scripts__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/scripts/register-agent-and-apply-plan.html",
+    "title": "Register agent and apply plan",
+    "slug": "outbound__scripts__register-agent-and-apply-plan"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/outbound/verification.html",
+    "title": "Outbound integration verification",
+    "slug": "outbound__verification"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/resources/index.html",
+    "title": "Technical resources",
+    "slug": "resources__index"
+  },
+  {
+    "url": "https://developer.acronis.com/doc/ticketbridge/index.html",
+    "title": "Acronis Ticket Bridge",
+    "slug": "ticketbridge__index"
+  }
+]

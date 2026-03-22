@@ -1,0 +1,1891 @@
+{
+  "timestamp": "2026-03-20T21:49:58.807518",
+  "api_url": "http://localhost:8080/api/chat/stream",
+  "total": 30,
+  "passed": 30,
+  "tier_breakdown": {
+    "tier1_qa_match": {
+      "total": 10,
+      "passed": 10
+    },
+    "tier2_local_doc": {
+      "total": 10,
+      "passed": 10
+    },
+    "tier3_web_doc": {
+      "total": 10,
+      "passed": 10
+    }
+  },
+  "results": [
+    {
+      "id": "T1_01_activate_account",
+      "query": "How do I activate my Acronis Cyber Protect Cloud account for the first time?",
+      "description": "Account activation — core getting-started Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 485,
+      "elapsed_ms": 476,
+      "answer_preview": "When an administrator creates your account, you receive an email containing your login (username) and an 'Activate account' button. Click the button a...",
+      "full_answer": "When an administrator creates your account, you receive an email containing your login (username) and an 'Activate account' button. Click the button and set a password that is at least nine characters long. If two-factor authentication has been enabled by your administrator, you will also be prompted to set it up during activation. \n\n**Source:** `01-getting-started/01-activating-account.md`",
+      "sources": [
+        {
+          "title": "01 Activating Account",
+          "file": "01-getting-started/01-activating-account.md",
+          "score": 1.0,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#activating-account.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=393"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['activat', 'account', 'password'] of ['activat', 'account', 'password']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=1.000, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "485ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_02_password_requirements",
+      "query": "What are the password requirements when creating a user account in Acronis Cyber Protect Cloud?",
+      "description": "Password policy — getting-started Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 454,
+      "elapsed_ms": 450,
+      "answer_preview": "Passwords are classified as Weak, Medium, or Strong based on complexity. You cannot save a weak password. Passwords that repeat the user name, login, ...",
+      "full_answer": "Passwords are classified as Weak, Medium, or Strong based on complexity. You cannot save a weak password. Passwords that repeat the user name, login, email, or tenant name are always considered weak, as are most common passwords. To strengthen a password, add more characters; using digits, uppercase/lowercase letters, and special characters helps create shorter but stronger passwords. \n\n**Source:** `01-getting-started/02-password-requirements.md`",
+      "sources": [
+        {
+          "title": "02 Password Requirements",
+          "file": "01-getting-started/02-password-requirements.md",
+          "score": 0.9999977648257548,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-protection-getting-started.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=450"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['password', 'weak'] of ['password', 'weak']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=1.000, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "454ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_03_two_factor_auth",
+      "query": "How do I set up two-factor authentication for my account in Cyber Protect console?",
+      "description": "2FA setup — authentication Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 541,
+      "elapsed_ms": 534,
+      "answer_preview": "First, install an authenticator app (such as Microsoft Authenticator, Google Authenticator, or Twilio Authy) on your mobile phone or another device. T...",
+      "full_answer": "First, install an authenticator app (such as Microsoft Authenticator, Google Authenticator, or Twilio Authy) on your mobile phone or another device. Then scan the QR code shown in the console using the authenticator app, enter the 6-digit code displayed, and click Next. Save or print the provided PDF file for account recovery, then return to the login page and enter the generated code to complete setup. \n\n**Source:** `01-getting-started/03-two-factor-authentication.md`",
+      "sources": [
+        {
+          "title": "03 Two Factor Authentication",
+          "file": "01-getting-started/03-two-factor-authentication.md",
+          "score": 0.9999986290929694,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#two-factor-authentication.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=473"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['two-factor', 'authentication'] of ['two-factor', 'authentication', '2fa']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=1.000, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "541ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_04_install_preparation",
+      "query": "How do I prepare my system before installing a Cyber Protection agent?",
+      "description": "Agent installation prep — deployment Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 524,
+      "elapsed_ms": 519,
+      "answer_preview": "Before installing a Cyber Protection agent, follow these steps: (1) Choose the appropriate agent for your backup needs, (2) Verify you have enough fre...",
+      "full_answer": "Before installing a Cyber Protection agent, follow these steps: (1) Choose the appropriate agent for your backup needs, (2) Verify you have enough free disk space, (3) Download the setup program from All devices > Add, (4) Install prerequisites like Microsoft Visual C++ 2017 Redistributable, and (5) Configure firewall ports to allow outbound connections through TCP ports 443, 8443, and 7770–7800. \n\n**Source:** `02-installing-deploying-agents/01-preparation.md`",
+      "sources": [
+        {
+          "title": "01 Preparation",
+          "file": "02-installing-deploying-agents/01-preparation.md",
+          "score": 0.999998211860472,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#preparation.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=464"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['install', 'agent'] of ['install', 'agent']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=1.000, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "524ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_05_create_plan",
+      "query": "How do I create and manage different types of plans in Acronis Cyber Protect Cloud?",
+      "description": "Plan management — working-with-plans Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 616,
+      "elapsed_ms": 608,
+      "answer_preview": "Plans are created and managed from the Management tab in the Cyber Protect console. A plan is a set of configurations and rules applied to one or seve...",
+      "full_answer": "Plans are created and managed from the Management tab in the Cyber Protect console. A plan is a set of configurations and rules applied to one or several workloads for goals like backup, malware protection, or performance monitoring. Each plan consists of modules that can be enabled or disabled, with each module containing settings for specific functionality. Available plan types include Protection, Remote management, Scripting, Monitoring, Software deployment, Cloud applications backup, Archiving, Backup scanning, and SIEM forwarding plans. \n\n**Source:** `03-working-with-plans/01-understanding-plans.md`",
+      "sources": [
+        {
+          "title": "01 Understanding Plans",
+          "file": "03-working-with-plans/01-understanding-plans.md",
+          "score": 0.9999986588953944,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#understanding-plans.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=611"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['plan', 'creat'] of ['plan', 'creat']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=1.000, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "616ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_06_monitoring_dashboard",
+      "query": "How do I customize and manage widgets on the Monitoring Overview dashboard in Acronis?",
+      "description": "Dashboard customization — monitoring Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 548,
+      "elapsed_ms": 545,
+      "answer_preview": "To manage widgets on the Overview dashboard, you can rearrange them by dragging and dropping via their names, edit them by clicking the pencil icon to...",
+      "full_answer": "To manage widgets on the Overview dashboard, you can rearrange them by dragging and dropping via their names, edit them by clicking the pencil icon to rename, change time range, set filters, or group rows. To add a widget, click 'Add widget' and either add it with default settings or click 'Customize' to edit before adding. To remove a widget, click the X sign next to its name. \n\n**Source:** `04-monitoring-dashboards/01-monitoring-overview.md`",
+      "sources": [
+        {
+          "title": "01 Monitoring Overview",
+          "file": "04-monitoring-dashboards/01-monitoring-overview.md",
+          "score": 0.9521115734544134,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-alerts.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=447"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['widget', 'dashboard', 'monitor'] of ['widget', 'dashboard', 'monitor']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=0.952, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "548ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_07_workload_status",
+      "query": "How can I check if a workload is online or offline in the Cyber Protect console?",
+      "description": "Workload status check — managing-workloads Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 433,
+      "elapsed_ms": 430,
+      "answer_preview": "The workload status is checked every minute in the Cyber Protect console. If the agent on the machine is not transferring data and there is no answer ...",
+      "full_answer": "The workload status is checked every minute in the Cyber Protect console. If the agent on the machine is not transferring data and there is no answer to five consecutive checks, the workload is shown as offline. It will show as back online when it answers a status check or starts transferring data. \n\n**Source:** `05-managing-workloads/01-cyber-protect-console.md`",
+      "sources": [
+        {
+          "title": "01 Cyber Protect Console",
+          "file": "05-managing-workloads/01-cyber-protect-console.md",
+          "score": 0.9607189753242711,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#service-console.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=365"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['workload', 'online', 'offline'] of ['workload', 'online', 'offline']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=0.961, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "433ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_08_supported_os",
+      "query": "Which Windows operating systems are supported by the Acronis Agent for Windows?",
+      "description": "Supported OS — backup-and-recovery Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 375,
+      "elapsed_ms": 370,
+      "answer_preview": "The Agent for Windows supports Windows 10 version 1809 and later (Home, Pro, Education, Enterprise, IoT Enterprise, and LTSC editions), Windows 11 (al...",
+      "full_answer": "The Agent for Windows supports Windows 10 version 1809 and later (Home, Pro, Education, Enterprise, IoT Enterprise, and LTSC editions), Windows 11 (all editions), Windows Server 2019, Windows Server 2022, and Windows Server 2025. For Server editions, all installation options are supported except Nano Server. \n\n**Source:** `06-backup-and-recovery/01-overview-and-supported-os-windows.md`",
+      "sources": [
+        {
+          "title": "01 Overview And Supported Os Windows",
+          "file": "06-backup-and-recovery/01-overview-and-supported-os-windows.md",
+          "score": 0.9641154121126322,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-operating-systems-and-environments.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=388"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['windows', 'support'] of ['windows', 'support']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=0.964, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "375ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_09_edr_enable",
+      "query": "How do I add EDR functionality to my Acronis Cyber Protect Cloud protection plan?",
+      "description": "EDR enablement — endpoint detection Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 448,
+      "elapsed_ms": 445,
+      "answer_preview": "EDR is part of the Advanced Security + XDR protection pack within the Acronis Cyber Protection service. You need to add EDR functionality to a protect...",
+      "full_answer": "EDR is part of the Advanced Security + XDR protection pack within the Acronis Cyber Protection service. You need to add EDR functionality to a protection plan, though this may be subject to additional charges. From version C24.05, EDR can also be extended with XDR for additional correlated detections across email and identity management metadata. \n\n**Source:** `10-edr-xdr/01-edr-overview-and-features.md`",
+      "sources": [
+        {
+          "title": "01 Edr Overview And Features",
+          "file": "10-edr-xdr/01-edr-overview-and-features.md",
+          "score": 0.9999981522565644,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-features.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=407"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['edr', 'protection plan'] of ['edr', 'protection plan']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=1.000, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "448ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T1_10_compliance_mode",
+      "query": "How do I set an encryption password for Compliance Mode on a protected device?",
+      "description": "Compliance mode encryption — additional tools Q&A",
+      "source_type": "qa_match",
+      "wall_ms": 575,
+      "elapsed_ms": 572,
+      "answer_preview": "You can set the encryption password in three ways: during the installation of a protection agent (Windows, macOS, Linux), via the command line using t...",
+      "full_answer": "You can set the encryption password in three ways: during the installation of a protection agent (Windows, macOS, Linux), via the command line using the Acropsh tool (Windows, Linux, and virtual appliances), or through the Cyber Protect Monitor (Windows, macOS). To use the Cyber Protect Monitor, log on as administrator, click the Monitor icon in the notification area or menu bar, click the gear icon, select Encryption, set the password, and click OK. \n\n**Source:** `14-additional-tools/01-compliance-mode.md`",
+      "sources": [
+        {
+          "title": "01 Compliance Mode",
+          "file": "14-additional-tools/01-compliance-mode.md",
+          "score": 0.9999984502794277,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compliance-mode.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=512"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['encrypt', 'compliance'] of ['encrypt', 'compliance']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match, all_types={'qa_match'}"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=1.000, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "575ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_01_ports_ips",
+      "query": "What ports and IP addresses should I allow for Acronis Cyber Protect Cloud communication?",
+      "description": "Network ports — local doc (passed in v1)",
+      "source_type": "local_doc",
+      "wall_ms": 13563,
+      "elapsed_ms": 13559,
+      "answer_preview": "  Based on the provided documentation context, **I cannot answer this question accurately**. The retrieved documentation chunks cover:  1. **Enabling ...",
+      "full_answer": "\n\nBased on the provided documentation context, **I cannot answer this question accurately**. The retrieved documentation chunks cover:\n\n1. **Enabling the MDR Service** — mentions that \"the IP range of the MDR vendor will be added automatically\" when login control is enabled, but does not list specific ports or IP addresses.\n2. **Connecting to unmanaged workloads via IP address** — covers RDP and Apple Screen Sharing connections within a LAN, but does not provide a list of required ports/IPs for Acronis Cloud communication.\n3. **Protecting Mobile Devices** — covers mobile backup capabilities, not network requirements.\n\n**None of these documents contain the specific port numbers, IP address ranges, or firewall rules required for Acronis Cyber Protect Cloud communication.**\n\nThis information is typically found in a dedicated **\"Network requirements\"** or **\"Ports and IP addresses\"** section of the Acronis documentation. You should look for a document covering:\n\n- **Acronis Cloud service endpoints** (by data center region)\n- **Required outbound ports** (commonly TCP 443, 8443, etc.)\n- **IP ranges for Acronis data centers**\n- **Firewall/proxy configuration requirements**\n\nI recommend checking the official Acronis documentation for a page titled something like *\"Ports and addresses used by Acronis services\"* or *\"Network requirements for Acronis Cyber Protect Cloud\"* for the exact values.\n\n**Source:** No matching source available in the retrieved documentation. ",
+      "sources": [
+        {
+          "title": "02 Enabling Mdr Service",
+          "file": "11-mdr/02-enabling-mdr-service.md",
+          "score": 0.74186105,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "connecting-to-unmanaged-workloads.html",
+          "file": "connecting-to-unmanaged-workloads.html",
+          "score": 0.59537494,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#connecting-to-unmanaged-workloads.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "34 Protecting Mobile Devices",
+          "file": "06-backup-and-recovery/34-protecting-mobile-devices.md",
+          "score": 0.47498128,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mobile-devices.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1480"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['port'] of ['port']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=local_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['11-mdr/02-enabling-mdr-service.md', 'connecting-to-unmanaged-workloads.html', '06-backup-and-recovery/34-protecting-mobile-devices.md']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "13563ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_02_group_policy_msi",
+      "query": "What is the MSI package path and GPO configuration needed to deploy Acronis agent silently via Active Directory Group Policy?",
+      "description": "GPO/MSI silent deploy — ultra-specific install detail",
+      "source_type": "local_doc",
+      "wall_ms": 28168,
+      "elapsed_ms": 28163,
+      "answer_preview": "# Deploying Acronis Agent via Active Directory Group Policy (MSI/GPO)  ## Prerequisites  - **Active Directory domain** with a domain controller runnin...",
+      "full_answer": "# Deploying Acronis Agent via Active Directory Group Policy (MSI/GPO)\n\n## Prerequisites\n\n- **Active Directory domain** with a domain controller running **Microsoft Windows Server 2003 or later**\n- You must be a member of the **Domain Admins** group\n- Download the **\"All agents for Windows\"** setup program from the Cyber Protect console (click the **account icon** → **Downloads**)\n\n## Step-by-Step Deployment\n\n### 1. Generate a Registration Token\nGenerate a token as described in the \"Generating a registration token\" documentation.\n\n### 2. Create the .mst and Extract .msi/.cab Files\n\n1. Log in as an **administrator** on any machine in the Active Directory domain.\n2. **Create a shared folder** for the installation packages. Ensure **domain users can access** it (e.g., leave default sharing settings for **Everyone**).\n3. Run the agent setup program (`.exe`).\n4. Click **\"Create .mst and .msi files for unattended installation\"**.\n5. In **\"What to install\"**, select the desired components, then click **Done**.\n6. In **\"Registration settings\"**, click **Specify**, enter the **registration token**, then click **Done**.\n   - Registration method options: **Use registration token** (default), **Use credentials**, or **Skip registration**.\n\n### 3. Set Up the Group Policy Object (GPO)\n\nConfigure the GPO to deploy the `.msi` package with the `.mst` transform file. Every time a machine logs on to the domain, the GPO will ensure the agent is **installed and registered automatically**.\n\n## MSI Component Values (for `ADDLOCAL` parameter)\n\n| Value Name | Component | Must Install With | Bitness |\n|---|---|---|---|\n| `AgentFeature` | Core components for agents | — | 32/64-bit |\n| `MmsMspComponents` | Core components for backup | `AgentFeature` | 32/64-bit |\n| `BackupAndRecoveryAgent` | Agent for Windows | `MmsMspComponents` | 32/64-bit |\n| `AmpAgentFeature` | Agent for Antimalware & URL filtering | `BackupAndRecoveryAgent` | 32/64-bit |\n| `DlpAgentFeature` | Agent for Data Loss Prevention | `BackupAndRecoveryAgent` | 32/64-bit |\n| `SasAgentFeature` | Agent for File Sync & Share | `TrayMonitor` | 32/64-bit |\n| `ArxAgentFeature` | Agent for Exchange | `MmsMspComponents` | 32/64-bit |\n| `ArsAgentFeature` | Agent for SQL | `BackupAndRecoveryAgent` | 32/64-bit |\n| `ARADAgentFeature` | Agent for Active Directory | `BackupAndRecoveryAgent` | 32/64-bit |\n| `ArxOnlineAgentFeature` | Agent for Microsoft 365 | `MmsMspComponents` | 32/64-bit |\n| `OracleAgentFeature` | Agent for Oracle | `BackupAndRecoveryAgent` | 32/64-bit |\n| `AcronisESXSupport` | Agent for VMware ESX(i) (Windows) | `BackupAndRecoveryAgent` | 64-bit |\n| `HyperVAgent` | Agent for Hyper-V | `BackupAndRecoveryAgent` | 32/64-bit |\n| `CommandLineTool` | Command-Line Tool | — | 32/64-bit |\n| `TrayMonitor` | Cyber Protect Monitor | `AgentFeature` | 32/64-bit |\n| `BackupAndRecoveryBootableComponents` | Bootable Media Builder | — | 32/64-bit |\n\n## Key Registration CLI Parameters (EXE-based)\n\n| Parameter | Description |\n|---|---|\n| `--reg-token=<token>` | 12-character registration token (three segments separated by hyphens) |\n| `--reg-login=<login>` / `--reg-password=<password>` | Credential-based registration (do not use with `--reg-token`) |\n| `--register-only` | Skip installation, register only via OAuth 2.0 device-flow |\n\n> **Note:** The specific GPO configuration steps (e.g., exact MMC snap-in instructions for assigning the MSI package under **Computer Configuration → Software Installation**) are referenced in the documentation as \"Setting up the Group Policy object\" but the detailed procedure is not fully included in the retrieved context.\n\n**Source:** `02-installing-deploying-agents/20-deploying-agents-group-policy.md`, `02-installing-deploying-agents/16-windows-cli-msi-installation.md`, `components-unattended-installation-msi.html` ",
+      "sources": [
+        {
+          "title": "20 Deploying Agents Group Policy",
+          "file": "02-installing-deploying-agents/20-deploying-agents-group-policy.md",
+          "score": 0.7061904,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agents-through-group-policy.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "16 Windows Cli Msi Installation",
+          "file": "02-installing-deploying-agents/16-windows-cli-msi-installation.md",
+          "score": 0.21866935,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-uninstallation-msi-file.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "components-unattended-installation-msi.html",
+          "file": "components-unattended-installation-msi.html",
+          "score": 0.20497774,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#components-unattended-installation-msi.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=3834"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['msi', 'group policy', 'gpo'] of ['msi', 'group policy', 'gpo']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=local_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['02-installing-deploying-agents/20-deploying-agents-group-policy.md', '02-installing-deploying-agents/16-windows-cli-msi-installation.md', 'components-unattended-installation-msi.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "28168ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_03_compute_points_failover",
+      "query": "How are compute points calculated and consumed during disaster recovery failover in Acronis?",
+      "description": "Compute points billing — DR-specific detail",
+      "source_type": "local_doc",
+      "wall_ms": 14397,
+      "elapsed_ms": 14393,
+      "answer_preview": "  # Compute Points in Disaster Recovery Failover  **Compute points** reflect the compute resources used for running servers (virtual machines) in the ...",
+      "full_answer": "\n\n# Compute Points in Disaster Recovery Failover\n\n**Compute points** reflect the compute resources used for running servers (virtual machines) in the cloud during **test failover** and **production failover** in Disaster Recovery to Cyber Protect Cloud.\n\n## How Consumption Works\n\nThe consumption depends on **two factors**:\n\n1. **Server parameters** (CPU and RAM) — more powerful servers consume more compute points\n2. **Duration** in failover state — the longer the server is in failover, the more points consumed\n\n## Billing Rules\n\n- All servers **running** in Cyber Protect Cloud are charged for compute points based on their configured **flavor**, **regardless of their state** (powered on or powered off)\n- Recovery servers in the **Standby** state **do not** consume compute points and are **not charged**\n- Flavors can be changed in the **Details tab**\n\n## Compute Points Table (Per Hour)\n\n| Type | CPU | RAM | Compute Points |\n|------|-----|-----|----------------|\n| **F1** | 1 vCPU | 2 GB | **1** |\n| **F2** | 1 vCPU | 4 GB | **2** |\n| **F3** | 2 vCPU | 8 GB | **4** |\n| **F4** | 4 vCPU | 16 GB | **8** |\n| **F5** | 8 vCPU | 32 GB | **16** |\n| **F6** | 16 vCPU | 64 GB | **32** |\n| **F7** | 16 vCPU | 128 GB | **64** |\n| **F8** | 16 vCPU | 256 GB | **128** |\n\n## Example Calculation\n\nIf you protect **two virtual machines** with Disaster Recovery:\n- **VM 1:** 4 vCPU, 16 GB RAM → consumes **8 compute points/hour** (F4)\n- **VM 2:** 2 vCPU, 8 GB RAM → consumes **4 compute points/hour** (F3)\n\nIf both are in failover simultaneously, total consumption = **12 compute points/hour**, or **288 compute points/day**.\n\n**Source:** `07-disaster-recovery/06-compute-points-failover.md`, `compute-points.html` ",
+      "sources": [
+        {
+          "title": "06 Compute Points Failover",
+          "file": "07-disaster-recovery/06-compute-points-failover.md",
+          "score": 0.97539,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compute-points.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "compute-points.html",
+          "file": "compute-points.html",
+          "score": 0.97428846,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#compute-points.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "15 Dr To Azure Overview Requirements Licensing",
+          "file": "07-disaster-recovery/15-dr-to-azure-overview-requirements-licensing.md",
+          "score": 0.5448922,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-software-requirements.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1710"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['compute point'] of ['compute point']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=local_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['07-disaster-recovery/06-compute-points-failover.md', 'compute-points.html', '07-disaster-recovery/15-dr-to-azure-overview-requirements-licensing.md']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "14397ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_04_runbook_execution",
+      "query": "How do disaster recovery runbooks work and what steps can be automated in a failover sequence?",
+      "description": "DR runbooks — specific orchestration detail",
+      "source_type": "web_doc",
+      "wall_ms": 16353,
+      "elapsed_ms": 16349,
+      "answer_preview": "# Disaster Recovery Runbooks in Acronis Cyber Protect Cloud  A **runbook** is a set of instructions describing how to launch the production environmen...",
+      "full_answer": "# Disaster Recovery Runbooks in Acronis Cyber Protect Cloud\n\nA **runbook** is a set of instructions describing how to launch the production environment in the cloud. Runbooks automate the failover process and ensure systems are recovered in the correct order to address dependencies between applications.\n\n## What Runbooks Can Do\n\n1. **Automate the failover** of one or multiple servers\n2. **Automatically check failover results** by pinging the server IP address and checking the connection to a specified port\n3. **Set the sequence of operations** for servers running distributed applications\n4. **Include manual operations** in the workflow\n5. **Verify disaster recovery integrity** by executing runbooks in **test mode**\n\n## Runbook Structure\n\n- A runbook consists of **steps** that are executed **consecutively**\n- Each step consists of **actions** that start **simultaneously**\n\n## Available Actions for Automation\n\n| Action | Description |\n|--------|-------------|\n| **Failover server** | Performs a failover of a cloud server. If the backup is encrypted, the action pauses and changes to *Interaction required* — you must provide the encryption password manually. |\n| **Failback server** | Performs a failback of a cloud server. **Manual mode only** — requires manual machine recovery and confirmation/cancellation from the **Disaster Recovery > Servers** tab. |\n| **Start server** | Starts a cloud server. **Not applicable** for test failover operations — will fail with: `Failed: The action is not applicable to the current server state.` |\n| **Stop server** | Stops a cloud server. |\n\n## Execution Modes\n\nRunbooks can be executed in either:\n- **Test mode** — to verify the integrity of your disaster recovery solution\n- **Production mode** — for actual failover operations\n\n## How to Create a Runbook\n\n1. In the Cyber Protection console, go to **Disaster Recovery > Runbooks**\n2. Click **Create runbook**\n3. Click **Add step**\n4. Click **Add action**, then select the desired action (Failover server, Failback server, Start server, or Stop server)\n5. Select the target **cloud server** and configure the **runbook parameters** for each action\n\n> ⚠️ **Note:** The **Failback server** action in runbooks supports **manual mode only**, meaning manual interaction is always required during failback.\n\n**Source:** `creating-runbook.html`, `orchestration-runbooks.html`, `dr-to-azure-runbooks.html` — User Guide for Cyber Protect Cloud Console 26.02 ",
+      "sources": [
+        {
+          "title": "dr-to-azure-runbooks.html",
+          "file": "dr-to-azure-runbooks.html",
+          "score": 0.99108386,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-runbooks.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "orchestration-runbooks.html",
+          "file": "orchestration-runbooks.html",
+          "score": 0.98651993,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#orchestration-runbooks.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "creating-runbook.html",
+          "file": "creating-runbook.html",
+          "score": 0.9744834,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#creating-runbook.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2455"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['runbook'] of ['runbook']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=web_doc, all_types={'web_doc'}"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "16353ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_05_xql_query_syntax",
+      "query": "What is the XQL query language syntax for searching EDR events and what sample queries are available?",
+      "description": "XQL syntax — EDR-specific query language",
+      "source_type": "web_doc",
+      "wall_ms": 24097,
+      "elapsed_ms": 24092,
+      "answer_preview": "# Acronis XDR Query Language (XQL) — Syntax & Sample Queries  **XQL** is used to search for **Endpoint Detection and Response (EDR)** events in the Cy...",
+      "full_answer": "# Acronis XDR Query Language (XQL) — Syntax & Sample Queries\n\n**XQL** is used to search for **Endpoint Detection and Response (EDR)** events in the Cyber Protect console under **Protection > Events search**.\n\n---\n\n## 1. Selecting Data Source and Columns\n\nThe first operator in any query must select the data source. These queries are **not case-sensitive**.\n\n```\neventType\neventType | where column = 'string'\n```\n\n---\n\n## 2. Filtering Data\n\nFilters must start with the `where` keyword. Column searches are **case sensitive by default**.\n\n### Comparison Operators\n\n| Operator | Syntax |\n|----------|--------|\n| Equals | `eventType \\| where field == 'value'` |\n| Not equals | `eventType \\| where field != 'value'` |\n| Greater than | `eventType \\| where field > 'value'` |\n| Less than | `eventType \\| where field < 'value'` |\n| Greater or equal | `eventType \\| where field >= 'value'` |\n| Less or equal | `eventType \\| where field <= 'value'` |\n\n### String Matching Operators\n\n| Operator | Description | Syntax |\n|----------|-------------|--------|\n| `CONTAINS` | Partial match (case-sensitive) | `key CONTAINS 'value'` |\n| `NOT CONTAINS` | Negated partial match | `field NOT CONTAINS 'substring'` |\n| `ICONTAINS` | Partial match (case-insensitive) | `key ICONTAINS 'value'` |\n| `IN` | Membership check (case-sensitive) | `key IN ('value1', 'value2')` |\n| `IIN` | Membership check (case-insensitive) | `key IIN ('value1', 'value2')` |\n| `NOT IN` | Negated membership | `field NOT IN ('value1', 'value2')` |\n| `MATCHES` | Regex matching (RE2 standard) | `key MATCHES 'regex string'` |\n| `NOT MATCHES` | Negated regex | `field NOT MATCHES 'value1*'` |\n| `~=` | Case-insensitive equality | `column ~= 'String'` |\n\n**CONTAINS** supports lists when searching across columns:\n```\nCONTAINS ('String1', 'String2', 'String3')\n```\n\n### Logical Operators\n\nCombine filters with **AND** and **OR**:\n```\nkey = value AND key < value OR key = value\n```\n\nUse **parentheses** for grouping:\n```\n(key = value) AND (key < value OR key = value)\n```\n\n### Date Filtering with `ago`\n\nAccepts a numeric value followed by `d` (days), `h` (hours), `m` (minutes), or `s` (seconds):\n\n```\ncolumn < ago(3d)\ncolumn < ago(3h)\ncolumn < ago(3m)\ncolumn < ago(30s)\n```\n\n### String Quoting\n\nStrings can be enclosed with either **single** or **double** quotes.\n\n---\n\n## 3. Searching for Events in the Console\n\n1. Go to **Protection > Events search**\n2. Enter your XQL query and define a **time range**\n3. Click **Run** (or press `Ctrl+Enter`) to execute\n4. Refine results as needed (e.g., display specific fields or filter by file name)\n5. Click **Save as** to save the query for reuse\n\n> **Note:** You can search for events **only within a selected customer** — not across all managed customers from the partner tenant level. XQL provides **autocomplete** to assist in building queries, and the last **10 executed queries** are available via the **History** button.\n\n---\n\n## 4. Disabling Event Search\n\nIf you do not want event data stored in an external third-party cloud data warehouse:\n\n1. Go to **Protection > Events search**\n2. Click **Settings** above the query list\n3. Turn off the **Event Search** toggle and click **Apply**\n\n---\n\n**Source:** `edr-search-query-language.html`, `05-xql-query-language-and-sample-queries.md`, `edr-searching-for-events.html` — Acronis Cyber Protect Cloud Console 26.02 ",
+      "sources": [
+        {
+          "title": "edr-search-query-language.html",
+          "file": "edr-search-query-language.html",
+          "score": 0.99629277,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-search-query-language.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "05 Xql Query Language And Sample Queries",
+          "file": "10-edr-xdr/05-xql-query-language-and-sample-queries.md",
+          "score": 0.99343574,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-search-query-language.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "edr-searching-for-events.html",
+          "file": "edr-searching-for-events.html",
+          "score": 0.9878996,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-searching-for-events.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=3365"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['xql', 'query'] of ['xql', 'query']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['edr-search-query-language.html', '10-edr-xdr/05-xql-query-language-and-sample-queries.md', 'edr-searching-for-events.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "24097ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_06_failback_agentless",
+      "query": "What is the difference between agent-based and agentless failback in Acronis Disaster Recovery?",
+      "description": "Failback methods — DR-specific detail",
+      "source_type": "local_doc",
+      "wall_ms": 17468,
+      "elapsed_ms": 17463,
+      "answer_preview": "# Agent-Based vs. Agentless Failback in Acronis Disaster Recovery  Both methods allow you to move workloads from the cloud back to your local site, bu...",
+      "full_answer": "# Agent-Based vs. Agentless Failback in Acronis Disaster Recovery\n\nBoth methods allow you to move workloads from the cloud back to your local site, but they differ in **target**, **optimization**, and **downtime**:\n\n## Agent-Based Failback (via Bootable Media)\n\n- **Target:** Physical or virtual machine (typically the **original** machine)\n- **Optimization:** Transfers only **delta changes** (incremental differences), resulting in **shorter downtime**\n- **Best for:** Failback to the original physical machine or original VM with the same firmware\n- **Process phases:**\n  1. **Planning** — Restore local IT infrastructure (hosts, network configs), configure failback parameters\n  2. **Data transfer** — Data transfers from cloud to local site **while the cloud VM continues running**\n  3. **Switchover** — Cut over to the local machine (recommended after **>90% of data** is transferred to minimize downtime)\n- **Key advantage:** Uses **flashback technology** for incremental transfer, achieving very short downtime\n\n## Agentless Failback (via Hypervisor Agent)\n\n- **Target:** A **new virtual machine** only\n- **Supported hypervisors:** **VMware ESXi** or **Microsoft Hyper-V** hosts\n- **Best for:** When you need to failback to a **new VM** rather than the original machine\n\n## Quick Comparison\n\n| Feature | Agent-Based | Agentless |\n|---------|------------|-----------|\n| **Target** | Physical or virtual machine | New virtual machine only |\n| **Hypervisor support** | Any (physical or VM) | VMware ESXi, Microsoft Hyper-V |\n| **Data transfer method** | Delta changes only | Full transfer |\n| **Downtime** | Shorter (cloud VM runs during transfer) | Standard |\n| **Recommended for** | Original machine / same firmware | New VM on supported hypervisor |\n\n> **Note:** There is also a **manual failback** method, but it should only be used when advised by the Support team, as the cloud VM must be **powered off** before data transfer, resulting in a **longer downtime period**. Runbook operations support failback in **manual mode only**.\n\n**Source:** `07-disaster-recovery/14-failback-agent-agentless-manual.md`, `07-disaster-recovery/07-failback.md`, `how-failback-works.html` ",
+      "sources": [
+        {
+          "title": "14 Failback Agent Agentless Manual",
+          "file": "07-disaster-recovery/14-failback-agent-agentless-manual.md",
+          "score": 0.9768024,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#agent-based-failback.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "how-failback-works.html",
+          "file": "how-failback-works.html",
+          "score": 0.9265699,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#how-failback-works.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "07 Failback",
+          "file": "07-disaster-recovery/07-failback.md",
+          "score": 0.9227612,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#how-failback-works.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2182"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['failback', 'agent'] of ['failback', 'agent']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=local_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['07-disaster-recovery/14-failback-agent-agentless-manual.md', 'how-failback-works.html', '07-disaster-recovery/07-failback.md']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "17468ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_07_dlp_permissions_combining",
+      "query": "How are Data Loss Prevention permissions combined when multiple DLP rules overlap in Acronis?",
+      "description": "DLP rule combining — specific DLP detail",
+      "source_type": "web_doc",
+      "wall_ms": 15926,
+      "elapsed_ms": 15921,
+      "answer_preview": "# Combining DLP Permissions When Multiple Rules Overlap  When a data transfer matches more than one **Data Flow Policy rule**, Acronis DLP combines pe...",
+      "full_answer": "# Combining DLP Permissions When Multiple Rules Overlap\n\nWhen a data transfer matches more than one **Data Flow Policy rule**, Acronis DLP combines permissions and actions using specific priority logic:\n\n---\n\n## Permission Types (from most to least restrictive)\n\nDLP supports **three permission types**, each configurable per rule:\n\n1. **Allow** (permissive) — matching data transfers are allowed.\n2. **Exception** (prohibitive) — transfers are blocked, but the sender can submit an exception. Once submitted, all subsequent transfers between that sender/recipient for that sensitivity category are allowed for **five minutes**.\n3. **Deny** (prohibitive) — transfers are blocked with **no option** to submit an exception.\n\nAdditionally, a **Prioritized flag** can be assigned to **Allow** and **Exception** to override other rules.\n\n---\n\n## Combining Rules — Same Sensitivity Category\n\nWhen overlapping rules apply **different permissions to the same data category**, the rule with the **higher priority permission** wins, following this descending priority order:\n\n1. **Exception — Prioritized** (highest)\n2. **Allow — Prioritized**\n3. **Deny**\n4. **Exception**\n5. **Allow** (lowest)\n\n---\n\n## Combining Rules — Different Sensitivity Categories\n\nWhen overlapping rules apply to **different sensitivity categories**, a two-step logic applies:\n\n1. The **most restrictive permission** is determined for **each** sensitivity category matched.\n2. The **most restrictive** of those results is **enforced**.\n\n### Example\n\n| Sensitivity Category | Permission |\n|---|---|\n| PII | Allow - Prioritized |\n| PHI | Exception - Prioritized |\n| PCI | Deny |\n\n**Result:** **Deny** is applied — because it is the most restrictive across all matched categories.\n\n---\n\n## Actions\n\nIf overlapping rules have **different actions** configured, **all actions from all triggered rules are performed** (they are additive, not overridden).\n\n---\n\n**Source:** `advanced-dlp-combining-rules.html`, `advanced-dlp-permissions.html`, `13-data-loss-prevention/02-permissions-combining-rules-review.md` ",
+      "sources": [
+        {
+          "title": "advanced-dlp-combining-rules.html",
+          "file": "advanced-dlp-combining-rules.html",
+          "score": 0.874292,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-combining-rules.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "advanced-dlp-permissions.html",
+          "file": "advanced-dlp-permissions.html",
+          "score": 0.70598775,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-permissions.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "02 Permissions Combining Rules Review",
+          "file": "13-data-loss-prevention/02-permissions-combining-rules-review.md",
+          "score": 0.68899184,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-permissions.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2068"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['permission', 'rule', 'combin'] of ['permission', 'rule', 'combin']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['advanced-dlp-combining-rules.html', 'advanced-dlp-permissions.html', '13-data-loss-prevention/02-permissions-combining-rules-review.md']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "15926ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_08_cloud_firewall_rules",
+      "query": "How to configure firewall rules for cloud servers in Acronis Disaster Recovery?",
+      "description": "Cloud server firewall — DR network detail",
+      "source_type": "web_doc",
+      "wall_ms": 15751,
+      "elapsed_ms": 15747,
+      "answer_preview": "# Configuring Firewall Rules for Cloud Servers in Acronis Disaster Recovery  ## Default Firewall Behavior  When you provision cloud servers, the follo...",
+      "full_answer": "# Configuring Firewall Rules for Cloud Servers in Acronis Disaster Recovery\n\n## Default Firewall Behavior\n\nWhen you provision cloud servers, the following **default rules** apply:\n\n- **Inbound:** TCP port **443** is **allowed**; all other inbound connections are **denied**\n- **Outbound:** TCP port **25** is **denied**; all other outbound connections are **allowed**\n\n**Prerequisites:**\n- **Inbound rules** require a **public IP address** provisioned for the cloud server\n- **Outbound rules** require **Internet access** provisioned for the cloud server\n\n---\n\n## Steps to Edit Firewall Rules\n\n1. In the **Cyber Protect console**, go to **Disaster Recovery > Servers**\n2. Click the **Recovery servers** tab (for recovery servers) or the **Primary servers** tab (for primary servers)\n3. Click the server, then click **Edit**\n4. Click the **Cloud firewall rules** tab\n\n### Changing the Default Inbound Action\n\n5. In the **Inbound** drop-down field, select the default action:\n\n| Action | Description |\n|--------|-------------|\n| **Deny all** | Denies any inbound traffic. You can add exceptions to allow traffic from specific IP addresses, protocols, and ports. |\n| **Allow all** | Allows all inbound TCP and UDP traffic. You can add exceptions to deny traffic from specific IP addresses, protocols, and ports. |\n\n> ⚠️ Changing the default action **invalidates and removes** existing inbound rules. To preserve them, select **\"Save filled-in exceptions\"** in the confirmation window, then click **Confirm**.\n\n### Adding Exceptions\n\n6. Click **Add exception**\n7. Specify the firewall parameters (**Protocol**, **IP addresses**, **Ports**)\n\n---\n\n## Non-Configurable (Predefined) Rules\n\nFor security reasons, the following rules **cannot be changed**:\n\n**Inbound & Outbound:**\n- **Permit ping:** ICMP echo-request (type 8, code 0) and ICMP echo-reply (type 0, code 0)\n- **Permit ICMP need-to-frag:** type 3, code 4\n- **Permit TTL exceeded:** type 11, code 0\n\n**Inbound only:**\n- Non-configurable part: **Deny all**\n\n**Outbound only:**\n- Non-configurable part: **Reject all**\n\n---\n\n**Source:** `cloud-firewall-rules.html`, `setting-cloud-firewall-rules.html` ",
+      "sources": [
+        {
+          "title": "setting-cloud-firewall-rules.html",
+          "file": "setting-cloud-firewall-rules.html",
+          "score": 0.9992563,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#setting-cloud-firewall-rules.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "cloud-firewall-rules.html",
+          "file": "cloud-firewall-rules.html",
+          "score": 0.99780875,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cloud-firewall-rules.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "01 Dr Overview Requirements",
+          "file": "07-disaster-recovery/01-dr-overview-requirements.md",
+          "score": 0.648689,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2153"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['firewall', 'cloud server'] of ['firewall', 'cloud server']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['setting-cloud-firewall-rules.html', 'cloud-firewall-rules.html', '07-disaster-recovery/01-dr-overview-requirements.md']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "15751ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_09_p2s_vpn_config",
+      "query": "How to set up point-to-site VPN connectivity for Acronis disaster recovery and what are the client requirements?",
+      "description": "P2S VPN config — DR connectivity detail",
+      "source_type": "web_doc",
+      "wall_ms": 18720,
+      "elapsed_ms": 18716,
+      "answer_preview": "# Point-to-Site VPN Connectivity for Acronis Disaster Recovery  ## What is Point-to-Site VPN?  The **Point-to-site connection** is a secure connection...",
+      "full_answer": "# Point-to-Site VPN Connectivity for Acronis Disaster Recovery\n\n## What is Point-to-Site VPN?\n\nThe **Point-to-site connection** is a secure connection from outside endpoint devices (computer or laptop) to **cloud and local sites through a VPN**. It becomes available after establishing a **Site-to-site Open VPN connection** to the disaster recovery site.\n\n**Use cases:**\n- Securely connect remote employees to the **corporate network** (local site) via L2 VPN\n- Access **cloud servers** directly during a disaster when the local network is down\n\n---\n\n## Prerequisites\n\n- **Site-to-site Open VPN connectivity** is already configured\n- The **VPN appliance** is installed on the local site\n\n---\n\n## Configuration Steps\n\n1. In the **Cyber Protect console**, go to **Disaster Recovery** > **Connectivity**\n2. Click **Show properties**\n3. Enable the **VPN access to local site** option\n4. Ensure each connecting user has:\n   - A **user account in Cyber Protect Cloud** (used for VPN client authentication)\n   - A **\"Company Administrator\"** or **\"Cyber Protection\"** user role\n5. Configure the **OpenVPN client**:\n   1. Download the **OpenVPN client version 2.4.0 or later** from https://openvpn.net/community-downloads/\n   2. Install the OpenVPN client on the machine from which you want to connect\n   3. Click **Download configuration for OpenVPN** (valid for users in your organization with the required roles)\n   4. Import the downloaded configuration into the OpenVPN client\n   5. Log in with your **Cyber Protect Cloud user credentials**\n   6. *(Optional)* If **two-factor authentication** is enabled, provide the one-time generated **TOTP code**\n\n---\n\n## Client Requirements\n\n| Requirement | Detail |\n|---|---|\n| **VPN Client** | OpenVPN **v2.4.0 or later** |\n| **Not Supported** | ❌ **OpenVPN Connect client** is not supported |\n| **User Role** | `Company Administrator` or `Cyber Protection` |\n| **Authentication** | Cyber Protect Cloud credentials + certificates |\n| **2FA (if enabled)** | TOTP one-time code required |\n\n---\n\n## Important Notes\n\n- **Authentication** uses both **certificates** (via the configuration file) and **user credentials**\n- If you enable **two-factor authentication** after initial setup, you must **re-generate the configuration file** and distribute it to all existing OpenVPN clients. Users must **re-log in** to Cyber Protect Cloud to set up 2FA for their accounts.\n- If you **re-generate the OpenVPN configuration** for any reason, you must provide the updated configuration to **all users** using the Point-to-site connection.\n- Communications to the local site via Point-to-site are **routed through the cloud site** (L2 VPN tunnel).\n\n**Source:** `point-to-site-remote-vpn-access.html`, `point-to-site-remote-vpn-access-concept.html` — User Guide for Cyber Protect Cloud Console 26.02 ",
+      "sources": [
+        {
+          "title": "point-to-site-remote-vpn-access.html",
+          "file": "point-to-site-remote-vpn-access.html",
+          "score": 0.99090964,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#point-to-site-remote-vpn-access.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "09 Point To Site Vpn Network Management",
+          "file": "07-disaster-recovery/09-point-to-site-vpn-network-management.md",
+          "score": 0.9890554,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-network-management.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "point-to-site-remote-vpn-access-concept.html",
+          "file": "point-to-site-remote-vpn-access-concept.html",
+          "score": 0.97510713,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#point-to-site-remote-vpn-access-concept.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2823"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['point-to-site', 'vpn'] of ['point-to-site', 'vpn']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['point-to-site-remote-vpn-access.html', '07-disaster-recovery/09-point-to-site-vpn-network-management.md', 'point-to-site-remote-vpn-access-concept.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "18720ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_10_response_actions_blocklist",
+      "query": "How do EDR response actions work for managing blocklists and allowlists in Acronis?",
+      "description": "EDR response actions — blocklist/allowlist detail",
+      "source_type": "web_doc",
+      "wall_ms": 17445,
+      "elapsed_ms": 17441,
+      "answer_preview": "# EDR Response Actions: Managing Blocklists and Allowlists  Acronis **Endpoint Detection and Response (EDR)** allows you to add or remove nodes from p...",
+      "full_answer": "# EDR Response Actions: Managing Blocklists and Allowlists\n\nAcronis **Endpoint Detection and Response (EDR)** allows you to add or remove nodes from protection plan **blocklists** and **allowlists** as part of your **prevention response** to an attack.\n\n## Supported Node Types\n\nThis action is available for the following **cyber kill chain nodes**:\n- **Process**\n- **File**\n- **Network**\n\n## How It Works\n\n- **Blocklist** — Stops the node from running in the future (blocks execution).\n- **Allowlist** — Marks the node as safe and prevents future detections for it.\n\nYou can also **remove** a previously added node from either list to reverse the action.\n\n## Steps to Add/Remove from Blocklist or Allowlist\n\n1. In the **cyber kill chain**, click the **process, file, or network** node you want to remediate.\n2. In the displayed sidebar, click the **Response Actions** tab.\n3. In the **Prevent** section, click the **arrow icon** next to **Blocklist** or **Allowlist**.\n4. Select the relevant **protection plan(s)** to apply the action to.\n5. *(Optional)* Add a **comment** — visible in the **Activities tab** for both the individual node and the entire incident, useful for documenting why the action was taken.\n6. Click **Add** (or **Remove** if reversing a previous action).\n\n## Key Details\n\n- **Adding to blocklist** → the process, file, or network is **prevented from launching** in the future.\n- **Adding to allowlist** → the node is treated as **safe**, suppressing future detections.\n- **Removing** from either list reverses the restriction/allowance.\n- All add/remove actions are **logged** in the **Activities tabs** of both the individual node and the entire incident.\n\n## Context Within Incident Remediation\n\nBlocklist/allowlist actions fall under the **Prevent** category of EDR's three-pillar remediation approach:\n\n1. **Mitigating** — stop the threat (stop processes, quarantine)\n2. **Recovering** — restore services (rollback changes)\n3. **Preventing** — ensure techniques are blocked in future attacks (blocklist/allowlist management)\n\nWhen remediating an entire incident marked as a **False positive**, you can add items to the **allowlist** to prevent the same detection from recurring.\n\n**Source:** `edr-add-blocklist-allowlist.html`, `09-remediating-incidents.md` ",
+      "sources": [
+        {
+          "title": "edr-add-blocklist-allowlist.html",
+          "file": "edr-add-blocklist-allowlist.html",
+          "score": 0.86385167,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-add-blocklist-allowlist.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "12 Automated Workflows Monitoring Testing",
+          "file": "10-edr-xdr/12-automated-workflows-monitoring-testing.md",
+          "score": 0.7757747,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "09 Remediating Incidents",
+          "file": "10-edr-xdr/09-remediating-incidents.md",
+          "score": 0.7687332,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-remediate-incidents.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2285"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['blocklist', 'allowlist', 'response'] of ['blocklist', 'allowlist', 'response']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['edr-add-blocklist-allowlist.html', '10-edr-xdr/12-automated-workflows-monitoring-testing.md', '10-edr-xdr/09-remediating-incidents.md']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "17445ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_01_sap_hana",
+      "query": "What SAP HANA versions are supported by Acronis for backup and recovery?",
+      "description": "SAP HANA support — web-only (passed in v1)",
+      "source_type": "web_doc",
+      "wall_ms": 9698,
+      "elapsed_ms": 9693,
+      "answer_preview": "## Supported SAP HANA Versions  Acronis Cyber Protect Cloud supports the following **SAP HANA** versions for backup and recovery:  1. **HANA 2.0 SPS 0...",
+      "full_answer": "## Supported SAP HANA Versions\n\nAcronis Cyber Protect Cloud supports the following **SAP HANA** versions for backup and recovery:\n\n1. **HANA 2.0 SPS 03** installed in **RHEL 7.6** running on a **physical machine** or **VMware ESXi virtual machine**\n2. **HANA 2.0 SPS 03** installed in **SUSE 15** with **XFS file system**\n\n### Important Limitation\n\nBecause **SAP HANA does not support recovery of multitenant database containers** by using storage snapshots, this solution supports SAP HANA containers with **only one tenant database**.\n\n> **Note:** Detailed SAP HANA protection documentation is available at:\n> `https://dl.managed-protection.com/u/pdf/SAP_HANA_backup_whitepaper_en-US.pdf`\n\n**Source:** `supported-sap-hana-versions.html`, `06-backup-and-recovery/38-oracle-saphana-mysql-mariadb-proxmox.md` — User Guide for Cyber Protect Cloud Console 26.02 ",
+      "sources": [
+        {
+          "title": "supported-sap-hana-versions.html",
+          "file": "supported-sap-hana-versions.html",
+          "score": 0.9879462,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-sap-hana-versions.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "38 Oracle Saphana Mysql Mariadb Proxmox",
+          "file": "06-backup-and-recovery/38-oracle-saphana-mysql-mariadb-proxmox.md",
+          "score": 0.32863715,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mysql-mariadb-data.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "backup-and-recovery.html",
+          "file": "backup-and-recovery.html",
+          "score": 0.21917035,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-and-recovery.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=859"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['sap hana'] of ['sap hana']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-sap-hana-versions.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mysql-mariadb-data.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-and-recovery.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "9698ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_02_m365_user_risks",
+      "query": "How to remediate Microsoft 365 user security risks in Acronis RMM?",
+      "description": "M365 user risk remediation — web-only (passed in v1)",
+      "source_type": "web_doc",
+      "wall_ms": 13280,
+      "elapsed_ms": 13275,
+      "answer_preview": "# Remediating Microsoft 365 User Security Risks in Acronis RMM  ## Overview  You can remediate security risks related to a specific user's Microsoft 3...",
+      "full_answer": "# Remediating Microsoft 365 User Security Risks in Acronis RMM\n\n## Overview\n\nYou can remediate security risks related to a specific user's Microsoft 365 account through the **Cyber Protect console**. Note that you can only remediate **one user risk at a time**.\n\n## Risks You Can Remediate\n\n1. **Administrator accounts with a mailbox** — Remove administrator privileges from accounts where the mailbox is required, and create a new separate administrator account for the user.\n2. **Dormant guest, user, and administrator accounts** — Identify ex-employees or other unused accounts, and remove accounts that are no longer required.\n3. **Accounts with MFA disabled or not enrolled** — Evaluate which user accounts are at risk according to the required MFA settings and baselines.\n4. **Anonymous administrator accounts** — Determine if users who require administrator privileges should be given a separate administrator account (without a mailbox).\n5. **Accounts with incorrectly configured shared mailboxes** — Identify the relevant users who need to \"Send as\" or have \"Full access\" to the shared account.\n\n## Steps to Remediate\n\n1. In the **Cyber Protect console**, go to **Microsoft 365 management > Users**\n2. Filter the list by **tenant**, **user risk**, **user type**, **user role**, or **product license** as needed\n3. Click the **relevant user row** to select the individual user\n4. Select **Remediate user risks**\n\n## Licensing Requirements\n\n| Licensing Model | Requirement |\n|---|---|\n| **Service-based licensing** | Requires the **RMM > Microsoft 365 seats** service quota applied to all the customer's Microsoft 365 seats |\n| **Solution-based licensing** | Enabled with either **Security and RMM** or **Ultimate Protection** license |\n\n> **Note:** A charge is applied for each user allocated with an **Exchange Online mailbox license**.\n\n**Source:** `m365-remediating-user-risks.html`, `m365-managing-users.html`, `02-m365-environment-management.md` — User Guide for Cyber Protect Cloud Console 26.02 ",
+      "sources": [
+        {
+          "title": "m365-remediating-user-risks.html",
+          "file": "m365-remediating-user-risks.html",
+          "score": 0.9996458,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-remediating-user-risks.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "02 M365 Environment Management",
+          "file": "12-rmm/02-m365-environment-management.md",
+          "score": 0.9812029,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-overview.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "m365-managing-users.html",
+          "file": "m365-managing-users.html",
+          "score": 0.96138906,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-managing-users.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2010"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['microsoft 365', 'risk'] of ['microsoft 365', 'risk']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-remediating-user-risks.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-overview.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-managing-users.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "13280ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_03_mdr_configuration",
+      "query": "How to configure MDR critical endpoints and escalation policies in Acronis?",
+      "description": "MDR configuration — web-only (passed in v1)",
+      "source_type": "web_doc",
+      "wall_ms": 18049,
+      "elapsed_ms": 18044,
+      "answer_preview": "# Configuring MDR Critical Endpoints and Escalation Policies  ## Prerequisites  Before configuring critical endpoints, ensure **Acronis MDR is enabled...",
+      "full_answer": "# Configuring MDR Critical Endpoints and Escalation Policies\n\n## Prerequisites\n\nBefore configuring critical endpoints, ensure **Acronis MDR is enabled** at the Partner level. The following must be in place:\n\n1. **Managed Detection and Response service** is enabled for your Partner account:\n   - **Solution-based licensing:** Security and RMM solution or Ultimate Protection solution + **Managed Detection and Response add-on**\n   - **Service-based licensing:** Protection service + **Detection and Response offering item**\n2. The **Acronis Cyber Protection agent** is installed on all endpoints\n3. All protected endpoints are **actively reporting telemetry**\n\n---\n\n## Enabling MDR (Partner Administrator Only)\n\n1. Sign in to the **Acronis Cyber Protect Cloud console**\n2. Navigate to **Protection > MDR**\n3. Click **Enable Acronis TRU**\n4. Configure **escalation contacts** (see below)\n\n> **Note:** If login control for the web interface is enabled, the IP range of the MDR vendor will be added automatically to the list of allowed IP addresses.\n\n---\n\n## Configuring Escalation Contacts\n\n**Escalation contacts** receive incident notifications and approve remediation actions when required. The contacts you configure are **common for all child tenants**.\n\n1. Configure a **primary** contact\n2. Configure a **secondary** contact\n\n---\n\n## Configuring Critical Endpoints\n\n**Critical endpoints** are machines that require **approval before any response actions** (including isolation) are executed on them.\n\n**How it works:**\n- Before performing any response action on a critical endpoint, the MDR team will **contact the primary escalation contact** for approval (including a **phone call** if the incident is critical)\n- If the primary contact is unreachable, the team contacts the **secondary contact**, and so on\n- **No response actions will be executed** on any critical endpoint until an escalation contact approves it\n\n### Steps to Configure Critical Endpoints\n\n1. In the **Cyber Protect Cloud console**, verify you are at the **All customers** level\n2. Navigate to **Devices > Machines with agents**\n3. Locate the **Critical Endpoints** group (created automatically when MDR is enabled)\n4. Add devices to the group:\n   - To add **existing devices**: Click **Add devices** and select from the list of devices under each customer\n   - To add a **new device**: Click **Add** in the upper right corner and follow the on-screen prompts\n\n---\n\n**Key takeaway:** The escalation policy is enforced through the combination of **escalation contacts** (configured during MDR enablement) and the **Critical Endpoints group** (configured under Devices). Together, they ensure no remediation actions occur on critical machines without explicit approval from a designated contact.\n\n**Source:** `a-mdr-configure-critical-endpoints.html`, `a-mdr-enabling.html`, `11-mdr/02-enabling-mdr-service.md` — Acronis Cyber Protect Cloud Console User Guide 26.02 ",
+      "sources": [
+        {
+          "title": "a-mdr-configure-critical-endpoints.html",
+          "file": "a-mdr-configure-critical-endpoints.html",
+          "score": 0.9978173,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-configure-critical-endpoints.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "a-mdr-enabling.html",
+          "file": "a-mdr-enabling.html",
+          "score": 0.9953544,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "02 Enabling Mdr Service",
+          "file": "11-mdr/02-enabling-mdr-service.md",
+          "score": 0.99256825,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2940"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['mdr'] of ['mdr']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-configure-critical-endpoints.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "18049ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_04_notary_service",
+      "query": "How does the Notary Service verify file authenticity and blockchain notarization in Acronis backups?",
+      "description": "Notary/blockchain verification — web-only niche topic",
+      "source_type": "web_doc",
+      "wall_ms": 14546,
+      "elapsed_ms": 14542,
+      "answer_preview": "# How the Notary Service Verifies File Authenticity and Blockchain Notarization  ## How Notarization Works (During Backup)  1. The **agent calculates ...",
+      "full_answer": "# How the Notary Service Verifies File Authenticity and Blockchain Notarization\n\n## How Notarization Works (During Backup)\n\n1. The **agent calculates the hash codes** of the backed-up files (or disks, for forensic data).\n2. It **builds a hash tree** based on the folder structure.\n3. The hash tree is **saved in the backup**.\n4. The **hash tree root** is sent to the **Notary Service**.\n5. The Notary Service **saves the hash tree root in the Ethereum blockchain database** to ensure the value cannot be changed.\n\n## How Verification Works (During Recovery)\n\n1. The agent **calculates the hash of the file** being verified.\n2. It **compares that hash** with the hash stored in the **hash tree inside the backup**.\n3. **If the hashes do not match** → the file is considered **not authentic**.\n4. **If the hashes match** → the file authenticity is guaranteed by the hash tree.\n5. To verify the **hash tree itself** was not compromised, the agent **sends the hash tree root to the Notary Service**, which **compares it with the one stored in the blockchain database**.\n\n## How to Verify a File\n\n1. Select a backed-up file and ensure it is marked with the **notarization icon**.\n2. Choose one of two options:\n   - Click **Verify** — the software checks authenticity and displays the result.\n   - Click **Get certificate** — opens a certificate in a web browser confirming file notarization, along with instructions for **manual verification**.\n\n## Availability\n\n- **Notarization** is available for backups of **Google Drive files** and **Google Workspace Shared drive files**.\n- For **forensic data**, notarization proves that a disk image is authentic and unchanged since backup.\n- To enable, turn on the **Notarization switch** when creating a **protection plan**.\n\n**Source:** `notarization.html`, `verifying-file-authenticity-with-notary-service.html`, `notarization-of-backups-with-forensic-data.html` ",
+      "sources": [
+        {
+          "title": "verifying-file-authenticity-with-notary-service.html",
+          "file": "verifying-file-authenticity-with-notary-service.html",
+          "score": 0.98986953,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#verifying-file-authenticity-with-notary-service.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "notarization.html",
+          "file": "notarization.html",
+          "score": 0.9885804,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarization.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "notarization-of-backups-with-forensic-data.html",
+          "file": "notarization-of-backups-with-forensic-data.html",
+          "score": 0.9342753,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarization-of-backups-with-forensic-data.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1903"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['notary', 'authenticity'] of ['notary', 'authenticity']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#verifying-file-authenticity-with-notary-service.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarization.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarization-of-backups-with-forensic-data.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "14546ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_05_log_truncation",
+      "query": "How does log truncation work for Microsoft SQL Server and Exchange during Acronis backups?",
+      "description": "SQL/Exchange log truncation — web-only backup option",
+      "source_type": "web_doc",
+      "wall_ms": 15440,
+      "elapsed_ms": 15433,
+      "answer_preview": "# Log Truncation for Microsoft SQL Server and Exchange  ## Microsoft SQL Server  - **Log truncation** defines whether **SQL Server transaction logs ar...",
+      "full_answer": "# Log Truncation for Microsoft SQL Server and Exchange\n\n## Microsoft SQL Server\n\n- **Log truncation** defines whether **SQL Server transaction logs are truncated** after a snapshot is taken at the beginning of the backup operation.\n- **Preset:** **Enabled** by default.\n- When enabled, the database can be recovered **only to a point in time of a backup** created by Cyber Protection (not to arbitrary log points).\n- **SQL transaction logs are truncated after each successful backup** when application-aware backup is used.\n- SQL log truncation **can be disabled** in the protection plan options.\n\n> ⚠️ **Important:** Disable this option if you are backing up transaction logs using the **native backup engine of Microsoft SQL Server** — otherwise you risk losing the ability to do native log-based point-in-time recovery.\n\n## Microsoft Exchange Server\n\n- **Exchange transaction logs are truncated on virtual machines only** (during application-aware backup).\n- To truncate Exchange transaction logs on a **physical machine**, you must enable the **VSS full backup** option.\n\n## Where It Applies\n\nLog truncation is effective for:\n1. **Backups of Microsoft SQL Server databases**\n2. **Disk-level backups** with enabled **Microsoft SQL Server application backup** (application-aware backup)\n\n## Requirements for Application-Aware Backup\n\n- On a **physical machine**, **Agent for SQL** and/or **Agent for Exchange** must be installed.\n- Application-aware disk-level backup is available for:\n  - Individual **physical machines**\n  - **ESXi virtual machines**\n  - **Hyper-V virtual machines**\n- It is **not available for device groups**.\n\n**Source:** `log-truncation.html`, `application-aware-backup.html`, `06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md` ",
+      "sources": [
+        {
+          "title": "log-truncation.html",
+          "file": "log-truncation.html",
+          "score": 0.97161794,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#log-truncation.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "application-aware-backup.html",
+          "file": "application-aware-backup.html",
+          "score": 0.82147413,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#application-aware-backup.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "16 Backup Options Log Lvm Mount Multivolume Oneclick Performance",
+          "file": "06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md",
+          "score": 0.80147004,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#one-click-recovery.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1795"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['log truncation', 'sql'] of ['log truncation', 'sql']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#log-truncation.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#application-aware-backup.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#one-click-recovery.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "15440ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_06_lvm_snapshot",
+      "query": "How does LVM snapshotting work for physical machine backups in Acronis?",
+      "description": "LVM snapshot — web-only Linux backup detail",
+      "source_type": "web_doc",
+      "wall_ms": 12271,
+      "elapsed_ms": 12266,
+      "answer_preview": "  # LVM Snapshotting for Physical Machine Backups  **LVM snapshotting** is a backup option effective **only for physical machines**, specifically for ...",
+      "full_answer": "\n\n# LVM Snapshotting for Physical Machine Backups\n\n**LVM snapshotting** is a backup option effective **only for physical machines**, specifically for **disk-level backup** of volumes managed by **Linux Logical Volume Manager (LVM)** (logical volumes).\n\nThis option defines **how a snapshot of a logical volume is taken**. There are two methods:\n\n## Snapshot Methods\n\n| Method | Description |\n|--------|-------------|\n| **By the backup software** (Preset/Default) | Snapshot data is kept **mostly in RAM**. Backup is **faster** and **no unallocated space** on the volume group is required. Recommended unless you experience problems backing up logical volumes. |\n| **By LVM** | Snapshot is stored on **unallocated space of the volume group**. If unallocated space is missing, the snapshot **falls back** to being taken by the backup software. |\n\n## Key Behaviors\n\n1. The snapshot is used **only during the backup operation**\n2. It is **automatically deleted** when the backup operation completes\n3. **No temporary files** are kept after completion\n4. The default preset (**By the backup software**) should only be changed if you are **experiencing problems** with backing up logical volumes\n\n## When to Change the Default\n\n- **Keep \"By the backup software\"** — for faster backups with no disk space requirements\n- **Switch to \"By LVM\"** — only if encountering issues with the default method (requires unallocated space in the volume group)\n\n**Source:** `lvm-snapshotting.html`, `06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md` — User Guide for Cyber Protect Cloud Console 26.02. ",
+      "sources": [
+        {
+          "title": "lvm-snapshotting.html",
+          "file": "lvm-snapshotting.html",
+          "score": 0.9827572,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#lvm-snapshotting.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "16 Backup Options Log Lvm Mount Multivolume Oneclick Performance",
+          "file": "06-backup-and-recovery/16-backup-options-log-lvm-mount-multivolume-oneclick-performance.md",
+          "score": 0.66421366,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#one-click-recovery.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "multi-volume-snapshot.html",
+          "file": "multi-volume-snapshot.html",
+          "score": 0.2656899,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#multi-volume-snapshot.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1622"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['lvm', 'snapshot'] of ['lvm', 'snapshot']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#lvm-snapshotting.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#one-click-recovery.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#multi-volume-snapshot.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "12271ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_07_nic_teaming",
+      "query": "Does Acronis bootable media support NIC teaming and network bonding for recovery?",
+      "description": "NIC teaming/bonding — web-only network detail",
+      "source_type": "web_doc",
+      "wall_ms": 15802,
+      "elapsed_ms": 15798,
+      "answer_preview": "# NIC Teaming and Network Bonding Support in Acronis Bootable Media  Yes, Acronis supports **NIC teaming (bonding)** during recovery. Here are the key...",
+      "full_answer": "# NIC Teaming and Network Bonding Support in Acronis Bootable Media\n\nYes, Acronis supports **NIC teaming (bonding)** during recovery. Here are the key details:\n\n## Preservation Behavior\n\n- **NIC teaming is preserved** both during the recovery of a workload with teamed NICs and after recovery.\n- **NIC teaming is NOT preserved** when recovering to **dissimilar hardware**.\n\n## When You Can Disable NIC Teaming\n\nYou can disable NIC teaming during recovery in the following scenarios:\n\n1. With **downloaded bootable media**\n2. With **Linux-based bootable** media created in Bootable Media Builder\n3. Via **Acronis Startup Recovery Manager**\n4. Via **one-click recovery**\n5. Via **recovery with restart** using the Linux recovery environment\n\n## How to Disable NIC Teaming\n\n1. Open the configuration file on the backed-up machine:\n   - **Windows:** `C:\\Program Files\\Common Files\\Acronis\\BackupAndRecoveryAgent\\bootagent_msp64.config`\n   - **Linux:** `/usr/lib/Acronis/BackupAndRecoveryAgent/bootagent_msp64.config`\n\n2. Find the `<kernel64>` line and add `DONT_CREATE_BONDING=1`:\n   - **Windows:**\n     ```xml\n     <kernel64 name=\"kernel64.dat\" value=\"product=bootagent DONT_CREATE_BONDING=1 media_for_windows\" target=\"abr64ker.dat\"/>\n     ```\n   - **Linux:**\n     ```xml\n     <kernel64 name=\"kernel64.dat\" value=\"product=bootagent DONT_CREATE_BONDING=1 media_for_linux\" target=\"abr64ker.dat\"/>\n     ```\n\n3. Save the file and recover using any of the supported methods.\n\n> **Note:** Even after disabling teaming during recovery, the **recovered workload retains its NIC teaming configuration**. To fully disable it post-recovery, you must reconfigure the network settings of the workload manually.\n\n## Additional Network Capabilities\n\nThe **Bootable Media Builder** also supports preconfiguring up to **10 network interface cards (NICs)** with settings including **IP address**, **subnet mask**, **gateway**, **DNS server**, and **WINS server**. NICs are matched by **MAC address**; unmatched NICs are assigned settings in slot order (closest to processor first).\n\n**Source:** `nic_teaming_support.html`, `network-settings-bm.html` — Cyber Protect Cloud Console 26.02 User Guide ",
+      "sources": [
+        {
+          "title": "nic_teaming_support.html",
+          "file": "nic_teaming_support.html",
+          "score": 0.9997154,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#nic_teaming_support.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "network-settings-bm.html",
+          "file": "network-settings-bm.html",
+          "score": 0.33274388,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#network-settings-bm.html",
+          "source_type": "web_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2176"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['nic', 'teaming', 'bonding'] of ['nic', 'teaming', 'bonding']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#nic_teaming_support.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#network-settings-bm.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "15802ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_08_helpdesk_chat",
+      "query": "How does the helpdesk chat feature work for remote assistance in Acronis RMM?",
+      "description": "Helpdesk chat — web-only RMM feature",
+      "source_type": "web_doc",
+      "wall_ms": 17918,
+      "elapsed_ms": 17913,
+      "answer_preview": "# Helpdesk Chat for Remote Assistance in Acronis RMM  **Helpdesk chat** is a real-time communication tool between technicians and remote users of mana...",
+      "full_answer": "# Helpdesk Chat for Remote Assistance in Acronis RMM\n\n**Helpdesk chat** is a real-time communication tool between technicians and remote users of managed **Windows** and **macOS** workloads. It is part of the **RMM** feature set and its availability depends on your license.\n\n## Key Capabilities\n\n1. **Start a chat session** with a remote user of a managed workload\n2. **Bidirectional initiation** — chats can be started by:\n   - The **technician** from the **Cyber Protect console**\n   - The **remote user** from **Cyber Protect Monitor**\n3. Both parties receive **notifications** about new messages and system state changes\n4. Chats started by remote users are added to a **queue** with status **Unassigned**, where tenant administrators can assign them\n\n## Technician Display Names\n\n- If **first name and last name** are configured in **Management Portal > My company > Users**, those are displayed\n- Otherwise, a generic name is generated in the format **Technician XXXX** (where XXXX are the first 4 characters of the internal user ID)\n\n## Remote User Display Names\n\n- For **Mac workloads**: the **full name** of the user is shown (if available)\n\n## How to Start a Chat\n\n**Prerequisites:**\n- The workload OS must be **Windows or macOS**\n- The **chat feature** must be supported for your user role\n\n**Steps (from All Devices):**\n\n1. In the Cyber Protect console, go to **Devices > All devices**\n2. Click the target workload, then in the **Actions** menu, click **Chat**\n3. If no remote management plan is applied, you will be prompted to either:\n   - Select and apply an **existing plan**, or\n   - Click **Add new** to create and configure a new remote management plan\n4. If **Chat is disabled** in the applied plan, click **Update** in the prompt, enable **Chat**, and save changes\n5. In the **Start chat** dialog, select the workload and the logged-in user, then confirm\n\n## Part of the Broader RMM Suite\n\nHelpdesk chat complements other RMM remote support features including **remote desktop**, **remote assistance**, and capabilities like **software deployment**, **automated patch management**, **monitoring with smart alerting**, and **cyber scripting**.\n\n---\n\n**Source:** `helpdesk-chat.html`, `starting-chat-with-remote-user.html`, `12-rmm/01-rmm-overview.md` ",
+      "sources": [
+        {
+          "title": "helpdesk-chat.html",
+          "file": "helpdesk-chat.html",
+          "score": 0.99690056,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#helpdesk-chat.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "starting-chat-with-remote-user.html",
+          "file": "starting-chat-with-remote-user.html",
+          "score": 0.9432431,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#starting-chat-with-remote-user.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "01 Rmm Overview",
+          "file": "12-rmm/01-rmm-overview.md",
+          "score": 0.5957866,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2272"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['helpdesk', 'chat'] of ['helpdesk', 'chat']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#helpdesk-chat.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#starting-chat-with-remote-user.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "17918ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_09_mdr_data_residency",
+      "query": "What are the data residency requirements and regional restrictions for Acronis MDR service?",
+      "description": "MDR data residency — web-only compliance topic",
+      "source_type": "web_doc",
+      "wall_ms": 14566,
+      "elapsed_ms": 14558,
+      "answer_preview": "# Data Residency and Regional Requirements for Acronis MDR  Acronis MDR uses a **distributed architecture** that separates endpoint telemetry, securit...",
+      "full_answer": "# Data Residency and Regional Requirements for Acronis MDR\n\nAcronis MDR uses a **distributed architecture** that separates endpoint telemetry, security investigations, and service operations. Here's how data is stored and processed:\n\n## 1. Endpoint and Product Data\n- Product and telemetry data is stored in **Acronis regional data centers**, aligned with the **customer's selected region**\n- **EDR operational data** is stored across **three global processing regions**:\n  - **United States**\n  - **Europe**\n  - **Asia-Pacific (Singapore)**\n\nThis model ensures performance, resilience, and regional availability.\n\n## 2. Security Events for Threat Hunting\n- Security events used for **proactive threat hunting** are processed in a **centralized analytics environment located in Europe**\n- This centralized model enables:\n  - Cross-region correlation\n  - Faster detection of emerging threats\n  - Consistent investigation quality across all customers\n- Event data can be **logically segmented** to support customers operating in different geographies\n\n## 3. MDR Investigations and Case Management\n- Investigation records are stored in a **centralized case management system hosted in Europe**, including:\n  - Incident investigation results\n  - Analyst notes and verdicts\n  - Customer communications related to MDR cases\n\n## 4. Global SOC Operations\n- Delivered by a **globally distributed team** of security analysts (Level 1 and Level 2)\n- Operates under a **follow-the-sun model**, ensuring **continuous 24/7 monitoring and response** regardless of region\n\n## Key Takeaways\n\n| Data Type | Storage Location |\n|-----------|-----------------|\n| Endpoint/product telemetry | Customer's selected Acronis regional data center |\n| EDR operational data | US, Europe, or Asia-Pacific (Singapore) |\n| Threat hunting events | Centralized in **Europe** |\n| Case management & investigations | Centralized in **Europe** |\n\n> **Note:** The Acronis MDR service is provided in **English only**.\n\n**Source:** `a-mdr-data-residency.html`, `a-mdr-overview.html` ",
+      "sources": [
+        {
+          "title": "a-mdr-data-residency.html",
+          "file": "a-mdr-data-residency.html",
+          "score": 0.9737945,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-data-residency.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "a-mdr-overview.html",
+          "file": "a-mdr-overview.html",
+          "score": 0.90515476,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "01 Mdr Overview And Service Levels",
+          "file": "11-mdr/01-mdr-overview-and-service-levels.md",
+          "score": 0.8003801,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=2042"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['data residency', 'mdr'] of ['data residency', 'mdr']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-data-residency.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "14566ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_10_vpn_gateway_reinstall",
+      "query": "How to reinstall or replace a VPN gateway appliance in Acronis disaster recovery?",
+      "description": "VPN gateway reinstall — web-only DR maintenance",
+      "source_type": "web_doc",
+      "wall_ms": 10173,
+      "elapsed_ms": 10168,
+      "answer_preview": "# Reinstalling the VPN Gateway in Acronis Disaster Recovery  ## When to Reinstall  You might need to reinstall the VPN gateway if you encounter issues...",
+      "full_answer": "# Reinstalling the VPN Gateway in Acronis Disaster Recovery\n\n## When to Reinstall\n\nYou might need to reinstall the VPN gateway if you encounter issues you cannot resolve, such as:\n\n- The VPN gateway is in **Error** status\n- The VPN gateway is in **Pending** status for a long time\n- The VPN gateway status is **undetermined** for a long time\n\n## What Happens During Reinstallation\n\nThe process includes the following **automatic actions**:\n\n1. Deleting the existing VPN gateway virtual machine completely\n2. Installing a new virtual machine from the template\n3. Applying the settings of the previous VPN gateway on the new virtual machine\n\n## Prerequisites\n\n- One of the **connectivity types** to the cloud site must be set.\n\n## Steps to Reinstall\n\n1. In the **Cyber Protect console**, go to **Disaster Recovery > Connectivity**.\n2. Click the **gear icon** of the VPN gateway, and select **Reinstall VPN gateway**.\n3. In the **Reinstall VPN gateway** dialog, enter your **login**.\n4. Click **Reinstall**.\n\n> **Note:** After reinstalling, if you are using **Multi-site IPsec VPN** or have switched connectivity types, you may need to **reassign IP addresses** for cloud networks and cloud servers via the **Connectivity** tab.\n\n**Source:** `reinstall-vpn-gateway.html` — User Guide for Cyber Protect Cloud Console 26.02. ",
+      "sources": [
+        {
+          "title": "reinstall-vpn-gateway.html",
+          "file": "reinstall-vpn-gateway.html",
+          "score": 0.98761624,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#reinstall-vpn-gateway.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "05 Cloud Servers",
+          "file": "07-disaster-recovery/05-cloud-servers.md",
+          "score": 0.9323302,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-cloud-servers.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "10 Ip Reassignment Dns Routing Logs",
+          "file": "07-disaster-recovery/10-ip-reassignment-dns-routing-logs.md",
+          "score": 0.9059898,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#ip-reassignment.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1320"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['vpn gateway', 'reinstall'] of ['vpn gateway', 'reinstall']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc, all_types={'web_doc', 'local_doc'}"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#reinstall-vpn-gateway.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-cloud-servers.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#ip-reassignment.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "10173ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    }
+  ]
+}

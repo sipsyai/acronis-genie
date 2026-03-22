@@ -1,0 +1,3482 @@
+[
+  {
+    "url": "https://forum.acronis.com/forum/forum-administration/not-sure-where-start-read-these-simple-guidelines",
+    "title": "Read guidelines"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-support-quick-tips-videos",
+    "title": "Acronis Support Quick Tips Videos ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/voting-forums-feature-requests",
+    "title": "Voting Forums for Feature Requests"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-do-i-unstall-acronis-cyber-protect-cloud-my-windows-11-pro-systsm",
+    "title": "how do i unstall acronis cyber protect cloud from my windows 11 pro systsm"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/bootable-media-builder",
+    "title": "Bootable media builder?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/rimototesukutotsufunjiexushiniromazirulikatekinai",
+    "title": "\u30ea\u30e2\u30fc\u30c8\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u30f3\u63a5\u7d9a\u6642\u306b\u30ed\u30fc\u30de\u5b57\u5165\u529b\u304c\u3067\u304d\u306a\u3044"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/connectivity-issue",
+    "title": "Connectivity Issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/always-incremental-single-file-question",
+    "title": "Always incremental (single-file) Question"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/dr-and-domain-controllers",
+    "title": "DR and Domain Controllers"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/migrate-backup-another-msp",
+    "title": "Migrate backup to another MSP?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/failed-copy-volume-error",
+    "title": "Failed to copy the volume error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/save-rdx-failed-first-time-not-second-or-manually",
+    "title": "save on rdx failed the first time but not the second or manually"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/proxmox-native-support",
+    "title": "Proxmox native support"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/critical-support-request-backup-index-file-lost-and-tibx-recovery-inquiry",
+    "title": "Critical Support Request \u2013 Backup Index File Lost and TIBX Recovery Inquiry"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/bug-acronis-cyber-protect-cloud-and-support-non-responsive",
+    "title": "Bug in Acronis Cyber Protect Cloud and support is non-responsive"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/support-misc-question",
+    "title": "support - misc question"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/feature-request-storage-report",
+    "title": "Feature Request: storage report"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-solution-ot-network-no-internet-access",
+    "title": "Acronis Solution for OT Network with No Internet Access"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/any-solution-backup-agentless-proxmox",
+    "title": "Any solution to backup with agentless in Proxmox?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronics-cyber-protect-16-backup-server-machine-itself",
+    "title": "Acronics Cyber Protect 16 - Backup Server Machine Itself"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-workstation-backup-how-do-i-set-backup-such-bare-metal-recovery-can-be-done-along-just-ms-office-docs",
+    "title": "Acronis workstation backup - How do I set the backup such that a bare metal recovery can be done along with just MS office docs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-psa-incoming-email-settings-tickets-creation",
+    "title": "Acronis PSA - incoming email settings for tickets creation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/what-info-sent-acronis-cloud-agents",
+    "title": "What info is sent to Acronis Cloud from agents"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/setting-email-notifiactions-alerts-cyber-protect-cloud",
+    "title": "Setting up email notifiactions from alerts (Cyber Protect Cloud)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/office365-sharepoint-team-site-files-not-found-during-recovery",
+    "title": "Office365 - Sharepoint team site - files not found during recovery"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cyber-protect-not-clearing-out-old-backup-files-cant-even-see-they-are-there",
+    "title": "Cyber Protect not clearing out old backup files, can't even see that they are there"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-cloud-nutanix-vm-image-slowly-problem",
+    "title": "Acronis Cyber Protect Cloud Nutanix VM Image Slowly Problem"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/client-backup-failed-after-restart-client-machine-acronis-backup-has-been-successfully-backed",
+    "title": "Client Backup Failed after restart the client machine Acronis Backup has been successfully backed up."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/add-new-device-cyber-protection-and-download-installer",
+    "title": "Add new Device on Cyber Protection and Download Installer"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/automated-installation-acronis-agents-domain-controller-located-another-subnet",
+    "title": "automated installation of Acronis agents on a domain controller located on another subnet"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/uninstall-acronis-does-not-do-anything",
+    "title": "Uninstall Acronis Does Not Do Anything"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/365-mailbox-restore",
+    "title": "365 Mailbox restore"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backups-happening-outside-schedule",
+    "title": "Backups Happening Outside of Schedule"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/unable-restore-acronis-boot-media-linux-machines",
+    "title": "Unable to restore from acronis boot media - Linux machines"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/url-filtering-categorization",
+    "title": "URL Filtering for Categorization"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/moving-new-desktop-pc-acronis-true-image-western-digital-passport-ultra-1tb",
+    "title": "Moving to new Desktop PC - Acronis True Image for Western Digital (Passport Ultra 1TB)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/kernel-mysql-issue",
+    "title": "Kernel & Mysql Issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-service-fails-start-centos-after-system-crash",
+    "title": "Acronis Service Fails to Start on CentOS After System Crash"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/tape-drive-validation-error",
+    "title": "Tape drive Validation error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/vmware-agentless-registration-error",
+    "title": "vmware agentless registration error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/resolved-error-codes",
+    "title": "[RESOLVED] Error codes ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/which-url-and-ports-are-required-scanning-windows-vulnerabilities",
+    "title": "Which URL and ports are required for Scanning Windows for vulnerabilities ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-cloud-protected-machine-deleted-alertnotification",
+    "title": "Acronis Cyber Protect Cloud: Protected Machine Deleted Alert/notification"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cyber-protect-writing-so-much-debug-info-logs",
+    "title": "Cyber Protect writing so much debug info into logs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-connect-different-local-networks-site-site-dr",
+    "title": "How to connect different local networks in a site to site DR"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/create-plan-encryption-api",
+    "title": "Create plan with encryption (API)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-when-adding-sharepoint-site-backup-query-parameter-resource-type-has-invalid-value-site",
+    "title": "Error when adding SharePoint site to backup: \"Query parameter 'resource type' has invalid value 'SITE'.\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/agent-offline-no-backups-found",
+    "title": "Agent offline, no backups found"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/best-way-do-immutable-backups-cyber-protect",
+    "title": "Best way to do immutable backups with cyber protect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/directadmin-module-broken-cloudlinux-95",
+    "title": "DirectAdmin Module Broken - CloudLinux 9.5"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/issue-module-compilation-oracle-linux-8-after-updating-snapapi-260842",
+    "title": "Issue with Module Compilation on Oracle Linux 8 After Updating SnapAPI to 26.0.8.42"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/sql-backup-confusion",
+    "title": "SQL Backup Confusion"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-agent-qnap-nas-acronis-cloud",
+    "title": "Backup agent for QNAP NAS to Acronis Cloud ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-and-restore-evidences-compliance-process",
+    "title": "Backup and Restore Evidences for Compliance Process"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/falha-ao-conectar-com-abgw-gru2-arp01-r03acroniscom44445-porque-o-acesso-ao-armazenamento-em-nuvem-foi-negado",
+    "title": "Falha ao conectar com \"abgw-gru2-arp01-r03.acronis.com:44445\" porque o acesso ao armazenamento em nuvem foi negado."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/impact-backups-how-resolve-snapshot-storage-space-issues",
+    "title": "Impact on Backups: How to Resolve Snapshot Storage Space Issues?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/storage-issue-space-occupied-despite-deleting-backups",
+    "title": "Storage Issue: Space Occupied Despite Deleting Backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/compression-level-and-encryption",
+    "title": "Compression Level and Encryption"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/failed-perform-volume-shadow-copy-vss-operation-another-vss-operation-already-progress",
+    "title": "Failed to perform a Volume Shadow Copy (VSS) operation. Another VSS operation is already in progress."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/unable-create-snapshot-there-not-enough-space-volume-shadow-copy-storage",
+    "title": "Unable to create the snapshot. There is not enough space on the volume for shadow copy storage."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-backup-takes-time",
+    "title": "Acronis cyber backup takes time"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/restore-single-website-acronis-cyber-protect-console-plesk-extension",
+    "title": "Restore single website from Acronis Cyber Protect Console (Plesk Extension)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-local-destinations",
+    "title": "Backup to local destinations"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/microsoft-365-quota-accounting-problem-sharepoint-sites-and-licensed-user-seats",
+    "title": "Microsoft 365 Quota Accounting Problem with Sharepoint Sites and Licensed User (seats)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-delete-or-uncheck-advanced-email-security-acronis-cyber-protect-cloud",
+    "title": "How to delete or uncheck the advanced email security in acronis cyber protect cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/there-anyway-monitor-av-status-without-api-through-scripts",
+    "title": "Is There Anyway to Monitor AV Status Without API Through Scripts?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/file-filter-does-not-exclude-folders-backup",
+    "title": "File filter does not exclude folders from backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/malware-detected-and-quarantined-ods",
+    "title": "Malware is detected and quarantined (ODS)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/boot-speed-when-testing-dr-windows-server-2012-r2-vs-windows-server-2019",
+    "title": "Boot speed when testing DR - Windows Server 2012 R2 vs Windows Server 2019"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cant-restore-backup",
+    "title": "Can't restore a backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/systems-not-registering-acronis-portal",
+    "title": "Systems not registering in the Acronis portal"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/restore-cloud-application-backup-different-backup-storage",
+    "title": "Restore Cloud Application Backup to a different Backup Storage"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/storage-quota-almost-reached-trigger",
+    "title": "The storage quota is almost reached - Trigger"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-corruption-issue-acronis-rhel-94-based-os-kernel-5140-427",
+    "title": "Backup Corruption Issue with Acronis on RHEL 9.4 Based OS (Kernel 5.14.0-427)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/connect-vs-cloud-which-forum-should-i-use",
+    "title": "Connect vs Cloud? (Which forum should I use)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/excessive-office-applications-opening-time",
+    "title": "Excessive Office Applications Opening Time"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/unable-ping-tofrom-acronis-dr-site",
+    "title": "Unable to ping to/from Acronis DR site"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/excessive-disk-space-usage-programdataacronisagentvarmi-monitoringtsdbchunkshead",
+    "title": "Excessive disk space usage ProgramData\\Acronis\\Agent\\var\\mi-monitoring\\tsdb\\chunks_head"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/creating-application-consistent-vss-hypervisor-snapshot-failed",
+    "title": "Creating application-consistent (VSS) hypervisor snapshot' failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cpanel-toggle-application-backup-eap",
+    "title": "cPanel toggle in Application backup (EAP)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/no-suitable-buckets-while-registering-aws-s3-storage",
+    "title": "No suitable buckets while registering AWS S3 storage"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-fix-error-specified-host-managed-another-agent",
+    "title": "How to fix error the specified host is managed by another agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/gui-icons-no-text",
+    "title": "GUI Icons with no text"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/microsoft-teams-install-patch-patch-installation-fails",
+    "title": "Microsoft Teams install patch patch Installation fails"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/printing-or-exporting-protection-plans-inclusion-legal-contracts-clients",
+    "title": "Printing or exporting of Protection Plans for inclusion in legal contracts for clients."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-types-question",
+    "title": "Backup types question"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/increased-quota-not-visible-account",
+    "title": "Increased quota not visible to account"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/problems-m365-sharepoint",
+    "title": "Problems with M365 Sharepoint"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/protection-plan-withdrawn-additional-licensing-required",
+    "title": "Protection plan withdrawn \"Additional licensing required\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/storage-constraints",
+    "title": "Storage constraints"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/problem-backup-credentials-network-share-are-incorrect",
+    "title": "Problem with a backup : The credentials for network share '...' are incorrect."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/forum-issues",
+    "title": "Forum issues."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-suppress-warning-directly-attached-physical-disks",
+    "title": "How to suppress warning for directly attached physical disks?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-map-external-unit-western-digital-ex2-ultra-connected-mac-backup-it",
+    "title": "How to map an external unit (Western Digital EX2 Ultra)  connected on Mac to backup it?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-console-ssl-not-renewed-cname",
+    "title": "Acronis Console - SSL not renewed on cname?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/view-mail-deleted-o365-mailbox",
+    "title": "View mail in deleted O365 mailbox?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-reporting-no-access-remote-desktop-acronis-management-console",
+    "title": "Acronis Reporting with no access to Remote Desktop to the Acronis Management Console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/add-notification-device-if-something-blocked-antimalware",
+    "title": "Add notification on the device if something is blocked by antimalware"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/help-sql-backups",
+    "title": "Help With SQL Backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-stuck-and-it-wont-allow-me-stopcancel-it",
+    "title": "Backup Is Stuck and it won't allow me to stop/cancel it"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/long-term-backup-storage-solution",
+    "title": "Long-term backup storage solution?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cannot-subscribe-digest-rss",
+    "title": "Cannot Subscribe to Digest via RSS"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/disaster-recovery-file-system-size-virtual-machine-acronis-dr-data-center",
+    "title": "DIsaster Recovery - File System size for Virtual Machine on ACRONIS DR Data Center."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cant-find-existing-backup",
+    "title": "Acronis can't find existing backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cyber-protect-restore-us5-slow-and-crashing-att-fiber-line",
+    "title": "Cyber Protect restore from US5 Slow and Crashing ATT Fiber line"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/btrfs-support",
+    "title": "BTRFS support"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/correct-vpn-0",
+    "title": "Correct VPN"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/correct-vpn",
+    "title": "Correct VPN"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cyber-protect-backup",
+    "title": "Cyber Protect Backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cyber-protect-cloud-sql-backup",
+    "title": "Cyber Protect Cloud SQL backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cloudlinux-9-support-eta",
+    "title": "CloudLinux 9 Support ETA?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cyber-protect-o365-backup-failed",
+    "title": "Cyber protect O365 backup failed."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/trying-install-acronis-cpanel-plugin-alma-linux-9-saying-only-compatible-centos",
+    "title": "Trying to install acronis cpanel plugin on Alma linux 9, but saying only compatible with Centos"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/oracle-cloud-database-connectivity-disaster-recovery-server",
+    "title": "Oracle Cloud Database connectivity to disaster recovery server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/failed-create-snapshot-backup-agent-241-37279",
+    "title": "\"Failed to create a snapshot for backup\" since agent 24.1 37279"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-cyber-cloud-protect",
+    "title": "Backup on Cyber Cloud Protect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-uninstall-acronis-cyber-protect-datto-rmm",
+    "title": "How to uninstall Acronis Cyber Protect via Datto RMM?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/unable-install-visual-studio-or-update-new-feature",
+    "title": "unable to install visual studio or update new feature"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-error-when-changing-mysql-port-3306-cpanelwhm",
+    "title": "Backup error when changing MySQL port 3306 in cPanel/WHM"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/verifying-usa-datacenter-locations-acronis-cloud",
+    "title": "Verifying USA Datacenter locations for Acronis Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-cloud-grafana-integration",
+    "title": "Acronis Cyber Protect Cloud Grafana Integration"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-backup-onedrive-local-files-secure-zone",
+    "title": "How to backup OneDrive local files to Secure Zone ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/send-failure-notifications-after-x-number-failures",
+    "title": "Send Failure Notifications After x Number of Failures"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/are-there-any-suitable-options-me",
+    "title": "Are there any suitable options for me?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/application-backup-cpanel-cant-turned",
+    "title": "Application backup cPanel can't turned on"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/referencing-credentials-powershell-script",
+    "title": "Referencing credentials in Powershell script"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cloud-protect-what-customer-administrator",
+    "title": "Acronis Cloud Protect - What is the \"customer administrator?\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cloud-storage-disabled-your-account",
+    "title": "Cloud storage is disabled for your account."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/test-restore",
+    "title": "Test Restore"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/automated-test-failover-no-schedule",
+    "title": "Automated test failover - no schedule"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/custom-report-acronis-cyber-protect-devices-where-antivirus-antimalware-protection-self-protection",
+    "title": "Custom report in Acronis Cyber Protect with devices where Antivirus & Antimalware protection Self-protection is OFF"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/problems-m365-sharepoint-site",
+    "title": "Problems with M365 Sharepoint site"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-generate-installation-token",
+    "title": "How to generate Installation Token"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-create-backup-plan-customer",
+    "title": "How to create Backup plan for customer"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/unsecure-way-set-password-acropsh",
+    "title": "Unsecure way to set a password with acropsh"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-disable-all-acronis-antivirus-services",
+    "title": "How to disable ALL Acronis antivirus services"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/there-issue-your-active-directory-domain-you-might-have-competing-domain-controllers",
+    "title": "There is an issue your Active Directory Domain. You might have Competing Domain controllers"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/recover-raid1-not-possible",
+    "title": "Recover to RAID1 - not possible"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/hyper-v-agent-backup-mit-host-und-vms-verschiedenen-vlans",
+    "title": "Hyper-V Agent Backup mit Host und VMs in verschiedenen VLANs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/simple-pre-command-batch-file-fails-error-code-66610",
+    "title": "Simple pre-command batch file fails with error code 66,610"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-agent-installation-stuck-96-mac-os-ventura",
+    "title": "Acronis Cyber Protect Agent installation stuck at 96% on Mac OS Ventura"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/feature-request-turbo-option-cloud-backup-and-replication",
+    "title": "Feature Request: Turbo option for cloud backup and replication?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/primaryrecovery-servers-windows-os-are-not-bootable",
+    "title": "Primary/Recovery servers with Windows OS are not bootable"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/filesfolders-exclusions",
+    "title": "Files/Folders exclusions"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/connect-acronis-cyber-protect-cloud-grafana",
+    "title": "Connect Acronis Cyber Protect Cloud to grafana"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/powershell-scripting-dell-command-update",
+    "title": "PowerShell Scripting Dell Command Update"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/qnap-error-registration",
+    "title": "qnap error registration"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/m365-license-seats-do-not-match-acronis-billing-seats",
+    "title": "m365 license seats do not match with acronis billing seats"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cannot-see-devices-and-protection-profiles-acronis-dashboard",
+    "title": "Cannot see devices and protection profiles in Acronis dashboard"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cyber-protect-cloud-agent-automatic-update-fails",
+    "title": "Cyber Protect Cloud Agent automatic update fails"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/powershell-script-issue-superops-agent",
+    "title": "Powershell Script Issue - SuperOps agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/email-notification",
+    "title": "Email notification"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cloud-backup-can-not-be-deleted-0",
+    "title": "Cloud Backup can not be deleted"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cloud-backup-can-not-be-deleted",
+    "title": "Cloud Backup can not be deleted"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/synology-agent-issue",
+    "title": "Synology Agent Issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-cloud-create-recovery-server-ip-address-already-use",
+    "title": "Acronis Cyber Protect Cloud - Create Recovery Server - IP address is already in use"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-cloud-disaster-recovery-vpn-gateway-point-site-keeps-disappearing",
+    "title": "Acronis Cyber Protect Cloud - Disaster Recovery VPN gateway (point to site) keeps disappearing"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/complete-volume-restore-incomplete-backup",
+    "title": "Complete volume restore from incomplete backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/windows-error-0x80070003-system-cannot-find-path-specified",
+    "title": "Windows error: (0x80070003) The system cannot find the path specified"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-vpn-appliance-hyper-v-connection-issue",
+    "title": "Acronis VPN Appliance - Hyper-V connection issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/service-provider-hosted-storage",
+    "title": "Service Provider Hosted Storage"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/do-local-agent-credentials-need-possess-access-azure-storage-account",
+    "title": "Do local agent credentials need to possess access to Azure storage account?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-restore-1-table-mysql-database-backup",
+    "title": "How to restore 1 table from a MySQL database backup?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-download-full-sql-file-mysql-backup-acronis",
+    "title": "How to download the full .sql file from a MySQL backup in Acronis?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-running-some-time-and-stoping",
+    "title": "Backup running for some time and stoping."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/windows-error-0x80070005-access-denied",
+    "title": "Windows error: (0x80070005) Access is denied."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/archive-file-changed-another-process",
+    "title": "Archive File Changed by another process"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cloud-backup-download-tool",
+    "title": "Acronis Cloud Backup Download tool"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/info-post-restore-guide-how-or-any-docs",
+    "title": "Info for Post-Restore. Guide, How-To or any docs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/support-issue",
+    "title": "Support Issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/exclude-users-365-backups-other-questions",
+    "title": "Exclude Users from 365 backups & other questions."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/postgresql-backup-agent-fur-windows-systems",
+    "title": "Postgresql Backup Agent f\u00fcr Windows Systems"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-backup-scan-malware",
+    "title": "Acronis Backup Scan for Malware"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-cloud-backup-monitoring-datto-rmm",
+    "title": "Acronis Cyber Cloud backup monitoring on datto rmm"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/directadmin-cp-module-121174-log-download",
+    "title": "DirectAdmin CP Module - 1.2.1.174 log download"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-replication",
+    "title": "Acronis replication"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-and-prtg-sensor",
+    "title": "Acronis and PRTG Sensor"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-name-already-ues-either-service-name-or-service-display-name",
+    "title": "Error: The name is already in ues as either a service name or service display name"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/wow-acronis-support-and-website-terrible",
+    "title": "Wow Acronis support and website is terrible"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cloud-protect-file-sync-and-share-issues-azure-accounts-are-local-admin",
+    "title": "Acronis Cloud Protect - File Sync and share issues with Azure accounts that are local admin"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/plesk-extension-failed-install-backup-agent",
+    "title": "Plesk Extension: Failed to install the backup agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/find-files-folder-thousands-files",
+    "title": "Find files in a folder with thousands of files"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-ms-powerbi",
+    "title": "Acronis - MS PowerBi"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/automatically-stop-backup-schedule-when-files-are-crypted",
+    "title": "Automatically stop backup schedule when files are crypted"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-failed-because-third-party-vss-provider-had-unexpected-error",
+    "title": "Backup failed because a third-party VSS provider had an unexpected error."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/questions-about-vpn-disaster-recovery",
+    "title": "Questions about VPN for disaster recovery"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/download-c2c-backups-be-investigated-local-authorities",
+    "title": "Download C2C backups to be investigated by the local authorities."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-useburn-wim-images-usb-or-dvd",
+    "title": "how use/burn wim images to USB or DVD...?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-fails-access-denied-error-code-20250646",
+    "title": "Backup fails with ACCESS DENIED Error code: 20250646"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cannot-ping-acronis-appliance-different-subnet",
+    "title": "Cannot ping Acronis appliance from different subnet"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-cloud-backups-fail-cloud-storage-temporarily-unavailable-eu2-and-eu8-dcs",
+    "title": "Acronis Cyber Protect Cloud: Backups fail with \"The cloud storage is temporarily unavailable\" on EU2 and EU8 DCs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cpanel-plugin-broken-new-cpanel-v110",
+    "title": "cPanel Plugin Broken since new cPanel v110"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/whm-plugin-missing-after-remove-and-reinstall",
+    "title": "WHM plugin missing after remove and reinstall"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cloudlinux-full-support-ubuntu-2204",
+    "title": "CloudLinux - Full support? Ubuntu 22.04?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/uninstall-cyber-protect-agent",
+    "title": "Uninstall cyber protect agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-backup-stuck-discovering-resources-google-workspace",
+    "title": "Acronis Backup is stuck on Discovering resources from Google Workspace"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/trying-restore-trash-bin-mac",
+    "title": "Trying to restore Trash Bin on a Mac"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/mac-os-1331-2-cpu-core-cyber-protect-service",
+    "title": "Mac OS 13.3.1 2 cpu core for \"cyber-protect-service\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-can-i-backup-folders-were-migrated-new-server-without-creating-new-backup",
+    "title": "How can I backup folders that were migrated to a new server without creating a new backup?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/microsft-sql-backup-question",
+    "title": "Microsft SQL Backup Question"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/urgent-protected-site-corrupted-5-days-must-recover-asap",
+    "title": "URGENT - \"Protected\" Site Corrupted 5+ Days - MUST Recover ASAP"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/i-am-having-trail-version-acronis-cyber-protect-cloud-need-understand-what-versioning-available",
+    "title": "I am having a trail version for Acronis Cyber Protect cloud, need to understand what versioning is available."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cannot-controlconnect-defender",
+    "title": "Cannot control/connect with Defender"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/tisax-certification-cyber-protect-cloud",
+    "title": "TISAX Certification for Cyber Protect Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/exclude-365-userteamgroup-backup-plan",
+    "title": "Exclude 365 User/Team/Group from Backup Plan"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/add-data-shipping-licence-msp",
+    "title": "Add Data shipping licence MSP"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-ha-not-working",
+    "title": "Acronis HA not working"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyberprotect-plesk",
+    "title": "acronis cyberprotect via plesk"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/post-backup-script-not-executed-if-backup-fails",
+    "title": "Post-backup script not executed if backup fails"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/plesk-error",
+    "title": "Plesk Error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cpanelplesk-and-2fa",
+    "title": "cPanel/Plesk and 2FA"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/control-panel-plugins-broke-new-agent",
+    "title": "Control panel plugins broke with the new agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/expired-proxy-error-during-installation",
+    "title": "Expired proxy  error during installation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/problem-site-site-vpn-openvpn-vm-appliance-type",
+    "title": "Problem with site-to-site VPN (OpenVPN VM appliance type)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/windows-error-0x80070701-users-account-has-expired",
+    "title": "Windows error (0x80070701) the users account has expired"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-whmcs-module-fury",
+    "title": "Acronis WHMCS  module fury"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/device-group-missing",
+    "title": "Device Group missing"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/disk-usage-when-recovering-through-whmcpanel",
+    "title": "Disk usage when recovering through WHM/cPanel"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-sql-database-fails-noti-failed-create-snapshot-because-vss-provider-returned-error-request-unsuppored",
+    "title": "Backup SQL database but fails with noti :\" Failed to create snapshot because VSS provider returned error 'Request is unsuppored\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/windows-hyper-v-2019-core-cannot-register-agent",
+    "title": "Windows Hyper-v 2019 core - cannot register agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-do-i-disable",
+    "title": "How do I disable this?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-der-warteschlange",
+    "title": "Backup in der Warteschlange"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/disaster-recovery-function",
+    "title": "Disaster Recovery Function"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/install-client-without-logging-each-customers-account-info",
+    "title": "Install client without logging in with each customers account info"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/multiple-backup-admins-or-single-service-account",
+    "title": "Multiple backup admins or single service account?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cpanel",
+    "title": "Acronis cPanel"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/bootable-media-questions",
+    "title": "bootable media questions"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/vv-acronis-whmcs-module-error-acronis-api-bad-request-error",
+    "title": "v/v Acronis WHMCS module error Acronis API bad request error."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/linux-system-freeze-every-backup",
+    "title": "Linux system freeze on every backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/free-restore-acronis-cloud",
+    "title": "Free restore to Acronis cloud?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/trying-calculate-required-licenses",
+    "title": "Trying to calculate required licenses"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cant-install-snapapi-module",
+    "title": "Can't install SnapAPI Module"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/problems-m365-sharepoint-site-and-teams-backup",
+    "title": "Problems with M365 Sharepoint site and Teams backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/windows-client-agent-updates-why-no-notice",
+    "title": "Windows Client Agent Updates - Why no notice?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/agent-azure-linux-vm-secure-boot",
+    "title": "Agent on Azure Linux VM with Secure Boot"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/remove-alerts-deleted-customers",
+    "title": "remove alerts from deleted customers"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/device-agents-keep-failing-update",
+    "title": "Device agents keep failing update"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/create-groups-microsoft-365",
+    "title": "Create groups Microsoft 365"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/agent-installation-acronis-cloud-protection-fails-snapapi-and-firewall",
+    "title": "Agent installation of Acronis Cloud protection fails on Snapapi and firewall"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/office-365-backups-cloud-scheduling",
+    "title": "Office 365 Backups to Cloud - Scheduling"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/ldf-was-skipped-because-it-was-locked-another-process-during-backup",
+    "title": ".ldf' was skipped because it was locked by another process during backup."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/plesk-backup-console-login",
+    "title": "Plesk > Backup Console > Login"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-install-acronis-agent-linux",
+    "title": "Error install Acronis Agent for linux"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/does-backup-retention-period-influence-final-amount-charged-customer",
+    "title": "Does the backup retention period influence the final amount charged to the customer?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-directadmin-0",
+    "title": "Acronis with Directadmin"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/agent-installation-fedora-36-workstation",
+    "title": "Agent Installation on a Fedora 36 Workstation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/restrict-client-other-admins",
+    "title": "Restrict Client from other Admins"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/says-backup-successful-then-gives-error-incomplete-backups",
+    "title": "Says backup successful, then gives error of incomplete backups?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cant-delete-backup-and-backup-size-too-big",
+    "title": "Can't delete backup and backup size is too big"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-backup-cloud-not-fast-it-used-be",
+    "title": "Acronis Backup Cloud is not as fast as it used to be!?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/solved-access-denied",
+    "title": "SOLVED: Access is denied"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/whm-acronis-backup-logs",
+    "title": "WHM + Acronis backup logs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-when-trying-register-device-no-admin-login",
+    "title": "Error when trying to register a device: No admin login..."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-location-immutable-copy-fails-second-backup",
+    "title": "Backup to Location with immutable copy on fails on second backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/delete-backup-acronis-cloud-nothing-happens",
+    "title": "Delete backup from Acronis Cloud - nothing happens"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-protect-agents-offline-client-lock",
+    "title": "Acronis Protect agents offline on client lock"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/empfanger-backup-benachrichtigung-backup-notification-acronis-cyber-protect-cloud",
+    "title": "Empf\u00e4nger Backup-Benachrichtigung/ backup notification/  Acronis Cyber Protect Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/tape-backup-issue",
+    "title": "Tape backup Issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/current-datacenter-locantions-acronis-cloud",
+    "title": "Current datacenter locantions for Acronis Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/case-history-there-seems-be-some-problem-while-retrieving-your-data",
+    "title": "Case History - There seems to be some problem while retrieving your data."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-backing-files-acronis-cyber-protect",
+    "title": "Error backing up files - Acronis Cyber Protect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-configure-web-interface-url-lets-encrypt",
+    "title": "Error Configure Web Interface URL Let's Encrypt"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/feature-request-possibility-lock-certain-recovery-points-agent",
+    "title": "Feature request - Possibility to lock certain recovery points for agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-massively-change-registration-account-several-devices",
+    "title": "how to massively change the registration account of several devices"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-directadmin",
+    "title": "Acronis for DirectAdmin"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/wird-acronis-file-connect-auch-refs-unterstutzen-und-wann",
+    "title": "Wird Acronis File Connect auch reFS unterst\u00fctzen und wann?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/support-digest-q1-2022-available",
+    "title": "Support Digest Q1 2022 is available!"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/mobile-phone-backup-restore-not-possible-portal",
+    "title": "Mobile Phone Backup restore not possible in the portal"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/forbidden-error-acronis-cpanel-plugin-after-cpanel-v102-upgrade",
+    "title": "\"Forbidden\" error in Acronis cPanel plugin after cPanel v102 upgrade"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/provider-managed",
+    "title": "Provider \"managed\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/general-issues",
+    "title": "General issues"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/msp-pricing-400-higher-acronis-cloud-storage-compared-acronis-retail-pricing",
+    "title": "MSP Pricing 400% higher on Acronis Cloud Storage compared to Acronis retail pricing"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/trusted-service-principles-compliance-report-certification",
+    "title": "Trusted Service Principles Compliance Report / Certification"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-cloud-billing-integration",
+    "title": "Acronis Cyber Cloud - Billing Integration"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/viewing-tenants-cloud-portal",
+    "title": "Viewing Tenants in the Cloud Portal"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/failed-acronis-cyber-cloud-o365-mail-backup",
+    "title": "Failed Acronis Cyber Cloud O365 mail backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/replica-gone-bad-vm-displayed-wrong-status",
+    "title": "Replica gone bad. VM displayed with a wrong status"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/prtg-ci-addon-paesslerexe",
+    "title": "PRTG with ci-addon-paessler.exe"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/mount-points-kernel-module-snumbd26-are-detected",
+    "title": "Mount points of kernel module 'snumbd26' are detected."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/data-flow-diagram-cyber-protect-cloud-hybrid-mode",
+    "title": "Data flow diagram for Cyber Protect Cloud in Hybrid mode"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/mysql-8-status",
+    "title": "MySQL 8 status?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cpanel-plugin-compatible-almalinux-84",
+    "title": "Is the acronis cpanel plugin compatible with Almalinux 8.4?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/certificate-could-not-be-matched-known-trusted-ca",
+    "title": "The certificate could not be matched with a known, trusted CA"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/agentless-backups-microsoft-365-business",
+    "title": "Agentless Backups for Microsoft 365 Business"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-hidden-monitor-application-user",
+    "title": "How to hidden the Monitor Application for User"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/failed-detect-os",
+    "title": "Failed to detect OS"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/i-cannot-add-device-protection-plan",
+    "title": "I cannot add a device to a protection plan"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/sql-server-databases-suddenly-go-missing",
+    "title": "SQL server databases suddenly go missing"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cloudlinux-85",
+    "title": "Cloudlinux 8.5"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/7-day-history",
+    "title": "7-day history"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/new-acronis-cyber-protect-cloud-known-solutions",
+    "title": "New!! Acronis Cyber Protect Cloud Known Solutions"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/plesk-module-windows-server",
+    "title": "Plesk Module - Windows Server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/macos-backing-specific-folders-all-user-profiles-documents-desktop",
+    "title": "MacOS - Backing up specific folders in all user profiles. (Documents & Desktop)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backing-specific-folders-all-user-profiles-documents-desktop-etc",
+    "title": "Backing up specific folders in all user profiles.  (Documents, Desktop etc)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/windows-server-vss-shadowcopy-storage-seems-reset-unbound",
+    "title": "Windows Server: VSS ShadowCopy storage seems to reset to \"unbound\"?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/question-about-possible-scenario-between-acronis-vmware-synology",
+    "title": "Question about possible scenario between acronis, vmware, synology"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/email-virus-notification",
+    "title": "Email Virus Notification"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/request-include-what-changes-made-details-activity-tab",
+    "title": "Request to include what changes made in details in activity tab"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cpanel-acronis-cpanelwhm-plugin-has-stopped-working",
+    "title": "cPanel Acronis cPanel/WHM plugin has stopped working"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/feature-request-exclude-files-and-folders-website-backup-feature-acronis-backup-cloud",
+    "title": "Feature Request: Exclude Files and Folders from 'Website' backup feature in Acronis Backup Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/us5-datacenter-issue",
+    "title": "US5 Datacenter Issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-cloud-hyperv-hangs-preparing-0",
+    "title": "Acronis Cyber Cloud for HyperV hangs on \"Preparing\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/vmware-backup-vps-environment",
+    "title": "VMware backup - VPS environment"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/daily-and-weekly-jobs-one-plan-or-separate",
+    "title": "Daily and weekly jobs in one plan? Or separate?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-package-backupandrecoveryagent-15027493-1-not-installed",
+    "title": "error: package BackupAndRecoveryAgent-15.0.27493-1 is not installed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/change-backup-plan",
+    "title": "Change backup plan"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-22-crc",
+    "title": "Error 22 & CRC"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/feature-request-restore-databases-cyber-protect-console-admins",
+    "title": "Feature request - Restore databases from Cyber Protect Console for admins"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/long-path-how-go-directly-folder",
+    "title": "Long path - How to go directly to that folder"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/feature-request-restore-filesfolders-alternative-pathfolder",
+    "title": "Feature request - Restore files/folders to alternative path/folder"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/finalization-error-disaster-recovery-cloud",
+    "title": "Finalization error in Disaster Recovery Cloud..."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/feature-request-automatic-agent-update",
+    "title": "Feature Request - Automatic Agent Update"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-find-info-about-which-backup-was-use-recovery",
+    "title": "How to find info about which backup was use for recovery"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/2103-antivirus-really-active-free-integrated-features",
+    "title": "21.03 : is antivirus really active in the free integrated features ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/dr-test-failover-keystrokes-are-detected-incorrectly",
+    "title": "DR :: test-failover keystrokes are detected incorrectly"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/management-console",
+    "title": "Management Console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/blocked-accoun-after-trial-period",
+    "title": "Blocked accoun after trial period"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/when-will-current-centos-84-and-stream-be-supported-backup-agent",
+    "title": "When will current CentOS 8.4 and Stream be supported by the Backup Agent?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/daily-status-report-alerts-how-turn-them",
+    "title": "Daily Status Report Alerts - How to turn them off?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/does-acronis-cloud-backup-backup-everything-relating-365-group",
+    "title": "Does Acronis Cloud Backup backup EVERYTHING relating to a 365 group?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/receiving-usrlibacronisscheduleschedwrapper-not-found-error-after-upgrading-agent-version-15026822",
+    "title": "receiving /usr/lib/Acronis/Schedule/schedwrapper: not found\" error after upgrading Agent to version 15.0.26822"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-backup-server-failed-backup",
+    "title": "Acronis Backup Server failed in backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-deploy-cyber-protection-agent",
+    "title": "How to Deploy Cyber Protection Agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-codes-22",
+    "title": "Error codes 22"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/better-view-multiple-protection-plans-statuses",
+    "title": "Better View of Multiple Protection Plans Statuses"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/unable-register-prem-system",
+    "title": "Unable to register with on prem system"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-cloud-cannot-add-wasabi-storage-trough-acronis-cyber-infrastructure",
+    "title": "Acronis Cyber Cloud - cannot add Wasabi Storage trough Acronis Cyber Infrastructure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-file-plans-included-files-restore-point-doesnt-show-files-being-backed",
+    "title": "Backup file plans included the files but restore point doesnt show the files is being backed up"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/presentation-slide-deck-end-customer",
+    "title": "Presentation Slide Deck for end customer"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/linux-servers-failing-backup-server-refused-connection",
+    "title": "Linux Servers Failing to Backup \"The Server Refused Connection\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-cloud-ui-delays-when-switching-between-clients",
+    "title": "Acronis Cyber Cloud - UI delays when switching between clients"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/some-servers-take-much-longer-others-daily-backup",
+    "title": "Some servers take much longer than others for daily backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/disablingenabling-plan-cmdlet",
+    "title": "Disabling/Enabling a Plan with a CMDlet"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/have-button-automatic-update-all-agents",
+    "title": "Have a button for the automatic update of all agents"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-unattended-installation-issue",
+    "title": "Acronis Cyber Protect unattended installation issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/lawsuit-and-legal-actions-against-acronis",
+    "title": "Lawsuit and legal actions against Acronis"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-support-terrible",
+    "title": "Acronis Support is terrible"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/automatic-installation-failed-centos-8",
+    "title": "Automatic installation failed on CentOS 8"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-protect-cloud",
+    "title": "Acronis Cyber Protect cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cannot-save-storage-quota-whmcs-template",
+    "title": "Cannot save storage quota in whmcs template"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/how-restore-macos-device-vmware-esxi-running-mac-hardware",
+    "title": "How to restore MacOS device to VMWare ESXi (running on Mac Hardware)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backups-cloud-verification",
+    "title": "Backups to Cloud - Verification"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/questions-about-file-sync-share",
+    "title": "Questions about \"File Sync & Share \""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/performance-problems-custom-application-if-anti-malware-features-are-activated",
+    "title": "Performance Problems with custom Application if Anti Malware Features are activated"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-agent-setup-not-getting-started",
+    "title": "Acronis Agent setup not getting started."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cloud-backup-125-work-slow-very-slow",
+    "title": "Acronis cloud Backup 12.5 work slow, very slow"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/mistake-deleted-mailbox-backup-portal",
+    "title": "By mistake deleted mailbox backup from the portal"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/we-changed-backup-destination-now-getting-errors-about-old-destination",
+    "title": "We changed backup destination - now getting errors about old destination"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/google-drive-backup",
+    "title": "Google Drive backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-codes-0",
+    "title": "Error Codes"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/service-quotas-reverting-no-quota",
+    "title": "Service Quotas reverting to \"No Quota\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/updating-agent-version-servers-side",
+    "title": "Updating agent version from the server's side"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/massive-inbound-traffic-when-backing-server",
+    "title": "Massive inbound traffic when backing up server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cyber-cloud-disappointment",
+    "title": "Acronis Cyber Cloud disappointment"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/orphaned-recovery-points-no-data-safe-remove",
+    "title": "Orphaned recovery points with no data - safe to remove?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/export-details-plans-tenant-use-backup-contract",
+    "title": "Export details of Plans per tenant for use with Backup Contract"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/failed-mount-recovery-point",
+    "title": "Failed to mount the recovery point."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/customer-cannot-restore-files-acronis-cpanel-backup-plugin-they-have-use-jetbackup-instead",
+    "title": "Customer cannot restore files from Acronis cPanel Backup plugin, they have to use JetBackup instead!!!"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/linux-backup-fails",
+    "title": "Linux backup fails"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/installing-linux-agent-file",
+    "title": "Installing Linux agent with file"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cannot-resolve-infrastructure-component-id-configurable-option-storagegigabytes",
+    "title": "Cannot resolve the infrastructure component ID for the configurable option \"storage:gigabytes:\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronins-datacentre-slow-data-transfer-speeds-and-issues-backup-plans",
+    "title": "Acronins datacentre slow data transfer speeds and issues with backup plans?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/application-backup-microsoft-sql-server-user-can-not-register",
+    "title": "Application backup - Microsoft SQL Server - User can not register"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/agent-version-15024600",
+    "title": "Agent version 15.0.24600"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/windows-defender-blocked-because-acronis-cyber-protect-installed-machine",
+    "title": "Windows Defender is blocked because Acronis Cyber Protect is installed on the machine."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/active-protection-macos",
+    "title": "Active Protection on MacOS"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-plan-best-practice",
+    "title": "Backup plan best practice"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/creating-backup-plan-beginner",
+    "title": "Creating a backup plan (Beginner)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/features-request-sub-account-acronis-cyber-portal-customer-portal",
+    "title": "Features Request on Sub Account Acronis Cyber Portal | Customer Portal"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/issue-whmcs-module-after-upgrading-v220-175",
+    "title": "Issue with WHMCS module after upgrading to v2.2.0-175"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/move-backup-file-failed-backup-server-new-server",
+    "title": "Move backup file from failed backup server to a new server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backups-failing-new-agent-install-dont-work",
+    "title": "Backups failing, new agent install don't work"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/customer-accidentally-deleted-backup-plans-how-do-i-recover-them",
+    "title": "Customer accidentally deleted Backup Plans; how do I recover them?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/no-access-backups-after-mashine-was-removed-management-how-can-be-true",
+    "title": "No Access to Backups after Mashine was removed from Management - How this can be true?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/turned-file-sync-and-now-all-backups-and-devices-are-gone",
+    "title": "Turned off File Sync and now all backups and devices are gone."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-cloud-backup-stopping-google-file-stream",
+    "title": "Acronis Cloud Backup Stopping Google File Stream"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/help-documentation-does-not-include-disaster-recovery",
+    "title": "Help documentation does not include Disaster Recovery"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/teams-backup-roadmap",
+    "title": "Teams backup roadmap"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/us5-daily-500",
+    "title": "US5 - daily 500"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/unable-complete-cpanel-plugin-installation",
+    "title": "Unable to complete cPanel plugin installation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/registering-and-starting-acronis-storage-gateway",
+    "title": "Registering and starting Acronis Storage Gateway"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/whmcs-module-billing-overusage",
+    "title": "WHMCS Module - billing for overusage"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/error-codes",
+    "title": "Error Codes"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/registration-failed-when-bootable-recovery-media",
+    "title": "\"Registration Failed\" when on bootable recovery media"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/export-import-plans",
+    "title": "Export / Import Plans"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/active-protection-process-certificate-not-valid",
+    "title": "active protection - Process certificate is not valid"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/recovering-entire-machine-amazon-ec2",
+    "title": "Recovering entire machine in Amazon EC2"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/protect-agent-uninstall",
+    "title": "Protect agent from uninstall !"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/registration-error-windows-client",
+    "title": "Registration error windows client"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/you-do-not-have-access-rights-file-vmware-appliance-backup-restore",
+    "title": "You do not have access rights to this file - VMware Appliance Backup / Restore"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/what-use-acronics-sap-ides-many-using-it",
+    "title": "What is the use of acronics with sap ides many using it ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/ms-sql-backup-failed",
+    "title": "MS SQL Backup Failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/copy-backup-protection-plan",
+    "title": "Copy a Backup (Protection) Plan"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/agent-not-showing-cloud",
+    "title": "Agent not showing up in cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/anyone-using-acronis-cyber-fit-score-tool",
+    "title": "Anyone using Acronis Cyber Fit Score Tool?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/network-connection-failed-due-timeout",
+    "title": "Network connection failed due to timeout."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/disaster-recovery-vpn-apliance-could-not-connect-host",
+    "title": "Disaster Recovery VPN Apliance Could Not Connect To Host"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/dashboard-creation-backup-management",
+    "title": "Dashboard creation for backup management"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/production-line-server-backup",
+    "title": "Production line server Backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/cant-change-where-backup-acronis-cyber-cloud-protection-plan",
+    "title": "Can't change \"Where to backup\" for Acronis Cyber Cloud protection plan"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/enrolling-machine-owner-key",
+    "title": "Enrolling Machine Owner Key"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/acronis-backup-agent-update-support-new-macos-catalina",
+    "title": "Acronis Backup Agent Update for Support of New MacOS Catalina"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-did-not-start-scheduled-error",
+    "title": "The backup did not start as scheduled error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/physical-data-shipping-issues",
+    "title": "Physical DATA shipping issues"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/allow-customers-view-their-own-quota",
+    "title": "Allow customers to view their own quota"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/protection-agent-not-running",
+    "title": "The Protection Agent is not Running"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/console-data-locked",
+    "title": "Console with data locked"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/critical-username-and-passwords-are-plain-text-install-logs",
+    "title": "Critical!  Username and passwords are in plain text in the install logs!"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/scripted-install-backupagentforwindowswebexe-installer",
+    "title": "Scripted install via the Backup_Agent_for_Windows_web.exe installer"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/error-starting-mmsexe-and-diskbundledll-error100",
+    "title": "Error Starting mms.exe and DiskBundle.dll error100"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/search-function-slow",
+    "title": "Search Function Slow"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/probably-simple-answer-needed",
+    "title": "Probably a simple answer needed...!!!"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/misc-network-error",
+    "title": "Misc network error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/anyone-using-acronis-cyber-cloud",
+    "title": "Anyone using Acronis Cyber Cloud?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/downloading-backup-using-another-company-administrator",
+    "title": "Downloading backup using another company administrator"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/httpseu2-cloudacroniscom-not-available",
+    "title": "https://eu2-cloud.acronis.com/ not available"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/active-log-sequence-empty",
+    "title": "The active log sequence is empty."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/cpanel-plugin-failed-mount-recovery-point",
+    "title": "cPanel Plugin \"Failed to mount the recovery point.\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/transfer-backup-data-between-private-clouds",
+    "title": "Transfer backup data between private clouds"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/registering-agent-more-one-user",
+    "title": "Registering agent to more than one user"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-backup-cloud-forum/cpanel-plugin-backups-operation-log-loading-backup-may-take-while",
+    "title": "cPanel Plugin -      Backups     Operation log  Loading the backup. This may take a while."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-continue-backing-server-old-backup-after-reinstall-agent",
+    "title": "How to continue backing up server to old backup after reinstall of agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cant-access-archive-other-laptop-cloud",
+    "title": "Can't access archive of other laptop on Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-cloud-feature-request",
+    "title": "Acronis Backup Cloud Feature Request"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/class-not-registered",
+    "title": "Class not registered"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-suddenly-extremely-slow",
+    "title": "Backup suddenly extremely slow"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/create-cpmove-files",
+    "title": "Create cpmove files"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/hypervisor-level-backup-targeted-host",
+    "title": "Hypervisor level backup & targeted host"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-gateway-azure-deployment-issue",
+    "title": "Acronis Backup Gateway in azure Deployment issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/could-not-resolve-host-accountsrvserviceconsul-unknown-error-error-0x02260006",
+    "title": "Could not resolve host: accountsrv.service.consul; Unknown error Error: 0x02260006"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/there-best-practice-guide-recover-physical-machine-backup-tibx-file-vhd-bootable-media",
+    "title": "Is there a best practice guide to recover a Physical machine backup (tibx file) to a VHD via bootable media?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/time-format-acronis-cyber-cloud",
+    "title": "Time format in Acronis Cyber Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/deleted-all-backups-still-says-full",
+    "title": "Deleted all backups still says full?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/restoration-licensed-software",
+    "title": "Restoration of Licensed Software"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/run-vm-storage-device-resource-requirements",
+    "title": "Run from VM storage device resource requirements"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/list-file-changed-previous-backup",
+    "title": "List of file changed from previous backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request-0",
+    "title": "Feature Request"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-when-registering-apliance-vmware",
+    "title": "error when  registering apliance vmware"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/empty-backup-0",
+    "title": "Empty backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/network-traffic-quantity",
+    "title": "Network traffic quantity"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-agent-failing",
+    "title": "Acronis backup agent failing"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-agent-error-storage-request-timeout",
+    "title": "A backup agent error: 'storage request timeout'"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/help-error-code",
+    "title": "Help with error code"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/question-about-type-cloud-backup-case-backup-copy-local-one",
+    "title": "Question about type of cloud backup in case of backup with copy from the local one."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/mms-service-will-not-start",
+    "title": "MMS Service will not start"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/vm-name-not-displayed-email-notifications-vm-backup",
+    "title": "VM name is not displayed in email notifications for VM backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/exchange-server-2019-cu1-supported-acronis-agent-exch-12512960",
+    "title": "Is Exchange Server 2019 CU1 supported by Acronis Agent  for Exch. 12.5.12960 ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/have-errors-module-309",
+    "title": "Have errors module 309."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/problems-acronis-whmcs-module",
+    "title": "Problems with Acronis WHMCS module"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/initial-seeding-and-physical-data-shipping",
+    "title": "Initial Seeding and Physical Data shipping"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/ms-sql-server-problems-truncating-logs",
+    "title": "MS SQL Server problems with truncating logs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-obtain-source-folder-list-their-sizes",
+    "title": "How to obtain source folder list an their sizes?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/unnatended-msi-installation-file-how-register-agent-ip-and-token",
+    "title": "Unnatended msi installation file : How to register Agent with an IP and a Token ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/whm-plugin-not-working",
+    "title": "WHM Plugin Not working"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/2019-core-hyper-v-agent-install-fail-unrelated-missing-ad-error",
+    "title": "2019 core Hyper-V agent install fail with unrelated missing AD error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-restore-sql-database-another-machine-if-source-machine-crashed",
+    "title": "how  to restore sql database to another machine if source machine crashed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/old-backups-are-not-being-removed-automatically",
+    "title": "Old backups are not being removed automatically?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/connect-option-missing-my-acronis-disaster-recovery-vpn-appliance-setup",
+    "title": "\"connect\" option is missing in my Acronis Disaster recovery VPN appliance setup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/send-notification-email",
+    "title": "Send notification email"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/mergingbackuping-restored-vm-run-vm-cloudacronis",
+    "title": "Merging/Backup'ing restored VM (RUN AS VM) @ cloud.acronis"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-cpanel-whm-plugin-does-not-uninstall-properly",
+    "title": "Acronis cPanel WHM plugin does not uninstall properly"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-execute-mv-change-backup-where-executed",
+    "title": "Backup of \"execute as MV\" change on the backup where is executed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/scheduler-setting-date-next-backup-wrong",
+    "title": "the scheduler is setting the date of the next backup wrong"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/register-server-multiple-clients",
+    "title": "Register a Server to Multiple Clients"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/exchange-server-clone-unable-login",
+    "title": "Exchange Server Clone unable to login"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-cloud-backup-sharepoint-failed-change-handle-itemadd",
+    "title": "Acronis Cloud Backup - Sharepoint: \"Failed to change the handle of Item/Add.\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/copy-backup-plan-feature-request",
+    "title": "Copy backup plan feature request"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/demande-dinformationdevis-parc-informatique-chiffrement",
+    "title": "Demande d'information/devis parc informatique - chiffrement"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/my-isp-use-acronis-dont-work-no-valid-assistance-it-please-help",
+    "title": "My ISP use Acronis. But don't work. No valid assistance on it. Please Help"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/application-consistent-backup-not-full-server",
+    "title": "Application consistent backup, not full server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/run-vm-error-when-authenticating-windows-share",
+    "title": "Run VM error when authenticating to Windows share"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/device-name-backup-management-console",
+    "title": "Device name in Backup Management Console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/mms-service-not-start-error-1053",
+    "title": "mms service not start error 1053"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cant-bc-backup-office-365-teams",
+    "title": "Can't BC backup Office 365 Teams?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/after-cpanel-update-v76020-operation-canceled-user",
+    "title": "After Cpanel update to v76.0.20 -> Operation canceled by user."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/die-aktivitat-ist-aufgrund-eines-dienst-neustarts-fehlgeschlagen",
+    "title": "Die Aktivit\u00e4t ist aufgrund eines Dienst-Neustarts fehlgeschlagen"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/issue-doing-bare-metal-restore-hp-proliant-microserver",
+    "title": "Issue with doing a bare metal restore to a HP Proliant Microserver"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/amending-previous-backup-contents",
+    "title": "Amending previous backup contents"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/hyper-v-agentless-backup-warning-message-question",
+    "title": "Hyper-V Agentless backup - Warning message question"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/bmr-customer-server-without-customer-login-details",
+    "title": "BMR of a customer server without customer login details"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-are-office-365-seats-calculated",
+    "title": "How are Office 365 seats calculated?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/unique-event-ids-windows-event-logging",
+    "title": "Unique Event ID's for Windows Event Logging"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/list-all-backup-plans",
+    "title": "List of all Backup Plans?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/question-about-setting-how-long-keep",
+    "title": "Question about setting \"How long to keep\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backing-large-host-daily",
+    "title": "Backing up a large host daily"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/problem-while-recovering-files",
+    "title": "Problem while recovering files."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-plan-not-applied",
+    "title": "Backup Plan is Not Applied"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/bandwidth-usagerequirements-overseas-storage-configured",
+    "title": "Bandwidth usage/requirements with overseas storage configured"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/applying-retention-rules-failed-failed-lock-file",
+    "title": "'Applying retention rules' failed. Failed to lock the file."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/no-volumes-have-been-found-while-processing-fixed-volumes-template",
+    "title": "No volumes have been found while processing the 'Fixed Volumes' template."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/hypervisor-level-backup-and-guest-backups",
+    "title": "Hypervisor Level backup and Guest backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/register-2-partitions-acronis-storage-gateway-within-1-server",
+    "title": "Register 2 partitions in Acronis Storage Gateway within 1 server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-error-faulting-application-name",
+    "title": "Backup Error - Faulting Application Name"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-handle-invalid-multiple-clients",
+    "title": "Error - \"The handle is invalid\" at multiple clients"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/creating-winpe-bootable-media",
+    "title": "Creating a WinPE bootable media"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/merginglinking-existing-virtual-machine-backup-new-virtual-machine",
+    "title": "Merging/Linking existing Virtual Machine Backup to new Virtual Machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-cloud-office-365-personal-archives",
+    "title": "Acronis Cloud for Office 365 - Personal Archives"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/removing-prior-o365-c2c-v1-agent",
+    "title": "Removing prior O365 C2C V1 agent?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/whm-disaster-recovery",
+    "title": "WHM Disaster recovery"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/having-backup-status-emails-send-other-users",
+    "title": "Having backup status emails send to other \"Users\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/excluding-user-office365-cloud-backup",
+    "title": "Excluding User from Office365 Cloud backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-data-cloud-office-365-not-agentless-promised",
+    "title": "Acronis Data Cloud Office 365 - not agentless as promised?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/whm-plugin-not-loading-correctly",
+    "title": "WHM plugin not loading correctly"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request-cloud-backup-request",
+    "title": "Feature request:  Cloud backup request"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-not-responding-xen-virtual-machine",
+    "title": "Backup is not responding on Xen virtual machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/problem-recovery-sql-database-cloud-another-pc",
+    "title": "Problem recovery SQL database from cloud to another PC"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/backup-sql-database",
+    "title": "Backup SQL database"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-restore-entire-machine",
+    "title": "Backup & Restore entire machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cant-access-any-backup",
+    "title": "Can't access any backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/where-could-i-download-full-file-sql-server-agent",
+    "title": "where could i download full file of sql server agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/restore-full-device-cloud-very-too-slow",
+    "title": "Restore of full device from cloud is very too slow"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/creation-differential-backup-nas-server",
+    "title": "Creation Differential backup to NAS server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/calculate-required-backup-space",
+    "title": "Calculate required backup space"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-stuck-applying-retention-rules",
+    "title": "Backup stuck at \"applying retention rules\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/nicht-genugend-systemressourcen",
+    "title": "Nicht gen\u00fcgend Systemressourcen?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/does-acronis-intend-lauch-add-sql-server-linux",
+    "title": "does Acronis intend to lauch add-on to sql-server for linux ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/server-not-available-moment-restore",
+    "title": "The server is not available at the moment, restore"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/computer-not-backing-and-has-100-cpu",
+    "title": "The computer is not backing up and has 100% cpu"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/prevent-multiple-execution-services",
+    "title": "Prevent multiple execution of services"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/microsoft-sql-only-show-system-database-i-have-three-more-instaces-databases",
+    "title": "Microsoft Sql only show System Database but I have three more instaces databases"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-eines-linux-server-schlagt-fehl",
+    "title": "Backup eines Linux-Server schl\u00e4gt fehl"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/restore-tib-file",
+    "title": "Restore from .TIB file"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sql-backup-never-starts-only-backing",
+    "title": "sql backup never starts only backing up"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sql-backup-warning-error-0x57002b-failed-find-full-backup-database-teste",
+    "title": "Sql backup warning Error 0x57002b: Failed to find the full backup of database 'Teste'"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-1603-msi-installation",
+    "title": "error 1603 in msi installation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-data-cloud-aktivierung-neuer-user-nicht-moglich-weil-keine-mail-ankommt",
+    "title": "Acronis Data Cloud - Aktivierung neuer User nicht m\u00f6glich weil keine Mail ankommt"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/linux-service-not-start",
+    "title": "linux service not start"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/agents-keep-dissapearing-console",
+    "title": "Agents keep dissapearing from console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/registrierte-vm-agent-wird-nicht-der-management-konsole-angezeigt",
+    "title": "Registrierte VM (Agent) wird nicht in der Management Konsole angezeigt"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/device-name",
+    "title": "device name"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/windows-error-0x800700c1-1-not-valid-win32-application",
+    "title": "Windows error: (0x800700C1) %1 is not a valid Win32 application"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cannot-see-backup-plan",
+    "title": "Cannot see backup plan"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/create-backup-plan-just-desktop-and-documents-folders-all-users",
+    "title": "Create Backup Plan for Just Desktop And Documents Folders for All Users"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sbs-2008-wont-boot-after-recovery-new-vm",
+    "title": "SBS 2008 won't boot after recovery to new VM"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request-dc-maintenance-alert-or-banner-management-console",
+    "title": "Feature Request - DC maintenance alert or banner in the management console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-when-making-backup-network-disconnected-timeout",
+    "title": "error when making backup Network disconnected by timeout"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-i-can-install-acronis-backup-cloud-silent-mode",
+    "title": "how i can install acronis backup cloud  in silent mode ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/convert-archive-format-version-11-12",
+    "title": "Convert archive format from version 11 to 12"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/file-restore-linux-lvm-doesnt-work-if-exist-multiple-lvm-volumes-same-vm",
+    "title": "File Restore Linux with LVM - doesn't work if exist multiple LVM volumes on same VM"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/restore-microsoft-azure",
+    "title": "Restore to Microsoft Azure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/windows-error-0x80070003-system-cannot-find-path-specified",
+    "title": "Windows error: (0x80070003) The system cannot find the path specified"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-failed-windows-error-0x80070003",
+    "title": "Backup failed Windows error: (0x80070003)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/it-possible-installing-backup-agent-freebsd",
+    "title": "is it possible to installing backup agent on Freebsd ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request-use-only-port-443",
+    "title": "Feature Request: use only port 443"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-schlagt-dauerhaft-fehl",
+    "title": "Backup schl\u00e4gt dauerhaft fehl"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/what-are-available-data-center-india-acronis-backup",
+    "title": "What are the available Data center in india for acronis backup?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/installing-linux-agent-another-directory",
+    "title": "Installing linux agent in another directory"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-vss-troubleshooting-access-denied",
+    "title": "[Resolved] VSS troubleshooting - Access Denied"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/failed-build-snapapi-kernel-module",
+    "title": "Failed to build the SnapAPI kernel module"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/open-ports-acronis-linux-agent",
+    "title": "Open ports Acronis Linux Agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request-priority-backup-plan-and-prepost-task-possibility-send-enviroment-variables",
+    "title": "Feature request - Priority in backup plan and pre/post task with possibility to send enviroment variables"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-delete-old-backups-cloud",
+    "title": "how to delete old backups from cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/windows-fehler-0x80070522-dem-client-fehlt-ein-erforderliches-recht",
+    "title": "Windows-Fehler: (0x80070522) Dem Client fehlt ein erforderliches Recht"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sql-2005-database-not-connecting",
+    "title": "sql 2005 database not connecting"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-notification",
+    "title": "Backup notification"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/changing-restore-path",
+    "title": "Changing Restore Path?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/issues-backup-local-nas-backup-cloud",
+    "title": "Issues with backup to local NAS from Backup Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/double-slash-warning-during-sql-application-aware-backup",
+    "title": "Double Slash Warning during SQL Application Aware Backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-disaster-recovery-cloud-feature-request",
+    "title": "Acronis Disaster Recovery Cloud - Feature request"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-occurred-while-reading-file",
+    "title": "Error occurred while reading the file."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/log-file-build",
+    "title": "Log File Build up"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/unable-send-initialseed-archive3-format-backup",
+    "title": "Unable to send initialseed with archive3 format backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/storage-locations",
+    "title": "Storage Locations"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/agent-not-showing-cloud",
+    "title": "Agent not showing up in cloud."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-cloud-server-taucht-nicht-auf",
+    "title": "Acronis Cloud - Server taucht nicht auf"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/probleme-mit-sql-backup",
+    "title": "Probleme mit SQL Backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/http-error-404",
+    "title": "HTTP ERROR 404"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/option-where-backup-only-enable-cloud-storage-i-create-job",
+    "title": "The option where to backup only enable cloud storage on i create a job"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/operation-canceled-user",
+    "title": "Operation canceled by user"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-backup-vm-esxi-server-cpanel",
+    "title": "How to backup a VM on a ESXi Server with Cpanel"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/universal-restore-restore-dissimilar-hardware",
+    "title": "Universal Restore / Restore to dissimilar hardware"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/0x40001-error-mostly-all-files",
+    "title": "0x40001 Error on mostly all files"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-long-keep-no-monthly-option",
+    "title": "HOW LONG TO KEEP: no monthly option"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/extension-synology-dsm",
+    "title": "Extension for Synology DSM"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cant-see-host-web",
+    "title": "Cant see host in Web"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-keeps-failing",
+    "title": "Acronis Backup keeps failing"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/summary-all-backup-nodestasks",
+    "title": "Summary of all backup-nodes/tasks"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/odd-problem-setting-quota-limit",
+    "title": "odd problem with setting quota limit"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/internal-error-expression-test-has-failed",
+    "title": "Internal error: An expression test has failed."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-code-1642",
+    "title": "error code 1642"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/physical-machines-are-detected-virtual-machine",
+    "title": "physical machines are detected as virtual machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/agent-install-failure",
+    "title": "Agent Install Failure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/exchange-backup-schlaft-fehl",
+    "title": "Exchange Backup schl\u00e4ft fehl"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-failed",
+    "title": "Backup failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/expressesion-test-has-failed-sql-job",
+    "title": "Expressesion test has failed with SQL job"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/hyper-v-exchange-backup-log-truncation",
+    "title": "Hyper V Exchange Backup - Log truncation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/repeat-backup-when-client-was-offline",
+    "title": "repeat Backup when client was offline"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/constantly-failed-backups",
+    "title": "Constantly failed backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/problem-agent-auto-update",
+    "title": "Problem with Agent Auto Update"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/office-365-backup-fails-some-mailboxes",
+    "title": "Office 365 backup fails for some mailboxes"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/rescue-media",
+    "title": "# on Rescue Media"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/more-rescue-media-issues",
+    "title": "More rescue media issues"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/script-place-substitute-retention-policy-due-limitation",
+    "title": "Script in place to substitute retention policy due to limitation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/rescue-media-full-restore-so-many-problems",
+    "title": "Rescue media for full restore - so many problems"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/agent-auto-update",
+    "title": "Agent Auto-Update"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/missingneeded-functionality-bugs",
+    "title": "Missing/Needed functionality + Bugs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/report-request",
+    "title": "Report request"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/mac-mini-recovery",
+    "title": "Mac Mini Recovery"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cloud-backup-erkennt-exchange-db-nicht",
+    "title": "Cloud Backup erkennt Exchange DB nicht"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/initial-seeding-erroe",
+    "title": "Initial seeding erroe"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/vm-replication-slowed-server-power-disruption",
+    "title": "VM Replication slowed since server power disruption"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-when-executing-copy",
+    "title": "Error when executing the copy."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/creating-ticket",
+    "title": "Creating A ticket -"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sample-online-backup-agreement-customers",
+    "title": "Sample online backup agreement for customers"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/security-details-request-potential-customer",
+    "title": "Security Details Request by potential customer"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-monitor-failed",
+    "title": "Backup Monitor Failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/change-storage-withou-capacity",
+    "title": "Change storage withou capacity"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/activiteit-applying-retention-rules-mislukt-unsupported-uri-specified",
+    "title": "Activiteit 'Applying retention rules' mislukt. An unsupported URI is specified."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/esxi-55-virtual-appliance-cloudmsp",
+    "title": "ESXi 5.5 Virtual Appliance for Cloud/MSP"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/strange-vm-replication-problem",
+    "title": "Strange VM Replication problem"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/initial-seeding",
+    "title": "Initial Seeding"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/seeding-cloud-client-very-slow-connection",
+    "title": "Seeding to Cloud for client with very slow connection"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cannot-set-sql-credentials-after-reinstalling-agent",
+    "title": "Cannot set SQL credentials after reinstalling agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-when-creating-new-cloud-backup-job-through-web-portal",
+    "title": "Error when creating new cloud backup job through the web portal"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-cloud-75",
+    "title": "Acronis Backup Cloud 7.5"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/receiving-error-registering-our-acronis-storage-gateway",
+    "title": "Receiving error registering our Acronis storage gateway"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/unable-select-folder",
+    "title": "Unable to select folder"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-fails-after-re-naming-windows-profile",
+    "title": "Backup fails after re-naming Windows Profile"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/unable-install-backup-agent-server-2012-r2",
+    "title": "Unable to Install Backup Agent on Server 2012 R2"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/i-have-warning-every-backup",
+    "title": "I have a warning in every backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-attempting-register-acronis-storage-gateway",
+    "title": "Error in attempting to register Acronis Storage Gateway"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-cloud-gateway-and-microsoft-azure",
+    "title": "Acronis Cloud Gateway and Microsoft Azure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-gateway-change-backend-storage-local-openstack",
+    "title": "Acronis backup gateway - change backend storage from local to OpenStack"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/server-agent-installation-has-failed",
+    "title": "Server Agent Installation has failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/experiencing-issues-running-backups-local-storage",
+    "title": "Experiencing issues with Running backups to local storage"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/start-backup-client",
+    "title": "Start backup from client"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/bandwith-limit-just-when-replicating-cloud",
+    "title": "Bandwith Limit just when replicating to the Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/prognosis-remaining-backup-time-comletely-broken",
+    "title": "Prognosis for remaining Backup Time comletely broken"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-cloud-backup-agent-keeps-forgetting-network-credentials",
+    "title": "Acronis Cloud Backup Agent keeps forgetting network credentials"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-having-trouble-network-archive",
+    "title": "Acronis Having trouble with Network Archive"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/plesk-and-acronis-backup-cloud",
+    "title": "Plesk and Acronis Backup Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backups-fail-certificate-not-accepted-front-end-server-after-ssl",
+    "title": "Backups Fail with \"The certificate is not accepted by the front-end server.\" after the SSL failed to update on an on-prem GW"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request-only-allow-backups-when-connected-specified-networks",
+    "title": "Feature request. Only allow backups when connected to specified networks."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/synchronize-license-local-installation",
+    "title": "synchronize license on local installation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/intelligent-notification-system-administrators",
+    "title": "Intelligent notification system for administrators."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-agent-cannot-connect-cloud-console",
+    "title": "Acronis Agent cannot connect to Cloud Console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/silent-client-installation-osx",
+    "title": "Silent Client Installation on OSX"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/local-backup-using-cloud-backup-schedule",
+    "title": "Local backup using Cloud  - backup schedule"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-storage-gateway-backup-local-storage-failed",
+    "title": "Acronis Storage Gateway backup to local storage failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request-automated-sandbox-restore-test-last-backup",
+    "title": "FEATURE REQUEST: Automated sandbox restore test of the last backup."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/onedrive-sharepoint-online",
+    "title": "Onedrive /Sharepoint online"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/send-daily-recap-about-active-alerts",
+    "title": "Send daily recap about active alerts"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/odd-unknown-large-increases-backups",
+    "title": "Odd, unknown large increases in backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/scheduling-issue-acronis-cloud-based-backups",
+    "title": "Scheduling issue of Acronis Cloud based backups."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/online-dashboard",
+    "title": "Online Dashboard"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-failed-error",
+    "title": "Backup failed error"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/incremental-differential-dedup",
+    "title": "Incremental, differential, dedup?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/wake-sleep",
+    "title": "Wake from Sleep"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/whmcs-default-language",
+    "title": "WHMCS default language"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cannot-delete-cloud-backup",
+    "title": "Cannot delete cloud backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backups-missing-after-recovery-failure",
+    "title": "Backups Missing after Recovery Failure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/recovery-new-vmware-virtual-machine-not-possible-ok-button-grayed-out",
+    "title": "Recovery to New VMWare Virtual Machine not possible, OK button is grayed out"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/free-space-after-erroneous-back",
+    "title": "Free space after erroneous back-up"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/recovery-cant-revover-virtual-machine",
+    "title": "[Recovery] Can't Revover to Virtual Machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/vss-error-when-backuping-vm-hyper-v",
+    "title": "VSS error when backuping a VM on hyper-v"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-cloud-commandline",
+    "title": "backup to the cloud with a commandline"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/some-questions-about-backup-azure",
+    "title": "Some questions about backup on Azure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/agent-installation",
+    "title": "Agent Installation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/unable-backup-office-365-mailbox-after-reinstalling-agent",
+    "title": "Unable to backup office 365 mailbox after reinstalling agent"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/having-trouble-backups",
+    "title": "Having trouble in backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/ssl-connection-ahs-failed",
+    "title": "SSL Connection ahs failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/space-usage-not-updating",
+    "title": "Space usage not updating"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/problem-during-instalation-acronis-backup-ws2012",
+    "title": "Problem during instalation Acronis Backup on WS2012"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-delete-storage-webconsole",
+    "title": "How to delete a storage from webconsole ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/disabling-user-access",
+    "title": "Disabling user access"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/cloud-server-down",
+    "title": "Cloud server is down?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/exchange-back-suddenly-fails-and-cannot-edit-job",
+    "title": "Exchange Back-up suddenly fails and cannot edit Job"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/installation-error-mmsexe-crashing",
+    "title": "Installation Error - mms.exe Crashing"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/problem-installation-agent-windows-2012-r2-hyper-v-edition",
+    "title": "Problem with Installation Agent on Windows 2012 R2 Hyper-V Edition"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/drive-exclusions",
+    "title": "Drive Exclusions"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/no-initial-seeding-when-using-backup-agent-vmware",
+    "title": "NO Initial seeding when using Backup Agent for Vmware?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/vmware-agent-load-balancing-threshold",
+    "title": "vmware agent load balancing threshold"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/very-very-inefficient-backup-method",
+    "title": "Very Very inefficient backup method"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/using-multiple-vmware-agents-load-balance-vm-backup",
+    "title": "Using Multiple vmware agents to load balance vm backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/data-restore-storage-gateway-local-network",
+    "title": "Data Restore from Storage Gateway via local network"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/register-existing-acronis-storage-gateway-another-partner-group",
+    "title": "Register an existing Acronis storage gateway to another partner group"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/vmware-host-recover",
+    "title": "VMware host recover"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-console-problem",
+    "title": "Backup Console Problem"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/feature-request",
+    "title": "Feature Request"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/problem-hyper-v-machine",
+    "title": "Problem with Hyper-v Machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/compression-level",
+    "title": "Compression level"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/email-notifications-backup-jobs",
+    "title": "email notifications for backup jobs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/unregister-storage-gateway",
+    "title": "Unregister Storage gateway"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sslv3-alert-certificate-expired",
+    "title": "sslv3 alert certificate expired"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-storage-gateway-azure-backend-setup",
+    "title": "Acronis storage gateway with Azure backend setup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/restore-physical-machine-centos-6-virtual-machine",
+    "title": "Restore Physical Machine (Centos 6) to Virtual Machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/soap-11-fault",
+    "title": "SOAP 1.1 Fault"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-agent-connected-no-backup-running",
+    "title": "[RESOLVED] Agent connected but no backup is running"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/linux-logical-volume-isnt-backupped",
+    "title": "A Linux logical volume isn't backupped"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/error-codes",
+    "title": "Error Codes"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/interface-unavailable-yesterday",
+    "title": "Interface Unavailable from yesterday"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-status-lagging",
+    "title": "Backup status lagging?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/how-do-i-know-what-size-my-incremental-backup",
+    "title": "How do i know what is the size of my incremental backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/create-msi-and-deploy-msiexec",
+    "title": "Create msi and deploy with msiexec"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/speed-first-backup-run",
+    "title": "Speed up the first backup run"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/no-logfiles-received",
+    "title": "No logfiles received"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/initial-run-initial-seeding-external-disk-failes",
+    "title": "Initial run with initial seeding to external disk failes"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-agent-or-agentless-installation-vmware-cluster",
+    "title": "[RESOLVED] Agent or agentless installation for VMware cluster?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/features-request-msps-client",
+    "title": "Features Request from MSP's Client"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/quota-not-properly-adjusted",
+    "title": "Quota not properly adjusted"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-agent-offline-after-upgrade",
+    "title": "Backup Agent Offline after upgrade"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-backup-finishes-item-c-already-included-warning",
+    "title": "[RESOLVED] Backup finishes with \u201cItem 'C:/' is already included\u201d warning"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/microsoft-sql-resource-empty",
+    "title": "Microsoft SQL resource is empty"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/exchange-and-sql-backup-plans-asking-credentials",
+    "title": "Exchange and SQL backup plans asking for credentials?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/change-when-quota-almost-reached-warnings-are-received",
+    "title": "Change when Quota almost reached warnings are received"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-cpu-resource-utilisation-acronis-managed-machine-service",
+    "title": "[RESOLVED] CPU resource utilisation of Acronis Managed Machine Service"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/open-tib-file-resolved",
+    "title": "Open *.Tib file [RESOLVED]"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-how-clean-retention-existing-backup-plans-deleting",
+    "title": "[RESOLVED] How to clean up the retention for existing backup plans (deleting incomplete backup)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-change-notification-adres-backup-logfiles",
+    "title": "[RESOLVED] Change notification adres for backup logfiles"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-plans-1-tb-size-jobs",
+    "title": "Backup plans for  1 TB size jobs"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-hyper-v-core",
+    "title": "[RESOLVED] Hyper-V Core"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/several-backup-failed-messages",
+    "title": "Several backup failed messages"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/snapapi-module-does-not-compile-ubuntudebian-kernel-42x",
+    "title": "SnapAPI Module Does Not Compile In Ubuntu/Debian Kernel 4.2.x"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/local-restore-without-connection",
+    "title": "Local restore without connection"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sql-backup-failed",
+    "title": "SQL Backup failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/silent-agent-uninstall",
+    "title": "Silent Agent Uninstall"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/agent-qnap",
+    "title": "Agent for QNAP"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/server-offline-after-couple-day",
+    "title": "Server is offline after a couple of day"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/storage-gateway-dual-nicip",
+    "title": "Storage Gateway Dual NIC/IP"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/what-means-error-code-1",
+    "title": "What means Error code: 1"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/disable-quiesce",
+    "title": "Disable Quiesce"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/branding-and-moving-accounts",
+    "title": "Branding and moving accounts"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-could-not-detect-location-rpm-database-debian-system",
+    "title": "[RESOLVED] Could not detect location of RPM database on Debian system during update"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/filename-limited-encrypted-synology-nas-drive",
+    "title": "Filename is limited on encrypted Synology NAS drive"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/no-activation-mail",
+    "title": "No activation mail"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-remote-agent-installation",
+    "title": "[RESOLVED] Remote Agent Installation"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/empty-backup",
+    "title": "Empty backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sql-backup-plan-creation-failed",
+    "title": "Sql backup plan creation failed"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/recovery-virtual-machine",
+    "title": "Recovery to Virtual Machine"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/agent-installation-failure",
+    "title": "Agent installation failure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/sql-backup-failure-put-database-recovery-pending",
+    "title": "Sql backup failure put database in recovery pending"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/full-package-install-windows-server-32bits",
+    "title": "Full package install on windows server 32bits"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/backup-extension-windows-azure-pack-available",
+    "title": "Backup Extension for Windows Azure Pack is Available"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/can-we-use-our-own-storage",
+    "title": "Can we use our own storage?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/baas-recover-esx-5",
+    "title": "Baas recover to ESX 5"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/archive-corrupted-after-update-backup-client",
+    "title": "The archive is corrupted after update backup client"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/resolved-updating-agents-web-interface",
+    "title": "[RESOLVED] Updating agents via web interface"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/file-exclusions-linux",
+    "title": "File exclusions on Linux"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/not-all-options-are-shown-web-console",
+    "title": "Not all options are shown in web console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/can-client-have-acronis-backup-and-recovery-11-installed",
+    "title": "Can a client have Acronis Backup and Recovery 11 installed?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-cloud-faq",
+    "title": "Acronis Backup Cloud: FAQ"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-backup-cloud-forum/acronis-backup-cloud",
+    "title": "Acronis Backup Cloud"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q2-2022",
+    "title": "Support Digest Q2 2022"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q1-2022",
+    "title": "\u2757\ufe0f?  Support Digest Q1 2022"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q3-q4-2021",
+    "title": "Support Digest Q3 - Q4 2021"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q1-q2-2021",
+    "title": "Support Digest Q1-Q2 2021"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q3-q4-2020",
+    "title": "Support Digest Q3 - Q4 2020"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q2-2020",
+    "title": "Support Digest: Q2 2020"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q4-2019",
+    "title": "Support Digest: Q4 2019"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-april-august-2019",
+    "title": "Support Digest: April-August 2019"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-q1-2019",
+    "title": "Support Digest: Q1 2019"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-december-2018",
+    "title": "Support Digest: December 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-november-2018",
+    "title": "Support Digest: November 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-october-2018",
+    "title": "Support Digest: October 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-september-2018",
+    "title": "Support Digest: September 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-august-2018-0",
+    "title": "Support Digest: August 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/known-issue-77-agent-witch-does-not-update-columns-sql-backup",
+    "title": "Known issue with 7.7 agent witch does not update the columns for SQL backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-july-2018",
+    "title": "Support Digest: July 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-june-2018",
+    "title": "Support Digest: June 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-may-2018",
+    "title": "Support Digest: May 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-april-2018",
+    "title": "Support Digest: April 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-february-march-2018",
+    "title": "Support Digest: February-March 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-december-2017-january-2018",
+    "title": "Support Digest: December 2017 - January 2018"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-november-2017",
+    "title": "Support Digest: November 2017"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-october-2017",
+    "title": "Support Digest: October 2017"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/webinar-qa-acronis-backup-cloud-1092017",
+    "title": "Webinar Q&A: Acronis Backup Cloud, 10/9/2017"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-september-2017",
+    "title": "Support Digest: September 2017"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/digests-and-support-best-practices/support-digest-august-2017",
+    "title": "Support Digest: August 2017"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-17-forum/announcing-acronis-cyber-protect-17",
+    "title": "Announcing Acronis Cyber Protect 17"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-17-forum/acronis-acb-1741676-breaks-docker-container",
+    "title": "Acronis ACB 17.41676 breaks in Docker container"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-17-forum/warning-upgrading-v17-has-very-high-risk-breaking-your-backup-system",
+    "title": "Warning: upgrading to V17 has very high risk  of breaking your backup system"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-17-forum/how-acronis-tools-help-business-continuity-and-work-planning",
+    "title": "How Acronis Tools Help Business Continuity and Work Planning"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-17-forum/proxmox-ve-support-licensing-and-premise",
+    "title": "Proxmox VE support - licensing and on-premise?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-update-4-build-39938",
+    "title": "Acronis Cyber Protect 16 Update 4 ( Build 39938 )"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/cyber-protect-16-windows-pe-recover-image-differentstrange-behavior",
+    "title": "Cyber Protect 16 - Windows PE recover image different/strange behavior"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/cant-delete-backups",
+    "title": "Can't delete backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/host-cleanup-task-still-not-working-16",
+    "title": "off-host cleanup task - still not working in 16 ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/errors-event-log-and-strange-remains-disk",
+    "title": "Errors in Event log and strange remains on disk"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/backup-hyper-v-host-creates-eventids-guest-how-can-i-install-sql-agent",
+    "title": "Backup of Hyper- V Host creates EventIDs in Guest - How can I Install SQL Agent ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-cloud-recovery-fails-no-disk-space-or-quota",
+    "title": "Acronis Cyber Protect Cloud: Recovery fails with \"No disk space or quota\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/problem-after-update-cyberprotect16-build-40354",
+    "title": "Problem after Update to CyberProtect16 (Build 40354)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/get-tapes-drive-storage-after-backups-are-completed",
+    "title": "Get tapes from drive into storage after backups are completed?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-installation-windows-11-error-parameter-incorrect",
+    "title": "Acronis Installation on Windows 11:  Error - The parameter is incorrect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/moving-ams-different-machine-still-no-easy-way",
+    "title": "Moving the AMS to a different machine - still no easy way ?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/still-no-official-support-microsoft-exchange-se",
+    "title": "Still no official support for Microsoft Exchange SE"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/best-practices-site-backup-scheduling-acronis-cyber-protect",
+    "title": "Best Practices for Off-Site Backup Scheduling in Acronis Cyber Protect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/using-tibxread-windows",
+    "title": "Using TIBXRead on Windows"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/how-clean-atpdatabasemirror-folder-c-drive-space-issue",
+    "title": "How to clean up AtpDatabaseMirror folder (C:\\ drive space issue)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/tls-certificate-verification-failure",
+    "title": "TLS certificate verification failure"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/always-incremental-can-i-still-send-copies-tape-storage-node-required",
+    "title": "Always incremental - can I still send copies to tape? Storage Node required?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/replicate-backup-plan-multiple-management-server",
+    "title": "Replicate Backup Plan to multiple Management Server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/thin-versus-thick-provisioning-how-does-acronis-handle-unallocated-blocks-thick-vdisks",
+    "title": "thin versus thick provisioning - how does Acronis handle unallocated blocks in thick vdisks?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/agent-install-shows-port-44445-failures-backups-partly-working",
+    "title": "Agent install shows port 44445 failures, but backups partly working"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/update-acronis-cyber-protect-16-licenses-not-visible-cyber-protect-console",
+    "title": "Update to Acronis Cyber Protect 16 - licenses not visible in Cyber Protect Console"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/service-account-windows",
+    "title": "Service Account For Windows"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-appliance-future",
+    "title": "Acronis Cyber Protect appliance future"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/cyber-protect-latest-update-39938",
+    "title": "Cyber Protect latest update 39938"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/parallel-backup-vmware-virtual-machines",
+    "title": "Parallel backup of VMware virtual machines"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/best-approach-deploying-acronis-appliance",
+    "title": "Best Approach for Deploying Acronis Appliance?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/what-command-line-syntax-make-acronis-cyber-protection-cloud-antivirus-scan-file-demand",
+    "title": "What is the command line syntax to make the Acronis Cyber Protection Cloud antivirus scan a file on demand?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/email-configuration-acronics-cyber-protection-prem",
+    "title": "Email configuration in Acronics Cyber Protection On Prem"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/full-recovery-image-server-without-installing-anything-server",
+    "title": "full recovery image of server without installing anything on server"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/issues-after-upgrading-acronis-160-build-39314-39938-web-console-and-services-not-working",
+    "title": "Issues After Upgrading from Acronis 16.0 Build 39314 to 39938 \u2013 Web Console and Services Not Working"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/can-acronis-cyber-protect-standard-workstation-backup-linux",
+    "title": "Can acronis cyber protect standard workstation backup linux?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/location-already-attached-storage-node",
+    "title": "This location is already attached to this storage node."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-management-server-not-starting-after-ssl-certificate-change-apigatewayjson-file",
+    "title": "Acronis Cyber protect 16 Management Server not starting after SSL Certificate change on api_gateway.json file"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/windows-server-2025-support",
+    "title": "Windows Server 2025 support"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/change-port-18019",
+    "title": "Change Port 18019"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/unable-restore-backup-cyber-protect-management-console",
+    "title": "Unable to restore the backup in Cyber Protect Management Console."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/unable-activate-trial",
+    "title": "Unable to activate trial"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/rescure-media-builder-always-test-version",
+    "title": "Rescure Media Builder always in Test Version"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/how-clone-linux-os-raid-5-vm-non-raid",
+    "title": "How to clone Linux OS on RAID 5 to a VM with non-RAID"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/strategy-backup-sizy-vm-lvm",
+    "title": "strategy to backup sizy VM with LVM"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/powering-vm-vmware-hyper-v",
+    "title": "Powering on a VM from VMware in Hyper-V"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acrocmd-usability",
+    "title": "acrocmd usability"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/bootable-media-builder-backup-cyber-protect-backup-advanced",
+    "title": "Bootable media builder - backup? Cyber protect - Backup Advanced"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/16339376-issues",
+    "title": "16.3.39376 issues"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/fehler-beim-wiederherstellne-einer-hyper-v-vm",
+    "title": "Fehler beim Wiederherstellne einer Hyper-V-VM"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/problems-universal-restore",
+    "title": "Problems with Universal Restore"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/s3-compatibile-storage-backup-destination",
+    "title": "S3 compatibile storage as backup destination"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/versions-acronis-cyber-protectbackup",
+    "title": "Versions Acronis Cyber Protect/Backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-update-3-build-39376",
+    "title": "Acronis Cyber Protect 16 Update 3 ( Build 39376 )"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/supported-cyber-protect-features-operating-system",
+    "title": "Supported Cyber Protect features by operating system"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-build-39314",
+    "title": "Acronis Cyber Protect 16 ( Build 39314 )"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/protection-plan-where-backup-does-not-show-any-tape-pools",
+    "title": "Protection Plan - Where to Backup Does Not Show Any Tape Pools"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/exchange-ews-address-o365-acronis-cyber-protect",
+    "title": "Exchange EWS Address of O365 for Acronis Cyber Protect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/exchange365",
+    "title": "Exchange365"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-update-3-build-39169-available",
+    "title": "Acronis Cyber Protect Update 3 (build 39169) is available!"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/deleted-incremental-backups",
+    "title": "Deleted Incremental Backups"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/cyber-protect",
+    "title": "Cyber Protect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/how-restart-agent-or-stop-it-and-start-it-alma-linux-95",
+    "title": "How to restart the agent (or stop it and start it) on Alma Linux 9.5?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/adding-device-replaces-device",
+    "title": "Adding a Device replaces a Device"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/keine-unterstutzung-fur-refs-und-scure-zone-nur-bis-max-2-tb-bei-fat32-was-ist-da-los",
+    "title": "Keine Unterst\u00fctzung f\u00fcr ReFS und Scure Zone nur bis max. 2 TB bei FAT32 - was ist da los?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/archivepersistentcache-folder",
+    "title": "ArchivePersistentCache folder"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/user-profile-variable-exclusions",
+    "title": "User Profile Variable for Exclusions"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/update-16038690-several-errors",
+    "title": "Update 16.0.38690 several errors"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/choose-wifi-taking-backup-client-pc",
+    "title": "Choose Wifi for taking backup of client PC"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-synology-nas",
+    "title": "Acronis Cyber protect 16 on synology nas"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-update-2-now-available-build-38690",
+    "title": "Acronis Cyber Protect 16 Update 2 is Now Available! ? ( Build 38690)"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/support-where-forms-wont-submit-chat-hang-upgosh",
+    "title": "support.. where? forms won't submit.. chat hang up..gosh.."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/changing-provider-cyber-protect",
+    "title": "changing provider - cyber protect"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/restore-m365-mailbox",
+    "title": "Restore of M365 mailbox"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/license-question",
+    "title": "License Question"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-linux-and-updates",
+    "title": "Acronis Cyber Protect on Linux and updates"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/add-keys-offline-mode",
+    "title": "add keys on offline mode"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/my-two-acronis-cyber-protect-has-merged-1",
+    "title": "My two Acronis Cyber Protect has merged into 1."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/datenkatalogisierung-unknown-credentials",
+    "title": "Datenkatalogisierung unknown credentials."
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/virtual-appliance-agents-15035979-not-upgrading-v16x",
+    "title": "Virtual Appliance agents 15.0.35979 not upgrading to v16.x"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/refreshing-backups-locks-service-logon-account",
+    "title": "Refreshing backups locks service logon account"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/activity-succeeded-warnings-production-checkpoints-cannot-be-created",
+    "title": "Activity succeeded with warnings - Production checkpoints cannot be created"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/replication-cloud-full-instead-incemental",
+    "title": "Replication to cloud - full instead of incemental"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-failed-find-partition-uuid",
+    "title": "Acronis Cyber Protect 16: \"Failed to find partition with uuid...\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/delete-my-account",
+    "title": "delete my Account"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/2fa-authentication-and-cloud-storage",
+    "title": "2fa authentication - and cloud storage"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/immutable-storage-replica-lolal-backup",
+    "title": "Immutable storage as replica from lolal backup?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/cannot-protect-device-assigned-license-protect-plan-windows-has-been-revoked-due-licensing-issue",
+    "title": "Cannot protect a device with assigned license. Protect plan \"Windows.....\" has been revoked from ..due to licensing issue"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/anyone-able-get-wasabi-buckets-working",
+    "title": "Anyone able to get Wasabi buckets working?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/where-configure-backup-format-version-11",
+    "title": "Where to configure \"Backup Format, Version 11\""
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/does-acronis-do-smart-backup-0",
+    "title": "Does Acronis do a Smart backup?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/does-acronis-do-smart-backup",
+    "title": "Does Acronis do a Smart backup?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/local-backup-c2c-app",
+    "title": "Local backup of C2C app"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/recovery-reboot-terminated-unexpectedly",
+    "title": "Recovery with reboot terminated unexpectedly"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/had-create-exclusion",
+    "title": "had to create Exclusion?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/upgrade-version-16-feedback",
+    "title": "Upgrade to Version 16 Feedback"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/does-version-16-possess-ability-click-folder",
+    "title": "Does version 16 possess ability to click on a folder?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/backups-vulnerabilities-cant-backup",
+    "title": "Backups with Vulnerabilities ON can't backup"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/does-version-16-possess-ability-click-folder-0",
+    "title": "Does version 16 possess ability to click on a folder?"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/license-key-not-updated-after-renewal",
+    "title": "License Key not updated after renewal"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/join-our-webinar-secure-your-business-future-building-resilience-2024-and-beyond",
+    "title": "Join Our Webinar: Secure Your Business for the Future - Building Resilience in 2024 and Beyond"
+  },
+  {
+    "url": "https://forum.acronis.com/forum/acronis-cyber-protect-16-forum/acronis-cyber-protect-16-release-build-37391",
+    "title": "Acronis Cyber Protect 16 Release! ( Build 37391 )"
+  }
+]

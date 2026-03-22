@@ -1,0 +1,63 @@
+# Installing protection agents in Windows
+
+Installing and deploying Cyber Protection agents > Installing protection agents by using the graphical user interface > Installing protection agents in Windows
+Installing protection agents in Windows
+
+Prerequisites
+
+An installation file of the protection agent is downloaded to the workload that you want to protect. See Downloading protection agents.
+The workload that you want to protect is connected to the Internet.
+
+To install Agent for Windows
+
+On the workload that you want to protect, log on as an administrator, and then open the installation file.
+
+[Optional] Click Customize installation settings, and then configure the installation settings.
+
+The following options are available:
+
+Changing the components to install (for example, disabling the installation of Cyber Protect Monitor or the Command-Line Tool, or installing the Agent for Antimalware protection and URL filtering).
+
+On Windows machines, the antimalware protection and URL filtering features require the installation of Agent for Antimalware protection and URL filtering. This agent is installed automatically for protected workloads if the Antivirus & Antimalware protection and/or the URL filtering options are enabled in their protection plans.
+
+Changing the components to install (for example, disabling the installation of Cyber Protect Monitor or the Command-Line Tool, or installing the Agent for Antimalware protection and URL filtering or the SIEM Log Forwarder feature).
+
+On Windows machines, the antimalware protection and URL filtering features require the installation of Agent for Antimalware protection and URL filtering. This agent is installed automatically for protected workloads if the Antivirus & Antimalware protection and/or the URL filtering options are enabled in their protection plans.
+
+Changing the method of registering the workload in the Cyber Protection service. You can switch from Use service console (default) to Use credentials or Use registration token.
+Changing the installation path.
+Changing the user account under which the agent service will run. For details, see Changing the logon account on Windows machines.
+
+Verifying or changing the host name or IP address of a proxy server, the port, username, and password to access it.
+
+The password can include lowercase and uppercase alphanumeric characters, and the following special characters:
+
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` } | { ~
+If a proxy server is enabled in Windows, it is automatically detected and used.
+Click Install.
+
+[Only when installing Agent for VMware] Specify the address and access credentials for the vCenter Server or the stand-alone ESXi host on which you want to back up and recover virtual machines, and then click Done.
+
+We recommend that you use a dedicated account for accessing vCenter Server or the ESXi host, instead of using an existing account with the Administrator role. For more information, see Required privileges for Agent for VMware.
+
+[Only when installing on a domain controller] Specify the user account under which the agent service will run, and then click Done. For security reasons, the setup program does not automatically create new accounts on a domain controller.
+
+The user account that you specify must be granted the Log on as a service right. This account must have already been used on the domain controller, in order for its profile folder to be created on that machine.
+
+For more information about installing the agent on a read-only domain controller, see this knowledge base article.
+
+[If you selected the default registration method Use service console] Wait until the registration screen appears.
+
+Register the agent under a user account in a customer tenant. For more information about registration, see Registering workloads by using the graphical user interface.
+
+[If you registered the agent in a tenant that uses Compliance mode] Set the encryption password.
+
+Changing the logon account on Windows machines
+
+Back to Top
+
+
+
+Last build date: Tuesday, March 10, 2026
+
+User Guide for Cyber Protect Cloud Console26.02.

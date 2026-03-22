@@ -1,0 +1,170 @@
+[
+  {
+    "question": "How do I sign up as an Acronis MSP partner?",
+    "ideal_answer": "To join the Acronis Partner Program for Service Providers, visit acronis.com/partners/service-providers. The program has no entry fee or minimum requirement to join. You start at the **Registered** tier with immediate access to flexible pricing, promotions, training, and world-class solutions. As you grow, you can advance through **Authorized**, **Gold**, and **Platinum** tiers, each offering increased benefits like dedicated account managers, NFR licenses, performance rebates, and MDF (Marketing Development Funds).",
+    "source": "web_scrape:acronis.com/partners/service-providers",
+    "category": "partner-onboarding",
+    "quality_score": 5
+  },
+  {
+    "question": "What are the different Acronis partner tiers and how do I qualify?",
+    "ideal_answer": "Acronis offers four partner tiers:\n\n1. **Registered** — Entry level. Immediate access to pricing, promotions, training, and solutions.\n2. **Authorized** — Adds marketing automation tools, a dedicated partner account manager, and NFR (Not For Resale) license.\n3. **Gold** — Adds increased margins through performance rebates, access to the MDF (Marketing Development Funds) Program, and #TeamUp sports benefits.\n4. **Platinum** — Top tier with white-glove service, robust discounts, enhanced support, and a dedicated team.\n\nPartners must meet minimum certification requirements through the Acronis Academy. Annual partnership reviews assess activity and qualification for tier advancement.",
+    "source": "web_scrape:acronis.com/partners/service-providers",
+    "category": "partner-onboarding",
+    "quality_score": 5
+  },
+  {
+    "question": "How do I create a new customer tenant under my partner account?",
+    "ideal_answer": "To create a customer tenant in Acronis Cyber Protect Cloud:\n\n1. Navigate to the **Management Portal** and click **New** > **Customer**.\n2. Enter the tenant **name** (must be unique within your hierarchy).\n3. Choose the **operation mode**: Trial (30-day evaluation) or Production (permanent, billing active).\n4. Set the **management mode**: 'Managed by service provider' (default, full access) or 'Managed by customer' (limited access).\n5. Optionally enable **Enhanced Security** (enforces encrypted-only backups — irreversible).\n6. Configure **Two-Factor Authentication** (mandatory for partner tenants, optional for customers).\n7. Set up an **administrator account** with email address (serves as login).\n8. Select which **services and licenses** to enable (all or customize).\n\nThe tenant is created immediately and the administrator receives an activation email.\n\n**Via API:** POST `/api/2/tenants` with `kind: 'customer'`, `parent_id: '<your_partner_tenant_id>'`. The tenant is created in trial billing mode by default.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html + developer.acronis.com",
+    "category": "partner-onboarding",
+    "quality_score": 5
+  },
+  {
+    "question": "Can I set up a trial account for a prospective client?",
+    "ideal_answer": "Yes. When creating a customer tenant, select **Trial** as the operation mode. Trial tenants have:\n\n- **30-day** full product evaluation period\n- Access to all enabled services and features\n- No billing during the trial period\n\n**Important:** After 30 days, the trial automatically converts to **Production** mode (billing starts). To prevent this, you must **delete the customer tenant** before the trial expires. Switching from Trial to Production is **permanent and cannot be reversed**.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html",
+    "category": "partner-onboarding",
+    "quality_score": 5
+  },
+  {
+    "question": "How do I configure white-labeling for my MSP brand in the Acronis console?",
+    "ideal_answer": "To configure white-labeling in Acronis Cyber Protect Cloud:\n\n1. Go to **Settings** > **Branding** in the Management Portal.\n2. Customize the following:\n   - **Service Name** — used in emails, welcome screens, and browser tabs\n   - **Web Console Logo** — displayed across Management Portal and services\n   - **Favicon** — shown in browser tabs (requires custom URL)\n   - **Color Scheme** — customizable UI colors with preview\n3. For **agent branding** (requires agent version 15.0.28816+):\n   - Custom installer filename\n   - Custom logo in Setup wizard\n   - Custom agent name during installation\n   - Custom tray monitor window name\n4. Set custom URLs for: home page, support contact, phone number, knowledge base, admin guides.\n5. Configure custom **legal documents**: EULA URL, platform terms, privacy statements.\n6. Optionally set a custom **\"Buy now\" page URL** for upselling.\n7. Configure custom **SMTP email server** with SSL/TLS.\n\nEnabling the **White-labeling** toggle clears all branding items (except Service name, EULA, admin guides, and email settings) and applies your custom branding to all child partners and customers across Windows, macOS, and Linux agents.",
+    "source": "web_scrape:AcronisCyberCloud/configuring-branding.html",
+    "category": "partner-onboarding",
+    "quality_score": 5
+  },
+  {
+    "question": "What is the partner portal and how do I access it?",
+    "ideal_answer": "The Acronis **Management Portal** (also called Partner Portal) is the central web console for MSP partners to manage their entire Acronis Cyber Protect Cloud business. Access it by logging in at your data center URL (e.g., `https://cloud.acronis.com`). From the portal you can:\n\n- Create and manage customer and partner tenants\n- Configure protection plans and quotas\n- Monitor backup status across all clients\n- Access sales and marketing materials\n- View usage reports and billing information\n- Configure branding and white-labeling\n- Manage user roles and permissions\n\nThe portal also provides access to the **Acronis Academy** for training and certification, and the **Partner Portal** section with campaigns, pricing guides, demos, and co-marketing materials.",
+    "source": "web_scrape:acronis.com/partners/service-providers + AcronisCyberCloud docs",
+    "category": "partner-onboarding",
+    "quality_score": 4
+  },
+  {
+    "question": "Can I delegate admin access to my technicians for specific tenants?",
+    "ideal_answer": "Yes. Acronis supports granular role-based access control:\n\n1. **Management modes** control access levels:\n   - **Full access** (default for partner tenants): Parent administrators can manage quotas, users, properties, access customers, and view usage reports.\n   - **Limited access**: Parent administrators can only modify properties/quotas and view reports — cannot manage tenants, users, services, or backups.\n\n2. For **customer tenants**:\n   - **Managed by service provider** (default): Full access including backups and resources.\n   - **Managed by customer**: Parent can only modify properties; no access to internal resources.\n\n3. You can create user accounts with specific roles per tenant. Roles include billing, technical, and business contacts. Users can hold multiple roles.\n\n4. Only child tenant administrators can change management modes via **Settings > Security > Support access** switch.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html",
+    "category": "partner-onboarding",
+    "quality_score": 5
+  },
+  {
+    "question": "How do I set up multi-factor authentication for my partner account?",
+    "ideal_answer": "Two-Factor Authentication (2FA) in Acronis Cyber Protect Cloud:\n\n- **Mandatory and enabled by default** for all Partner tenants in production mode.\n- **Optional** for Customer tenants (disabled by default).\n- Users must configure a TOTP (Time-based One-Time Password) authentication application (such as Google Authenticator).\n\nTo enable 2FA for a customer tenant:\n1. Go to tenant **Settings** > **Security**.\n2. Toggle **Two-Factor Authentication** to enabled.\n3. All users in that tenant will be required to set up 2FA on their next login.\n\n**Via API:** `PUT /api/2/tenants/{tenant_id}/mfa/status` with body `{\"enabled\": true}`. When enabled, all user accounts in the tenant will be required to set up two-factor authentication.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html + developer.acronis.com",
+    "category": "partner-onboarding",
+    "quality_score": 5
+  },
+  {
+    "question": "What training and certification programs does Acronis offer for MSP partners?",
+    "ideal_answer": "Acronis provides training through the **Acronis Academy**, which offers:\n\n- **Training sessions** and hands-on labs\n- **Certification programs** (essential for maintaining compliance with the Acronis Partner Program)\n- **Webinars** and virtual conferences\n- **Free security training modules** for MSP partners\n\nCertifications are required for tier qualification and advancement. Partners must meet minimum certification requirements, which are reviewed annually. The training covers Acronis Cyber Protect Cloud deployment, management, and sales/marketing best practices.",
+    "source": "web_scrape:acronis.com/partners/service-providers",
+    "category": "partner-onboarding",
+    "quality_score": 4
+  },
+  {
+    "question": "How does the pay-as-you-go billing model work for MSP partners?",
+    "ideal_answer": "Acronis Cyber Protect Cloud uses a **consumption-based (pay-as-you-go)** billing model:\n\n- You are billed based on actual usage across your customer tenants.\n- Billing is calculated per billing cycle based on workload counts and storage consumption.\n- When a customer tenant switches from **Trial** to **Production** mode, billing inclusion starts in the nearest billing cycle.\n- You can set **storage quotas** per tenant to control costs.\n- Usage reports are available in the Management Portal for per-client cost tracking.\n\nThis model allows MSPs to start small with no minimum commitment and scale up as they add clients, paying only for what is consumed.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html + acronis.com/products/cloud",
+    "category": "billing",
+    "quality_score": 4
+  },
+  {
+    "question": "Can I set my own pricing for clients and control my margins?",
+    "ideal_answer": "Yes. Acronis partner program is designed for MSPs to set their own pricing:\n\n- You purchase Acronis services at partner pricing (which varies by tier — Registered, Authorized, Gold, Platinum).\n- **Gold** and **Platinum** tiers offer increased margins through **performance rebates**.\n- You set your own retail prices for end customers — Acronis does not dictate client pricing.\n- You can configure a custom **\"Buy now\" page URL** in branding settings to direct clients to your pricing page.\n- **Marketing Development Funds (MDF)** are available at Gold+ tiers for joint marketing initiatives.\n\nYour margin is the difference between your partner cost and the price you charge clients. Higher tiers provide deeper discounts, increasing your margins.",
+    "source": "web_scrape:acronis.com/partners/service-providers + AcronisCyberCloud/configuring-branding.html",
+    "category": "billing",
+    "quality_score": 4
+  },
+  {
+    "question": "How do I allocate storage quotas to individual customer tenants?",
+    "ideal_answer": "To allocate storage quotas per customer tenant:\n\n1. When creating or editing a tenant, go to the **Services** or **Offering Items** section.\n2. For each service (e.g., Backup storage, Workstations), set the **quota value**.\n3. Set `quota.value` to a specific number (bytes for storage, quantity for workloads) or `null` for unlimited.\n\n**Via API:**\n- Fetch available offerings: `GET /api/2/tenants/{partner_id}/offering_items/available_for_child?kind=customer`\n- Set quotas: `PUT /api/2/tenants/{customer_id}/offering_items` with quota values in the request body.\n\nExample — set 100GB storage quota:\n```json\n{\"offering_items\": [{\"name\": \"storage\", \"type\": \"infra\", \"measurement_unit\": \"bytes\", \"status\": 1, \"quota\": {\"value\": 107374182400}}]}\n```",
+    "source": "web_scrape:developer.acronis.com/doc/account-management",
+    "category": "billing",
+    "quality_score": 5
+  },
+  {
+    "question": "What happens to client data if their subscription lapses?",
+    "ideal_answer": "When a customer tenant's subscription lapses:\n\n- **Trial tenants** that reach their 30-day expiration automatically convert to **Production** mode, which activates billing.\n- To prevent automatic conversion and billing, you must **delete the customer tenant** before the trial expires.\n- For production tenants, data is retained according to the configured retention policies.\n- Switching from Trial to Production is **permanent and cannot be reversed**.\n- Deleting a tenant removes all associated data, users, and configurations.\n\nIt is recommended to discuss subscription renewal with clients before expiration and to configure billing alerts to monitor quota usage.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html",
+    "category": "billing",
+    "quality_score": 4
+  },
+  {
+    "question": "How do I isolate client data so tenants cannot see each other's information?",
+    "ideal_answer": "Acronis Cyber Protect Cloud provides built-in **multi-tenant data isolation**:\n\n- Each **customer tenant** is a completely isolated entity with its own users, workloads, backups, and configurations.\n- Tenants **cannot see** other tenants' data, users, or resources — this is enforced at the platform level.\n- **Management modes** control partner visibility:\n  - 'Managed by service provider': Partner admin has full access to the customer's data.\n  - 'Managed by customer': Partner admin cannot access internal resources — only properties and quotas.\n- **Folder tenants** can group partners/customers with shared offerings and branding while maintaining data isolation.\n- **Enhanced Security** mode (set at tenant creation, irreversible) enforces encrypted-only backups for additional data protection.\n- The tenant hierarchy (Partner → Folder → Customer → Unit) ensures data boundaries at every level.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html",
+    "category": "multi-tenant",
+    "quality_score": 5
+  },
+  {
+    "question": "Can I move a client tenant from one partner account to another?",
+    "ideal_answer": "Tenant migration between partner accounts is not a standard self-service operation in the Acronis Management Portal. To move a customer tenant from one partner account to another, you should:\n\n1. **Contact Acronis Support** — tenant migration requires backend operations that are handled by Acronis.\n2. Ensure the target partner account has the necessary service quotas and licenses.\n3. Coordinate with both the source and target partner administrators.\n\nAlternatively, you can:\n- Create a new customer tenant under the target partner.\n- Migrate workloads and data manually.\n- Delete the old tenant after confirming successful migration.\n\nNote: The tenant hierarchy structure (Partner → Folder → Customer → Unit) means that tenants are bound to their parent. Direct re-parenting requires Acronis support intervention.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html + general Acronis knowledge",
+    "category": "multi-tenant",
+    "quality_score": 4
+  },
+  {
+    "question": "How do I integrate Acronis with ConnectWise Automate?",
+    "ideal_answer": "To integrate Acronis Cyber Protect Cloud with **ConnectWise Automate**:\n\n1. Download the Acronis plugin from the ConnectWise Automate marketplace.\n2. Install and configure the plugin following the Acronis user guide.\n3. Map your ConnectWise Automate clients to Acronis customer tenants.\n\n**Key capabilities:**\n- Provision Acronis services to new or existing customers directly from ConnectWise.\n- Remote installation, updates, and agent management across protected machines.\n- Assign and revoke cyber protection plans to single or multiple workloads.\n- Built-in scripts for deployment automation.\n- Integrated ticketing and alerting for Acronis service events.\n- Detailed cyber protection service statistics and pre-defined report generation.\n\nA detailed user guide is available at: `dl.acronis.com/u/pdf/AcronisConnectWiseAutomatePlugin_userguide_en-US.pdf`",
+    "source": "web_scrape:solutions.acronis.com/integrations/connectwise-automate",
+    "category": "integration",
+    "quality_score": 5
+  },
+  {
+    "question": "Is there an integration with Datto RMM or Autotask?",
+    "ideal_answer": "Yes, Acronis Cyber Protect Cloud integrates with **Datto RMM**:\n\n- Deploy and manage Acronis protection directly within the Datto RMM interface.\n- Provision RMM customers as new Acronis customer tenants.\n- Map Datto RMM sites to Acronis customer tenants.\n- Remote installation of Acronis agents to Windows, Mac, and Linux workloads.\n- Monitor protected workload status, antivirus scans, backup execution, and patch management.\n- Get tickets for alerts related to protected workloads.\n- Schedule or manually execute protection tasks.\n- Automate vulnerability assessments and data protection mapping.\n\n**Setup:** Install the deployment components from the Datto RMM ComStore, then configure site-to-tenant mapping in the Acronis management console.\n\nA quick start guide is available at: `dl.acronis.com/u/pdf/DattoRMMIntegration_quickstartguide_en-US.pdf`",
+    "source": "web_scrape:solutions.acronis.com/integrations/datto-rmm",
+    "category": "integration",
+    "quality_score": 5
+  },
+  {
+    "question": "How do I set up the Acronis plugin for NinjaRMM?",
+    "ideal_answer": "To set up the **Acronis Cyber Protect Cloud integration with NinjaOne (NinjaRMM)**:\n\n1. Download the OS-specific deployment scripts from the Acronis Cyber Protect Cloud console.\n2. In NinjaOne, navigate to **Run script** and **Organizations** tabs.\n3. Deploy Acronis agents to endpoints using the downloaded scripts.\n\n**Key capabilities:**\n- Remote mass-deployment of Acronis agent across Windows, Linux, and macOS endpoints.\n- Monitor protection plan status and real-time cyber protection policies.\n- Track antivirus/anti-malware scans, backup scheduling, and patch management.\n- Apply protection plans to single or multiple workloads.\n- Synchronized alerts between Acronis and NinjaOne platforms.\n- Schedule or manually execute protection tasks and vulnerability assessments.\n\nA how-to guide is available at: `dl.acronis.com/u/pdf/NinjaRMMIntegration_quickstartguide_en-US.pdf`",
+    "source": "web_scrape:solutions.acronis.com/integrations/ninjaone",
+    "category": "integration",
+    "quality_score": 5
+  },
+  {
+    "question": "Can I use the Acronis API to automate tenant provisioning?",
+    "ideal_answer": "Yes. The Acronis platform provides a comprehensive **REST API** for automating tenant provisioning. The workflow has 6 steps:\n\n1. **Create customer tenant:** `POST /api/2/tenants` with `kind: 'customer'` and `parent_id`.\n2. **Enable 2FA:** `PUT /api/2/tenants/{tenant_id}/mfa/status` with `{\"enabled\": true}`.\n3. **Enable services:** Fetch available offerings with `GET /api/2/tenants/{partner_id}/offering_items/available_for_child?kind=customer`, then enable with `PUT /api/2/tenants/{tenant_id}/offering_items`.\n4. **Create user account:** Validate login with `GET /api/2/users/check_login?username=X`, then `POST /api/2/users`.\n5. **Assign admin role:** `PUT /api/2/users/{user_id}/access_policies` with `role_id: 'company_admin'`.\n6. **Send activation email:** `POST /api/2/users/{user_id}/send-activation-email`.\n\n**Authentication:** OAuth 2.0 client credentials flow via `POST /idp/token` with Base64-encoded client_id:client_secret.\n\nFull API documentation: `developer.acronis.com/doc/`",
+    "source": "web_scrape:developer.acronis.com/doc/account-management",
+    "category": "integration",
+    "quality_score": 5
+  },
+  {
+    "question": "How do I authenticate using the Acronis API?",
+    "ideal_answer": "Acronis uses **OAuth 2.0 client credentials flow** for API authentication:\n\n1. **Register an API client** in the Management Portal to get a `client_id` and `client_secret`.\n2. **Get access token:** `POST /idp/token`\n   - Header: `Authorization: Basic {Base64(client_id:client_secret)}`\n   - Header: `Content-Type: application/x-www-form-urlencoded`\n   - Body: `grant_type=client_credentials`\n3. **Response** includes `access_token`, `expires_on`, `id_token`, and `token_type: 'bearer'`.\n4. **Use the token** in subsequent requests: `Authorization: Bearer {access_token}`.\n5. **Base URL format:** `{datacenter_url}/api/2` (e.g., `https://eu2-cloud.acronis.com/api/2`).\n6. **Get tenant info:** `GET /api/2/clients/{client_id}` returns the `tenant_id` associated with your API client.\n\nFull documentation: `developer.acronis.com/doc/account-management/v2/guide/getting-started/authenticating.html`",
+    "source": "web_scrape:developer.acronis.com/doc/account-management/authenticating",
+    "category": "integration",
+    "quality_score": 5
+  },
+  {
+    "question": "How do I integrate Acronis alerts with my PSA ticketing system?",
+    "ideal_answer": "Acronis Cyber Protect Cloud integrates with major PSA systems through dedicated plugins:\n\n- **ConnectWise Manage:** Product mapping integration available. Check list at `kb.acronis.com/content/63404`. Acronis alerts automatically create tickets in ConnectWise.\n- **ConnectWise Automate:** Built-in ticketing and alerting for Acronis service events.\n- **Datto Autotask/RMM:** Alert synchronization with native Datto alerting system. Get tickets for alerts related to protected workloads.\n\n**General PSA integration approach:**\n1. Install the relevant Acronis plugin for your PSA tool.\n2. Map Acronis customer tenants to PSA companies/sites.\n3. Configure alert-to-ticket rules.\n4. Acronis monitoring events will automatically create tickets in your PSA.\n\nFor custom PSA integrations, use the Acronis REST API to poll alerts and create tickets programmatically. The Acronis Integration Guide at `developer.acronis.com/doc/` provides API details.",
+    "source": "web_scrape:solutions.acronis.com + kb.acronis.com",
+    "category": "integration",
+    "quality_score": 4
+  },
+  {
+    "question": "How do I export Acronis monitoring data to Grafana or a SIEM?",
+    "ideal_answer": "Acronis Cyber Protect Cloud supports monitoring data export through:\n\n1. **SIEM integration via syslog:** Configure SIEM data forwarding in the Management Portal to send alerts and events to your SIEM system in JSON format. Supported protocols include syslog over TCP/UDP.\n2. **REST API:** Use the Acronis platform APIs to programmatically retrieve monitoring data, alerts, and usage statistics. The Integration Guide at `developer.acronis.com/doc/` provides endpoint details.\n3. **Webhook notifications:** Configure webhook alerts for backup events that can trigger data collection pipelines.\n\nFor **Grafana** specifically:\n- Use the Acronis API to pull metrics and feed them into Grafana's data sources.\n- Create custom dashboards with backup success rates, storage usage, and alert history.\n\nThe SIEM data format documentation is available in the Acronis Cyber Protect Cloud admin guide under 'SIEM Data Format (JSON examples)'.",
+    "source": "web_scrape:developer.acronis.com + docs/03-working-with-plans/17-siem-data-format",
+    "category": "integration",
+    "quality_score": 4
+  },
+  {
+    "question": "Can I white-label the client-facing backup status portal?",
+    "ideal_answer": "Yes. Acronis Cyber Protect Cloud supports comprehensive white-labeling of the client-facing portal:\n\n1. Go to **Settings > Branding** in the Management Portal.\n2. Customize: service name, web console logo, favicon, color scheme.\n3. Set custom URLs for support, knowledge base, and documentation.\n4. Configure custom SMTP server for branded email notifications.\n5. Enable the **White-labeling** toggle to clear all default Acronis branding.\n\nThis applies to:\n- The **Management Portal** that clients log into\n- All **email notifications** sent to clients\n- **Agent installers** and tray monitors (requires agent v15.0.28816+)\n- Custom agent names and Setup wizard branding\n\nClients will see your brand throughout their entire experience — from login screen to backup status dashboard to email alerts.",
+    "source": "web_scrape:AcronisCyberCloud/configuring-branding.html",
+    "category": "reporting",
+    "quality_score": 5
+  },
+  {
+    "question": "Can I give my clients read-only access to view their own backup status?",
+    "ideal_answer": "Yes. You can create user accounts in customer tenants with restricted access:\n\n1. Set the customer tenant management mode to **'Managed by customer'** — this gives the customer their own access while limiting your (partner) visibility.\n2. Create a user account in the customer tenant with a **read-only or limited role**.\n3. The customer can then log into the Management Portal and view their own backup status, alerts, and reports.\n\nAlternatively, with **'Managed by service provider'** mode (default):\n- You maintain full access.\n- Create user accounts in the tenant with specific roles (billing, technical, business).\n- Users can hold multiple roles and see only what their role permits.\n\nFor completely branded read-only access, combine this with **white-labeling** so clients see your brand when viewing their backup status.",
+    "source": "web_scrape:AcronisCyberCloud/tenant-create.html",
+    "category": "reporting",
+    "quality_score": 4
+  }
+]

@@ -1,0 +1,1650 @@
+{
+  "timestamp": "2026-03-20T21:59:52.070326",
+  "mode": "quick",
+  "api_url": "http://localhost:8080/api/chat/stream",
+  "total": 50,
+  "summary": {
+    "timestamp": "2026-03-20T21:59:52.070326",
+    "mode": "quick",
+    "total": 50,
+    "avg_scores": {
+      "correctness": 5.0,
+      "completeness": 4.98,
+      "relevance": 5.0,
+      "hallucination": 5.0,
+      "source_quality": 4.96,
+      "overall": 5.0
+    },
+    "score_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 50
+    },
+    "low_scoring_count": 0,
+    "low_scoring_pct": 0.0,
+    "worst_sections": [
+      {
+        "section": "Acronis Managed Detection and Response (MDR)",
+        "count": 1,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Additional Cyber Protection Tools",
+        "count": 1,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Configuring your GenAI Protection",
+        "count": 1,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Configuring your antivirus and antimalware protection",
+        "count": 3,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Data Loss Prevention",
+        "count": 1,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Endpoint Detection and Response (EDR)",
+        "count": 3,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Extended Detection and Response (XDR)",
+        "count": 1,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Getting Started with Cyber Protection",
+        "count": 4,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Implementing disaster recovery",
+        "count": 4,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Installing and deploying Cyber Protection agents",
+        "count": 7,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Managing and assigning automation workflows",
+        "count": 1,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Managing the backup and recovery of workloads and files",
+        "count": 9,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Managing workloads in the Cyber Protect console",
+        "count": 3,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "RMM",
+        "count": 3,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Understanding your current level of protection",
+        "count": 4,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      },
+      {
+        "section": "Working with plans",
+        "count": 4,
+        "avg": 5.0,
+        "low_count": 0,
+        "low_pct": 0.0
+      }
+    ],
+    "source_types": {
+      "qa_match": 50
+    },
+    "avg_wall_ms": 489,
+    "crash_count": 0
+  },
+  "results": [
+    {
+      "qa_id": "qa_372_how_to",
+      "section": "Installing and deploying Cyber Protection agents",
+      "question": "How do I check if all the required Linux packages are installed before installing a Cyber Protection agent?",
+      "ideal_answer": "First, run `cat /proc/version` to find your kernel version and required GCC version. Then run `make -v` and `gcc -v` to verify Make and GCC are installed, ensuring the GCC version matches. Next, check kernel headers using `yum list installed | grep kernel-devel` (RHEL/CentOS/Fedora) or `dpkg --get-selections | grep linux-headers` (Ubuntu). Finally, run `perl --version` to confirm Perl is installed, and on RHEL-based systems check for elfutils-libelf-devel with `yum list installed`.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "02-installing-deploying-agents/06-linux-packages-required.md",
+      "rag_answer": "First, run `cat /proc/version` to find your kernel version and required GCC version. Then run `make -v` and `gcc -v` to verify Make and GCC are installed, ensuring the GCC version matches. Next, check kernel headers using `yum list installed | grep kernel-devel` (RHEL/CentOS/Fedora) or `dpkg --get-selections | grep linux-headers` (Ubuntu). Finally, run `perl --version` to confirm Perl is installed, and on RHEL-based systems check for elfutils-libelf-devel with `yum list installed`. \n\n**Source:** `02-installing-deploying-agents/06-linux-packages-required.md`",
+      "rag_sources": [
+        {
+          "title": "06 Linux Packages Required",
+          "file": "02-installing-deploying-agents/06-linux-packages-required.md",
+          "score": 0.9999982714656124,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#linux-packages.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 562,
+      "elapsed_ms": 558,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "Perfect match with ideal answer, correct source cited."
+    },
+    {
+      "qa_id": "qa_401_detail",
+      "section": "Working with plans",
+      "question": "What are the key differences between the Essential and Complete built-in protection plans regarding CDP and EDR?",
+      "ideal_answer": "In the Essential protection plan, CDP (Continuous Data Protection) is disabled and EDR is off. In the Complete protection plan, CDP is enabled for near-zero RPO and EDR is turned on. Both plans share the same backup schedule (Mon-Fri), incremental backup scheme, and 90-day retention, but Complete adds business continuity, data leak prevention, and proactive security risk mitigation.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "03-working-with-plans/02-built-in-plans.md",
+      "rag_answer": "In the Essential protection plan, CDP (Continuous Data Protection) is disabled and EDR is off. In the Complete protection plan, CDP is enabled for near-zero RPO and EDR is turned on. Both plans share the same backup schedule (Mon-Fri), incremental backup scheme, and 90-day retention, but Complete adds business continuity, data leak prevention, and proactive security risk mitigation. \n\n**Source:** `03-working-with-plans/02-built-in-plans.md`",
+      "rag_sources": [
+        {
+          "title": "02 Built In Plans",
+          "file": "03-working-with-plans/02-built-in-plans.md",
+          "score": 0.9999983906746888,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#built-in-plans.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 495,
+      "elapsed_ms": 483,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "RAG answer matches ideal answer exactly, with correct source citation."
+    },
+    {
+      "qa_id": "qa_360_detail",
+      "section": "Getting Started with Cyber Protection",
+      "question": "How does Active Protection handle network folder protection on Linux compared to Windows and macOS?",
+      "ideal_answer": "Network folder protection is officially listed as 'No' for Linux, but with an important caveat: network folders in Linux are treated as local folders, so Active Protection will automatically protect network folders in Linux OS as if they were local folders. On Windows and macOS, network folder protection is explicitly supported as a dedicated feature.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "01-getting-started/10b-supported-features-active-protection.md",
+      "rag_answer": "Network folder protection is officially listed as 'No' for Linux, but with an important caveat: network folders in Linux are treated as local folders, so Active Protection will automatically protect network folders in Linux OS as if they were local folders. On Windows and macOS, network folder protection is explicitly supported as a dedicated feature. \n\n**Source:** `01-getting-started/10b-supported-features-active-protection.md`",
+      "rag_sources": [
+        {
+          "title": "10B Supported Features Active Protection",
+          "file": "01-getting-started/10b-supported-features-active-protection.md",
+          "score": 0.9999988675118185,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 529,
+      "elapsed_ms": 503,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_433_how_to",
+      "section": "Managing workloads in the Cyber Protect console",
+      "question": "How can I check if a workload is online or offline in the Cyber Protect console, and how long does it take for the status to update?",
+      "ideal_answer": "The workload status is checked every minute in the Cyber Protect console. If the agent on the machine is not transferring data and there is no answer to five consecutive checks, the workload is shown as offline. It will show as back online when it answers a status check or starts transferring data.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "05-managing-workloads/01-cyber-protect-console.md",
+      "rag_answer": "The workload status is checked every minute in the Cyber Protect console. If the agent on the machine is not transferring data and there is no answer to five consecutive checks, the workload is shown as offline. It will show as back online when it answers a status check or starts transferring data. \n\n**Source:** `05-managing-workloads/01-cyber-protect-console.md`",
+      "rag_sources": [
+        {
+          "title": "01 Cyber Protect Console",
+          "file": "05-managing-workloads/01-cyber-protect-console.md",
+          "score": 0.9999985694882128,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#service-console.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 446,
+      "elapsed_ms": 439,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_558_how_to",
+      "section": "Data Loss Prevention",
+      "question": "How do I create a custom content detector for specific file types in Acronis Cyber Protect Cloud's DLP feature?",
+      "ideal_answer": "Log in to the Cyber Protect console as an administrator, navigate to Protection > Data Loss Prevention > Data classifiers, then click Content detectors. Click Add new and select File type from the dropdown. Enter a name and description, optionally select a sensitivity category, then use the plus icon to move supported file types to the Selected file types list. You can also select multiple types using checkmarks and the Add selected button. Click Save when done.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "13-data-loss-prevention/07-custom-content-detectors.md",
+      "rag_answer": "Log in to the Cyber Protect console as an administrator, navigate to Protection > Data Loss Prevention > Data classifiers, then click Content detectors. Click Add new and select File type from the dropdown. Enter a name and description, optionally select a sensitivity category, then use the plus icon to move supported file types to the Selected file types list. You can also select multiple types using checkmarks and the Add selected button. Click Save when done. \n\n**Source:** `13-data-loss-prevention/07-custom-content-detectors.md`",
+      "rag_sources": [
+        {
+          "title": "07 Custom Content Detectors",
+          "file": "13-data-loss-prevention/07-custom-content-detectors.md",
+          "score": 0.9999983906748806,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp-custom-content-detectors.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 645,
+      "elapsed_ms": 630,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_538_how_to",
+      "section": "Acronis Managed Detection and Response (MDR)",
+      "question": "What are the differences between Standard and Advanced MDR service levels in Acronis?",
+      "ideal_answer": "Standard MDR provides 24x7 monitoring, automated mitigation and response, incident analysis with remediation recommendations, and basic monthly reports, but leaves remediation actions under partner control. Advanced MDR includes all Standard features plus manual advanced mitigation and response, root cause analysis with incident reports, threat intelligence, advanced monthly reports, proactive threat hunting, and on-demand incident investigation.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "11-mdr/01-mdr-overview-and-service-levels.md",
+      "rag_answer": "Standard MDR provides 24x7 monitoring, automated mitigation and response, incident analysis with remediation recommendations, and basic monthly reports, but leaves remediation actions under partner control. Advanced MDR includes all Standard features plus manual advanced mitigation and response, root cause analysis with incident reports, threat intelligence, advanced monthly reports, proactive threat hunting, and on-demand incident investigation. \n\n**Source:** `11-mdr/01-mdr-overview-and-service-levels.md`",
+      "rag_sources": [
+        {
+          "title": "01 Mdr Overview And Service Levels",
+          "file": "11-mdr/01-mdr-overview-and-service-levels.md",
+          "score": 0.9999983906748806,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 470,
+      "elapsed_ms": 462,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "Perfect match with ideal answer. All details accurate and source properly cited."
+    },
+    {
+      "qa_id": "qa_358_how_to",
+      "section": "Getting Started with Cyber Protection",
+      "question": "How do I search for specific messages in My Inbox in Cyber Protect Cloud?",
+      "ideal_answer": "Access My Inbox from the Cyber Protect Cloud dashboard, then locate the Search bar at the top of the inbox view. Enter relevant keywords or sender names to filter messages and press Enter to view the search results. The results will show all notifications matching your search criteria.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "01-getting-started/09-searching-my-inbox.md",
+      "rag_answer": "Access My Inbox from the Cyber Protect Cloud dashboard, then locate the Search bar at the top of the inbox view. Enter relevant keywords or sender names to filter messages and press Enter to view the search results. The results will show all notifications matching your search criteria. \n\n**Source:** `01-getting-started/09-searching-my-inbox.md`",
+      "rag_sources": [
+        {
+          "title": "09 Searching My Inbox",
+          "file": "01-getting-started/09-searching-my-inbox.md",
+          "score": 0.9999991357325331,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-protection-getting-started.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 403,
+      "elapsed_ms": 395,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_423_detail",
+      "section": "Understanding your current level of protection",
+      "question": "How does Acronis display storage usage units in the Cyber Protection widget, and is the labeling accurate?",
+      "ideal_answer": "The storage usage values displayed in the Acronis UI are actually in binary byte units — mebibytes (MiB), gibibytes (GiB), and tebibytes (TiB) — even though the labels show MB, GB, and TB respectively. This means the displayed values use base-2 calculations (1 GiB = 1,073,741,824 bytes) rather than the decimal units the labels suggest (1 GB = 1,000,000,000 bytes).",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "04-monitoring-dashboards/07-cyber-protection-and-status-widgets.md",
+      "rag_answer": "The storage usage values displayed in the Acronis UI are actually in binary byte units — mebibytes (MiB), gibibytes (GiB), and tebibytes (TiB) — even though the labels show MB, GB, and TB respectively. This means the displayed values use base-2 calculations (1 GiB = 1,073,741,824 bytes) rather than the decimal units the labels suggest (1 GB = 1,000,000,000 bytes). \n\n**Source:** `04-monitoring-dashboards/07-cyber-protection-and-status-widgets.md`",
+      "rag_sources": [
+        {
+          "title": "07 Cyber Protection And Status Widgets",
+          "file": "04-monitoring-dashboards/07-cyber-protection-and-status-widgets.md",
+          "score": 0.9999978244305523,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-protection-getting-started.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 474,
+      "elapsed_ms": 469,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "None. RAG answer matches ideal answer exactly and includes a relevant source citation."
+    },
+    {
+      "qa_id": "qa_507_detail",
+      "section": "Configuring your antivirus and antimalware protection",
+      "question": "Which Linux distributions support the Behavioral analysis engine in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "The Behavioral analysis engine supports a limited subset of Linux distributions: CentOS 7.x, Debian 10.x and 11.x, CloudLinux 7.x and 8.x, and Ubuntu 16.04, 18.04, 20.04, and 22.04. Other supported Linux distros like Red Hat, Oracle Linux, and SUSE do not support the Behavioral analysis engine.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "08-antivirus-antimalware/01-supported-os-av-am.md",
+      "rag_answer": "The Behavioral analysis engine is supported on the following Linux versions: CentOS 7.x, Debian 10.x and 11.x, CloudLinux 7.x and 8.x, and Ubuntu 16.04, 18.04, 20.04, and 22.04. Other Linux distributions are not listed as supported for this feature. \n\n**Source:** `01-getting-started/10c-supported-features-antivirus-antimalware.md`",
+      "rag_sources": [
+        {
+          "title": "10C Supported Features Antivirus Antimalware",
+          "file": "01-getting-started/10c-supported-features-antivirus-antimalware.md",
+          "score": 0.9999984502794277,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 351,
+      "elapsed_ms": 335,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 4,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "RAG answer lists all correct distros. Minor completeness gap: doesn't explicitly mention that other supported Linux distros like Red Hat, Oracle Linux, and SUSE specifically lack support, but says 'other Linux distributions are not listed' which conveys the same meaning."
+    },
+    {
+      "qa_id": "qa_525_detail",
+      "section": "Endpoint Detection and Response (EDR)",
+      "question": "What are the CPU requirements for running EDR, and what happens if Microsoft Defender Antivirus real-time protection is enabled alongside EDR?",
+      "ideal_answer": "EDR requires Intel CPUs released after 2011 or AMD CPUs released after 2012, specifically processors that include the SSE4.2 instruction set. If you enable Microsoft Defender Antivirus for real-time protection, the Acronis Real-time protection module is automatically disabled to prevent conflicts. In that case, virus/malware detections and quarantine are handled by Microsoft Defender Antivirus, and EDR incidents related to those detections are created from information provided by Microsoft Defender.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "10-edr-xdr/02-edr-software-requirements-and-enabling.md",
+      "rag_answer": "EDR requires Intel CPUs released after 2011 or AMD CPUs released after 2012, specifically processors that include the SSE4.2 instruction set. If you enable Microsoft Defender Antivirus for real-time protection, the Acronis Real-time protection module is automatically disabled to prevent conflicts. In that case, virus/malware detections and quarantine are handled by Microsoft Defender Antivirus, and EDR incidents related to those detections are created from information provided by Microsoft Defender. \n\n**Source:** `10-edr-xdr/02-edr-software-requirements-and-enabling.md`",
+      "rag_sources": [
+        {
+          "title": "02 Edr Software Requirements And Enabling",
+          "file": "10-edr-xdr/02-edr-software-requirements-and-enabling.md",
+          "score": 0.9999989867209802,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-software-requirements.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 551,
+      "elapsed_ms": 541,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_523_detail",
+      "section": "Managing and assigning automation workflows",
+      "question": "What are the possible states of a workflow version, and which state allows editing?",
+      "ideal_answer": "Workflow versions can be in three states: Draft, Active, or Disabled. Only versions in the Draft state can be edited. Active means the version is enabled for at least one tenant and can only be set to Disabled. Disabled means the version was previously enabled but is currently disabled for all tenants.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "09-genai-workflows/05-workflow-versions.md",
+      "rag_answer": "Workflow versions can be in three states: Draft, Active, or Disabled. Only versions in the Draft state can be edited. Active means the version is enabled for at least one tenant and can only be set to Disabled. Disabled means the version was previously enabled but is currently disabled for all tenants. \n\n**Source:** `09-genai-workflows/05-workflow-versions.md`",
+      "rag_sources": [
+        {
+          "title": "05 Workflow Versions",
+          "file": "09-genai-workflows/05-workflow-versions.md",
+          "score": 0.9999985098840654,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#workflows-version-history.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 458,
+      "elapsed_ms": 449,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "Perfect match with ideal answer, all states correctly described with accurate details about editing and state transitions."
+    },
+    {
+      "qa_id": "qa_549_how_to",
+      "section": "RMM",
+      "question": "How do I set up remote desktop and remote assistance for a managed workload in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "To set up remote desktop and assistance, you need to install the Connect Client on the managing (host) workload and ensure the Connect Agent is installed on the managed workloads (included in Protection agent from version 15.0.31266). Then configure and apply a remote management plan to the workload. Note that only one remote management plan can be applied per workload. For macOS, you must also grant required system permissions to the Connect Agent.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "12-rmm/08-remote-desktop-and-assistance.md",
+      "rag_answer": "To set up remote desktop and assistance, you need to install the Connect Client on the managing (host) workload and ensure the Connect Agent is installed on the managed workloads (included in Protection agent from version 15.0.31266). Then configure and apply a remote management plan to the workload. Note that only one remote management plan can be applied per workload. For macOS, you must also grant required system permissions to the Connect Agent. \n\n**Source:** `12-rmm/08-remote-desktop-and-assistance.md`",
+      "rag_sources": [
+        {
+          "title": "08 Remote Desktop And Assistance",
+          "file": "12-rmm/08-remote-desktop-and-assistance.md",
+          "score": 0.9999972581866743,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-remote-desktop-and-assistance-features.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 578,
+      "elapsed_ms": 571,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_492_how_to",
+      "section": "Implementing disaster recovery",
+      "question": "How do I reassign IP addresses for cloud servers after switching VPN connectivity types in Acronis Disaster Recovery?",
+      "ideal_answer": "First, reassign the cloud network IP by going to the Connectivity tab, clicking the cloud network's IP address, clicking Edit in the Network pop-up, typing the new network address and mask, and clicking Done. Then reassign each cloud server's IP by clicking the server's IP in the Connectivity tab, selecting Change IP address, entering a new IP or using the automatically generated one, and clicking Confirm. Disaster Recovery automatically suggests IP addresses from the reassigned cloud network for all servers.",
+      "type": "how_to",
+      "difficulty": "medium",
+      "source_file": "07-disaster-recovery/05-cloud-servers.md",
+      "rag_answer": "First, reassign the cloud network IP by going to the Connectivity tab, clicking the cloud network's IP address, clicking Edit in the Network pop-up, typing the new network address and mask, and clicking Done. Then reassign each cloud server's IP by clicking the server's IP in the Connectivity tab, selecting Change IP address, entering a new IP or using the automatically generated one, and clicking Confirm. Disaster Recovery automatically suggests IP addresses from the reassigned cloud network for all servers. \n\n**Source:** `07-disaster-recovery/05-cloud-servers.md`",
+      "rag_sources": [
+        {
+          "title": "05 Cloud Servers",
+          "file": "07-disaster-recovery/05-cloud-servers.md",
+          "score": 0.9999980628488756,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-cloud-servers.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 628,
+      "elapsed_ms": 618,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "None. RAG answer matches ideal answer exactly and cites an appropriate source file."
+    },
+    {
+      "qa_id": "qa_478_detail",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "What is the minimum task duration required for bottleneck statistics to be available, and how often do the values update?",
+      "ideal_answer": "Bottleneck statistics are only available for tasks that run more than one minute long. The bottleneck values update dynamically every minute while the corresponding activity is running.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "06-backup-and-recovery/31-bottleneck-detection-public-cloud-backups.md",
+      "rag_answer": "Bottleneck statistics are only available for tasks that run more than one minute long. The bottleneck values update dynamically every minute while the corresponding activity is running. \n\n**Source:** `06-backup-and-recovery/31-bottleneck-detection-public-cloud-backups.md`",
+      "rag_sources": [
+        {
+          "title": "31 Bottleneck Detection Public Cloud Backups",
+          "file": "06-backup-and-recovery/31-bottleneck-detection-public-cloud-backups.md",
+          "score": 0.9999982714649995,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-workloads-public-clouds.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 265,
+      "elapsed_ms": 250,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_428_detail",
+      "section": "Understanding your current level of protection",
+      "question": "What is the maximum number of filter values you can select in the Software inventory widget's filters?",
+      "ideal_answer": "In the Software inventory widget, you can select up to 20 values in the Machine name, Software name, and Vendor name filters. The same 20-value limit applies to the Device name filter in the Software overview widget.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "04-monitoring-dashboards/12-software-and-hardware-widgets.md",
+      "rag_answer": "In the Software inventory widget, you can select up to 20 values in the Machine name, Software name, and Vendor name filters. The same 20-value limit applies to the Device name filter in the Software overview widget. \n\n**Source:** `04-monitoring-dashboards/12-software-and-hardware-widgets.md`",
+      "rag_sources": [
+        {
+          "title": "12 Software And Hardware Widgets",
+          "file": "04-monitoring-dashboards/12-software-and-hardware-widgets.md",
+          "score": 0.9999982118606567,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-software-inventory.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 349,
+      "elapsed_ms": 336,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_436_how_to",
+      "section": "Managing workloads in the Cyber Protect console",
+      "question": "How can I search for Microsoft 365 users who have a valid license in the Cyber Protect console?",
+      "ideal_answer": "Use the `licensedByMsft` search attribute with the query `licensedByMsft = true` to find Microsoft 365 users with a valid subscription. This attribute is available under Microsoft 365 > Users and identifies users who can use Microsoft 365 services like Exchange Online and OneDrive. You can also use `licensedByMsft = false` to find unlicensed users.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "05-managing-workloads/04-search-attributes-cloud-to-cloud.md",
+      "rag_answer": "Use the `licensedByMsft` search attribute with the query `licensedByMsft = true` to find Microsoft 365 users with a valid subscription. This attribute is available under Microsoft 365 > Users and identifies users who can use Microsoft 365 services like Exchange Online and OneDrive. You can also use `licensedByMsft = false` to find unlicensed users. \n\n**Source:** `05-managing-workloads/04-search-attributes-cloud-to-cloud.md`",
+      "rag_sources": [
+        {
+          "title": "04 Search Attributes Cloud To Cloud",
+          "file": "05-managing-workloads/04-search-attributes-cloud-to-cloud.md",
+          "score": 0.9999990761279451,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#attributes-cloud-to-cloud-dynamic-groups.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 449,
+      "elapsed_ms": 441,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_472_how_to",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "How do I recover a physical machine backup to another physical machine using the Cyber Protect console?",
+      "ideal_answer": "In the Cyber Protect console, go to the Devices tab and select the backed-up machine, click Recovery, then select a recovery point. For offline machines, use the Backup storage tab instead to select the backup archive and recovery point. Alternatively, you can use bootable media to recover backups to physical machines, which is required for offline or bare metal machines.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "06-backup-and-recovery/25-recovery-physical-machines.md",
+      "rag_answer": "In the Cyber Protect console, go to the Devices tab and select the backed-up machine, click Recovery, and select a recovery point (for online machines), or use the Backup storage tab to select the archive and recovery point. Then click Recover > Entire machine. You can optionally change the target machine by clicking Target machine and selecting an online machine. For offline machines with cloud or shared storage, you can select a different online target machine during the recovery process. \n\n**Source:** `06-backup-and-recovery/19-recovery-physical-and-virtual-machines.md`",
+      "rag_sources": [
+        {
+          "title": "19 Recovery Physical And Virtual Machines",
+          "file": "06-backup-and-recovery/19-recovery-physical-and-virtual-machines.md",
+          "score": 0.9999982714659197,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-physical-machine-as-virtual-machine.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 625,
+      "elapsed_ms": 617,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "RAG answer covers all points from ideal answer and adds accurate additional details about changing target machine and recovering entire machine. Source file is appropriate."
+    },
+    {
+      "qa_id": "qa_516_detail",
+      "section": "Configuring your antivirus and antimalware protection",
+      "question": "What happens to a quarantined file when it is restored to its original location in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "When a quarantined file is restored, it is returned to its original location without any modifications. If a file with the same name already exists in that location, it will be overwritten by the restored file. Additionally, the restored file is automatically added to the allowlist, meaning it will be skipped during further antimalware scans.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "08-antivirus-antimalware/10-quarantine-management.md",
+      "rag_answer": "When a quarantined file is restored, it is returned to its original location without any modifications. If a file with the same name already exists in that location, it will be overwritten by the restored file. Additionally, the restored file is automatically added to the allowlist, meaning it will be skipped during further antimalware scans. \n\n**Source:** `08-antivirus-antimalware/10-quarantine-management.md`",
+      "rag_sources": [
+        {
+          "title": "10 Quarantine Management",
+          "file": "08-antivirus-antimalware/10-quarantine-management.md",
+          "score": 0.9999981522564525,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-management.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 467,
+      "elapsed_ms": 455,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_392_how_to",
+      "section": "Installing and deploying Cyber Protection agents",
+      "question": "How do I deploy the Agent for Nutanix AHV to my cluster?",
+      "ideal_answer": "First, log in to the Cyber Protect console and navigate to Devices > All devices > Add > Nutanix AHV to download a ZIP archive. Extract the QCOW2 image file from the archive, then log in to the Nutanix Prism Element console as an administrator. Upload the QCOW2 image by going to Settings > Image configuration, clicking Upload image, selecting 'Disk' as the Image Type, and choosing the extracted QCOW2 file.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "02-installing-deploying-agents/26-deploying-nutanix-ahv.md",
+      "rag_answer": "First, log in to the Cyber Protect console and navigate to Devices > All devices > Add > Nutanix AHV to download a ZIP archive. Extract the QCOW2 image file from the archive, then log in to the Nutanix Prism Element console as an administrator. Upload the QCOW2 image by going to Settings > Image configuration, clicking Upload image, selecting 'Disk' as the Image Type, and choosing the extracted QCOW2 file. \n\n**Source:** `02-installing-deploying-agents/26-deploying-nutanix-ahv.md`",
+      "rag_sources": [
+        {
+          "title": "26 Deploying Nutanix Ahv",
+          "file": "02-installing-deploying-agents/26-deploying-nutanix-ahv.md",
+          "score": 0.99999839067479,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-agent-nutanix-ahv-virtual-appliance.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 572,
+      "elapsed_ms": 562,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_377_detail",
+      "section": "Installing and deploying Cyber Protection agents",
+      "question": "What happens if I select the 'Remove the logs and configuration settings' check box during Windows agent uninstallation and then reinstall the agent later?",
+      "ideal_answer": "If you select that check box and later reinstall the agent, the workload might be duplicated in the Cyber Protect console and its old backups might not be associated with it. Therefore, if you plan to reinstall the agent, you should keep this check box cleared to preserve logs and configuration settings.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "02-installing-deploying-agents/11-uninstalling-agents.md",
+      "rag_answer": "If you select that check box and later reinstall the agent, the workload might be duplicated in the Cyber Protect console and its old backups might not be associated with it. Therefore, if you plan to reinstall the agent, you should keep this check box cleared to preserve logs and configuration settings. \n\n**Source:** `02-installing-deploying-agents/11-uninstalling-agents.md`",
+      "rag_sources": [
+        {
+          "title": "11 Uninstalling Agents",
+          "file": "02-installing-deploying-agents/11-uninstalling-agents.md",
+          "score": 0.9999982118605661,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#uninstalling-agents.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 466,
+      "elapsed_ms": 442,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_543_how_to",
+      "section": "RMM",
+      "question": "How do I monitor and manage Microsoft 365 tenant baselines in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "Navigate to Microsoft 365 management > Baselines in the Cyber Protect console. You can select a specific tenant from the Tenant dropdown and filter by category name. From the baselines list, you can browse the status (Passed or Deviated) of all applied baselines, verify if auto-remediation is enabled, and click on a baseline row to view details, enable/disable auto-remediation, or manually remediate deviations.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "12-rmm/03-m365-baselines-and-remediation.md",
+      "rag_answer": "Navigate to Microsoft 365 management > Baselines in the Cyber Protect console. You can select a specific tenant from the Tenant dropdown and filter by category name. From the baselines list, you can browse the status (Passed or Deviated) of all applied baselines, verify if auto-remediation is enabled, and click on a baseline row to view details, enable/disable auto-remediation, or manually remediate deviations. \n\n**Source:** `12-rmm/03-m365-baselines-and-remediation.md`",
+      "rag_sources": [
+        {
+          "title": "03 M365 Baselines And Remediation",
+          "file": "12-rmm/03-m365-baselines-and-remediation.md",
+          "score": 0.999997973442456,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#m365-baseline-remediation.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 492,
+      "elapsed_ms": 487,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "RAG answer is essentially identical to the ideal answer with a correct source citation."
+    },
+    {
+      "qa_id": "qa_541_detail",
+      "section": "RMM",
+      "question": "How many critical applications does Acronis RMM's vulnerability assessment support for third-party Windows applications?",
+      "ideal_answer": "Acronis RMM's vulnerability assessment for third-party Windows applications supports detecting and managing vulnerabilities across 314 critical applications. This capability is supported by an Acronis internally maintained database to enhance the security posture of Windows third-party applications.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "12-rmm/01-rmm-overview.md",
+      "rag_answer": "Acronis RMM's vulnerability assessment for third-party Windows applications supports detecting and managing vulnerabilities across 314 critical applications. This capability is supported by an Acronis internally maintained database to enhance the security posture of Windows third-party applications. \n\n**Source:** `12-rmm/01-rmm-overview.md`",
+      "rag_sources": [
+        {
+          "title": "01 Rmm Overview",
+          "file": "12-rmm/01-rmm-overview.md",
+          "score": 0.9999982118603388,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-overview.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 319,
+      "elapsed_ms": 308,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_375_detail",
+      "section": "Installing and deploying Cyber Protection agents",
+      "question": "Which Acronis components or services are NOT supported in FIPS-compliant mode?",
+      "ideal_answer": "The following are not FIPS-compliant: File Sync & Share, Endpoint Detection and Response (EDR), Disaster recovery, Data loss prevention (DLP), Acronis Cyber Protect app (mobile device backup), Physical data shipping, and Web Restore console. Additionally, virtual appliances and bootable media in FIPS-compliant mode do not support SMB shares.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "02-installing-deploying-agents/09-fips-compliant-mode.md",
+      "rag_answer": "The following are not FIPS-compliant: File Sync & Share, Endpoint Detection and Response (EDR), Disaster recovery, Data loss prevention (DLP), Acronis Cyber Protect app (mobile device backup), Physical data shipping, and Web Restore console. Additionally, virtual appliances and bootable media in FIPS-compliant mode do not support SMB shares. \n\n**Source:** `02-installing-deploying-agents/09-fips-compliant-mode.md`",
+      "rag_sources": [
+        {
+          "title": "09 Fips Compliant Mode",
+          "file": "02-installing-deploying-agents/09-fips-compliant-mode.md",
+          "score": 1.0,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#fips-compliant-mode.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 608,
+      "elapsed_ms": 492,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "Perfect match with ideal answer, correct source cited."
+    },
+    {
+      "qa_id": "qa_396_detail",
+      "section": "Installing and deploying Cyber Protection agents",
+      "question": "Which agent components are mandatory during remote installation on discovered Windows devices, and which are conditionally installed?",
+      "ideal_answer": "Agent for Windows is mandatory and always installed — it cannot be deselected and handles disk, volume, and file backups. Other components like Agent for Hyper-V and Agent for SQL are only installed if selected and the corresponding role or application (Hyper-V role, SQL Server) is detected on the machine. Antimalware and URL filtering can be auto-installed later if the relevant modules are enabled in a protection plan.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "02-installing-deploying-agents/30-remote-agent-installation.md",
+      "rag_answer": "Agent for Windows is mandatory and always installed — it cannot be deselected and handles disk, volume, and file backups. Other components like Agent for Hyper-V and Agent for SQL are only installed if selected and the corresponding role or application (Hyper-V role, SQL Server) is detected on the machine. Antimalware and URL filtering can be auto-installed later if the relevant modules are enabled in a protection plan. \n\n**Source:** `02-installing-deploying-agents/30-remote-agent-installation.md`",
+      "rag_sources": [
+        {
+          "title": "30 Remote Agent Installation",
+          "file": "02-installing-deploying-agents/30-remote-agent-installation.md",
+          "score": 0.999998629092941,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#remote-installation-of-agents.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 706,
+      "elapsed_ms": 616,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "None. RAG answer is identical to ideal answer with correct source cited."
+    },
+    {
+      "qa_id": "qa_481_how_to",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "How do I back up my mobile device using the Acronis Cyber Protect app?",
+      "ideal_answer": "Install the Acronis Cyber Protect app on your iOS (17-26) or Android (12-16) device. You need a cloud account and Cloud subscription. Open the app and manually start the backup process. The app can back up contacts, photos, videos, calendars, and reminders (iOS only). Continuous backup is enabled by default to automatically detect and upload new data.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "06-backup-and-recovery/34-protecting-mobile-devices.md",
+      "rag_answer": "Install the Acronis Cyber Protect app on your iOS (17-26) or Android (12-16) device. You need a cloud account and Cloud subscription. Open the app and manually start the backup process. The app can back up contacts, photos, videos, calendars, and reminders (iOS only). Continuous backup is enabled by default to automatically detect and upload new data. \n\n**Source:** `06-backup-and-recovery/34-protecting-mobile-devices.md`",
+      "rag_sources": [
+        {
+          "title": "34 Protecting Mobile Devices",
+          "file": "06-backup-and-recovery/34-protecting-mobile-devices.md",
+          "score": 0.9999987483025503,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mobile-devices.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 489,
+      "elapsed_ms": 474,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_531_detail",
+      "section": "Endpoint Detection and Response (EDR)",
+      "question": "What does the 'n Workloads' link in the Security Analysis section of a node's Overview tab actually indicate?",
+      "ideal_answer": "The 'n Workloads' link indicates that the specific malicious or suspicious object has been found on other workloads, but it does not mean the attack is actively happening on those workloads. It means there is an indicator of compromise on them — the attack may have already happened and created another incident, or the attacker may be preparing to target those workloads using their attack toolkit.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "10-edr-xdr/08-investigating-nodes-and-ioc.md",
+      "rag_answer": "The 'n Workloads' link indicates that the specific malicious or suspicious object has been found on other workloads, but it does not mean the attack is actively happening on those workloads. It means there is an indicator of compromise on them — the attack may have already happened and created another incident, or the attacker may be preparing to target those workloads using their attack toolkit. \n\n**Source:** `10-edr-xdr/08-investigating-nodes-and-ioc.md`",
+      "rag_sources": [
+        {
+          "title": "08 Investigating Nodes And Ioc",
+          "file": "10-edr-xdr/08-investigating-nodes-and-ioc.md",
+          "score": 0.9999985694884561,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-review-attacked-nodes.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 810,
+      "elapsed_ms": 769,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_368_detail",
+      "section": "Installing and deploying Cyber Protection agents",
+      "question": "Is agentless backup available for physical machines, and what are its resource advantages?",
+      "ideal_answer": "No, agentless backup is not available for physical machines — it is only supported by some virtualization platforms. Its resource advantage is that a single dedicated agent uses less CPU and RAM than installing individual agents on each virtual machine in the environment. It also backs up VMs at the hypervisor level, regardless of guest operating systems.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "02-installing-deploying-agents/02-agent-based-vs-agentless.md",
+      "rag_answer": "No, agentless backup is not available for physical machines — it is only supported by some virtualization platforms. Its resource advantage is that a single dedicated agent uses less CPU and RAM than installing individual agents on each virtual machine in the environment. It also backs up VMs at the hypervisor level, regardless of guest operating systems. \n\n**Source:** `02-installing-deploying-agents/02-agent-based-vs-agentless.md`",
+      "rag_sources": [
+        {
+          "title": "02 Agent Based Vs Agentless",
+          "file": "02-installing-deploying-agents/02-agent-based-vs-agentless.md",
+          "score": 0.9999979138378219,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#agentbased-agentless-backup.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 509,
+      "elapsed_ms": 489,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "Perfect match with ideal answer. All key points covered: not available for physical machines, virtualization-only, CPU/RAM advantages, hypervisor-level backup regardless of guest OS. Source file is appropriate."
+    },
+    {
+      "qa_id": "qa_457_detail",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "Can I switch from the 'Always incremental (single-file)' backup scheme to another scheme in an existing protection plan?",
+      "ideal_answer": "No, you cannot switch between 'Always incremental (single-file)' and other backup schemes within an existing protection plan. This is because 'Always incremental (single-file)' uses a single-file format (.tibx), while other schemes use a multi-file format. If you need to change between these formats, you must create a new protection plan.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "06-backup-and-recovery/10-backup-schedule-schemes-types.md",
+      "rag_answer": "No, you cannot switch between 'Always incremental (single-file)' and other backup schemes within an existing protection plan. This is because 'Always incremental (single-file)' uses a single-file format (.tibx), while other schemes use a multi-file format. If you need to change between these formats, you must create a new protection plan. \n\n**Source:** `06-backup-and-recovery/10-backup-schedule-schemes-types.md`",
+      "rag_sources": [
+        {
+          "title": "10 Backup Schedule Schemes Types",
+          "file": "06-backup-and-recovery/10-backup-schedule-schemes-types.md",
+          "score": 0.9999986290932537,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#schedule.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 428,
+      "elapsed_ms": 419,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_356_how_to",
+      "section": "Getting Started with Cyber Protection",
+      "question": "How do I check and manage my unread notifications in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "Navigate to the My Inbox page, which serves as your central hub for communications. The My Inbox tab features a notification counter displaying the number of unread notifications. Click on this counter to reveal your unread notifications and track pending items. You can also use filters by category, importance, and action to organize notifications, with counters next to each filter showing how many notifications fall under each category.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "01-getting-started/07-my-inbox-overview.md",
+      "rag_answer": "Navigate to the My Inbox page, which serves as your central hub for communications. The My Inbox tab features a notification counter displaying the number of unread notifications. Click on this counter to reveal your unread notifications and track pending items. You can also use filters by category, importance, and action to organize notifications, with counters next to each filter showing how many notifications fall under each category. \n\n**Source:** `01-getting-started/07-my-inbox-overview.md`",
+      "rag_sources": [
+        {
+          "title": "07 My Inbox Overview",
+          "file": "01-getting-started/07-my-inbox-overview.md",
+          "score": 1.0,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#my-inbox-overview.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 562,
+      "elapsed_ms": 550,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_426_detail",
+      "section": "Understanding your current level of protection",
+      "question": "What are the CVSS v3.0 severity levels used in the Vulnerable Machines widget, and what score ranges do they correspond to?",
+      "ideal_answer": "The Vulnerable Machines widget uses CVSS v3.0 severity levels: Secured (no vulnerabilities found), Critical (9.0–10.0), High (7.0–8.9), Medium (4.0–6.9), Low (0.1–3.9), and None (0.0 CVSS). These levels classify the severity of vulnerabilities found on machines.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "04-monitoring-dashboards/10-data-protection-and-vulnerability-widgets.md",
+      "rag_answer": "The Vulnerable Machines widget uses CVSS v3.0 severity levels: Secured (no vulnerabilities found), Critical (9.0–10.0), High (7.0–8.9), Medium (4.0–6.9), Low (0.1–3.9), and None (0.0 CVSS). These levels classify the severity of vulnerabilities found on machines. \n\n**Source:** `04-monitoring-dashboards/10-data-protection-and-vulnerability-widgets.md`",
+      "rag_sources": [
+        {
+          "title": "10 Data Protection And Vulnerability Widgets",
+          "file": "04-monitoring-dashboards/10-data-protection-and-vulnerability-widgets.md",
+          "score": 0.9999978840345434,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#vulnerability-assessment-widgets.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 338,
+      "elapsed_ms": 326,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_403_detail",
+      "section": "Working with plans",
+      "question": "What access does a customer-level administrator have to plans applied by a partner administrator?",
+      "ideal_answer": "A customer-level administrator has read-only access to partner plans applied to workloads of their customer or unit. They cannot delete, edit, or revoke these partner-applied plans. However, they have full access to their own customer plans (including plans in units) and full access to unit plans they own.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "03-working-with-plans/04-plans-at-different-admin-levels.md",
+      "rag_answer": "A customer-level administrator has read-only access to partner plans applied to workloads of their customer or unit. They cannot delete, edit, or revoke these partner-applied plans. However, they have full access to their own customer plans (including plans in units) and full access to unit plans they own. \n\n**Source:** `03-working-with-plans/04-plans-at-different-admin-levels.md`",
+      "rag_sources": [
+        {
+          "title": "04 Plans At Different Admin Levels",
+          "file": "03-working-with-plans/04-plans-at-different-admin-levels.md",
+          "score": 0.9999983906745111,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#plans-different-administration-levels.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 400,
+      "elapsed_ms": 390,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_563_how_to",
+      "section": "Additional Cyber Protection Tools",
+      "question": "How do I set up archival storage in Acronis Cyber Protect Cloud for long-term data retention?",
+      "ideal_answer": "To use archival storage, you must first ensure the Archival storage quota is enabled in Management Portal. Then, create one or more buckets in the Cyber Protect console. To access, view, manage contents, or transfer data in those buckets, you need to use an S3-compatible client. Note that archival storage cannot be used as a backup destination in a protection plan or cloud-to-cloud backup plan.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "14-additional-tools/04-archival-storage.md",
+      "rag_answer": "To use archival storage, you must first ensure the Archival storage quota is enabled in Management Portal. Then, create one or more buckets in the Cyber Protect console. To access, view, manage contents, or transfer data in those buckets, you need to use an S3-compatible client. Note that archival storage cannot be used as a backup destination in a protection plan or cloud-to-cloud backup plan. \n\n**Source:** `14-additional-tools/04-archival-storage.md`",
+      "rag_sources": [
+        {
+          "title": "04 Archival Storage",
+          "file": "14-additional-tools/04-archival-storage.md",
+          "score": 0.9999973475931241,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#archival-storage.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 529,
+      "elapsed_ms": 518,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "None. RAG answer matches ideal answer exactly and cites an appropriate source file."
+    },
+    {
+      "qa_id": "qa_527_detail",
+      "section": "Endpoint Detection and Response (EDR)",
+      "question": "What is the default retention period for EDR events search results, and can events be searched across all managed customers at the partner tenant level?",
+      "ideal_answer": "The default retention period for EDR events search results is seven days. Events can only be searched within a selected customer and cannot be searched across all managed customers at the partner tenant level.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "10-edr-xdr/04-events-search-and-saved-queries.md",
+      "rag_answer": "The default retention period for EDR events search results is seven days. Events can only be searched within a selected customer and cannot be searched across all managed customers at the partner tenant level. \n\n**Source:** `10-edr-xdr/04-events-search-and-saved-queries.md`",
+      "rag_sources": [
+        {
+          "title": "04 Events Search And Saved Queries",
+          "file": "10-edr-xdr/04-events-search-and-saved-queries.md",
+          "score": 0.9999983906751737,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#edr-search-events.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 342,
+      "elapsed_ms": 324,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_404_detail",
+      "section": "Working with plans",
+      "question": "What determines which protection modules are available when creating a protection plan in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "Module availability depends on two factors: the offering items that are enabled for your account and the administration level in the Cyber Protect console. Not all modules may be visible or configurable if the corresponding offering items are not enabled for your account.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "03-working-with-plans/05-protection-plans-and-modules.md",
+      "rag_answer": "Module availability depends on two factors: the offering items that are enabled for your account and the administration level in the Cyber Protect console. Not all modules may be visible or configurable if the corresponding offering items are not enabled for your account. \n\n**Source:** `03-working-with-plans/05-protection-plans-and-modules.md`",
+      "rag_sources": [
+        {
+          "title": "05 Protection Plans And Modules",
+          "file": "03-working-with-plans/05-protection-plans-and-modules.md",
+          "score": 0.9999982714657207,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protection-plans-and-modules.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 397,
+      "elapsed_ms": 385,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_415_detail",
+      "section": "Working with plans",
+      "question": "What data types can Acronis SIEM forwarding plans send, and what severity levels are shown in the CEF alert examples?",
+      "ideal_answer": "Acronis SIEM forwarding plans can send data for alerts, events, activities, tasks, and audit log entries. In the CEF alert examples, severity levels vary by alert type: BackupStatusUnknown has a severity of 5, BackupFailed has a severity of 10, and BackupCanceled has a severity of 5.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
+      "rag_answer": "Acronis SIEM forwarding plans can send data for alerts, events, activities, tasks, and audit log entries. In the CEF alert examples, severity levels vary by alert type: BackupStatusUnknown has a severity of 5, BackupFailed has a severity of 10, and BackupCanceled has a severity of 5. \n\n**Source:** `03-working-with-plans/16-siem-data-format-cef-examples.md`",
+      "rag_sources": [
+        {
+          "title": "16 Siem Data Format Cef Examples",
+          "file": "03-working-with-plans/16-siem-data-format-cef-examples.md",
+          "score": 0.9999985098838806,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#siem-formats.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 408,
+      "elapsed_ms": 398,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_491_how_to",
+      "section": "Implementing disaster recovery",
+      "question": "How do I configure a Multi-site IPsec VPN connection in Acronis Cyber Protect Cloud for disaster recovery?",
+      "ideal_answer": "You can configure it in two ways. First, go to Disaster Recovery > Connectivity, click Configure in the Multi-site VPN connection section, which deploys a VPN gateway on the cloud site, then configure the settings. Alternatively, apply a protection plan to devices under Devices, then go to Disaster Recovery > Connectivity, click Show properties, switch to Multi-site IPsec VPN, configure settings, and reassign IP addresses for cloud network and servers.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "07-disaster-recovery/04-connectivity-ipsec-p2s.md",
+      "rag_answer": "You can configure it in two ways. First, go to Disaster Recovery > Connectivity, click Configure in the Multi-site VPN connection section, which deploys a VPN gateway on the cloud site, then configure the settings. Alternatively, apply a protection plan to devices under Devices, then go to Disaster Recovery > Connectivity, click Show properties, switch to Multi-site IPsec VPN, configure settings, and reassign IP addresses for cloud network and servers. \n\n**Source:** `07-disaster-recovery/04-connectivity-ipsec-p2s.md`",
+      "rag_sources": [
+        {
+          "title": "04 Connectivity Ipsec P2S",
+          "file": "07-disaster-recovery/04-connectivity-ipsec-p2s.md",
+          "score": 0.9999983310705503,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#multi-site-ipsec-vpn-concept.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 578,
+      "elapsed_ms": 561,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 4,
+      "eval_overall": 5,
+      "eval_issues": "RAG answer matches ideal answer exactly. Source file is related to IPsec connectivity in disaster recovery, though the filename suggests point-to-site rather than multi-site specifically."
+    },
+    {
+      "qa_id": "qa_519_how_to",
+      "section": "Configuring your GenAI Protection",
+      "question": "How do I enable GenAI Protection in a protection plan in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "To enable GenAI Protection, go to Management > Protection plans in the Cyber Protect console. Select the relevant protection plan and click Edit in the right sidebar, or create a new protection plan. Then enable the GenAI Protection module by clicking the switch next to the module name. Note that GenAI Protection cannot be enabled for a plan that already has the Data Loss Prevention module enabled.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "09-genai-workflows/01-genai-protection-settings.md",
+      "rag_answer": "To enable GenAI Protection, go to Management > Protection plans in the Cyber Protect console. Select the relevant protection plan and click Edit in the right sidebar, or create a new protection plan. Then enable the GenAI Protection module by clicking the switch next to the module name. Note that GenAI Protection cannot be enabled for a plan that already has the Data Loss Prevention module enabled. \n\n**Source:** `09-genai-workflows/01-genai-protection-settings.md`",
+      "rag_sources": [
+        {
+          "title": "01 Genai Protection Settings",
+          "file": "09-genai-workflows/01-genai-protection-settings.md",
+          "score": 1.0,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#generative-ai-protection-settings.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 554,
+      "elapsed_ms": 538,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_363_detail",
+      "section": "Getting Started with Cyber Protection",
+      "question": "Can I use AI-based disk health monitoring or CPOC smart protection plans on Linux or macOS?",
+      "ideal_answer": "No. AI-based HDD and SSD health control, as well as CPOC-based smart protection plan features (Threat feed and Remediation wizard), are supported only on Windows. Neither Linux nor macOS supports these features.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+      "rag_answer": "No. AI-based HDD and SSD health control, as well as CPOC-based smart protection plan features (Threat feed and Remediation wizard), are supported only on Windows. Neither Linux nor macOS supports these features. \n\n**Source:** `01-getting-started/10e-supported-features-data-protection-and-monitoring.md`",
+      "rag_sources": [
+        {
+          "title": "10E Supported Features Data Protection And Monitoring",
+          "file": "01-getting-started/10e-supported-features-data-protection-and-monitoring.md",
+          "score": 0.9999988079071773,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#supported-cyber-protect-features-by-operating-system.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 321,
+      "elapsed_ms": 297,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_510_detail",
+      "section": "Configuring your antivirus and antimalware protection",
+      "question": "Is the local signature-based engine required for Advanced Antimalware on all operating systems in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "No, the requirement varies by OS. For macOS and Linux, the local signature-based engine is required for Antivirus and Antimalware protection to function. For Windows, the Advanced Antimalware feature is available with or without the local signature-based engine.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "08-antivirus-antimalware/04-av-am-protection-settings-part1.md",
+      "rag_answer": "No, the requirement varies by OS. For macOS and Linux, the local signature-based engine is required for Antivirus and Antimalware protection to function. For Windows, the Advanced Antimalware feature is available with or without the local signature-based engine. \n\n**Source:** `08-antivirus-antimalware/04-av-am-protection-settings-part1.md`",
+      "rag_sources": [
+        {
+          "title": "04 Av Am Protection Settings Part1",
+          "file": "08-antivirus-antimalware/04-av-am-protection-settings-part1.md",
+          "score": 1.0,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#antivirus-and-antimalware-protection-settings.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 433,
+      "elapsed_ms": 411,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_445_how_to",
+      "section": "Managing workloads in the Cyber Protect console",
+      "question": "How do I get started with Cyber Scripting to automate tasks on my Windows and macOS machines?",
+      "ideal_answer": "To use Cyber Scripting, you need the RMM (service-based licensing) or Security and RMM (solution-based licensing) license. You must also enable two-factor authentication for your account to access all features like script editing, script runs, and scripting plan creation. Target machines must have a protection agent installed, and only PowerShell and Bash scripting languages are supported.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "05-managing-workloads/13-cyber-scripting-overview.md",
+      "rag_answer": "To use Cyber Scripting, you need the RMM (service-based licensing) or Security and RMM (solution-based licensing) license. You must also enable two-factor authentication for your account to access all features like script editing, script runs, and scripting plan creation. Target machines must have a protection agent installed, and only PowerShell and Bash scripting languages are supported. \n\n**Source:** `05-managing-workloads/13-cyber-scripting-overview.md`",
+      "rag_sources": [
+        {
+          "title": "13 Cyber Scripting Overview",
+          "file": "05-managing-workloads/13-cyber-scripting-overview.md",
+          "score": 0.9999982714656124,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#cyber-scripting.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 489,
+      "elapsed_ms": 473,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "None. RAG answer matches ideal answer exactly and includes a relevant source file."
+    },
+    {
+      "qa_id": "qa_420_how_to",
+      "section": "Understanding your current level of protection",
+      "question": "How do I resolve a failover error in Acronis Cyber Protect Cloud disaster recovery?",
+      "ideal_answer": "To resolve a failover error, select the recovery server and click Edit. Then decrease the CPU/RAM of the recovery server. After making these changes, try to perform the failover again.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "04-monitoring-dashboards/04-alert-types-disaster-recovery.md",
+      "rag_answer": "To resolve a failover error, select the recovery server and click Edit. Then decrease the CPU/RAM of the recovery server. After making these changes, try to perform the failover again. \n\n**Source:** `04-monitoring-dashboards/04-alert-types-disaster-recovery.md`",
+      "rag_sources": [
+        {
+          "title": "04 Alert Types Disaster Recovery",
+          "file": "04-monitoring-dashboards/04-alert-types-disaster-recovery.md",
+          "score": 0.9999982118607793,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#about-cyber-disaster-recovery-cloud.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 292,
+      "elapsed_ms": 278,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 4,
+      "eval_overall": 5,
+      "eval_issues": "RAG answer matches ideal answer exactly. Source file appears related to disaster recovery alerts, though exact source path cannot be verified as perfect match."
+    },
+    {
+      "qa_id": "qa_477_detail",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "What happens to orphaned backup archives in Acronis Cyber Protect Cloud, and what makes a backup archive orphaned?",
+      "ideal_answer": "Archives become orphaned when they are no longer associated with a protection plan, cloud backup plan, or a registered workload. Orphaned backups continue to use storage space and are billed accordingly. Additionally, if backup files are manually edited and become corrupted, they are marked as 'Unknown' in the console and can only be deleted.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "06-backup-and-recovery/30-backup-storage-operations.md",
+      "rag_answer": "Archives become orphaned when they are no longer associated with a protection plan, cloud backup plan, or a registered workload. Orphaned backups continue to use storage space and are billed accordingly. Additionally, if backup files are manually edited and become corrupted, they are marked as 'Unknown' in the console and can only be deleted. \n\n**Source:** `06-backup-and-recovery/30-backup-storage-operations.md`",
+      "rag_sources": [
+        {
+          "title": "30 Backup Storage Operations",
+          "file": "06-backup-and-recovery/30-backup-storage-operations.md",
+          "score": 0.9999978244302752,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-storage-tab.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 470,
+      "elapsed_ms": 459,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_474_detail",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "What are the limitations on downloading files during recovery in the Cyber Protect Console?",
+      "ideal_answer": "When downloading files as a .zip file during recovery, downloading is not available if your selection contains folders or if the total size exceeds 100 MB. Additionally, search is not available for disk-level backups stored in cloud storage, and symbolic links are not supported for recovery paths.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "06-backup-and-recovery/27-file-recovery.md",
+      "rag_answer": "When downloading files as a .zip file during recovery, downloading is not available if your selection contains folders or if the total size exceeds 100 MB. Additionally, search is not available for disk-level backups stored in cloud storage, and symbolic links are not supported for recovery paths. \n\n**Source:** `06-backup-and-recovery/27-file-recovery.md`",
+      "rag_sources": [
+        {
+          "title": "27 File Recovery",
+          "file": "06-backup-and-recovery/27-file-recovery.md",
+          "score": 0.9999977350233653,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#safe-recovery.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 446,
+      "elapsed_ms": 411,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_489_how_to",
+      "section": "Implementing disaster recovery",
+      "question": "How do I set up disaster recovery for my workloads in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "Create a protection plan with both the Disaster Recovery module and the Backup module enabled, setting 'What to backup' to 'Entire machine' or 'System and boot volumes', then apply the plan to your devices. This automatically sets up the default disaster recovery infrastructure. Next, configure connectivity to the cloud site (cloud-only, site-to-site OpenVPN, multi-site IPsec VPN, or point-to-site), then configure and perform a test failover before relying on it for production failover.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "07-disaster-recovery/02-dr-workflow-protection-plan.md",
+      "rag_answer": "Create a protection plan with both the Disaster Recovery module and the Backup module enabled, setting 'What to backup' to 'Entire machine' or 'System and boot volumes', then apply the plan to your devices. This automatically sets up the default disaster recovery infrastructure. Next, configure connectivity to the cloud site (cloud-only, site-to-site OpenVPN, multi-site IPsec VPN, or point-to-site), then configure and perform a test failover before relying on it for production failover. \n\n**Source:** `07-disaster-recovery/02-dr-workflow-protection-plan.md`",
+      "rag_sources": [
+        {
+          "title": "02 Dr Workflow Protection Plan",
+          "file": "07-disaster-recovery/02-dr-workflow-protection-plan.md",
+          "score": 0.9999984502792358,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disaster-recovery.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 592,
+      "elapsed_ms": 573,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_496_detail",
+      "section": "Implementing disaster recovery",
+      "question": "What user role requirements and authentication methods are needed for Point-to-site VPN access in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "Point-to-site VPN uses certificates to authenticate the VPN client, and additionally requires user credentials for authentication. Users must authenticate with their Cyber Protect Cloud credentials and must have either a 'Company Administrator' or 'Cyber Protection' user role. Also, if the OpenVPN configuration is re-generated, the updated configuration must be provided to all users using the Point-to-site connection.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "07-disaster-recovery/09-point-to-site-vpn-network-management.md",
+      "rag_answer": "Point-to-site VPN uses certificates to authenticate the VPN client, and additionally requires user credentials for authentication. Users must authenticate with their Cyber Protect Cloud credentials and must have either a 'Company Administrator' or 'Cyber Protection' user role. Also, if the OpenVPN configuration is re-generated, the updated configuration must be provided to all users using the Point-to-site connection. \n\n**Source:** `07-disaster-recovery/09-point-to-site-vpn-network-management.md`",
+      "rag_sources": [
+        {
+          "title": "09 Point To Site Vpn Network Management",
+          "file": "07-disaster-recovery/09-point-to-site-vpn-network-management.md",
+          "score": 0.9999980628491065,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-network-management.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 495,
+      "elapsed_ms": 463,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_482_how_to",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "How do I back up Microsoft 365 data in Acronis Cyber Protect Cloud, and what are the available solutions?",
+      "ideal_answer": "Acronis offers three backup solutions for Microsoft 365: (1) Microsoft 365 Business Backup, a cloud agent requiring no installation that supports Exchange Online, OneDrive, SharePoint Online, Teams, and OneNote; (2) Direct Backup to M365 Backup Storage, another cloud agent supporting user mailboxes, OneDrive, and SharePoint; and (3) Agent for Office 365, a locally installed Windows agent supporting user and shared mailboxes. Choose based on your needs for backup frequency, retention flexibility, and workload coverage.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "06-backup-and-recovery/35-microsoft-365-protection.md",
+      "rag_answer": "Acronis offers three backup solutions for Microsoft 365: (1) Microsoft 365 Business Backup, a cloud agent requiring no installation that supports Exchange Online, OneDrive, SharePoint Online, Teams, and OneNote; (2) Direct Backup to M365 Backup Storage, another cloud agent supporting user mailboxes, OneDrive, and SharePoint; and (3) Agent for Office 365, a locally installed Windows agent supporting user and shared mailboxes. Choose based on your needs for backup frequency, retention flexibility, and workload coverage. \n\n**Source:** `06-backup-and-recovery/35-microsoft-365-protection.md`",
+      "rag_sources": [
+        {
+          "title": "35 Microsoft 365 Protection",
+          "file": "06-backup-and-recovery/35-microsoft-365-protection.md",
+          "score": 0.9999968409540312,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-microsoft-365-data.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 605,
+      "elapsed_ms": 592,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "RAG answer is virtually identical to the ideal answer, with correct source citation."
+    },
+    {
+      "qa_id": "qa_480_how_to",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "How do I protect an entire Microsoft SharePoint farm using Acronis Cyber Protect Cloud?",
+      "ideal_answer": "To protect an entire SharePoint farm, you need to back up all database servers with application-aware backup and back up all unique front-end servers and application servers with usual disk-level backup. The backups of all servers should be done on the same schedule. If you only need to protect content, you can back up the content databases separately.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "06-backup-and-recovery/33-protecting-microsoft-applications.md",
+      "rag_answer": "To protect an entire SharePoint farm, you need to back up all database servers with application-aware backup and back up all unique front-end servers and application servers with usual disk-level backup. The backups of all servers should be done on the same schedule. If you only need to protect content, you can back up the content databases separately. \n\n**Source:** `06-backup-and-recovery/33-protecting-microsoft-applications.md`",
+      "rag_sources": [
+        {
+          "title": "33 Protecting Microsoft Applications",
+          "file": "06-backup-and-recovery/33-protecting-microsoft-applications.md",
+          "score": 0.9999984502792643,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-microsoft-applications.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 525,
+      "elapsed_ms": 511,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_537_how_to",
+      "section": "Extended Detection and Response (XDR)",
+      "question": "How do I access the XDR graph to investigate an incident in Acronis Cyber Protect Cloud?",
+      "ideal_answer": "To access the XDR graph, go to Protection > Incidents, click on the relevant incident, and then click the XDR tab. Note that the XDR tab is only displayed if XDR is enabled. You can refresh the contents of the XDR graph by clicking the Refresh button.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "10-edr-xdr/14-xdr-graph-and-response-actions.md",
+      "rag_answer": "To access the XDR graph, go to Protection > Incidents, click on the relevant incident, and then click the XDR tab. Note that the XDR tab is only displayed if XDR is enabled. You can refresh the contents of the XDR graph by clicking the Refresh button. \n\n**Source:** `10-edr-xdr/14-xdr-graph-and-response-actions.md`",
+      "rag_sources": [
+        {
+          "title": "14 Xdr Graph And Response Actions",
+          "file": "10-edr-xdr/14-xdr-graph-and-response-actions.md",
+          "score": 0.9999983310700618,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#xdr-apply-response-actions.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 475,
+      "elapsed_ms": 433,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_479_detail",
+      "section": "Managing the backup and recovery of workloads and files",
+      "question": "What are the limitations of email archiving in Acronis Cyber Protect Cloud, and what happens if a required quota is removed after initial configuration?",
+      "ideal_answer": "Email archiving has three key limitations: the maximum email size is 150 MB (due to a Microsoft limitation), draft emails are not included, and only one archiving plan can be applied to one mail server. If either the 'Microsoft 365 email archiving seats' or 'Archiving storage' quota is removed or misconfigured after initial configuration, email archiving will be paused for all plans of the tenant until the quota is restored.",
+      "type": "detail",
+      "difficulty": "medium",
+      "source_file": "06-backup-and-recovery/32-email-archiving.md",
+      "rag_answer": "Email archiving has three key limitations: the maximum email size is 150 MB (due to a Microsoft limitation), draft emails are not included, and only one archiving plan can be applied to one mail server. If either the 'Microsoft 365 email archiving seats' or 'Archiving storage' quota is removed or misconfigured after initial configuration, email archiving will be paused for all plans of the tenant until the quota is restored. \n\n**Source:** `06-backup-and-recovery/32-email-archiving.md`",
+      "rag_sources": [
+        {
+          "title": "32 Email Archiving",
+          "file": "06-backup-and-recovery/32-email-archiving.md",
+          "score": 0.9999981522557917,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#email-archiving.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 598,
+      "elapsed_ms": 585,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    },
+    {
+      "qa_id": "qa_378_how_to",
+      "section": "Installing and deploying Cyber Protection agents",
+      "question": "How do I perform an unattended installation of Acronis protection agents on Windows using the command line?",
+      "ideal_answer": "Download the setup program EXE file, open a command-line interface as administrator, navigate to the EXE file location, and run it with the required parameters. For example: AgentForWindows_web.exe --add-components=agentForWindows,commandLine --install-dir=\"C:\\Program Files\\BackupClient\" --reg-address=https://eu2.company.cloud --reg-token=34F6-8C39-4A5C --quiet. Use spaces to separate parameters and commas without spaces to separate multiple values for a single parameter.",
+      "type": "how_to",
+      "difficulty": "easy",
+      "source_file": "02-installing-deploying-agents/12-installing-agents-windows-cli.md",
+      "rag_answer": "Download the setup program EXE file, open a command-line interface as administrator, navigate to the EXE file location, and run it with the required parameters. For example: AgentForWindows_web.exe --add-components=agentForWindows,commandLine --install-dir=\"C:\\Program Files\\BackupClient\" --reg-address=https://eu2.company.cloud --reg-token=34F6-8C39-4A5C --quiet. Use spaces to separate parameters and commas without spaces to separate multiple values for a single parameter. \n\n**Source:** `02-installing-deploying-agents/12-installing-agents-windows-cli.md`",
+      "rag_sources": [
+        {
+          "title": "12 Installing Agents Windows Cli",
+          "file": "02-installing-deploying-agents/12-installing-agents-windows-cli.md",
+          "score": 0.9999977350235056,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#unattended-installation-or-uninstallation-in-windows.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "source_type": "qa_match",
+      "wall_ms": 480,
+      "elapsed_ms": 460,
+      "error": null,
+      "eval_correctness": 5,
+      "eval_completeness": 5,
+      "eval_relevance": 5,
+      "eval_hallucination": 5,
+      "eval_source_quality": 5,
+      "eval_overall": 5,
+      "eval_issues": "none"
+    }
+  ]
+}

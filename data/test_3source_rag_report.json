@@ -1,0 +1,276 @@
+{
+  "timestamp": "2026-03-20T20:16:04.268358",
+  "api_url": "http://localhost:8080/api/chat/stream",
+  "total": 5,
+  "passed": 5,
+  "results": [
+    {
+      "id": "T1_qa_match",
+      "query": "How to activate an Acronis account?",
+      "description": "Should hit Q&A match tier (high-confidence pre-verified answer)",
+      "source_type": "qa_match",
+      "wall_ms": 442,
+      "elapsed_ms": 436,
+      "answer_preview": "When an administrator creates your account, you receive an email containing your login (username) and an 'Activate accou...",
+      "full_answer": "When an administrator creates your account, you receive an email containing your login (username) and an 'Activate account' button. Click the button and set a password that is at least nine characters long. If two-factor authentication has been enabled by your administrator, you will also be prompted to set it up during activation. \n\n**Source:** `01-getting-started/01-activating-account.md`",
+      "sources": [
+        {
+          "title": "01 Activating Account",
+          "file": "01-getting-started/01-activating-account.md",
+          "score": 0.8799854969961106,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#activating-account.html",
+          "source_type": "qa_match"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "qa_match",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=393"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['activat', 'account'] of ['activat', 'account']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=qa_match, got=qa_match"
+        },
+        "min_score": {
+          "pass": true,
+          "detail": "top_score=0.880, threshold=0.75"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "442ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T2_local_doc",
+      "query": "What ports and IP addresses should I allow for Acronis Cyber Protect Cloud communication?",
+      "description": "Should hit local_doc tier (PDF documentation chunks)",
+      "source_type": "local_doc",
+      "wall_ms": 13846,
+      "elapsed_ms": 13844,
+      "answer_preview": "The provided documentation context **does not cover** the specific ports and IP addresses required for Acronis Cyber Pro...",
+      "full_answer": "The provided documentation context **does not cover** the specific ports and IP addresses required for Acronis Cyber Protect Cloud communication (firewall/network requirements).\n\nThe documents I have access to only cover:\n- **MDR service enablement** (mentions IP ranges for MDR vendor are added automatically)\n- **Unmanaged workload connections** via IP (RDP/Apple Screen Sharing for remote access)\n- **Mobile device protection**\n\nFor a comprehensive list of required ports and IP addresses (e.g., for agent-to-cloud communication, backup traffic, management console access), you should consult the **\"Firewall settings\"** or **\"Network requirements\"** section of the Acronis Cyber Protect Cloud documentation, which is not included in my current context.\n\n> 💡 **Tip:** Search the Acronis documentation portal for **\"Ports and addresses used by Acronis Cyber Protect Cloud\"** — there is typically a dedicated article listing all required endpoints, ports (443, 8443, etc.), and domain allowlists.\n\n**Source:** Not available in provided context ",
+      "sources": [
+        {
+          "title": "02 Enabling Mdr Service",
+          "file": "11-mdr/02-enabling-mdr-service.md",
+          "score": 0.74186105,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html",
+          "source_type": "local_doc"
+        },
+        {
+          "title": "connecting-to-unmanaged-workloads.html",
+          "file": "connecting-to-unmanaged-workloads.html",
+          "score": 0.5953161,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#connecting-to-unmanaged-workloads.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "34 Protecting Mobile Devices",
+          "file": "06-backup-and-recovery/34-protecting-mobile-devices.md",
+          "score": 0.47482905,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mobile-devices.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1045"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['port'] of ['port']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=local_doc, got=local_doc"
+        },
+        "file_pattern": {
+          "pass": true,
+          "detail": "files=['11-mdr/02-enabling-mdr-service.md', 'connecting-to-unmanaged-workloads.html', '06-backup-and-recovery/34-protecting-mobile-devices.md']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "13846ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T3_web_doc",
+      "query": "How to configure MDR critical endpoints in Acronis?",
+      "description": "Should hit web_doc tier (KB web pages — MDR content is web-only)",
+      "source_type": "web_doc",
+      "wall_ms": 12106,
+      "elapsed_ms": 12103,
+      "answer_preview": "## Configuring MDR Critical Endpoints  **Critical endpoints** are machines that require **approval before any response a...",
+      "full_answer": "## Configuring MDR Critical Endpoints\n\n**Critical endpoints** are machines that require **approval before any response actions** (including isolation) are executed on them. The MDR team will contact escalation contacts in order before taking action.\n\n### Steps to configure:\n\n1. In the **Cyber Protect Cloud console**, verify you are at the **All customers** level\n2. Navigate to **Devices → Machines with agents**\n3. Locate the **Critical Endpoints** group (created automatically when MDR is enabled)\n4. Add the desired machines to this group\n\n### Key behavior:\n- Before any response action on critical endpoints, the MDR team will **contact the primary escalation contact** for approval (including a phone call for critical incidents)\n- If the primary contact is unreachable, the team contacts the **secondary contact**, and so on\n- **No response actions** will be executed on critical endpoints until an escalation contact approves\n\n### Prerequisites:\n- **MDR service** must be enabled (Partner administrator level only)\n- **Acronis Cyber Protection agent** installed on all endpoints\n- All endpoints must be **actively reporting telemetry**\n- Licensing: **Security and RMM** or **Ultimate Protection** solution with MDR add-on (solution-based), or **Protection service** with Detection and Response offering (service-based)\n\n**Source:** `a-mdr-configure-critical-endpoints.html`, `a-mdr-enabling.html` ",
+      "sources": [
+        {
+          "title": "a-mdr-configure-critical-endpoints.html",
+          "file": "a-mdr-configure-critical-endpoints.html",
+          "score": 0.99939287,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-configure-critical-endpoints.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "a-mdr-enabling.html",
+          "file": "a-mdr-enabling.html",
+          "score": 0.99549675,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "02 Enabling Mdr Service",
+          "file": "11-mdr/02-enabling-mdr-service.md",
+          "score": 0.9932025,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=1406"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['mdr'] of ['mdr']"
+        },
+        "source_type": {
+          "pass": true,
+          "detail": "expected=web_doc, got=web_doc"
+        },
+        "has_doc_url": {
+          "pass": true,
+          "detail": "urls=['https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-configure-critical-endpoints.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html', 'https://www.acronis.com/en/support/documentation/CyberProtectionService/#a-mdr-enabling.html']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "12106ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T4_mixed",
+      "query": "How does Acronis backup encryption work?",
+      "description": "Mixed scenario — may hit any tier, validates general RAG pipeline",
+      "source_type": "web_doc",
+      "wall_ms": 8775,
+      "elapsed_ms": 8772,
+      "answer_preview": "  The provided documentation context does **not** cover backup encryption. The context only contains information about *...",
+      "full_answer": "\n\nThe provided documentation context does **not** cover backup encryption. The context only contains information about **protecting mobile devices** (supported devices, what can be backed up, and basic mobile backup behavior).\n\nI cannot provide details on how Acronis backup encryption works without the relevant documentation. To get accurate information, please refer to the **Encryption** or **Backup Options** sections of the Acronis Cyber Protect Cloud documentation.\n\n**Source:** `protecting-mobile-devices.html`, `06-backup-and-recovery/34-protecting-mobile-devices.md` ",
+      "sources": [
+        {
+          "title": "protecting-mobile-devices.html",
+          "file": "protecting-mobile-devices.html",
+          "score": 0.3407045,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mobile-devices.html",
+          "source_type": "web_doc"
+        },
+        {
+          "title": "34 Protecting Mobile Devices",
+          "file": "06-backup-and-recovery/34-protecting-mobile-devices.md",
+          "score": 0.21255878,
+          "doc_url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#protecting-mobile-devices.html",
+          "source_type": "local_doc"
+        }
+      ],
+      "steps": [
+        "embedding",
+        "searching",
+        "reranking",
+        "sources",
+        "generating"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "has_answer": {
+          "pass": true,
+          "detail": "len=577"
+        },
+        "keywords": {
+          "pass": true,
+          "detail": "found ['encrypt', 'backup'] of ['encrypt', 'backup']"
+        },
+        "response_time": {
+          "pass": true,
+          "detail": "8775ms"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    },
+    {
+      "id": "T5_decline",
+      "query": "What is the best Italian restaurant in Berlin?",
+      "description": "Off-topic query — should be declined or answered with low confidence",
+      "source_type": null,
+      "wall_ms": 75,
+      "elapsed_ms": 73,
+      "answer_preview": "I don't have documentation about that topic. Please check the Acronis Knowledge Base at https://kb.acronis.com or contac...",
+      "full_answer": "I don't have documentation about that topic. Please check the Acronis Knowledge Base at https://kb.acronis.com or contact Acronis Support.",
+      "sources": [],
+      "steps": [
+        "embedding",
+        "searching"
+      ],
+      "checks": {
+        "no_error": {
+          "pass": true,
+          "detail": "OK"
+        },
+        "declined": {
+          "pass": true,
+          "detail": "sources=0, len=138"
+        }
+      },
+      "all_pass": true,
+      "error": null
+    }
+  ]
+}

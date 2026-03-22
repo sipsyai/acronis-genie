@@ -1,0 +1,491 @@
+# US5 Datacenter Issue
+
+**Forum:** Acronis Cyber Protect Cloud Forum
+**URL:** https://forum.acronis.com/forum/acronis-cyber-protect-cloud-forum/us5-datacenter-issue
+
+## Original Post
+**Author:** Unknown
+
+US5 Datacenter Issue
+
+        
+  
+
+
+
+    
+  
+
+
+  
+              
+          
+        Thread solved      
+          
+      
+        View Solution      
+    
+  
+      
+
+
+
+
+
+
+    
+        
+
+            
+                
+                    
+    
+        
+            
+                
+              
+
+
+
+      
+            
+        
+        
+            
+                                    Josh Hansard
+                            
+
+                            
+                    
+                        Beginner
+                    
+                
+            
+                        
+                
+                    Posts: 2
+                
+            
+            
+                
+                    Comments: 2
+                
+            
+                                                        
+    
+    
+        
+    
+
+
+                
+                
+                    
+                        
+            We are having issues with US5 Datacenter. Backups are either stuck or running extremely slowly. I am almost a week behind on backups due to this. I have tickets open with my vendor and they are working with Acronis, but I wanted to this out there if anyone else is seeing issues on this datacenter. Backups that are not extremely small incrementals are taking 100s of hours in some cases.
+ 
+It seems to be affected recoveries as well.
+
+      
+                                                    
+                                            
+                
+            
+                            
+                    
+                        
+                            
+                              Fri, 10/29/2021 - 17:56
+
+                                                          
+                                                            
+                                                                                
+                    
+                
+                        
+            
+                
+  
+  
+
+
+
+    
+    
+
+
+  
+  0 Users found this helpful
+
+
+
+                
+  
+  
+
+    
+    
+
+
+
+
+
+
+
+            
+                    
+    
+
+            
+  
+  
+
+    
+        
+        
+            
+                
+    
+        
+            
+                
+              
+
+
+
+      
+            
+        
+        
+            
+                                    Ekaterina
+                            
+
+                            
+                    
+                        Forum Moderator
+                    
+                
+            
+                        
+                
+                    Posts: 239
+                
+            
+            
+                
+                    Comments: 7073
+                
+            
+                                                        
+    
+    
+        
+    
+
+
+                
+                    
+                
+            
+            
+                
+                    
+                
+                
+                    
+                        
+                    
+                    
+            Dear Josh,
+sorry to know about the issue you are facing with the Cloud performance! Here we have a special tool to test upload and download speed to/from a cloud storage location which might help with the identifying the root cause of the slow performance https://kb.acronis.com/content/67228
+Please let us know the results of your investigation with the vendor. 
+
+      
+                
+                
+                    
+                                                    Fri, 10/29/2021 - 23:00
+                                                                            
+                                
+                            
+                                            
+                                            
+    
+                    
+                Best regards,
+Ekaterina Surkova | Forum Moderator
+
+Information provided AS-IS with no warranty of any kind.
+
+To contact support, please follow http://www.acronis.com/en-us/support
+
+            
+                    
+                                                                
+                            
+  
+
+
+
+
+
+
+                        
+                                                        
+            
+        
+    
+
+
+
+    
+        
+        
+            
+                
+    
+        
+            
+                
+              
+
+
+
+      
+            
+        
+        
+            
+                                    Josh Hansard
+                            
+
+                            
+                    
+                        Beginner
+                    
+                
+            
+                        
+                
+                    Posts: 2
+                
+            
+            
+                
+                    Comments: 2
+                
+            
+                                                        
+    
+    
+        
+    
+
+
+                
+                    
+                
+            
+            
+                
+                    
+                
+                
+                    
+                        
+                    
+                    
+            Yes I was aware of the speedtest archive to io tool. It failed due to the massive loss of ingress/egress speed on US5.
+ 
+The issue has been resolved internally within Acronis. I have not been provided an actual solution, just that it is fixed. And while the speeds are not as high as we are used to on other providers -- we're up and running. Thanks!
+
+      
+                
+                
+                    
+                                                    Tue, 11/09/2021 - 14:06
+                                                                            
+                                
+                            
+                                            
+                                                                
+                            
+  
+
+    
+    
+
+
+
+
+
+
+
+
+                        
+                                                        
+            
+        
+    
+
+
+
+    
+        
+        
+            
+                
+    
+        
+            
+                
+              
+
+
+
+      
+            
+        
+        
+            
+                                    George_Fusioned
+                            
+
+                            
+                    
+                        Regular Poster
+                    
+                
+            
+                        
+                
+                    Posts: 13
+                
+            
+            
+                
+                    Comments: 96
+                
+            
+                                                    
+            
+              
+
+
+
+        
+
+                                
+    
+    
+        
+    
+
+
+                
+                    
+                
+            
+            
+                
+                    
+                
+                
+                    
+                        
+                    
+                    
+            Hi Josh where are your servers located? I'm getting great speeds from servers based in LA to US5, but servers in NYC that backup to US5 are really struggling. 
+
+      
+                
+                
+                    
+                                                    Fri, 11/12/2021 - 10:58
+                                                                            
+                                
+                            
+                                            
+                                                                
+                            
+  
+
+
+
+
+
+
+                        
+                                                        
+            
+        
+    
+
+
+
+    
+        
+        
+            
+                
+    
+        
+            
+                
+              
+
+
+
+      
+            
+        
+        
+            
+                                    Josh Hansard
+                            
+
+                            
+                    
+                        Beginner
+                    
+                
+            
+                        
+                
+                    Posts: 2
+                
+            
+            
+                
+                    Comments: 2
+                
+            
+                                                        
+    
+    
+        
+    
+
+
+                
+                    
+                
+            
+            
+                
+                    
+                
+                
+                    
+                        
+                    
+                    
+            Located in and around Tennessee.  The issue seems to be resolved now!
+I'd like to see better speed BUT back a week ago I couldn't get an incremental from a file server to the cloud on US5 if my life depended on it.
+
+      
+                
+                
+                    
+                                                    Fri, 11/12/2021 - 13:14

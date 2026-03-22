@@ -1,0 +1,22 @@
+# Activating Startup Recovery Manager
+
+Managing the backup and recovery of workloads and files > Creating bootable media to recover operating systems > Startup Recovery Manager > Activating Startup Recovery Manager
+Activating Startup Recovery Manager
+
+To enable the boot-time prompt Press F11 for Acronis Startup Recovery Manager (or add the Startup Recovery Manager item to GRUB menu), you must activate Startup Recovery Manager.
+
+Backup operations that create One-click recovery backups will fail if Startup Recovery Manager is not activated.
+
+To activate Startup Recovery Manager
+
+On a machine with an agent
+On a machine without an agent
+In the Cyber Protect console, select the machine on which you want to activate Startup Recovery Manager.
+Click Details.
+Enable the Startup Recovery Manager switch.
+
+
+
+Last build date: Tuesday, March 10, 2026
+
+User Guide for Cyber Protect Cloud Console26.02.

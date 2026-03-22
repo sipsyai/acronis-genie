@@ -1,0 +1,380 @@
+[
+  {
+    "slug": "en-us-getting-started-with-acronis-developer-network",
+    "url": "https://developer.acronis.com/en-us/getting-started-with-acronis-developer-network",
+    "title": "Integrate with Acronis",
+    "is_subpage": false
+  },
+  {
+    "slug": "login",
+    "url": "https://partners.acronis.com/login",
+    "title": "Partner Portal",
+    "is_subpage": false
+  },
+  {
+    "slug": "support",
+    "url": "https://www.acronis.com/support",
+    "title": "Support",
+    "is_subpage": false
+  },
+  {
+    "slug": "resource-center",
+    "url": "https://www.acronis.com/resource-center",
+    "title": "Resources",
+    "is_subpage": false
+  },
+  {
+    "slug": "products-cloud-cyber-protect",
+    "url": "https://www.acronis.com/products/cloud/cyber-protect",
+    "title": "Acronis Cloud Platform",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-products-cloud-trial",
+    "url": "https://www.acronis.com/en-us/products/cloud/trial",
+    "title": "Free trial",
+    "is_subpage": false
+  },
+  {
+    "slug": "platform-integrations-contact-us-html",
+    "url": "https://promo.acronis.com/Platform-Integrations-Contact-Us.html",
+    "title": "Request Integration",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security",
+    "url": "https://solutions.acronis.com/en-us/category/security",
+    "title": "(all)",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-siem",
+    "url": "https://solutions.acronis.com/en-us/category/security/siem",
+    "title": "SOAR & SIEM",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-collaboration-tools",
+    "url": "https://solutions.acronis.com/en-us/category/security/collaboration-tools",
+    "title": "Collaboration",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-security-services",
+    "url": "https://solutions.acronis.com/en-us/category/security/security-services",
+    "title": "Compliance assessment",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-cyber-insurance",
+    "url": "https://solutions.acronis.com/en-us/category/security/cyber-insurance",
+    "title": "Cyber Insurance",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-email-security",
+    "url": "https://solutions.acronis.com/en-us/category/security/email-security",
+    "title": "Email Security",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-endpoint-security",
+    "url": "https://solutions.acronis.com/en-us/category/security/endpoint-security",
+    "title": "Endpoint Security",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-xdr",
+    "url": "https://solutions.acronis.com/en-us/category/security/xdr",
+    "title": "EDR & XDR",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-dark-web-monitoring",
+    "url": "https://solutions.acronis.com/en-us/category/security/dark-web-monitoring",
+    "title": "Dark Web Monitoring",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-encryption",
+    "url": "https://solutions.acronis.com/en-us/category/security/encryption",
+    "title": "Encryption & Data Loss Prevention",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-mdr-soc",
+    "url": "https://solutions.acronis.com/en-us/category/security/mdr-soc",
+    "title": "MDR, SOC & NOC",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-sase-ztna",
+    "url": "https://solutions.acronis.com/en-us/category/security/sase-ztna",
+    "title": "SASE & ZTNA",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-security-awareness-training",
+    "url": "https://solutions.acronis.com/en-us/category/security/security-awareness-training",
+    "title": "Security Awareness Training",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-sso-idp",
+    "url": "https://solutions.acronis.com/en-us/category/security/sso-idp",
+    "title": "SSO & IdP",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-threat-intelligence",
+    "url": "https://solutions.acronis.com/en-us/category/security/threat-intelligence",
+    "title": "Threat Intelligence & Threat Feeds",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-security-web-app-security",
+    "url": "https://solutions.acronis.com/en-us/category/security/web-app-security",
+    "title": "Web & App Security",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-data-protection",
+    "url": "https://solutions.acronis.com/en-us/category/data-protection",
+    "title": "(all)",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-data-protection-workloads",
+    "url": "https://solutions.acronis.com/en-us/category/data-protection/workloads",
+    "title": "Archiving",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-data-protection-data-destination",
+    "url": "https://solutions.acronis.com/en-us/category/data-protection/data-destination",
+    "title": "Cloud Storage",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-data-protection-workload",
+    "url": "https://solutions.acronis.com/en-us/category/data-protection/workload",
+    "title": "Workload",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-data-protection-backup",
+    "url": "https://solutions.acronis.com/en-us/category/data-protection/backup",
+    "title": "Backup",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-data-protection-disaster-recovery",
+    "url": "https://solutions.acronis.com/en-us/category/data-protection/disaster-recovery",
+    "title": "Disaster Recovery",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management",
+    "url": "https://solutions.acronis.com/en-us/category/management",
+    "title": "(all)",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-asset-management",
+    "url": "https://solutions.acronis.com/en-us/category/management/asset-management",
+    "title": "Asset Management",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-remote-access",
+    "url": "https://solutions.acronis.com/en-us/category/management/remote-access",
+    "title": "Remote Desktop and Assistance",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-rmm",
+    "url": "https://solutions.acronis.com/en-us/category/management/rmm",
+    "title": "RMM, MDM, EMM and Endpoint Management",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-password-management",
+    "url": "https://solutions.acronis.com/en-us/category/management/password-management",
+    "title": "Password management",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-hosting-panels",
+    "url": "https://solutions.acronis.com/en-us/category/management/hosting-panels",
+    "title": "Hosting Panels",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-observability",
+    "url": "https://solutions.acronis.com/en-us/category/management/observability",
+    "title": "Observability",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-cloud-management",
+    "url": "https://solutions.acronis.com/en-us/category/management/cloud-management",
+    "title": "Cloud Management",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-management-saas-management",
+    "url": "https://solutions.acronis.com/en-us/category/management/saas-management",
+    "title": "SaaS Management",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation",
+    "url": "https://solutions.acronis.com/en-us/category/automation",
+    "title": "(all)",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-service-automation",
+    "url": "https://solutions.acronis.com/en-us/category/automation/service-automation",
+    "title": "Cloud Commerce and Marketplaces",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-documentation",
+    "url": "https://solutions.acronis.com/en-us/category/automation/documentation",
+    "title": "Documentation",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-distributor-integrations",
+    "url": "https://solutions.acronis.com/en-us/category/automation/distributor-integrations",
+    "title": "Distributor integrations",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-payment",
+    "url": "https://solutions.acronis.com/en-us/category/automation/payment",
+    "title": "Payment Processing",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-alerting-notifications",
+    "url": "https://solutions.acronis.com/en-us/category/automation/alerting-notifications",
+    "title": "Alerting and Notifications",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-business-intelligence",
+    "url": "https://solutions.acronis.com/en-us/category/automation/business-intelligence",
+    "title": "Reporting",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-workflow-automation",
+    "url": "https://solutions.acronis.com/en-us/category/automation/workflow-automation",
+    "title": "Workflow Automation",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-category-automation-billing-reconciliation",
+    "url": "https://solutions.acronis.com/en-us/category/automation/billing-reconciliation",
+    "title": "Billing Reconciliation",
+    "is_subpage": false
+  },
+  {
+    "slug": "seagate-lyve-services-integration-with-acronis-cyber-protect-cloud",
+    "url": "https://solutions.acronis.com/en-us/integrations/seagate-lyve-services-integration-with-acronis-cyber-protect-cloud",
+    "title": "FeaturedSeagate Lyve Services Integration with Acronis Cyber Protect CloudSeagate Lyve is an edge-to-cloud data platform that combines S3-compatible clou\u2026",
+    "is_subpage": false
+  },
+  {
+    "slug": "halopsa",
+    "url": "https://solutions.acronis.com/en-us/integrations/halopsa",
+    "title": "FeaturedHaloPSAAutomate your business processes: tenant and product provisioning, ticket resolution, and usage reporting and billing.",
+    "is_subpage": false
+  },
+  {
+    "slug": "acronis-siem-connector",
+    "url": "https://solutions.acronis.com/en-us/integrations/acronis-siem-connector",
+    "title": "FeaturedAcronis SIEM ConnectorThe Acronis SIEM Connector 2.0 is integrated directly into protection plans, it uses the Acronis agent as the data writer - eliminating complex syslog se\u2026",
+    "is_subpage": false
+  },
+  {
+    "slug": "microsoft-entra-id",
+    "url": "https://solutions.acronis.com/en-us/integrations/microsoft-entra-id",
+    "title": "FeaturedMicrosoft Entra IDMicrosoft Entra ID simplifies access control and enhances security by allowing employees to use their universal company credentials to access external r\u2026",
+    "is_subpage": false
+  },
+  {
+    "slug": "complianceaide",
+    "url": "https://solutions.acronis.com/en-us/integrations/complianceaide",
+    "title": "FeaturedComplianceAideComplianceAide empowers Acronis partners and MSPs to offer premium cybersecurity compliance services without additional overhead. Our AI-Ag\u2026",
+    "is_subpage": false
+  },
+  {
+    "slug": "cyfax-external-attack-surface-management",
+    "url": "https://solutions.acronis.com/en-us/integrations/cyfax-external-attack-surface-management",
+    "title": "FeaturedCYFAX\u00ae External Attack Surface ManagementEnterprise-grade EASM solution for MSPs. Cyfax covers 20,000+ malicious forums with AI deception technology while co\u2026",
+    "is_subpage": false
+  },
+  {
+    "slug": "microsoft-intune",
+    "url": "https://solutions.acronis.com/en-us/integrations/microsoft-intune",
+    "title": "FeaturedMicrosoft IntuneDeliver all-in-one cyber protection to Microsoft Intune managed workstations easily across your customers.",
+    "is_subpage": false
+  },
+  {
+    "slug": "wazuh",
+    "url": "https://solutions.acronis.com/en-us/integrations/wazuh",
+    "title": "NewWazuhWazuh integration with Acronis helps MSPs deliver proactive security services, correlate security telemetry with protection data, and support c\u2026",
+    "is_subpage": false
+  },
+  {
+    "slug": "todyl",
+    "url": "https://solutions.acronis.com/en-us/integrations/todyl",
+    "title": "NewTodylTodyl empowers businesses with a cloud-first, single agent platform that delivers enterprise-leading security and networking capabilities through a highly cu\u2026",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-blog-posts-security-integration-takes-the-lead-top-msp-integration-trends-of-2025",
+    "url": "https://www.acronis.com/en/blog/posts/security-integration-takes-the-lead-top-msp-integration-trends-of-2025",
+    "title": "Read now",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-blog-posts-five-takeaways-from-msp-global-2025-for-msps-building-their-stack-with-acronis-integrations",
+    "url": "https://www.acronis.com/en/blog/posts/five-takeaways-from-msp-global-2025-for-msps-building-their-stack-with-acronis-integrations",
+    "title": "Read now",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-pr-2025-acronis-ecosystem-reaches-300-technology-integrations-drives-new-opportunities-for-msps-and-isvs",
+    "url": "https://www.acronis.com/en-us/pr/2025/acronis-ecosystem-reaches-300-technology-integrations-drives-new-opportunities-for-msps-and-isvs",
+    "title": "Read latest news",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-blog-categories-developers",
+    "url": "https://www.acronis.com/en-us/blog/categories/developers",
+    "title": "blog",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-legal",
+    "url": "https://www.acronis.com/en-us/legal",
+    "title": "Legal information",
+    "is_subpage": false
+  },
+  {
+    "slug": "en-us-company-privacy",
+    "url": "https://www.acronis.com/en-us/company/privacy",
+    "title": "Privacy policy",
+    "is_subpage": false
+  },
+  {
+    "slug": "compliance-cookie-notice-html",
+    "url": "https://www.acronis.com/compliance/cookie-notice.html",
+    "title": "More information",
+    "is_subpage": false
+  }
+]
