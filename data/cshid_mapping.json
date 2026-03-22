@@ -5918,5 +5918,270 @@
     "title": "Recovery with restart",
     "page": "recovery-with-restart.html",
     "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-with-restart.html"
+  },
+  {
+    "title": "Aa Managing Inventory",
+    "page": "aa-managing-inventory.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#aa-managing-inventory.html"
+  },
+  {
+    "title": "Aa Projects",
+    "page": "aa-projects.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#aa-projects.html"
+  },
+  {
+    "title": "Account Local Cloud Consoles",
+    "page": "account-local-cloud-consoles.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#account-local-cloud-consoles.html"
+  },
+  {
+    "title": "Alert Types",
+    "page": "alert-types.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#alert-types.html"
+  },
+  {
+    "title": "Backup Validation 36386",
+    "page": "backup-validation-36386.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#backup-validation-36386.html"
+  },
+  {
+    "title": "Editions And Licensing",
+    "page": "editions-and-licensing.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#editions-and-licensing.html"
+  },
+  {
+    "title": "Management Server For On Premises Deployment Only",
+    "page": "management-server-for-on-premises-deployment-only.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#management-server-for-on-premises-deployment-only.html"
+  },
+  {
+    "title": "Managing Licenses",
+    "page": "managing-licenses.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#managing-licenses.html"
+  },
+  {
+    "title": "Monitoring And Reporting",
+    "page": "monitoring-and-reporting.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#monitoring-and-reporting.html"
+  },
+  {
+    "title": "Moving Tenant To Another Tenant",
+    "page": "moving-tenant-to-another-tenant.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#moving-tenant-to-another-tenant.html"
+  },
+  {
+    "title": "Notarized Files Intro",
+    "page": "notarized-files-intro.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarized-files-intro.html"
+  },
+  {
+    "title": "Working With The Centralized Dashboard",
+    "page": "working-with-the-centralized-dashboard.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#working-with-the-centralized-dashboard.html"
+  },
+  {
+    "title": "Adding Microsoft Office 365 Organization 42082",
+    "page": "adding-microsoft-office-365-organization-42082.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#adding-microsoft-office-365-organization-42082.html"
+  },
+  {
+    "title": "Advanced Dlp",
+    "page": "advanced-dlp.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-dlp.html"
+  },
+  {
+    "title": "Advanced Protection",
+    "page": "advanced-protection.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#advanced-protection.html"
+  },
+  {
+    "title": "Availability Recommendations Ad Dc",
+    "page": "availability-recommendations-ad-dc.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#availability-recommendations-ad-dc.html"
+  },
+  {
+    "title": "Before You Start Agent Synology",
+    "page": "before-you-start-agent-synology.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#before-you-start-agent-synology.html"
+  },
+  {
+    "title": "Before You Start Azure",
+    "page": "before-you-start-azure.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#before-you-start-azure.html"
+  },
+  {
+    "title": "Before You Start Installation",
+    "page": "before-you-start-installation.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#before-you-start-installation.html"
+  },
+  {
+    "title": "Before You Start Nutanix",
+    "page": "before-you-start-nutanix.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#before-you-start-nutanix.html"
+  },
+  {
+    "title": "Before You Start Ovirt",
+    "page": "before-you-start-ovirt.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#before-you-start-ovirt.html"
+  },
+  {
+    "title": "Before You Start Scale",
+    "page": "before-you-start-scale.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#before-you-start-scale.html"
+  },
+  {
+    "title": "Before You Start Virtuozzo",
+    "page": "before-you-start-virtuozzo.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#before-you-start-virtuozzo.html"
+  },
+  {
+    "title": "Configuring Virtual Appliance Ovirt",
+    "page": "configuring-virtual-appliance-ovirt.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-virtual-appliance-ovirt.html"
+  },
+  {
+    "title": "Configuring Virtual Appliance Scale",
+    "page": "configuring-virtual-appliance-scale.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-virtual-appliance-scale.html"
+  },
+  {
+    "title": "Configuring Virtual Appliance Virtuozzo",
+    "page": "configuring-virtual-appliance-virtuozzo.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#configuring-virtual-appliance-virtuozzo.html"
+  },
+  {
+    "title": "Deploying Qcow2 Template Nutanix",
+    "page": "deploying-qcow2-template-nutanix.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-qcow2-template-nutanix.html"
+  },
+  {
+    "title": "Deploying Qcow2 Template Scale",
+    "page": "deploying-qcow2-template-scale.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#deploying-qcow2-template-scale.html"
+  },
+  {
+    "title": "Disabling Automated Test Failover",
+    "page": "disabling-automated-test-failover.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#disabling-automated-test-failover.html"
+  },
+  {
+    "title": "Dr To Azure Viewing Automated Test Failover Status",
+    "page": "dr-to-azure-viewing-automated-test-failover-status.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#dr-to-azure-viewing-automated-test-failover-status.html"
+  },
+  {
+    "title": "Email Archiving Retention Rules",
+    "page": "email-archiving-retention-rules.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#email-archiving-retention-rules.html"
+  },
+  {
+    "title": "Error Handling Recovery",
+    "page": "error-handling-recovery.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#error-handling-recovery.html"
+  },
+  {
+    "title": "Initial Connectivity Configuration",
+    "page": "initial-connectivity-configuration.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#initial-connectivity-configuration.html"
+  },
+  {
+    "title": "Mount Points 36348",
+    "page": "mount-points-36348.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#mount-points-36348.html"
+  },
+  {
+    "title": "My Inbox Community Center",
+    "page": "my-inbox-community-center.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#my-inbox-community-center.html"
+  },
+  {
+    "title": "Networking Concepts",
+    "page": "networking-concepts.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#networking-concepts.html"
+  },
+  {
+    "title": "Notarization Of Backups",
+    "page": "notarization-of-backups.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#notarization-of-backups.html"
+  },
+  {
+    "title": "Pre Post Commands 46972",
+    "page": "pre-post-commands-46972.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#pre-post-commands-46972.html"
+  },
+  {
+    "title": "Recovering Exchange Mailboxes",
+    "page": "recovering-exchange-mailboxes.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-exchange-mailboxes.html"
+  },
+  {
+    "title": "Recovering Mailbox Items 41960",
+    "page": "recovering-mailbox-items-41960.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-mailbox-items-41960.html"
+  },
+  {
+    "title": "Recovering Mailbox Items 43088",
+    "page": "recovering-mailbox-items-43088.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-mailbox-items-43088.html"
+  },
+  {
+    "title": "Recovering Mailbox Items 47005",
+    "page": "recovering-mailbox-items-47005.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-mailbox-items-47005.html"
+  },
+  {
+    "title": "Recovering Mailboxes 41959",
+    "page": "recovering-mailboxes-41959.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-mailboxes-41959.html"
+  },
+  {
+    "title": "Recovering Mailboxes 43087",
+    "page": "recovering-mailboxes-43087.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-mailboxes-43087.html"
+  },
+  {
+    "title": "Recovering Mailboxes And Mailbox Items 41958",
+    "page": "recovering-mailboxes-and-mailbox-items-41958.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-mailboxes-and-mailbox-items-41958.html"
+  },
+  {
+    "title": "Recovering Mailboxes And Mailbox Items 43080",
+    "page": "recovering-mailboxes-and-mailbox-items-43080.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovering-mailboxes-and-mailbox-items-43080.html"
+  },
+  {
+    "title": "Recovery Server Lifecycle",
+    "page": "recovery-server-lifecycle.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#recovery-server-lifecycle.html"
+  },
+  {
+    "title": "Registering Workloads Registration Token Cli",
+    "page": "registering-workloads-registration-token-cli.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#registering-workloads-registration-token-cli.html"
+  },
+  {
+    "title": "Registering Workloads User Credentials Cli",
+    "page": "registering-workloads-user-credentials-cli.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#registering-workloads-user-credentials-cli.html"
+  },
+  {
+    "title": "Required User Rights M365 Backup",
+    "page": "required-user-rights-m365-backup.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#required-user-rights-m365-backup.html"
+  },
+  {
+    "title": "Setting Up Disaster Recovery Functionality",
+    "page": "setting-up-disaster-recovery-functionality.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#setting-up-disaster-recovery-functionality.html"
+  },
+  {
+    "title": "Verifying File Authenticity With Notary Service 43093",
+    "page": "verifying-file-authenticity-with-notary-service-43093.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#verifying-file-authenticity-with-notary-service-43093.html"
+  },
+  {
+    "title": "Windows Event Log 36360",
+    "page": "windows-event-log-36360.html",
+    "url": "https://www.acronis.com/en/support/documentation/CyberProtectionService/#windows-event-log-36360.html"
   }
 ]
